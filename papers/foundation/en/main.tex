@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=2.7cm}
+\title{Universal Minimum Curvature Hypothesis I:\\kinematic foundations and falsification criteria}
+\author{Pepe Donato\\Independent Researcher\\\texttt{donato.pepe.it@gmail.com}}
+\date{Audited draft --- 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We study as a falsifiable hypothesis the existence of a universal scale $\kappa_0>0$ with inverse-length dimension. This draft reports neither a detection nor a complete theory. The source audit supports, under conditions, timelike Frenet--Serret kinematics, but does not derive the positive bound. With $\kappa=\sqrt{a^\mu a_\mu}/c^2$, a timelike geodesic has $\kappa=0$; the postulate is therefore in tension with ideal free fall until a new covariant dynamics compatible with experiment is supplied. Postulate status: \texttt{UNPROVEN}.
+\end{abstract}
+
+\section{Epistemic status}\label{sec:status}
+The project separates standard results, definitions, hypotheses, and consequences. Source claims UMCH-CLM-0008, UMCH-CLM-0009, UMCH-CLM-0010, and UMCH-CLM-0011 were audited together with duplicates UMCH-CLM-0049, UMCH-CLM-0050, UMCH-CLM-0051, UMCH-CLM-0052 and reformulation UMCH-CLM-0092, UMCH-CLM-0093, UMCH-CLM-0094. Timelike-curve formalism is documented by \cite{FormigaRomero2006}; the relativistic experimental framework is reviewed by \cite{Will2014}. No cited source proves $\kappa_0>0$.
+
+\section{Definitions and domain}\label{sec:definitions}
+Let $x^\mu(\tau)$ be a regular timelike curve in a Lorentzian manifold with signature $(-,+,+,+)$. Define
+\begin{equation}\label{eq:velocity}
+u^\mu=\frac{dx^\mu}{d\tau},\qquad u^\mu u_\mu=-c^2,
+\end{equation}
+and
+\begin{equation}\label{eq:acceleration}
+a^\mu=u^\nu\nabla_\nu u^\mu.
+\end{equation}
+When $a^\mu\ne0$, define proper worldline curvature and normal by
+\begin{equation}\label{eq:curvature}
+\kappa=\frac{\sqrt{a^\mu a_\mu}}{c^2},\qquad N^\mu=\frac{a^\mu}{c^2\kappa}.
+\end{equation}
+This quantity is not identified with intrinsic spacetime curvature. Null curves, fields, and vacuum are outside this definition.
+
+\section{UMCH hypothesis}\label{sec:hypothesis}
+The core conjectures
+\begin{equation}\label{eq:hypothesis}
+\kappa\ge\kappa_0>0,\qquad [\kappa_0]=L^{-1}.
+\end{equation}
+$\kappa_0$ remains a free parameter. Relations to $c,\hbar,G,\Lambda$, or cosmological scales are outside the core without an independent derivation. UMCH-CLM-0093 remains \texttt{UNPROVEN}.
+
+\section{Minimal kinematic derivation}\label{sec:derivation}
+Metric compatibility gives
+\begin{equation}\label{eq:orthogonality}
+\frac{D}{d\tau}(u^\mu u_\mu)=2u_\mu a^\mu=0.
+\end{equation}
+For $\kappa\ne0$, the definitions give
+\begin{equation}\label{eq:frenet}
+a^\mu=c^2\kappa N^\mu,\qquad N^\mu N_\mu=1.
+\end{equation}
+This is a definitional identity, not a proof of inequality \eqref{eq:hypothesis}. For $P^\mu=m_0u^\mu$ with constant mass,
+\begin{equation}\label{eq:momentum}
+P^\mu P_\mu=-m_0^2c^2.
+\end{equation}
+Orthogonality preserves the local norm of $u^\mu$; alone it does not imply global energy-momentum conservation.
+
+\section{Tension with geodesic motion}\label{sec:tension}
+A proper-time-parametrized timelike geodesic obeys $a^\mu=0$. Equation \eqref{eq:curvature} then gives $\kappa=0$, while $N^\mu$ is undetermined. Thus \eqref{eq:hypothesis} excludes an ideal geodesic. A UMCH theory must introduce a new action or equations, demonstrate the standard limit, and confront equivalence and Lorentz tests \cite{Will2014}. Nonzero spacetime curvature does not resolve the tension: curved spacetimes admit geodesics.
+
+\section{Required limits}\label{sec:limits}
+As $\kappa_0\to0$, a proposed deformation must recover inertial motion in special relativity, geodesic fall in general relativity, and the corresponding conservation principles. Null, weak-field, and nonrelativistic limits require explicit treatment. A singular limit must be derived rather than asserted.
+
+\section{Falsification criteria}\label{sec:falsification}
+The timelike formulation is rejected or restricted if no covariant dynamics exists; unavoidable instability or acausality appears; every $\kappa_0>0$ is excluded; the standard limit fails; or no distinct observable content results. Upper bounds precede any positive measurement. Without a derived map between an experimental observable and $\kappa_0$, reporting a numerical bound is not justified.
+
+\section{Limitations}\label{sec:limitations}
+This paper does not yet define null, field, or vacuum sectors; propose an action; prove stability; treat ALD, QED, quantum gravity, or cosmology; or measure $\kappa_0$. The bibliography is preliminary. Unaudited claims are excluded from results.
+
+\section{AI assistance and responsibility}\label{sec:ai}
+AI tools assisted extraction, classification, translation, and drafting. They are neither sources nor coauthors. Bibliographic metadata, equations, tests, and conclusions require human verification. Scientific responsibility remains with the author.
+
+\bibliographystyle{plain}
+\bibliography{../../../references/library}
+\end{document}

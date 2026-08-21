@@ -1,0 +1,18 @@
+{
+  "empty_equation_paragraphs": 0,
+  "extractor_version": "umch-docx-extractor/1.0",
+  "headings": {
+    "Heading1": 8,
+    "Heading2": 44,
+    "Heading3": 63
+  },
+  "known_limitations": [
+    "Office Math equation structure is flagged but flattened text may lose mathematical layout and semantics.",
+    "Pagination, floating layout, embedded font behavior, comments, and tracked changes are not reproduced.",
+    "Hyperlinks are recovered only when represented by standard document relationships."
+  ],
+  "nonempty_paragraphs": 602,
+  "paragraphs_total": 618,
+  "source_file": "Dimostrazione e Prove Relatività Einstein.docx",
+  "source_sha256": "44360756b577d5acc38c46a60520aef0f6f21081dd4dbd47ed4f956515292fd2"
+}

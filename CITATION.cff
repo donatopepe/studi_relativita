@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this research program, cite it using these metadata."
+title: "Universal Minimum Curvature Hypothesis"
+type: software
+license: CC-BY-4.0
+authors:
+  - family-names: Pepe
+    given-names: Donato
+    affiliation: Independent Researcher
+    email: donato.pepe.it@gmail.com
+repository-code: "https://github.com/donatopepe/studi_relativita"
+url: "https://github.com/donatopepe/studi_relativita"
+abstract: "Bilingual, falsifiable research program auditing a proposed universal nonzero minimum-curvature scale."
