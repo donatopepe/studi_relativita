@@ -1,0 +1,25 @@
+{
+  "study_id": "free-fall-identifiability-v1",
+  "observable": "published_equivalence_and_free_fall_tests",
+  "mapping": "none_derived",
+  "uncertainty_model": "not_applicable_without_mapping",
+  "confidence_level": null,
+  "sources": [
+    {
+      "citation_key": "Will2014",
+      "canonical_url": "https://doi.org/10.12942/lrr-2014-4",
+      "access_date": "2026-08-21",
+      "role": "framework for equivalence-principle and relativistic tests"
+    },
+    {
+      "citation_key": "FormigaRomero2006",
+      "canonical_url": "https://doi.org/10.1119/1.2232644",
+      "access_date": "2026-08-21",
+      "role": "timelike Frenet-Serret definition of worldline curvature"
+    }
+  ],
+  "assumptions_tested": [
+    "kappa is defined as proper acceleration divided by c squared for timelike curves",
+    "a numerical bound requires a model connecting a measured quantity to residual proper acceleration"
+  ]
+}

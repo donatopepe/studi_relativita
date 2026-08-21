@@ -1,0 +1,113 @@
+{
+  "claims": {
+    "UMCH-CLM-0008": {
+      "normalized_it": "La relatività speciale ammette moto inerziale con quadri-accelerazione nulla; il limite κ≥κ₀>0 è invece un postulato UMCH.",
+      "translation_en": "Special relativity admits inertial motion with vanishing four-acceleration; κ≥κ₀>0 is instead a UMCH postulate.",
+      "reference_ids": "FormigaRomero2006;Will2014",
+      "dimensional_check": "PASS_WITH_CONDITIONS",
+      "evidence_level": "STANDARD_RESULT_PLUS_UNPROVEN_POSTULATE",
+      "status": "SUPPORTED_WITH_CONDITIONS",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "SPLIT_STANDARD_RESULT_FROM_HYPOTHESIS",
+      "rationale": "Aμ=0 for inertial motion is standard; a universal positive lower bound is not derived and remains UNPROVEN."
+    },
+    "UMCH-CLM-0009": {
+      "reference_ids": "FormigaRomero2006",
+      "dimensional_check": "PASS_WITH_CONDITIONS",
+      "evidence_level": "STANDARD_FORMALISM",
+      "status": "SUPPORTED_WITH_CONDITIONS",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "RETAIN_AS_SETUP_ONLY",
+      "rationale": "A timelike Frenet–Serret frame is standard under regularity and nonzero-curvature conditions; it does not supply the lower bound."
+    },
+    "UMCH-CLM-0010": {
+      "reference_ids": "FormigaRomero2006",
+      "dimensional_check": "PASS_WITH_NOTATION_CORRECTION",
+      "evidence_level": "STANDARD_IDENTITY_PLUS_UNPROVEN_INEQUALITY",
+      "status": "CORRECTABLE",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "SEPARATE_IDENTITY_AND_HYPOTHESIS",
+      "rationale": "D Uμ/dτ=Aμ=c²κNμ is dimensionally consistent for the declared convention; κ≥κ₀>0 is an independent unproven hypothesis, not a Frenet–Serret consequence."
+    },
+    "UMCH-CLM-0011": {
+      "reference_ids": "FormigaRomero2006",
+      "dimensional_check": "PASS_WITH_CONDITIONS",
+      "evidence_level": "DERIVABLE_FOR_CONSTANT_REST_MASS",
+      "status": "SUPPORTED_WITH_CONDITIONS",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "RETAIN_WITH_ASSUMPTIONS",
+      "rationale": "U·A=0 follows from differentiating U·U=-c². P·P=-m₀²c² follows for P=m₀U and constant m₀; N normalization assumes κ≠0."
+    },
+    "UMCH-CLM-0049": {
+      "reference_ids": "FormigaRomero2006;Will2014",
+      "dimensional_check": "PASS_WITH_CONDITIONS",
+      "evidence_level": "DUPLICATE_TRANSLATION",
+      "status": "SUPPORTED_WITH_CONDITIONS",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "SPLIT_STANDARD_RESULT_FROM_HYPOTHESIS",
+      "rationale": "English duplicate of UMCH-CLM-0008; only the inertial statement is standard."
+    },
+    "UMCH-CLM-0050": {
+      "reference_ids": "FormigaRomero2006",
+      "dimensional_check": "PASS_WITH_CONDITIONS",
+      "evidence_level": "DUPLICATE_TRANSLATION",
+      "status": "SUPPORTED_WITH_CONDITIONS",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "RETAIN_AS_SETUP_ONLY",
+      "rationale": "English duplicate of UMCH-CLM-0009."
+    },
+    "UMCH-CLM-0051": {
+      "reference_ids": "FormigaRomero2006",
+      "dimensional_check": "PASS_WITH_NOTATION_CORRECTION",
+      "evidence_level": "DUPLICATE_TRANSLATION",
+      "status": "CORRECTABLE",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "SEPARATE_IDENTITY_AND_HYPOTHESIS",
+      "rationale": "English duplicate of UMCH-CLM-0010."
+    },
+    "UMCH-CLM-0052": {
+      "reference_ids": "FormigaRomero2006",
+      "dimensional_check": "PASS_WITH_CONDITIONS",
+      "evidence_level": "DUPLICATE_TRANSLATION",
+      "status": "SUPPORTED_WITH_CONDITIONS",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "RETAIN_WITH_ASSUMPTIONS",
+      "rationale": "English duplicate of UMCH-CLM-0011."
+    },
+    "UMCH-CLM-0092": {
+      "reference_ids": "FormigaRomero2006",
+      "dimensional_check": "PASS_WITH_CONDITIONS",
+      "evidence_level": "STANDARD_SETUP_WITH_EXTRA_ASSUMPTIONS",
+      "status": "SUPPORTED_WITH_CONDITIONS",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "RETAIN_GEOMETRY_NOT_BOUND",
+      "rationale": "Metric signature and timelike tetrad setup are conventional; charged-particle status is irrelevant to pure kinematics and no lower bound follows."
+    },
+    "UMCH-CLM-0093": {
+      "reference_ids": "FormigaRomero2006;Will2014",
+      "dimensional_check": "PASS_WITH_NOTATION_CORRECTION",
+      "evidence_level": "STANDARD_IDENTITY_PLUS_UNPROVEN_INEQUALITY",
+      "status": "UNPROVEN",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "KEEP_AS_FALSIFIABLE_HYPOTHESIS",
+      "rationale": "The kinematic decomposition can be defined, but κ≥κ₀>0 conflicts with geodesic κ=0 unless a new tested dynamics or observable is supplied."
+    },
+    "UMCH-CLM-0094": {
+      "reference_ids": "FormigaRomero2006",
+      "dimensional_check": "PASS_WITH_TERMINOLOGY_CORRECTION",
+      "evidence_level": "STANDARD_DEFINITIONS_WITH_AMBIGUOUS_TERM",
+      "status": "CORRECTABLE",
+      "reviewer": "Repository foundational audit 2026-08-21",
+      "decision": "RENAME_WORLDLINE_CURVATURE",
+      "rationale": "U and N definitions are standard under conditions; calling proper worldline curvature 'geodesic curvature' risks confusion with other geometric uses."
+    }
+  },
+  "equations": {
+    "UMCH-EQ-0003": {"normalized_latex": "D U^\\mu/d\\tau=A^\\mu=c^2\\kappa N^\\mu,\\quad \\kappa\\ge\\kappa_0>0", "symbols": "U^μ;A^μ;τ;κ;κ₀;N^μ;c", "declared_units": "[A]=LT^-2;[κ]=[κ₀]=L^-1", "dimensional_check": "PASS_WITH_HYPOTHESIS_SEPARATION", "status": "CORRECTABLE", "rationale": "Identity and independent lower-bound hypothesis must be separated."},
+    "UMCH-EQ-0004": {"normalized_latex": "N^\\mu N_\\mu=1,\\ U^\\mu U_\\mu=-c^2,\\ P^\\mu P_\\mu=-m_0^2c^2", "symbols": "N^μ;U^μ;P^μ;m₀;c", "declared_units": "[P²]=M²L²T^-2", "dimensional_check": "PASS_WITH_CONSTANT_MASS_ASSUMPTION", "status": "SUPPORTED_WITH_CONDITIONS", "rationale": "Requires P=m₀U, constant rest mass, and normalized N where κ is nonzero."},
+    "UMCH-EQ-0028": {"normalized_latex": "D U^\\mu/d\\tau=A^\\mu=c^2\\kappa N^\\mu,\\quad \\kappa\\ge\\kappa_0>0", "symbols": "U^μ;A^μ;τ;κ;κ₀;N^μ;c", "declared_units": "[A]=LT^-2;[κ]=[κ₀]=L^-1", "dimensional_check": "PASS_WITH_HYPOTHESIS_SEPARATION", "status": "CORRECTABLE", "rationale": "English duplicate; identity and hypothesis must be separated."},
+    "UMCH-EQ-0029": {"normalized_latex": "N^\\mu N_\\mu=1,\\ U^\\mu U_\\mu=-c^2,\\ P^\\mu P_\\mu=-m_0^2c^2", "symbols": "N^μ;U^μ;P^μ;m₀;c", "declared_units": "[P²]=M²L²T^-2", "dimensional_check": "PASS_WITH_CONSTANT_MASS_ASSUMPTION", "status": "SUPPORTED_WITH_CONDITIONS", "rationale": "English duplicate with same assumptions."},
+    "UMCH-EQ-0052": {"normalized_latex": "D U^\\mu/d\\tau=A^\\mu=c^2\\kappa N^\\mu,\\quad \\kappa\\ge\\kappa_0>0", "symbols": "U^μ;A^μ;τ;κ;κ₀;N^μ;c", "declared_units": "[A]=LT^-2;[κ]=[κ₀]=L^-1", "dimensional_check": "PASS_WITH_HYPOTHESIS_SEPARATION", "status": "UNPROVEN", "rationale": "Lower bound remains unproved and is in tension with geodesic motion."},
+    "UMCH-EQ-0053": {"normalized_latex": "U^\\mu=dx^\\mu/d\\tau,\\ U^\\mu U_\\mu=-c^2,\\ N^\\mu N_\\mu=1", "symbols": "x^μ;τ;U^μ;N^μ;c", "declared_units": "[U]=LT^-1", "dimensional_check": "PASS_WITH_REGULARITY_CONDITIONS", "status": "CORRECTABLE", "rationale": "Terminology should use timelike worldline curvature and state N is undefined at κ=0 without continuation."}
+  }
+}

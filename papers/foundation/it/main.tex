@@ -1,0 +1,77 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{margin=2.7cm}
+\title{Ipotesi della Curvatura Minima Universale I:\\fondamenti cinematici e criteri di confutazione}
+\author{Pepe Donato\\Independent Researcher\\\texttt{donato.pepe.it@gmail.com}}
+\date{Bozza auditata --- 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Studiamo come ipotesi falsificabile l'esistenza di una scala universale $\kappa_0>0$ con dimensione inversa di lunghezza. Questa bozza non presenta una rivelazione né una teoria completa. L'audit del documento sorgente sostiene, con condizioni, la cinematica di Frenet--Serret per curve timelike, ma non deriva il limite positivo. Con la definizione $\kappa=\sqrt{a^\mu a_\mu}/c^2$, una geodetica timelike ha $\kappa=0$; quindi il postulato è in tensione con la caduta libera ideale finché non viene fornita una nuova dinamica covariante compatibile con esperimenti. Stato del postulato: \texttt{UNPROVEN}.
+\end{abstract}
+
+\section{Stato epistemico}\label{sec:status}
+Il progetto separa risultati standard, definizioni, ipotesi e conseguenze. I claim sorgente UMCH-CLM-0008, UMCH-CLM-0009, UMCH-CLM-0010 e UMCH-CLM-0011 sono stati auditati insieme ai duplicati UMCH-CLM-0049, UMCH-CLM-0050, UMCH-CLM-0051, UMCH-CLM-0052 e alla riformulazione UMCH-CLM-0092, UMCH-CLM-0093, UMCH-CLM-0094. Il formalismo per curve timelike è documentato in \cite{FormigaRomero2006}; il quadro sperimentale relativistico è discusso in \cite{Will2014}. Nessuna fonte citata dimostra $\kappa_0>0$.
+
+\section{Definizioni e dominio}\label{sec:definitions}
+Sia $x^\mu(\tau)$ una curva timelike regolare in una varietà lorentziana con segnatura $(-,+,+,+)$. Poniamo
+\begin{equation}\label{eq:velocity}
+u^\mu=\frac{dx^\mu}{d\tau},\qquad u^\mu u_\mu=-c^2,
+\end{equation}
+e
+\begin{equation}\label{eq:acceleration}
+a^\mu=u^\nu\nabla_\nu u^\mu.
+\end{equation}
+Quando $a^\mu\ne0$, definiamo curvatura propria della linea d'universo e normale
+\begin{equation}\label{eq:curvature}
+\kappa=\frac{\sqrt{a^\mu a_\mu}}{c^2},\qquad N^\mu=\frac{a^\mu}{c^2\kappa}.
+\end{equation}
+Non identifichiamo questa quantità con curvatura intrinseca dello spaziotempo. Curve null, campi e vuoto non sono coperti da questa definizione.
+
+\section{Ipotesi UMCH}\label{sec:hypothesis}
+Il nucleo congettura
+\begin{equation}\label{eq:hypothesis}
+\kappa\ge\kappa_0>0,\qquad [\kappa_0]=L^{-1}.
+\end{equation}
+$\kappa_0$ resta parametro libero. Relazioni con $c,\hbar,G,\Lambda$ o scale cosmologiche non appartengono al nucleo senza derivazione indipendente. UMCH-CLM-0093 resta \texttt{UNPROVEN}.
+
+\section{Derivazione cinematica minima}\label{sec:derivation}
+Per compatibilità metrica,
+\begin{equation}\label{eq:orthogonality}
+\frac{D}{d\tau}(u^\mu u_\mu)=2u_\mu a^\mu=0.
+\end{equation}
+Se $\kappa\ne0$, le definizioni danno
+\begin{equation}\label{eq:frenet}
+a^\mu=c^2\kappa N^\mu,\qquad N^\mu N_\mu=1.
+\end{equation}
+Questa è identità definitoria, non prova della disuguaglianza \eqref{eq:hypothesis}. Per $P^\mu=m_0u^\mu$ con massa costante,
+\begin{equation}\label{eq:momentum}
+P^\mu P_\mu=-m_0^2c^2.
+\end{equation}
+L'ortogonalità conserva la norma locale di $u^\mu$; non implica da sola conservazione globale dell'energia-impulso.
+
+\section{Tensione con moto geodetico}\label{sec:tension}
+Una geodetica timelike parametrizzata dal tempo proprio soddisfa $a^\mu=0$. Da \eqref{eq:curvature} segue $\kappa=0$, e $N^\mu$ non è determinato. Quindi \eqref{eq:hypothesis} esclude la geodetica ideale. Una teoria UMCH deve introdurre un'azione o equazioni nuove, mostrare il limite standard e confrontarsi con test di equivalenza e Lorentz \cite{Will2014}. Curvatura non nulla dello spaziotempo non risolve questa tensione: spaziotempi curvi ammettono geodetiche.
+
+\section{Limiti richiesti}\label{sec:limits}
+Nel limite $\kappa_0\to0$ una deformazione proposta deve recuperare moto inerziale in relatività speciale, caduta geodetica in relatività generale e relativi principi di conservazione. Limiti null, deboli e non relativistici richiedono trattamenti espliciti. Un limite singolare deve essere derivato, non dichiarato.
+
+\section{Criteri di confutazione}\label{sec:falsification}
+La formulazione timelike viene respinta o ristretta se: non esiste dinamica covariante; compaiono instabilità o acausalità inevitabili; ogni $\kappa_0>0$ è escluso; il limite standard fallisce; oppure il modello non produce contenuto osservabile distinto. Prima di una misura positiva si cercano limiti superiori. Senza mappa derivata tra osservabile sperimentale e $\kappa_0$, non è lecito riportare un bound numerico.
+
+\section{Limitazioni}\label{sec:limitations}
+Questo lavoro non definisce ancora settori null, campi o vuoto; non propone un'azione; non dimostra stabilità; non tratta ALD, QED, gravità quantistica o cosmologia; non misura $\kappa_0$. La bibliografia è iniziale. Claim non auditati restano fuori dai risultati.
+
+\section{Assistenza IA e responsabilità}\label{sec:ai}
+Strumenti IA hanno assistito estrazione, classificazione, traduzione e redazione. Non sono fonti né coautori. Metadati bibliografici, formule, test e conclusioni richiedono verifica umana. Responsabilità scientifica resta all'autore.
+
+\bibliographystyle{plain}
+\bibliography{../../../references/library}
+\end{document}
