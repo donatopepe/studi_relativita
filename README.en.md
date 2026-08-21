@@ -34,7 +34,7 @@ Massive matter, null curves, fields, and vacuum require distinct observables. A 
 Each claim, equation, and reference receives a stable ID and public status: `UNREVIEWED`, `SUPPORTED`, `SUPPORTED_WITH_CONDITIONS`, `CORRECTABLE`, `UNPROVEN`, `CONTRADICTED`, or `OUT_OF_SCOPE`. Negative findings and contradictions remain on record.
 
 - [Approved specification](doc/specs/2026-08-21-universal-minimum-curvature-hypothesis.md)
-- [Initial plan](doc/plans/2026-08-21-universal-minimum-curvature-hypothesis.md)
+- [Scientific roadmap](docs/roadmap.md)
 - [AI-assistance policy](docs/ai-assistance.md)
 - [Contributing](CONTRIBUTING.md)
 

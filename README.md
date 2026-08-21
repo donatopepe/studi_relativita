@@ -34,7 +34,7 @@ Materia massiva, curve nulle, campi e vuoto richiedono osservabili distinte. Una
 Ogni claim, equazione e riferimento riceve ID stabile e stato pubblico: `UNREVIEWED`, `SUPPORTED`, `SUPPORTED_WITH_CONDITIONS`, `CORRECTABLE`, `UNPROVEN`, `CONTRADICTED` oppure `OUT_OF_SCOPE`. Risultati negativi e contraddizioni restano registrati.
 
 - [Specifica approvata](doc/specs/2026-08-21-universal-minimum-curvature-hypothesis.md)
-- [Piano iniziale](doc/plans/2026-08-21-universal-minimum-curvature-hypothesis.md)
+- [Roadmap scientifica](docs/roadmap.md)
 - [Politica sull'assistenza IA](docs/ai-assistance.md)
 - [Come contribuire](CONTRIBUTING.md)
 
