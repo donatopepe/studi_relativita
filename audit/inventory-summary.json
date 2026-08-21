@@ -4,7 +4,10 @@
   "linked_equation_candidates": 354,
   "source_paragraphs": 602,
   "status": {
-    "UNREVIEWED": 602
+    "CORRECTABLE": 3,
+    "SUPPORTED_WITH_CONDITIONS": 7,
+    "UNPROVEN": 1,
+    "UNREVIEWED": 591
   },
   "warning": "Inventory is automatic and conservative; classification is not scientific validation."
 }

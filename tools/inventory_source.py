@@ -17,6 +17,7 @@ SOURCE = ROOT / "archive" / "extracted" / "document-it.md"
 CLAIMS = ROOT / "audit" / "claims.csv"
 EQUATIONS = ROOT / "audit" / "equations" / "equations.csv"
 SUMMARY = ROOT / "audit" / "inventory-summary.json"
+REVIEWS = ROOT / "audit" / "foundation-reviews.json"
 MARKER = re.compile(r"^<!-- (UMCH-SRC-P\d{4}) \| style=([^ |]+)(?: \| [^>]+)? -->$")
 FORMULA_HINT = re.compile(r"(?:[=≥≤≈∝]|\b(?:κ|tau|omega|Gamma|Delta|Lambda|alpha|beta)\b|[κμντℏħΔΓΛ∇∫√])")
 
@@ -97,8 +98,22 @@ def csv_text(fields: list[str], rows: list[dict[str, str]]) -> str:
     return stream.getvalue()
 
 
-def build(source: pathlib.Path) -> tuple[str, str, str]:
+def load_reviews(path: pathlib.Path) -> dict:
+    if not path.exists():
+        return {"claims": {}, "equations": {}}
+    return json.loads(path.read_text(encoding="utf-8"))
+
+
+def apply_review(row: dict[str, str], review: dict[str, str]) -> None:
+    unknown = set(review) - set(row)
+    if unknown:
+        raise ValueError(f"Unknown review fields: {sorted(unknown)}")
+    row.update(review)
+
+
+def build(source: pathlib.Path, reviews_path: pathlib.Path = REVIEWS) -> tuple[str, str, str]:
     records = parse_source(source)
+    reviews = load_reviews(reviews_path)
     claims = []
     equations = []
     for index, record in enumerate(records, 1):
@@ -134,12 +149,25 @@ def build(source: pathlib.Path) -> tuple[str, str, str]:
             "decision": "",
             "rationale": "Pending atomicity and scientific review.",
         })
+    claim_rows = {row["claim_id"]: row for row in claims}
+    equation_rows = {row["equation_id"]: row for row in equations}
+    missing_claims = set(reviews.get("claims", {})) - set(claim_rows)
+    missing_equations = set(reviews.get("equations", {})) - set(equation_rows)
+    if missing_claims or missing_equations:
+        raise ValueError(f"Review IDs missing from inventory: claims={sorted(missing_claims)}, equations={sorted(missing_equations)}")
+    for identifier, review in reviews.get("claims", {}).items():
+        apply_review(claim_rows[identifier], review)
+    for identifier, review in reviews.get("equations", {}).items():
+        apply_review(equation_rows[identifier], review)
+    status_counts: dict[str, int] = {}
+    for row in claims:
+        status_counts[row["status"]] = status_counts.get(row["status"], 0) + 1
     summary = {
         "source_paragraphs": len(records),
         "claims": len(claims),
         "equation_candidates": len(equations),
         "linked_equation_candidates": sum(bool(row["equation_ids"]) for row in claims),
-        "status": {"UNREVIEWED": len(claims)},
+        "status": dict(sorted(status_counts.items())),
         "warning": "Inventory is automatic and conservative; classification is not scientific validation.",
     }
     return csv_text(CLAIM_FIELDS, claims), csv_text(EQUATION_FIELDS, equations), json.dumps(summary, indent=2, sort_keys=True) + "\n"
