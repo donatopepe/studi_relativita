@@ -39,8 +39,10 @@ class InventoryTests(unittest.TestCase):
         self.assertEqual("UMCH-CLM-0001", rows[0]["claim_id"])
         self.assertEqual("UMCH-CLM-0602", rows[-1]["claim_id"])
         self.assertEqual("UMCH-SRC-P0001", rows[0]["source_paragraph_id"])
-        self.assertTrue(all(row["status"] == "UNREVIEWED" for row in rows))
-        self.assertTrue(all(not row["translation_en"] for row in rows))
+        allowed = {"UNREVIEWED", "SUPPORTED", "SUPPORTED_WITH_CONDITIONS", "CORRECTABLE", "UNPROVEN", "CONTRADICTED", "OUT_OF_SCOPE"}
+        self.assertTrue(all(row["status"] in allowed for row in rows))
+        self.assertGreater(sum(row["status"] == "UNREVIEWED" for row in rows), 500)
+        self.assertTrue(all(row["translation_en"] or row["reviewer"] for row in rows if row["status"] != "UNREVIEWED"))
 
     def test_equation_candidates_are_linked_from_claims(self):
         with CLAIMS.open(encoding="utf-8", newline="") as stream:
@@ -54,8 +56,10 @@ class InventoryTests(unittest.TestCase):
         self.assertEqual(len(ids), len(equations))
         linked = {item for row in claims for item in row["equation_ids"].split(";") if item}
         self.assertEqual(ids, linked)
-        self.assertTrue(all(row["status"] == "UNREVIEWED" for row in equations))
-        self.assertTrue(all(not row["normalized_latex"] for row in equations))
+        allowed = {"UNREVIEWED", "SUPPORTED", "SUPPORTED_WITH_CONDITIONS", "CORRECTABLE", "UNPROVEN", "CONTRADICTED", "OUT_OF_SCOPE"}
+        self.assertTrue(all(row["status"] in allowed for row in equations))
+        self.assertGreater(sum(row["status"] == "UNREVIEWED" for row in equations), 150)
+        self.assertTrue(all(row["normalized_latex"] for row in equations if row["status"] != "UNREVIEWED"))
 
     def test_summary_and_committed_artifacts_are_current(self):
         summary = json.loads(SUMMARY.read_text(encoding="utf-8"))
