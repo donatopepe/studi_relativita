@@ -1,0 +1,14 @@
+{
+  "study_id": "paper-ii-coarse-grained-non-equivalence-v1",
+  "hypothesis_class": "ALTERNATIVE_HYPOTHESIS",
+  "parameter": "proper_time",
+  "kernel_requirement": "nonnegative_normalized_weights",
+  "observable": "sqrt(weighted_mean(kappa^2))",
+  "observable_dimension": "L^-1",
+  "kappa0": 1.0,
+  "cases": [
+    {"name": "both-pass", "kappa": [1.0, 2.0], "weights": [1.0, 1.0]},
+    {"name": "both-fail", "kappa": [0.2, 0.4], "weights": [1.0, 1.0]},
+    {"name": "rms-passes-pointwise-fails", "kappa": [0.0, 2.0], "weights": [1.0, 1.0]}
+  ]
+}
