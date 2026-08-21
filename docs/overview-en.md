@@ -27,3 +27,7 @@ Null curves, fields, and vacuum remain open problems. ALD, QED, gravity, and cos
 ## UMCH-OV-0007 — Reproducibility
 
 Original DOCX preserved with SHA-256; deterministic extraction and inventory; stable claim/equation IDs; bibliography verification log; structurally aligned bilingual paper; public tests and CI.
+
+## UMCH-OV-0008 — Paper II
+
+Comparative analysis is review-ready: pointwise candidates A and B remain `INCOMPLETE`; RMS candidate C is `NON_IDENTIFIABLE`, an `ALTERNATIVE_HYPOTHESIS`, and non-equivalent. Decision is `NO_GO_NOT_ESTABLISHED`: incompleteness is not falsification. Paper III remains scientifically deferred until a pointwise dynamics passes variational, canonical, stability, causality, limit, and observability gates.

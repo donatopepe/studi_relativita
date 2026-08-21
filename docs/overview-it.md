@@ -27,3 +27,7 @@ Curve null, campi e vuoto restano problemi aperti. ALD, QED, gravità e cosmolog
 ## UMCH-OV-0007 — Riproducibilità
 
 DOCX originale preservato con SHA-256; estrazione e inventario deterministici; claim/equazioni con ID stabili; bibliografia con log di verifica; paper bilingue strutturalmente allineato; test e CI pubblici.
+
+## UMCH-OV-0008 — Paper II
+
+Analisi comparativa pronta per review: candidati pointwise A e B restano `INCOMPLETE`; candidato RMS C è `NON_IDENTIFIABLE`, `ALTERNATIVE_HYPOTHESIS` e non equivalente. Decisione `NO_GO_NOT_ESTABLISHED`: incompletezza non è confutazione. Paper III resta scientificamente deferred finché una dinamica pointwise non supera gate variazionali, canonici, di stabilità, causalità, limite e osservabilità.
