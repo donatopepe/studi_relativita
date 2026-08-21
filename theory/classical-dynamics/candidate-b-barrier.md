@@ -5,36 +5,68 @@ Hypothesis class: `POINTWISE_UMCH`
 
 ## Domain
 
-Regular timelike worldlines with `κ>κ₀`. Candidate action is undefined or divergent on boundary and excludes `κ≤κ₀` by domain.
+Regular timelike worldlines with `κ>κ₀`. Candidate is divergent at `κ=κ₀` and outside real finite domain for `κ≤κ₀`. Thus every ideal geodesic is excluded for fixed `κ₀>0`.
 
-## Candidate functional
+## Preregistered functional
+
+Choose one representative, without post-result tuning: `f(z)=1/(z-1)` with coefficient `εmc`.
 
 \[
-S_B[x]=S_0[x]+\int ds\,V(\kappa/\kappa_0),
+S_B[x]=-mc\int ds+\epsilon mc\int ds\,f(z),
+\qquad z=\frac{\kappa}{\kappa_0}>1,
+\qquad f(z)=\frac{1}{z-1}.
 \]
 
-where a representative dimensionally consistent barrier will be fixed before calculation. Its coefficient must give `V` the same dimensions as the worldline Lagrangian density.
+`ε` is dimensionless, `[mc]=M L T⁻¹`, `[ds]=L` (`LENGTH`); therefore each term has action dimension `[S]=M L² T⁻¹`. `f` and `z` are dimensionless. This checks dimensions, not physical correctness.
 
 ## Analysis level
 
-`CONJECTURAL` pending choice of one preregistered barrier and reproducible symbolic checks.
+- `SYMBOLIC`: exact elementary properties of `f` and selected limits.
+- `VARIATIONAL`: derivative-order statement under nondegenerate local embedding variation.
+- `CONJECTURAL`: constraint algebra, physical degrees of freedom, stability, causality, and observables.
 
-## Differential order
+## Exact barrier behavior
 
-`INCOMPLETE`: nonlinear dependence on worldline curvature is a higher-derivative system in embedding variables. Reparametrization degeneracy may generate constraints, so instability cannot be inferred from derivative order alone.
+For `z>1`,
 
-## Constraints
+\[
+f'(z)=-\frac{1}{(z-1)^2}<0,
+\qquad
+f''(z)=\frac{2}{(z-1)^3}>0.
+\]
 
-Reparametrization constraint expected from geometric action; complete canonical analysis not yet performed. No Hamiltonian boundedness or ghost claim is made.
+It diverges as `z→1⁺` and vanishes as `z→∞`. Code reproduces sample values and rejects points outside domain.
 
-## Standard limit
+## Differential order and boundary data
 
-Must declare how coupling and barrier scale as `κ₀→0`. A divergent, vanishing, or nonuniform limit may occur depending on scaling; no limit is yet selected as physical.
+In proper-time gauge, `κ` depends on second derivatives of worldline embedding. For nonlinear `f(κ/κ₀)` with nonzero second derivative, a generic nondegenerate Euler--Lagrange expression in embedding variables can contain up to fourth derivatives. This is derivative counting, not completed covariant equations.
+
+Varying requires boundary conditions for position and appropriate first-derivative data, or compensating boundary terms. Reparametrization invariance makes action degenerate and generates constraints, so raw fourth-order counting does not equal a count of physical modes.
+
+No Ostrogradsky instability conclusion is made. The constraint analysis remains incomplete; consequently there is no stability conclusion, no ghost count, and no bounded-energy claim.
+
+## Standard limit `κ₀→0`
+
+With fixed `ε`:
+
+1. Fixed `κ=K>0`: `z→∞`, so barrier contribution density vanishes pointwise.
+2. Boundary-layer path `κ=rκ₀`, fixed `r>1`: `f(r)` remains finite and nonzero.
+3. Geodesic `κ=0`: outside domain for every `κ₀>0`.
+
+Therefore limit is `NONUNIFORM`. Pointwise vanishing on fixed positive-curvature curves does not show convergence to the full standard solution space or initial-value problem.
+
+## Constraints, conservation, causality
+
+Geometric action is reparametrization invariant, but complete primary/secondary constraints have not been derived for this exact barrier. Poincaré symmetry suggests conserved charges in flat spacetime once valid equations/boundary terms exist; their explicit form is absent. Causal and well-posed evolution is not established.
 
 ## Observable
 
-None derived. Excluding curves is not itself an operational prediction without equations and initial data.
+None derived. Barrier excludes a region of curve space but supplies no experiment-to-`κ₀` mapping without solved dynamics and initial data.
 
-## Blocking issue
+## Reproducible check
 
-Need fixed barrier, variational equations, constraint-aware stability test, and controlled standard limit.
+`studies/classical-dynamics/barrier_check.py` verifies domain, monotonicity/convexity samples, dimensions, and three preregistered limit paths. It does not derive dynamics or validate UMCH.
+
+## Decision
+
+State remains `INCOMPLETE`. Exact barrier and dimensions are well specified, but nonuniform standard limit, excluded geodesics, missing constrained Hamiltonian analysis, and missing observable block viability claims.
