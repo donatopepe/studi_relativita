@@ -1,0 +1,26 @@
+{
+  "blocking_reason": "No derived mapping connects the cited free-fall observables to the proper acceleration a entering kappa=a/c^2 under a consistent UMCH dynamics.",
+  "confidence_level": null,
+  "formula": "kappa=a/c^2 (kinematic definition only)",
+  "kappa0_upper_bound_unit": "m^-1",
+  "kappa0_upper_bound_value": null,
+  "mapping": "none_derived",
+  "observable": "published_equivalence_and_free_fall_tests",
+  "positive_detection": false,
+  "sources": [
+    {
+      "access_date": "2026-08-21",
+      "canonical_url": "https://doi.org/10.12942/lrr-2014-4",
+      "citation_key": "Will2014",
+      "role": "framework for equivalence-principle and relativistic tests"
+    },
+    {
+      "access_date": "2026-08-21",
+      "canonical_url": "https://doi.org/10.1119/1.2232644",
+      "citation_key": "FormigaRomero2006",
+      "role": "timelike Frenet-Serret definition of worldline curvature"
+    }
+  ],
+  "status": "NO_BOUND_DERIVABLE",
+  "study_id": "free-fall-identifiability-v1"
+}
