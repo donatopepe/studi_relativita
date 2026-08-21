@@ -1,0 +1,53 @@
+name: verify
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit and structural tests
+        run: python3 -m unittest discover -s tests -v
+      - name: Deterministic source extraction
+        run: python3 tools/extract_docx.py --check
+      - name: Deterministic source inventory
+        run: python3 tools/inventory_source.py --check
+      - name: Deterministic constraint study
+        run: python3 studies/free-fall-identifiability/analysis.py --check
+      - name: Whitespace check
+        run: git diff --check
+
+  latex:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install minimal TeX toolchain
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends texlive-latex-base texlive-latex-recommended texlive-lang-italian
+      - name: Compile Italian paper
+        working-directory: papers/foundation/it
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+          bibtex main
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+      - name: Compile English paper
+        working-directory: papers/foundation/en
+        run: |
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+          bibtex main
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+          pdflatex -interaction=nonstopmode -halt-on-error main.tex
+      - uses: actions/upload-artifact@v4
+        with:
+          name: umch-foundation-pdfs
+          path: |
+            papers/foundation/it/main.pdf
+            papers/foundation/en/main.pdf
