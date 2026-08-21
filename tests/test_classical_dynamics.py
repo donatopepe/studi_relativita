@@ -39,11 +39,11 @@ class ClassicalDynamicsSchemaTests(unittest.TestCase):
             self.assertIn("Standard limit", text)
         self.assertIn("ALTERNATIVE_HYPOTHESIS", CANDIDATES["C"].read_text(encoding="utf-8"))
 
-    def test_decision_matrix_has_one_incomplete_row_per_candidate(self):
+    def test_decision_matrix_has_one_reviewed_row_per_candidate(self):
         rows = self.rows()
         self.assertEqual(["A", "B", "C"], [row["candidate_id"] for row in rows])
         self.assertTrue(all(row["state"] in STATES for row in rows))
-        self.assertTrue(all(row["state"] == "INCOMPLETE" for row in rows))
+        self.assertEqual(["INCOMPLETE", "INCOMPLETE", "NON_IDENTIFIABLE"], [row["state"] for row in rows])
         self.assertEqual("POINTWISE_UMCH", rows[0]["hypothesis_class"])
         self.assertEqual("POINTWISE_UMCH", rows[1]["hypothesis_class"])
         self.assertEqual("ALTERNATIVE_HYPOTHESIS", rows[2]["hypothesis_class"])
