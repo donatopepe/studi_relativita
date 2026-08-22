@@ -1,0 +1,80 @@
+{
+  "bounded_energy_resolved": false,
+  "candidate_b_state": "CONTRADICTED_UNDER_ASSUMPTIONS",
+  "decision_basis": "Fixed barrier fails reduced planar local-stability gate, full standard-solution-space limit, and observable mapping under preregistered criteria.",
+  "epsilon": 0.5,
+  "failed_required_checks": [
+    "reduced_planar_local_stability",
+    "standard_limit_full_solution_space",
+    "observable_mapping"
+  ],
+  "full_phase_space_instability_proven": false,
+  "paper_iii_gate": "BLOCKED",
+  "paths": [
+    {
+      "barrier_limit": 0.0,
+      "classification": "FREE_LAGRANGIAN_DENSITY_POINTWISE",
+      "domain": "eventually inside",
+      "name": "fixed-curvature"
+    },
+    {
+      "barrier_limit": 0.3660254037844387,
+      "classification": "CURVATURE_COLLAPSES_BUT_BARRIER_REMAINS_FINITE",
+      "name": "stationary-root",
+      "z": 2.3660254037844384
+    },
+    {
+      "barrier_limit": 0.5,
+      "classification": "FINITE_PATH_DEPENDENT_BARRIER",
+      "name": "boundary-layer",
+      "z": 2.0
+    },
+    {
+      "barrier_limit": null,
+      "classification": "OUTSIDE_DOMAIN_FOR_ALL_POSITIVE_KAPPA0",
+      "name": "geodesic",
+      "z": 0.0
+    }
+  ],
+  "required_checks": {
+    "bounded_reduced_energy": "UNRESOLVED",
+    "covariant_variational_formulation": "PASS_WITHIN_FLAT_GENERIC_LK_SECTOR",
+    "full_phase_space_stability": "UNRESOLVED",
+    "generic_constraint_closure": "PASS_FROM_SOURCE_SPECIALIZATION",
+    "observable_mapping": "FAIL_NONE_DERIVED",
+    "reduced_planar_local_stability": "FAIL_EXPONENTIAL_MODE",
+    "standard_limit_full_solution_space": "FAIL_NONUNIFORM_AND_GEODESIC_EXCLUDED"
+  },
+  "stationary_scaling": [
+    {
+      "classification": "TIMESCALE_DIVERGES_AS_KAPPA0_TO_ZERO",
+      "growth_rate": 2.3660254037844384,
+      "kappa_star": 2.3660254037844384,
+      "z_star": 2.3660254037844384
+    },
+    {
+      "classification": "TIMESCALE_DIVERGES_AS_KAPPA0_TO_ZERO",
+      "growth_rate": 0.23660254037844386,
+      "kappa_star": 0.23660254037844386,
+      "z_star": 2.3660254037844384
+    },
+    {
+      "classification": "TIMESCALE_DIVERGES_AS_KAPPA0_TO_ZERO",
+      "growth_rate": 0.023660254037844386,
+      "kappa_star": 0.023660254037844386,
+      "z_star": 2.3660254037844384
+    },
+    {
+      "classification": "TIMESCALE_DIVERGES_AS_KAPPA0_TO_ZERO",
+      "growth_rate": 0.0023660254037844385,
+      "kappa_star": 0.0023660254037844385,
+      "z_star": 2.3660254037844384
+    }
+  ],
+  "study_id": "paper-ii-b-gate-v1",
+  "unresolved_required_checks": [
+    "full_phase_space_stability",
+    "bounded_reduced_energy"
+  ],
+  "warning": "Conditional rejection applies to fixed barrier in flat timelike pointwise model; it is not a proof against all UMCH formulations."
+}
