@@ -1,0 +1,8 @@
+{
+  "study_id": "paper-ii-b-canonical-constraints-v1",
+  "ambient_spatial_dimensions_symbol": "N",
+  "source_formula_ids": ["CGR2002-E19", "CGR2002-E24", "CGR2002-E25", "CGR2002-E26", "CGR2002-E27", "CGR2002-E28", "CGR2002-E29", "CGR2002-E30", "CGR2002-E31"],
+  "samples": [
+    {"z": 2.0, "epsilon": 0.5, "kappa0": 3.0, "mc": 7.0, "kappa2": 0.4, "z_prime": 0.2}
+  ]
+}
