@@ -1,0 +1,58 @@
+{
+  "cases": [
+    {
+      "contains_zero_curvature": false,
+      "kappa": [
+        1.0,
+        2.0
+      ],
+      "name": "both-pass",
+      "pointwise_bound_satisfied": true,
+      "rms": 1.5811388300841898,
+      "rms_bound_satisfied": true,
+      "weights": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "contains_zero_curvature": false,
+      "kappa": [
+        0.2,
+        0.4
+      ],
+      "name": "both-fail",
+      "pointwise_bound_satisfied": false,
+      "rms": 0.31622776601683794,
+      "rms_bound_satisfied": false,
+      "weights": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "contains_zero_curvature": true,
+      "kappa": [
+        0.0,
+        2.0
+      ],
+      "name": "rms-passes-pointwise-fails",
+      "pointwise_bound_satisfied": false,
+      "rms": 1.4142135623730951,
+      "rms_bound_satisfied": true,
+      "weights": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "counterexamples": [
+    "rms-passes-pointwise-fails"
+  ],
+  "equivalence_to_pointwise_umch": "NOT_EQUIVALENT",
+  "hypothesis_class": "ALTERNATIVE_HYPOTHESIS",
+  "identifiability": "NON_IDENTIFIABLE",
+  "observable_dimension": "L^-1",
+  "study_id": "paper-ii-coarse-grained-non-equivalence-v1",
+  "warning": "Algebraic counterexample establishes non-equivalence only; no dynamics or experimental estimator is supplied."
+}

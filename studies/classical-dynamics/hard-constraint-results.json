@@ -1,0 +1,47 @@
+{
+  "cases": [
+    {
+      "analysis_level": "KINEMATIC_KKT_ALGEBRA",
+      "classification": "FEASIBLE_INACTIVE",
+      "complementarity_residual": -0.0,
+      "g": -1.0,
+      "kappa": 2.0,
+      "kappa0": 1.0,
+      "lambda": 0.0,
+      "name": "interior"
+    },
+    {
+      "analysis_level": "KINEMATIC_KKT_ALGEBRA",
+      "classification": "FEASIBLE_ACTIVE",
+      "complementarity_residual": 0.0,
+      "g": 0.0,
+      "kappa": 1.0,
+      "kappa0": 1.0,
+      "lambda": 0.5,
+      "name": "active-boundary"
+    },
+    {
+      "analysis_level": "KINEMATIC_KKT_ALGEBRA",
+      "classification": "INFEASIBLE",
+      "complementarity_residual": 0.0,
+      "g": 0.5,
+      "kappa": 0.5,
+      "kappa0": 1.0,
+      "lambda": 0.0,
+      "name": "infeasible"
+    },
+    {
+      "analysis_level": "KINEMATIC_KKT_ALGEBRA",
+      "classification": "FEASIBLE_ACTIVE",
+      "complementarity_residual": 0.0,
+      "g": 0.0,
+      "kappa": 0.0,
+      "kappa0": 0.0,
+      "lambda": 0.0,
+      "name": "zero-limit-geodesic"
+    }
+  ],
+  "scope": "algebraic feasibility and complementarity only; not worldline equations",
+  "study_id": "paper-ii-hard-constraint-kkt-v1",
+  "warning": "Passing KKT algebra does not derive an action, equations, stability, or well-posed evolution."
+}

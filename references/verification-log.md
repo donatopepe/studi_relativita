@@ -52,6 +52,33 @@ Access date for this initial verification: **2026-08-21**. “Verified” means 
 - Exact supported topic: recommended 2018 values, units, and uncertainties for established fundamental physical constants.
 - Limits: CODATA constants do not determine `κ₀`; any proposed combination needs independent physical justification.
 
+## ArreagaCapovillaGuven2001
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1088/0264-9381/18/23/304
+- Canonical article: https://doi.org/10.1088/0264-9381/18/23/304
+- Access date: 2026-08-21
+- Exact supported topic: variational dynamics for relativistic particle actions that are functionals of Frenet--Serret curvatures, including geometric equations and conserved quantities under the article's assumptions.
+- Limits: this source does not establish a universal positive lower curvature bound, and its model-specific results cannot be transferred to UMCH without derivation.
+
+## CapovillaGuvenRojas2002
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1088/0264-9381/19/8/315
+- Canonical article: https://doi.org/10.1088/0264-9381/19/8/315
+- Access date: 2026-08-21
+- Exact supported topic: Hamiltonian treatment of Frenet--Serret particle dynamics and the constrained structure arising from reparametrization-invariant curvature-dependent worldline actions.
+- Limits: this source does not establish a universal positive lower curvature bound or prove stability of either UMCH candidate.
+
+## NesterenkoEtAl1995
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1063/1.531332
+- Canonical article: https://doi.org/10.1063/1.531332
+- Access date: 2026-08-21
+- Exact supported topic: equations for relativistic particles with Lagrangians depending on first worldline curvature and an example motivated by maximal proper acceleration.
+- Limits: this source does not establish a minimum curvature; an upper-acceleration model is not evidence for `κ≥κ₀>0`.
+
 ## Verification discipline
 
 Metadata fetched during this audit is not stored as authority-free prose: each BibTeX DOI resolves to its canonical record. New entries require a new section matching the citation key, canonical URL, access date, supported topic, and limits. Search snippets alone are insufficient.
