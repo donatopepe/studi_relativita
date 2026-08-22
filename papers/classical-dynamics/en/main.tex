@@ -1,0 +1,69 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,booktabs}
+\usepackage{geometry,hyperref}
+\geometry{margin=2.7cm}
+\title{Universal Minimum Curvature Hypothesis II:\\candidate classical dynamics and no-go tests}
+\author{Pepe Donato\\Independent Researcher\\\texttt{donato.pepe.it@gmail.com}}
+\date{Audited comparative draft --- 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We compare three implementations of hypothetical scale $\kappa_0>0$: hard pointwise constraint, curvature barrier, and a separate coarse-grained RMS bound. Reproducible checks cover KKT algebra, elementary barrier properties, and RMS non-equivalence. Neither pointwise dynamics yet has complete variation and canonical structure. States: A and B \texttt{INCOMPLETE}; C \texttt{NON\_IDENTIFIABLE} and \texttt{ALTERNATIVE\_HYPOTHESIS}; core hypothesis \texttt{UNPROVEN}; no-go \texttt{NO\_GO\_NOT\_ESTABLISHED}.
+\end{abstract}
+
+\section{Scientific status}\label{sec:p2-status}
+Paper I showed that an ideal timelike geodesic has $\kappa=0$. Paper II assumes no solution: it compares mechanisms and preserves negative findings. Geometric-action literature supplies variational and Hamiltonian methods \cite{ArreagaCapovillaGuven2001,CapovillaGuvenRojas2002}; acceleration-dependent models do not establish minimum curvature \cite{NesterenkoEtAl1995}.
+
+\section{Method and levels}\label{sec:p2-method}
+We distinguish \texttt{KINEMATIC}, \texttt{SYMBOLIC}, algebraic \texttt{CONSTRAINT}, derivative-count \texttt{VARIATIONAL}, and \texttt{CONJECTURAL} parts. Covariance, boundary terms, constraints, conservation, stability, causality, standard limit, and observables are separate gates.
+
+\section{Candidate A: hard constraint}\label{sec:p2-a}
+Consider
+\begin{equation}\label{eq:p2-hard}
+S_A=S_0+\int ds\,\lambda g,\qquad g=\kappa_0-\kappa\le0,
+\end{equation}
+with $\lambda\ge0$ and $\lambda g=0$. The preregistered check identifies interior, active-boundary, and infeasible branches. For every $\kappa_0>0$, data with $\kappa=0$ lie outside the feasible set. At $\kappa_0=0$, only set-level admissibility returns. Nonsmooth variation, active-set evolution, and Dirac classification are missing: state \texttt{INCOMPLETE}.
+
+\section{Candidate B: barrier}\label{sec:p2-b}
+We fix
+\begin{equation}\label{eq:p2-barrier}
+S_B=-mc\int ds+\epsilon mc\int ds\,\frac{1}{\kappa/\kappa_0-1},
+\qquad \kappa>\kappa_0.
+\end{equation}
+Barrier diverges at boundary, decreases, and is convex. Limit is nonuniform: it vanishes at fixed $\kappa>0$, remains finite for $\kappa=r\kappa_0$, and excludes geodesic. Generic variation can contain up to four embedding derivatives, but degeneracy and gauge constraints prevent automatic instability conclusions. State \texttt{INCOMPLETE}.
+
+\section{Candidate C: separate RMS}\label{sec:p2-c}
+As a distinct proposal define
+\begin{equation}\label{eq:p2-rms}
+\kappa_{\rm RMS}=\left(\frac{\int d\tau\,w\kappa^2}{\int d\tau\,w}\right)^{1/2}\ge\kappa_0.
+\end{equation}
+For samples $[0,2]$, equal weights, and $\kappa_0=1$, RMS is $\sqrt2$ while pointwise bound fails. Thus C is \texttt{ALTERNATIVE\_HYPOTHESIS}, non-equivalent, and \texttt{NON\_IDENTIFIABLE} without kernel and instrument response.
+
+\section{Dimensions}\label{sec:p2-dimensions}
+$[\kappa]=[\kappa_0]=L^{-1}$ and $[S]=ML^2T^{-1}$. In B, $\epsilon$ and ratio are dimensionless. In A, dimension of $\lambda$ depends on normalized constraint $1-\kappa/\kappa_0$ versus dimensional $\kappa_0-\kappa$; convention must precede variation.
+
+\section{Constraints, stability, and causality}\label{sec:p2-stability}
+No complete canonical structure has been derived for A or B. We claim no bounded Hamiltonian, ghost freedom, stability, or causality. Geometric symmetries do not replace computing conserved charges. Higher order alone does not prove an Ostrogradsky theorem in a degenerate system.
+
+\section{Standard limit and equivalence}\label{sec:p2-limits}
+A recovers geodesic feasibility only exactly at zero; B has a nonuniform limit; C becomes nonrestrictive but has no dynamics. No convergence of solutions, initial data, or observables is shown. A/B remain in tension with pointwise equivalence principle.
+
+\section{Observables}\label{sec:p2-observables}
+No pointwise candidate yet maps data to $\kappa_0$. Excluding curves is not a quantitative prediction. C suggests RMS proper acceleration, but window, kernel, causality, and uncertainty model are absent.
+
+\section{Decision and gate}\label{sec:p2-decision}
+\texttt{NO\_GO\_NOT\_ESTABLISHED}: A and B are incomplete, not rejected. Paper III is scientifically deferred until at least one passes variation, constraints, stability, causality, standard-limit, and identifiability gates. C cannot serve as an implicit rescue.
+
+\section{Limitations}\label{sec:p2-limitations}
+We provide no complete equations, Hamiltonian analysis, worldline simulations, experimental bound, ALD, QED, gravity, or cosmology. Conclusions are conditional on fixed models.
+
+\section{AI assistance}\label{sec:p2-ai}
+AI assisted research, code, translation, and drafting; it is neither source nor coauthor. Metadata, algebra, interpretations, and conclusions require human responsibility.
+
+\bibliographystyle{plain}
+\bibliography{../../../references/library}
+\end{document}

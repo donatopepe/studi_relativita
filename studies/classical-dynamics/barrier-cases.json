@@ -1,0 +1,15 @@
+{
+  "study_id": "paper-ii-barrier-v1",
+  "barrier": "f(z)=1/(z-1)",
+  "dimensionless_ratio": "z=kappa/kappa0",
+  "coefficient": "epsilon*m*c",
+  "coefficient_dimension": "M L T^-1",
+  "measure_dimension": "L",
+  "action_dimension": "M L^2 T^-1",
+  "samples": [1.0001, 1.01, 2.0, 10.0, 1000000.0],
+  "limit_cases": [
+    {"name": "fixed-kappa", "path": "kappa=K>0 fixed; kappa0->0", "ratio_limit": "infinity"},
+    {"name": "proportional-kappa", "path": "kappa=r*kappa0 with r=2", "ratio_limit": "2"},
+    {"name": "geodesic", "path": "kappa=0 for kappa0>0", "ratio_limit": "0"}
+  ]
+}

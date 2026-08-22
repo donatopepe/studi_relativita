@@ -1,0 +1,67 @@
+{
+  "barrier": "f(z)=1/(z-1)",
+  "dimensions": {
+    "action": "M L^2 T^-1",
+    "coefficient": "M L T^-1",
+    "dimension_check": "PASS",
+    "measure": "L"
+  },
+  "limit_cases": [
+    {
+      "barrier_limit": 0.0,
+      "classification": "VANISHES_POINTWISE",
+      "name": "fixed-kappa",
+      "path": "kappa=K>0 fixed; kappa0->0",
+      "ratio_limit": "infinity"
+    },
+    {
+      "barrier_limit": 1.0,
+      "classification": "FINITE_NONZERO",
+      "name": "proportional-kappa",
+      "path": "kappa=r*kappa0 with r=2",
+      "ratio_limit": "2"
+    },
+    {
+      "barrier_limit": null,
+      "classification": "OUTSIDE_DOMAIN",
+      "name": "geodesic",
+      "path": "kappa=0 for kappa0>0",
+      "ratio_limit": "0"
+    }
+  ],
+  "samples": [
+    {
+      "f": 10000.0000000011,
+      "f_prime": -100000000.00002204,
+      "f_second": 2000000000000.661,
+      "z": 1.0001
+    },
+    {
+      "f": 99.99999999999991,
+      "f_prime": -9999.999999999982,
+      "f_second": 1999999.9999999946,
+      "z": 1.01
+    },
+    {
+      "f": 1.0,
+      "f_prime": -1.0,
+      "f_second": 2.0,
+      "z": 2.0
+    },
+    {
+      "f": 0.1111111111111111,
+      "f_prime": -0.012345679012345678,
+      "f_second": 0.0027434842249657062,
+      "z": 10.0
+    },
+    {
+      "f": 1.000001000001e-06,
+      "f_prime": -1.000002000003e-12,
+      "f_second": 2.000006000012e-18,
+      "z": 1000000.0
+    }
+  ],
+  "standard_limit_classification": "NONUNIFORM",
+  "study_id": "paper-ii-barrier-v1",
+  "warning": "Elementary barrier checks do not derive equations, constraints, stability, causality, or an observable."
+}
