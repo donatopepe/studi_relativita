@@ -1,0 +1,14 @@
+{
+  "study_id": "paper-ii-b-planar-stationary-v1",
+  "scope": "PLANAR_CONSTANT_CURVATURE_ONLY",
+  "source_formula_ids": ["ACG2001-E45", "ACG2001-E46"],
+  "kappa0": 1.0,
+  "epsilon_values": [0.01, 0.1, 0.5, 1.0, 10.0],
+  "assumptions": [
+    "flat Minkowski spacetime",
+    "planar sector kappa2=0",
+    "constant-curvature background z'=0",
+    "proper-length Frenet-Serret convention",
+    "epsilon>0 and z>1"
+  ]
+}
