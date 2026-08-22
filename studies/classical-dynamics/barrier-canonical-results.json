@@ -1,0 +1,73 @@
+{
+  "conventions": {
+    "L": "m*c*ell",
+    "L_kappa": "m*c*ell_z/kappa0",
+    "L_kappakappa": "m*c*ell_zz/kappa0^2",
+    "dimensionless_lagrangian": "ell(z)=-1+epsilon/(z-1)",
+    "z": "kappa/kappa0"
+  },
+  "epsilon": 0.5,
+  "legendre_sector": "GENERIC_LKK_NONZERO",
+  "momentum_range": "(-infinity,0)",
+  "samples": [
+    {
+      "ell": 48.99999999999996,
+      "ell_z": -4999.999999999991,
+      "ell_zz": 999999.9999999973,
+      "hessian": {
+        "classification": "ONE_TANGENT_NULL_DIRECTION",
+        "radial": 1009999.9999999973,
+        "tangent": 0.0,
+        "transverse_normal": -4999.999999999991
+      },
+      "legendre_potential": -5098.999999999991,
+      "z": 1.01
+    },
+    {
+      "ell": 3.9999999999999956,
+      "ell_z": -49.999999999999915,
+      "ell_zz": 999.9999999999974,
+      "hessian": {
+        "classification": "ONE_TANGENT_NULL_DIRECTION",
+        "radial": 1099.9999999999973,
+        "tangent": 0.0,
+        "transverse_normal": -49.999999999999915
+      },
+      "legendre_potential": -58.9999999999999,
+      "z": 1.1
+    },
+    {
+      "ell": -0.5,
+      "ell_z": -0.5,
+      "ell_zz": 1.0,
+      "hessian": {
+        "classification": "ONE_TANGENT_NULL_DIRECTION",
+        "radial": 2.0,
+        "tangent": 0.0,
+        "transverse_normal": -0.5
+      },
+      "legendre_potential": -0.5,
+      "z": 2.0
+    },
+    {
+      "ell": -0.9444444444444444,
+      "ell_z": -0.006172839506172839,
+      "ell_zz": 0.0013717421124828531,
+      "hessian": {
+        "classification": "ONE_TANGENT_NULL_DIRECTION",
+        "radial": 0.013717421124828532,
+        "tangent": 0.0,
+        "transverse_normal": -0.006172839506172839
+      },
+      "legendre_potential": 0.882716049382716,
+      "z": 10.0
+    }
+  ],
+  "source_formula_ids": [
+    "CGR2002-E19",
+    "CGR2002-E26",
+    "CGR2002-E29"
+  ],
+  "study_id": "paper-ii-b-canonical-specialization-v1",
+  "warning": "This specialization does not prove reduced Hamiltonian boundedness, stability, or causality; it only establishes generic Hessian factors and curvature Legendre invertibility."
+}
