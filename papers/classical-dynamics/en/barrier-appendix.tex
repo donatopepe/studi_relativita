@@ -1,0 +1,25 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}\usepackage[T1]{fontenc}\usepackage[english]{babel}
+\usepackage{amsmath,amssymb,geometry,hyperref}\geometry{margin=2.7cm}
+\title{UMCH Paper II-B: canonical analysis of fixed barrier}
+\author{Pepe Donato}\date{2026}
+\begin{document}\maketitle
+\begin{abstract}We specialize published Frenet--Serret formulas to fixed barrier. Model is \texttt{CONTRADICTED\_UNDER\_ASSUMPTIONS}; Paper III gate \texttt{BLOCKED}; $\kappa_0>0$ remains \texttt{UNPROVEN}.\end{abstract}
+\section{Model}\label{sec:p2b-model}
+$L=mc[-1+\epsilon/(\kappa/\kappa_0-1)]$, $\kappa>\kappa_0$, $\epsilon>0$. General formulas are sourced from \cite{ArreagaCapovillaGuven2001,CapovillaGuvenRojas2002}.
+\section{Canonical structure}\label{sec:p2b-canonical}
+$L_\kappa<0$, $L_{\kappa\kappa}>0$; Legendre map is invertible. In sourced generic sector: primary $P\cdot\dot X=0$, secondary $\mathcal H_c=0$, two first-class constraints. This does not prove bounded reduced Hamiltonian.
+\section{Stationary sector}\label{sec:p2b-stationary}
+$z_*=1+\epsilon+\sqrt{\epsilon^2+\epsilon}$. Planar linearization:
+\[\delta z''-(\kappa_0z_*)^2\delta z=0.\]
+A growing local planar mode, not a full constrained instability proof.
+\section{Standard limit}\label{sec:p2b-limit}
+Limit is nonuniform: fixed positive curvature, boundary/stationary paths, and geodesic path disagree.
+\section{Decision}\label{sec:p2b-gate}
+Reduced local stability, full-solution-space standard limit, and observable mapping fail. B is \texttt{CONTRADICTED\_UNDER\_ASSUMPTIONS}; Paper III \texttt{BLOCKED}.
+\section{Limitations}\label{sec:p2b-limits}
+Bounded reduced energy, nonlinear stability, and causality remain unresolved. Decision does not falsify all UMCH.
+\section{AI assistance}\label{sec:p2b-ai}
+AI assisted code/drafting; it is neither source nor coauthor. Human responsibility remains.
+\bibliographystyle{plain}\bibliography{../../../references/library}
+\end{document}
