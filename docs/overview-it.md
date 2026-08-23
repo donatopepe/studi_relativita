@@ -31,3 +31,7 @@ DOCX originale preservato con SHA-256; estrazione e inventario deterministici; c
 ## UMCH-OV-0008 — Paper II
 
 Analisi comparativa pronta per review: candidati pointwise A e B restano `INCOMPLETE`; candidato RMS C è `NON_IDENTIFIABLE`, `ALTERNATIVE_HYPOTHESIS` e non equivalente. Decisione `NO_GO_NOT_ESTABLISHED`: incompletezza non è confutazione. Paper III resta scientificamente deferred finché una dinamica pointwise non supera gate variazionali, canonici, di stabilità, causalità, limite e osservabilità.
+
+## UMCH-OV-0009 — Decisione Paper II-B
+
+La barriera fissa B è `CONTRADICTED_UNDER_ASSUMPTIONS`; Paper III è `BLOCKED`. Struttura canonica sourced esiste, ma falliscono stabilità locale ridotta, limite standard dell’intero spazio soluzioni e mappa osservabile. Non è confutazione completa di UMCH.
