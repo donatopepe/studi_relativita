@@ -1,0 +1,124 @@
+{
+  "assumptions": [
+    "flat Minkowski spacetime",
+    "planar sector kappa2=0",
+    "constant-curvature background z'=0",
+    "proper-length Frenet-Serret convention",
+    "epsilon>0 and z>1"
+  ],
+  "cases": [
+    {
+      "epsilon": 0.01,
+      "kappa_star": 1.110498756211209,
+      "local_reduced_mode": {
+        "classification": "LOCALLY_HYPERBOLIC_REDUCED_PLANAR_MODE",
+        "equation": "DELTA_Z_DOUBLE_PRIME_MINUS_OMEGA2_DELTA_Z_EQUALS_ZERO",
+        "full_phase_space_stability_claim": false,
+        "growth_rate_per_length": 1.110498756211209,
+        "omega_squared": 1.2332074875466421
+      },
+      "physical_z": 1.110498756211209,
+      "roots": {
+        "discarded": [
+          0.909501243788791
+        ],
+        "physical": [
+          1.110498756211209
+        ]
+      },
+      "stationary_residual": -1.2329012879632828e-15
+    },
+    {
+      "epsilon": 0.1,
+      "kappa_star": 1.4316624790355401,
+      "local_reduced_mode": {
+        "classification": "LOCALLY_HYPERBOLIC_REDUCED_PLANAR_MODE",
+        "equation": "DELTA_Z_DOUBLE_PRIME_MINUS_OMEGA2_DELTA_Z_EQUALS_ZERO",
+        "full_phase_space_stability_claim": false,
+        "growth_rate_per_length": 1.4316624790355401,
+        "omega_squared": 2.049657453878188
+      },
+      "physical_z": 1.4316624790355401,
+      "roots": {
+        "discarded": [
+          0.7683375209644601
+        ],
+        "physical": [
+          1.4316624790355401
+        ]
+      },
+      "stationary_residual": -6.357858590868748e-16
+    },
+    {
+      "epsilon": 0.5,
+      "kappa_star": 2.3660254037844384,
+      "local_reduced_mode": {
+        "classification": "LOCALLY_HYPERBOLIC_REDUCED_PLANAR_MODE",
+        "equation": "DELTA_Z_DOUBLE_PRIME_MINUS_OMEGA2_DELTA_Z_EQUALS_ZERO",
+        "full_phase_space_stability_claim": false,
+        "growth_rate_per_length": 2.3660254037844384,
+        "omega_squared": 5.598076211353314
+      },
+      "physical_z": 2.3660254037844384,
+      "roots": {
+        "discarded": [
+          0.6339745962155614
+        ],
+        "physical": [
+          2.3660254037844384
+        ]
+      },
+      "stationary_residual": 5.253631760259033e-16
+    },
+    {
+      "epsilon": 1.0,
+      "kappa_star": 3.414213562373095,
+      "local_reduced_mode": {
+        "classification": "LOCALLY_HYPERBOLIC_REDUCED_PLANAR_MODE",
+        "equation": "DELTA_Z_DOUBLE_PRIME_MINUS_OMEGA2_DELTA_Z_EQUALS_ZERO",
+        "full_phase_space_stability_claim": false,
+        "growth_rate_per_length": 3.414213562373095,
+        "omega_squared": 11.65685424949238
+      },
+      "physical_z": 3.414213562373095,
+      "roots": {
+        "discarded": [
+          0.5857864376269049
+        ],
+        "physical": [
+          3.414213562373095
+        ]
+      },
+      "stationary_residual": 3.790538507934088e-16
+    },
+    {
+      "epsilon": 10.0,
+      "kappa_star": 21.488088481701517,
+      "local_reduced_mode": {
+        "classification": "LOCALLY_HYPERBOLIC_REDUCED_PLANAR_MODE",
+        "equation": "DELTA_Z_DOUBLE_PRIME_MINUS_OMEGA2_DELTA_Z_EQUALS_ZERO",
+        "full_phase_space_stability_claim": false,
+        "growth_rate_per_length": 21.488088481701517,
+        "omega_squared": 461.7379465974334
+      },
+      "physical_z": 21.488088481701517,
+      "roots": {
+        "discarded": [
+          0.5119115182984846
+        ],
+        "physical": [
+          21.488088481701517
+        ]
+      },
+      "stationary_residual": -2.3856570587567646e-15
+    }
+  ],
+  "derivation_summary": "At planar constant curvature, E46 gives ell-z*ell_z=0. Linearization gives delta_z''-(kappa0*z_star)^2 delta_z=0.",
+  "scope": "PLANAR_CONSTANT_CURVATURE_ONLY",
+  "source_formula_ids": [
+    "ACG2001-E45",
+    "ACG2001-E46"
+  ],
+  "study_id": "paper-ii-b-planar-stationary-v1",
+  "warning": "This reduced result does not establish full constrained stability, energy unboundedness, or nonlinear fate; it only identifies local planar exponential modes."
+}

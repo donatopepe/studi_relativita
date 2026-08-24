@@ -59,6 +59,20 @@ jobs:
           bibtex main
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
           pdflatex -interaction=nonstopmode -halt-on-error main.tex
+      - name: Compile Paper II-B Italian appendix
+        working-directory: papers/classical-dynamics/it
+        run: |
+          pdflatex -jobname=barrier-appendix-it -interaction=nonstopmode -halt-on-error barrier-appendix.tex
+          bibtex barrier-appendix-it
+          pdflatex -jobname=barrier-appendix-it -interaction=nonstopmode -halt-on-error barrier-appendix.tex
+          pdflatex -jobname=barrier-appendix-it -interaction=nonstopmode -halt-on-error barrier-appendix.tex
+      - name: Compile Paper II-B English appendix
+        working-directory: papers/classical-dynamics/en
+        run: |
+          pdflatex -jobname=barrier-appendix-en -interaction=nonstopmode -halt-on-error barrier-appendix.tex
+          bibtex barrier-appendix-en
+          pdflatex -jobname=barrier-appendix-en -interaction=nonstopmode -halt-on-error barrier-appendix.tex
+          pdflatex -jobname=barrier-appendix-en -interaction=nonstopmode -halt-on-error barrier-appendix.tex
       - uses: actions/upload-artifact@v4
         with:
           name: umch-paper-pdfs
@@ -67,3 +81,5 @@ jobs:
             papers/foundation/en/main.pdf
             papers/classical-dynamics/it/main.pdf
             papers/classical-dynamics/en/main.pdf
+            papers/classical-dynamics/it/barrier-appendix-it.pdf
+            papers/classical-dynamics/en/barrier-appendix-en.pdf

@@ -1,0 +1,37 @@
+{
+  "barrier_meets_generic_assumption_Lkk_nonzero": true,
+  "class_status": "TWO_FIRST_CLASS_IN_SOURCE_GENERIC_SECTOR",
+  "closure": "NO_OTHER_CONSTRAINTS_IN_SOURCE_GENERIC_SECTOR",
+  "constraint_chain": "ONE_PRIMARY_PLUS_ONE_SECONDARY",
+  "full_stability_derived": false,
+  "physical_phase_space_degrees_of_freedom_source_notation": "2N",
+  "primary": "P_DOT_XDOT_EQUALS_ZERO",
+  "reduced_hamiltonian_boundedness_derived": false,
+  "samples": [
+    {
+      "L": -3.5,
+      "L_kappa": -1.1666666666666667,
+      "L_kappakappa": 0.7777777777777778,
+      "eta2_coefficient": -0.46666666666666673,
+      "highest_momentum_eta1_coefficient_proper_gauge": -1.1666666666666667,
+      "legendre_potential": -3.5,
+      "minus_Lkappa_prime_eta1_coefficient": -0.46666666666666673,
+      "primary_constraint_residual_P_dot_velocity": 0.0,
+      "tangent_coefficient": -3.5
+    }
+  ],
+  "secondary": "CANONICAL_HAMILTONIAN_EQUALS_ZERO",
+  "source_formula_ids": [
+    "CGR2002-E19",
+    "CGR2002-E24",
+    "CGR2002-E25",
+    "CGR2002-E26",
+    "CGR2002-E27",
+    "CGR2002-E28",
+    "CGR2002-E29",
+    "CGR2002-E30",
+    "CGR2002-E31"
+  ],
+  "study_id": "paper-ii-b-canonical-constraints-v1",
+  "warning": "Source constraint classification applies to generic first-curvature L(kappa) sector and this barrier meets Lkk!=0; specialization does not prove bounded reduced energy, stability, causality, or observability."
+}

@@ -1,0 +1,14 @@
+{
+  "study_id": "paper-ii-b-gate-v1",
+  "epsilon": 0.5,
+  "kappa0_samples": [1.0, 0.1, 0.01, 0.001],
+  "required_checks": {
+    "covariant_variational_formulation": "PASS_WITHIN_FLAT_GENERIC_LK_SECTOR",
+    "generic_constraint_closure": "PASS_FROM_SOURCE_SPECIALIZATION",
+    "reduced_planar_local_stability": "FAIL_EXPONENTIAL_MODE",
+    "full_phase_space_stability": "UNRESOLVED",
+    "bounded_reduced_energy": "UNRESOLVED",
+    "standard_limit_full_solution_space": "FAIL_NONUNIFORM_AND_GEODESIC_EXCLUDED",
+    "observable_mapping": "FAIL_NONE_DERIVED"
+  }
+}

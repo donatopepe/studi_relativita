@@ -1,0 +1,13 @@
+{
+  "study_id": "paper-ii-b-canonical-specialization-v1",
+  "epsilon": 0.5,
+  "samples": [1.01, 1.1, 2.0, 10.0],
+  "source_formula_ids": ["CGR2002-E19", "CGR2002-E26", "CGR2002-E29"],
+  "conventions": {
+    "dimensionless_lagrangian": "ell(z)=-1+epsilon/(z-1)",
+    "z": "kappa/kappa0",
+    "L": "m*c*ell",
+    "L_kappa": "m*c*ell_z/kappa0",
+    "L_kappakappa": "m*c*ell_zz/kappa0^2"
+  }
+}

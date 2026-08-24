@@ -57,18 +57,31 @@ Access date for this initial verification: **2026-08-21**. “Verified” means 
 - Status: `VERIFIED_METADATA_AND_SCOPE`
 - Canonical metadata: https://api.crossref.org/works/10.1088/0264-9381/18/23/304
 - Canonical article: https://doi.org/10.1088/0264-9381/18/23/304
+- arXiv record: https://arxiv.org/abs/hep-th/0105040
 - Access date: 2026-08-21
 - Exact supported topic: variational dynamics for relativistic particle actions that are functionals of Frenet--Serret curvatures, including geometric equations and conserved quantities under the article's assumptions.
-- Limits: this source does not establish a universal positive lower curvature bound, and its model-specific results cannot be transferred to UMCH without derivation.
+- Imported formula scope:
+  - `ACG2001-E42`: normal Euler--Lagrange vector for general first-curvature `L(κ₁)`.
+  - `ACG2001-E45`: first integral `(L_κ)^2 κ₂ = constant` under regularity assumptions.
+  - `ACG2001-E46`: scalar normal equation `L_κ''+(L-L_κκ₁)κ₁-L_κκ₂²=0` in source conventions.
+- Limits: this source does not establish a universal positive lower curvature bound, and specialization does not establish full stability or a complete canonical analysis.
 
 ## CapovillaGuvenRojas2002
 
 - Status: `VERIFIED_METADATA_AND_SCOPE`
 - Canonical metadata: https://api.crossref.org/works/10.1088/0264-9381/19/8/315
 - Canonical article: https://doi.org/10.1088/0264-9381/19/8/315
+- arXiv record: https://arxiv.org/abs/hep-th/0111014
 - Access date: 2026-08-21
 - Exact supported topic: Hamiltonian treatment of Frenet--Serret particle dynamics and the constrained structure arising from reparametrization-invariant curvature-dependent worldline actions.
-- Limits: this source does not establish a universal positive lower curvature bound or prove stability of either UMCH candidate.
+- Imported formula scope:
+  - `CGR2002-E19`: highest momentum `P=(L_κ/√(-γ))η₁`.
+  - `CGR2002-E24`: conserved momentum decomposition in Frenet--Serret basis.
+  - `CGR2002-E25`: primary reparametrization constraint `P·Xdot=0`.
+  - `CGR2002-E26`: Hessian for general first-curvature action and its null tangent direction.
+  - `CGR2002-E28`: canonical Hamiltonian density form.
+  - `CGR2002-E29`: Legendre potential `V=L_κκ-L`.
+- Limits: this source does not establish a universal positive lower curvature bound; imported formulas do not establish full stability, bounded reduced energy, or an observable for this barrier.
 
 ## NesterenkoEtAl1995
 

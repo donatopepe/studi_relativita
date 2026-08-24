@@ -29,6 +29,10 @@ Comparative draft and reproducible audit are ready for human scientific review:
 
 Paper III remains scientifically deferred until a pointwise candidate passes variation, constraints, stability, causality, standard-limit, and identifiability gates.
 
+## Paper II-B fixed-barrier decision
+
+Candidate B fixed barrier is `CONTRADICTED_UNDER_ASSUMPTIONS`: sourced canonical structure exists, but preregistered reduced local-stability, full standard-solution-space limit, and observable-mapping gates fail. Paper III status is `BLOCKED`. This conditional rejection does not falsify all UMCH or Candidate A.
+
 ## Paper III — Radiation reaction
 
 Entry gate: Paper II dynamics survives. Re-derive ALD/Landau–Lifshitz comparison; test runaway and preacceleration rather than assuming removal. No imposed constant-curvature trajectory may masquerade as solution.
