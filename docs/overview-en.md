@@ -31,3 +31,7 @@ Original DOCX preserved with SHA-256; deterministic extraction and inventory; st
 ## UMCH-OV-0008 — Paper II
 
 Comparative analysis is review-ready: pointwise candidates A and B remain `INCOMPLETE`; RMS candidate C is `NON_IDENTIFIABLE`, an `ALTERNATIVE_HYPOTHESIS`, and non-equivalent. Decision is `NO_GO_NOT_ESTABLISHED`: incompleteness is not falsification. Paper III remains scientifically deferred until a pointwise dynamics passes variational, canonical, stability, causality, limit, and observability gates.
+
+## UMCH-OV-0009 — Paper II-B decision
+
+Fixed barrier B is `CONTRADICTED_UNDER_ASSUMPTIONS`; Paper III is `BLOCKED`. Sourced canonical structure exists, but reduced local stability, full-solution-space standard limit, and observable mapping fail. This is not full UMCH falsification.
