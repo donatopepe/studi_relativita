@@ -1,0 +1,9 @@
+claim_id,statement,level,status,evidence,limitation
+UMCH-ST-CLM-0001,Free geodesic may have zero proper acceleration in curved spacetime,KINEMATIC,SUPPORTED_WITH_CONDITIONS,standard covariant definition,does not prove positive floor
+UMCH-ST-CLM-0002,Minkowski operational response vector vanishes,EXACT_CASE,SUPPORTED_WITH_CONDITIONS,deterministic null control,depends on response definitions
+UMCH-ST-CLM-0003,FLRW comoving tidal response follows addot over a,EXACT_CASE,SUPPORTED_WITH_CONDITIONS,orthonormal-frame specialization,not a floor measurement
+UMCH-ST-CLM-0004,Schwarzschild Ricci zero can coexist with tidal Weyl response,EXACT_CASE,SUPPORTED_WITH_CONDITIONS,static-frame eigenvalues,frame restricted
+UMCH-ST-CLM-0005,VSI scalar invariants can vanish while operational response is nonzero,TOY_EXACT_CASE,SUPPORTED_WITH_CONDITIONS,VSI source plus type-N toy response,not realized-universe model
+UMCH-ST-CLM-0006,Universal positive multiscale floor exists,HYPOTHESIS,UNPROVEN,no real data analysis,null model remains
+UMCH-ST-CLM-0007,Physical frame hierarchy resolves all regions,HYPOTHESIS,FRAME_UNRESOLVED,no uniqueness theorem,unresolved regions nonconfirmatory
+UMCH-ST-CLM-0008,ell0 and threshold parameters are identifiable,INFERENCE,NON_IDENTIFIABLE,no measurement protocol yet,synthetic arithmetic only
