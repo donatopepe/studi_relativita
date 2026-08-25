@@ -1,0 +1,37 @@
+{
+  "all_umch_falsified": false,
+  "candidate_a_state": "CONTRADICTED_UNDER_ASSUMPTIONS",
+  "candidate_b_state": "CONTRADICTED_UNDER_ASSUMPTIONS",
+  "combined_result": "CONDITIONAL_POINTWISE_NO_GO_FOR_FIXED_A_AND_B",
+  "decision_basis": "Fixed A lacks transition rules/global well-posedness, excludes geodesic data for every positive kappa0, has singular normalized multiplier coefficient unless scaled, and lacks observable mapping.",
+  "failed_required_checks": [
+    "transition_matching",
+    "global_well_posedness",
+    "standard_solution_limit",
+    "equivalence_compatibility",
+    "observable_mapping"
+  ],
+  "paper_iii_gate": "BLOCKED",
+  "paths": [
+    {
+      "classification": "EVENTUALLY_FEASIBLE"
+    },
+    {
+      "classification": "INFEASIBLE_FOR_EVERY_POSITIVE_KAPPA0"
+    },
+    {
+      "classification": "MULTIPLIER_COEFFICIENT_SINGULAR_UNLESS_LAMBDA_SCALES",
+      "lambda_over_kappa0": "diverges for fixed nonzero lambda"
+    }
+  ],
+  "required_checks": {
+    "equivalence_compatibility": "FAIL_GEODESIC_DATA_EXCLUDED",
+    "global_well_posedness": "FAIL_NOT_DERIVED",
+    "observable_mapping": "FAIL_NONE_DERIVED",
+    "smooth_branch_equations": "PASS_PARTIAL",
+    "standard_solution_limit": "FAIL_NONUNIFORM_AND_NORMALIZED_ACTION_SINGULAR",
+    "transition_matching": "FAIL_NOT_DERIVED"
+  },
+  "study_id": "paper-ii-a-gate-v1",
+  "warning": "Conditional result covers only fixed A and fixed B under timelike pointwise definition."
+}

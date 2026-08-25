@@ -1,0 +1,12 @@
+{
+  "study_id": "paper-ii-a-gate-v1",
+  "required_checks": {
+    "smooth_branch_equations": "PASS_PARTIAL",
+    "transition_matching": "FAIL_NOT_DERIVED",
+    "global_well_posedness": "FAIL_NOT_DERIVED",
+    "standard_solution_limit": "FAIL_NONUNIFORM_AND_NORMALIZED_ACTION_SINGULAR",
+    "equivalence_compatibility": "FAIL_GEODESIC_DATA_EXCLUDED",
+    "observable_mapping": "FAIL_NONE_DERIVED"
+  },
+  "candidate_b_prior_state": "CONTRADICTED_UNDER_ASSUMPTIONS"
+}

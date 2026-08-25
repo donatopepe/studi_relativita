@@ -35,3 +35,7 @@ Analisi comparativa pronta per review: candidati pointwise A e B restano `INCOMP
 ## UMCH-OV-0009 — Decisione Paper II-B
 
 La barriera fissa B è `CONTRADICTED_UNDER_ASSUMPTIONS`; Paper III è `BLOCKED`. Struttura canonica sourced esiste, ma falliscono stabilità locale ridotta, limite standard dell’intero spazio soluzioni e mappa osservabile. Non è confutazione completa di UMCH.
+
+## UMCH-OV-0010 — No-go pointwise condizionale
+
+A e B fissi sono `CONTRADICTED_UNDER_ASSUMPTIONS`; risultato `CONDITIONAL_POINTWISE_NO_GO_FOR_FIXED_A_AND_B`; Paper III `BLOCKED`. Core `UNPROVEN`; C resta alternativa non equivalente.

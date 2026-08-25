@@ -35,3 +35,7 @@ Comparative analysis is review-ready: pointwise candidates A and B remain `INCOM
 ## UMCH-OV-0009 — Paper II-B decision
 
 Fixed barrier B is `CONTRADICTED_UNDER_ASSUMPTIONS`; Paper III is `BLOCKED`. Sourced canonical structure exists, but reduced local stability, full-solution-space standard limit, and observable mapping fail. This is not full UMCH falsification.
+
+## UMCH-OV-0010 — Conditional pointwise no-go
+
+Fixed A and B are `CONTRADICTED_UNDER_ASSUMPTIONS`; result `CONDITIONAL_POINTWISE_NO_GO_FOR_FIXED_A_AND_B`; Paper III `BLOCKED`. Core `UNPROVEN`; C remains non-equivalent alternative.
