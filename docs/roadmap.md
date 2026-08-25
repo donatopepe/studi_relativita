@@ -33,6 +33,10 @@ Paper III remains scientifically deferred until a pointwise candidate passes var
 
 Candidate B fixed barrier is `CONTRADICTED_UNDER_ASSUMPTIONS`: sourced canonical structure exists, but preregistered reduced local-stability, full standard-solution-space limit, and observable-mapping gates fail. Paper III status is `BLOCKED`. This conditional rejection does not falsify all UMCH or Candidate A.
 
+## Paper II-A conditional pointwise no-go
+
+Fixed A is `CONTRADICTED_UNDER_ASSUMPTIONS`. Together with fixed B, result is `CONDITIONAL_POINTWISE_NO_GO_FOR_FIXED_A_AND_B`; Paper III remains `BLOCKED`. This does not falsify all UMCH or alternative C.
+
 ## Paper III — Radiation reaction
 
 Entry gate: Paper II dynamics survives. Re-derive ALD/Landau–Lifshitz comparison; test runaway and preacceleration rather than assuming removal. No imposed constant-curvature trajectory may masquerade as solution.
