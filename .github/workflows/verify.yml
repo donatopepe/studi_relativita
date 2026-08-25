@@ -73,6 +73,12 @@ jobs:
           bibtex barrier-appendix-en
           pdflatex -jobname=barrier-appendix-en -interaction=nonstopmode -halt-on-error barrier-appendix.tex
           pdflatex -jobname=barrier-appendix-en -interaction=nonstopmode -halt-on-error barrier-appendix.tex
+      - name: Compile Paper II-A appendices
+        run: |
+          cd papers/classical-dynamics/it
+          pdflatex -jobname=hard-constraint-appendix-it -interaction=nonstopmode -halt-on-error hard-constraint-appendix.tex
+          cd ../en
+          pdflatex -jobname=hard-constraint-appendix-en -interaction=nonstopmode -halt-on-error hard-constraint-appendix.tex
       - uses: actions/upload-artifact@v4
         with:
           name: umch-paper-pdfs
@@ -83,3 +89,5 @@ jobs:
             papers/classical-dynamics/en/main.pdf
             papers/classical-dynamics/it/barrier-appendix-it.pdf
             papers/classical-dynamics/en/barrier-appendix-en.pdf
+            papers/classical-dynamics/it/hard-constraint-appendix-it.pdf
+            papers/classical-dynamics/en/hard-constraint-appendix-en.pdf

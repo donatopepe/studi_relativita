@@ -1,0 +1,70 @@
+{
+  "active_effective_lagrangian": {
+    "L_kappakappa": 0.0,
+    "classification": "LINEAR_CURVATURE_DEGENERATE_SECTOR",
+    "constant_mc_coefficient": -0.5,
+    "kappa_mc_length_coefficient": -0.5
+  },
+  "branches": [
+    {
+      "classification": "INACTIVE_FREE_BRANCH",
+      "complementarity_residual": -0.0,
+      "g": -1.0,
+      "kappa": 2.0,
+      "kappa0": 1.0,
+      "multiplier": 0.0,
+      "name": "inactive"
+    },
+    {
+      "classification": "ACTIVE_BOUNDARY_BRANCH",
+      "complementarity_residual": 0.0,
+      "g": 0.0,
+      "kappa": 1.0,
+      "kappa0": 1.0,
+      "multiplier": 0.5,
+      "name": "active"
+    },
+    {
+      "classification": "KKT_INFEASIBLE",
+      "complementarity_residual": 0.0,
+      "g": 1.0,
+      "kappa": 0.0,
+      "kappa0": 1.0,
+      "multiplier": 0.0,
+      "name": "geodesic-infeasible"
+    }
+  ],
+  "derived_scope": "SMOOTH_BRANCHES_ONLY",
+  "global_well_posedness_derived": false,
+  "source_formula_ids": [
+    "ACG2001-E42",
+    "ACG2001-E45",
+    "ACG2001-E46"
+  ],
+  "study_id": "paper-ii-a-smooth-branch-v1",
+  "transitions": [
+    {
+      "classification": "NO_MULTIPLIER_JUMP_DETECTED",
+      "lambda_jump": 0.0,
+      "lambda_left": 0.0,
+      "lambda_prime_jump": 0.0,
+      "lambda_prime_left": 0.0,
+      "lambda_prime_right": 0.0,
+      "lambda_right": 0.0,
+      "matching_rule_derived": false,
+      "name": "continuous-zero"
+    },
+    {
+      "classification": "DISTRIBUTIONAL_MATCHING_REQUIRED",
+      "lambda_jump": 1.0,
+      "lambda_left": 0.0,
+      "lambda_prime_jump": 0.0,
+      "lambda_prime_left": 0.0,
+      "lambda_prime_right": 0.0,
+      "lambda_right": 1.0,
+      "matching_rule_derived": false,
+      "name": "jump-on"
+    }
+  ],
+  "warning": "Smooth interval specialization does not derive active-set matching, global existence, uniqueness, stability, or observability."
+}

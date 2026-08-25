@@ -1,0 +1,16 @@
+{
+  "study_id": "paper-ii-a-smooth-branch-v1",
+  "constraint": "g=1-kappa/kappa0<=0",
+  "action": "S0+mc*integral(ds*lambda*g)",
+  "lambda_dimension": "dimensionless",
+  "source_formula_ids": ["ACG2001-E42", "ACG2001-E45", "ACG2001-E46"],
+  "branch_cases": [
+    {"name": "inactive", "kappa": 2.0, "kappa0": 1.0, "multiplier": 0.0},
+    {"name": "active", "kappa": 1.0, "kappa0": 1.0, "multiplier": 0.5},
+    {"name": "geodesic-infeasible", "kappa": 0.0, "kappa0": 1.0, "multiplier": 0.0}
+  ],
+  "transition_cases": [
+    {"name": "continuous-zero", "lambda_left": 0.0, "lambda_right": 0.0, "lambda_prime_left": 0.0, "lambda_prime_right": 0.0},
+    {"name": "jump-on", "lambda_left": 0.0, "lambda_right": 1.0, "lambda_prime_left": 0.0, "lambda_prime_right": 0.0}
+  ]
+}
