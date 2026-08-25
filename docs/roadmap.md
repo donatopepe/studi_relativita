@@ -1,65 +1,41 @@
-# UMCH research roadmap
+# UMCH spacetime restart roadmap
 
-## Completed initial milestone
+## Spacetime Paper I — Foundations
 
-- public bilingual repository and policies;
-- immutable source archive and provenance;
-- deterministic extraction and complete paragraph inventory;
-- claim/equation registry with review overlay;
-- verified starter bibliography;
-- foundational geometric audit;
-- bilingual Paper I draft;
-- reproducible `NO_BOUND_DERIVABLE` free-fall identifiability study;
-- automated tests and CI definition.
+Define admissible regions, physical frame, raw operational response vector, `C_2`/`C_infinity`, threshold families including `F_0`, scale domain `ℓ≥ℓ₀`, and falsification. Core remains `UNPROVEN`.
 
-Completion means infrastructure and first audit exist, not that UMCH is validated.
+## Exact cases
 
-## Paper II — Classical dynamics
+Validate definitions without claiming detection:
 
-Entry gate: propose explicit covariant action or equations. Check constraints, conservation, degrees of freedom, stability, initial-value problem, equivalence principles, and `κ₀→0`. Exit may be rejection.
+- Minkowski: all responses zero;
+- FLRW: cosmological frame and Ricci/expansion;
+- Schwarzschild: Ricci zero, Weyl/tidal nonzero;
+- VSI gravitational wave: scalar invariants may vanish while operational response persists;
+- nearly flat limits.
 
-## Paper II review-ready milestone
+## Observables and data
 
-Comparative draft and reproducible audit are ready for human scientific review:
+Only after exact cases: geodesic-deviation arrays, clock networks, holonomy protocols, lensing/null bundles, pulsar timing, interferometry, cosmological observables. Every analysis includes null threshold and preregistered uncertainties.
 
-- A: `INCOMPLETE` — hard pointwise constraint; KKT algebra checked, full dynamics absent.
-- B: `INCOMPLETE` — fixed barrier; dimensions/limits checked, constrained stability absent.
-- C: `NON_IDENTIFIABLE` and `ALTERNATIVE_HYPOTHESIS` — RMS is `NOT_EQUIVALENT` to pointwise UMCH.
-- Overall: `NO_GO_NOT_ESTABLISHED`; pointwise candidates are incomplete, not rejected.
+## Identifiability gate
 
-Paper III remains scientifically deferred until a pointwise candidate passes variation, constraints, stability, causality, standard-limit, and identifiability gates.
+Required before positive claim: unique frame or `FRAME_UNRESOLVED`, fixed norm, fixed region/scale family, fixed threshold family, null-model comparison, and independent replication.
 
-## Paper II-B fixed-barrier decision
+## Historical worldline program
 
-Candidate B fixed barrier is `CONTRADICTED_UNDER_ASSUMPTIONS`: sourced canonical structure exists, but preregistered reduced local-stability, full standard-solution-space limit, and observable-mapping gates fail. Paper III status is `BLOCKED`. This conditional rejection does not falsify all UMCH or Candidate A.
+Marked `SUPERSEDED_AS_CORE`, not erased. Conditional no-go for fixed A/B remains historical scoped result. ALD remains outside restarted sequence; old Paper III is not resumed from worldline premise.
 
-## Paper II-A conditional pointwise no-go
+## Paper II review-ready milestone — historical
 
-Fixed A is `CONTRADICTED_UNDER_ASSUMPTIONS`. Together with fixed B, result is `CONDITIONAL_POINTWISE_NO_GO_FOR_FIXED_A_AND_B`; Paper III remains `BLOCKED`. This does not falsify all UMCH or alternative C.
+Historical A/B work recorded A: `INCOMPLETE` then contradicted, B: `INCOMPLETE` then contradicted, C: `NON_IDENTIFIABLE`, overall `NO_GO_NOT_ESTABLISHED` at that milestone. Paper III remains scientifically deferred/blocked under superseded premise.
 
-## Paper III — Radiation reaction
+## Historical numbering compatibility
 
-Entry gate: Paper II dynamics survives. Re-derive ALD/Landau–Lifshitz comparison; test runaway and preacceleration rather than assuming removal. No imposed constant-curvature trajectory may masquerade as solution.
+Old roadmap labels Paper II, Paper III, Paper IV, Paper V, Paper VI, and Paper VII refer to superseded worldline sequence. They remain searchable for provenance but are not active release order.
 
-## Paper IV — Quantum fields
+## Later theory
 
-Entry gate: defined field observable and quantization prescription. Analyze Lorentz symmetry, gauge invariance, unitarity, locality, renormalization, and standard limit. QED claims stay `UNPROVEN` until then.
+QFT/quantum gravity only after operational definition and identifiability. No equation modification or `ℓ₀` value is assumed in first milestone.
 
-## Paper V — Gravitation
-
-Entry gate: stress-energy and backreaction are defined. Separate semiclassical gravity, quantized perturbations, and decoherence; compare Diósi–Penrose only with matched assumptions.
-
-## Paper VI — Cosmology
-
-Entry gate: consistent gravitational field equations. Derive background and perturbation observables; compare with datasets without tuning `κ₀` after inspection.
-
-## Paper VII — Synthesis
-
-Includes only claims surviving preceding audits. If core is contradicted, synthesis reports rejection or viable restricted sector rather than unification.
-
-## Near-term work
-
-1. Review CI results and repair build issues without weakening checks.
-2. Expand foundational references and update modern precision-test sources.
-3. Formulate candidate timelike actions and no-go tests.
-4. Keep null/field/vacuum proposals isolated until their observables exist.
+Completed initial milestone: historical repository/audit infrastructure preserved; spacetime restart is next active milestone.

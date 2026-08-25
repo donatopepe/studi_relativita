@@ -1,50 +1,44 @@
-# Universal Minimum Curvature Hypothesis (UMCH)
+# Multiscale Operational Spacetime Curvature Hypothesis (UMCH)
 
-[Versione italiana](README.md)
+[Italiano](README.md)
 
-Open research program on the possible existence of a nonzero universal curvature scale:
+Historical scale: `κ₀=ℓ₀⁻¹`; it is no longer a worldline bound. Falsifiable hypothesis; it is not an established result.
+
+## Hypothesis
+
+Our realized universe is globally non-Minkowski and may possess nonzero operational geometric response on every admissible physical region at scale
 
 \[
-\kappa_0 > 0, \qquad [\kappa_0]=L^{-1}.
+\ell\ge\ell_0.
 \]
 
-## Scientific status
+Status: `UNPROVEN`. Minkowski remains mathematical null model.
 
-`κ₀ > 0` is a **falsifiable hypothesis**: it is not an established result. The project seeks covariant definitions, mathematical consistency, experimental bounds, and possible falsifications. `κ₀ = 0`, conflict with observations, or theoretical inconsistency remain valid scientific outcomes.
+A free body may follow geodesic with `a^μ=0`: no reaction force is required. Curvature is sought in relative finite-region effects—tidal response, holonomy, clocks, null bundles, and congruences—not mandatory proper acceleration.
 
-The initial Word document contains AI-assisted material. It is a historical source to audit, not scientific evidence. No statement becomes a result without a derivation, verifiable sources, and reproducible checks.
+## Multiscale response
 
-## Scope
+Preregistered raw vector:
 
-Modular research program:
+`R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`.
 
-1. geometric foundations;
-2. classical relativistic dynamics;
-3. radiation reaction;
-4. quantum field theory and QED;
-5. gravity and decoherence;
-6. cosmology;
-7. experimental constraints and falsification;
-8. synthesis of results that survive audit.
+Norms selected before data: `C_2` and `C_infinity`. Positive power/exponential/plateau-power thresholds are always compared with null model `F_0=0`. No opportunistic norm/family switching.
 
-Massive matter, null curves, fields, and vacuum require distinct observables. A formula valid in one sector is not transferred automatically to another.
+Physical frame: regular timelike eigenvector of `T^μ_ν`; in vacuum, cosmological/CMB continuation. Nonunique cases: `FRAME_UNRESOLVED`, never confirmation.
 
-## Method
+## Program
 
-Each claim, equation, and reference receives a stable ID and public status: `UNREVIEWED`, `SUPPORTED`, `SUPPORTED_WITH_CONDITIONS`, `CORRECTABLE`, `UNPROVEN`, `CONTRADICTED`, or `OUT_OF_SCOPE`. Negative findings and contradictions remain on record.
+1. operational spacetime foundations;
+2. exact Minkowski, FLRW, Schwarzschild, and VSI-wave cases;
+3. identifiability and observables;
+4. data only under preregistered protocols.
 
-- [Approved specification](doc/specs/2026-08-21-universal-minimum-curvature-hypothesis.md)
-- [Scientific roadmap](docs/roadmap.md)
-- [AI-assistance policy](docs/ai-assistance.md)
-- [Contributing](CONTRIBUTING.md)
+[Restart specification](doc/specs/2026-08-25-multiscale-operational-spacetime-curvature.md) · [Roadmap](docs/roadmap.md) · [Theory](theory/spacetime/) · [AI policy](docs/ai-assistance.md)
 
-## Author and citation
+## History
 
-**Pepe Donato**, Independent Researcher  
-Contact: `donato.pepe.it@gmail.com`
+Previous pointwise-worldline program is `HISTORICAL_WORLDLINE_FORMULATION` and `SUPERSEDED_AS_CORE`. A/B results remain public and valid in scope: [archive](archive/worldline-program/README.md).
 
-Citation metadata: [`CITATION.cff`](CITATION.cff).
+## Author and license
 
-## License
-
-Text and documentation: [Creative Commons Attribution 4.0 International](LICENSE), **CC BY 4.0**. Any introduced software must receive an explicit license before external reuse.
+Pepe Donato, Independent Researcher — `donato.pepe.it@gmail.com`. Text CC BY 4.0. AI is tool, not source or coauthor.
