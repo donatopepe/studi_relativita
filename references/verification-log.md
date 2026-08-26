@@ -92,6 +92,33 @@ Access date for this initial verification: **2026-08-21**. “Verified” means 
 - Exact supported topic: equations for relativistic particles with Lagrangians depending on first worldline curvature and an example motivated by maximal proper acceleration.
 - Limits: this source does not establish a minimum curvature; an upper-acceleration model is not evidence for `κ≥κ₀>0`.
 
+## Bonnor1995
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1088/0264-9381/12/2/018
+- Canonical article: https://doi.org/10.1088/0264-9381/12/2/018
+- Access date: 2026-08-25
+- Exact supported topic: electric and magnetic Weyl decomposition relative to observers.
+- Limits: this source does not establish a positive multiscale curvature floor or chosen response normalization.
+
+## MaartensBassett1998
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1088/0264-9381/15/3/018
+- Canonical article: https://doi.org/10.1088/0264-9381/15/3/018
+- Access date: 2026-08-25
+- Exact supported topic: covariant gravito-electromagnetic split and electric/magnetic Weyl fields.
+- Limits: this source does not establish UMCH thresholds or unique cosmological frame continuation.
+
+## PelavasEtAl2005
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1063/1.1904707
+- Canonical article: https://doi.org/10.1063/1.1904707
+- Access date: 2026-08-25
+- Exact supported topic: VSI-related Lorentzian spacetimes, vanishing invariants, and epsilon-property despite nontrivial curvature structure.
+- Limits: this source does not establish operational response floor, physical frame, or realized-universe positivity.
+
 ## Verification discipline
 
 Metadata fetched during this audit is not stored as authority-free prose: each BibTeX DOI resolves to its canonical record. New entries require a new section matching the citation key, canonical URL, access date, supported topic, and limits. Search snippets alone are insufficient.

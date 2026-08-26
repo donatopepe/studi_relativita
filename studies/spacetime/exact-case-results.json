@@ -1,0 +1,88 @@
+{
+  "cases": [
+    {
+      "C_2": 0.0,
+      "C_infinity": 0,
+      "R_mag": 0,
+      "R_tidal": 0,
+      "case": "MINKOWSKI",
+      "ell": 2.0,
+      "frame_status": "FRAME_RESOLVED",
+      "raw_vector": [
+        0,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "NULL_CONTROL"
+    },
+    {
+      "C_2": 1.7320508075688772,
+      "C_infinity": 1.7320508075688772,
+      "R_mag": 0,
+      "R_tidal": 1.7320508075688772,
+      "assumption": "orthonormal comoving E_ij=-(addot/a)delta_ij; magnetic zero",
+      "case": "FLRW",
+      "ell": 2.0,
+      "frame_status": "FRAME_RESOLVED",
+      "raw_vector": [
+        1.7320508075688772,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "DEFINITION_TEST_ONLY"
+    },
+    {
+      "C_2": 1.224744871391589,
+      "C_infinity": 1.224744871391589,
+      "R_mag": 0,
+      "R_tidal": 1.224744871391589,
+      "assumption": "static orthonormal frame; magnetic zero",
+      "case": "SCHWARZSCHILD",
+      "ell": 2.0,
+      "frame_status": "FRAME_RESOLVED",
+      "raw_vector": [
+        1.224744871391589,
+        0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "DEFINITION_TEST_ONLY",
+      "tidal_eigenvalues": [
+        -0.25,
+        0.125,
+        0.125
+      ]
+    },
+    {
+      "C_2": 0.5656854249492381,
+      "C_infinity": 0.4,
+      "R_mag": 0.4,
+      "R_tidal": 0.4,
+      "assumption": "toy type-N equal normalized electric/magnetic amplitudes; not observational model",
+      "case": "VSI_WAVE",
+      "ell": 2.0,
+      "frame_status": "FRAME_RESOLVED",
+      "polynomial_scalar_invariants_zero": true,
+      "raw_vector": [
+        0.4,
+        0.4,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "status": "DEFINITION_TEST_ONLY"
+    }
+  ],
+  "normalization": "dimensionless response uses ell^2 times orthonormal-frame curvature norm",
+  "study_id": "spacetime-exact-cases-v1",
+  "warning": "Exact/toy cases validate response behavior only; they do not establish a positive floor in realized universe."
+}

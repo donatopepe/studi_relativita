@@ -79,6 +79,18 @@ jobs:
           pdflatex -jobname=hard-constraint-appendix-it -interaction=nonstopmode -halt-on-error hard-constraint-appendix.tex
           cd ../en
           pdflatex -jobname=hard-constraint-appendix-en -interaction=nonstopmode -halt-on-error hard-constraint-appendix.tex
+      - name: Compile spacetime foundations
+        run: |
+          cd papers/spacetime-foundations/it
+          pdflatex -jobname=spacetime-foundations-it -interaction=nonstopmode -halt-on-error main.tex
+          bibtex spacetime-foundations-it
+          pdflatex -jobname=spacetime-foundations-it -interaction=nonstopmode -halt-on-error main.tex
+          pdflatex -jobname=spacetime-foundations-it -interaction=nonstopmode -halt-on-error main.tex
+          cd ../en
+          pdflatex -jobname=spacetime-foundations-en -interaction=nonstopmode -halt-on-error main.tex
+          bibtex spacetime-foundations-en
+          pdflatex -jobname=spacetime-foundations-en -interaction=nonstopmode -halt-on-error main.tex
+          pdflatex -jobname=spacetime-foundations-en -interaction=nonstopmode -halt-on-error main.tex
       - uses: actions/upload-artifact@v4
         with:
           name: umch-paper-pdfs
@@ -91,3 +103,5 @@ jobs:
             papers/classical-dynamics/en/barrier-appendix-en.pdf
             papers/classical-dynamics/it/hard-constraint-appendix-it.pdf
             papers/classical-dynamics/en/hard-constraint-appendix-en.pdf
+            papers/spacetime-foundations/it/spacetime-foundations-it.pdf
+            papers/spacetime-foundations/en/spacetime-foundations-en.pdf

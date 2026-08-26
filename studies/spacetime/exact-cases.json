@@ -1,0 +1,10 @@
+{
+  "study_id": "spacetime-exact-cases-v1",
+  "normalization": "dimensionless response uses ell^2 times orthonormal-frame curvature norm",
+  "cases": [
+    {"case": "MINKOWSKI", "ell": 2.0},
+    {"case": "FLRW", "ell": 2.0, "addot_over_a": -0.25, "frame": "COSMOLOGICAL_FLUID"},
+    {"case": "SCHWARZSCHILD", "ell": 2.0, "mu_over_r3": 0.125, "frame": "STATIC_ORTHONORMAL"},
+    {"case": "VSI_WAVE", "ell": 2.0, "wave_amplitude_per_l2": 0.1, "frame": "PREREGISTERED_TIMELIKE_OBSERVER"}
+  ]
+}

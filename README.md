@@ -1,50 +1,44 @@
-# Ipotesi della Curvatura Minima Universale (UMCH)
+# Ipotesi Multiscala / Multiscale della Curvatura Operativa dello Spaziotempo (UMCH)
 
-[English version](README.en.md)
+[English](README.en.md)
 
-Programma di ricerca aperto sulla possibile esistenza di una scala universale di curvatura non nulla:
+Scala storica: `κ₀=ℓ₀⁻¹`; non è più un bound sulla worldline. Ipotesi falsificabile, non è un risultato acquisito.
+
+## Ipotesi
+
+Il nostro universo reale è globalmente non-Minkowski e potrebbe possedere una risposta geometrica operativa non nulla su ogni regione fisica ammissibile a scala
 
 \[
-\kappa_0 > 0, \qquad [\kappa_0]=L^{-1}.
+\ell\ge\ell_0.
 \]
 
-## Stato scientifico
+Stato: `UNPROVEN`. Minkowski resta modello nullo matematico.
 
-`κ₀ > 0` è un'**ipotesi falsificabile**: non è un risultato acquisito. Il progetto cerca definizioni covarianti, coerenza matematica, limiti sperimentali e possibili confutazioni. `κ₀ = 0`, incompatibilità con dati o incoerenza teorica restano esiti scientifici validi.
+Un corpo libero può seguire geodetica con `a^μ=0`: non serve reaction force. Curvatura è cercata in effetti relativi su regioni finite—maree, olonomia, orologi, fasci luminosi e congruenze—non in accelerazione propria obbligatoria.
 
-Il documento Word iniziale contiene materiale assistito da IA. È fonte storica da sottoporre ad audit, non prova scientifica. Nessuna affermazione viene promossa a risultato senza derivazione, fonti verificabili e controlli riproducibili.
+## Risposta multiscala
 
-## Scopo
+Vettore grezzo preregistrato:
 
-Programma modulare:
+`R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`.
 
-1. fondamenti geometrici;
-2. dinamica relativistica classica;
-3. reazione di radiazione;
-4. teoria quantistica dei campi e QED;
-5. gravità e decoerenza;
-6. cosmologia;
-7. vincoli sperimentali e falsificazione;
-8. sintesi dei soli risultati sopravvissuti all'audit.
+Norme dichiarate prima dei dati: `C_2` e `C_infinity`. Soglie positive power/exponential/plateau-power sono sempre confrontate col modello nullo `F_0=0`. Nessun cambio opportunistico di norma o famiglia.
 
-Materia massiva, curve nulle, campi e vuoto richiedono osservabili distinte. Una formula valida in un settore non viene trasferita automaticamente agli altri.
+Frame fisico: autovettore timelike regolare di `T^μ_ν`; nel vuoto continuazione cosmologica/CMB. Casi non univoci: `FRAME_UNRESOLVED`, mai conferma.
 
-## Metodo
+## Programma
 
-Ogni claim, equazione e riferimento riceve ID stabile e stato pubblico: `UNREVIEWED`, `SUPPORTED`, `SUPPORTED_WITH_CONDITIONS`, `CORRECTABLE`, `UNPROVEN`, `CONTRADICTED` oppure `OUT_OF_SCOPE`. Risultati negativi e contraddizioni restano registrati.
+1. fondamenti operativi dello spaziotempo;
+2. casi esatti Minkowski, FLRW, Schwarzschild e onde VSI;
+3. identificabilità e osservabili;
+4. dati solo con protocolli preregistrati.
 
-- [Specifica approvata](doc/specs/2026-08-21-universal-minimum-curvature-hypothesis.md)
-- [Roadmap scientifica](docs/roadmap.md)
-- [Politica sull'assistenza IA](docs/ai-assistance.md)
-- [Come contribuire](CONTRIBUTING.md)
+[Specifica restart](doc/specs/2026-08-25-multiscale-operational-spacetime-curvature.md) · [Roadmap](docs/roadmap.md) · [Teoria](theory/spacetime/) · [Politica IA](docs/ai-assistance.md)
 
-## Autore e citazione
+## Storia
 
-**Pepe Donato**, Independent Researcher  
-Contatto: `donato.pepe.it@gmail.com`
+Precedente programma sulla curvatura pointwise della worldline è `HISTORICAL_WORLDLINE_FORMULATION` e `SUPERSEDED_AS_CORE`. Risultati A/B restano pubblici e validi nel loro scope: [archivio](archive/worldline-program/README.md).
 
-Metadati di citazione: [`CITATION.cff`](CITATION.cff).
+## Autore e licenza
 
-## Licenza
-
-Testi e documentazione: [Creative Commons Attribution 4.0 International](LICENSE), **CC BY 4.0**. Codice eventualmente introdotto dovrà riportare licenza esplicita prima del riuso esterno.
+Pepe Donato, Independent Researcher — `donato.pepe.it@gmail.com`. Testi CC BY 4.0. IA è strumento, non fonte o coautrice.
