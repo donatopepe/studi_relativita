@@ -18,6 +18,10 @@ Validate definitions without claiming detection:
 
 Holonomy, clock, null-bundle, and congruence protocol contracts added. Frame hierarchy implemented; ell0 remains `NON_IDENTIFIABLE`; no positive detection claim.
 
+## Vacuum frame gate
+
+Vacuum CMB continuation now requires a preregistered boundary/transport/path/uniqueness/coverage certificate. Missing or competing continuation is `FRAME_UNRESOLVED`. Resolution is necessary but not sufficient for ell0 identifiability; no detection claim.
+
 ## Observables and data
 
 Only after exact cases: geodesic-deviation arrays, clock networks, holonomy protocols, lensing/null bundles, pulsar timing, interferometry, cosmological observables. Every analysis includes null threshold and preregistered uncertainties.
