@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "C_2": 0.0,
+      "C_infinity": 0.0,
+      "R_clock": 0.0,
+      "R_cong": 0.0,
+      "R_hol": 0.0,
+      "R_mag": 0.0,
+      "R_null": 0.0,
+      "R_tidal": 0.0,
+      "approximation": "leading small-loop holonomy proxy; direct normalized residuals for other toy channels",
+      "name": "MINKOWSKI",
+      "raw_vector": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "C_2": 1.0006997551713501,
+      "C_infinity": 1.0,
+      "R_clock": 0.01,
+      "R_cong": 0.03,
+      "R_hol": 1.0,
+      "R_mag": 0.0,
+      "R_null": 0.02,
+      "R_tidal": 0.0,
+      "approximation": "leading small-loop holonomy proxy; direct normalized residuals for other toy channels",
+      "name": "CURVED_TOY",
+      "raw_vector": [
+        0.0,
+        0.0,
+        1.0,
+        0.01,
+        0.02,
+        0.03
+      ]
+    }
+  ],
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_identifiability": "NON_IDENTIFIABLE",
+  "frame_examples": {
+    "matter": "MATTER_FRAME_RESOLVED",
+    "vacuum_ambiguous": "FRAME_UNRESOLVED",
+    "vacuum_unique": "CMB_CONTINUATION_RESOLVED"
+  },
+  "study_id": "operational-response-protocols-v1",
+  "warning": "Toy protocols validate normalization/gates only; no real data, ell0 inference, or positive floor."
+}

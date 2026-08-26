@@ -91,6 +91,12 @@ jobs:
           bibtex spacetime-foundations-en
           pdflatex -jobname=spacetime-foundations-en -interaction=nonstopmode -halt-on-error main.tex
           pdflatex -jobname=spacetime-foundations-en -interaction=nonstopmode -halt-on-error main.tex
+      - name: Compile operational protocol appendices
+        run: |
+          cd papers/spacetime-foundations/it
+          pdflatex -jobname=operational-protocol-it -interaction=nonstopmode -halt-on-error protocol-appendix.tex
+          cd ../en
+          pdflatex -jobname=operational-protocol-en -interaction=nonstopmode -halt-on-error protocol-appendix.tex
       - uses: actions/upload-artifact@v4
         with:
           name: umch-paper-pdfs
@@ -105,3 +111,5 @@ jobs:
             papers/classical-dynamics/en/hard-constraint-appendix-en.pdf
             papers/spacetime-foundations/it/spacetime-foundations-it.pdf
             papers/spacetime-foundations/en/spacetime-foundations-en.pdf
+            papers/spacetime-foundations/it/operational-protocol-it.pdf
+            papers/spacetime-foundations/en/operational-protocol-en.pdf
