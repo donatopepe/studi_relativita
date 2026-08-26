@@ -1,0 +1,6 @@
+{"study_id":"vacuum-frame-gate-v1","cases":[
+{"name":"FLRW_MATTER","unique_tmunu":true,"anchor":false,"transport":false,"paths_fixed":false,"unique":false,"covered":false},
+{"name":"SCHWARZSCHILD_NO_BOUNDARY","unique_tmunu":false,"anchor":false,"transport":false,"paths_fixed":false,"unique":false,"covered":false},
+{"name":"CERTIFIED_VACUUM_TOY","unique_tmunu":false,"anchor":true,"transport":true,"paths_fixed":true,"unique":true,"covered":true},
+{"name":"COMPETING_PATH_TOY","unique_tmunu":false,"anchor":true,"transport":true,"paths_fixed":true,"unique":false,"covered":true}
+]}
