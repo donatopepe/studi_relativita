@@ -1,0 +1,51 @@
+{
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "families": {
+    "F_0": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "F_E": [
+      0.1,
+      0.036787944117144235,
+      1.2340980408667957e-05
+    ],
+    "F_P": [
+      0.1,
+      0.025,
+      0.001
+    ],
+    "F_PE": [
+      0.1,
+      0.025,
+      0.001
+    ]
+  },
+  "norm": "C_2",
+  "study_id": "spacetime-threshold-identifiability-v1",
+  "synthetic_checks": [
+    {
+      "frame_status": "FRAME_RESOLVED",
+      "identifiable": true,
+      "response": 0.0,
+      "status": "CONTRADICTED",
+      "threshold": 0.1
+    },
+    {
+      "frame_status": "FRAME_UNRESOLVED",
+      "identifiable": true,
+      "response": 1.0,
+      "status": "FRAME_UNRESOLVED",
+      "threshold": 0.1
+    },
+    {
+      "frame_status": "FRAME_RESOLVED",
+      "identifiable": false,
+      "response": 1.0,
+      "status": "NON_IDENTIFIABLE",
+      "threshold": 0.1
+    }
+  ],
+  "warning": "Threshold arithmetic and status logic only; no real-universe data or ell0 estimate."
+}

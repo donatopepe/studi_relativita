@@ -1,0 +1,16 @@
+{
+  "study_id": "spacetime-threshold-identifiability-v1",
+  "norm": "C_2",
+  "families": {
+    "F_0": {},
+    "F_P": {"A": 0.1, "p": 2.0},
+    "F_E": {"A": 0.1, "q": 1.0},
+    "F_PE": {"A_inf": 0.0, "A_1": 0.1, "p": 2.0}
+  },
+  "x_samples": [1.0, 2.0, 10.0],
+  "synthetic_checks": [
+    {"response": 0.0, "threshold": 0.1, "frame_status": "FRAME_RESOLVED", "identifiable": true},
+    {"response": 1.0, "threshold": 0.1, "frame_status": "FRAME_UNRESOLVED", "identifiable": true},
+    {"response": 1.0, "threshold": 0.1, "frame_status": "FRAME_RESOLVED", "identifiable": false}
+  ]
+}
