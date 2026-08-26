@@ -26,9 +26,13 @@ Vacuum CMB continuation now requires a preregistered boundary/transport/path/uni
 
 Only after exact cases: geodesic-deviation arrays, clock networks, holonomy protocols, lensing/null bundles, pulsar timing, interferometry, cosmological observables. Every analysis includes null threshold and preregistered uncertainties.
 
+## Structural ell0 identifiability
+
+Current `F_P`, `F_E`, and `F_PE` families have exact reparameterization degeneracies between `ell0` and free amplitude/shape parameters; `F_0` contains no `ell0`. Therefore `ELL0_STRUCTURALLY_NON_IDENTIFIABLE_UNDER_CURRENT_FAMILIES`. External preregistered calibration could change this scoped gate; none exists.
+
 ## Identifiability gate
 
-Required before positive claim: unique frame or `FRAME_UNRESOLVED`, fixed norm, fixed region/scale family, fixed threshold family, null-model comparison, and independent replication.
+Required before positive claim: unique frame or `FRAME_UNRESOLVED`, fixed norm, fixed region/scale family, fixed threshold family, null-model comparison, and independent replication. These conditions are necessary but do not remove the current exact `ell0` degeneracies.
 
 ## Historical worldline program
 
