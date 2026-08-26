@@ -14,6 +14,10 @@ Validate definitions without claiming detection:
 - VSI gravitational wave: scalar invariants may vanish while operational response persists;
 - nearly flat limits.
 
+## Operational protocol milestone
+
+Holonomy, clock, null-bundle, and congruence protocol contracts added. Frame hierarchy implemented; ell0 remains `NON_IDENTIFIABLE`; no positive detection claim.
+
 ## Observables and data
 
 Only after exact cases: geodesic-deviation arrays, clock networks, holonomy protocols, lensing/null bundles, pulsar timing, interferometry, cosmological observables. Every analysis includes null threshold and preregistered uncertainties.
