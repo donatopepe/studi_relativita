@@ -1,0 +1,28 @@
+{
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "families": {
+    "F_0": "ELL0_ABSENT_FROM_NULL_MODEL",
+    "F_E": "ELL0_STRUCTURALLY_NON_IDENTIFIABLE",
+    "F_P": "ELL0_STRUCTURALLY_NON_IDENTIFIABLE",
+    "F_PE": "ELL0_STRUCTURALLY_NON_IDENTIFIABLE"
+  },
+  "identified_combinations": {
+    "F_0": [],
+    "F_E": [
+      "A*exp(q)",
+      "q/ell0"
+    ],
+    "F_P": [
+      "A*ell0^p",
+      "p"
+    ],
+    "F_PE": [
+      "A_inf",
+      "A_1*ell0^p",
+      "p"
+    ]
+  },
+  "scope": "Exact reparameterization result for current free-parameter families; external calibration could change the gate.",
+  "status": "ELL0_STRUCTURALLY_NON_IDENTIFIABLE_UNDER_CURRENT_FAMILIES",
+  "study_id": "ell0-structural-identifiability-v1"
+}
