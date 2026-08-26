@@ -8,15 +8,17 @@ Preregister finite loop shape/orientation and area bivector. Leading small-loop 
 
 ## Clock network
 
-`R_clock=|Δτ_residual|/τ_ref` after preregistered flat kinematic baseline, worldlines, synchronization, and reference duration. Gravitational/kinematic subtraction cannot be selected after data.
+`R_clock=|Δτ_residual|/τ_ref` after preregistered flat kinematic baseline, worldlines, synchronization, and reference duration. Gravitational/kinematic subtraction cannot be selected after data. Petit and Wolf's relativistic time-comparison review provides standard background (`PetitWolf2005`).
 
 ## Null bundle
 
-`R_null` is normalized Jacobi-map/shear/convergence departure at fixed affine/source-observer geometry. Affine normalization, caustics, screen basis, and flat comparator are required.
+`R_null` is normalized Jacobi-map/shear/convergence departure at fixed affine/source-observer geometry. Affine normalization, caustics, screen basis, and flat comparator are required. Sachs's outgoing-radiation work supplies canonical null-radiation context (`Sachs1961`), not this project's normalization.
 
 ## Congruence
 
-`R_cong` is normalized expansion/shear/vorticity departure from matched flat congruence with same initial data. Congruence selection is preregistered.
+`R_cong` is normalized expansion/shear/vorticity departure from matched flat congruence with same initial data. Congruence selection is preregistered. Raychaudhuri's original relativistic cosmology paper supplies canonical congruence-evolution context (`Raychaudhuri1955`).
+
+These sources support standard background only and do not establish UMCH, its response definitions, a floor, or `ell0`.
 
 ## Frame
 
