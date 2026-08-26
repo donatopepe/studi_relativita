@@ -30,6 +30,10 @@ Only after exact cases: geodesic-deviation arrays, clock networks, holonomy prot
 
 Current `F_P`, `F_E`, and `F_PE` families have exact reparameterization degeneracies between `ell0` and free amplitude/shape parameters; `F_0` contains no `ell0`. Therefore `ELL0_STRUCTURALLY_NON_IDENTIFIABLE_UNDER_CURRENT_FAMILIES`. External preregistered calibration could change this scoped gate; none exists.
 
+## Turnover identifiability candidate
+
+`F_T=A x^p exp[-q(x-1)]` gives amplitude-independent ell0 inversion when `p,q` are fixed by independent theory and turnover/shape coverage exists. It is a mathematical candidate, not adopted as UMCH law. No physical derivation of `p,q`, data, or detection exists.
+
 ## Identifiability gate
 
 Required before positive claim: unique frame or `FRAME_UNRESOLVED`, fixed norm, fixed region/scale family, fixed threshold family, null-model comparison, and independent replication. These conditions are necessary but do not remove the current exact `ell0` degeneracies.
