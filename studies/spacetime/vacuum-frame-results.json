@@ -1,0 +1,32 @@
+{
+  "cases": [
+    {
+      "confirmatory": false,
+      "name": "FLRW_MATTER",
+      "reason": "UNIQUE_TIMELIKE_TMUNU_EIGENVECTOR",
+      "status": "MATTER_FRAME_RESOLVED"
+    },
+    {
+      "confirmatory": false,
+      "name": "SCHWARZSCHILD_NO_BOUNDARY",
+      "reason": "MISSING_COSMOLOGICAL_ANCHOR",
+      "status": "FRAME_UNRESOLVED"
+    },
+    {
+      "confirmatory": false,
+      "name": "CERTIFIED_VACUUM_TOY",
+      "reason": "PREREGISTERED_UNIQUE_CONTINUATION",
+      "status": "CMB_CONTINUATION_RESOLVED"
+    },
+    {
+      "confirmatory": false,
+      "name": "COMPETING_PATH_TOY",
+      "reason": "CONTINUATION_NONUNIQUE",
+      "status": "FRAME_UNRESOLVED"
+    }
+  ],
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_status": "NON_IDENTIFIABLE",
+  "study_id": "vacuum-frame-gate-v1",
+  "warning": "Resolution is necessary, not sufficient. Certified vacuum case is a protocol fixture, not a physical derivation."
+}
