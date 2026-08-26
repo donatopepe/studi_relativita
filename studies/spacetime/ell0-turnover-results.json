@@ -1,0 +1,30 @@
+{
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "family": "F_T=A*x^p*exp[-q*(x-1)]",
+  "fixed_shape": {
+    "p": 3.0,
+    "q": 1.0
+  },
+  "gates": {
+    "fixed_shape_covered_resolved": "IDENTIFIABLE_IN_PRINCIPLE",
+    "free_shape": "NON_IDENTIFIABLE_IF_SHAPE_FREE",
+    "no_coverage": "PRACTICALLY_UNRESOLVED_NO_TURNOVER_COVERAGE",
+    "unresolved_frame": "FRAME_UNRESOLVED"
+  },
+  "status": "MATHEMATICAL_IDENTIFIABILITY_CANDIDATE_ONLY",
+  "study_id": "ell0-turnover-identifiability-v1",
+  "synthetic_control": {
+    "ell": [
+      2.5,
+      5.0
+    ],
+    "ell_peak": 6.0,
+    "recovered_ell0": 2.0000000000000004,
+    "response": [
+      0.4563285838309013,
+      1.0459226256957648
+    ],
+    "true_ell0": 2.0
+  },
+  "warning": "Synthetic algebra control only. F_T lacks independent physical derivation and is not adopted as UMCH law."
+}
