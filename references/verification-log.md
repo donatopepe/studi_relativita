@@ -119,6 +119,33 @@ Access date for this initial verification: **2026-08-21**. “Verified” means 
 - Exact supported topic: VSI-related Lorentzian spacetimes, vanishing invariants, and epsilon-property despite nontrivial curvature structure.
 - Limits: this source does not establish operational response floor, physical frame, or realized-universe positivity.
 
+## PetitWolf2005
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1088/0026-1394/42/3/S14
+- Canonical article: https://doi.org/10.1088/0026-1394/42/3/S14
+- Access date: 2026-08-26
+- Exact supported topic: relativistic theory used for operational time and frequency comparisons.
+- Limits: this source does not establish UMCH, a universal clock-response floor, or `ell0`.
+
+## Raychaudhuri1955
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1103/PhysRev.98.1123
+- Canonical article: https://doi.org/10.1103/PhysRev.98.1123
+- Access date: 2026-08-26
+- Exact supported topic: relativistic congruence evolution in the paper's cosmological setting.
+- Limits: this source does not establish UMCH, a universal congruence-response floor, or `ell0`.
+
+## Sachs1961
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1098/rspa.1961.0202
+- Canonical article: https://doi.org/10.1098/rspa.1961.0202
+- Access date: 2026-08-26
+- Exact supported topic: outgoing-radiation conditions in general relativity and associated null-radiation framework.
+- Limits: this source does not establish UMCH, a universal null-bundle floor, or `ell0`.
+
 ## Verification discipline
 
 Metadata fetched during this audit is not stored as authority-free prose: each BibTeX DOI resolves to its canonical record. New entries require a new section matching the citation key, canonical URL, access date, supported topic, and limits. Search snippets alone are insufficient.
