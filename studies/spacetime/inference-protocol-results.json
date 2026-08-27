@@ -1,0 +1,47 @@
+{
+  "cases": [
+    {
+      "name": "eligible",
+      "status": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE"
+    },
+    {
+      "name": "unresolved_frame",
+      "status": "FRAME_UNRESOLVED"
+    },
+    {
+      "name": "bad_domain",
+      "status": "DOMAIN_INCONSISTENT"
+    },
+    {
+      "name": "exploratory",
+      "status": "EXPLORATORY_FAMILY_SELECTION"
+    },
+    {
+      "name": "dependence_missing",
+      "status": "DEPENDENCE_UNRESOLVED"
+    },
+    {
+      "name": "likelihood_missing",
+      "status": "LIKELIHOOD_UNRESOLVED"
+    },
+    {
+      "name": "nuisance_unbounded",
+      "status": "NUISANCE_UNBOUNDED"
+    },
+    {
+      "name": "nonidentifiable",
+      "status": "NON_IDENTIFIABLE"
+    },
+    {
+      "name": "unreplicated",
+      "status": "REPLICATION_MISSING"
+    }
+  ],
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "domain_controls": {
+    "consistent": "DOMAIN_CONSISTENT",
+    "inconsistent": "DOMAIN_INCONSISTENT"
+  },
+  "study_id": "inference-protocol-gate-v1",
+  "warning": "Gate eligibility is not evidence. No data are analyzed."
+}
