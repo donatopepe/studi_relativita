@@ -175,6 +175,43 @@ Access date for this initial verification: **2026-08-21**. “Verified” means 
 - Exact supported topic: covariant perturbation theory and nonlocal curvature form-factor algorithms at second order.
 - Limits: this source does not establish UMCH, a universal nonlocal scale, or a model-independent coefficient `q`.
 
+## HastingsKoma2006
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1007/s00220-006-0030-4
+- Canonical article: https://doi.org/10.1007/s00220-006-0030-4
+- Access date: 2026-08-27
+- Exact supported topic: spectral-gap conditions implying exponential correlation decay in specified short-range lattice systems.
+- Limits: this source does not establish spacetime-curvature response, UMCH, or universal dimensionless `q`.
+
+## Brax2013
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1088/0264-9381/30/21/214005
+- Canonical article: https://doi.org/10.1088/0264-9381/30/21/214005
+- Access date: 2026-08-27
+- Exact supported topic: screening mechanisms in modified-gravity scalar models.
+- Limits: this source does not establish environment-independent UMCH decay coefficient or `ell0`.
+
+## BelenchiaEtAl2016
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1103/PhysRevD.93.044017
+- Canonical article: https://doi.org/10.1103/PhysRevD.93.044017
+- Canonical preprint: https://arxiv.org/abs/1507.00330
+- Access date: 2026-08-27
+- Exact supported topic: spectral dimension from causal-set-derived nonlocal continuum d'Alembertians.
+- Limits: this source does not establish radial `F_T`, a universal q, or UMCH.
+
+## BurrageSakstein2018
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1007/s41114-018-0011-x
+- Canonical article: https://doi.org/10.1007/s41114-018-0011-x
+- Access date: 2026-08-27
+- Exact supported topic: chameleon-gravity screening and experimental tests.
+- Limits: this source does not establish model- and environment-independent `q`, `ell0`, or UMCH.
+
 ## Verification discipline
 
 Metadata fetched during this audit is not stored as authority-free prose: each BibTeX DOI resolves to its canonical record. New entries require a new section matching the citation key, canonical URL, access date, supported topic, and limits. Search snippets alone are insufficient.
