@@ -1,0 +1,13 @@
+assumption_id,scope,status,dependency,failure_effect,resolution_gate
+UMCH-A-0001,realized universe scope rather than all mathematical solutions,RATIFIED_SCOPE,UMCH-U-0001,scope collapse or overclaim,explicit hypothesis revision with human review
+UMCH-A-0002,admissible regions satisfy ell>=ell0 and causal regularity,UNPROVEN_DOMAIN,UMCH-U-0004;eq:u-families,regions cannot confirm and inference domain may be circular,independent ell0/domain protocol before data
+UMCH-A-0003,unique regular timelike Tmunu eigenframe when available,CONDITIONAL,UMCH-U-0005,FRAME_UNRESOLVED,matter-frame uniqueness proof for target domain
+UMCH-A-0004,vacuum CMB continuation certificate is unique and covers target,OPEN,UMCH-U-0005,FRAME_UNRESOLVED,boundary transport path uniqueness and coverage certificate
+UMCH-A-0005,raw channel outputs are dimensionless under fixed normalization,PROTOCOL_DEPENDENT,UMCH-U-0006;eq:u-vector,vector/norm comparison invalid,channel-specific reproducible normalization
+UMCH-A-0006,region scale estimator and circuit/window family fixed before data,OPEN,UMCH-U-0004;UMCH-U-0014,selection bias and undefined x,preregistered estimator and admissible family
+UMCH-A-0007,response channels avoid double counting correlated geometry,OPEN,UMCH-U-0006;eq:u-norms,C2 weights duplicated information and overstates response,covariance/dependence audit plus raw-vector reporting
+UMCH-A-0008,uncertainty likelihood and nuisance model are fixed and adequate,OPEN,UMCH-U-0014,practical identifiability and thresholds invalid,preregistered likelihood calibration and nuisance bounds
+UMCH-A-0009,current threshold family selected independently before data,OPEN,UMCH-U-0008;eq:u-families,post-selection invalidates inference,independent model derivation and preregistration
+UMCH-A-0010,turnover p and q fixed independently with shape coverage,NOT_SATISFIED,UMCH-U-0012;eq:u-turnover;eq:u-inversion,ell0 inversion loses identifiability,independent physical derivation plus prospective coverage
+UMCH-A-0011,nonlocal mechanism deriving q exists and is empirically admissible,EXTERNAL_EVIDENCE_REQUIRED,UMCH-U-0013,turnover remains mathematical only,canonical independent theory derivation and tests
+UMCH-A-0012,independent human scientific verification of AI-assisted material,HUMAN_REVIEW_REQUIRED,UMCH-U-0015,material cannot be presented as verified scientific result,human equation source translation and interpretation review
