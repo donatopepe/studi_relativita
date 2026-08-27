@@ -21,7 +21,7 @@ può valere mentre il tensore di Riemann è non nullo. UMCH-U-0002: nessuna forz
 Le analisi dei modelli pointwise fissi A e B hanno escluso geodetiche o prodotto settori degeneri/non identificabili sotto le assunzioni dichiarate. UMCH-U-0003: A/B sono \verb|CONTRADICTED_UNDER_ASSUMPTIONS|; il risultato combinato è un no-go condizionale, non una confutazione di ogni UMCH. La storia resta artefatto tecnico riproducibile.
 
 \section{Ipotesi spacetime riformulata}\label{sec:u-hypothesis}
-Sia $(\mathcal M,g_{\rm real})$ lo spaziotempo realizzato, non globalmente isometrico a Minkowski. Introduciamo $\ell_0>0$ e consideriamo regioni causali $\Omega$ con scala $\ell\geq\ell_0$. UMCH-U-0004: il core \verb|UNPROVEN| propone, per un protocollo preregistrato e frame risolto, una risposta dimensionless che soddisfi una soglia selezionata prima dei dati. Nessun claim è formulato sotto $\ell_0$.
+Sia $(\mathcal M,g_{\rm real})$ lo spaziotempo realizzato, non globalmente isometrico a Minkowski. Introduciamo $\ell_0>0$. Il survey domain $D_{\rm survey}$ e le scale $\ell$ sono fissati indipendentemente da $\ell_0$ e dalle risposte; un modello supportato solo per $x\geq1$ deve soddisfare $\ell_0\leq\ell_{\min}$ su tutti i campioni, altrimenti è \verb|DOMAIN_INCONSISTENT| e nessun campione può essere rimosso post-fit. UMCH-U-0004: il core \verb|UNPROVEN| propone, per protocollo preregistrato e frame risolto, una risposta dimensionless sopra una soglia scelta prima dei dati. La regola elimina selezione circolare, ma non identifica $\ell_0$.
 
 \section{Regioni e frame fisico}\label{sec:u-frame}
 Una regione deve essere regolare per il calcolo, causalmente testabile e associata a un estimatore di scala preregistrato. Il frame primario è l'autovettore timelike futuro unico di $T^\mu{}_{\nu}$. Nel vuoto una continuazione CMB richiede anchor, campo unitario, trasporto covariante, famiglia di cammini, unicità e copertura. UMCH-U-0005: requisiti mancanti producono \verb|FRAME_UNRESOLVED|, mai conferma. Un frame risolto è necessario, non sufficiente.
@@ -37,7 +37,7 @@ $R_{\rm tidal}$ e $R_{\rm mag}$ usano RMS frame-normalizzati; $R_{\rm hol}$ usa 
 \section{Norme e preregistrazione}\label{sec:u-norms}
 Le sole norme preregistrate sono
 \begin{equation}\label{eq:u-norms}\mathfrak C_2=\|\mathbf R\|_2,\qquad \mathfrak C_\infty=\|\mathbf R\|_\infty.\end{equation}
-Norma, canale, regioni, finestre, sottrazioni e incertezze non possono cambiare dopo i dati.
+Norma, canale, regioni, finestre, sottrazioni e incertezze non possono cambiare dopo i dati. I canali possono essere correlati: le norme sono summary descrittive, non sei evidenze indipendenti e non definiscono una likelihood factorization. Senza un joint covariance/dependence model preregistrato lo stato è \verb|DEPENDENCE_UNRESOLVED| e le norme non possono confermare.
 
 \section{Modello nullo e soglie}\label{sec:u-thresholds}
 Ponendo $x=\ell/\ell_0\geq1$, confrontiamo sempre

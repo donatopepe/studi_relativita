@@ -9,5 +9,5 @@ class Assumptions(unittest.TestCase):
   for r in self.rows():
    for k in ['scope','status','dependency','failure_effect','resolution_gate']:self.assertTrue(r[k].strip(),(r['assumption_id'],k))
  def test_no_hidden_resolution(self):
-  rows={r['assumption_id']:r for r in self.rows()};self.assertEqual('OPEN',rows['UMCH-A-0007']['status']);self.assertIn('double counting',rows['UMCH-A-0007']['scope']);self.assertEqual('EXTERNAL_EVIDENCE_REQUIRED',rows['UMCH-A-0011']['status']);self.assertEqual('HUMAN_REVIEW_REQUIRED',rows['UMCH-A-0012']['status'])
+  rows={r['assumption_id']:r for r in self.rows()};self.assertEqual('CORRECTED_NO_INDEPENDENCE_ASSUMPTION',rows['UMCH-A-0007']['status']);self.assertIn('no channel independence',rows['UMCH-A-0007']['scope']);self.assertEqual('EXTERNAL_EVIDENCE_REQUIRED',rows['UMCH-A-0011']['status']);self.assertEqual('HUMAN_REVIEW_REQUIRED',rows['UMCH-A-0012']['status'])
 if __name__=='__main__':unittest.main()
