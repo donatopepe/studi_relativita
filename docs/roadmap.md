@@ -42,9 +42,9 @@ Current `F_P`, `F_E`, and `F_PE` families have exact reparameterization degenera
 
 Dimensional geometry supplies `p=2` only for declared regular small-region area-normalized channels. Current local GR core does not derive exponential `q`; turnover remains `BLOCKED_PENDING_INDEPENDENT_NONLOCAL_MECHANISM`. Any nonlocal mechanism must be independently specified before data.
 
-## Identifiability gate
+## Inference protocol gate
 
-Required before positive claim: unique frame or `FRAME_UNRESOLVED`, fixed norm, fixed region/scale family, fixed threshold family, null-model comparison, and independent replication. These conditions are necessary but do not remove the current exact `ell0` degeneracies.
+Ordered deterministic gate: frame, fixed survey domain, prospective family, joint channel dependence, calibrated likelihood, bounded nuisance, identifiability, and independent replication. Failures are reason-coded. Passing all gives only `CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE`, never detection. These conditions do not remove current exact `ell0` degeneracies.
 
 ## Historical worldline program
 

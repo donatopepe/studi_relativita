@@ -12,5 +12,5 @@ UMCH-U-0010,TOY_CONTROL,SUPPORTED_WITH_CONDITIONS,VSI source and deterministic t
 UMCH-U-0011,NEGATIVE_RESULT,ELL0_STRUCTURALLY_NON_IDENTIFIABLE_UNDER_CURRENT_FAMILIES,exact reparameterization identities,scoped to current free families,independent calibration or family removing symmetry
 UMCH-U-0012,PROJECT_DERIVATION,MATHEMATICAL_IDENTIFIABILITY_CANDIDATE_ONLY,analytic two-scale inversion and synthetic control,p and q must be independently fixed,counterexample to inversion under fixed shape and domain
 UMCH-U-0013,OPEN_PROBLEM,BLOCKED_PENDING_INDEPENDENT_NONLOCAL_MECHANISM,dimensional p gate and local-expansion audit,p=2 scoped and q not derived,independent covariant mechanism deriving fixed q
-UMCH-U-0014,HYPOTHESIS,NO_POSITIVE_DETECTION_CLAIM,falsification and preregistration gate,replication and nuisance control absent,preregistered replicated identifiable observation
+UMCH-U-0014,HYPOTHESIS,NO_POSITIVE_DETECTION_CLAIM,ordered inference gate with reason-coded failures,eligibility is not evidence; real likelihood nuisance and replication absent,preregistered replicated identifiable observation passing every gate
 UMCH-U-0015,NEGATIVE_RESULT,NO_POSITIVE_DETECTION_CLAIM,combined claim ledger and deterministic studies,not disproof of every UMCH formulation,independent evidence meeting every registered gate
