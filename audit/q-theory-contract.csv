@@ -1,0 +1,16 @@
+scenario,independent_input,profile_issue,degeneracy,decision,required_contract
+mass_gap,mass and field dynamics,Yukawa/spatial profile channel-specific,q=m*ell0 unless mass relation fixed,SECOND_SCALE_DEGENERACY,derive mass-ell0 relation and channel observable
+spectral_gap,Hamiltonian/transfer operator and gap,correlation decay not spacetime response,gap times ell0 remains input,CONTEXT_ONLY,covariant operator spectrum and channel map
+compactification,compact radius and KK spectrum,sum of Yukawa modes,radius is second scale,SECOND_SCALE_DEGENERACY,geometry fixes radius/ell0 and mode coupling
+screening,scalar potential couplings environment,effective mass varies with environment,no universal q,ENVIRONMENT_DEPENDENT,unique environment-independent branch and tests
+higher_derivative_poles,local action coefficients,poles may be ghost/tachyon and multi-exponential,pole masses free,MODEL_DEPENDENT,stable action fixed coefficients and residue/channel map
+entire_form_factor,entire function and nonlocal scale,position profile often Gaussian/error-function not F_T,function/scale freedom,WRONG_OR_MODEL_DEPENDENT_PROFILE,unique action form factor and asymptotic derivation
+covariant_form_factor,Box spectrum state masses boundaries,nonlocal kernels geometry/state-dependent,multiple scales/inputs,CONTEXT_DEPENDENT,causal prescription spectrum boundaries channel map
+causal_set_nonlocality,discreteness/nonlocality scale and dAlembertian,spectral dimension result not F_T,nonlocal scale relation unknown,WRONG_OBSERVABLE,derive response kernel and ell0 relation
+asymptotic_safety,fixed-point trajectory effective form factors,momentum-space running not universal radial exponential,trajectory/scale setting,MODEL_DEPENDENT,first-principles trajectory continuation and observable map
+stochastic_correlation,quantum state noise kernel,correlation can be non-exponential and state-dependent,state and field masses,STATE_DEPENDENT,fixed state renormalization and response statistic
+cosmological_horizon,H or curvature radius,horizon-scale behavior not universal local floor,H^-1 independent/cosmology-dependent,SECOND_SCALE_DEGENERACY,derive ell0-H relation without using same data
+boundary_topology,domain topology and eigenvalues,decay depends on boundary/domain,not universal across regions,BOUNDARY_DEPENDENT,universal admissible-domain theorem or declared scoped model
+critical_rg,universality class and distance to critical point,correlation length diverges/varies,nonuniversal amplitudes and tuning,STATE_PARAMETER_DEPENDENT,independent universality and amplitude ratio fixing q
+fractional_operator,fractional order and scale,often algebraic heavy tails not exponential,order/scale free,WRONG_PROFILE,derive exponential asymptotic in target channel
+quasinormal_resonance,background and boundary eigenfrequency,primarily temporal ringdown not generic spatial ell response,background-dependent scale,WRONG_VARIABLE,derive finite-region spatial response and universal eigenvalue
