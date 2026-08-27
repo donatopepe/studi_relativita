@@ -1,0 +1,27 @@
+{
+  "classes": [
+    {
+      "decision": "SECOND_SCALE_DEGENERACY_UNLESS_INDEPENDENTLY_FIXED",
+      "independent_input": "mass m",
+      "matching": "q=m*ell0 in natural units",
+      "name": "massive_propagation"
+    },
+    {
+      "decision": "MODEL_DEPENDENT_NOT_RADIAL_EXPONENTIAL_BY_DEFAULT",
+      "independent_input": "action form factor and nonlocal scale M_s",
+      "matching": "q depends on M_s*ell0 and profile mapping",
+      "name": "infinite_derivative_form_factor"
+    },
+    {
+      "decision": "CONTEXT_DEPENDENT_NO_UNIVERSAL_Q",
+      "independent_input": "operator spectrum state boundary conditions masses",
+      "matching": "no universal scalar q",
+      "name": "covariant_curvature_form_factor"
+    }
+  ],
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "gate": "EXTERNAL_EVIDENCE_REQUIRED",
+  "status": "NO_MODEL_INDEPENDENT_Q_DERIVATION_FOUND",
+  "study_id": "independent-q-mechanism-survey-v1",
+  "warning": "Canonical classes show possible mechanisms but do not derive UMCH F_T or fixed q. No mechanism adopted."
+}
