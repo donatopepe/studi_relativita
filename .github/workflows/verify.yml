@@ -79,6 +79,18 @@ jobs:
           pdflatex -jobname=hard-constraint-appendix-it -interaction=nonstopmode -halt-on-error hard-constraint-appendix.tex
           cd ../en
           pdflatex -jobname=hard-constraint-appendix-en -interaction=nonstopmode -halt-on-error hard-constraint-appendix.tex
+      - name: Compile unified UMCH paper
+        run: |
+          cd papers/umch/it
+          pdflatex -jobname=umch-unified-it -interaction=nonstopmode -halt-on-error main.tex
+          bibtex umch-unified-it
+          pdflatex -jobname=umch-unified-it -interaction=nonstopmode -halt-on-error main.tex
+          pdflatex -jobname=umch-unified-it -interaction=nonstopmode -halt-on-error main.tex
+          cd ../en
+          pdflatex -jobname=umch-unified-en -interaction=nonstopmode -halt-on-error main.tex
+          bibtex umch-unified-en
+          pdflatex -jobname=umch-unified-en -interaction=nonstopmode -halt-on-error main.tex
+          pdflatex -jobname=umch-unified-en -interaction=nonstopmode -halt-on-error main.tex
       - name: Compile spacetime foundations
         run: |
           cd papers/spacetime-foundations/it
@@ -101,6 +113,8 @@ jobs:
         with:
           name: umch-paper-pdfs
           path: |
+            papers/umch/it/umch-unified-it.pdf
+            papers/umch/en/umch-unified-en.pdf
             papers/foundation/it/main.pdf
             papers/foundation/en/main.pdf
             papers/classical-dynamics/it/main.pdf

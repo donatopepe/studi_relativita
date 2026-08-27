@@ -1,23 +1,7 @@
-# Paper II — Classical dynamics / Dinamica classica
+# Historical classical-dynamics papers
 
-- `it/main.tex`: Italian source
-- `en/main.tex`: English source
+Status: `HISTORICAL_TECHNICAL_RECORD` / `SUPERSEDED_BY_UNIFIED_UMCH_PAPER`.
 
-Both versions share section/equation labels, citations, candidate states, and downstream gate. Scientific edits must update both.
+Candidate A/B analyses and conditional no-go results are preserved for provenance and remain valid in exact scope. Current authoritative synthesis: [`papers/umch/`](../umch/README.md). No negative result is withdrawn.
 
-## Build status
-
-**NOT COMPILED LOCALLY**: local environment lacks TeX. GitHub Actions compiles both languages and uploads PDFs. No PDF is claimed passing until CI is green.
-
-Expected command in each language directory:
-
-```bash
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-bibtex main
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-pdflatex -interaction=nonstopmode -halt-on-error main.tex
-```
-
-## Scientific status
-
-A/B remain `INCOMPLETE`; C is `NON_IDENTIFIABLE` and `ALTERNATIVE_HYPOTHESIS`; `κ₀>0` remains `UNPROVEN`; `NO_GO_NOT_ESTABLISHED`. Paper III remains scientifically deferred.
+Historical build marker retained for test/provenance compatibility: `NOT COMPILED LOCALLY`; canonical CI performs compilation.
