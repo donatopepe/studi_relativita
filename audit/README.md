@@ -4,7 +4,8 @@ Questa directory separa inventario automatico e revisione scientifica.
 
 ## Artefatti
 
-- `claims.csv`: una riga conservativa per ogni paragrafo sorgente. Una riga non equivale ancora a claim atomico validato.
+- `unified-claims.csv`: ledger atomico autorevole dei claim `UMCH-U-*` del paper unificato, con classificazione epistemica, stato, evidenza, limite e falsificatore.
+- `claims.csv`: una riga conservativa per ogni paragrafo sorgente storico. Una riga non equivale ancora a claim atomico validato.
 - `equations/equations.csv`: candidati formula rilevati automaticamente.
 - `inventory-summary.json`: conteggi riproducibili.
 
