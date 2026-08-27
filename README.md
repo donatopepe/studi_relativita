@@ -26,12 +26,20 @@ Norme dichiarate prima dei dati: `C_2` e `C_infinity`. Soglie positive power/exp
 
 Frame fisico: autovettore timelike regolare di `T^μ_ν`; nel vuoto continuazione cosmologica/CMB. Casi non univoci: `FRAME_UNRESOLVED`, mai conferma.
 
-## Programma
+## Risultati correnti
 
-1. fondamenti operativi dello spaziotempo;
-2. casi esatti Minkowski, FLRW, Schwarzschild e onde VSI;
-3. identificabilità e osservabili;
-4. dati solo con protocolli preregistrati.
+- famiglie `F_P/F_E/F_PE`: `ELL0_STRUCTURALLY_NON_IDENTIFIABLE_UNDER_CURRENT_FAMILIES`;
+- turnover `F_T`: `MATHEMATICAL_IDENTIFIABILITY_CANDIDATE_ONLY`;
+- coefficiente esponenziale/nonlocalità: `BLOCKED_PENDING_INDEPENDENT_NONLOCAL_MECHANISM`;
+- risultato complessivo: `NO_POSITIVE_DETECTION_CLAIM`.
+
+## Paper autorevole e programma
+
+La sintesi scientifica corrente bilingue è [`papers/umch`](papers/umch/README.md). Integra fondamenti, risultati negativi storici, protocolli, casi esatti, no-go di identificabilità e candidato turnover. I paper precedenti restano record tecnici storici.
+
+1. correggere e falsificare definizioni operative;
+2. derivare o escludere meccanismi nonlocali indipendenti;
+3. usare dati solo con protocolli preregistrati e identificabilità risolta.
 
 [Specifica restart](doc/specs/2026-08-25-multiscale-operational-spacetime-curvature.md) · [Roadmap](docs/roadmap.md) · [Teoria](theory/spacetime/) · [Politica IA](docs/ai-assistance.md)
 
