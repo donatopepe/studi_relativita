@@ -1,0 +1,33 @@
+{
+  "channels": {
+    "clock": {
+      "p": 2,
+      "status": "CONDITIONAL_FIXED_SHORT_BASELINE_PROTOCOL_ONLY"
+    },
+    "congruence": {
+      "p": 2,
+      "status": "CONDITIONAL_FIXED_SHORT_BASELINE_PROTOCOL_ONLY"
+    },
+    "holonomy": {
+      "p": 2,
+      "status": "DERIVED_REGULAR_SMALL_REGION_ONLY"
+    },
+    "magnetic": {
+      "p": 2,
+      "status": "DERIVED_REGULAR_SMALL_REGION_ONLY"
+    },
+    "null": {
+      "p": 2,
+      "status": "CONDITIONAL_FIXED_SHORT_BASELINE_PROTOCOL_ONLY"
+    },
+    "tidal": {
+      "p": 2,
+      "status": "DERIVED_REGULAR_SMALL_REGION_ONLY"
+    }
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "q_status": "NOT_DERIVED_FROM_CURRENT_GEOMETRIC_CORE",
+  "scope": "p=2 follows only for declared regular small-region/short-baseline protocols; no universal channel law. Exponential q requires new independently justified mechanism.",
+  "study_id": "turnover-shape-derivation-gate-v1",
+  "turnover_status": "BLOCKED_PENDING_INDEPENDENT_NONLOCAL_MECHANISM"
+}

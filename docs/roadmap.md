@@ -34,6 +34,10 @@ Current `F_P`, `F_E`, and `F_PE` families have exact reparameterization degenera
 
 `F_T=A x^p exp[-q(x-1)]` gives amplitude-independent ell0 inversion when `p,q` are fixed by independent theory and turnover/shape coverage exists. It is a mathematical candidate, not adopted as UMCH law. No physical derivation of `p,q`, data, or detection exists.
 
+## Turnover shape derivation gate
+
+Dimensional geometry supplies `p=2` only for declared regular small-region area-normalized channels. Current local GR core does not derive exponential `q`; turnover remains `BLOCKED_PENDING_INDEPENDENT_NONLOCAL_MECHANISM`. Any nonlocal mechanism must be independently specified before data.
+
 ## Identifiability gate
 
 Required before positive claim: unique frame or `FRAME_UNRESOLVED`, fixed norm, fixed region/scale family, fixed threshold family, null-model comparison, and independent replication. These conditions are necessary but do not remove the current exact `ell0` degeneracies.
