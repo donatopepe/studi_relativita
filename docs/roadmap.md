@@ -1,6 +1,10 @@
-# UMCH spacetime restart roadmap
+# UMCH unified research roadmap
 
-## Spacetime Paper I — Foundations
+## Unified authoritative paper
+
+Current synthesis is [`papers/umch`](../papers/umch/README.md), bilingual and authoritative. Earlier foundation, classical-dynamics, and spacetime-foundations papers remain historical technical records. Core remains `UNPROVEN`; overall result is `NO_POSITIVE_DETECTION_CLAIM`.
+
+## Spacetime Paper I — Foundations — historical milestone
 
 Define admissible regions, physical frame, raw operational response vector, `C_2`/`C_infinity`, threshold families including `F_0`, scale domain `ℓ≥ℓ₀`, and falsification. Core remains `UNPROVEN`.
 
@@ -16,7 +20,7 @@ Validate definitions without claiming detection:
 
 ## Operational protocol milestone
 
-Holonomy, clock, null-bundle, and congruence protocol contracts added. Frame hierarchy implemented; ell0 remains `NON_IDENTIFIABLE`; no positive detection claim.
+Holonomy, clock, null-bundle, and congruence protocol contracts added. Frame hierarchy implemented. Stronger current result: `ELL0_STRUCTURALLY_NON_IDENTIFIABLE_UNDER_CURRENT_FAMILIES`; no positive detection claim.
 
 ## Vacuum frame gate
 

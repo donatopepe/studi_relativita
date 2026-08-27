@@ -26,12 +26,20 @@ Norms selected before data: `C_2` and `C_infinity`. Positive power/exponential/p
 
 Physical frame: regular timelike eigenvector of `T^μ_ν`; in vacuum, cosmological/CMB continuation. Nonunique cases: `FRAME_UNRESOLVED`, never confirmation.
 
-## Program
+## Current results
 
-1. operational spacetime foundations;
-2. exact Minkowski, FLRW, Schwarzschild, and VSI-wave cases;
-3. identifiability and observables;
-4. data only under preregistered protocols.
+- `F_P/F_E/F_PE` families: `ELL0_STRUCTURALLY_NON_IDENTIFIABLE_UNDER_CURRENT_FAMILIES`;
+- `F_T` turnover: `MATHEMATICAL_IDENTIFIABILITY_CANDIDATE_ONLY`;
+- exponential coefficient/nonlocality: `BLOCKED_PENDING_INDEPENDENT_NONLOCAL_MECHANISM`;
+- overall result: `NO_POSITIVE_DETECTION_CLAIM`.
+
+## Authoritative paper and program
+
+Current bilingual scientific synthesis is [`papers/umch`](papers/umch/README.md). It integrates foundations, historical negative results, protocols, exact cases, identifiability no-go, and turnover candidate. Previous papers remain historical technical records.
+
+1. correct and falsify operational definitions;
+2. derive or exclude independent nonlocal mechanisms;
+3. use data only under preregistered protocols and resolved identifiability.
 
 [Restart specification](doc/specs/2026-08-25-multiscale-operational-spacetime-curvature.md) · [Roadmap](docs/roadmap.md) · [Theory](theory/spacetime/) · [AI policy](docs/ai-assistance.md)
 
