@@ -58,8 +58,12 @@ Historical A/B work recorded A: `INCOMPLETE` then contradicted, B: `INCOMPLETE` 
 
 Old roadmap labels Paper II, Paper III, Paper IV, Paper V, Paper VI, and Paper VII refer to superseded worldline sequence. They remain searchable for provenance but are not active release order.
 
+## Remaining external and human stop gates
+
+Autonomous bounded corrections are exhausted. Remaining assumptions are `UMCH-A-0003`, `UMCH-A-0004`, `UMCH-A-0005`, `UMCH-A-0008`, `UMCH-A-0010`, `UMCH-A-0011`, and `UMCH-A-0012`. They require domain-specific frame proof, protocol calibration/data, independent turnover/nonlocal theory, or human review. `UMCH-A-0011` is `EXTERNAL_EVIDENCE_REQUIRED`; `UMCH-A-0012` is `HUMAN_REVIEW_REQUIRED`. Do not fill these gaps creatively.
+
 ## Later theory
 
-QFT/quantum gravity only after operational definition and identifiability. No equation modification or `ℓ₀` value is assumed in first milestone.
+QFT/quantum gravity only after operational definition and identifiability. No equation modification or `ℓ₀` value is assumed.
 
 Completed initial milestone: historical repository/audit infrastructure preserved; spacetime restart is next active milestone.
