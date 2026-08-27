@@ -146,6 +146,35 @@ Access date for this initial verification: **2026-08-21**. “Verified” means 
 - Exact supported topic: outgoing-radiation conditions in general relativity and associated null-radiation framework.
 - Limits: this source does not establish UMCH, a universal null-bundle floor, or `ell0`.
 
+## Hinterbichler2012
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1103/RevModPhys.84.671
+- Canonical article: https://doi.org/10.1103/RevModPhys.84.671
+- Canonical preprint: https://arxiv.org/abs/1105.3735
+- Access date: 2026-08-27
+- Exact supported topic: effective-field-theory review of massive gravity and its characteristic mass/range structures.
+- Limits: this source does not establish UMCH, identify `ell0`, or fix a dimensionless project coefficient `q`.
+
+## BiswasEtAl2012
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1103/PhysRevLett.108.031101
+- Canonical article: https://doi.org/10.1103/PhysRevLett.108.031101
+- Canonical preprint: https://arxiv.org/abs/1110.5249
+- Access date: 2026-08-27
+- Exact supported topic: covariant ghost-free gravity including nonlocal/infinite-derivative form factors and an associated nonlocal scale.
+- Limits: this source does not establish UMCH, the radial family `F_T`, or a model-independent fixed `q`.
+
+## BarvinskyVilkovisky1990
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical metadata: https://api.crossref.org/works/10.1016/0550-3213(90)90047-H
+- Canonical article: https://doi.org/10.1016/0550-3213(90)90047-H
+- Access date: 2026-08-27
+- Exact supported topic: covariant perturbation theory and nonlocal curvature form-factor algorithms at second order.
+- Limits: this source does not establish UMCH, a universal nonlocal scale, or a model-independent coefficient `q`.
+
 ## Verification discipline
 
 Metadata fetched during this audit is not stored as authority-free prose: each BibTeX DOI resolves to its canonical record. New entries require a new section matching the citation key, canonical URL, access date, supported topic, and limits. Search snippets alone are insufficient.
