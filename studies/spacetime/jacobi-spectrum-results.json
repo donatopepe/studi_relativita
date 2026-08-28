@@ -1,0 +1,30 @@
+{
+  "affine_gate": "AFFINE_OPTICAL_SCALE_DEGENERACY",
+  "channels": [
+    {
+      "first_caustic": 1.5707963267948966,
+      "jacobi_eigenvalue_at_s1": 0.45464871341284085,
+      "optical_eigenvalue": 4
+    },
+    {
+      "first_caustic": null,
+      "jacobi_eigenvalue_at_s1": 1.0,
+      "optical_eigenvalue": 0
+    },
+    {
+      "first_caustic": null,
+      "jacobi_eigenvalue_at_s1": 1.1752011936438014,
+      "optical_eigenvalue": -1
+    }
+  ],
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "GEOMETRIC_FOCUSING_SCALE_NOT_ELL0",
+  "limitation": "Constant diagonal optical-tidal ODE control only; no arbitrary-spacetime Jacobi map, observation, or UMCH scale law.",
+  "phase_collision": {
+    "phase_lambda1_s6": 6.0,
+    "phase_lambda4_s3": 6.0
+  },
+  "status": "JACOBI_CAUSTIC_GEOMETRIC_LANDMARK_NOT_ELL0",
+  "study_id": "constant-optical-jacobi-spectrum-v1"
+}
