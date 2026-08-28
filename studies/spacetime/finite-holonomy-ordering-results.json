@@ -1,0 +1,47 @@
+{
+  "AB": [
+    [
+      1.04,
+      0.2
+    ],
+    [
+      0.2,
+      1
+    ]
+  ],
+  "AB_invariants": {
+    "determinant": 1.0,
+    "eigenvalues": [
+      0.819002487578,
+      1.220997512422
+    ],
+    "trace": 2.04
+  },
+  "BA": [
+    [
+      1,
+      0.2
+    ],
+    [
+      0.2,
+      1.04
+    ]
+  ],
+  "BA_invariants": {
+    "determinant": 1.0,
+    "eigenvalues": [
+      0.819002487578,
+      1.220997512422
+    ],
+    "trace": 2.04
+  },
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "FINITE_LOOP_GEOMETRY_NOT_ELL0",
+  "limitation": "Invertible 2x2 segment-map toy; not connection-derived holonomy, exact geometry, observation, or UMCH mechanism.",
+  "parameter": 0.2,
+  "raw_order_distance": 0.05656854249492385,
+  "similarity_residual": 0.0,
+  "status": "FINITE_HOLONOMY_RAW_ORDER_DIFF_CONJUGACY_AMBIGUOUS",
+  "study_id": "finite-holonomy-ordering-v1"
+}
