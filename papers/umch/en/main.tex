@@ -26,10 +26,10 @@ Let $(\mathcal M,g_{\rm real})$ be realized spacetime, not globally isometric to
 \section{Regions and physical frame}\label{sec:u-frame}
 A region must be regular for the calculation, causally testable, and tied to a preregistered scale estimator. The primary frame is the unique future timelike eigenvector of $T^\mu{}_{\nu}$. In vacuum, CMB continuation requires anchor, unit field, covariant transport, path family, uniqueness, and coverage. UMCH-U-0005: missing requirements yield \verb|FRAME_UNRESOLVED|, never confirmation. A resolved frame is necessary, not sufficient.
 
-\section{Raw operational vector}\label{sec:u-response}
-We preserve
-\begin{equation}\label{eq:u-vector}\mathbf R=(R_{\rm tidal},R_{\rm mag},R_{\rm hol},R_{\rm clock},R_{\rm null},R_{\rm cong}).\end{equation}
-Electric and magnetic Weyl parts follow standard covariant decompositions \cite{Bonnor1995,MaartensBassett1998}. UMCH-U-0006: the raw vector remains public so a norm or channel cannot hide a counterexample.
+\section{Tensor/operator-valued response field}\label{sec:u-response}
+Primary object is a section $\mathscr R[\Omega,\ell,u_{\rm phys},\mathcal P;g]$ of a channel-native response bundle: tidal/magnetic endomorphisms, holonomy maps, clock-residual matrices, null Jacobi maps, and congruence fields. Record
+\begin{equation}\label{eq:u-vector}\mathbf R=(R_{\rm tidal},R_{\rm mag},R_{\rm hol},R_{\rm clock},R_{\rm null},R_{\rm cong})\end{equation}
+indexes families, not six independent scalars. Weyl parts follow \cite{Bonnor1995,MaartensBassett1998}. UMCH-U-0006: status \verb|RATIFIED_PRIMARY_RESEARCH_OBJECT|; identifiability \verb|OPERATOR_IDENTIFIABILITY_NOT_YET_PHYSICALLY_DERIVED|. Candidate invariants include spectral ratios, spectral flow, rank/nullity, anisotropy, and holonomy classes/singular values. Collinear counterexample is \verb|PROJECTIVE_NON_IDENTIFIABLE_COLLINEAR|.
 
 \section{Operational protocols}\label{sec:u-protocols}
 $R_{\rm tidal}$ and $R_{\rm mag}$ use frame-normalized RMS; $R_{\rm hol}$ uses preregistered finite circuits; $R_{\rm clock}$ uses proper-time residuals after a fixed baseline \cite{PetitWolf2005}; $R_{\rm null}$ uses Jacobi/shear/convergence at fixed geometry in standard null context \cite{Sachs1961}; $R_{\rm cong}$ uses expansion/shear/vorticity against matched initial data \cite{Raychaudhuri1955}. UMCH-U-0007: these sources establish neither UMCH nor project normalizations.
@@ -73,7 +73,7 @@ Consider, without adopting it as a law,
 \end{equation}
 If $p,q$ are fixed by independent theory, two positive responses give
 \begin{equation}\label{eq:u-inversion}\ell_0=\frac{q(\ell_1-\ell_2)}{p\log(\ell_1/\ell_2)-\log(y_1/y_2)},\end{equation}
-and $\ell_{\rm peak}=(p/q)\ell_0$. UMCH-U-0012: this is \verb|MATHEMATICAL_IDENTIFIABILITY_CANDIDATE_ONLY|; if $q$ is free, degeneracy returns.
+and $\ell_{\rm peak}=(p/q)\ell_0$. UMCH-U-0012: this is \verb|MATHEMATICAL_IDENTIFIABILITY_CANDIDATE_ONLY| and \verb|SECONDARY_PROJECTION_SPECIFIC| branch; if $q$ is free, degeneracy returns. Operator branch may in principle use projective/spectral landmarks without q, but none is physically derived.
 
 \section{Shape-derivation gate}\label{sec:u-shape}
 Curvature has dimension $L^{-2}$; for area-normalized tidal, magnetic, and holonomy channels in small regular regions, $R\sim\ell^2|\mathrm{curvature}|$, hence $p=2$ within scope. For clock/null/congruence this requires a channel-specific short-baseline protocol. UMCH-U-0013: local GR does not derive $e^{-q\ell/\ell_0}$ or $q$. Turnover is \verb|BLOCKED_PENDING_INDEPENDENT_NONLOCAL_MECHANISM|.

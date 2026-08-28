@@ -34,9 +34,13 @@ Only after exact cases: geodesic-deviation arrays, clock networks, holonomy prot
 
 Current `F_P`, `F_E`, and `F_PE` families have exact reparameterization degeneracies between `ell0` and free amplitude/shape parameters; `F_0` contains no `ell0`. Therefore `ELL0_STRUCTURALLY_NON_IDENTIFIABLE_UNDER_CURRENT_FAMILIES`. External preregistered calibration could change this scoped gate; none exists.
 
-## Turnover identifiability candidate
+## Operator-valued primary response
 
-`F_T=A x^p exp[-q(x-1)]` gives amplitude-independent ell0 inversion when `p,q` are fixed by independent theory and turnover/shape coverage exists. It is a mathematical candidate, not adopted as UMCH law. No physical derivation of `p,q`, data, or detection exists.
+Primary UMCH object is tensor/operator-valued response section over region/scale/frame/protocol space. Raw six-channel record indexes channel-native objects; scalar norms and threshold curves are projections. Candidate ell0 routes include projective direction, spectral flow, rank, holonomy, anisotropy, and caustic landmarks. Status `OPERATOR_IDENTIFIABILITY_NOT_YET_PHYSICALLY_DERIVED`; collinear scaling is an explicit non-identifiable counterexample.
+
+## Turnover identifiability candidate — secondary scalar branch
+
+`F_T=A x^p exp[-q(x-1)]` gives amplitude-independent ell0 inversion when `p,q` are fixed by independent theory and turnover/shape coverage exists. It is `SECONDARY_PROJECTION_SPECIFIC`, not adopted as UMCH law. q is not required by primary operator route unless this scalar branch is selected. No physical landmark, data, or detection exists.
 
 ## Turnover shape derivation gate
 
