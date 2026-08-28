@@ -1,0 +1,30 @@
+{
+  "classification": "EXACT_PATTERN_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "EQUAL_HOMOGENEITY_RATIO_NOT_ELL0",
+  "free_nuisance_gate": "GAIN_GEOMETRY_RATIO_CONFOUNDED",
+  "known_nuisance_gate": "GEOMETRIC_AMPLITUDE_RATIO_RECOVERABLE_SCALE_CANCELS",
+  "limitation": "Algebraic specialization of fixed-curvature ell^2 exact patterns; no physical inter-channel map, unequal exponent, likelihood, data, or UMCH law.",
+  "records": [
+    {
+      "channels": [
+        24,
+        385
+      ],
+      "ell": 1,
+      "ratio": 0.06233766233766234
+    },
+    {
+      "channels": [
+        1944,
+        31185
+      ],
+      "ell": 9,
+      "ratio": 0.06233766233766234
+    }
+  ],
+  "status": "EXACT_CROSS_CHANNEL_EQUAL_HOMOGENEITY_SCALE_CANCELS",
+  "study_id": "exact-cross-channel-homogeneity-v1",
+  "unequal_exponent_note": "ALGEBRAIC_SCALE_DEPENDENCE_ONLY_IF_PHYSICALLY_DERIVED",
+  "zero_channel_ratio": null
+}
