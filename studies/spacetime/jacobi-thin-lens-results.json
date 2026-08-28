@@ -1,0 +1,45 @@
+{
+  "boundary": "d(0)=0,d_prime(0)=1",
+  "cases": [
+    {
+      "a": 0.25,
+      "caustic": null,
+      "endpoint": 2.625,
+      "post_slope": 0.5
+    },
+    {
+      "a": 0.75,
+      "caustic": 2.25,
+      "endpoint": -1.375,
+      "post_slope": -0.5
+    },
+    {
+      "a": 1,
+      "caustic": 2.0,
+      "endpoint": -3,
+      "post_slope": -1
+    },
+    {
+      "a": 2,
+      "caustic": 2.6666666666666665,
+      "endpoint": -7,
+      "post_slope": -3
+    },
+    {
+      "a": 4,
+      "caustic": 4.571428571428571,
+      "endpoint": -3,
+      "post_slope": -7
+    }
+  ],
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "ORDERED_OPTICAL_PROFILE_GEOMETRIC_NOT_ELL0",
+  "equation": "d_second+k delta(s-a)d=0",
+  "integrated_strength": 2,
+  "limitation": "Idealized scalar distributional thin lens; no smooth exact spacetime, matrix screen transport, data, or UMCH law.",
+  "observer": 5,
+  "profile_gate": "SAME_INTEGRATED_STRENGTH_DIFFERENT_ENDPOINT_AND_CAUSTIC",
+  "status": "JACOBI_INTEGRATED_FOCUSING_INSUFFICIENT_PROFILE_LOCATION_REQUIRED",
+  "study_id": "jacobi-thin-lens-v1"
+}
