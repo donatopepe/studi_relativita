@@ -1,0 +1,83 @@
+{
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "collisions": [
+    {
+      "determinant": 8.0,
+      "matrix": [
+        [
+          2.0,
+          0
+        ],
+        [
+          0,
+          4.0
+        ]
+      ],
+      "observed": [
+        2.0,
+        4.0
+      ],
+      "source_x": 1,
+      "target_response": [
+        2,
+        4
+      ],
+      "target_z": 2
+    },
+    {
+      "determinant": 15.625,
+      "matrix": [
+        [
+          2.5,
+          0
+        ],
+        [
+          0,
+          6.25
+        ]
+      ],
+      "observed": [
+        5.0,
+        25.0
+      ],
+      "source_x": 2,
+      "target_response": [
+        5,
+        25
+      ],
+      "target_z": 5
+    },
+    {
+      "determinant": 216.0,
+      "matrix": [
+        [
+          6.0,
+          0
+        ],
+        [
+          0,
+          36.0
+        ]
+      ],
+      "observed": [
+        3.0,
+        9.0
+      ],
+      "source_x": 0.5,
+      "target_response": [
+        3,
+        9
+      ],
+      "target_z": 3
+    }
+  ],
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "MIXING_QUOTIENT_NOT_ELL0",
+  "free_mixing_gate": "UNKNOWN_DIAGONAL_SUBGROUP_ALREADY_CREATES_ALL_POSITIVE_COLLISIONS",
+  "known_mixing_gate": "KNOWN_INVERTIBLE_MIXING_REVERSIBLE",
+  "latent_gate": "PROJECTIVE_RATIO_RECOVERS_X_WHEN_BASIS_FIXED",
+  "latent_map": "r(x)=(x,x^2), x>0",
+  "limitation": "Synthetic dimensionless map; no channel-native units, physical leakage, spacetime transport, data, or UMCH law.",
+  "status": "CROSS_CHANNEL_INJECTIVITY_DESTROYED_BY_FREE_MIXING_GROUP",
+  "study_id": "cross-channel-mixing-v1"
+}
