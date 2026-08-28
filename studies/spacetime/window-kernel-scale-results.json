@@ -1,0 +1,76 @@
+{
+  "average": "diag(1,kappa^2 ell^2/3)",
+  "cases": [
+    {
+      "kappa": 0.5,
+      "operator_at_crossing": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0.9999999999999999
+        ]
+      ],
+      "physical_half_width": 1.7320508075688772,
+      "reported_crossing": 3.4641016151377544
+    },
+    {
+      "kappa": 1,
+      "operator_at_crossing": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0.9999999999999999
+        ]
+      ],
+      "physical_half_width": 1.7320508075688772,
+      "reported_crossing": 1.7320508075688772
+    },
+    {
+      "kappa": 4,
+      "operator_at_crossing": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0.9999999999999999
+        ]
+      ],
+      "physical_half_width": 1.7320508075688772,
+      "reported_crossing": 0.4330127018922193
+    }
+  ],
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "KERNEL_SCALE_CONVENTION_NOT_ELL0",
+  "limitation": "Synthetic 1D operator profile and top-hat kernel; no covariant spacetime region, transport, data, or UMCH law.",
+  "movable_targets": [
+    {
+      "recovered": 0.5,
+      "required_kappa": 3.4641016151377544,
+      "target": 0.5
+    },
+    {
+      "recovered": 2.0,
+      "required_kappa": 0.8660254037844386,
+      "target": 2
+    },
+    {
+      "recovered": 5.0,
+      "required_kappa": 0.34641016151377546,
+      "target": 5
+    }
+  ],
+  "profile": "K(s)=diag(1,s^2)",
+  "reparameterization_gate": "PHYSICAL_HALF_WIDTH_CROSSING_FIXED_REPORTED_ELL_CONVENTIONAL",
+  "status": "FINITE_WINDOW_SPECTRAL_LANDMARK_KERNEL_DILATION_MOVABLE_NOT_ELL0",
+  "study_id": "window-kernel-scale-v1",
+  "window": "normalized top-hat [-kappa ell,kappa ell]"
+}
