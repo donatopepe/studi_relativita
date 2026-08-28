@@ -1,0 +1,20 @@
+{
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "counterexample": {
+    "note": "All channel objects scale along same ray; normalization cannot identify scale.",
+    "status": "PROJECTIVE_NON_IDENTIFIABLE_COLLINEAR"
+  },
+  "primary_object": "CHANNEL_NATIVE_TENSOR_OPERATOR_RESPONSE_SECTION",
+  "scalar_turnover_branch": "SECONDARY_PROJECTION_SPECIFIC",
+  "status": "OPERATOR_IDENTIFIABILITY_NOT_YET_PHYSICALLY_DERIVED",
+  "study_id": "operator-response-projective-identifiability-v1",
+  "synthetic_projective_control": {
+    "note": "Synthetic amplitudes/exponents only; no physical channel derivation.",
+    "raw_channels": [
+      36.0,
+      6.0
+    ],
+    "recovered_x": 3.0,
+    "x": 3.0
+  }
+}
