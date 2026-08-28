@@ -1,0 +1,32 @@
+{
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "ELL0_NOT_PRESENT_WITHOUT_THEORY_FIXED_LANDMARK",
+  "full_rank": {
+    "gate": "SCALED_OPERATOR_TOMOGRAPHY_IDENTIFIABLE",
+    "rank": 3,
+    "record": [
+      8,
+      12,
+      16
+    ]
+  },
+  "limitation": "Leading linearized loop model only; finite-loop path ordering, transport, noise and boundary nuisance excluded.",
+  "rank_deficient": {
+    "collision": [
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        3
+      ]
+    ],
+    "gate": "OPERATOR_TOMOGRAPHY_NON_IDENTIFIABLE_RANK_DEFICIENT",
+    "rank": 2
+  },
+  "scale_gate": "ELL_CURVATURE_AMPLITUDE_DEGENERACY",
+  "status": "HOLONOMY_TOMOGRAPHY_RANK_CONDITIONAL_ELL0_ABSENT",
+  "study_id": "holonomy-orientation-tomography-v1"
+}
