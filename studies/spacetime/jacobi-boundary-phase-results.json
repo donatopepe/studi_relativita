@@ -1,0 +1,32 @@
+{
+  "amplitude_scale_collision": [
+    0.2940013017737837,
+    0.2940013017737837
+  ],
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "BOUNDARY_PHASE_GEOMETRIC_ZERO_NOT_ELL0",
+  "lambda": 4,
+  "limitation": "Exact constant-positive scalar ODE only; no varying optical matrix, covariant screen transport, observation, or UMCH law.",
+  "movable_targets": [
+    {
+      "recovered_zero": 0.19999999999999996,
+      "required_v0_for_d0_1": -4.730444840078221,
+      "target": 0.2
+    },
+    {
+      "recovered_zero": 0.6999999999999998,
+      "required_v0_for_d0_1": -0.34495345166360014,
+      "target": 0.7
+    },
+    {
+      "recovered_zero": 1.2,
+      "required_v0_for_d0_1": 2.1833720527581137,
+      "target": 1.2
+    }
+  ],
+  "status": "JACOBI_CAUSTIC_BOUNDARY_PHASE_MOVABLE_NOT_ELL0",
+  "study_id": "jacobi-boundary-phase-v1",
+  "trivial_boundary_gate": "ZERO_INITIAL_DATA_TRIVIAL_CHANNEL_REJECTED",
+  "vertex_first_positive_zero": 1.5707963267948966
+}
