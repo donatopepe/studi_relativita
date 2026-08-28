@@ -1,0 +1,28 @@
+{
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "PATH_SHAPE_GEOMETRIC_SCALE_NOT_ELL0",
+  "limitation": "2x2 shear-product toy; rho is free path-shape protocol, not connection-derived geometry, observation, or UMCH law.",
+  "movable_crossings": [
+    {
+      "recovered": 1.0,
+      "required_rho": 1.0,
+      "target": 1
+    },
+    {
+      "recovered": 2.0,
+      "required_rho": 0.25,
+      "target": 2
+    },
+    {
+      "recovered": 5.0,
+      "required_rho": 0.04,
+      "target": 5
+    }
+  ],
+  "status": "HOLONOMY_TRACE_LANDMARK_PATH_SHAPE_MOVABLE_NOT_ELL0",
+  "study_id": "holonomy-path-shape-v1",
+  "target_trace": 1,
+  "trace_gate": "CONJUGACY_INVARIANT_BUT_PATH_NUISANCE_DEPENDENT",
+  "zero_shape_crossing": null
+}
