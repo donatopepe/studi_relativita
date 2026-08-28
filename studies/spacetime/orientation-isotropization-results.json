@@ -1,0 +1,150 @@
+{
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "ORIENTATION_PROTOCOL_SCALE_NOT_ELL0",
+  "isotropy_gate": "MULTIPLICITY_CHANGE_FROM_ORIENTATION_MIXTURE",
+  "limitation": "2x2 rotated-mixture toy; orientation weights are protocol nuisance, not derived spacetime measure, data, or UMCH law.",
+  "movable_targets": [
+    {
+      "target": 1,
+      "weight_at_target": 0.5
+    },
+    {
+      "target": 4,
+      "weight_at_target": 0.5
+    },
+    {
+      "target": 9,
+      "weight_at_target": 0.5
+    }
+  ],
+  "operator": [
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "rotated_operator": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "status": "ORIENTATION_WEIGHT_LANDMARK_PROTOCOL_MOVABLE_NOT_ELL0",
+  "study_id": "orientation-isotropization-v1",
+  "weights": [
+    {
+      "eigenvalues": [
+        1.0,
+        3.0
+      ],
+      "operator": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "projective_spectrum": [
+        0.316227766017,
+        0.948683298051
+      ],
+      "w": 0
+    },
+    {
+      "eigenvalues": [
+        1.5,
+        2.5
+      ],
+      "operator": [
+        [
+          1.5,
+          0.0
+        ],
+        [
+          0.0,
+          2.5
+        ]
+      ],
+      "projective_spectrum": [
+        0.514495755428,
+        0.857492925713
+      ],
+      "w": 0.25
+    },
+    {
+      "eigenvalues": [
+        2.0,
+        2.0
+      ],
+      "operator": [
+        [
+          2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0
+        ]
+      ],
+      "projective_spectrum": [
+        0.707106781187,
+        0.707106781187
+      ],
+      "w": 0.5
+    },
+    {
+      "eigenvalues": [
+        1.5,
+        2.5
+      ],
+      "operator": [
+        [
+          2.5,
+          0.0
+        ],
+        [
+          0.0,
+          1.5
+        ]
+      ],
+      "projective_spectrum": [
+        0.514495755428,
+        0.857492925713
+      ],
+      "w": 0.75
+    },
+    {
+      "eigenvalues": [
+        1.0,
+        3.0
+      ],
+      "operator": [
+        [
+          3,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "projective_spectrum": [
+        0.316227766017,
+        0.948683298051
+      ],
+      "w": 1
+    }
+  ]
+}
