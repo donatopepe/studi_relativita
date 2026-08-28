@@ -1,0 +1,38 @@
+{
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "identifiability": "ELL0_NOT_PRESENT_IN_GEOMETRIC_WINDOW_CONTROL",
+  "limitation": "Noncollinear profiles are prescribed toys, not derived exact-geometry windows; nuisance profiles/window can mimic shape.",
+  "mixed_profiles": {
+    "decision": "NONRADIAL_PROFILE_DEPENDENT_SHAPE_ONLY",
+    "projective": [
+      [
+        0.707106781187,
+        -0.707106781187,
+        0.0
+      ],
+      [
+        0.707106781187,
+        0.0,
+        -0.707106781187
+      ]
+    ]
+  },
+  "separable": {
+    "decision": "PROJECTIVE_SCALE_NON_IDENTIFIABLE_SEPARABLE_WINDOW",
+    "projective": [
+      [
+        0.267261241912,
+        0.534522483825,
+        0.801783725737
+      ],
+      [
+        0.267261241912,
+        0.534522483825,
+        0.801783725737
+      ]
+    ]
+  },
+  "status": "NONRADIAL_GEOMETRIC_SHAPE_NOT_ELL0_LANDMARK",
+  "study_id": "finite-window-operator-v1"
+}
