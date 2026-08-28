@@ -1,0 +1,33 @@
+{
+  "bounded_gain_ratio": {
+    "bounds": [
+      0.5,
+      2
+    ],
+    "gate": "SET_IDENTIFIED_ONLY",
+    "x_interval": [
+      1.5,
+      6.0
+    ]
+  },
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "common_gain": {
+    "gate": "X_IDENTIFIABLE_IF_GAIN_RATIO_AND_SHAPE_FIXED",
+    "observed": [
+      180,
+      30
+    ],
+    "recovered_x": 3.0
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "equal_exponents": {
+    "gate": "X_NON_IDENTIFIABLE_EQUAL_EXPONENTS"
+  },
+  "free_independent_gain": {
+    "gate": "X_STRUCTURALLY_NON_IDENTIFIABLE_FREE_GAIN_RATIO",
+    "required_gain_ratio_for_x7": 0.42857142857142855
+  },
+  "limitation": "Synthetic channels and calibration groups only; no physical exponents, coefficients, likelihood or UMCH law.",
+  "status": "CROSS_CHANNEL_IDENTIFIABILITY_REQUIRES_CALIBRATION_QUOTIENT",
+  "study_id": "cross-channel-calibration-nuisance-v1"
+}
