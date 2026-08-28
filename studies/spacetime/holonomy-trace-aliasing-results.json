@@ -1,0 +1,28 @@
+{
+  "amplitude_area_gate": "PHASE_EQUALS_CURVATURE_TIMES_AREA_MULTIPLICATIVE_DEGENERACY",
+  "branches_n2": [
+    -13.266370614359,
+    -11.866370614359,
+    -6.98318530718,
+    -5.58318530718,
+    -0.7,
+    0.7,
+    5.58318530718,
+    6.98318530718,
+    11.866370614359,
+    13.266370614359
+  ],
+  "classification": "EXACT_GROUP_CONTROL_AND_NEGATIVE_RESULT",
+  "collision_gate": "TRACE_EVEN_AND_TWO_PI_PERIODIC",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "conditioning_gate": "TRACE_DERIVATIVE_ZERO_AT_BRANCH_ENDPOINTS",
+  "ell0_gate": "HOLONOMY_PHASE_GEOMETRIC_NOT_ELL0",
+  "holonomy": "SO(2) rotation H(phi)",
+  "limitation": "Exact SO(2) matrix algebra; no connection-derived spacetime loop, non-Abelian transport, data, or UMCH law.",
+  "local_gate": "INJECTIVE_ONLY_ON_PREREGISTERED_MONOTONE_BRANCH",
+  "reference_phase": 0.7,
+  "reference_trace": 1.529684374568977,
+  "status": "FINITE_HOLONOMY_TRACE_PERIODIC_BRANCH_NONIDENTIFIABLE",
+  "study_id": "holonomy-trace-aliasing-v1",
+  "trace_formula": "T(phi)=2 cos(phi)"
+}
