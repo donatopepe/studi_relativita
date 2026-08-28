@@ -1,0 +1,136 @@
+{
+  "cases": [
+    {
+      "case": "MINKOWSKI",
+      "electric": {
+        "distinct_eigenvalues": 1,
+        "eigenvalues": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frobenius": 0.0,
+        "projective_spectrum": null,
+        "rank": 0,
+        "trace": 0.0
+      },
+      "magnetic": {
+        "distinct_eigenvalues": 1,
+        "eigenvalues": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frobenius": 0.0,
+        "projective_spectrum": null,
+        "rank": 0,
+        "trace": 0.0
+      },
+      "scale_comparison": "PROJECTIVE_UNDEFINED_ZERO"
+    },
+    {
+      "case": "FLRW",
+      "electric": {
+        "distinct_eigenvalues": 1,
+        "eigenvalues": [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "frobenius": 1.7320508075688772,
+        "projective_spectrum": [
+          -1.0,
+          -1.0,
+          -1.0
+        ],
+        "rank": 3,
+        "trace": -3.0
+      },
+      "magnetic": {
+        "distinct_eigenvalues": 1,
+        "eigenvalues": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frobenius": 0.0,
+        "projective_spectrum": null,
+        "rank": 0,
+        "trace": 0.0
+      },
+      "scale_comparison": "PROJECTIVE_SCALE_NON_IDENTIFIABLE"
+    },
+    {
+      "case": "SCHWARZSCHILD",
+      "electric": {
+        "distinct_eigenvalues": 2,
+        "eigenvalues": [
+          -2.0,
+          1.0,
+          1.0
+        ],
+        "frobenius": 2.449489742783178,
+        "projective_spectrum": [
+          -1.0,
+          0.5,
+          0.5
+        ],
+        "rank": 3,
+        "trace": 0.0
+      },
+      "magnetic": {
+        "distinct_eigenvalues": 1,
+        "eigenvalues": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "frobenius": 0.0,
+        "projective_spectrum": null,
+        "rank": 0,
+        "trace": 0.0
+      },
+      "scale_comparison": "PROJECTIVE_SCALE_NON_IDENTIFIABLE"
+    },
+    {
+      "case": "VSI_TYPE_N_TOY",
+      "electric": {
+        "distinct_eigenvalues": 3,
+        "eigenvalues": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "frobenius": 1.4142135623730951,
+        "projective_spectrum": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "rank": 2,
+        "trace": 0.0
+      },
+      "magnetic": {
+        "distinct_eigenvalues": 3,
+        "eigenvalues": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "frobenius": 1.4142135623730951,
+        "projective_spectrum": [
+          -1.0,
+          0.0,
+          1.0
+        ],
+        "rank": 2,
+        "trace": 0.0
+      },
+      "scale_comparison": "PROJECTIVE_SCALE_NON_IDENTIFIABLE"
+    }
+  ],
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "status": "PROJECTIVE_SCALE_NON_IDENTIFIABLE_IN_CURRENT_EXACT_CONTROLS",
+  "study_id": "operator-native-exact-controls-v1",
+  "warning": "Fixed-curvature ell^2 controls validate operator spectra and geometry patterns only; no ell0 landmark."
+}
