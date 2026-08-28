@@ -1,0 +1,27 @@
+{
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "commuting": {
+    "commutator_norm": 0.0,
+    "order_distance": 0.0
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "ORDERED_GEOMETRIC_MAP_NOT_ELL0",
+  "limitation": "Second-order segment propagator toy; not exact Sachs integration, covariant screen transport, data, or UMCH dynamics.",
+  "noncommuting": {
+    "commutator_norm": 2.8284271247461903,
+    "integrated_trace": 0.8,
+    "order_distance": 0.028425516705945748,
+    "spectra": [
+      [
+        1.0,
+        3.0
+      ],
+      [
+        1.0,
+        3.0
+      ]
+    ]
+  },
+  "status": "JACOBI_PATH_ORDER_REQUIRED_LOCAL_SPECTRA_INSUFFICIENT",
+  "study_id": "jacobi-path-ordering-v1"
+}
