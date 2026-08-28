@@ -1,0 +1,215 @@
+{
+  "analytic_average": "diag((c+c^2)/2,(c+c^2)/2,-c-c^2), c=cos(Theta)",
+  "cases": [
+    {
+      "operator": [
+        [
+          1.0,
+          0,
+          0
+        ],
+        [
+          0,
+          1.0,
+          0
+        ],
+        [
+          0,
+          0,
+          -2.0
+        ]
+      ],
+      "projective_spectrum": [
+        -0.5,
+        0.25,
+        0.25
+      ],
+      "theta": 0,
+      "trace": 0.0
+    },
+    {
+      "operator": [
+        [
+          0.9702985374213421,
+          0,
+          0
+        ],
+        [
+          0,
+          0.9702985374213421,
+          0
+        ],
+        [
+          0,
+          0,
+          -1.9405970748426842
+        ]
+      ],
+      "projective_spectrum": [
+        -0.5,
+        0.25,
+        0.25
+      ],
+      "theta": 0.2,
+      "trace": 0.0
+    },
+    {
+      "operator": [
+        [
+          0.6749128793673045,
+          0,
+          0
+        ],
+        [
+          0,
+          0.6749128793673045,
+          0
+        ],
+        [
+          0,
+          0,
+          -1.349825758734609
+        ]
+      ],
+      "projective_spectrum": [
+        -0.5,
+        0.25,
+        0.25
+      ],
+      "theta": 0.7,
+      "trace": 0.0
+    },
+    {
+      "operator": [
+        [
+          0.24683044835302545,
+          0,
+          0
+        ],
+        [
+          0,
+          0.24683044835302545,
+          0
+        ],
+        [
+          0,
+          0,
+          -0.4936608967060509
+        ]
+      ],
+      "projective_spectrum": [
+        -0.5,
+        0.25,
+        0.25
+      ],
+      "theta": 1.2,
+      "trace": 0.0
+    },
+    {
+      "operator": [
+        [
+          0.0,
+          0,
+          0
+        ],
+        [
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0.0
+        ]
+      ],
+      "projective_spectrum": null,
+      "theta": 1.5707963267948966,
+      "trace": 0.0
+    },
+    {
+      "operator": [
+        [
+          -0.12148432348947417,
+          0,
+          0
+        ],
+        [
+          0,
+          -0.12148432348947417,
+          0
+        ],
+        [
+          0,
+          0,
+          0.24296864697894835
+        ]
+      ],
+      "projective_spectrum": [
+        -0.25,
+        -0.25,
+        0.5
+      ],
+      "theta": 2,
+      "trace": 0.0
+    },
+    {
+      "operator": [
+        [
+          -0.02721970070676666,
+          0,
+          0
+        ],
+        [
+          0,
+          -0.02721970070676666,
+          0
+        ],
+        [
+          0,
+          0,
+          0.05443940141353332
+        ]
+      ],
+      "projective_spectrum": [
+        -0.25,
+        -0.25,
+        0.5
+      ],
+      "theta": 2.8,
+      "trace": 0.0
+    },
+    {
+      "operator": [
+        [
+          0.0,
+          0,
+          0
+        ],
+        [
+          0,
+          0.0,
+          0
+        ],
+        [
+          0,
+          0,
+          0.0
+        ]
+      ],
+      "projective_spectrum": null,
+      "theta": 3.141592653589793,
+      "trace": 0.0
+    }
+  ],
+  "classification": "EXACT_PATTERN_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "ORIENTATION_MEASURE_GEOMETRIC_NOT_ELL0",
+  "limitation": "Exact angular average of Schwarzschild algebraic pattern after assumed common-space alignment; no Schwarzschild parallel transport, radial amplitude, data, or UMCH law.",
+  "local_pattern": "E(n)=I-3nn^T",
+  "measure": "uniform solid angle on cap 0<=theta<=Theta",
+  "shape_gate": "FIXED_AXIAL_PATTERN_WITH_SIGN_SECTORS",
+  "status": "SCHWARZSCHILD_CAP_AVERAGE_SIGN_REVERSAL_ORIENTATION_DOMAIN_NOT_ELL0",
+  "study_id": "schwarzschild-orientation-average-v1",
+  "zero_gate": "HEMISPHERE_ZERO_AND_SIGN_REVERSAL_FROM_ORIENTATION_DOMAIN"
+}
