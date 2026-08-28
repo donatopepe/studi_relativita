@@ -1,0 +1,59 @@
+{
+  "classification": "EXACT_PATTERN_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "SEPARABLE_EXACT_PATTERN_NOT_ELL0",
+  "flrw": {
+    "decision": "SEPARABLE_ISOTROPIC_RAY",
+    "projective_window_a": [
+      0.57735026919,
+      0.0,
+      0.0,
+      0.0,
+      0.57735026919,
+      0.0,
+      0.0,
+      0.0,
+      0.57735026919
+    ],
+    "projective_window_b": [
+      0.57735026919,
+      0.0,
+      0.0,
+      0.0,
+      0.57735026919,
+      0.0,
+      0.0,
+      0.0,
+      0.57735026919
+    ]
+  },
+  "limitation": "Symmetry-reduced scalar windows in fixed comoving/principal frames only; not arbitrary spacetime windows, transport, boundaries, or observations.",
+  "schwarzschild_radial": {
+    "decision": "SEPARABLE_PRINCIPAL_RAY",
+    "projective_window_a": [
+      -0.816496580928,
+      0.0,
+      0.0,
+      0.0,
+      0.408248290464,
+      0.0,
+      0.0,
+      0.0,
+      0.408248290464
+    ],
+    "projective_window_b": [
+      -0.816496580928,
+      0.0,
+      0.0,
+      0.0,
+      0.408248290464,
+      0.0,
+      0.0,
+      0.0,
+      0.408248290464
+    ]
+  },
+  "status": "EXACT_PATTERN_WINDOW_AVERAGING_REMAINS_PROJECTIVELY_RADIAL",
+  "study_id": "exact-window-separability-v1",
+  "zero_average_projective": null
+}
