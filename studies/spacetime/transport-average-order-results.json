@@ -1,0 +1,72 @@
+{
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "AVERAGING_ORDER_PROTOCOL_NOT_ELL0",
+  "limitation": "2x2 orthogonal-frame toy; no covariant spacetime bitensor transport, path family, region measure, data, or UMCH law.",
+  "local_A": [
+    [
+      3,
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "local_B": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "local_spectra": [
+    [
+      1.0,
+      3.0
+    ],
+    [
+      1.0,
+      3.0
+    ]
+  ],
+  "raw_coordinate_average": {
+    "gate": "APPARENT_ISOTROPIZATION_FROM_FRAME_MIXING",
+    "operator": [
+      [
+        2.0,
+        0.0
+      ],
+      [
+        0.0,
+        2.0
+      ]
+    ],
+    "spectrum": [
+      2.0,
+      2.0
+    ]
+  },
+  "status": "TRANSPORT_AND_WINDOW_AVERAGING_ORDER_NONCOMMUTATIVE",
+  "study_id": "transport-average-order-v1",
+  "transport_then_average": {
+    "gate": "ANISOTROPY_RECOVERED_AFTER_ALIGNMENT",
+    "operator": [
+      [
+        3.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "spectrum": [
+      1.0,
+      3.0
+    ]
+  }
+}
