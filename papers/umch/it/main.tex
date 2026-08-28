@@ -26,10 +26,10 @@ Sia $(\mathcal M,g_{\rm real})$ lo spaziotempo realizzato, non globalmente isome
 \section{Regioni e frame fisico}\label{sec:u-frame}
 Una regione deve essere regolare per il calcolo, causalmente testabile e associata a un estimatore di scala preregistrato. Il frame primario è l'autovettore timelike futuro unico di $T^\mu{}_{\nu}$. Nel vuoto una continuazione CMB richiede anchor, campo unitario, trasporto covariante, famiglia di cammini, unicità e copertura. UMCH-U-0005: requisiti mancanti producono \verb|FRAME_UNRESOLVED|, mai conferma. Un frame risolto è necessario, non sufficiente.
 
-\section{Vettore operativo grezzo}\label{sec:u-response}
-Conserviamo
-\begin{equation}\label{eq:u-vector}\mathbf R=(R_{\rm tidal},R_{\rm mag},R_{\rm hol},R_{\rm clock},R_{\rm null},R_{\rm cong}).\end{equation}
-Le parti elettrica e magnetica di Weyl seguono la decomposizione covariante standard \cite{Bonnor1995,MaartensBassett1998}. UMCH-U-0006: il vettore grezzo resta pubblico per evitare che una norma o un canale nascondano un controesempio.
+\section{Campo di risposta tensoriale/operatoriale}\label{sec:u-response}
+L'oggetto primario è una sezione $\mathscr R[\Omega,\ell,u_{\rm phys},\mathcal P;g]$ di un fibrato di risposte channel-native: endomorfismi tidal/magnetic, mappe di olonomia, matrici di residui clock, mappe di Jacobi null e campi di congruenza. Il registro
+\begin{equation}\label{eq:u-vector}\mathbf R=(R_{\rm tidal},R_{\rm mag},R_{\rm hol},R_{\rm clock},R_{\rm null},R_{\rm cong})\end{equation}
+indicizza famiglie, non sei scalari indipendenti. Le parti Weyl seguono \cite{Bonnor1995,MaartensBassett1998}. UMCH-U-0006: stato \verb|RATIFIED_PRIMARY_RESEARCH_OBJECT|; identificabilità \verb|OPERATOR_IDENTIFIABILITY_NOT_YET_PHYSICALLY_DERIVED|. Invarianti candidati includono rapporti spettrali, spectral flow, rango/nullità, anisotropia e classi/singular values di holonomy. Il controesempio collineare è \verb|PROJECTIVE_NON_IDENTIFIABLE_COLLINEAR|.
 
 \section{Protocolli operativi}\label{sec:u-protocols}
 $R_{\rm tidal}$ e $R_{\rm mag}$ usano RMS frame-normalizzati; $R_{\rm hol}$ usa circuiti finiti preregistrati; $R_{\rm clock}$ usa residui di tempo proprio dopo baseline fissata \cite{PetitWolf2005}; $R_{\rm null}$ usa Jacobi/shear/convergenza a geometria fissata nel contesto null standard \cite{Sachs1961}; $R_{\rm cong}$ usa espansione/shear/vorticità rispetto a dati iniziali matched \cite{Raychaudhuri1955}. UMCH-U-0007: tali fonti non stabiliscono UMCH né le normalizzazioni del progetto.
@@ -73,7 +73,7 @@ Consideriamo, senza adottarlo come legge,
 \end{equation}
 Se $p,q$ sono fissati da teoria indipendente, due risposte positive danno
 \begin{equation}\label{eq:u-inversion}\ell_0=\frac{q(\ell_1-\ell_2)}{p\log(\ell_1/\ell_2)-\log(y_1/y_2)},\end{equation}
-e $\ell_{\rm peak}=(p/q)\ell_0$. UMCH-U-0012: è \verb|MATHEMATICAL_IDENTIFIABILITY_CANDIDATE_ONLY|; se $q$ è libero, la degenerazione ritorna.
+e $\ell_{\rm peak}=(p/q)\ell_0$. UMCH-U-0012: è \verb|MATHEMATICAL_IDENTIFIABILITY_CANDIDATE_ONLY| e ramo \verb|SECONDARY_PROJECTION_SPECIFIC|; se $q$ è libero, la degenerazione ritorna. Il ramo operatoriale può in principio usare landmark proiettivi/spettrali senza q, ma nessuno è fisicamente derivato.
 
 \section{Gate di derivazione della shape}\label{sec:u-shape}
 La curvatura ha dimensione $L^{-2}$; per canali tidal, magnetic e holonomy area-normalizzati in regioni regolari piccole, $R\sim\ell^2|\mathrm{curvatura}|$, dunque $p=2$ nello scope. Per clock/null/congruence ciò richiede un protocollo short-baseline specifico. UMCH-U-0013: la GR locale non deriva $e^{-q\ell/\ell_0}$ né $q$. Il turnover è \verb|BLOCKED_PENDING_INDEPENDENT_NONLOCAL_MECHANISM|.
