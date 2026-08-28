@@ -1,0 +1,63 @@
+{
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "degenerate_rotation_blind": [
+    [
+      2.0,
+      0.0
+    ],
+    [
+      0.0,
+      2.0
+    ]
+  ],
+  "ell0_gate": "ELL0_ABSENT_AFTER_TRANSPORT_QUOTIENT",
+  "limitation": "Finite-dimensional orthogonal basis toy only; no covariant spacetime transport, path dependence, calibration or boundary derivation.",
+  "pure_rotation": {
+    "decision": "APPARENT_NONRADIALITY_PURE_CONJUGATION",
+    "invariants_after": {
+      "determinant": 3.0,
+      "eigenvalue_ratio": 0.333333333333,
+      "eigenvalues": [
+        1.0,
+        3.0
+      ],
+      "trace": 4.0
+    },
+    "invariants_before": {
+      "determinant": 3.0,
+      "eigenvalue_ratio": 0.333333333333,
+      "eigenvalues": [
+        1.0,
+        3.0
+      ],
+      "trace": 4.0
+    },
+    "projective_after": [
+      0.686203861929,
+      0.311626566636,
+      0.311626566636,
+      0.578707202138
+    ],
+    "projective_before": [
+      0.948683298051,
+      0.0,
+      0.0,
+      0.316227766017
+    ]
+  },
+  "spectral_change": {
+    "decision": "SPECTRAL_SHAPE_EVOLUTION_GEOMETRIC_ONLY",
+    "invariants": {
+      "determinant": 4.0,
+      "eigenvalue_ratio": 0.25,
+      "eigenvalues": [
+        1.0,
+        4.0
+      ],
+      "trace": 5.0
+    }
+  },
+  "status": "TRANSPORT_GAUGE_QUOTIENT_REQUIRED_FOR_NONRADIALITY",
+  "study_id": "transport-gauge-quotient-v1"
+}
