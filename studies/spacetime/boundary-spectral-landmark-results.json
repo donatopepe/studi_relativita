@@ -1,0 +1,40 @@
+{
+  "classification": "TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "BOUNDARY_GEOMETRIC_SCALE_NOT_ELL0",
+  "family": {
+    "a": 1,
+    "beta": 4,
+    "c": 2,
+    "crossing": 2.0,
+    "projective_at_ell1": [
+      0.928476690885,
+      0.371390676354
+    ],
+    "projective_at_ell2": [
+      0.707106781187,
+      0.707106781187
+    ]
+  },
+  "limitation": "Additive diagonal boundary toy only; beta is not derived from GR, protocol, observation, or UMCH.",
+  "movable_crossings": [
+    {
+      "recovered": 1.0,
+      "required_beta": 1,
+      "target": 1
+    },
+    {
+      "recovered": 3.0,
+      "required_beta": 9,
+      "target": 3
+    },
+    {
+      "recovered": 7.0,
+      "required_beta": 49,
+      "target": 7
+    }
+  ],
+  "no_crossing_case": null,
+  "status": "BOUNDARY_SPECTRAL_LANDMARK_MOVABLE_NOT_ELL0",
+  "study_id": "boundary-spectral-landmark-v1"
+}
