@@ -4,12 +4,12 @@ ART=json.loads((ROOT/'studies/spacetime/plane-wave-levi-civita-holonomy-results.
 FILES=[ROOT/'audit/plane-wave-levi-civita-holonomy-report-en.md',ROOT/'audit/plane-wave-levi-civita-holonomy-report-it.md']
 class LeviCivitaHolonomyReportTests(unittest.TestCase):
  def test_reports_exist_and_share_scientific_contract(self):
-  required=[ART['classification'],ART['status'],ART['physical_gate'],ART['scope'],'UNPROVEN','NO_POSITIVE_DETECTION_CLAIM','NOT_DECLARED','KNOWN_RESULT','PROJECT_DERIVATION','NEGATIVE_RESULT','OPEN_PROBLEM','K(u),Gamma_mu(z),loop_vertices,orientation,a,u_a,u_b,T_segments,H_LC,b_LC,spectrum_LC,chi_LC,W_a,P_K,L','N(b)','(lambda-1)^4','ell0']
+  required=[ART['classification'],ART['status'],ART['physical_gate'],ART['scope'],'UNPROVEN','NO_POSITIVE_DETECTION_CLAIM','NOT_DECLARED','KNOWN_RESULT','PROJECT_DERIVATION','NEGATIVE_RESULT','OPEN_PROBLEM','K(u),Gamma_mu(z),loop_vertices,orientation,a,u_a,u_b,T_segments,H_LC,b_LC,spectrum_LC,chi_LC,W_a,P_K,L','N(b)','(lambda-1)^4','b_LC=W_a=integral(K(u)du) a','holonomy_independent_channel','ell0']
   for f in FILES:
    text=f.read_text()
    for token in required:self.assertIn(token,text,f'{token} missing from {f.name}')
  def test_reports_include_deterministic_values_and_source_limits(self):
-  values=[ART['geometry_control']['nonidentity_norm'],ART['geometry_control']['null_rotation_residual'],ART['profile_control']['jacobi_map_difference'],ART['composition_control']['commutator_residual'],ART['affine_control']['maximum_dimensionless_residual']]
+  values=[ART['geometry_control']['nonidentity_norm'],ART['geometry_control']['null_rotation_residual'],ART['profile_control']['jacobi_map_difference'],ART['composition_control']['commutator_residual'],ART['affine_control']['maximum_dimensionless_residual'],ART['cross_channel_control']['b_minus_window_times_displacement_residual'],ART['cross_channel_control']['holonomy_from_window_residual']]
   for f in FILES:
    text=f.read_text()
    for value in values:self.assertIn(str(value),text)
