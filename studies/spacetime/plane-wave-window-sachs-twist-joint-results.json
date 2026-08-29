@@ -1,0 +1,60 @@
+{
+  "boundary_mobility": {
+    "endpoint_twist_difference": 0.15902334979623076,
+    "profile_difference": 0.0,
+    "sachs_joint_difference": 0.60866971585119,
+    "window_residual": 0.0
+  },
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_SACHS_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "WINDOW_SACHS_TWIST_JOINT_AFFINE_AND_BOUNDARY_NOT_ELL0",
+  "landmark_reparameterization": {
+    "base_coordinate": 0.83,
+    "full_joint_residual": 1.7163833419177414e-14,
+    "interpretation": "JOINT_LANDMARK_COORDINATE_AFFINE_PROFILE_BOUNDARY_MOVABLE_NOT_ELL0",
+    "scale_factor": 1.61,
+    "scaled_coordinate": 1.3363
+  },
+  "open_gate": "PHYSICAL_CAUSAL_WINDOW_ROTATING_BOUNDARY_COMMON_SCREEN_AND_ELL0_LAW_NOT_DERIVED",
+  "primary_object": "raw_dimensionless_LW_X_LV_LS_LS0",
+  "profile_sensitivity": {
+    "interpretation": "JOINT_OBJECT_PROFILE_INFORMATIVE_CONDITIONALLY_AT_FIXED_BOUNDARY",
+    "sachs_difference": 0.16115249161363782,
+    "window_difference": 0.10843625124058495
+  },
+  "status": "EXACT_PLANE_WAVE_WINDOW_SACHS_TWIST_JOINT_PROFILE_AND_BOUNDARY_CONDITIONAL_AFFINE_ORBIT_NOT_ELL0",
+  "structural_dead_end": false,
+  "top_hat_affine_joint": {
+    "full_joint_residual": 8.623310950451258e-14,
+    "kernel": "top_hat",
+    "lengths": [
+      1.1,
+      1.5070000000000003
+    ],
+    "residuals": {
+      "LS": 5.5251007959390254e-14,
+      "LS0": 6.359601310784502e-17,
+      "LV": 6.242848458293618e-14,
+      "LW": 2.2565812134642644e-15,
+      "X": 2.1933157632701005e-14
+    },
+    "scale_factor": 1.37
+  },
+  "triangular_affine_joint": {
+    "full_joint_residual": 8.621460603682765e-14,
+    "kernel": "triangular",
+    "lengths": [
+      1.1,
+      1.5070000000000003
+    ],
+    "residuals": {
+      "LS": 5.5251007959390254e-14,
+      "LS0": 6.359601310784502e-17,
+      "LV": 6.242848458293618e-14,
+      "LW": 1.3788683915077173e-15,
+      "X": 2.1933157632701005e-14
+    },
+    "scale_factor": 1.37
+  },
+  "umch_status": "UNPROVEN"
+}
