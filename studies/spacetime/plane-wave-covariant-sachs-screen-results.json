@@ -1,0 +1,68 @@
+{
+  "affine_orbit": {
+    "dimensionless_residuals": [
+      1.1486516786481672e-14,
+      3.393940618659158e-14,
+      3.082282310144082e-14,
+      3.079454847335741e-14,
+      0.0
+    ],
+    "maximum_dimensionless_residual": 3.393940618659158e-14,
+    "scale_factor": 1.47
+  },
+  "classification": "EXACT_SPACETIME_COVARIANT_SACHS_SCREEN_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "COVARIANT_SACHS_SCREEN_AFFINE_ORBIT_NOT_ELL0",
+  "endpoint_rate_mobility": {
+    "canonical_graph_difference": 0.0,
+    "scope": "ENDPOINT_RATE_CALIBRATION_COUNTEREXAMPLE_NOT_ALTERNATE_TRANSPORT",
+    "velocity_graph_difference": 0.4101219330881975,
+    "velocity_twist_difference": 0.2899999999999999
+  },
+  "graph_equivalence": {
+    "canonical_graph_residual": 7.384391627035005e-15,
+    "s_equals_r_minus_a_residual": 1.1775693440128312e-16,
+    "velocity_graph_residual": 1.487222375023867e-14
+  },
+  "hypothesis_status": "UNPROVEN",
+  "open_gate": "PHYSICAL_SACHS_SCREEN_TRANSPORT_CANONICAL_BOUNDARY_ENDPOINT_RATE_AND_PARITY_NOT_DERIVED",
+  "orientation": {
+    "reflection_canonical_twist_sign_residual": 0.0,
+    "reflection_twist_sign_residual": 0.0,
+    "so2_canonical_covariance_residual": 0.0,
+    "so2_velocity_covariance_residual": 1.1102230246251565e-16
+  },
+  "prior_result_disposition": "INERTIAL_NONVERTEX_TWIST_AREA_CONSERVATION_RETAINED_ROTATING_VELOCITY_TWIST_HAS_CONNECTION_TERM",
+  "raw_fields": [
+    "K",
+    "omega",
+    "Q",
+    "A",
+    "Y",
+    "U",
+    "X",
+    "P",
+    "V",
+    "R",
+    "S_rot",
+    "S_0",
+    "L"
+  ],
+  "source_scope": "COLEY_MCNUTT_MILSON_2012_SUPPORTS_EXACT_BRINKMANN_PLANE_WAVES_AND_GEODESIC_DEVIATION_NOT_ROTATING_SACHS_SCREEN_BOUNDARY_ENDPOINT_RATE_PARITY_WINDOW_AFFINE_NUISANCE_ELL0_UMCH_OR_DETECTION",
+  "status": "EXACT_PLANE_WAVE_ROTATING_SCREEN_SACHS_TWIST_CONNECTION_AND_ENDPOINT_CALIBRATION_DEPENDENT_CANONICAL_GRAPH_AFFINE_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": false,
+  "twist_connection": {
+    "canonical_riccati_residual": 2.94611574439817e-10,
+    "canonical_twist": 0.20595370725657275,
+    "connection_twist": -0.606626,
+    "twist_shift_residual": 0.0,
+    "velocity_riccati_residual": 2.9466757892120056e-10,
+    "velocity_twist": 0.8125797072565728
+  },
+  "zero_connection": {
+    "canonical_p_residual": 0.0,
+    "canonical_x_residual": 0.0,
+    "velocity_v_residual": 0.0,
+    "velocity_x_residual": 0.0
+  }
+}
