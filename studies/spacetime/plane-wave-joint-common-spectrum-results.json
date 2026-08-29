@@ -1,0 +1,99 @@
+{
+  "block_scaling": {
+    "residuals": {
+      "A": 7.772806356260576e-15,
+      "B": 5.431381250880551e-15,
+      "C": 1.8029398946877164e-14,
+      "D": 1.390560570868476e-14
+    },
+    "scale_factor": 1.37
+  },
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "JOINT_AFFINE_PROFILE_ORBIT_NOT_ELL0",
+  "landmark_reparameterization": {
+    "base_coordinate": 0.83,
+    "interpretation": "JOINT_LANDMARK_COORDINATE_PROFILE_SCALE_MOVABLE_NOT_ELL0",
+    "joint_residual": 5.4858528335159476e-15,
+    "scale_factor": 1.61,
+    "scaled_coordinate": 1.3363
+  },
+  "open_gate": "PHYSICAL_PROFILE_SCALE_LAW_CAUSAL_WINDOW_AND_COMMON_STANDARD_NOT_DERIVED",
+  "profile_sensitivity": {
+    "characteristic_difference": 0.078052153649291,
+    "interpretation": "JOINT_OBJECT_PROFILE_INFORMATIVE_CONDITIONALLY",
+    "window_difference": 0.2634679866701046
+  },
+  "source_scope": "Coley-McNutt-Milson 2012 supports exact vacuum plane waves and geodesic deviation, not this window, kernel, calibration group, profile-scale nuisance, UMCH, ell0, or detection.",
+  "status": "EXACT_PLANE_WAVE_WINDOW_FULL_MAP_COMMON_SPECTRUM_JOINT_AFFINE_ORBIT_NOT_ELL0",
+  "structural_dead_end": false,
+  "study_id": "plane-wave-joint-common-spectrum-v1",
+  "top_hat_orbit": {
+    "canonical_scaling_residual": 0.0,
+    "canonical_similarity_residual": 2.4679627948397793e-14,
+    "characteristic_residual": 1.538370149106851e-15,
+    "dimensionless_window_residual": 1.1710090180710446e-15,
+    "dimensionless_windows": [
+      [
+        [
+          0.20355362194617307,
+          0.14681679234234565
+        ],
+        [
+          0.14681679234234565,
+          -0.20355362194617307
+        ]
+      ],
+      [
+        [
+          0.20355362194617227,
+          0.14681679234234546
+        ],
+        [
+          0.14681679234234546,
+          -0.20355362194617227
+        ]
+      ]
+    ],
+    "kernel": "top_hat",
+    "lengths": [
+      0.9,
+      1.233
+    ],
+    "scale_factor": 1.37
+  },
+  "triangular_orbit": {
+    "canonical_scaling_residual": 0.0,
+    "canonical_similarity_residual": 2.4679627948397793e-14,
+    "characteristic_residual": 1.538370149106851e-15,
+    "dimensionless_window_residual": 3.6506759942727966e-16,
+    "dimensionless_windows": [
+      [
+        [
+          0.10839463969079703,
+          0.0745126251326528
+        ],
+        [
+          0.0745126251326528,
+          -0.10839463969079703
+        ]
+      ],
+      [
+        [
+          0.10839463969079682,
+          0.07451262513265296
+        ],
+        [
+          0.07451262513265296,
+          -0.10839463969079682
+        ]
+      ]
+    ],
+    "kernel": "triangular",
+    "lengths": [
+      0.9,
+      1.233
+    ],
+    "scale_factor": 1.37
+  }
+}
