@@ -1,0 +1,306 @@
+{
+  "aligned_gate": "ALIGNED_PROFILE_REDUCES_TO_IDENTICAL_REVERSAL_BLIND_SCALAR_MODES",
+  "cases": [
+    {
+      "characteristic_forward": [
+        1.409719713532,
+        2.225181661416,
+        1.409719713532,
+        1.0
+      ],
+      "characteristic_reverse": [
+        1.409719713532,
+        2.225181661416,
+        1.409719713532,
+        1.0
+      ],
+      "full_map_distance": 0.3592659386300452,
+      "name": "two_rotated",
+      "segments": [
+        [
+          [
+            1,
+            4
+          ],
+          0,
+          0.3
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          0.4,
+          0.4
+        ]
+      ],
+      "singular_value_distance": 1.1102230246251565e-16,
+      "singular_values_forward": [
+        0.46955004416110124,
+        0.6055490785964975
+      ],
+      "singular_values_reverse": [
+        0.46955004416110113,
+        0.6055490785964976
+      ],
+      "transpose_residual": 3.6880726988814706e-17,
+      "vertex_distance": 0.003455726979181224,
+      "vertex_forward": [
+        [
+          0.5973993413244563,
+          0.03105470868504982
+        ],
+        [
+          0.03349827666595819,
+          0.47769700446492513
+        ]
+      ],
+      "vertex_reverse": [
+        [
+          0.5973993413244563,
+          0.033498276665958164
+        ],
+        [
+          0.031054708685049844,
+          0.47769700446492513
+        ]
+      ]
+    },
+    {
+      "characteristic_forward": [
+        -0.322886497996,
+        1.588894814226,
+        -0.322886497996,
+        1.0
+      ],
+      "characteristic_reverse": [
+        -0.322886497996,
+        1.588894814226,
+        -0.322886497996,
+        1.0
+      ],
+      "full_map_distance": 0.6261991353865884,
+      "name": "three_rotated",
+      "segments": [
+        [
+          [
+            1,
+            4
+          ],
+          0,
+          0.3
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          0.4,
+          0.4
+        ],
+        [
+          [
+            3,
+            7
+          ],
+          -0.25,
+          0.2
+        ]
+      ],
+      "singular_value_distance": 1.1102230246251565e-16,
+      "singular_values_forward": [
+        0.4203950116053419,
+        0.6687883358381604
+      ],
+      "singular_values_reverse": [
+        0.42039501160534193,
+        0.6687883358381603
+      ],
+      "transpose_residual": 6.869154506741516e-17,
+      "vertex_distance": 0.0009079388528562433,
+      "vertex_forward": [
+        [
+          0.6574030390984846,
+          0.0522669900487815
+        ],
+        [
+          0.05162498032902416,
+          0.4317801191314582
+        ]
+      ],
+      "vertex_reverse": [
+        [
+          0.6574030390984846,
+          0.051624980329024114
+        ],
+        [
+          0.05226699004878155,
+          0.4317801191314582
+        ]
+      ]
+    },
+    {
+      "characteristic_forward": [
+        -1.364601549212,
+        1.994147744057,
+        -1.364601549212,
+        1.0
+      ],
+      "characteristic_reverse": [
+        -1.364601549212,
+        1.994147744057,
+        -1.364601549212,
+        1.0
+      ],
+      "full_map_distance": 0.6731431732609653,
+      "name": "four_rotated",
+      "segments": [
+        [
+          [
+            1,
+            4
+          ],
+          0,
+          0.3
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          0.4,
+          0.4
+        ],
+        [
+          [
+            3,
+            7
+          ],
+          -0.25,
+          0.2
+        ],
+        [
+          [
+            1.5,
+            6
+          ],
+          0.7,
+          0.15
+        ]
+      ],
+      "singular_value_distance": 0.0,
+      "singular_values_forward": [
+        0.31966855957991425,
+        0.6601027615975614
+      ],
+      "singular_values_reverse": [
+        0.31966855957991425,
+        0.6601027615975614
+      ],
+      "transpose_residual": 3.1031676915590914e-17,
+      "vertex_distance": 0.0032056778226552092,
+      "vertex_forward": [
+        [
+          0.6467595590782919,
+          0.06719418435700565
+        ],
+        [
+          0.06492742783030685,
+          0.3330091399607747
+        ]
+      ],
+      "vertex_reverse": [
+        [
+          0.6467595590782919,
+          0.06492742783030683
+        ],
+        [
+          0.06719418435700568,
+          0.3330091399607747
+        ]
+      ]
+    },
+    {
+      "characteristic_forward": [
+        -0.252288380769,
+        1.412483645002,
+        -0.252288380769,
+        1.0
+      ],
+      "characteristic_reverse": [
+        -0.252288380769,
+        1.412483645002,
+        -0.252288380769,
+        1.0
+      ],
+      "full_map_distance": 0.5705449367907578,
+      "name": "three_aligned",
+      "segments": [
+        [
+          [
+            1,
+            4
+          ],
+          0,
+          0.3
+        ],
+        [
+          [
+            2,
+            5
+          ],
+          0,
+          0.4
+        ],
+        [
+          [
+            3,
+            7
+          ],
+          0,
+          0.2
+        ]
+      ],
+      "singular_value_distance": 2.220446049250313e-16,
+      "singular_values_forward": [
+        0.4056715683446853,
+        0.6894194369250614
+      ],
+      "singular_values_reverse": [
+        0.4056715683446853,
+        0.6894194369250616
+      ],
+      "transpose_residual": 1.1102230246251565e-16,
+      "vertex_distance": 1.1102230246251565e-16,
+      "vertex_forward": [
+        [
+          0.6894194369250614,
+          0.0
+        ],
+        [
+          0.0,
+          0.4056715683446854
+        ]
+      ],
+      "vertex_reverse": [
+        [
+          0.6894194369250615,
+          0.0
+        ],
+        [
+          0.0,
+          0.4056715683446854
+        ]
+      ]
+    }
+  ],
+  "classification": "EXACT_MATRIX_JACOBI_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "PROFILE_REVERSAL_GEOMETRIC_NOT_ELL0",
+  "limitation": "Exact piecewise-constant matrix optics, not smooth connection-derived Sachs profile in exact spacetime, data, or UMCH law.",
+  "reciprocity_gate": "REVERSED_VERTEX_BLOCK_EQUALS_FORWARD_TRANSPOSE_FOR_SYMMETRIC_PROFILE",
+  "screen_gate": "VERTEX_SINGULAR_VALUES_REMAIN_REVERSAL_BLIND_WITH_FIXED_SCREEN_METRIC",
+  "spectrum_gate": "TOTAL_PHASE_SPACE_SPECTRUM_REVERSAL_BLIND_FOR_TESTED_EXACT_PROFILES",
+  "status": "JACOBI_MATRIX_PROFILE_REVERSAL_TRANSPOSE_RECIPROCITY_SINGULAR_VALUES_BLIND_NOT_ELL0",
+  "study_id": "jacobi-matrix-reciprocity-v1"
+}
