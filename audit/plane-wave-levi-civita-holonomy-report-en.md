@@ -27,13 +27,15 @@ Observed deterministic controls:
 - metric-compatibility residual: `1.1854037716696464e-12`;
 - composition commutator residual: `0.0`;
 - profile-reversal Jacobi-map difference despite holonomy collision: `0.1163592258321023`;
-- maximum affine dimensionless residual at scale `1.47`: `3.9523245835994223e-13`.
+- maximum affine dimensionless residual at scale `1.47`: `3.9523245835994223e-13`;
+- cross-channel `b_LC-W_a` residual: `2.564838012778348e-09`;
+- cross-channel `H_LC-N(W_a)` residual: `3.6272346139751374e-09`.
 
 ## Negative result
 
 Every finite loop matrix is unipotent with `chi_LC(lambda)=(lambda-1)^4`. Distinct nonzero `b_LC` values collide in spectrum and characteristic polynomial. Complete loop reversal maps `b_LC` to `-b_LC` and inverts `H_LC`, while spectrum remains unchanged. Same-base null rotations commute and add parameters. Thus genuine four-dimensional Levi-Civita holonomy is raw-operator informative but ordinary spectrum supplies no extra rank in this exact pp-wave family.
 
-Common screen rotations and null-basis boosts expose anchor and normalization dependence. Affine/profile scaling preserves dimensionless holonomy. No `ell0` is present or identified. Holonomy is not an independent channel from the retained connection/Jacobi record by declaration alone.
+For these rectangles, `b_LC=W_a=integral(K(u)du) a` and `H_LC=N(b_LC)`, so `holonomy_independent_channel=false`. Profile reversal collides in `W_a,H_LC` while moving `P_K` by `0.1163592258321023`. Common screen rotations and null-basis boosts expose anchor and normalization dependence. Affine/profile scaling preserves dimensionless holonomy. No `ell0` is present or identified. Holonomy is not an independent channel from the retained connection/Jacobi record by declaration alone.
 
 ## Source scope
 
