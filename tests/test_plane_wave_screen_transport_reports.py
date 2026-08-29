@@ -15,7 +15,7 @@ class PlaneWaveScreenTransportReportTests(unittest.TestCase):
     def test_bilingual_authority_and_theory_parity(self):
         texts = [EN.read_text(), IT.read_text(), THEORY.read_text()]
         for text in texts:
-            for token in (CLASSIFICATION, STATUS, GATE, "K", "omega", "Q", "W_raw", "W_transport", "P_raw", "P_transport", "UNPROVEN", "NO_POSITIVE_DETECTION_CLAIM"):
+            for token in (CLASSIFICATION, STATUS, GATE, "K", "omega", "Q", "W_raw", "W_transport", "P_raw", "P_naive_conjugated_profile", "UNPROVEN", "NO_POSITIVE_DETECTION_CLAIM"):
                 self.assertIn(token, text)
             self.assertIn("10.1088/0264-9381/29/23/235023", text)
             self.assertIn("top-hat", text.lower())
