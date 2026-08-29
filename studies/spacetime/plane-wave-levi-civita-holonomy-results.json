@@ -17,6 +17,14 @@
     "parameter_addition_residual": 8.305801792868328e-13,
     "separate_loop_parameter_norm": 0.19843744769743393
   },
+  "cross_channel_control": {
+    "b_minus_window_times_displacement_residual": 2.564838012778348e-09,
+    "exact_map": "b_LC=W_a=integral(K(u)du) a; H_LC=N(b_LC)",
+    "holonomy_from_window_residual": 3.6272346139751374e-09,
+    "holonomy_independent_channel": false,
+    "reversed_profile_jacobi_difference": 0.1163592258321023,
+    "reversed_profile_window_collision": 7.076311083754595e-16
+  },
   "ell0_identified": false,
   "geometry_control": {
     "b_LC": [
