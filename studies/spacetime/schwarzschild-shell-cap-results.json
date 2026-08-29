@@ -1,0 +1,77 @@
+{
+  "boundary_gate": "HEMISPHERE_ZERO_AND_SIGN_REVERSAL_CAP_CONTROLLED",
+  "classification": "EXACT_PATTERN_WINDOW_CONTROL_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "SCHWARZSCHILD_SHELL_CAP_GEOMETRIC_NOT_ELL0",
+  "factorization": "Ebar=<m/r^3> diag((c+c^2)/2,(c+c^2)/2,-c-c^2)",
+  "field": "E(r,n)=m r^-3 (I-3nn^T)",
+  "limitation": "Exact algebraic Schwarzschild tidal field under product measure and assumed Euclidean tangent-space alignment; not covariant bitensor transport, causal spacetime window, data, or UMCH law.",
+  "measure": "product radial shell density times uniform angular cap",
+  "radial_gate": "POSITIVE_RADIAL_SHELL_CHANGES_AMPLITUDE_ONLY",
+  "scale_gate": "FREE_CAP_EXPANSION_RATE_MOVES_HEMISPHERE_CROSSING",
+  "shells": [
+    {
+      "cap_c_0_5": [
+        0.026041666666666668,
+        0.026041666666666668,
+        -0.052083333333333336
+      ],
+      "cap_c_minus_0_5": [
+        -0.008680555555555556,
+        -0.008680555555555556,
+        0.017361111111111112
+      ],
+      "hemisphere": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "r1": 2,
+      "r2": 3,
+      "radial_moment": 0.06944444444444445
+    },
+    {
+      "cap_c_0_5": [
+        0.017578125,
+        0.017578125,
+        -0.03515625
+      ],
+      "cap_c_minus_0_5": [
+        -0.005859375,
+        -0.005859375,
+        0.01171875
+      ],
+      "hemisphere": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "r1": 2,
+      "r2": 4,
+      "radial_moment": 0.046875
+    },
+    {
+      "cap_c_0_5": [
+        0.002197265625,
+        0.002197265625,
+        -0.00439453125
+      ],
+      "cap_c_minus_0_5": [
+        -0.000732421875,
+        -0.000732421875,
+        0.00146484375
+      ],
+      "hemisphere": [
+        0.0,
+        0.0,
+        -0.0
+      ],
+      "r1": 4,
+      "r2": 8,
+      "radial_moment": 0.005859375
+    }
+  ],
+  "status": "SCHWARZSCHILD_PRODUCT_SHELL_CAP_REMAINS_FACTORABLE_NOT_ELL0",
+  "study_id": "schwarzschild-shell-cap-v1",
+  "transport_gate": "COMMON_SPACE_ALIGNMENT_ASSUMED_NOT_SCHWARZSCHILD_PARALLEL_TRANSPORT"
+}
