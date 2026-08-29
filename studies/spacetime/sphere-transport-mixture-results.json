@@ -1,0 +1,58 @@
+{
+  "alias_gate": "MIXTURE_SPECTRUM_EVEN_AND_PI_PERIODIC_IN_HOLONOMY_ANGLE",
+  "cases": [
+    {
+      "area_unit_sphere": 0,
+      "holonomy_angle": 0,
+      "mixed_eigenvalues": [
+        1.0,
+        3.0
+      ]
+    },
+    {
+      "area_unit_sphere": 0.7853981633974483,
+      "holonomy_angle": 0.7853981633974483,
+      "mixed_eigenvalues": [
+        1.2928932188134525,
+        2.7071067811865475
+      ]
+    },
+    {
+      "area_unit_sphere": 1.5707963267948966,
+      "holonomy_angle": 1.5707963267948966,
+      "mixed_eigenvalues": [
+        2.0,
+        2.0
+      ]
+    },
+    {
+      "area_unit_sphere": 2.8415926535897933,
+      "holonomy_angle": 2.8415926535897933,
+      "mixed_eigenvalues": [
+        1.044663510874394,
+        2.9553364891256058
+      ]
+    },
+    {
+      "area_unit_sphere": 0.3,
+      "holonomy_angle": 0.3,
+      "mixed_eigenvalues": [
+        1.044663510874394,
+        2.9553364891256058
+      ]
+    }
+  ],
+  "classification": "KNOWN_RESULT_PLUS_PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "eigenvalue_formula": "2 +- |cos(alpha)|",
+  "ell0_gate": "SPHERE_TRANSPORT_MIXTURE_GEOMETRIC_NOT_ELL0",
+  "geometry": "unit two-sphere",
+  "isotropy_gate": "ALPHA_EQUALS_PI_OVER_TWO_MOD_PI",
+  "known_relation": "alpha=integral K dA = area modulo 2pi for constant K=1",
+  "limitation": "Exact two-sphere tangent geometry with equal two-path mixture; not four-dimensional spacetime, physical path measure, data, or UMCH law.",
+  "mixture": "(D+Q(alpha) D Q(alpha)^T)/2",
+  "operator": "D=diag(3,1)",
+  "path_gate": "SPECTRAL_SHAPE_DEPENDS_ON_ENCLOSED_PATH_AREA",
+  "status": "SPHERE_HOLONOMY_MIXTURE_SPECTRAL_SHAPE_PATH_AREA_NOT_ELL0",
+  "study_id": "sphere-transport-mixture-v1"
+}
