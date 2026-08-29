@@ -1,0 +1,80 @@
+{
+  "cases": [
+    {
+      "alpha": 0,
+      "channels": [
+        1.0,
+        1.0
+      ],
+      "gap_pair": [
+        1.0,
+        1.0
+      ],
+      "jacobian_rank": 0
+    },
+    {
+      "alpha": 0.3,
+      "channels": [
+        0.955336489125606,
+        0.8253356149096783
+      ],
+      "gap_pair": [
+        0.955336489125606,
+        0.8253356149096783
+      ],
+      "jacobian_rank": 1
+    },
+    {
+      "alpha": 1,
+      "channels": [
+        0.5403023058681398,
+        -0.4161468365471424
+      ],
+      "gap_pair": [
+        0.5403023058681398,
+        -0.4161468365471424
+      ],
+      "jacobian_rank": 1
+    },
+    {
+      "alpha": 1.5707963267948966,
+      "channels": [
+        6.123233995736766e-17,
+        -1.0
+      ],
+      "gap_pair": [
+        6.123233995736766e-17,
+        -1.0
+      ],
+      "jacobian_rank": 1
+    },
+    {
+      "alpha": 3.141592653589793,
+      "channels": [
+        -1.0,
+        1.0
+      ],
+      "gap_pair": [
+        1.0,
+        1.0
+      ],
+      "jacobian_rank": 0
+    }
+  ],
+  "channels": [
+    "y1=cos(alpha)",
+    "y2=cos(2alpha)"
+  ],
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "dependence": "y2=2 y1^2-1",
+  "ell0_gate": "HARMONIC_PHASE_CHANNELS_GEOMETRIC_NOT_ELL0",
+  "gap_gate": "ABS_COS_AND_COS2_PI_PERIODIC_REDUNDANCY",
+  "geometry_gate": "ONLY_ETA_OVER_R_SQUARED_ENTERS_PHASE",
+  "global_gate": "SIGN_AND_TWO_PI_PHASE_ALIASING",
+  "limitation": "Synthetic conjugacy-invariant harmonics of exact sphere holonomy phase; no independent physical channels, calibration, data, or UMCH law.",
+  "phase": "alpha=eta ell^2/r^2",
+  "rank_gate": "JOINT_CHANNEL_MAP_ALGEBRAIC_CURVE_RANK_AT_MOST_ONE",
+  "status": "SPHERE_CROSS_CHANNEL_HARMONIC_ALGEBRAIC_DEPENDENCE_NOT_ELL0",
+  "study_id": "sphere-harmonic-channels-v1"
+}
