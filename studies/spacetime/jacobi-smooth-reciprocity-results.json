@@ -1,0 +1,37 @@
+{
+  "boundary_gate": "SAME_AFFINE_INTERVAL_VERTEX_NORMALIZATION_AND_FULL_PROFILE_REVERSAL_REQUIRED",
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "derivation_gate": "CONTINUOUS_SYMMETRIC_K_PRODUCT_LIMIT_EXTENDS_ANTI_INVOLUTION",
+  "ell0_gate": "SMOOTH_RECIPROCITY_NOT_ELL0",
+  "endpoint_gate": "INDEPENDENT_ENDPOINT_FRAME_QUOTIENT_STILL_IDENTIFIES_B_AND_TRANSPOSE",
+  "limitation": "Continuous symmetric optical-profile theorem and RK4 control; not connection-derived 4D spacetime transport, detector observable, data result, or UMCH mechanism.",
+  "nonsymmetric_counterexample": {
+    "block_transpose_residual": 0.09255648789294367,
+    "forward_singular_values": [
+      1.0931403149276313,
+      1.2597527341306456
+    ],
+    "full_involution_residual": 0.41572725164698326,
+    "reverse_singular_values": [
+      1.093597783379182,
+      1.259225760556468
+    ],
+    "steps": 4000
+  },
+  "status": "JACOBI_CONTINUOUS_SYMMETRIC_PROFILE_REVERSAL_BLOCK_TRANSPOSE_RECIPROCITY_NOT_ELL0",
+  "study_id": "jacobi-smooth-reciprocity-v1",
+  "symmetric_control": {
+    "block_transpose_residual": 6.8884172055585424e-15,
+    "forward_singular_values": [
+      1.1239781242833882,
+      1.226416424416554
+    ],
+    "full_involution_residual": 1.3744524893062556e-14,
+    "reverse_singular_values": [
+      1.1239781242833857,
+      1.2264164244165496
+    ],
+    "steps": 4000
+  }
+}
