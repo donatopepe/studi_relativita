@@ -1,0 +1,69 @@
+{
+  "cases": [
+    {
+      "a": 0.2,
+      "b": 0.3,
+      "commutator": [
+        [
+          1.0636,
+          -0.01200000000000001
+        ],
+        [
+          0.018000000000000016,
+          0.94
+        ]
+      ],
+      "determinant": 1.0,
+      "trace": 2.0036,
+      "trace_formula": 2.0036
+    },
+    {
+      "a": 1,
+      "b": -2,
+      "commutator": [
+        [
+          3.0,
+          2.0
+        ],
+        [
+          4.0,
+          3.0
+        ]
+      ],
+      "determinant": 1.0,
+      "trace": 6.0,
+      "trace_formula": 6
+    },
+    {
+      "a": -0.5,
+      "b": -0.7,
+      "commutator": [
+        [
+          1.4725000000000001,
+          0.17500000000000004
+        ],
+        [
+          -0.245,
+          0.65
+        ]
+      ],
+      "determinant": 1.0000000000000002,
+      "trace": 2.1225,
+      "trace_formula": 2.1225
+    }
+  ],
+  "classification": "EXACT_GROUP_TOY_CONTROL_AND_NEGATIVE_RESULT",
+  "commutator": "A(a) B(b) A(a)^-1 B(b)^-1",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "determinant": 1,
+  "ell0_gate": "NONABELIAN_PRODUCT_PHASE_GEOMETRIC_NOT_ELL0",
+  "exponent_gate": "ONLY_P_PLUS_Q_ENTERS_SCALE_EXPONENT",
+  "group": "SL(2,R) exact shear toy",
+  "limitation": "Exact non-Abelian group toy, not holonomy derived from a four-dimensional spacetime connection, physical loop family, data, or UMCH law.",
+  "product_gate": "A_B_FACTOR_ALLOCATION_NONIDENTIFIABLE_FROM_TRACE",
+  "scale_gate": "FREE_PRODUCT_AMPLITUDE_MOVES_TRACE_THRESHOLD",
+  "sign_gate": "TRACE_ERASES_PRODUCT_SIGN",
+  "status": "NONABELIAN_COMMUTATOR_TRACE_PRODUCT_DEGENERACY_NOT_ELL0",
+  "study_id": "nonabelian-commutator-holonomy-v1",
+  "trace": "2+(ab)^2"
+}
