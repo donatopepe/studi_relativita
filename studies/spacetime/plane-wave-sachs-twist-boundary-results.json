@@ -1,0 +1,103 @@
+{
+  "affine_orbit": {
+    "dimensionless_LS_residual": 6.809187181607857e-15,
+    "dimensionless_LV_residual": 7.965995264348715e-15,
+    "dimensionless_X_residual": 3.788203954596185e-15,
+    "scale_factor": 1.39,
+    "twist_area_residual": 1.3322676295501878e-15
+  },
+  "boundary_mobility": {
+    "boundary_twists": [
+      0.11,
+      0.31
+    ],
+    "endpoint_twist_difference": 0.15902334979623076,
+    "endpoint_twists": [
+      0.10073766301513157,
+      0.2597610128113623
+    ],
+    "profile_difference": 0.0
+  },
+  "caustic_guard": {
+    "status": "CAUSTIC_OR_CONGRUENCE_BLOCK_SINGULAR"
+  },
+  "classification": "EXACT_SPACETIME_SACHS_BOUNDARY_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "NONVERTEX_TWIST_BOUNDARY_AND_AFFINE_SCALE_NOT_ELL0",
+  "nonvertex": {
+    "boundary_S0": [
+      [
+        0.11,
+        -0.17
+      ],
+      [
+        0.29000000000000004,
+        -0.03
+      ]
+    ],
+    "endpoint": {
+      "expansion": 0.06912974584683065,
+      "shear": [
+        [
+          -0.17683375750803845,
+          -0.13531934706202092
+        ],
+        [
+          -0.13531934706202092,
+          0.17683375750803845
+        ]
+      ],
+      "shear_norm": 0.3149015829865052,
+      "twist": 0.2015377391776007
+    },
+    "minimum_abs_det_x": 1.1412254644641002,
+    "raw_S": [
+      [
+        -0.1077040116612078,
+        -0.33685708623962163
+      ],
+      [
+        0.06621839211557978,
+        0.2459635033548691
+      ]
+    ],
+    "raw_V": [
+      [
+        -0.19407841540216103,
+        -0.36126374374696113
+      ],
+      [
+        0.13008451837065382,
+        0.2667529365789271
+      ]
+    ],
+    "raw_X": [
+      [
+        0.9357709779366068,
+        -0.2389227973992712
+      ],
+      [
+        0.27694868504530734,
+        1.1488453213921481
+      ]
+    ]
+  },
+  "open_gate": "PHYSICAL_ROTATING_CONGRUENCE_BOUNDARY_PARITY_CALIBRATION_AND_ELL0_LAW_NOT_DERIVED",
+  "orientation": {
+    "o2_sign_flip_residual": 0.0,
+    "so2_twist_residual": 2.7755575615628914e-17
+  },
+  "primary_object": "raw_X_V_S_and_declared_nonvertex_boundary_S0",
+  "profile_sensitivity": {
+    "interpretation": "PROFILE_INFORMATIVE_CONDITIONALLY_AT_FIXED_BOUNDARY",
+    "raw_endpoint_difference": 0.1582536995452886
+  },
+  "status": "EXACT_PLANE_WAVE_NONVERTEX_TWIST_BOUNDARY_PROPAGATED_ORIENTATION_AND_AFFINE_SCALE_CONDITIONAL_NOT_ELL0",
+  "structural_dead_end": false,
+  "twist_area": {
+    "endpoint_twist_area": 0.23000000000000206,
+    "initial_twist_area": 0.23000000000000004,
+    "maximum_residual": 2.248201624865942e-15
+  },
+  "umch_status": "UNPROVEN"
+}
