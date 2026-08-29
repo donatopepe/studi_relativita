@@ -1,0 +1,121 @@
+{
+  "affine_transfer": {
+    "residuals": {
+      "LHo": 9.813077866773595e-18,
+      "LHs": 1.3877787807814457e-17,
+      "LS": 3.7412364193177886e-14,
+      "LS0": 1.3877787807814457e-17,
+      "LV": 4.309843975092558e-14,
+      "X": 1.541724165953407e-14
+    },
+    "scale_factor": 1.43
+  },
+  "caustic_guard": {
+    "status": "CAUSTIC_OR_CONGRUENCE_BLOCK_SINGULAR"
+  },
+  "classification": "EXACT_SPACETIME_SACHS_CALIBRATION_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "SACHS_SHEAR_TRANSFER_BOUNDARY_AND_AFFINE_NOT_ELL0",
+  "observer_shift": {
+    "S_shift_residual": 6.938893903907228e-17,
+    "V_shift_residual": 7.850462293418876e-17,
+    "X_residual": 0.0,
+    "expansion_shift": 0.06,
+    "observer_H": [
+      [
+        0.16,
+        0.05
+      ],
+      [
+        0.05,
+        -0.04
+      ]
+    ],
+    "shear_norm_shift": -0.1525266016877005,
+    "twist_shift": 0.0
+  },
+  "open_gate": "PHYSICAL_SACHS_SOURCE_BOUNDARY_AND_OBSERVER_CALIBRATION_NOT_DERIVED",
+  "primary_objects": [
+    "P",
+    "X",
+    "V",
+    "S",
+    "S0",
+    "Hs",
+    "Ho"
+  ],
+  "profile_sensitivity": {
+    "interpretation": "PROFILE_INFORMATIVE_ONLY_AT_FIXED_BOUNDARY_AND_CALIBRATION",
+    "raw_difference": 0.1425018092160521
+  },
+  "source_absorption": {
+    "S_residual": 6.798699777552591e-17,
+    "V_residual": 7.850462293418876e-17,
+    "X_residual": 5.551115123125783e-17,
+    "boundary_S0": [
+      [
+        0.11,
+        -0.17
+      ],
+      [
+        0.29000000000000004,
+        -0.03
+      ]
+    ],
+    "graph_residual": 6.206335383118183e-17,
+    "raw_P": [
+      [
+        0.8327902986968772,
+        -0.06256214746220794,
+        1.044677567490365,
+        -0.04115121787661709
+      ],
+      [
+        -0.054455289101066555,
+        1.1768646826776301,
+        -0.03948922720865593,
+        1.1577509970321642
+      ],
+      [
+        -0.24529027501593878,
+        -0.214548319105337,
+        0.8915460295142872,
+        -0.1615800125268776
+      ],
+      [
+        -0.17755957588598997,
+        0.2744260303983603,
+        -0.1522636004361655,
+        1.118596863119395
+      ]
+    ],
+    "shifted_boundary_S0": [
+      [
+        0.29,
+        -0.24000000000000002
+      ],
+      [
+        0.22000000000000003,
+        -0.14
+      ]
+    ],
+    "source_H": [
+      [
+        0.18,
+        -0.07
+      ],
+      [
+        -0.07,
+        -0.11
+      ]
+    ]
+  },
+  "status": "EXACT_PLANE_WAVE_SACHS_SOURCE_SHEAR_ABSORBED_BY_BOUNDARY_OBSERVER_SHEAR_MOVES_OPTICS_NOT_ELL0",
+  "structural_dead_end": false,
+  "umch_status": "UNPROVEN",
+  "uncompensated_source": {
+    "S_difference": 0.2701812893442662,
+    "V_difference": 0.2351786072250012,
+    "X_difference": 0.2538706016099763
+  }
+}
