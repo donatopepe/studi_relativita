@@ -1,0 +1,73 @@
+{
+  "affine_scaling": {
+    "dimensionless_matrix_residual": 1.8769470726615005e-14,
+    "dimensionless_scalar_residual": 1.095202798281839e-15,
+    "scale_factor": 1.43
+  },
+  "calibration_mobility": {
+    "H_observer": [
+      [
+        0.16,
+        0.07
+      ],
+      [
+        0.07,
+        -0.04
+      ]
+    ],
+    "additive_action_residual": 2.482534153247273e-16,
+    "expansion_shift": 0.06000000000000005,
+    "shear_norm_shift": 0.09113009998275874,
+    "twist_shift": 0.0
+  },
+  "caustic_guard": {
+    "status": "CAUSTIC_OR_VERTEX_BLOCK_SINGULAR"
+  },
+  "classification": "EXACT_SPACETIME_SACHS_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "SACHS_CALIBRATION_AND_AFFINE_SCALE_NOT_ELL0",
+  "open_gate": "PHYSICAL_SACHS_ENDPOINT_CALIBRATION_TWIST_SOURCE_AND_ELL0_LAW_NOT_DERIVED",
+  "optical_decomposition": {
+    "expansion": 0.9057880519782775,
+    "matrix": [
+      [
+        0.8492829325492268,
+        -0.10937670177375285
+      ],
+      [
+        -0.10937670177375305,
+        0.9622931714073281
+      ]
+    ],
+    "minimum_abs_det_b": 1.2078514655464636,
+    "shear": [
+      [
+        -0.056505119429050676,
+        -0.10937670177375294
+      ],
+      [
+        -0.10937670177375294,
+        0.056505119429050565
+      ]
+    ],
+    "shear_norm": 0.17410394258945294,
+    "twist": -1.0408340855860843e-16
+  },
+  "primary_object": "raw_B_D_and_connection_derived_S_equals_D_times_B_inverse",
+  "reversal_exchange": {
+    "source_observer_exchange_residual": 1.6057101636487847e-14
+  },
+  "riccati": {
+    "equation": "S_prime=-K-S_squared",
+    "residual": 1.2619609215890402e-08
+  },
+  "rotation": {
+    "expansion_residual": 1.1102230246251565e-16,
+    "matrix_action_residual": 3.554447978966673e-16,
+    "shear_norm_residual": 0.0,
+    "twist_residual": 2.0816681711721685e-17
+  },
+  "status": "EXACT_PLANE_WAVE_SACHS_EXPANSION_SHEAR_CALIBRATION_MOVABLE_TWIST_ZERO_AFFINE_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": false,
+  "umch_status": "UNPROVEN"
+}
