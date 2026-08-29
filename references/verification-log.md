@@ -1,5 +1,16 @@
 # Bibliography verification log
 
+## Lin2020RadarCoordinates
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`.
+- Canonical article: https://doi.org/10.1103/PhysRevD.101.124001
+- Independent manuscript: https://arxiv.org/abs/1911.03950
+- Access date: 2026-08-30.
+- Metadata checked against the arXiv record and DOI-indexed publisher/search records: Shih-Yuin Lin, *Physical Review D* 101, 124001 (2020), arXiv:1911.03950.
+- Exact supported topic: construction and comparison of observational and radar coordinates for localized observers in simple Minkowski, de Sitter, and Schwarzschild-like spacetimes.
+- Project use: supports radar coordinates and two-way signal timing as known observer-dependent constructions. The exact static-Schwarzschild tortoise-time relation is independently derived and numerically checked here from radial null curves.
+- Limits: source does not establish this project's ideal static mirror, finite Levi-Civita loop, past-directed closure, vector readout, endpoint collision, holonomy, detector, `ell0`, UMCH, or detection.
+
 ## Schwarzschild2003Translation
 
 - Status: `VERIFIED_METADATA_AND_SCOPE`.
