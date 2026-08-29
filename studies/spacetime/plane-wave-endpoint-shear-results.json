@@ -1,0 +1,61 @@
+{
+  "affine_rescaling": {
+    "dimensionless_calibrated_map_residual": 1.893665622912449e-14
+  },
+  "block_action": {
+    "a_formula_residual": 0.0,
+    "b_formula_residual": 0.0,
+    "b_unchanged_residual": 0.0,
+    "c_formula_residual": 1.1443916996305594e-16,
+    "calibrated_map_symplectic_residual": 8.02718337998562e-15,
+    "d_formula_residual": 2.226468755882386e-16
+  },
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "LABELLED_ENDPOINT_SHEAR_CALIBRATION_NONIDENTIFIABLE_AFFINE_SCALE_NOT_ELL0",
+  "limitation": "Project canonical-shear nuisance model; physical endpoint derivative/displacement calibration, detector response, transport, leakage, ell0 law, and data are not derived.",
+  "open_gate": "PHYSICAL_PHASE_SPACE_ENDPOINT_CALIBRATION_NOT_DERIVED",
+  "optical_additive_action": {
+    "observer_additive_residual": 2.2315314500262475e-16,
+    "source_additive_residual": 2.3055512673781017e-16
+  },
+  "scalar_shear": {
+    "observer_gap_residual": 0.0,
+    "observer_spectrum_shift": 0.48083261120685244,
+    "source_gap_residual": 0.0,
+    "source_spectrum_shift": 0.38183766184073553
+  },
+  "spectral_mobility": {
+    "calibrated_observer_spectrum": [
+      0.6284709768243129,
+      1.153105127132242
+    ],
+    "calibrated_source_spectrum": [
+      0.4514165357055094,
+      1.13080670756188
+    ],
+    "observer_gap_shift": 0.27841399343529805,
+    "observer_spectrum": [
+      0.782677973541962,
+      1.028898130414593
+    ],
+    "observer_spectrum_shift": 0.19800801971206897,
+    "source_gap_shift": 0.4563803962795947,
+    "source_spectrum": [
+      0.7946067338453067,
+      1.0176165094220826
+    ],
+    "source_spectrum_shift": 0.3613745052631133
+  },
+  "status": "EXACT_PLANE_WAVE_LABELLED_ENDPOINT_OPTICAL_SPECTRA_NONIDENTIFIABLE_UNDER_CANONICAL_SHEAR_CALIBRATION_NOT_ELL0",
+  "structural_dead_end": false,
+  "study_id": "plane-wave-endpoint-shear-v1",
+  "symplectic_shear": {
+    "endpoint_labels": [
+      "source",
+      "observer"
+    ],
+    "observer_shear_symplectic_residual": 0.0,
+    "source_shear_symplectic_residual": 0.0
+  }
+}
