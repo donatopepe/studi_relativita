@@ -12,7 +12,7 @@ Gate: `PHYSICAL_CAUSAL_LOOP_FAMILY_PROPER_TIME_LENGTH_STANDARD_TETRAD_ANCHOR_DET
 
 For the exact exterior metric, RK4 integrates `dV/ds=-Gamma_mu dz^mu/ds V` on labelled equatorial rectangles. Common-base static-tetrad matrices are `H_tr` and `H_rphi`. Metric-connection residual is `6.680156279261934e-10`; maximum Lorentz residual is `1.7871742506134475e-13`. Nonidentity norms are `0.05483794566090526` and `0.09510550908422082`. Orientation reversal satisfies `H_reverse=H^-1` to `6.93556937731235e-15`.
 
-Mixed-plane products are genuinely order dependent: commutator nonidentity norm `0.00368784364042176`, ordered-product difference `0.0036878373757369145`. Non-Abelianity does not imply independent rank: both matrices derive from one declared metric, connection and boundary family.
+Mixed-plane products are genuinely order dependent: commutator nonidentity norm `0.00368784364042176`, ordered-product difference `0.0036878373757369145`. The control preserves the warning: non-Abelianity does not imply independent rank: both matrices derive from one declared metric, connection and boundary family.
 
 For a shrinking loop, local curvature-flux residual per coordinate area is `8.119881880118987e-05`. For the finite loop, naive single-flux residual is `0.03959321213476851`. `H is not assumed equal to exp(integral R)`; finite transport requires `PATH_ORDERED_CONNECTION_HISTORY_REQUIRED`.
 
@@ -20,7 +20,7 @@ Equal coordinate-area rectangles at shifted radial boundaries collide in coordin
 
 ## Scale and scope
 
-Under `(M,r,T)->(sM,sr,sT)` with `s=1.47` and fixed angular aperture, maximum holonomy residual is `2.59660112853674e-14`, although proper scales differ. No absolute scale is identified.
+Under `(M,r,T)->(sM,sr,sT)` with `s=1.47` and fixed angular aperture, maximum holonomy residual is `1.0207487937359978e-15`, although proper scales differ. No absolute scale is identified.
 
 Loops are mathematical piecewise-coordinate loops: not geodesic, not causal, not detector-derived. Sources establish only Schwarzschild geometry and curvature--holonomy context, not finite loop choice, numerical readout or UMCH.
 

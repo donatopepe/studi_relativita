@@ -20,7 +20,7 @@ Rettangoli con uguale area coordinata ma bordi radiali traslati collidono nell'a
 
 ## Scala e ambito
 
-Sotto `(M,r,T)->(sM,sr,sT)`, con `s=1.47` e apertura angolare fissa, il massimo residuo delle olonomie è `2.59660112853674e-14`, mentre le scale proprie cambiano. Nessuna scala assoluta è identificata.
+Sotto `(M,r,T)->(sM,sr,sT)`, con `s=1.47` e apertura angolare fissa, il massimo residuo delle olonomie è `1.0207487937359978e-15`, mentre le scale proprie cambiano. Nessuna scala assoluta è identificata.
 
 I loop sono mathematical piecewise-coordinate loops: not geodesic, not causal, not detector-derived. Le fonti stabiliscono solo la geometria Schwarzschild e il contesto curvatura--olonomia, non la scelta dei loop finiti, il readout numerico o UMCH.
 
