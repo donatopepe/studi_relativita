@@ -1,5 +1,25 @@
 # Bibliography verification log
 
+## Schwarzschild2003Translation
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`.
+- Canonical article: https://doi.org/10.1023/A:1022971926521
+- Access date: 2026-08-29.
+- Metadata checked against Springer/DOI-indexed search records: Karl Schwarzschild, *General Relativity and Gravitation* 35(5), 951--959 (2003), English translation by S. Antoci and A. Loinger of the 1916 article.
+- Exact supported topic: the Schwarzschild exterior solution for a static spherically symmetric mass point, used here only as canonical geometric background for the declared exterior metric.
+- Project use: supplies the known exact metric context; Christoffel matrices and finite transports are independently checked project derivations.
+- Limits: source does not establish the project's finite coordinate rectangles, numerical transport, loop orientations, common static tetrad readout, causal loop family, detector, `ell0`, UMCH, or detection.
+
+## AmbroseSinger1953
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`.
+- Canonical article: https://doi.org/10.1090/S0002-9947-1953-0063739-1
+- Access date: 2026-08-29.
+- Metadata checked against AMS/DOI-indexed records: W. Ambrose and I. M. Singer, *Transactions of the American Mathematical Society* 75(3), 428--443 (1953).
+- Exact supported topic: curvature values transported to a base point generate the holonomy Lie algebra under the theorem's hypotheses.
+- Project use: supplies known curvature--holonomy context only; it motivates checking finite path ordering and common-base loop products rather than treating curvature samples as finite holonomies.
+- Limits: source does not give `H=exp(integral R)` for these finite loops and does not establish the project's finite coordinate rectangles, numerical transport, boundary collision, causal loop family, detector, `ell0`, UMCH, or detection.
+
 ## Leistner2006
 
 - Status: `VERIFIED_METADATA_AND_SCOPE`.
