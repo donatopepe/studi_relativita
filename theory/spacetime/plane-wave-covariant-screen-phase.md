@@ -22,11 +22,23 @@ Therefore
 
 Direct generator integration agrees with endpoint graph transformation. Zero connection recovers inertial propagation. `P_naive_conjugated_profile`, obtained by placing only `Q^T K Q` into the inertial-form equation, differs from `P_covariant`; it omits Coriolis-like `-2A`, `A_prime`, `A^2`, and endpoint velocity calibration.
 
-A common basis or right-anchor change produces canonical similarity and preserves characteristic coefficients. Under `K_s=s^-2K(u/s)`, `omega_s=s^-1omega(u/s)`, `L_s=sL`, the endpoint graph and characteristic polynomial collide, so absolute scale and `ell0` remain unidentified.
+A common basis or right-anchor change produces similarity in the declared velocity coordinates and preserves that map's characteristic coefficients. Under `K_s=s^-2K(u/s)`, `omega_s=s^-1omega(u/s)`, `L_s=sL`, the endpoint graph and velocity-coordinate characteristic polynomial collide, so absolute scale and `ell0` remain unidentified.
+
+## Canonical-variable correction
+
+The state `(x,x')` is not a standard canonical pair when `A!=0`. With `p=x'+Ax=Q^T y'`, the canonical generator is
+
+`M_c=[[-A,I],[-Q^T K Q,-A]]`,
+
+and the canonical map is standard symplectic. The exact endpoint conversion is
+
+`P_c=H(A_o) P_covariant H(A_s)^-1`, `H(A)=[[I,0],[A,I]]`.
+
+Because `A` is antisymmetric, `H(A)` is not a canonical lower shear. Therefore the ordinary characteristic polynomial of `P_covariant` is retained only as a velocity-coordinate diagnostic; it is not a canonical screen invariant. See `plane-wave-canonical-screen-phase.md` and its deterministic artifact.
 
 ## Correction ledger
 
-PR #76 finite-window `W_transport`, invariant-average insufficiency, transport-profile mobility, and affine-window collision remain valid. Its former `P_transport` is renamed `P_naive_conjugated_profile`; rotating-coordinate interpretation is superseded. Corrected object is `P_covariant`.
+PR #76 finite-window `W_transport`, invariant-average insufficiency, transport-profile mobility, and affine-window collision remain valid. Its former `P_transport` is renamed `P_naive_conjugated_profile`; rotating-coordinate interpretation is superseded. Corrected velocity-coordinate object is `P_covariant`. Its differential equation and endpoint graph remain valid; the later canonical-variable control supersedes only interpretation of its ordinary characteristic polynomial as canonical.
 
 Coley–McNutt–Milson 2012, DOI `10.1088/0264-9381/29/23/235023`, supports exact vacuum Brinkmann plane waves and curvature-driven geodesic deviation. Chosen rotating screen, detector phase variables, endpoint angular velocities, window/kernel, affine nuisance law, UMCH, `ell0`, and detection are not established by the source.
 

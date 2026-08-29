@@ -12,7 +12,7 @@ Integrazione diretta e legge graph endpoint concordano a `2.5090833109947626e-14
 
 ## Ledger di correzione
 
-I risultati window di PR #76, l'insufficienza delle medie invarianti, la mobilità del profilo di trasporto e la collisione affine-window restano validi. Il precedente `P_transport` è rinominato `P_naive_conjugated_profile`; la sua interpretazione in coordinate rotating è superseded. `P_covariant` è la map progettuale corretta che include connessione e termini di velocità angolare endpoint.
+I risultati window di PR #76, l'insufficienza delle medie invarianti, la mobilità del profilo di trasporto e la collisione affine-window restano validi. Il precedente `P_transport` è rinominato `P_naive_conjugated_profile`; la sua interpretazione in coordinate rotating è superseded. `P_covariant` resta la map progettuale corretta per lo stato di velocità `(x,x')`, includendo connessione e termini di velocità angolare endpoint. Il controllo successivo delle variabili canoniche mostra che `(x,x')` non è una coppia canonica standard quando `A!=0`; il suo polinomio caratteristico ordinario resta solo una diagnostica di coordinate, non un invariante canonico dello screen.
 
 Coley–McNutt–Milson 2012, DOI `10.1088/0264-9381/29/23/235023`, supporta onde piane di Brinkmann esatte nel vuoto e deviazione geodetica guidata dalla curvatura. Screen rotating scelta, variabili phase detector, velocità angolari endpoint, window/kernel, legge nuisance affine, UMCH, `ell0` e detection sono non stabiliti dalla fonte.
 

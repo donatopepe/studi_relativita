@@ -218,7 +218,7 @@ def build_artifact(n=5000):
         "right_anchor": right_anchor_control(n),
         "affine_orbit": affine_orbit_control(n),
         "ell0_gate": ell0_gate(["K", "omega", "A", "G", "P", "L"]),
-        "correction_disposition": "PR76_WINDOW_RESULTS_PRESERVED_P_TRANSPORT_RENAMED_P_NAIVE_CONJUGATED_PROFILE_ROTATING_PHASE_INTERPRETATION_SUPERSEDED",
+        "correction_disposition": "PR76_WINDOW_RESULTS_PRESERVED_P_TRANSPORT_RENAMED_P_NAIVE_CONJUGATED_PROFILE_ROTATING_PHASE_INTERPRETATION_SUPERSEDED_PR77_VELOCITY_MAP_RETAINED_CHARACTERISTIC_IS_COORDINATE_DIAGNOSTIC_NOT_CANONICAL_INVARIANT",
         "source_scope": "Coley-McNutt-Milson supports exact vacuum Brinkmann plane waves and curvature-driven geodesic deviation; it does not establish the chosen rotating screen, detector phase variables, endpoint angular velocities, window/kernel, affine nuisance law, UMCH, ell0, or detection.",
         "structural_dead_end": False,
         "hypothesis_status": "UNPROVEN",

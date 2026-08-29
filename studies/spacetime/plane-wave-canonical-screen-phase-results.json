@@ -1,0 +1,176 @@
+{
+  "affine_orbit": {
+    "characteristic_residual": 6.274439936211069e-14,
+    "map_scaling_residual": 6.447625741532216e-14,
+    "scale_factor": 1.47
+  },
+  "canonical_equivalence": {
+    "direct_canonical_map": [
+      [
+        0.7931952874992751,
+        -0.4617498693040165,
+        0.8265086194380206,
+        -0.40637505319948325
+      ],
+      [
+        0.3484477371848602,
+        1.0415741943241363,
+        0.35080033817710515,
+        0.8955668707416166
+      ],
+      [
+        -0.21586680447718481,
+        -0.199512305939507,
+        0.8334972680509983,
+        -0.5230861128161558
+      ],
+      [
+        -0.17163755573242725,
+        0.22716589131984036,
+        0.28769768603627466,
+        1.0013536547128346
+      ]
+    ],
+    "direct_endpoint_residual": 1.823955281067939e-14,
+    "endpoint_canonical_map": [
+      [
+        0.7931952874992746,
+        -0.4617498693040094,
+        0.8265086194380218,
+        -0.40637505319947576
+      ],
+      [
+        0.3484477371848558,
+        1.0415741943241366,
+        0.3508003381771009,
+        0.8955668707416182
+      ],
+      [
+        -0.21586680447718784,
+        -0.19951230593950317,
+        0.8334972680510035,
+        -0.5230861128161476
+      ],
+      [
+        -0.1716375557324227,
+        0.22716589131984402,
+        0.28769768603627166,
+        1.0013536547128392
+      ]
+    ],
+    "velocity_conversion_residual": 1.7617423914230872e-14
+  },
+  "classification": "EXACT_SPACETIME_CANONICAL_SCREEN_PHASE_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "common_basis": {
+    "characteristic_residual": 3.2953244754398602e-15,
+    "map_similarity_residual": 1.1790722901913857e-14
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "correction_disposition": "PR77_VELOCITY_MAP_RETAINED_ORDINARY_CHARACTERISTIC_RELABELED_COORDINATE_DIAGNOSTIC_CANONICAL_MAP_ADDED",
+  "ell0_gate": "CANONICAL_SCREEN_PHASE_AFFINE_ORBIT_NOT_ELL0",
+  "endpoint_calibration_mobility": {
+    "canonical_map_difference": 0.0,
+    "scope": "ENDPOINT_PHASE_VARIABLE_CALIBRATION_COUNTEREXAMPLE_NOT_ALTERNATE_CONNECTION_SOLUTION",
+    "velocity_characteristic_difference": 0.49508910842587517,
+    "velocity_map_difference": 0.7876233361697514
+  },
+  "hypothesis_status": "UNPROVEN",
+  "open_gate": "PHYSICAL_SCREEN_CANONICAL_MOMENTUM_ENDPOINT_ANGULAR_VELOCITY_AND_UNIT_CALIBRATION_NOT_DERIVED",
+  "raw_fields": [
+    "K",
+    "omega",
+    "Q",
+    "A",
+    "x",
+    "x_prime",
+    "p",
+    "P_inertial",
+    "P_velocity",
+    "P_canonical",
+    "H_source",
+    "H_observer",
+    "L"
+  ],
+  "source_scope": "COLEY_MCNUTT_MILSON_2012_SUPPORTS_EXACT_BRINKMANN_PLANE_WAVES_AND_GEODESIC_DEVIATION_NOT_ROTATING_DETECTOR_CANONICAL_VARIABLES_ENDPOINT_CALIBRATION_WINDOW_AFFINE_NUISANCE_ELL0_UMCH_OR_DETECTION",
+  "spectral_counterexample": {
+    "canonical_characteristic": [
+      1.0,
+      -3.6696204045872443,
+      5.313925407891377,
+      -3.669620404587228,
+      0.9999999999999922
+    ],
+    "characteristic_difference": 0.32091041757227023,
+    "disposition": "VELOCITY_CHARACTERISTIC_NOT_CANONICAL_SCREEN_INVARIANT",
+    "velocity_characteristic": [
+      1.0,
+      -3.4489794955401076,
+      5.388883226803813,
+      -3.8902613136343773,
+      0.9999999999999912
+    ]
+  },
+  "status": "EXACT_PLANE_WAVE_ROTATING_SCREEN_VELOCITY_SPECTRUM_ENDPOINT_CALIBRATION_DEPENDENT_CANONICAL_MAP_AFFINE_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": false,
+  "symplectic_structure": {
+    "canonical_standard_residual": 9.223583285220894e-15,
+    "observer_pulled_form": [
+      [
+        0.0,
+        1.213252,
+        1.0,
+        0.0
+      ],
+      [
+        -1.213252,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "source_pulled_form": [
+      [
+        0.0,
+        0.630452,
+        1.0,
+        0.0
+      ],
+      [
+        -0.630452,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        -1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -1.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "velocity_pulled_back_residual": 4.408342475837773e-14,
+    "velocity_standard_residual": 2.9790466121319246
+  },
+  "zero_connection": {
+    "canonical_inertial_residual": 0.0,
+    "velocity_canonical_residual": 0.0
+  }
+}

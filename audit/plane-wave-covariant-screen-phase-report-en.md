@@ -12,7 +12,7 @@ Direct integration and endpoint graph law agree to `2.5090833109947626e-14`. Zer
 
 ## Correction ledger
 
-PR #76 window results, invariant-average insufficiency, transport-profile mobility, and affine-window collision remain valid. Former `P_transport` is renamed `P_naive_conjugated_profile`; its rotating-coordinate interpretation is superseded. `P_covariant` is the corrected project-derived map including connection and endpoint angular-velocity terms.
+PR #76 window results, invariant-average insufficiency, transport-profile mobility, and affine-window collision remain valid. Former `P_transport` is renamed `P_naive_conjugated_profile`; its rotating-coordinate interpretation is superseded. `P_covariant` remains the correct project-derived map for velocity state `(x,x')`, including connection and endpoint angular-velocity terms. Later canonical-variable control shows `(x,x')` is not a standard canonical pair when `A!=0`; its ordinary characteristic polynomial is retained only as a coordinate diagnostic, not a canonical screen invariant.
 
 Coley–McNutt–Milson 2012, DOI `10.1088/0264-9381/29/23/235023`, supports exact vacuum Brinkmann plane waves and curvature-driven geodesic deviation. Chosen rotating screen, detector phase variables, endpoint angular velocities, window/kernel, affine nuisance law, UMCH, `ell0`, and detection are not established by the source.
 
