@@ -1,0 +1,169 @@
+{
+  "average": "integral Q(alpha) D Q(alpha)^T dmu(alpha)",
+  "cases": {
+    "imag_half": {
+      "average_matrix": [
+        [
+          2.0,
+          0.5
+        ],
+        [
+          0.5,
+          2.0
+        ]
+      ],
+      "eigenvalues": [
+        1.5,
+        2.5
+      ],
+      "m2": {
+        "imag": 0.5,
+        "magnitude": 0.5,
+        "real": 0.0
+      },
+      "measure": [
+        [
+          0.7853981633974483,
+          0.75
+        ],
+        [
+          2.356194490192345,
+          0.25
+        ]
+      ]
+    },
+    "opposite_quarter": {
+      "average_matrix": [
+        [
+          2.0,
+          6.123233995736766e-17
+        ],
+        [
+          6.123233995736766e-17,
+          2.0
+        ]
+      ],
+      "eigenvalues": [
+        2.0,
+        2.0
+      ],
+      "m2": {
+        "imag": 6.123233995736766e-17,
+        "magnitude": 6.123233995736766e-17,
+        "real": 0.0
+      },
+      "measure": [
+        [
+          0,
+          0.5
+        ],
+        [
+          1.5707963267948966,
+          0.5
+        ]
+      ]
+    },
+    "real_half": {
+      "average_matrix": [
+        [
+          2.5,
+          3.061616997868383e-17
+        ],
+        [
+          3.061616997868383e-17,
+          1.5
+        ]
+      ],
+      "eigenvalues": [
+        1.5,
+        2.5
+      ],
+      "m2": {
+        "imag": 3.061616997868383e-17,
+        "magnitude": 0.5,
+        "real": 0.5
+      },
+      "measure": [
+        [
+          0,
+          0.75
+        ],
+        [
+          1.5707963267948966,
+          0.25
+        ]
+      ]
+    },
+    "single": {
+      "average_matrix": [
+        [
+          2.169967142900241,
+          0.9854497299884601
+        ],
+        [
+          0.9854497299884601,
+          1.830032857099759
+        ]
+      ],
+      "eigenvalues": [
+        1.0,
+        3.0
+      ],
+      "m2": {
+        "imag": 0.9854497299884601,
+        "magnitude": 1.0,
+        "real": 0.16996714290024104
+      },
+      "measure": [
+        [
+          0.7,
+          1
+        ]
+      ]
+    },
+    "symmetric_quarter": {
+      "average_matrix": [
+        [
+          2.0,
+          0.0
+        ],
+        [
+          0.0,
+          2.0
+        ]
+      ],
+      "eigenvalues": [
+        2.0,
+        2.0
+      ],
+      "m2": {
+        "imag": 0.0,
+        "magnitude": 6.123233995736766e-17,
+        "real": 6.123233995736766e-17
+      },
+      "measure": [
+        [
+          0.7853981633974483,
+          0.5
+        ],
+        [
+          -0.7853981633974483,
+          0.5
+        ]
+      ]
+    }
+  },
+  "classification": "KNOWN_RESULT_PLUS_PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "eigenvalue_formula": "mean +- half-gap |m2|",
+  "ell0_gate": "PATH_MEASURE_MOMENT_GEOMETRIC_NOT_ELL0",
+  "geometry": "constant-curvature two-sphere",
+  "isotropy_gate": "M2_ZERO_MANY_PATH_MEASURES",
+  "limitation": "Exact two-sphere path-angle measure algebra; no four-dimensional spacetime bitensor, physical path measure, data, or UMCH law.",
+  "matrix_gate": "FULL_MATRIX_DEPENDS_ONLY_ON_COMPLEX_SECOND_CIRCULAR_MOMENT",
+  "moment": "m2=integral exp(i2alpha)dmu(alpha)",
+  "null_space_gate": "HIGHER_PATH_DISTRIBUTION_DETAIL_UNIDENTIFIABLE",
+  "spectrum_gate": "SPECTRUM_DEPENDS_ONLY_ON_SECOND_CIRCULAR_MOMENT_MAGNITUDE",
+  "status": "SPHERE_PATH_MEASURE_SECOND_CIRCULAR_MOMENT_ONLY_NOT_ELL0",
+  "study_id": "sphere-path-measure-v1"
+}
