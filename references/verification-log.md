@@ -258,3 +258,18 @@ Access date for this initial verification: **2026-08-21**. “Verified” means 
 ## Verification discipline
 
 Metadata fetched during this audit is not stored as authority-free prose: each BibTeX DOI resolves to its canonical record. New entries require a new section matching the citation key, canonical URL, access date, supported topic, and limits. Search snippets alone are insufficient.
+
+
+## ORaifeartaighEtAl2017
+
+- **Metadata checked:** publisher landing-page metadata and arXiv record for C. O'Raifeartaigh, M. O'Keeffe, W. Nahm and S. Mitton, *Einstein's 1917 Static Model of the Universe: A Centennial Review*, *European Physical Journal H* **42** (2017) 431--474, DOI `10.1140/epjh/e2017-80002-5`, arXiv `1701.07261`.
+- **Supports:** historical and geometric context for the Einstein static model, including its static closed positively curved spatial geometry. The project uses the standard product representative with a round spatial three-sphere as an exact control.
+- **Does not establish:** the project's finite loop family, tetrad anchor, loop orientation, kernel/window, detector readout, cross-channel map, curvature-radius scaling test, `ell0`, UMCH, or detection.
+
+## DoCarmo2016
+
+- **Metadata checked:** publisher/catalogue records for Manfredo P. do Carmo, *Differential Geometry of Curves and Surfaces*, revised and updated second edition, Dover (2016), ISBN `978-0-486-80699-0`.
+- **Supports:** standard intrinsic surface geometry, geodesics, Gaussian curvature and the Gauss--Bonnet theorem; for a geodesic spherical triangle these imply spherical excess equal to integrated Gaussian curvature, hence `E=Area/R^2` on a round sphere.
+- **Does not establish:** the four-dimensional Einstein-static finite loop family, an observational or causal selection of loops, a detector protocol, tetrad calibration, common anchor, cross-channel independence or dependence as a physical measurement claim, Jacobi readout, `ell0`, UMCH, or detection.
+
+These canonical geometry sources support background mathematics only. They do not establish a physical finite loop family or any UMCH mechanism.
