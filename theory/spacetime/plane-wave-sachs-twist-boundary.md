@@ -8,7 +8,9 @@ For symmetric curvature `K`, antisymmetric Riccati evolution implies conserved t
 
 `twist(u) det X(u)=twist(u_s) det X(u_s)`.
 
-Nonzero endpoint twist is therefore connection-propagated but inherits rotating congruence boundary. Changing boundary twist at fixed profile changes endpoint twist. It is not a profile-only observable.
+Nonzero endpoint twist is therefore curvature-propagated within this fixed inertial screen but inherits rotating congruence boundary. Changing boundary twist at fixed profile changes endpoint twist. It is not a profile-only observable.
+
+A later rotating-screen control distinguishes canonical graph `R=P X^{-1}` from velocity Sachs graph `S_rot=X'X^{-1}=R-A`, where `A=Q^TQ'`. Thus the inertial twist-area conservation stated here remains valid in its declared screen, while a varying screen adds a connection-dependent term to velocity-coordinate twist. See `plane-wave-covariant-sachs-screen.md`.
 
 ## Orientation and scale quotient
 

@@ -10,7 +10,7 @@
 
 ## Risultato counterexample-first
 
-`X,V,S,S_0` raw restano primari, con `S=VX^{-1}` lontano da una caustic. Il boundary rotating non-vertex `X=I`, `V=S_0` produce twist endpoint non nullo tramite propagazione Jacobi esatta connection-driven.
+`X,V,S,S_0` raw restano primari, con `S=VX^{-1}` lontano da una caustic. Il boundary rotating non-vertex `X=I`, `V=S_0` produce twist endpoint non nullo tramite propagazione Jacobi esatta guidata dalla curvatura nello screen inerziale dichiarato. Un controllo successivo dello screen rotating conserva questo risultato ma mostra `S_rot=R-A` nelle coordinate di velocità; il twist dello screen variabile contiene anche un termine di connessione e non coincide col twist del grafo canonico.
 
 Per tidal `K` simmetrica, `twist det X` è conservato. Il twist endpoint contiene quindi twist del boundary dichiarato ed espansione d'area. Cambiare solo il twist boundary sposta il twist endpoint mentre il profilo è identico. Questo blocca interpretazioni profile-only e `ell0`.
 
