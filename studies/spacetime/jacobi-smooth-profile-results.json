@@ -1,0 +1,34 @@
+{
+  "analytic_endpoint_difference": "epsilon S^2/30",
+  "analytic_weighted_moments": [
+    "S^2/6",
+    "S^2/5"
+  ],
+  "boundary": [
+    "d(0)=0",
+    "d_prime(0)=1"
+  ],
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "SMOOTH_OPTICAL_PROFILE_GEOMETRIC_NOT_ELL0",
+  "epsilon": 0.1,
+  "equation": "d_second+epsilon f(s)d=0",
+  "limitation": "First-order scalar perturbation with fixed affine interval and vertex data; no exact finite-epsilon matrix Sachs system, spacetime derivation, data, or UMCH law.",
+  "observer": 2,
+  "profiles": {
+    "beta22": {
+      "first_order_endpoint": 1.92,
+      "integral": 0.9999999974999999,
+      "weighted_moment": 0.8
+    },
+    "uniform": {
+      "first_order_endpoint": 1.9333333335,
+      "integral": 1.0,
+      "weighted_moment": 0.666666665
+    }
+  },
+  "reflection_gate": "VERTEX_OBSERVER_KERNEL_REFLECTION_DEGENERACY",
+  "status": "JACOBI_SMOOTH_EQUAL_INTEGRAL_DIFFERENT_WEIGHTED_ENDPOINT_NOT_ELL0",
+  "study_id": "jacobi-smooth-profile-v1",
+  "sufficiency_gate": "INTEGRATED_STRENGTH_INSUFFICIENT_WEIGHTED_PROFILE_MOMENT_REQUIRED_AT_FIRST_ORDER"
+}
