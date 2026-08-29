@@ -16,7 +16,7 @@ class LeviCivitaHolonomyReportTests(unittest.TestCase):
    for token in ('10.1088/0264-9381/29/23/235023','10.1016/j.geomphys.2005.11.010','10.1007/s00208-015-1270-4','not establish','non stabilisce'):
     if token in ('not establish','non stabilisce'):continue
     self.assertIn(token,text)
-   self.assertTrue('does not establish' in text or 'non stabiliscono' in text)
+   self.assertTrue('do not establish' in text or 'non stabiliscono' in text)
  def test_theory_retains_raw_not_spectrum_as_primary(self):
   text=(ROOT/'theory/spacetime/plane-wave-levi-civita-holonomy.md').read_text()
   for token in (ART['status'],ART['physical_gate'],ART['scope'],'H_LC','b_LC','unipotent','Abelian','not an independent channel','non è un canale indipendente'):
