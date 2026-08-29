@@ -1,0 +1,101 @@
+{
+  "affine_orbit": {
+    "characteristic_residual": 6.01401776583411e-14,
+    "endpoint_graph_scaling_residual": 7.958668836025602e-14,
+    "scale_factor": 1.47
+  },
+  "classification": "EXACT_SPACETIME_COVARIANT_SCREEN_PHASE_MAP_CORRECTION_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "common_basis": {
+    "characteristic_residual": 1.5568874046661177e-14,
+    "map_similarity_residual": 8.116370542477297e-15
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "correction_disposition": "PR76_WINDOW_RESULTS_PRESERVED_P_TRANSPORT_RENAMED_P_NAIVE_CONJUGATED_PROFILE_ROTATING_PHASE_INTERPRETATION_SUPERSEDED",
+  "ell0_gate": "COVARIANT_SCREEN_PHASE_MAP_AFFINE_ORBIT_NOT_ELL0",
+  "endpoint_graph": {
+    "direct_covariant_map": [
+      [
+        0.9212952700191323,
+        -0.20121286323304466,
+        0.826508619438023,
+        -0.40637505319948053
+      ],
+      [
+        0.06614177478845967,
+        1.1521555817263498,
+        0.35080033817710604,
+        0.8955668707416162
+      ],
+      [
+        -0.09109978175142154,
+        -0.6356998280411985,
+        0.6206926621039808,
+        -1.0663602613466627
+      ],
+      [
+        0.0715914015776971,
+        0.19579472772670245,
+        0.7890793038114933,
+        0.7548359816906449
+      ]
+    ],
+    "endpoint_graph_map": [
+      [
+        0.9212952700191326,
+        -0.20121286323303952,
+        0.8265086194380218,
+        -0.40637505319947576
+      ],
+      [
+        0.06614177478845841,
+        1.1521555817263514,
+        0.3508003381771009,
+        0.8955668707416182
+      ],
+      [
+        -0.09109978175142824,
+        -0.6356998280411872,
+        0.6206926621039816,
+        -1.0663602613466527
+      ],
+      [
+        0.07159140157769416,
+        0.19579472772670797,
+        0.7890793038114812,
+        0.7548359816906541
+      ]
+    ],
+    "phase_map_residual": 2.5090833109947626e-14
+  },
+  "hypothesis_status": "UNPROVEN",
+  "naive_counterexample": {
+    "characteristic_difference": 0.8081132671231531,
+    "disposition": "NAIVE_CONJUGATED_PROFILE_MAP_NOT_ROTATING_COORDINATE_PROPAGATOR",
+    "raw_map_difference": 1.5885516738910388
+  },
+  "open_gate": "PHYSICAL_SCREEN_CONNECTION_ENDPOINT_ANGULAR_VELOCITY_AND_DETECTOR_PHASE_VARIABLES_NOT_DERIVED",
+  "raw_objects": [
+    "K",
+    "omega",
+    "Q",
+    "A",
+    "A_prime",
+    "G_source",
+    "G_observer",
+    "P_inertial",
+    "P_naive_conjugated_profile",
+    "P_covariant"
+  ],
+  "right_anchor": {
+    "characteristic_residual": 6.505954288594514e-14,
+    "map_similarity_residual": 1.2843457177987991e-14
+  },
+  "source_scope": "Coley-McNutt-Milson supports exact vacuum Brinkmann plane waves and curvature-driven geodesic deviation; it does not establish the chosen rotating screen, detector phase variables, endpoint angular velocities, window/kernel, affine nuisance law, UMCH, ell0, or detection.",
+  "status": "EXACT_PLANE_WAVE_ROTATING_SCREEN_CONNECTION_TERMS_REQUIRED_NAIVE_TRANSPORTED_JACOBI_MAP_SUPERSEDED_NOT_ELL0",
+  "structural_dead_end": false,
+  "study_id": "plane-wave-covariant-screen-phase-map-v1",
+  "zero_connection": {
+    "covariant_vs_inertial_residual": 0.0,
+    "naive_vs_inertial_residual": 0.0
+  }
+}

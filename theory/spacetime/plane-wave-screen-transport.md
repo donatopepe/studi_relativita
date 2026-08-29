@@ -8,7 +8,7 @@ Open gate: `PHYSICAL_SCREEN_CONNECTION_PATH_KERNEL_AND_COMMON_ENDPOINT_STANDARD_
 
 ## Raw objects
 
-Retain `K`, `omega`, `Q`, `W_raw`, `W_transport`, local invariant averages, `P_raw`, and `P_transport`. For a declared centered screen connection,
+Retain `K`, `omega`, `Q`, `W_raw`, `W_transport`, local invariant averages, `P_raw`, and `P_naive_conjugated_profile`. For a declared centered screen connection,
 
 `Q'(u)=-omega(u) J Q(u)`, `Q(0)=I`,
 
@@ -16,9 +16,9 @@ Retain `K`, `omega`, `Q`, `W_raw`, `W_transport`, local invariant averages, `P_r
 
 `W_transport=integral w_L(u) Q(u)^T K(u) Q(u) du`.
 
-`P_raw` and `P_transport` solve the full Jacobi phase-space equation with `K` and `Q^T K Q`, respectively. Top-hat and triangular kernels remain explicit.
+`P_raw` and `P_naive_conjugated_profile` solve the inertial-form Jacobi phase-space equation with `K` and `Q^T K Q`, respectively. Top-hat and triangular kernels remain explicit. Correction: `P_naive_conjugated_profile` is not the rotating-coordinate phase map for varying `Q`; connection terms and endpoint phase transformations are required. That former interpretation is superseded by `plane-wave-covariant-screen-phase-map-v1`, while finite-window operator results remain valid.
 
-Zero connection collapses both orderings. A varying connection preserves pointwise trace, determinant, eigenvalues, and Frobenius norm but changes `W_transport` and `P_transport`. Their averages cannot reconstruct transported operator or ordered propagator. Thus transport, averaging, averaging invariants, and Jacobi propagation are not interchangeable.
+Zero connection collapses both profile orderings. A varying connection preserves pointwise trace, determinant, eigenvalues, and Frobenius norm but changes `W_transport` and `P_naive_conjugated_profile`. Their averages cannot reconstruct transported operator or the declared profile propagator. Thus transport, averaging, averaging invariants, and propagation are not interchangeable; rotating-coordinate propagation requires the corrected connection-derived generator.
 
 A common constant screen basis conjugates `W_transport` and canonically conjugates `P_transport`; characteristic coefficients stay fixed. Different `omega` at fixed `K,L,kernel` move outputs, proving protocol dependence.
 
