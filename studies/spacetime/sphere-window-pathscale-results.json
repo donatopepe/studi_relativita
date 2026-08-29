@@ -1,0 +1,37 @@
+{
+  "branch_gate": "ABSOLUTE_COSINE_MULTIBRANCH_ALIASING",
+  "cases": [
+    {
+      "eta": 0.5,
+      "first_isotropy_ell": 3.5449077018110318,
+      "gap_at_isotropy": 5.66553889764798e-16,
+      "physical_area_at_isotropy": 6.283185307179585
+    },
+    {
+      "eta": 1,
+      "first_isotropy_ell": 2.5066282746310002,
+      "gap_at_isotropy": 5.66553889764798e-16,
+      "physical_area_at_isotropy": 6.283185307179585
+    },
+    {
+      "eta": 2,
+      "first_isotropy_ell": 1.7724538509055159,
+      "gap_at_isotropy": 5.66553889764798e-16,
+      "physical_area_at_isotropy": 6.283185307179585
+    }
+  ],
+  "classification": "KNOWN_RESULT_PLUS_PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "confounding_gate": "ONLY_ETA_OVER_R_SQUARED_ENTERS_PHASE",
+  "ell0_gate": "CURVATURE_RADIUS_PATH_LANDMARK_NOT_ELL0",
+  "first_isotropy": "ell_iso=r sqrt(pi/(2 eta))",
+  "first_isotropy_area": "A_iso=pi r^2/2",
+  "geometry": "radius-r two-sphere K=1/r^2",
+  "holonomy_angle": "alpha=eta ell^2/r^2",
+  "limitation": "Exact two-sphere and prescribed area law; no four-dimensional spacetime window, physical path selection, data, or UMCH law.",
+  "path_area": "A(ell)=eta ell^2",
+  "shape_gate": "ETA_MOVES_REPORTED_ELL_LANDMARK",
+  "spectral_gap": "Delta |cos(eta ell^2/r^2)|",
+  "status": "SPHERE_WINDOW_NONRADIAL_LANDMARK_CURVATURE_RADIUS_PATH_SHAPE_NOT_ELL0",
+  "study_id": "sphere-window-pathscale-v1"
+}
