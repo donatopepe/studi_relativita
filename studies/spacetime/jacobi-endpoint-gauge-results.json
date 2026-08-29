@@ -1,0 +1,59 @@
+{
+  "anchor_gate": "COMMON_ANCHORED_FRAME_RESTRICTION_REQUIRES_PHYSICAL_TRANSPORT_CERTIFICATE",
+  "antisymmetric_forward": 0.075,
+  "antisymmetric_transpose": -0.075,
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "common_so2_fit": {
+    "observer_reflection": false,
+    "residual": 0.21213203435596426,
+    "source_reflection": false,
+    "theta_observer": 0.0,
+    "theta_source": 0.0
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "determinant": 0.2462,
+  "ell0_gate": "ENDPOINT_FRAME_QUOTIENT_NOT_ELL0",
+  "gauge_gate": "INDEPENDENT_SOURCE_OBSERVER_FRAMES_ACT_BY_LEFT_RIGHT_ORTHOGONAL_ACTION",
+  "independent_so2_fit": {
+    "observer_reflection": false,
+    "residual": 5.721958498152797e-17,
+    "source_reflection": false,
+    "theta_observer": 0.147437164127938,
+    "theta_source": -0.147437164127938
+  },
+  "limitation": "Endpoint-frame quotient control; not a derived spacetime screen-transport law, detector calibration, data result, or UMCH mechanism.",
+  "orbit_gate": "TRANSPOSE_SHARES_SINGULAR_VALUES_AND_DETERMINANT_AND_IS_ENDPOINT_FRAME_EQUIVALENT",
+  "rank_deficient_o2_fit": {
+    "observer_reflection": false,
+    "residual": 3.3306690738754696e-16,
+    "source_reflection": false,
+    "theta_observer": 1.1071487177940904,
+    "theta_source": -1.1071487177940904
+  },
+  "singular_values": [
+    0.3903307781330395,
+    0.6307470837364656
+  ],
+  "status": "JACOBI_TRANSPOSE_REVERSAL_NONIDENTIFIABLE_UNDER_INDEPENDENT_ENDPOINT_FRAME_QUOTIENT",
+  "study_id": "jacobi-endpoint-gauge-v1",
+  "transpose": [
+    [
+      0.62,
+      -0.04
+    ],
+    [
+      0.11,
+      0.39
+    ]
+  ],
+  "vertex_block": [
+    [
+      0.62,
+      0.11
+    ],
+    [
+      -0.04,
+      0.39
+    ]
+  ]
+}
