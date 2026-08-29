@@ -1,0 +1,311 @@
+{
+  "affine_control": {
+    "holonomy_residual": 3.9523245835994223e-13,
+    "maximum_dimensionless_residual": 3.9523245835994223e-13,
+    "scale_factor": 1.47
+  },
+  "anchor_control": {
+    "boost_conjugacy_residual": 1.112440001227455e-12,
+    "boost_parameter_difference": 0.03943765660981108,
+    "screen_norm_residual": 0.0,
+    "so2_conjugacy_residual": 5.927021234714576e-13
+  },
+  "artifact": "plane-wave-levi-civita-holonomy",
+  "classification": "EXACT_SPACETIME_LEVI_CIVITA_HOLONOMY_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "composition_control": {
+    "commutator_residual": 0.0,
+    "parameter_addition_residual": 8.305801792868328e-13,
+    "separate_loop_parameter_norm": 0.19843744769743393
+  },
+  "ell0_identified": false,
+  "geometry_control": {
+    "b_LC": [
+      0.04563111399994071,
+      0.09632683344253452
+    ],
+    "metric_compatibility_residual": 1.1854037716696464e-12,
+    "nonidentity_norm": 0.15084556081713096,
+    "null_rotation_residual": 5.927021026752577e-13,
+    "parallel_null_residual": 0.0
+  },
+  "null_control": {
+    "identity_residual": 0.0
+  },
+  "physical_gate": "PHYSICAL_CAUSAL_SPACETIME_LOOP_FAMILY_TETRAD_ANCHOR_NULL_NORMALIZATION_DETECTOR_READOUT_AND_ELL0_LAW_NOT_DERIVED",
+  "positive_detection_claim": false,
+  "profile_control": {
+    "holonomy_collision_residual": 1.180216523811548e-12,
+    "jacobi_map_difference": 0.1163592258321023,
+    "profile_sample_difference": 2.163225731324767
+  },
+  "raw_record": {
+    "Gamma_mu(z)": "metric-derived Levi-Civita connection",
+    "H_LC": [
+      [
+        1.0,
+        -0.04563111399994071,
+        -0.09632683344253452,
+        -0.005680528703563388
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.04563111399994071
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.09632683344253452
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "K(u)": "smooth symmetric tracefree profile",
+    "L": 1.1,
+    "P_K": [
+      [
+        0.8836383659857392,
+        -0.09787037332675508,
+        1.0487520027042172,
+        -0.02950581350072041
+      ],
+      [
+        -0.10194059503786805,
+        1.1235720469223436,
+        -0.030810167150260553,
+        1.1529256595436574
+      ],
+      [
+        -0.23265069399233157,
+        -0.12929724724476022,
+        0.8544774292374239,
+        -0.04876960926050286
+      ],
+      [
+        -0.1452545829917764,
+        0.2568394913687055,
+        -0.05329964359404237,
+        1.1527153635842227
+      ]
+    ],
+    "T_segments": [
+      [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0016887118332520978
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          1.0,
+          -0.04563111399994071,
+          -0.09632683344253452,
+          -0.006381385479869305
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.04563111399994071
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.09632683344253452
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.0009878550569461808
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    ],
+    "W_a": [
+      [
+        0.24455051346973825,
+        0.13717974013577486
+      ],
+      [
+        0.13717974013577486,
+        -0.24455051346973825
+      ]
+    ],
+    "a": [
+      0.31,
+      -0.22
+    ],
+    "b_LC": [
+      0.04563111399994071,
+      0.09632683344253452
+    ],
+    "chi_LC": [
+      1.0,
+      -4.0,
+      6.0,
+      -4.0,
+      1.0
+    ],
+    "loop_vertices": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        -0.55
+      ],
+      [
+        0.0,
+        0.31,
+        -0.22,
+        -0.55
+      ],
+      [
+        0.0,
+        0.31,
+        -0.22,
+        0.55
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.55
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        -0.55
+      ]
+    ],
+    "orientation": "transverse-out, u-forward, transverse-back, u-return",
+    "spectrum_LC": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "u_a": -0.55,
+    "u_b": 0.55
+  },
+  "reversal_control": {
+    "b_sign_residual": 1.0315407380583415e-16,
+    "characteristic_residual": 0.0,
+    "inverse_residual": 5.1888742866924895e-15
+  },
+  "scope": "FOUR_DIMENSIONAL_LEVI_CIVITA_CONNECTION_ON_MATHEMATICAL_BRINKMANN_COORDINATE_LOOPS_NOT_DETECTOR_DERIVED",
+  "spectrum_control": {
+    "characteristic_collision_residual": 0.0,
+    "chi_1": [
+      1.0,
+      -4.0,
+      6.0,
+      -4.0,
+      1.0
+    ],
+    "chi_2": [
+      1.0,
+      -4.0,
+      6.0,
+      -4.0,
+      1.0
+    ],
+    "raw_b_difference": 0.1639311489651779,
+    "raw_matrix_difference": 0.2318340146589838,
+    "spectrum_1": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "spectrum_2": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "unit_eigenvalue_residual": 0.0
+  },
+  "status": "EXACT_PLANE_WAVE_LEVI_CIVITA_NULL_ROTATION_HOLONOMY_RAW_LOOP_VECTOR_NONTRIVIAL_SPECTRUM_UNIPOTENT_ABELIAN_AND_AFFINE_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "umch_status": "UNPROVEN"
+}
