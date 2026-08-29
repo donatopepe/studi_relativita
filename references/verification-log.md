@@ -1,5 +1,27 @@
 # Bibliography verification log
 
+## Leistner2006
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`.
+- Canonical article: https://doi.org/10.1016/j.geomphys.2005.11.010
+- Independent manuscript: https://arxiv.org/abs/math/0507048
+- Access date: 2026-08-29.
+- Metadata checked against Crossref: Thomas Leistner, *Journal of Geometry and Physics* 56(10), 2117--2134 (2006).
+- Exact supported topic: a pp-wave has a parallel lightlike vector with the stated curvature restriction; pp-waves have trivial screen holonomy, while their Lorentzian holonomy is contained in the Abelian null-translation ideal under the paper's conditions.
+- Project use: supplies known geometric context only for the distinction between trivial screen holonomy and nontrivial four-dimensional null-rotation holonomy.
+- Limits: source does not provide the project's finite coordinate rectangle, transport discretization, raw matrix readout, profile collision, detector tetrad, causal support, affine calibration, `ell0`, UMCH, or detection.
+
+## LeistnerSchliebner2016
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`.
+- Canonical article: https://doi.org/10.1007/s00208-015-1270-4
+- Independent manuscript: https://arxiv.org/abs/1306.0120
+- Access date: 2026-08-29.
+- Metadata checked against Crossref: Thomas Leistner and Daniel Schliebner, *Mathematische Annalen* 364(3--4), 1469--1503 (2016).
+- Exact supported topic: pp-wave definition via a global parallel null vector and curvature restriction; connected holonomy `Hol_0` is contained in the Abelian ideal `R^n`, with equality under declared genericity. The paper distinguishes connected/restricted from full holonomy and notes the non-simply-connected caveat.
+- Project use: supplies the known Abelian restricted-holonomy context for the exact Brinkmann control.
+- Limits: source does not establish the project's finite loop matrices, ordinary-spectrum collision, orientation readout, cross-channel comparison, physical loop selection, detector calibration, `ell0`, UMCH, or detection.
+
 ## ColeyMcNuttMilson2012
 
 - Status: `VERIFIED_METADATA_AND_SCOPE`
