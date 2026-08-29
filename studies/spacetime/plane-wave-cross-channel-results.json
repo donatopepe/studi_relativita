@@ -1,0 +1,35 @@
+{
+  "affine_rescaling": {
+    "dimensionless_jacobi_residual": 3.0959949635529348e-15,
+    "dimensionless_window_residual": 1.2996309326988204e-15
+  },
+  "boundary_counterexample": {
+    "jacobi_residual": 0.1714581118374839,
+    "window_residual": 0.0
+  },
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "cross_channel_gate": "W_AND_B_SHARE_K_BUT_B_DEPENDS_ON_WEIGHTED_ORDERED_HISTORY_AND_BOUNDARY",
+  "ell0_gate": "EXACT_CROSS_CHANNEL_SUPPORT_WIDTH_NOT_ELL0",
+  "equal_window_counterexample": {
+    "jacobi_residual": 0.0004997430050221917,
+    "window_residual": 3.1401849173675502e-15
+  },
+  "free_gain_projection": {
+    "fitted_independent_gains": [
+      0.6926023153014931,
+      0.27072089403365934
+    ],
+    "quotient_residual": 3.469446951953614e-18,
+    "warning": "Scalar norm projections with independent gains, not raw-matrix equivalence."
+  },
+  "geometry": "SAME_EXACT_VACUUM_PLANE_WAVE_PROFILE_AND_PARALLEL_SCREEN",
+  "identifiability_gate": "SUPPORT_WIDTH_CONDITIONAL_ON_PROFILE_AFFINE_NORMALIZATION_BOUNDARY_AND_GAINS",
+  "limitation": "Exact-profile channel map and deterministic integration; no physical detector calibration, universal-scale law, data result, or UMCH mechanism.",
+  "local_calibrated_control": {
+    "joint_derivative_norm": 1.4727553529383763,
+    "joint_second_difference_noncollinearity": 4.6277831391253627e-07
+  },
+  "status": "EXACT_PLANE_WAVE_WINDOW_JACOBI_MAP_CONDITIONAL_SUPPORT_IDENTIFIABILITY_NOT_ELL0",
+  "study_id": "exact-plane-wave-window-jacobi-cross-channel-v1"
+}
