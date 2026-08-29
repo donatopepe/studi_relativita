@@ -1,0 +1,30 @@
+{
+  "affine_rescaling": {
+    "dimensionless_handed_1": 0.0001623727599162116,
+    "dimensionless_handed_2": 0.00016237275991626697,
+    "dimensionless_handed_residual": 5.537562595969714e-17
+  },
+  "artifact": "plane-wave-common-anchor-handedness",
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "common_o2_reflection": {
+    "reflection_sign_residual": 0.0
+  },
+  "common_so2": {
+    "maximum_rotation_residual": 6.938893903907228e-17
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "ORIENTED_PROFILE_REVERSAL_CONDITIONAL_ABSOLUTE_SCALE_NOT_ELL0",
+  "independent_endpoints": {
+    "transpose_orbit_residual": 2.2215299868541707e-16
+  },
+  "open_gate": "PHYSICAL_ORIENTED_ENDPOINT_ANCHOR_NOT_DERIVED",
+  "reversal": {
+    "forward_handed_statistic": 0.0008309953339805803,
+    "jacobi_transpose_residual": 1.2070025940142554e-14,
+    "reversal_sign_residual": 6.245004513516506e-17,
+    "reverse_handed_statistic": -0.0008309953339806428
+  },
+  "source_scope": "Exact Brinkmann plane-wave and curvature-driven geodesic deviation only; common anchor, window, boundary, detector observability, UMCH, ell0, and detection are not source-established.",
+  "status": "EXACT_PLANE_WAVE_COMMON_ORIENTED_ANCHOR_RECOVERS_REVERSAL_SIGN_CONDITIONALLY_NOT_ELL0",
+  "structural_dead_end": false
+}
