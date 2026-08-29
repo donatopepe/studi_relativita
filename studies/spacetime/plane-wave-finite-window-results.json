@@ -1,0 +1,89 @@
+{
+  "asymmetric_rotation": {
+    "projective_distance": 0.06894109902766368,
+    "windows": [
+      [
+        [
+          0.31247558917,
+          0.228658678326
+        ],
+        [
+          0.228658678326,
+          -0.31247558917
+        ]
+      ],
+      [
+        [
+          0.648645692108,
+          0.547104402506
+        ],
+        [
+          0.547104402506,
+          -0.648645692108
+        ]
+      ]
+    ]
+  },
+  "center_shift_distance": 0.5430938739122264,
+  "centered_odd_rotation": {
+    "projective_distance": 3.140996610869605e-16,
+    "windows": [
+      [
+        [
+          0.387217693953,
+          -0.0
+        ],
+        [
+          -0.0,
+          -0.387217693953
+        ]
+      ],
+      [
+        [
+          0.850559975468,
+          0.0
+        ],
+        [
+          0.0,
+          -0.850559975468
+        ]
+      ]
+    ]
+  },
+  "classification": "EXACT_SPACETIME_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "EXACT_PLANE_WAVE_NONRADIALITY_NOT_ELL0",
+  "fixed_polarization": {
+    "projective_distance": 1.7554167342883506e-16,
+    "windows": [
+      [
+        [
+          0.35842099901,
+          0.177579242786
+        ],
+        [
+          0.177579242786,
+          -0.35842099901
+        ]
+      ],
+      [
+        [
+          0.985657747278,
+          0.488342917662
+        ],
+        [
+          0.488342917662,
+          -0.985657747278
+        ]
+      ]
+    ]
+  },
+  "geometry": "EXACT_VACUUM_BRINKMANN_PLANE_WAVE_DECLARED_PROFILE",
+  "kernel_distance": 0.034213820904109786,
+  "limitation": "Declared exact vacuum plane-wave profile and numerical quadrature; profile/window scales are geometry and protocol, not ell0 or UMCH evidence.",
+  "source": "ColeyMcNuttMilson2012 DOI 10.1088/0264-9381/29/23/235023 arXiv:1210.0746",
+  "status": "EXACT_PLANE_WAVE_FINITE_WINDOW_NONRADIAL_GEOMETRY_PROTOCOL_NOT_ELL0",
+  "study_id": "exact-plane-wave-finite-window-v1",
+  "transport_gate": "BRINKMANN_PARALLEL_SCREEN_DECLARED",
+  "window_gate": "CENTER_AND_KERNEL_MOVE_PROJECTIVE_DIRECTION"
+}

@@ -1,5 +1,15 @@
 # Bibliography verification log
 
+## ColeyMcNuttMilson2012
+
+- Status: `VERIFIED_METADATA_AND_SCOPE`
+- Canonical article: https://doi.org/10.1088/0264-9381/29/23/235023
+- Independent manuscript record: https://arxiv.org/abs/1210.0746
+- Access date: 2026-08-28
+- Exact supported topic: exact vacuum gravitational plane waves in Brinkmann coordinates, plane-wave profile `f(zeta,u)=A(u) zeta^2`, Cartan invariants, and curvature-driven geodesic deviation relative to timelike observers.
+- Project use: permits a declared smooth varying tracefree transverse tidal profile as an exact plane-wave control, with signs fixed internally by the project's Jacobi convention.
+- Limits: source does not establish finite-window protocol choice, universal scale, `ell0`, UMCH, data evidence, or detection.
+
 ## Peskin2026Gauss
 
 - Status: `VERIFIED_SOURCE_AND_SCOPE`
