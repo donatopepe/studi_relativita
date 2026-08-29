@@ -1,0 +1,143 @@
+{
+  "affine": {
+    "factor": 1.47,
+    "maximum_dimensionless_residual": 3.95516952522712e-16
+  },
+  "caustic_gate": "CAUSTIC_OR_CONGRUENCE_BLOCK_SINGULAR",
+  "classification": "EXACT_SPACETIME_CONNECTION_PATH_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "ell0_identified": false,
+  "open_gate": "PHYSICAL_CONTINUOUS_SCREEN_READOUT_PATH_KERNEL_ENDPOINT_TETRADS_AND_ELL0_LAW_NOT_DERIVED",
+  "orientation": {
+    "reflection_oriented_component_sign_residual": 0.0,
+    "so2_map_covariance_residual": 8.75107594285714e-15,
+    "so2_window_covariance_residual": 4.577566798522237e-16
+  },
+  "path_counterexample": {
+    "canonical_map_1": [
+      [
+        0.8306708014372746,
+        -0.46233042139412117,
+        0.8500569082848847,
+        -0.38323397049728675
+      ],
+      [
+        0.2790252156723963,
+        1.0329791207263628,
+        0.3093300745603121,
+        0.8990038712985964
+      ],
+      [
+        -0.14862441916378294,
+        -0.25774205693021945,
+        0.8876030985573686,
+        -0.5085763546461535
+      ],
+      [
+        -0.2303071101578029,
+        0.16095303458400306,
+        0.23336203790521848,
+        0.9761500232125646
+      ]
+    ],
+    "canonical_map_difference": 0.0,
+    "canonical_sachs_1": [
+      [
+        0.032661014119491405,
+        -0.3922003421398922
+      ],
+      [
+        0.019707072373255898,
+        0.10879690158781775
+      ]
+    ],
+    "canonical_sachs_difference": 0.0,
+    "internal_q_difference": 0.04595991799966836,
+    "naive_map_difference": 0.017400310040274355,
+    "observer_a_difference": 0.0,
+    "observer_q_difference": 0.0,
+    "source_a_difference": 0.0,
+    "source_q_difference": 0.0,
+    "transported_window_1": [
+      [
+        0.14665696319018132,
+        0.22696649284334355
+      ],
+      [
+        0.22696649284334355,
+        -0.14665696319018132
+      ]
+    ],
+    "transported_window_2": [
+      [
+        0.15526439772669198,
+        0.2205796932230145
+      ],
+      [
+        0.2205796932230145,
+        -0.15526439772669198
+      ]
+    ],
+    "transported_window_difference": 0.015157779434373101,
+    "velocity_map_1": [
+      [
+        0.9672488653910949,
+        -0.15938460833514628,
+        0.8500569082848847,
+        -0.38323397049728675
+      ],
+      [
+        -0.04136446186486947,
+        1.1432190941068996,
+        0.3093300745603121,
+        0.8990038712985964
+      ],
+      [
+        0.052205649279119526,
+        -0.4826202046545298,
+        0.7411649249623272,
+        -0.9341686128672975
+      ],
+      [
+        -0.12029063428245387,
+        0.16866594095539464,
+        0.6357825955507224,
+        0.7947254307962959
+      ]
+    ],
+    "velocity_map_difference": 0.0,
+    "velocity_sachs_1": [
+      [
+        0.03266101411949135,
+        -0.8656045974590412
+      ],
+      [
+        0.4931113276924049,
+        0.10879690158781774
+      ]
+    ],
+    "velocity_sachs_difference": 0.0
+  },
+  "positive_detection_claim": false,
+  "raw_objects": [
+    "K",
+    "omega_1",
+    "omega_2",
+    "Q_1",
+    "Q_2",
+    "A_1",
+    "A_2",
+    "W_1",
+    "W_2",
+    "P_inertial",
+    "P_canonical",
+    "P_velocity",
+    "R",
+    "S_rot",
+    "S_0",
+    "L"
+  ],
+  "source_scope": "Coley-McNutt-Milson 2012 supports exact vacuum Brinkmann plane waves and curvature-driven geodesic deviation; not prescribed screen paths, finite windows, detector calibration, ell0, UMCH, or detection.",
+  "status": "EXACT_PLANE_WAVE_INTERNAL_SCREEN_CONNECTION_PATH_MOVES_TRANSPORTED_WINDOW_NOT_COVARIANT_ENDPOINT_MAPS_CROSS_CHANNEL_RANK_NOT_AUTOMATIC_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "umch_status": "UNPROVEN"
+}
