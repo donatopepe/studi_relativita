@@ -8,7 +8,7 @@
 
 ## Controllo esatto
 
-Gli oggetti raw `K`, `omega`, `Q`, `W_raw`, `W_transport`, medie degli invarianti locali, `P_raw` e `P_transport` restano primari. Con `Q'(u)=-omega(u)JQ(u)`, `Q(0)=I`, confrontiamo finestre top-hat e triangular prima/dopo il trasporto e le full Jacobi map generate da `K` rispetto a `Q^TKQ`.
+Gli oggetti raw `K`, `omega`, `Q`, `W_raw`, `W_transport`, medie degli invarianti locali, `P_raw` e `P_naive_conjugated_profile` restano primari. Con `Q'(u)=-omega(u)JQ(u)`, `Q(0)=I`, confrontiamo finestre top-hat e triangular prima/dopo il trasporto e le Jacobi map in forma inerziale generate da `K` rispetto a `Q^TKQ`. Correzione: `P_naive_conjugated_profile` non è una phase map in coordinate rotating quando `Q` varia, perché mancano i termini di connessione. Quell'interpretazione è superseded da `plane-wave-covariant-screen-phase-map-v1`; i risultati window restano validi.
 
 La connessione nulla produce collisione esatta. Per connessione variabile, la differenza window top-hat è `0.05616345051019392`, la differenza map `0.07473073933120217` e quella characteristic `0.012131667057574784`. Gli invarianti pointwise e medi di coniugazione coincidono, con residui `1.2412670766236366e-16` e `0`, ma non ricostruiscono window/map trasportate; i gap del rappresentante trace-only dichiarato sono `0.35342449120250813` e `0.44116218625716597`.
 

@@ -90,6 +90,7 @@
     ],
     "window_difference": 0.014470812012867183
   },
+  "phase_map_disposition": "P_naive_conjugated_profile integrates Q^T K Q in the inertial-form Jacobi equation; it is not the rotating-coordinate phase map because connection terms are absent. See plane-wave-covariant-screen-phase-map-v1.",
   "raw_objects": [
     "K",
     "omega",
@@ -98,7 +99,7 @@
     "W_transport",
     "local_invariant_averages",
     "P_raw",
-    "P_transport"
+    "P_naive_conjugated_profile"
   ],
   "source_scope": "Coley-McNutt-Milson supports exact vacuum Brinkmann plane waves and curvature-driven geodesic deviation; it does not establish the chosen screen connection, window/kernel, path/anchor, common endpoint standard, affine scaling law, UMCH, ell0, or detection.",
   "status": "EXACT_PLANE_WAVE_SCREEN_TRANSPORT_AVERAGE_ORDER_OPERATOR_AND_JACOBI_PROTOCOL_DEPENDENT_AFFINE_SCALE_BLIND_NOT_ELL0",
