@@ -1,5 +1,16 @@
 # Bibliography verification log
 
+## Peskin2026Gauss
+
+- Status: `VERIFIED_SOURCE_AND_SCOPE`
+- Canonical institutional source: https://math.nyu.edu/~peskin/gauss.pdf
+- Institution: Courant Institute, New York University
+- Date shown by source: January 2026
+- Access date: 2026-08-28
+- Exact supported topic: for a smooth curved surface and smooth simple closed curve, parallel transport has angular discrepancy; local Gauss--Bonnet relates geodesic curvature and integrated Gaussian curvature, with angle modulo `2 pi` unless angular history/reference is retained.
+- Limits: this pedagogical institutional note does not establish a four-dimensional spacetime transport protocol, a universal scale, `ell0`, or UMCH.
+
+
 Access date for this initial verification: **2026-08-21**. “Verified” means bibliographic metadata and stated topic were checked against canonical machine-readable metadata and, where listed, arXiv/NIST records. It does not mean every argument in a source has been independently reproduced.
 
 ## FormigaRomero2006
