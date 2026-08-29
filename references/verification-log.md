@@ -266,10 +266,10 @@ Metadata fetched during this audit is not stored as authority-free prose: each B
 - **Supports:** historical and geometric context for the Einstein static model, including its static closed positively curved spatial geometry. The project uses the standard product representative with a round spatial three-sphere as an exact control.
 - **Does not establish:** the project's finite loop family, tetrad anchor, loop orientation, kernel/window, detector readout, cross-channel map, curvature-radius scaling test, `ell0`, UMCH, or detection.
 
-## DoCarmo2016
+## Chern1944
 
-- **Metadata checked:** publisher/catalogue records for Manfredo P. do Carmo, *Differential Geometry of Curves and Surfaces*, revised and updated second edition, Dover (2016), ISBN `978-0-486-80699-0`.
-- **Supports:** standard intrinsic surface geometry, geodesics, Gaussian curvature and the Gauss--Bonnet theorem; for a geodesic spherical triangle these imply spherical excess equal to integrated Gaussian curvature, hence `E=Area/R^2` on a round sphere.
+- **Metadata checked:** journal/DOI records for Shiing-Shen Chern, *A Simple Intrinsic Proof of the Gauss--Bonnet Formula for Closed Riemannian Manifolds*, *Annals of Mathematics* **45** (1944) 747--752, DOI `10.2307/1969302`.
+- **Supports:** the intrinsic Gauss--Bonnet formula. Applied with the standard geodesic-boundary form on a round two-sphere, it gives spherical excess equal to integrated Gaussian curvature, hence `E=Area/R^2` for a geodesic spherical triangle.
 - **Does not establish:** the four-dimensional Einstein-static finite loop family, an observational or causal selection of loops, a detector protocol, tetrad calibration, common anchor, cross-channel independence or dependence as a physical measurement claim, Jacobi readout, `ell0`, UMCH, or detection.
 
 These canonical geometry sources support background mathematics only. They do not establish a physical finite loop family or any UMCH mechanism.

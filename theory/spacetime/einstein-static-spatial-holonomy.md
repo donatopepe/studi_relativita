@@ -63,6 +63,6 @@ all angular sides, `E=Area/R^2`, holonomies and dimensionless Jacobi blocks rema
 
 ## Source boundary
 
-O'Raifeartaigh et al. support Einstein-static historical/geometric context. do Carmo supports standard surface geometry and Gauss--Bonnet. These sources do not establish the project's finite loop family, causal support, detector, tetrad anchor, cross-channel interpretation, `ell0`, UMCH or detection.
+O'Raifeartaigh et al. support Einstein-static historical/geometric context. Chern supports the intrinsic Gauss--Bonnet theorem. These sources do not establish the project's finite loop family, causal support, detector, tetrad anchor, cross-channel interpretation, `ell0`, UMCH or detection.
 
 No structural dead end is declared: causal loop selection, physical standards, generic exact non-Abelian geometries, detector action/readout and a law involving `ell/ell0` remain open.

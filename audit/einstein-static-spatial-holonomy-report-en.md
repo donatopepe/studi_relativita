@@ -30,7 +30,7 @@ The scale orbit `(R,L)->(sR,sL)` preserves angular sides, excess, holonomy and d
 
 ## Sources and nonclaims
 
-O'Raifeartaigh et al. support Einstein-static geometric context. do Carmo supports spherical geometry and Gauss--Bonnet. These sources **do not establish** finite loop family, causal selection, detector readout, tetrad calibration, cross-channel independence, `ell0`, UMCH, mechanism or detection.
+O'Raifeartaigh et al. support Einstein-static geometric context. Chern supports the intrinsic Gauss--Bonnet theorem. These sources **do not establish** finite loop family, causal selection, detector readout, tetrad calibration, cross-channel independence, `ell0`, UMCH, mechanism or detection.
 
 ## Decision
 

@@ -30,7 +30,7 @@ L'orbita di scala (`scale orbit`) `(R,L)->(sR,sL)` conserva lati angolari, ecces
 
 ## Fonti e non-claim
 
-O'Raifeartaigh et al. supportano il contesto geometrico Einstein-static. do Carmo supporta geometria sferica e Gauss--Bonnet. Queste fonti **do not establish** la famiglia di loop finiti, la selezione causale, il readout del detector, la calibrazione della tetrade, l'indipendenza cross-channel, `ell0`, UMCH, un meccanismo o una detection.
+O'Raifeartaigh et al. supportano il contesto geometrico Einstein-static. Chern supporta il teorema intrinseco di Gauss--Bonnet. Queste fonti **do not establish** la famiglia di loop finiti, la selezione causale, il readout del detector, la calibrazione della tetrade, l'indipendenza cross-channel, `ell0`, UMCH, un meccanismo o una detection.
 
 ## Decisione
 
