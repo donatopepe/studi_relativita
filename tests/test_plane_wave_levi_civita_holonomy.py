@@ -28,6 +28,13 @@ class LeviCivitaHolonomyTests(unittest.TestCase):
   self.assertLess(r['commutator_residual'],2e-9)
   self.assertLess(r['parameter_addition_residual'],2e-9)
   self.assertGreater(r['separate_loop_parameter_norm'],1e-3)
+ def test_rectangle_holonomy_is_fixed_by_tidal_window_cross_channel_map(self):
+  r=self.m.cross_channel_control()
+  self.assertLess(r['b_minus_window_times_displacement_residual'],2e-8)
+  self.assertLess(r['holonomy_from_window_residual'],2e-8)
+  self.assertLess(r['reversed_profile_window_collision'],2e-10)
+  self.assertGreater(r['reversed_profile_jacobi_difference'],1e-4)
+  self.assertFalse(r['holonomy_independent_channel'])
  def test_profile_anchor_affine_and_null_controls(self):
   p=self.m.profile_control();a=self.m.anchor_control();s=self.m.affine_control();n=self.m.null_control()
   self.assertGreater(p['profile_sample_difference'],1e-3)
@@ -48,6 +55,7 @@ class LeviCivitaHolonomyTests(unittest.TestCase):
   self.assertEqual(stored['scope'],'FOUR_DIMENSIONAL_LEVI_CIVITA_CONNECTION_ON_MATHEMATICAL_BRINKMANN_COORDINATE_LOOPS_NOT_DETECTOR_DERIVED')
   self.assertFalse(stored['ell0_identified']);self.assertEqual(stored['umch_status'],'UNPROVEN')
   self.assertFalse(stored['positive_detection_claim']);self.assertEqual(stored['structural_dead_end'],'NOT_DECLARED')
+  self.assertFalse(stored['cross_channel_control']['holonomy_independent_channel'])
   for key in ('K(u)','Gamma_mu(z)','loop_vertices','orientation','a','u_a','u_b','T_segments','H_LC','b_LC','spectrum_LC','chi_LC','W_a','P_K','L'):
    self.assertIn(key,stored['raw_record'])
 if __name__=='__main__':unittest.main()
