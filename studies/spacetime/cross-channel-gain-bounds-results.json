@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "delta": 2,
+      "interval": [
+        1.0,
+        3.0
+      ],
+      "midpoint": 2.0,
+      "required_gain_at_midpoint": 2.25
+    },
+    {
+      "delta": 1,
+      "interval": [
+        1.0,
+        9.0
+      ],
+      "midpoint": 5.0,
+      "required_gain_at_midpoint": 1.8
+    },
+    {
+      "delta": -1,
+      "interval": [
+        0.1111111111111111,
+        1.0
+      ],
+      "midpoint": 0.5555555555555556,
+      "required_gain_at_midpoint": 5.000000000000001
+    },
+    {
+      "delta": -2,
+      "interval": [
+        0.3333333333333333,
+        1.0
+      ],
+      "midpoint": 0.6666666666666666,
+      "required_gain_at_midpoint": 3.999999999999999
+    }
+  ],
+  "classification": "PROJECT_DERIVATION_AND_NEGATIVE_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "BOUNDED_GAIN_SET_NOT_ELL0",
+  "equal_homogeneity_feasible": "X_ABSENT_EQUAL_HOMOGENEITY",
+  "equal_homogeneity_inconsistent": "GAIN_BOUNDS_INCONSISTENT",
+  "gain_bounds": [
+    1,
+    9
+  ],
+  "limitation": "Positive synthetic power-ratio model; no physical channel law, calibrated prospective bounds, data, or UMCH scale derivation.",
+  "model": "R=gamma C x^delta",
+  "point_gate": "POINT_ONLY_IF_GAIN_INTERVAL_COLLAPSES",
+  "sharpness_gate": "EVERY_INTERVAL_CANDIDATE_ATTAINABLE_BY_ADMISSIBLE_GAIN",
+  "status": "CROSS_CHANNEL_BOUNDED_GAIN_SHARP_SET_IDENTIFICATION_ONLY",
+  "study_id": "cross-channel-gain-bounds-v1"
+}
