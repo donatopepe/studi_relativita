@@ -1,0 +1,293 @@
+{
+  "classification": "EXACT_JACOBI_CONTROL_AND_NEGATIVE_RESULT",
+  "collision_gate": "EQUAL_OR_SPECIAL_SEGMENTS_COLLAPSE_PERMUTATIONS",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "THREE_SEGMENT_OPTICAL_ORDER_GEOMETRIC_NOT_ELL0",
+  "endpoint_classes": [
+    [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        2,
+        0,
+        1
+      ]
+    ]
+  ],
+  "endpoint_gate": "VERTEX_ENDPOINT_IDENTIFIES_MIDDLE_SEGMENT_ONLY_FOR_GENERIC_TRIPLE",
+  "full_map_classes": [
+    [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    [
+      [
+        0,
+        2,
+        1
+      ]
+    ],
+    [
+      [
+        1,
+        0,
+        2
+      ]
+    ],
+    [
+      [
+        1,
+        2,
+        0
+      ]
+    ],
+    [
+      [
+        2,
+        0,
+        1
+      ]
+    ],
+    [
+      [
+        2,
+        1,
+        0
+      ]
+    ]
+  ],
+  "limitation": "Exact scalar piecewise-constant Jacobi profile, not smooth matrix Sachs optics, covariant screen transport, exact spacetime, data, or UMCH law.",
+  "records": [
+    {
+      "characteristic": [
+        -1.6732074237554913,
+        0.9999999999999998
+      ],
+      "determinant": 0.9999999999999998,
+      "matrix": [
+        [
+          -0.4427878077290782,
+          0.3368606127638041
+        ],
+        [
+          -1.35125680588835,
+          -1.230419616026413
+        ]
+      ],
+      "order": [
+        0,
+        1,
+        2
+      ],
+      "trace": -1.6732074237554913,
+      "vertex_derivative": -1.230419616026413,
+      "vertex_endpoint": 0.3368606127638041
+    },
+    {
+      "characteristic": [
+        -1.6732074237554908,
+        0.9999999999999998
+      ],
+      "determinant": 0.9999999999999998,
+      "matrix": [
+        [
+          -0.875248415545321,
+          0.20308487023802946
+        ],
+        [
+          -1.4850325484141247,
+          -0.79795900821017
+        ]
+      ],
+      "order": [
+        0,
+        2,
+        1
+      ],
+      "trace": -1.6732074237554908,
+      "vertex_derivative": -0.79795900821017,
+      "vertex_endpoint": 0.20308487023802946
+    },
+    {
+      "characteristic": [
+        -1.6732074237554913,
+        0.9999999999999998
+      ],
+      "determinant": 0.9999999999999998,
+      "matrix": [
+        [
+          -0.46586100979564177,
+          0.40374848402669145
+        ],
+        [
+          -1.0837053208368004,
+          -1.2073464139598495
+        ]
+      ],
+      "order": [
+        1,
+        0,
+        2
+      ],
+      "trace": -1.6732074237554913,
+      "vertex_derivative": -1.2073464139598495,
+      "vertex_endpoint": 0.40374848402669145
+    },
+    {
+      "characteristic": [
+        -1.6732074237554908,
+        0.9999999999999997
+      ],
+      "determinant": 0.9999999999999997,
+      "matrix": [
+        [
+          -0.79795900821017,
+          0.2030848702380294
+        ],
+        [
+          -1.4850325484141247,
+          -0.875248415545321
+        ]
+      ],
+      "order": [
+        1,
+        2,
+        0
+      ],
+      "trace": -1.6732074237554908,
+      "vertex_derivative": -0.875248415545321,
+      "vertex_endpoint": 0.2030848702380294
+    },
+    {
+      "characteristic": [
+        -1.673207423755491,
+        0.9999999999999998
+      ],
+      "determinant": 0.9999999999999998,
+      "matrix": [
+        [
+          -1.2073464139598493,
+          0.4037484840266915
+        ],
+        [
+          -1.0837053208368006,
+          -0.46586100979564166
+        ]
+      ],
+      "order": [
+        2,
+        0,
+        1
+      ],
+      "trace": -1.673207423755491,
+      "vertex_derivative": -0.46586100979564166,
+      "vertex_endpoint": 0.4037484840266915
+    },
+    {
+      "characteristic": [
+        -1.6732074237554908,
+        0.9999999999999996
+      ],
+      "determinant": 0.9999999999999996,
+      "matrix": [
+        [
+          -1.2304196160264127,
+          0.3368606127638041
+        ],
+        [
+          -1.35125680588835,
+          -0.4427878077290781
+        ]
+      ],
+      "order": [
+        2,
+        1,
+        0
+      ],
+      "trace": -1.6732074237554908,
+      "vertex_derivative": -0.4427878077290781,
+      "vertex_endpoint": 0.3368606127638041
+    }
+  ],
+  "segments": [
+    [
+      1,
+      0.3
+    ],
+    [
+      2,
+      0.5
+    ],
+    [
+      4,
+      0.7
+    ]
+  ],
+  "spectrum_classes": [
+    [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        1
+      ],
+      [
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        0,
+        1
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ]
+  ],
+  "spectrum_gate": "TOTAL_SPECTRUM_BLIND_TO_ALL_THREE_SCALAR_SEGMENT_PERMUTATIONS",
+  "status": "JACOBI_THREE_SEGMENT_SPECTRUM_PERMUTATION_BLIND_VERTEX_ENDPOINT_MIDDLE_ONLY_NOT_ELL0",
+  "study_id": "jacobi-three-segment-v1"
+}
