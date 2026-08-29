@@ -10,7 +10,7 @@
 
 ## Counterexample-first result
 
-Raw `X,V,S,S_0` remain primary, with `S=VX^{-1}` away from a caustic. Non-vertex rotating boundary `X=I`, `V=S_0` produces nonzero endpoint twist through exact connection-driven Jacobi propagation.
+Raw `X,V,S,S_0` remain primary, with `S=VX^{-1}` away from a caustic. Non-vertex rotating boundary `X=I`, `V=S_0` produces nonzero endpoint twist through exact curvature-driven Jacobi propagation in the declared inertial screen. A later rotating-screen control retains this result but shows velocity-coordinate `S_rot=R-A`; varying-screen twist also contains a connection term and is not identical to canonical-graph twist.
 
 For symmetric tidal `K`, `twist det X` is conserved. Endpoint twist therefore contains declared boundary twist and area expansion. Changing only boundary twist moves endpoint twist while profile is identical. This blocks profile-only and `ell0` interpretation.
 
