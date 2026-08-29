@@ -1,0 +1,117 @@
+{
+  "affine_top_hat": {
+    "characteristic_residual": 8.452290561089217e-15,
+    "dimensionless_window_residual": 9.238896857051836e-16,
+    "kernel": "top_hat",
+    "scale_factor": 1.47
+  },
+  "affine_triangular": {
+    "characteristic_residual": 8.452290561089217e-15,
+    "dimensionless_window_residual": 8.777083671441753e-17,
+    "kernel": "triangular",
+    "scale_factor": 1.47
+  },
+  "classification": "EXACT_SPACETIME_TRANSPORT_WINDOW_JACOBI_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "common_basis": {
+    "characteristic_residual": 4.799092327304529e-14,
+    "map_similarity_residual": 1.2070490440384993e-14,
+    "window_conjugation_residual": 7.2377686124476805e-16
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "SCREEN_TRANSPORT_WINDOW_JACOBI_PROTOCOL_AND_AFFINE_NOT_ELL0",
+  "hypothesis_status": "UNPROVEN",
+  "invariant_average": {
+    "average_invariant_residual": 0.0,
+    "pointwise_max_residual": 1.2412670766236366e-16,
+    "raw_invariant_average": [
+      0.0,
+      -0.10900315516046592,
+      0.21800631032093185
+    ],
+    "reconstruction_rule": "ISOTROPIC_TRACE_ONLY_REPRESENTATIVE",
+    "transported_invariant_average": [
+      0.0,
+      -0.10900315516046592,
+      0.21800631032093185
+    ],
+    "transported_map_vs_invariant_reconstruction_gap": 0.44116218625716597,
+    "transported_window_vs_invariant_reconstruction_gap": 0.35342449120250813
+  },
+  "open_gate": "PHYSICAL_SCREEN_CONNECTION_PATH_KERNEL_AND_COMMON_ENDPOINT_STANDARD_NOT_DERIVED",
+  "order_top_hat": {
+    "characteristic_difference": 0.012131667057574784,
+    "kernel": "top_hat",
+    "map_difference": 0.07473073933120217,
+    "raw_window": [
+      [
+        0.23351266433661283,
+        0.16984343118546488
+      ],
+      [
+        0.16984343118546488,
+        -0.23351266433661283
+      ]
+    ],
+    "transported_window": [
+      [
+        0.1974707151739675,
+        0.15316576686569905
+      ],
+      [
+        0.15316576686569905,
+        -0.1974707151739675
+      ]
+    ],
+    "window_difference": 0.05616345051019392
+  },
+  "order_triangular": {
+    "characteristic_difference": 0.012131667057574784,
+    "kernel": "triangular",
+    "map_difference": 0.07473073933120217,
+    "raw_window": [
+      [
+        0.12509510249228029,
+        0.08635358594584455
+      ],
+      [
+        0.08635358594584455,
+        -0.12509510249228029
+      ]
+    ],
+    "transported_window": [
+      [
+        0.11564150966720708,
+        0.08243800388775982
+      ],
+      [
+        0.08243800388775982,
+        -0.11564150966720708
+      ]
+    ],
+    "window_difference": 0.014470812012867183
+  },
+  "raw_objects": [
+    "K",
+    "omega",
+    "Q",
+    "W_raw",
+    "W_transport",
+    "local_invariant_averages",
+    "P_raw",
+    "P_transport"
+  ],
+  "source_scope": "Coley-McNutt-Milson supports exact vacuum Brinkmann plane waves and curvature-driven geodesic deviation; it does not establish the chosen screen connection, window/kernel, path/anchor, common endpoint standard, affine scaling law, UMCH, ell0, or detection.",
+  "status": "EXACT_PLANE_WAVE_SCREEN_TRANSPORT_AVERAGE_ORDER_OPERATOR_AND_JACOBI_PROTOCOL_DEPENDENT_AFFINE_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": false,
+  "study_id": "plane-wave-screen-transport-window-jacobi-v1",
+  "transport_profile_mobility": {
+    "curvature_profile_difference": 0.0,
+    "interpretation": "TRANSPORT_PROTOCOL_MOVES_OUTPUTS_AT_FIXED_CURVATURE",
+    "map_difference": 0.046660996926672166,
+    "window_difference": 0.0357406777409758
+  },
+  "zero_connection": {
+    "map_residual": 0.0,
+    "window_residual": 0.0
+  }
+}
