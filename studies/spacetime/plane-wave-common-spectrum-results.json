@@ -1,0 +1,53 @@
+{
+  "affine_similarity": {
+    "canonical_scaling_residual": 0.0,
+    "characteristic_residual": 1.3133051486824674e-14,
+    "similarity_residual": 1.975283423706649e-14
+  },
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "common_conjugation": {
+    "calibration_symplectic_residual": 0.0,
+    "characteristic_residual": 0.0,
+    "raw_map_difference": 0.6608642073138935
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "COMMON_CANONICAL_SPECTRUM_AFFINE_SCALE_NOT_ELL0",
+  "limitation": "Common canonical standard and finite-window spectral observable are project contracts; no physical detector calibration, ell0 law, or data are derived.",
+  "open_gate": "PHYSICAL_COMMON_CANONICAL_STANDARD_AND_ELL0_LAW_NOT_DERIVED",
+  "profile_sensitivity": {
+    "characteristic_difference": 0.16665014589579236,
+    "first_coefficients": [
+      1.0,
+      -4.019797874008189,
+      5.911799263130942,
+      -4.019797874008192,
+      1.0000000000000029
+    ],
+    "interpretation": "PROFILE_GEOMETRY_CONDITIONAL_NOT_ABSOLUTE_SCALE",
+    "second_coefficients": [
+      1.0,
+      -4.059389147763571,
+      5.754836422904532,
+      -4.059389147763575,
+      0.9999999999999989
+    ]
+  },
+  "reversal_spectrum": {
+    "characteristic_residual": 1.7205233351634168e-14,
+    "raw_map_difference": 0.23554346126600004
+  },
+  "status": "EXACT_PLANE_WAVE_COMMON_CANONICAL_SPECTRUM_PROFILE_INFORMATIVE_REVERSAL_AND_AFFINE_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": false,
+  "study_id": "plane-wave-common-spectrum-v1",
+  "symplectic_characteristic": {
+    "coefficients": [
+      1.0,
+      -4.019797874008189,
+      5.911799263130942,
+      -4.019797874008192,
+      1.0000000000000029
+    ],
+    "determinant_residual": 2.886579864025407e-15,
+    "palindromic_residual": 2.6645352591003757e-15
+  }
+}
