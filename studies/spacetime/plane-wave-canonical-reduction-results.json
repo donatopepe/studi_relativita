@@ -1,0 +1,35 @@
+{
+  "affine_rescaling": {
+    "dimensionless_full_map_residual": 2.018790331294187e-14
+  },
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "common_conjugation_obstruction": {
+    "first_trace": 4.019797874008189,
+    "gate": "DISTINCT_TRACE_FORBIDS_COMMON_CONJUGATION_COLLISION",
+    "second_trace": 4.059389147763571,
+    "trace_difference": 0.03959127375538163
+  },
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "FULL_MAP_CANONICAL_ENDPOINT_QUOTIENT_AFFINE_SCALE_NOT_ELL0",
+  "group_comparison": {
+    "common_endpoint_action": "CONJUGACY_INVARIANTS_REMAIN",
+    "independent_endpoint_action": "TRANSITIVE_ON_SYMPLECTIC_PROPAGATORS",
+    "lower_shear_action": "B_BLOCK_REMAINS_INVARIANT"
+  },
+  "limitation": "Independent free Sp(4) endpoint calibration is a strongest project nuisance contract, not a physical detector group derived from the canonical plane-wave source.",
+  "open_gate": "PHYSICAL_CANONICAL_ENDPOINT_CALIBRATION_GROUP_NOT_DERIVED",
+  "status": "EXACT_PLANE_WAVE_FULL_MAP_TRANSITIVE_UNDER_INDEPENDENT_CANONICAL_ENDPOINT_CALIBRATION_NOT_ELL0",
+  "structural_dead_end": false,
+  "study_id": "plane-wave-canonical-reduction-v1",
+  "symplectic_family": {
+    "first_map_residual": 7.578959815645444e-15,
+    "observer_calibration_residual": 1.4985520235861825e-14,
+    "second_map_residual": 7.0453337494631775e-15
+  },
+  "transitive_collision": {
+    "collision_residual": 3.8069177600145173e-16,
+    "observer_calibration": "P2 P1^{-1}",
+    "raw_map_difference": 0.4645856099073859,
+    "source_calibration": "IDENTITY"
+  }
+}
