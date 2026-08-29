@@ -1,0 +1,122 @@
+{
+  "boundary_gate": "GENERAL_DISPLACEMENT_DEPENDS_ON_SOURCE_PHASE_AND_AFFINE_NORMALIZATION",
+  "cases": [
+    {
+      "forward": [
+        [
+          0.3509448179639727,
+          0.7777344790637495
+        ],
+        [
+          -1.3418197893655255,
+          -0.12417768449312372
+        ]
+      ],
+      "forward_determinant": 1.0,
+      "forward_trace": 0.22676713347084898,
+      "forward_vertex_endpoint": 0.7777344790637495,
+      "map_max_difference": 0.4751225024570964,
+      "parameters": [
+        1,
+        0.7,
+        3,
+        0.4
+      ],
+      "reverse": [
+        [
+          -0.12417768449312372,
+          0.7777344790637495
+        ],
+        [
+          -1.3418197893655255,
+          0.3509448179639727
+        ]
+      ],
+      "reverse_determinant": 1.0,
+      "reverse_trace": 0.22676713347084898,
+      "reverse_vertex_endpoint": 0.7777344790637495
+    },
+    {
+      "forward": [
+        [
+          0.6610882121114097,
+          0.5305480071620945
+        ],
+        [
+          -1.061096014324189,
+          0.6610882121114097
+        ]
+      ],
+      "forward_determinant": 1.0,
+      "forward_trace": 1.3221764242228193,
+      "forward_vertex_endpoint": 0.5305480071620945,
+      "map_max_difference": 0.0,
+      "parameters": [
+        2,
+        0.3,
+        2,
+        0.3
+      ],
+      "reverse": [
+        [
+          0.6610882121114097,
+          0.5305480071620945
+        ],
+        [
+          -1.061096014324189,
+          0.6610882121114097
+        ]
+      ],
+      "reverse_determinant": 1.0,
+      "reverse_trace": 1.3221764242228193,
+      "reverse_vertex_endpoint": 0.5305480071620945
+    },
+    {
+      "forward": [
+        [
+          -0.12790978529475514,
+          0.4840232906615313
+        ],
+        [
+          -1.9534963113115227,
+          -0.4257867134897511
+        ]
+      ],
+      "forward_determinant": 0.9999999999999999,
+      "forward_trace": -0.5536964987845062,
+      "forward_vertex_endpoint": 0.4840232906615313,
+      "map_max_difference": 0.297876928194996,
+      "parameters": [
+        1,
+        0.2,
+        4,
+        0.8
+      ],
+      "reverse": [
+        [
+          -0.4257867134897511,
+          0.4840232906615313
+        ],
+        [
+          -1.9534963113115227,
+          -0.12790978529475514
+        ]
+      ],
+      "reverse_determinant": 0.9999999999999999,
+      "reverse_trace": -0.5536964987845062,
+      "reverse_vertex_endpoint": 0.4840232906615313
+    }
+  ],
+  "classification": "EXACT_JACOBI_CONTROL_AND_NEGATIVE_RESULT",
+  "collision_gate": "IDENTICAL_SEGMENTS_AND_SPECIAL_PARAMETERS_CAN_ERASE_ORDER",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "derivative_gate": "VERTEX_DERIVATIVE_AND_FULL_PHASE_SPACE_MAP_RETAIN_ORDER",
+  "ell0_gate": "EXACT_OPTICAL_PHASE_GEOMETRIC_NOT_ELL0",
+  "endpoint_gate": "VERTEX_DISPLACEMENT_ORDER_BLIND_FOR_TWO_SCALAR_SEGMENTS",
+  "equation": "d_second+lambda d=0",
+  "limitation": "Exact scalar piecewise-constant Jacobi equation, not smooth varying matrix Sachs optics, covariant screen transport, exact spacetime solution, data, or UMCH law.",
+  "segment_map": "[[cos(wL),sin(wL)/w],[-w sin(wL),cos(wL)]]",
+  "similarity_gate": "CYCLIC_TWO_SEGMENT_PRODUCTS_HAVE_IDENTICAL_CHARACTERISTIC_POLYNOMIAL",
+  "status": "JACOBI_EXACT_SPECTRUM_AND_VERTEX_DISPLACEMENT_ORDER_BLIND_FULL_MAP_ORDER_SENSITIVE_NOT_ELL0",
+  "study_id": "jacobi-exact-two-segment-v1"
+}
