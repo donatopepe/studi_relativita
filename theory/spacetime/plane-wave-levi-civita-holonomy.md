@@ -22,7 +22,11 @@ This is derived from the four-dimensional Levi-Civita Christoffel symbols, unlik
 
 Every `N(b)` is unipotent: `chi_LC(lambda)=(lambda-1)^4`. Distinct raw loop vectors therefore have identical ordinary spectra. Reversal gives `N(-b)=N(b)^-1`, but again leaves spectrum unchanged. Same-base-point compositions satisfy `N(b1)N(b2)=N(b1+b2)=N(b2)N(b1)`: this exact pp-wave holonomy control is Abelian, so non-Abelian order rank is absent here.
 
-Profile reversal supplies a sharper cross-channel collision. Distinct histories yield colliding endpoint `H_LC` while the canonical Jacobi map `P_K` differs. Holonomy is therefore not an independent channel merely because it is connection-derived; channel relations remain profile, path, anchor, and readout dependent.
+For the declared rectangles the cross-channel map closes algebraically:
+
+`b_LC=W_a=integral(K(u)du) a`, and `H_LC=N(b_LC)`.
+
+The deterministic residuals are `2.564838012778348e-09` for `b_LC-W_a` and `3.6272346139751374e-09` for `H_LC-N(W_a)`. Hence `holonomy_independent_channel=false` in this loop family. Profile reversal supplies a sharper collision: distinct histories and colliding `W_a,H_LC` coexist with canonical Jacobi-map difference `0.1163592258321023`. Holonomy is therefore not an independent channel merely because it is connection-derived; channel relations remain profile, path, anchor, and readout dependent.
 
 Common screen rotation conjugates `H_LC` and rotates `b_LC`; a null-basis boost rescales its coordinate components. The declared affine/profile orbit preserves dimensionless holonomy. No physical tetrad, null normalization, causal detector loop, `ell0` law, or absolute calibration is derived.
 

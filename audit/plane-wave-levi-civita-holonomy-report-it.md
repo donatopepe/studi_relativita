@@ -27,13 +27,15 @@ Controlli deterministici osservati:
 - residuo di compatibilità metrica: `1.1854037716696464e-12`;
 - residuo del commutatore di composizione: `0.0`;
 - differenza della mappa Jacobi sotto reversal del profilo nonostante la collisione dell'olonomia: `0.1163592258321023`;
-- massimo residuo affine dimensionless alla scala `1.47`: `3.9523245835994223e-13`.
+- massimo residuo affine dimensionless alla scala `1.47`: `3.9523245835994223e-13`;
+- residuo cross-channel `b_LC-W_a`: `2.564838012778348e-09`;
+- residuo cross-channel `H_LC-N(W_a)`: `3.6272346139751374e-09`.
 
 ## Risultato negativo
 
 Ogni matrice di loop finito è unipotente con `chi_LC(lambda)=(lambda-1)^4`. Valori non nulli e distinti di `b_LC` collidono nello spettro e nel polinomio caratteristico. Il reversal completo del loop manda `b_LC` in `-b_LC` e inverte `H_LC`, mentre lo spettro resta invariato. Le rotazioni nulle con stesso punto base commutano e sommano i parametri. Quindi l'olonomia di Levi-Civita quadridimensionale genuina è informativa come operatore raw, ma lo spettro ordinario non fornisce rango aggiuntivo in questa famiglia pp-wave esatta.
 
-Rotazioni comuni dello screen e boost della base nulla espongono dipendenza da anchor e normalizzazione. Lo scaling affine/del profilo preserva l'olonomia dimensionless. Nessun `ell0` è presente o identificato. L'olonomia non è un canale indipendente dal record di connessione/Jacobi conservato per sola dichiarazione.
+Per questi rettangoli, `b_LC=W_a=integral(K(u)du) a` e `H_LC=N(b_LC)`, quindi `holonomy_independent_channel=false`. Il reversal del profilo collide in `W_a,H_LC` mentre muove `P_K` di `0.1163592258321023`. Rotazioni comuni dello screen e boost della base nulla espongono dipendenza da anchor e normalizzazione. Lo scaling affine/del profilo preserva l'olonomia dimensionless. Nessun `ell0` è presente o identificato. L'olonomia non è un canale indipendente dal record di connessione/Jacobi conservato per sola dichiarazione.
 
 ## Ambito delle fonti
 
