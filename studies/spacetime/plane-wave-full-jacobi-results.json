@@ -1,0 +1,88 @@
+{
+  "affine_rescaling": {
+    "dimensionless_full_map_residual": 2.018790331294187e-14
+  },
+  "artifact": "plane-wave-full-jacobi-quotient",
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "conclusion": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_gate": "FULL_JACOBI_LABELLED_ENDPOINT_ORIENTATION_CONDITIONAL_AFFINE_SCALE_NOT_ELL0",
+  "endpoint_optical": {
+    "forward_endpoint_spectrum_difference": 0.016418595999454486,
+    "forward_observer_spectrum": [
+      0.782677973541962,
+      1.028898130414593
+    ],
+    "forward_source_spectrum": [
+      0.7946067338453067,
+      1.0176165094220826
+    ],
+    "reversal_observer_to_forward_source_residual": 9.325873406851315e-15,
+    "reversal_source_to_forward_observer_residual": 2.589462819655575e-15,
+    "reverse_observer_spectrum": [
+      0.7946067338453067,
+      1.017616509422092
+    ],
+    "reverse_source_spectrum": [
+      0.7826779735419633,
+      1.0288981304145908
+    ]
+  },
+  "endpoint_swap_quotient": {
+    "quotient_reversal_residual": 6.671461168756032e-14
+  },
+  "open_gate": "PHYSICAL_ENDPOINT_LABELS_AND_CALIBRATION_NOT_DERIVED",
+  "raw_forward_blocks": {
+    "A": [
+      [
+        0.8327902986968772,
+        -0.06256214746220794
+      ],
+      [
+        -0.054455289101066555,
+        1.1768646826776301
+      ]
+    ],
+    "B": [
+      [
+        1.044677567490365,
+        -0.04115121787661709
+      ],
+      [
+        -0.03948922720865593,
+        1.1577509970321642
+      ]
+    ],
+    "C": [
+      [
+        -0.24529027501593878,
+        -0.214548319105337
+      ],
+      [
+        -0.17755957588598997,
+        0.2744260303983603
+      ]
+    ],
+    "D": [
+      [
+        0.8915460295142872,
+        -0.1615800125268776
+      ],
+      [
+        -0.1522636004361655,
+        1.118596863119395
+      ]
+    ]
+  },
+  "reversal": {
+    "a_to_dt_residual": 3.9349066922535596e-14,
+    "b_to_bt_residual": 1.2070025940142554e-14,
+    "c_to_ct_residual": 4.697816274798985e-14,
+    "d_to_at_residual": 2.3449030759829693e-14
+  },
+  "source_scope": "Exact vacuum Brinkmann plane waves and curvature-driven geodesic deviation only; full-map protocol, boundary labels, quotient, detector observability, UMCH, ell0, and detection are not source-established.",
+  "status": "EXACT_PLANE_WAVE_FULL_JACOBI_LABELLED_ENDPOINT_ORDER_CONDITIONAL_SWAP_AND_AFFINE_SCALE_NONIDENTIFIABLE_NOT_ELL0",
+  "structural_dead_end": false,
+  "symplectic": {
+    "symplectic_residual": 7.578959815645444e-15
+  }
+}
