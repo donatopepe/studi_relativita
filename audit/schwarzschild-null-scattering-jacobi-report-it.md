@@ -9,20 +9,20 @@
 
 ## Oggetto raw e controlli
 
-Il dominio del path è `R>rho>3`, con branch incoming, turning e outgoing ed energia di Killing unitaria come anchor affine di progetto. Nello screen trasportato dichiarato, `K=diag(+1,-1) M b^2/r^5`. L'oggetto primario è `FULL_SCREEN_PHASE_MAP_THROUGH_CAUSTICS`; i diagnostici graph sono guarded quando `B` è singolare.
+Il dominio del path è `R>rho>3`, con branch incoming, turning e outgoing ed energia di Killing unitaria come anchor affine di progetto. La ricostruzione indipendente del Riemann quattro-dimensionale ha corretto il profilo `(polar,in-plane)` a `K=diag(-1,+1) 3 M b^2/r^5`; il precedente `diag(+1,-1) M b^2/r^5` è falsificato e preservato nell'audit di conformità. L'oggetto primario è `FULL_SCREEN_PHASE_MAP_THROUGH_CAUSTICS`; i diagnostici graph sono guarded quando `B` è singolare.
 
-Residui artifact: ortonormalità screen `4.440892098500626e-16`, traccia vacuum `0.0`, simplettico `7.105427357601002e-15`, reverse inverse `5.684341886080802e-14`, composizione al turning `1.4210854715202004e-14`. Il conteggio globale delle caustiche è `NOT_ESTABLISHED`.
+Residui artifact corretti: ortonormalità screen `4.440892098500626e-16`, traccia vacuum `0.0`, simplettico `5.684341886080802e-14`, reverse inverse `1.000444171950221e-11`, composizione al turning `5.684341886080802e-14`. Il conteggio globale delle caustiche è `NOT_ESTABLISHED`.
 
 Le preparazioni vertex e parallel restano dati source toy distinti. Le azioni endpoint ricostruiscono la mappa interna ma sono `TOY_ORIENTED_SCREEN_ENDPOINT_ACTION_NOT_PHYSICAL_CALIBRATION`.
 
 ## Scala e rango
 
-Per fattore geometrico `2.5`, il residuo del profilo dimensionless è `2.42861286636753e-17`; il residuo della phase map convertita è `9.947598300641403e-14`. Classificazione: `GEOMETRIC_SCALE_BLIND_AFTER_DECLARED_PHASE_RATE_AND_ENDPOINT_CONVERSION`.
+Per fattore geometrico `2.5`, il residuo corretto del profilo dimensionless è `4.163336342344337e-17`; il residuo della phase map convertita è `3.410605131648481e-13`. Classificazione: `GEOMETRIC_SCALE_BLIND_AFTER_DECLARED_PHASE_RATE_AND_ENDPOINT_CONVERSION`.
 
 ```text
 rank_shape_boundary = 2
 rank_with_log_M = 2
-log_M_column_norm = 1.6269172349983679e-10
+log_M_column_norm = 5.724578281939044e-09
 scale_null_direction = [0, 0, 1]
 independent_channels = false
 global_injectivity = NOT_ESTABLISHED

@@ -9,20 +9,20 @@
 
 ## Raw object and checks
 
-Path domain is `R>rho>3`, with incoming, turning and outgoing branches and unit Killing energy as a project affine anchor. In the declared transported screen, `K=diag(+1,-1) M b^2/r^5`. Primary object is `FULL_SCREEN_PHASE_MAP_THROUGH_CAUSTICS`; graph diagnostics are guarded when `B` is singular.
+Path domain is `R>rho>3`, with incoming, turning and outgoing branches and unit Killing energy as a project affine anchor. Independent four-dimensional Riemann reconstruction corrected the `(polar,in-plane)` profile to `K=diag(-1,+1) 3 M b^2/r^5`; prior `diag(+1,-1) M b^2/r^5` is falsified and preserved in the conformance audit. Primary object is `FULL_SCREEN_PHASE_MAP_THROUGH_CAUSTICS`; graph diagnostics are guarded when `B` is singular.
 
-Artifact residuals: screen orthonormality `4.440892098500626e-16`, vacuum trace `0.0`, symplectic `7.105427357601002e-15`, reverse inverse `5.684341886080802e-14`, turning composition `1.4210854715202004e-14`. Global caustic count is `NOT_ESTABLISHED`.
+Corrected artifact residuals: screen orthonormality `4.440892098500626e-16`, vacuum trace `0.0`, symplectic `5.684341886080802e-14`, reverse inverse `1.000444171950221e-11`, turning composition `5.684341886080802e-14`. Global caustic count is `NOT_ESTABLISHED`.
 
 Vertex and parallel preparations remain distinct toy source data. Endpoint actions reconstruct the interior map but are `TOY_ORIENTED_SCREEN_ENDPOINT_ACTION_NOT_PHYSICAL_CALIBRATION`.
 
 ## Scale and rank
 
-For geometric factor `2.5`, dimensionless profile residual is `2.42861286636753e-17`; converted phase-map residual is `9.947598300641403e-14`. Classification: `GEOMETRIC_SCALE_BLIND_AFTER_DECLARED_PHASE_RATE_AND_ENDPOINT_CONVERSION`.
+For geometric factor `2.5`, corrected dimensionless profile residual is `4.163336342344337e-17`; converted phase-map residual is `3.410605131648481e-13`. Classification: `GEOMETRIC_SCALE_BLIND_AFTER_DECLARED_PHASE_RATE_AND_ENDPOINT_CONVERSION`.
 
 ```text
 rank_shape_boundary = 2
 rank_with_log_M = 2
-log_M_column_norm = 1.6269172349983679e-10
+log_M_column_norm = 5.724578281939044e-09
 scale_null_direction = [0, 0, 1]
 independent_channels = false
 global_injectivity = NOT_ESTABLISHED

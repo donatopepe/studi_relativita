@@ -248,3 +248,81 @@ def photon_sphere_anchor(rho=3.000001):
         "turning_M2_K_in_plane": value,
         "limit": "diag(-1,+1)/3 in (polar,in-plane) order",
     }
+
+
+def build_result():
+    transport_coarse = screen_transport_control(n=60)
+    transport_fine = screen_transport_control(n=120)
+    plus = riemann_projection_control(orientation=1)
+    minus = riemann_projection_control(orientation=-1)
+    corrected = base.build_result(n=120)
+    return {
+        "study_id": "schwarzschild-scattering-screen-conformance-v1",
+        "status": "SCHWARZSCHILD_SCATTERING_SCREEN_IS_PARALLEL_MODULO_NULL_GAUGE_BUT_FULL_RIEMANN_RECONSTRUCTION_FALSIFIES_PRIOR_OPTICAL_PROFILE_AND_REQUIRES_CORRECTED_PHASE_MAP_NOT_ELL0",
+        "prior_profile": "diag(+1,-1) M b^2/r^5",
+        "corrected_profile": "diag(-1,+1) 3 M b^2/r^5 in (polar,in-plane) order",
+        "prior_profile_status": "FALSIFIED_BY_INDEPENDENT_FOUR_DIMENSIONAL_RIEMANN_RECONSTRUCTION",
+        "classification": "BOUNDED_PROJECT_CORRECTION_AND_NEGATIVE_IDENTIFIABILITY_CONTROL",
+        "screen_transport": {
+            "coarse_n": 60,
+            "fine_n": 120,
+            "coarse_interior_max_quotient_residual": transport_coarse["interior_max_quotient_residual"],
+            "fine_interior_max_quotient_residual": transport_fine["interior_max_quotient_residual"],
+            "fine_interior_max_raw_covariant_derivative": transport_fine["interior_max_raw_covariant_derivative"],
+            "fine_interior_max_screen_rotation": transport_fine["interior_max_screen_rotation"],
+            "fine_endpoint_max_quotient_residual": transport_fine["endpoint_max_quotient_residual"],
+            "max_null_residual": transport_fine["max_null_residual"],
+            "max_screen_metric_residual": transport_fine["max_screen_metric_residual"],
+            "max_k_screen_residual": transport_fine["max_k_screen_residual"],
+            "fine_samples": transport_fine["samples"],
+            "classification": "PARALLEL_SCREEN_MODULO_EXPLICIT_NULL_GAUGE_PROJECT_DERIVATION",
+        },
+        "riemann_projection": {
+            "orientation_plus": plus,
+            "orientation_minus": minus,
+            "orientation_profile_residual": matrix_distance(plus["fine_checkpoints"][1]["K_fd"], minus["fine_checkpoints"][1]["K_fd"]),
+            "photon_sphere_anchor": photon_sphere_anchor(),
+            "classification": "FULL_4D_FINITE_DIFFERENCE_RIEMANN_PROJECT_DERIVATION_INCLUDES_THETA_DERIVATIVES",
+        },
+        "corrected_phase_map": {
+            "status": corrected["status"],
+            "symplectic_residual": corrected["raw"]["symplectic_residual"],
+            "reverse_inverse_residual": corrected["raw"]["reverse_inverse_residual"],
+            "turning_composition_residual": corrected["raw"]["turning_composition_residual"],
+            "dimensionless_profile_residual": corrected["geometric_scale"]["dimensionless_profile_residual"],
+            "converted_phase_map_residual": corrected["geometric_scale"]["converted_phase_map_residual"],
+            "rank_shape_boundary": corrected["rank"]["rank_shape_boundary"],
+            "rank_with_log_M": corrected["rank"]["rank_with_log_M"],
+            "log_M_column_norm": corrected["rank"]["log_M_column_norm"],
+            "scale_null_direction": corrected["rank"]["scale_null_direction"],
+            "global_injectivity": corrected["rank"]["global_injectivity"],
+        },
+        "gate": corrected["gate"],
+        "UMCH": "UNPROVEN",
+        "ell0_identified": False,
+        "structural_dead_end": "NOT_DECLARED",
+        "detection": "NO_POSITIVE_DETECTION_CLAIM",
+        "maximum_interpretation": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
+        "review": "DIRECT_REVIEW_NO_SUBAGENT",
+        "source_scope": corrected["source_scope"],
+    }
+
+
+def render():
+    return json.dumps(build_result(), indent=2, sort_keys=True) + "\n"
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true")
+    args = parser.parse_args()
+    text = render()
+    if args.check:
+        if not OUT.exists() or OUT.read_text() != text:
+            raise SystemExit("artifact mismatch")
+    else:
+        OUT.write_text(text)
+
+
+if __name__ == "__main__":
+    main()
