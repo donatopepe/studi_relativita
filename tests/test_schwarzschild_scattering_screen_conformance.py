@@ -37,6 +37,29 @@ class SchwarzschildScatteringScreenConformanceTests(unittest.TestCase):
         self.assertLessEqual(fine["interior_max_screen_rotation"], coarse["interior_max_screen_rotation"] + 1e-10)
         self.assertGreater(fine["endpoint_max_quotient_residual"], 0.0)
 
+    def test_four_dimensional_riemann_reconstruction_matches_full_profile(self):
+        control = ssc.riemann_projection_control(M=1.0, rho=4.0, R=12.0, orientation=1)
+        self.assertTrue(control["uses_radial_metric_derivatives"])
+        self.assertTrue(control["uses_polar_metric_derivatives"])
+        self.assertLess(control["fine_max_profile_mismatch"], 5e-5)
+        self.assertLess(control["fine_max_symmetry_residual"], 5e-5)
+        self.assertLess(control["fine_max_vacuum_trace_residual"], 5e-5)
+        self.assertLess(control["fine_max_profile_mismatch"], control["coarse_max_profile_mismatch"])
+        for row in control["fine_checkpoints"]:
+            self.assertEqual(len(row["K_fd"]), 2)
+            self.assertEqual(len(row["K_fd"][0]), 2)
+
+    def test_riemann_projection_is_orientation_even_but_raw_screen_is_not(self):
+        plus = ssc.riemann_projection_control(orientation=1)
+        minus = ssc.riemann_projection_control(orientation=-1)
+        self.assertLess(ssc.matrix_distance(plus["fine_checkpoints"][1]["K_fd"], minus["fine_checkpoints"][1]["K_fd"]), 5e-5)
+        self.assertNotEqual(plus["fine_checkpoints"][0]["screen"], minus["fine_checkpoints"][0]["screen"])
+
+    def test_photon_sphere_profile_anchor(self):
+        anchor = ssc.photon_sphere_anchor(rho=3.000001)
+        self.assertAlmostEqual(anchor["turning_M2_K_11"], 1.0 / 9.0, places=6)
+        self.assertEqual(anchor["limit"], "diag(+1,-1)/9")
+
 
 if __name__ == "__main__":
     unittest.main()
