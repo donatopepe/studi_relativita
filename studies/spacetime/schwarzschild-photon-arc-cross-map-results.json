@@ -1,0 +1,390 @@
+{
+  "affine_scale_controls": {
+    "affine_factor": 1.7,
+    "phase_dimensionless_residual": 9.459807063569745e-15,
+    "rate_conversion": "D_A_EQUALS_DIAG_I_I_OVER_A",
+    "raw_rate_block_difference": 3.1991692157726943
+  },
+  "caustic_controls": {
+    "conjugate_angles": [
+      3.141592653589793,
+      6.283185307179586
+    ],
+    "controls": [
+      {
+        "S_vertex": {
+          "status": "CAUSTIC_OR_CONGRUENCE_BLOCK_SINGULAR"
+        },
+        "alpha": 3.141592653589793,
+        "endpoint_X_determinant_abs": 4.615803482336014e-14,
+        "full_map_inverse_residual": 4.050716828981883e-14
+      },
+      {
+        "S_vertex": {
+          "status": "CAUSTIC_OR_CONGRUENCE_BLOCK_SINGULAR"
+        },
+        "alpha": 6.283185307179586,
+        "endpoint_X_determinant_abs": 2.140247131849142e-12,
+        "full_map_inverse_residual": 2.0579518327729296e-11
+      }
+    ],
+    "nonvertex": {
+      "S0": [
+        [
+          0.2,
+          0.0
+        ],
+        [
+          0.0,
+          -0.1
+        ]
+      ],
+      "S_nonvertex": {
+        "matrix": [
+          [
+            0.3134222024369725,
+            0.0
+          ],
+          [
+            0.0,
+            -1.4100161553653303
+          ]
+        ],
+        "status": "REGULAR"
+      },
+      "alpha": 1.0471975511965976
+    }
+  },
+  "classification": "EXACT_SPACETIME_CROSS_CHANNEL_CONTROL_AND_NEGATIVE_IDENTIFIABILITY_RESULT",
+  "closed_loop_cross_check": {
+    "closed_loop_residual": 6.112319729142702e-14,
+    "closure_role": "DERIVED_PAST_DIRECTED_STATIC_CLOSURE_CROSS_CHECK_ONLY",
+    "future_null_segment_residual": 0.0,
+    "primary_object": "OPEN_ARC_ENDPOINT_TRANSPORT_NOT_HOLONOMY"
+  },
+  "collision_controls": {
+    "alpha_pair": [
+      0.45,
+      6.733185307179586
+    ],
+    "global_joint_collision": false,
+    "joint_feature_difference": 1917.9735890945287,
+    "phase_elliptic_periodic_collision": 2.9919429108042608e-15,
+    "phase_full_map_difference": 1397.7620648741906
+  },
+  "composition_controls": {
+    "alpha": 0.7,
+    "beta": 1.1,
+    "connection_composition_residual": 4.440892098500626e-16,
+    "phase_composition_residual": 5.081620675959989e-15
+  },
+  "confirmatory_state": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
+  "detection": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_identified": false,
+  "gate": "PHYSICAL_FINITE_ARC_WINDOW_SELECTION_SOURCE_OBSERVER_TETRADS_SCREEN_PREPARATION_AFFINE_FREQUENCY_STANDARD_CAUSTIC_CONTINUATION_VECTOR_READOUT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED",
+  "geometric_scale_controls": {
+    "affine_length_difference": 4.3982297150257095,
+    "connection_dimensionless_residual": 4.685680459230494e-16,
+    "coordinate_duration_difference": 7.617957329783713,
+    "ell0_identified": false,
+    "phase_dimensionless_residual": 1.4001608167315755e-14,
+    "scale_factor": 2.4,
+    "scale_orbit": "(M,r_ph,L,Delta_t)->s(M,r_ph,L,Delta_t)_WITH_PHASE_RATE_CONVERSION"
+  },
+  "geometry": {
+    "L": 3.141592653589793,
+    "M": 1.0,
+    "affine_normalization": "STATIC_TETRAD_K_EQUALS_E0_PLUS_ORIENTATION_E3_PROJECT_ANCHOR",
+    "alpha": 1.0471975511965976,
+    "closed_arc": false,
+    "delta_phi": 1.0471975511965976,
+    "delta_t": 5.441398092702653,
+    "geodesic_residual": 2.7755575615628914e-17,
+    "k_coordinate": [
+      1.732050807568877,
+      0.0,
+      0.0,
+      0.3333333333333333
+    ],
+    "k_tetrad": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "null_residual": 2.220446049250313e-16,
+    "orientation": 1,
+    "r_ph": 3.0
+  },
+  "hypothesis": "UNPROVEN",
+  "joint_rank": {
+    "Jacobian_joint": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        4.4408920985006255e-11
+      ],
+      [
+        -4.4408920985006255e-11,
+        0.0
+      ],
+      [
+        -2.2204460492503128e-11,
+        2.2204460492503128e-11
+      ],
+      [
+        -0.7666832934294375,
+        0.0
+      ],
+      [
+        -3.044822188025264,
+        4.4408920985006255e-11
+      ],
+      [
+        -0.7666832932962108,
+        0.0
+      ],
+      [
+        -1.1102230246251564e-10,
+        2.2204460492503128e-11
+      ]
+    ],
+    "independent_channels": false,
+    "jacobian_step_convergence": 7.680625271978759e-10,
+    "joint_feature_map": [
+      -3.9999999999999996,
+      5.999999999999998,
+      -3.9999999999999987,
+      0.9999999999999996,
+      -4.20057371540477,
+      5.200573715404772,
+      -4.200573715404771,
+      0.999999999999998
+    ],
+    "parameters": [
+      "alpha",
+      "log_M"
+    ],
+    "rank_joint": 1,
+    "scale_column_norm": 7.021666937153401e-11,
+    "scale_null_direction": [
+      0.0,
+      1.0
+    ],
+    "singular_values_joint": [
+      3.232112111504533,
+      0.0
+    ]
+  },
+  "open_routes": [
+    "GENERIC_NONRADIAL_SCHWARZSCHILD_SCATTERING",
+    "FREELY_FALLING_ENDPOINTS",
+    "PHYSICAL_DETECTOR_READOUT_AND_COVARIANCE"
+  ],
+  "orientation_endpoint_controls": {
+    "connection_characteristic_orientation_collision": 0.0,
+    "connection_endpoint_action": "T_TO_G_T_G_INVERSE_COMMON_CONJUGACY_CONTROL",
+    "connection_endpoint_characteristic_collision": 2.8972354183975677e-15,
+    "connection_endpoint_raw_difference": 0.3416539054733068,
+    "connection_raw_orientation_difference": 1.786495881487678,
+    "phase_endpoint_action": "P_TO_Q_P_Q_INVERSE_COMMON_SCREEN_CONTROL",
+    "phase_endpoint_raw_difference": 0.8884519654288291,
+    "phase_endpoint_symplectic_residual": 4.873218336812966e-15,
+    "phase_orientation_collision": 0.0
+  },
+  "primary_objects": [
+    "T_arc",
+    "P_arc"
+  ],
+  "raw_maps": {
+    "A": [
+      [
+        1.6002868577023845,
+        0.0
+      ],
+      [
+        0.0,
+        0.5000000000000004
+      ]
+    ],
+    "B": [
+      [
+        3.7481011515719227,
+        0.0
+      ],
+      [
+        0.0,
+        2.598076211353317
+      ]
+    ],
+    "C": [
+      [
+        0.4164556835079914,
+        0.0
+      ],
+      [
+        0.0,
+        -0.28867513459481303
+      ]
+    ],
+    "D": [
+      [
+        1.6002868577023845,
+        0.0
+      ],
+      [
+        0.0,
+        0.5000000000000004
+      ]
+    ],
+    "P_arc": [
+      [
+        1.6002868577023845,
+        0.0,
+        3.7481011515719227,
+        0.0
+      ],
+      [
+        0.0,
+        0.5000000000000004,
+        0.0,
+        2.598076211353317
+      ],
+      [
+        0.4164556835079914,
+        0.0,
+        1.6002868577023845,
+        0.0
+      ],
+      [
+        0.0,
+        -0.28867513459481303,
+        0.0,
+        0.5000000000000004
+      ]
+    ],
+    "T_arc": [
+      [
+        1.182770451872025,
+        -0.6045997880780727,
+        0.0,
+        -0.18277045187202512
+      ],
+      [
+        -0.6045997880780724,
+        1.0,
+        0.0,
+        0.6045997880780724
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.18277045187202512,
+        -0.6045997880780726,
+        0.0,
+        0.8172295481279747
+      ]
+    ],
+    "alpha": 1.0471975511965976,
+    "connection_characteristic_coefficients": [
+      1.0,
+      -3.9999999999999996,
+      5.999999999999998,
+      -3.9999999999999987,
+      0.9999999999999996
+    ],
+    "connection_exact_numerical_residual": 2.2885561925728003e-14,
+    "connection_generator": [
+      [
+        0.0,
+        -0.5773502691896258,
+        0.0,
+        0.0
+      ],
+      [
+        -0.5773502691896256,
+        0.0,
+        0.0,
+        0.5773502691896256
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.5773502691896257,
+        0.0,
+        0.0
+      ]
+    ],
+    "lorentz_residual": 8.814307344118487e-16,
+    "phase_characteristic_coefficients": [
+      1.0,
+      -4.20057371540477,
+      5.200573715404772,
+      -4.200573715404771,
+      0.999999999999998
+    ],
+    "phase_determinant": 0.999999999999998,
+    "phase_exact_numerical_residual": 2.325466744480683e-14,
+    "phase_generator": [
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      [
+        0.1111111111111111,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.1111111111111111,
+        0.0,
+        0.0
+      ]
+    ],
+    "symplectic_residual": 4.082240392577815e-15
+  },
+  "scope": "FOUR_DIMENSIONAL_SCHWARZSCHILD_FUTURE_NULL_PHOTON_SPHERE_FINITE_ARC_CONNECTION_AND_SCREEN_PHASE_MAP_WITH_PROJECT_AFFINE_NORMALIZATION_TOY_ENDPOINT_BASES_AND_NO_DETECTOR_READOUT",
+  "source_scope": {
+    "Darwin1959GravityField": "Schwarzschild trajectory and critical circular-orbit context only",
+    "Sachs1961": "null optical framework only",
+    "not_supported": [
+      "finite-arc protocol",
+      "endpoint tetrads",
+      "detector",
+      "covariance",
+      "ell0",
+      "UMCH",
+      "detection"
+    ]
+  },
+  "status": "SCHWARZSCHILD_PHOTON_SPHERE_FINITE_ARC_CONNECTION_JACOBI_CROSS_MAP_CAUSTIC_LANDMARKED_LOCALLY_ONE_SHAPE_DIRECTION_AFFINE_AND_GEOMETRIC_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "zero_window_controls": {
+    "connection_generator_residual": 3.444770354802138e-08,
+    "connection_identity_residual": 0.0,
+    "phase_generator_residual": 1.010363951832492e-07,
+    "phase_identity_residual": 0.0
+  }
+}
