@@ -6,10 +6,10 @@
       0.83
     ],
     "interpretation": "ANALYZER_LABEL_CHANGES_PROJECTED_POWER_NOT_RAW_POLARIZATION_RECORD",
-    "power_difference": 0.5145493419909759,
+    "power_difference": 0.514549341991,
     "powers": [
-      0.40668379337732324,
-      0.9212331353682992
+      0.406683793377,
+      0.921233135368
     ],
     "raw_coherency_difference": 0.0,
     "raw_jones_difference": 0.0
@@ -27,9 +27,9 @@
     ]
   },
   "basis_rotation_control": {
-    "analyzer_amplitude_residual": 2.220446049250313e-16,
-    "analyzer_power_residual": 2.7755575615628914e-16,
-    "coherency_covariance_residual": 5.551115123125783e-17,
+    "analyzer_amplitude_residual": 2.22044604925e-16,
+    "analyzer_power_residual": 2.77555756156e-16,
+    "coherency_covariance_residual": 5.55111512313e-17,
     "interpretation": "COMMON_SCREEN_ROTATION_IS_BASIS_QUOTIENT_NOT_PHYSICAL_CALIBRATION",
     "jones_covariance_residual": 0.0,
     "rotation_angle": 0.52
@@ -47,7 +47,7 @@
   "geometric_scale_control": {
     "clock_phase_residual": 0.0,
     "coherency_residual": 0.0,
-    "converted_phase_map_residual": 5.9117155615240335e-12,
+    "converted_phase_map_residual": 5.91171556152e-12,
     "fixed_controls": [
       "rho",
       "R",
@@ -78,12 +78,12 @@
       "R",
       "log_M"
     ],
-    "quotient_log_M_column_norm": 4.5841522233922306e-09,
+    "quotient_log_M_column_norm": 4.58415222339e-09,
     "rank_quotient_shape_boundary": 2,
     "rank_quotient_with_log_M": 2,
     "rank_raw_shape_boundary": 2,
     "rank_raw_with_log_M": 2,
-    "raw_log_M_column_norm": 4.5841522233922306e-09,
+    "raw_log_M_column_norm": 4.58415222339e-09,
     "scale_null_direction": [
       0.0,
       0.0,
@@ -95,73 +95,73 @@
     "J_R": [
       [
         [
-          0.6529084541891447,
+          0.652908454189,
           0.0
         ],
         [
-          0.4365909387376182,
-          -0.18975604562092757
+          0.436590938738,
+          -0.189756045621
         ]
       ],
       [
         [
-          0.4365909387376182,
-          0.18975604562092757
+          0.436590938738,
+          0.189756045621
         ],
         [
-          0.3470915458108553,
+          0.347091545811,
           0.0
         ]
       ]
     ],
     "P_frequency_converted": [
       [
-        -2.143947478392345,
+        -2.14394747839,
         0.0,
-        -130.28103157422547,
+        -130.281031574,
         0.0
       ],
       [
         0.0,
-        20.98589525163848,
+        20.9858952516,
         0.0,
-        1328.8675932586482
+        1328.86759326
       ],
       [
-        -0.027605789934629404,
+        -0.0276057899346,
         0.0,
-        -2.143947478392344,
+        -2.14394747839,
         0.0
       ],
       [
         0.0,
-        0.33066334203788245,
+        0.330663342038,
         0.0,
-        20.98589525163844
+        20.9858952516
       ]
     ],
-    "Phi_clock": 7.343758702059931,
-    "coherency_determinant_abs": 2.7755575615628914e-17,
+    "Phi_clock": 7.34375870206,
+    "coherency_determinant_abs": 2.77555756156e-17,
     "coherency_hermiticity_residual": 0.0,
     "coherency_outer_product_residual": 0.0,
     "j_R": [
       [
-        0.8080275083121519,
+        0.808027508312,
         0.0
       ],
       [
-        0.5403169251621038,
-        0.23483859604891355
+        0.540316925162,
+        0.234838596049
       ]
     ],
     "j_source": [
       [
-        0.8080275083121519,
+        0.808027508312,
         0.0
       ],
       [
-        0.5403169251621038,
-        0.23483859604891355
+        0.540316925162,
+        0.234838596049
       ]
     ],
     "jones_norm_residual": 0.0,
@@ -185,16 +185,16 @@
     ],
     "U_screen_identity_residual": 0.0,
     "coarse": {
-      "max_endpoint_screen_quotient_residual": 0.0015171226619000377,
-      "max_interior_raw_covariant_derivative": 0.1768258203319982,
-      "max_interior_screen_quotient_residual": 7.965045099585612e-05,
-      "max_interior_screen_rotation_residual": 7.402791507138753e-05
+      "max_endpoint_screen_quotient_residual": 0.0015171226619,
+      "max_interior_raw_covariant_derivative": 0.176825820332,
+      "max_interior_screen_quotient_residual": 7.96504509959e-05,
+      "max_interior_screen_rotation_residual": 7.40279150714e-05
     },
     "fine": {
-      "max_endpoint_screen_quotient_residual": 0.0007544382067229371,
-      "max_interior_raw_covariant_derivative": 0.1767889727337515,
-      "max_interior_screen_quotient_residual": 1.9939515283841326e-05,
-      "max_interior_screen_rotation_residual": 1.851520265341161e-05
+      "max_endpoint_screen_quotient_residual": 0.000754438206723,
+      "max_interior_raw_covariant_derivative": 0.176788972734,
+      "max_interior_screen_quotient_residual": 1.99395152838e-05,
+      "max_interior_screen_rotation_residual": 1.85152026534e-05
     },
     "interpretation": "POLARIZATION_CONSTANT_IN_DECLARED_PARALLEL_SCREEN_MODULO_NULL_GAUGE_NOT_ENDPOINT_HARDWARE"
   },
@@ -209,9 +209,9 @@
   "structural_dead_end": "NOT_DECLARED",
   "zero_window_control": {
     "R_minus_rho": 1e-15,
-    "clock_phase": 2.8851987866118024e-08,
+    "clock_phase": 2.88519878661e-08,
     "interpretation": "ZERO_WINDOW_SOURCE_POLARIZATION_CAN_REMAIN_BOUNDARY_DATA_NOT_GEOMETRY",
-    "phase_map_identity_residual": 7.297198079605369e-07,
+    "phase_map_identity_residual": 7.29719807961e-07,
     "polarization_transfer_identity_residual": 0.0
   }
 }
