@@ -1,5 +1,13 @@
 # Bibliography verification log
 
+## Schwarzschild null-scattering Jacobi reuse
+
+- `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
+- `Darwin1959GravityField`: reused for Schwarzschild null-trajectory and critical-orbit context only.
+- `Sachs1961`: reused for the null optical/Jacobi framework only.
+- Finite-boundary screen construction, optical profile, phase integration, endpoint actions, scale conversion and rank audit are project derivations or toy controls.
+- These sources do not establish this protocol, source/observer calibration, detector, covariance, `ell0`, UMCH, evidence or detection.
+
 ## Schwarzschild null-scattering finite-window reuse
 
 - `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
