@@ -326,3 +326,10 @@ These canonical geometry sources support background mathematics only. They do no
 - Existing canonical contexts: `Darwin1959GravityField` supports Schwarzschild trajectories and the critical circular photon orbit; `Sachs1961` supports the associated null-radiation and optical framework in its stated setting.
 - Project use: the photon-sphere Jacobi control derives a four-dimensional Schwarzschild Riemann projection and screen phase map under a declared project affine normalization.
 - Limits: neither source establishes the project affine normalization, endpoint screen preparation or identification, finite-window phase map, caustic readout or continuation, detector, covariance, `ell0`, UMCH, evidence, or detection. These remain project derivations, toy controls, or open gates as labelled.
+
+## Schwarzschild photon-sphere finite-arc cross-map project scope
+
+- Status: `PROJECT_DERIVATION_SCOPE_BOUND`.
+- Existing canonical contexts: `Darwin1959GravityField` supports Schwarzschild trajectories and critical circular-orbit context only; `Sachs1961` supports the null optical framework only.
+- Project use: the photon-sphere finite-arc cross-map derives open-arc transport, a screen phase map, boundary/caustic controls, endpoint quotients, scale orbits and a joint-rank diagnostic. These are project derivations, not quoted source results.
+- Explicit exclusions: neither source establishes open-arc transport as detector readout, endpoint tetrads, finite-window selection, an affine frequency standard, screen preparation, caustic continuation, vector readout, detector response, covariance, an `ell0` law, UMCH, evidence or detection.
