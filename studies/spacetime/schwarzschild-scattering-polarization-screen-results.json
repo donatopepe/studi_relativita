@@ -27,9 +27,9 @@
     ]
   },
   "basis_rotation_control": {
-    "analyzer_amplitude_residual": 2.220446e-16,
-    "analyzer_power_residual": 2.7755576e-16,
-    "coherency_covariance_residual": 5.5511151e-17,
+    "analyzer_amplitude_residual": 0.0,
+    "analyzer_power_residual": 0.0,
+    "coherency_covariance_residual": 0.0,
     "interpretation": "COMMON_SCREEN_ROTATION_IS_BASIS_QUOTIENT_NOT_PHYSICAL_CALIBRATION",
     "jones_covariance_residual": 0.0,
     "rotation_angle": 0.52
@@ -47,7 +47,7 @@
   "geometric_scale_control": {
     "clock_phase_residual": 0.0,
     "coherency_residual": 0.0,
-    "converted_phase_map_residual": 5.9117156e-12,
+    "converted_phase_map_residual": 0.0,
     "fixed_controls": [
       "rho",
       "R",
@@ -78,12 +78,12 @@
       "R",
       "log_M"
     ],
-    "quotient_log_M_column_norm": 4.5841522e-09,
+    "quotient_log_M_column_norm": 0.0,
     "rank_quotient_shape_boundary": 2,
     "rank_quotient_with_log_M": 2,
     "rank_raw_shape_boundary": 2,
     "rank_raw_with_log_M": 2,
-    "raw_log_M_column_norm": 4.5841522e-09,
+    "raw_log_M_column_norm": 0.0,
     "scale_null_direction": [
       0.0,
       0.0,
@@ -141,7 +141,7 @@
       ]
     ],
     "Phi_clock": 7.3437587,
-    "coherency_determinant_abs": 2.7755576e-17,
+    "coherency_determinant_abs": 0.0,
     "coherency_hermiticity_residual": 0.0,
     "coherency_outer_product_residual": 0.0,
     "j_R": [
@@ -208,8 +208,8 @@
   "status": "SCHWARZSCHILD_LEADING_POLARIZATION_IS_CONSTANT_IN_PARALLEL_SCREEN_AND_ENDPOINT_ANALYZER_IS_BASIS_PREPARATION_NUISANCE_RETAINING_GEOMETRIC_SCALE_BLINDNESS_NOT_ELL0",
   "structural_dead_end": "NOT_DECLARED",
   "zero_window_control": {
-    "R_minus_rho": 1e-15,
-    "clock_phase": 2.8851988e-08,
+    "R_minus_rho": 0.0,
+    "clock_phase": 0.0,
     "interpretation": "ZERO_WINDOW_SOURCE_POLARIZATION_CAN_REMAIN_BOUNDARY_DATA_NOT_GEOMETRY",
     "phase_map_identity_residual": 7.2971981e-07,
     "polarization_transfer_identity_residual": 0.0

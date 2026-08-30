@@ -271,6 +271,8 @@ def rank_control(M=1.0, rho=4.0, R=12.0, nu_source=0.2, n=80, h=1e-4):
 def _stable_artifact_value(value):
     """Remove platform-level libm noise while preserving scientific diagnostics."""
     if isinstance(value, float):
+        if abs(value) < 1e-7:
+            return 0.0
         return float(format(value, ".8g"))
     if isinstance(value, list):
         return [_stable_artifact_value(item) for item in value]
