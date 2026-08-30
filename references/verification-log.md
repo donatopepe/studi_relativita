@@ -1,5 +1,13 @@
 # Bibliography verification log
 
+## Schwarzschild photon-sphere full-Riemann conformance reuse
+
+- `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
+- `Darwin1959GravityField`: reused for null trajectories and critical photon-orbit context only.
+- `Sachs1961`: reused for null optical/Jacobi framework only.
+- Direct `r`/`theta` Riemann reconstruction, ordered screen projection and affine-frequency cross-conversion are project calculations.
+- These sources do not establish project boundary data, screen preparation, absolute affine/frequency standard, detector calibration/readout, covariance, `ell0`, UMCH, evidence or detection.
+
 ## Schwarzschild null-scattering Jacobi reuse
 
 - `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
