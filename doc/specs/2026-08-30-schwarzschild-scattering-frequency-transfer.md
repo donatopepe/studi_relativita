@@ -63,3 +63,9 @@ Expected unresolved gate:
 `PHYSICAL_SOURCE_CLOCK_SPECTRUM_ABSORBER_RESPONSE_SCREEN_PREPARATION_VECTOR_READOUT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED`
 
 No outcome here is evidence for UMCH. No structural dead end is declared because physical clock realization, source/absorber dynamics, detector response, covariance and other exact geometries remain open routes.
+
+## Post-run disposition
+
+The preregistered negative expectation passed. Static source-local frequency fixes affine normalization relative to an imported clock. The full phase map obeys the declared phase-rate similarity; at fixed `nu_s=M omega_s`, Schwarzschild dilation remains exact within numerical tolerance and the `log M` Jacobian column remains null. Holding dimensional `omega_s` fixed changes `M omega_s` and is therefore `EXTERNAL_FREQUENCY_STANDARD_DIRECTION_NOT_INTERIOR_GEOMETRIC_SCALE`.
+
+No corrected PR #95 profile, PR #96 affine reconciliation, prior negative result, source scope or hypothesis contract was changed. Final status is `SCHWARZSCHILD_STATIC_ENDPOINT_FREQUENCY_TRANSFER_FIXES_AFFINE_NORMALIZATION_RELATIVE_TO_EXTERNAL_CLOCK_BUT_RETAINS_GEOMETRIC_SCALE_BLINDNESS_NOT_ELL0`. `UMCH=UNPROVEN`; `ell0_identified=false`; `structural_dead_end=NOT_DECLARED`; `NO_POSITIVE_DETECTION_CLAIM`.
