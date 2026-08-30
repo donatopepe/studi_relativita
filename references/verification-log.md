@@ -1,5 +1,14 @@
 # Bibliography verification log
 
+## Schwarzschild polarization/screen transport
+
+- `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
+- `Darwin1959GravityField`: reused for nonradial Schwarzschild null-scattering context only.
+- `Sachs1961`: reused for null optical/Jacobi framework only.
+- `Dolan2018GeometricalOptics`: metadata checked against arXiv `1806.08617` and DOI `10.1142/S0218271818430101`; supports leading curved-spacetime geometrical optics, null-ray propagation and parallel-propagated polarization only.
+- Finite endpoint screen/Jones joining, source Jones label, analyzer projection, basis quotient and joined rank audit are project derivations or toy controls.
+- These sources do not establish physical source polarization preparation, emission/absorption interaction, endpoint analyzer hardware, polarization-sensitive receiver transfer, calibrated noise, joint covariance, `ell0`, UMCH, evidence or detection.
+
 ## Schwarzschild bounded source-coherence reuse
 
 - `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
