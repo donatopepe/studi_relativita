@@ -60,13 +60,13 @@ def _screen_sample(M,rho,beta,orientation,item):
  # polar and in-plane screen in the local static tetrad; second is fixed continuously through turning.
  e1=[0.,0.,1.,0.];e2=[0.,-np,0.,nr]
  ortho=max(abs(sum(a*b for a,b in zip(e1,e2))),abs(sum(a*a for a in e1)-1),abs(sum(a*a for a in e2)-1))
- amp=3*M*(M*beta)**2/(M*x)**5
+ amp=M*(M*beta)**2/(M*x)**5
  K=[[amp,0.],[0.,-amp]]
  return {'branch':branch,'lambda':lam,'lambda_over_M':lam/M,'r':M*x,'r_over_M':x,'screen_tetrad':[e1,e2],'screen_handedness':orientation,'screen_orthonormality_residual':ortho,'K':K,'M2_K':[[M*M*z for z in row] for row in K]}
 
 def profile_control(M=1.,rho=4.,R=12.,orientation=1,n=120):
  path,beta=_regularized_affine(M,rho,R,orientation,n);samples=[_screen_sample(M,rho,beta,orientation,z) for z in path]
- return {'M':M,'rho':rho,'R':R,'beta':beta,'orientation':orientation,'branches':['incoming','turning','outgoing'],'affine_normalization':'UNIT_KILLING_ENERGY_PROJECT_ANCHOR_NOT_DETECTOR_FREQUENCY','screen_convention':'POLAR_PLUS_CONTINUOUS_IN_PLANE_PARALLEL_SCREEN_MODULO_NULL_GAUGE','samples':samples,'maximum_screen_orthonormality_residual':max(z['screen_orthonormality_residual'] for z in samples),'maximum_screen_transport_residual':0.,'maximum_K_symmetry_residual':max(abs(z['K'][0][1]-z['K'][1][0]) for z in samples),'maximum_vacuum_trace_residual':max(abs(z['K'][0][0]+z['K'][1][1]) for z in samples),'optical_tidal_formula':'diag(+1,-1)*3*M*b^2/r^5_IN_DECLARED_PARALLEL_SCREEN'}
+ return {'M':M,'rho':rho,'R':R,'beta':beta,'orientation':orientation,'branches':['incoming','turning','outgoing'],'affine_normalization':'UNIT_KILLING_ENERGY_PROJECT_ANCHOR_NOT_DETECTOR_FREQUENCY','screen_convention':'POLAR_PLUS_CONTINUOUS_IN_PLANE_PARALLEL_SCREEN_MODULO_NULL_GAUGE','samples':samples,'maximum_screen_orthonormality_residual':max(z['screen_orthonormality_residual'] for z in samples),'maximum_screen_transport_residual':0.,'maximum_K_symmetry_residual':max(abs(z['K'][0][1]-z['K'][1][0]) for z in samples),'maximum_vacuum_trace_residual':max(abs(z['K'][0][0]+z['K'][1][1]) for z in samples),'optical_tidal_formula':'diag(+1,-1)*M*b^2/r^5_IN_DECLARED_PARALLEL_SCREEN'}
 
 def generator(K):return [[0.,0.,1.,0.],[0.,0.,0.,1.],[K[0][0],K[0][1],0.,0.],[K[1][0],K[1][1],0.,0.]]
 def _maps(profile):
