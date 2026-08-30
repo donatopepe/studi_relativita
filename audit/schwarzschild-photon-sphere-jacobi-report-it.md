@@ -16,7 +16,7 @@ UMCH è `UNPROVEN`. Lo stato detection è `NO_POSITIVE_DETECTION_CLAIM`. `ell0_i
 
 La normalizzazione di progetto è `STATIC_TETRAD_K_EQUALS_E0_PLUS_ORIENTATION_E3_PROJECT_ANCHOR`. Per `M=1`, `r_ph=3`, `L=18.84955592`; il residuo nullo è `2.220446049e-16` e quello geodetico `2.775557562e-17`.
 
-La curvatura della connessione quadridimensionale dà `K=diag(0.1111111111,-0.1111111111)` nella convenzione dichiarata `X''=KX`. Il residuo della differenza finita radiale indipendente è `1.23788757e-11`; la traccia screen è zero. Il residuo fra phase map esatta e numerica è `3.070206877e-12`; quello simplettico è `2.057951833e-11`.
+La curvatura della connessione quadridimensionale dà `K=diag(0.1111111111,-0.1111111111)` nell'ordine originale `(radial,polar)` e nella convenzione dichiarata `X''=KX`. Il residuo originale della differenza finita radiale è `1.23788757e-11`; la traccia screen è zero. Un audit full-Riemann successivo calcola entrambi i canali usando derivate `r` e `theta` e conferma `diag(-1,+1)/(9M^2)` nell'ordine esplicito `(polar,radial)` con mismatch fine `2.308480787357262e-09`; risolve inoltre l'apparente conflitto di fattore tre con lo scattering tramite conversione della frequenza affine. Il residuo fra phase map esatta e numerica è `3.070206877e-12`; quello simplettico è `2.057951833e-11`.
 
 Il raw `P_phase=[[A,B],[C,D]]` è primario. Coefficienti caratteristici e surrogato spettrale sono solo diagnostiche del quotient.
 

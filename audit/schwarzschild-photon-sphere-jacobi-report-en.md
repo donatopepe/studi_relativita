@@ -16,7 +16,7 @@ UMCH is `UNPROVEN`. Detection state is `NO_POSITIVE_DETECTION_CLAIM`. `ell0_iden
 
 The project normalization is `STATIC_TETRAD_K_EQUALS_E0_PLUS_ORIENTATION_E3_PROJECT_ANCHOR`. For `M=1`, `r_ph=3`, `L=18.84955592`; null residual is `2.220446049e-16` and geodesic residual is `2.775557562e-17`.
 
-Four-dimensional connection curvature gives `K=diag(0.1111111111,-0.1111111111)` in the declared `X''=KX` convention. Independent radial finite difference residual is `1.23788757e-11`; screen trace is zero. Exact/numerical phase-map residual is `3.070206877e-12`; symplectic residual is `2.057951833e-11`.
+Four-dimensional connection curvature gives `K=diag(0.1111111111,-0.1111111111)` in the original `(radial,polar)` order and declared `X''=KX` convention. The original radial finite-difference residual is `1.23788757e-11`; screen trace is zero. A later full-Riemann audit computes both channels using `r` and `theta` derivatives and confirms `diag(-1,+1)/(9M^2)` in explicit `(polar,radial)` order with fine mismatch `2.308480787357262e-09`; it also resolves the apparent factor-three scattering conflict by affine-frequency conversion. Exact/numerical phase-map residual is `3.070206877e-12`; symplectic residual is `2.057951833e-11`.
 
 Raw `P_phase=[[A,B],[C,D]]` is primary. Characteristic coefficients and spectrum surrogate are quotient diagnostics only.
 
