@@ -22,7 +22,7 @@ Project the four-dimensional Schwarzschild Riemann tensor onto radial and polar 
 
 `K=diag(1/(9M^2),-1/(9M^2))`.
 
-A radial finite difference of the four-dimensional connection gives the opposite-sign Riemann projection required by this Jacobi convention. Vacuum tracefreeness fixes the second eigenchannel. At `M=1`, the connection check residual is `1.23788757e-11` and `trace(K)=0`.
+The original control used a radial finite difference of the four-dimensional connection for the radial projection and vacuum tracefreeness for the second eigenchannel. A later independent full-Riemann audit, with both `r` and `theta` derivatives, computes both channels directly and confirms this matrix: in explicit `(polar,radial)` order it is `diag(-1,+1)/(9M^2)`. At `M=1`, the full-Riemann fine mismatch is `2.308480787357262e-09`. See `schwarzschild-photon-sphere-riemann-conformance.md`.
 
 The primary object is
 
