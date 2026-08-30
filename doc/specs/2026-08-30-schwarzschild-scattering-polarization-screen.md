@@ -75,3 +75,7 @@ CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE
 ## Sources and source limits
 
 Use `Schwarzschild2003Translation` only for Schwarzschild exterior/static context, `Darwin1959GravityField` only for nonradial Schwarzschild null-scattering context, `Sachs1961` only for null optical/Jacobi context, and `Dolan2018GeometricalOptics` only for leading curved-spacetime geometrical optics, including null rays and parallel-propagated polarization. These sources do not establish this finite endpoint screen protocol, source state, emission, absorption, analyzer hardware, receiver, covariance, `ell0`, UMCH, evidence or detection.
+
+## Direct closure review
+
+`DIRECT_REVIEW_NO_SUBAGENT`. Direct diff, scientific-contract, bilingual-parity and source-scope review found no promotion of source Jones labels, analyzer projection, screen-basis quotient, rank diagnostics or numerical controls into physical calibration, independent evidence, `ell0` identification or detection. Full `4x4` phase map and raw transport diagnostics remain preserved. Focused cross-control suite passed 43 tests; deterministic artifact, extraction and inventory checks passed; full discovery passed 939 tests; `git diff --check` passed. This is direct review, not independent review.
