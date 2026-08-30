@@ -60,8 +60,9 @@ def _screen_sample(M,rho,beta,orientation,item):
  # polar and in-plane screen in the local static tetrad; second is fixed continuously through turning.
  e1=[0.,0.,1.,0.];e2=[0.,-np,0.,nr]
  ortho=max(abs(sum(a*b for a,b in zip(e1,e2))),abs(sum(a*a for a in e1)-1),abs(sum(a*a for a in e2)-1))
- amp=M*(M*beta)**2/(M*x)**5
- K=[[amp,0.],[0.,-amp]]
+ # Full four-dimensional Riemann projection in (polar,in-plane) screen order.
+ amp=3*M*(M*beta)**2/(M*x)**5
+ K=[[-amp,0.],[0.,amp]]
  return {'branch':branch,'lambda':lam,'lambda_over_M':lam/M,'r':M*x,'r_over_M':x,'screen_tetrad':[e1,e2],'screen_handedness':orientation,'screen_orthonormality_residual':ortho,'K':K,'M2_K':[[M*M*z for z in row] for row in K]}
 
 def profile_control(M=1.,rho=4.,R=12.,orientation=1,n=120):

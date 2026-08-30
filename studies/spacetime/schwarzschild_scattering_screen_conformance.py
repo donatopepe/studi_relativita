@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Schwarzschild scattering screen/Riemann conformance control; no UMCH inference."""
+import argparse
 import importlib.util
+import json
 import math
 import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
+OUT = HERE / "schwarzschild-scattering-screen-conformance-results.json"
 _BASE_SPEC = importlib.util.spec_from_file_location(
     "schwarzschild_scattering_jacobi_base", HERE / "schwarzschild_null_scattering_jacobi.py"
 )
@@ -130,4 +133,118 @@ def screen_transport_control(M=1.0, rho=4.0, R=12.0, orientation=1, n=120):
         "endpoint_max_quotient_residual": endpoint_q,
         "checkpoints": [{"branch": rows[i]["branch"], "lambda": rows[i]["lambda"], "r": rows[i]["r"]} for i in indices],
         "samples": samples,
+    }
+
+
+def metric_matrix(M, r, theta):
+    diagonal = metric(M, r, theta)
+    return [[diagonal[i] if i == j else 0.0 for j in range(4)] for i in range(4)]
+
+
+def _metric_derivative(M, r, theta, coordinate, h_r, h_theta):
+    if coordinate not in (1, 2):
+        return [[0.0] * 4 for _ in range(4)]
+    step = h_r if coordinate == 1 else h_theta
+    plus = metric_matrix(M, r + (step if coordinate == 1 else 0.0), theta + (step if coordinate == 2 else 0.0))
+    minus = metric_matrix(M, r - (step if coordinate == 1 else 0.0), theta - (step if coordinate == 2 else 0.0))
+    return [[(plus[i][j] - minus[i][j]) / (2.0 * step) for j in range(4)] for i in range(4)]
+
+
+def numerical_christoffel(M, r, theta, relative_step):
+    h_r = relative_step * r
+    h_theta = relative_step
+    g = metric_matrix(M, r, theta)
+    gi = [[(1.0 / g[i][i]) if i == j else 0.0 for j in range(4)] for i in range(4)]
+    dg = [_metric_derivative(M, r, theta, c, h_r, h_theta) for c in range(4)]
+    G = [[[0.0 for _ in range(4)] for _ in range(4)] for _ in range(4)]
+    for a in range(4):
+        for b in range(4):
+            for c in range(4):
+                G[a][b][c] = 0.5 * sum(gi[a][d] * (dg[b][d][c] + dg[c][d][b] - dg[d][b][c]) for d in range(4))
+    return G
+
+
+def numerical_riemann_lowered(M, r, theta, relative_step):
+    h_r = relative_step * r
+    h_theta = relative_step
+    G = numerical_christoffel(M, r, theta, relative_step)
+    dG = [[[[0.0 for _ in range(4)] for _ in range(4)] for _ in range(4)] for _ in range(4)]
+    for coordinate, step in ((1, h_r), (2, h_theta)):
+        gp = numerical_christoffel(
+            M, r + (step if coordinate == 1 else 0.0), theta + (step if coordinate == 2 else 0.0), relative_step
+        )
+        gm = numerical_christoffel(
+            M, r - (step if coordinate == 1 else 0.0), theta - (step if coordinate == 2 else 0.0), relative_step
+        )
+        for a in range(4):
+            for b in range(4):
+                for c in range(4):
+                    dG[coordinate][a][b][c] = (gp[a][b][c] - gm[a][b][c]) / (2.0 * step)
+    raised = [[[[0.0 for _ in range(4)] for _ in range(4)] for _ in range(4)] for _ in range(4)]
+    for a in range(4):
+        for b in range(4):
+            for c in range(4):
+                for d in range(4):
+                    raised[a][b][c][d] = (
+                        dG[c][a][d][b] - dG[d][a][c][b]
+                        + sum(G[a][c][eta] * G[eta][d][b] - G[a][d][eta] * G[eta][c][b] for eta in range(4))
+                    )
+    g = metric(M, r, theta)
+    return [[[[g[a] * raised[a][b][c][d] for d in range(4)] for c in range(4)] for b in range(4)] for a in range(4)]
+
+
+def _project_riemann(Riemann, screen, k):
+    return [[
+        -sum(Riemann[a][b][c][d] * screen[A][a] * k[b] * screen[B][c] * k[d]
+             for a in range(4) for b in range(4) for c in range(4) for d in range(4))
+        for B in range(2)] for A in range(2)]
+
+
+def matrix_distance(A, B):
+    return math.sqrt(sum((A[i][j] - B[i][j]) ** 2 for i in range(len(A)) for j in range(len(A[0]))))
+
+
+def _projection_at(M, rho, beta, orientation, item, relative_step):
+    vectors = _vectors(M, rho, beta, orientation, item)
+    r = vectors["r"]
+    Riemann = numerical_riemann_lowered(M, r, math.pi / 2, relative_step)
+    K_fd = _project_riemann(Riemann, vectors["screen"], vectors["k"])
+    amp = 3.0 * M * (M * beta) ** 2 / r ** 5
+    K_analytic = [[-amp, 0.0], [0.0, amp]]
+    return {
+        "branch": vectors["branch"], "r": r, "screen": vectors["screen"],
+        "K_fd": K_fd, "K_analytic": K_analytic,
+        "profile_mismatch": matrix_distance(K_fd, K_analytic),
+        "symmetry_residual": abs(K_fd[0][1] - K_fd[1][0]),
+        "vacuum_trace_residual": abs(K_fd[0][0] + K_fd[1][1]),
+    }
+
+
+def riemann_projection_control(M=1.0, rho=4.0, R=12.0, orientation=1, coarse_step=4e-4, fine_step=1e-4):
+    path, beta = base._regularized_affine(M, rho, R, orientation, 24)
+    items = [path[0], path[24], path[-1]]
+    coarse = [_projection_at(M, rho, beta, orientation, item, coarse_step) for item in items]
+    fine = [_projection_at(M, rho, beta, orientation, item, fine_step) for item in items]
+    return {
+        "uses_radial_metric_derivatives": True,
+        "uses_polar_metric_derivatives": True,
+        "coarse_relative_step": coarse_step,
+        "fine_relative_step": fine_step,
+        "coarse_max_profile_mismatch": max(row["profile_mismatch"] for row in coarse),
+        "fine_max_profile_mismatch": max(row["profile_mismatch"] for row in fine),
+        "fine_max_symmetry_residual": max(row["symmetry_residual"] for row in fine),
+        "fine_max_vacuum_trace_residual": max(row["vacuum_trace_residual"] for row in fine),
+        "coarse_checkpoints": coarse,
+        "fine_checkpoints": fine,
+    }
+
+
+def photon_sphere_anchor(rho=3.000001):
+    beta = base.sc.turning_beta(rho)
+    value = 3.0 * beta * beta / rho ** 5
+    return {
+        "rho": rho,
+        "turning_M2_K_polar": -value,
+        "turning_M2_K_in_plane": value,
+        "limit": "diag(-1,+1)/3 in (polar,in-plane) order",
     }
