@@ -1,5 +1,13 @@
 # Bibliography verification log
 
+## Schwarzschild coherent endpoint I/Q readout reuse
+
+- `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
+- `Darwin1959GravityField`: reused for null trajectories and critical photon-orbit context only.
+- `Sachs1961`: reused for null optical/Jacobi framework only.
+- Ideal scalar coherent source, local oscillator, endpoint I/Q map, nuisance quotient and joined rank audit are project derivations or toy controls.
+- These sources do not establish source coherence dynamics, emission/absorption interaction, polarization-screen coupling, receiver transfer, calibrated noise, joint covariance, `ell0`, UMCH, evidence or detection.
+
 ## Schwarzschild photon-sphere full-Riemann conformance reuse
 
 - `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
