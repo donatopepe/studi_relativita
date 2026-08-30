@@ -127,3 +127,14 @@ A counterexample-first extension appends a stationary Gaussian first-order sourc
 ## Schwarzschild leading polarization in the transported screen
 
 Leading geometric-optics polarization appends `R_polarization=(j_R,J_R,Phi_clock,P_frequency_converted)` in the corrected `(polar,in-plane)` screen without replacing the complete `4x4` Jacobi map. Status: `SCHWARZSCHILD_LEADING_POLARIZATION_IS_CONSTANT_IN_PARALLEL_SCREEN_AND_ENDPOINT_ANALYZER_IS_BASIS_PREPARATION_NUISANCE_RETAINING_GEOMETRIC_SCALE_BLINDNESS_NOT_ELL0`. Raw screen derivative remains nonzero while its null-gauge quotient converges; common basis rotation is a mathematical quotient, and analyzer-only changes affect projected power but not the raw polarization record. Fixed-dimensionless dilation leaves Jones, coherency, clock phase and full map invariant; raw and basis-quotiented rank remain two with scale-null direction `[0,0,1]`. Source Jones and analyzer labels are `TOY_CONTROL`, not physical preparation or detection. Gate: `PHYSICAL_POLARIZATION_SOURCE_STATE_EMISSION_ABSORPTION_ENDPOINT_SCREEN_PREPARATION_POLARIZATION_SENSITIVE_RECEIVER_TRANSFER_CALIBRATED_NOISE_JOINT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED`. UMCH remains `UNPROVEN`; `ell0_identified=false`; `structural_dead_end=NOT_DECLARED`; `NO_POSITIVE_DETECTION_CLAIM`.
+
+## Reissner–Nordström finite-boundary null-scattering Jacobi control
+
+A bounded second-geometry control now propagates the direct four-dimensional RN optical projection through the full finite `4x4` Jacobi phase map. Charge ratio `epsilon=Q/M` adds Ricci/Weyl optical shape, but the exact sign collision is `Q_SQUARED_METRIC_DEGENERACY_NOT_ELL0`; joint `(M,Q)` dilation retains an absolute-scale null direction.
+
+```text
+REISSNER_NORDSTROM_CHARGE_ADDS_DIMENSIONLESS_RICCI_WEYL_OPTICAL_SHAPE_BUT_Q_SQUARED_DEGENERACY_AND_JOINT_MQ_DILATION_RETAIN_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_CHARGE_SOURCE_EMITTER_ABSORBER_ENDPOINT_SCREEN_PREPARATION_ABSOLUTE_FREQUENCY_RECEIVER_TRANSFER_CALIBRATED_NOISE_JOINT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No channel independence is claimed without joint covariance. UMCH remains unproven; `ell0` remains unidentified; no detection is claimed.
