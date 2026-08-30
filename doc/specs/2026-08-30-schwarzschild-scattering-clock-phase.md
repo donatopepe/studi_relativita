@@ -103,3 +103,7 @@ A numerical mismatch blocks disposition and triggers bounded correction; it does
 ## Autonomous ratification
 
 Binding autonomous loop preauthorizes conservative negative-control continuation without a conversational approval pause. This design is therefore ratified for implementation exactly as written. Any hypothesis-contract change, positive evidence claim, `ell0` value, structural-dead-end declaration or reformulation remains outside this ratification.
+
+## Post-run disposition
+
+Preregistered negative counterexample passed without hypothesis-contract change. Deterministic central values are `Delta t/M=40.223422979930845`, `Delta tau_R/M=36.718793510299655`, `Phi_clock=7.343803420273261`; fixed-`nu_s` dilation gives zero clock residual and converted full-map residual `5.9117155615240335e-12`. Joint audit gives `rank_shape_boundary=2`, `rank_with_log_M=2`, `log_M_column_norm=5.730937517383603e-09`, and scale-null direction `[0,0,1]`. Holding dimensional frequency fixed remains an external-standard control. One bounded implementation detail was added: a midpoint direct-radial quadrature plus analytic leading omitted-endpoint term cross-checks, rather than duplicates, the primary regularized quadrature; finite-cutoff residual is `0.029046157694665453` and is not used as the high-accuracy value. Final status and gate are exactly those preregistered. `UMCH=UNPROVEN`, `ell0_identified=false`, `structural_dead_end=NOT_DECLARED`, `NO_POSITIVE_DETECTION_CLAIM`, maximum `CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE`, review `DIRECT_REVIEW_NO_SUBAGENT`.

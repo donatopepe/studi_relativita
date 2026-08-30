@@ -381,3 +381,12 @@ These canonical geometry sources support background mathematics only. They do no
 - **Project derivation checked independently:** coordinate static screen, explicit null-gauge transport quotient, centered metric derivatives in both `r` and `theta`, full four-dimensional Christoffel/Riemann reconstruction, optical projection, corrected phase-map and rank rerun.
 - **Negative correction:** full projection falsifies prior project formula `diag(+1,-1) M b^2/r^5`; corrected `(polar,in-plane)` formula is `diag(-1,+1) 3 M b^2/r^5` for `X''=K X`.
 - **Does not establish:** finite-boundary source selection, physical emitter/absorber tetrads, absolute frequency or affine standard, detector screen preparation, caustic continuation, vector readout, covariance, `ell0`, UMCH, evidence or detection.
+
+## 2026-08-30 endpoint-clock phase reuse audit
+
+- `Schwarzschild2003Translation` is reused only for Schwarzschild exterior geometry, static-coordinate and static-clock context.
+- `Darwin1959GravityField` is reused only for Schwarzschild null-scattering context.
+- `Sachs1961` is reused only for null optical/Jacobi propagation context.
+- Finite-boundary Killing-time regularization, static proper elapsed time, toy-clock phase, full-map cross-channel joining, dilation and rank controls are project derivations.
+- These sources do not establish a complete endpoint-clock protocol, physical source coherence or spectrum, emission action, absorber response, screen preparation, detector vector readout, joint covariance, `ell0`, UMCH, evidence or detection.
+- No new bibliography entry is added.
