@@ -311,3 +311,11 @@ These canonical geometry sources support background mathematics only. They do no
 - Existing sources `Schwarzschild2003Translation`, `AmbroseSinger1953`, and `Lin2020RadarCoordinates` support only declared Schwarzschild geometry, general holonomy background, and radar-coordinate context.
 - Basic `SO^+(1,1)` boost algebra is used as standard linear algebra; numerical transport is checked directly against boost reconstruction.
 - These sources do **not** establish cross-channel independence, endpoint rank, detector covariance, global injectivity, absolute-scale recovery, `ell0`, UMCH, or detection.
+
+## Darwin1959GravityField
+
+- **Metadata status:** `VERIFIED_METADATA` via Crossref `https://api.crossref.org/works/10.1098/rspa.1959.0015` and publisher DOI landing page `https://royalsocietypublishing.org/doi/10.1098/rspa.1959.0015`.
+- **Bibliographic record:** Charles Galton Darwin, “The gravity field of a particle,” *Proceedings of the Royal Society of London. Series A. Mathematical and Physical Sciences* **249** (1959), 180--194, DOI `10.1098/rspa.1959.0015`.
+- **Supported scope:** canonical analysis of Schwarzschild trajectories, including Schwarzschild null trajectories and the critical circular orbit used as geometry context for the `r=3M` photon-sphere control.
+- **Project-derived scope:** the finite Levi-Civita loop, static worldline closure, matrix exponentials, orientation and winding comparisons, path-ordering diagnostics, scale orbit and all numerical residuals are project derivations, not quoted results from Darwin.
+- **Explicit exclusions:** this source does not establish a physical emitter or absorber, finite-loop vector readout, detector covariance, endpoint calibration, an `ell0` law, UMCH, or detection. It does not support the ideal static closure as an observational protocol.
