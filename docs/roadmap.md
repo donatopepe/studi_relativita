@@ -83,3 +83,7 @@ Completed initial milestone: historical repository/audit infrastructure preserve
 ### Schwarzschild radar cross-channel rank control
 
 The static radial-radar joint map now separates two dimensionless endpoint labels locally when signed boost holonomy is retained with a common anchor. Orientation quotient has a global reversal collision, and geometric dilation leaves the full dimensionless output unchanged. This is a bounded negative absolute-identifiability result, not channel independence, detector calibration, `ell0`, or evidence. Next: freely falling/nonradial causal boundaries and detector-derived covariance/readout.
+
+### Schwarzschild photon-orbit holonomy control
+
+An exact nonradial future null winding at `r=3M`, closed by the matching past-directed static worldline, yields nontrivial raw Levi-Civita holonomy, orientation sensitivity and path ordering. Batched winding differs from repeated complete loops because closure placement differs. Characteristic/common-conjugacy quotients lose anchored information, winding remains a discrete protocol label, and Schwarzschild dilation preserves the dimensionless record. This is not emitter/absorber action, vector readout, covariance, absolute scale, `ell0`, or evidence. Generic scattering echoes and photon-orbit Jacobi/Sachs bundles remain open.
