@@ -1,0 +1,162 @@
+{
+  "UMCH": "UNPROVEN",
+  "classifications": {
+    "coherence_propagation_and_rank_audit": "PROJECT_DERIVATION",
+    "gaussian_stationary_source_and_visibility": "TOY_CONTROL_NOT_PHYSICAL_SOURCE_OR_DETECTOR",
+    "physical_source_readout_covariance_and_ell0_law": "OPEN_PROBLEM",
+    "scale_blindness": "NEGATIVE_RESULT",
+    "schwarzschild_clock_and_jacobi": "KNOWN_RESULT_WITHIN_CITED_SCOPE"
+  },
+  "detection": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_identified": false,
+  "external_coherence_standard_control": {
+    "chi_c_reference": 20.0,
+    "chi_c_scaled": 11.764705882352942,
+    "classification": "EXTERNAL_SOURCE_COHERENCE_STANDARD_DIRECTION_NOT_INTERIOR_GEOMETRIC_SCALE",
+    "coherence_iq_difference": 0.18481837747718158,
+    "scale_factor": 1.7,
+    "tau_c_fixed": 20.0,
+    "visibility_difference": -0.17770997834344382
+  },
+  "gate": "PHYSICAL_SOURCE_SPECTRUM_COHERENCE_DYNAMICS_EMISSION_ABSORPTION_POLARIZATION_SCREEN_COUPLING_RECEIVER_TRANSFER_CALIBRATED_NOISE_JOINT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED",
+  "geometric_scale_control": {
+    "chi_c_fixed": 3.0,
+    "classification": "FIXED_DIMENSIONLESS_SOURCE_COHERENCE_RETAINS_SCHWARZSCHILD_DILATION_BLINDNESS",
+    "clock_phase_residual": 0.0,
+    "coherence_iq_residual": 0.0,
+    "converted_phase_map_residual": 5.9117155615240335e-12,
+    "scale_factor": 1.7,
+    "visibility_residual": 0.0
+  },
+  "maximum_interpretation": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
+  "nuisance_controls": {
+    "amplitude_null_direction": [
+      1.0,
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "classification": "SOURCE_LO_PHASE_AND_SOURCE_RECEIVER_GAIN_REMAIN_EXACT_TOY_NUISANCES",
+    "common_phase_residual": 1.6653345369377348e-16,
+    "nuisance_jacobian_rank": 2,
+    "nuisance_parameters": [
+      "log_A_coherence",
+      "phi_source",
+      "log_receiver_gain",
+      "phi_LO"
+    ],
+    "phase_null_direction": [
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "source_gain_compensation_residual": 0.0
+  },
+  "preregistered_parameters": {
+    "M": 1.0,
+    "R": 12.0,
+    "chi_c": 3.0,
+    "nu_source": 0.2,
+    "rho": 4.0,
+    "screen_order": [
+      "polar",
+      "in-plane"
+    ]
+  },
+  "quotient_control": {
+    "classification": "UNRESTRICTED_POSITIVE_GAIN_AND_PHASE_QUOTIENT_REMOVES_COHERENCE_IQ_BUT_NOT_SEPARATELY_RETAINED_VISIBILITY",
+    "reference_representative": [
+      1.0,
+      0.0
+    ],
+    "representative_residual": 0.0,
+    "transformed_representative": [
+      1.0,
+      0.0
+    ]
+  },
+  "rank_control": {
+    "global_injectivity": "NOT_ESTABLISHED",
+    "parameters": [
+      "rho",
+      "R",
+      "log_M"
+    ],
+    "quotient_log_M_column_norm": 4.5841522233922306e-09,
+    "rank_quotient_shape_boundary": 2,
+    "rank_quotient_with_log_M": 2,
+    "rank_raw_shape_boundary": 2,
+    "rank_raw_with_log_M": 2,
+    "raw_log_M_column_norm": 4.5841522233922306e-09,
+    "scale_null_direction": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "statistical_independence": "DEPENDENCE_UNRESOLVED_WITHOUT_JOINT_COVARIANCE"
+  },
+  "raw_coherence_record": {
+    "A_coherence": 1.3,
+    "Delta_tau_R": 36.719017101366305,
+    "Delta_tau_R_over_M": 36.719017101366305,
+    "P_frequency_converted": [
+      [
+        -2.143947478392345,
+        0.0,
+        -130.28103157422547,
+        0.0
+      ],
+      [
+        0.0,
+        20.98589525163848,
+        0.0,
+        1328.8675932586482
+      ],
+      [
+        -0.027605789934629404,
+        0.0,
+        -2.143947478392344,
+        0.0
+      ],
+      [
+        0.0,
+        0.33066334203788245,
+        0.0,
+        20.98589525163844
+      ]
+    ],
+    "Phi_clock": 7.343803420273261,
+    "amplitude": 1.04,
+    "chi_c": 3.0,
+    "phi_LO": -0.2,
+    "phi_source": 0.4,
+    "receiver_gain": 0.8,
+    "relative_phase": 7.9438034202732615,
+    "tau_c": 3.0,
+    "visibility": 2.9462060018828695e-33,
+    "y_coh": [
+      -2.7484889914986724e-34,
+      3.051702226675802e-33
+    ]
+  },
+  "record_order": [
+    "y_coh",
+    "visibility",
+    "Phi_clock",
+    "P_frequency_converted"
+  ],
+  "scope": "FOUR_DIMENSIONAL_SCHWARZSCHILD_EQUATORIAL_FUTURE_NULL_FINITE_SCATTERING_EQUAL_RADIUS_STATIC_ENDPOINT_GAUSSIAN_FIRST_ORDER_SOURCE_COHERENCE_TOY_FULL_SCREEN_PHASE_MAP_NO_PHYSICAL_SOURCE_OR_DETECTOR",
+  "status": "SCHWARZSCHILD_GAUSSIAN_SOURCE_COHERENCE_ADDS_VISIBILITY_SHAPE_BUT_FIXED_DIMENSIONLESS_COHERENCE_RETAINS_GEOMETRIC_SCALE_BLINDNESS_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "study": "schwarzschild_scattering_source_coherence",
+  "zero_window_control": {
+    "R_minus_rho": 1e-15,
+    "clock_phase": 2.918879231842149e-08,
+    "interpretation": "ZERO_WINDOW_RAW_COHERENCE_PHASE_CAN_REMAIN_SOURCE_LO_NUISANCE_NOT_GEOMETRY",
+    "phase_map_identity_residual": 7.297198079605369e-07,
+    "raw_coherence_iq_norm": 1.0399999999999987,
+    "visibility": 0.9999999999999988,
+    "visibility_difference_from_one": 1.2212453270876722e-15
+  }
+}
