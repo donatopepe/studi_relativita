@@ -35,3 +35,7 @@ Missing: physical source/observer endpoint screen preparation, affine-frequency 
 Photon sphere: known result. Connection projection and phase map: project derivation. Vertex/nonvertex boundaries: toy controls. Caustic, quotient and scale blindness: negative results. Physical readout: open problem.
 
 `Darwin1959GravityField` supports Schwarzschild trajectory and critical circular-orbit context. `Sachs1961` supports null optical context. Neither source establishes endpoint screens, affine normalization, finite-window map, caustic readout, detector, covariance, `ell0`, UMCH, evidence, or detection.
+
+## Direct conformance review
+
+Review was performed directly because explicit project policy forbids subagents for this task. Spec/raw-key alignment, sign convention, both independently finite-differenced Riemann screen projections, full-map primacy, graph invertibility gates, endpoint action, affine/geometric conversions, source scope and bilingual machine labels were checked. No positive claim or structural-dead-end trigger was found.

@@ -35,3 +35,7 @@ Mancano: preparazione fisica dello screen source/observer endpoint, standard aff
 Sfera fotonica: risultato noto. Proiezione della connessione e phase map: derivazione di progetto. Boundary vertex/nonvertex: controlli toy. Caustic, quotient e cecità di scala: risultati negativi. Readout fisico: problema aperto.
 
 `Darwin1959GravityField` supporta il contesto delle traiettorie Schwarzschild e dell'orbita circolare critica. `Sachs1961` supporta il contesto ottico nullo. Nessuna fonte stabilisce screen endpoint, normalizzazione affine, mappa finite-window, readout della caustic, detector, covariance, `ell0`, UMCH, evidence o detection.
+
+## Review diretta di conformità
+
+La review è stata eseguita direttamente perché la policy esplicita del progetto vieta subagent per questo task. Sono stati controllati allineamento spec/raw-key, convenzione dei segni, entrambe le proiezioni Riemann screen con differenze finite indipendenti, primarietà della full map, gate di invertibilità dei grafi, azione endpoint, conversioni affine/geometrica, scope delle fonti e label machine bilingui. Nessuna claim positiva e nessun trigger di vicolo cieco strutturale.
