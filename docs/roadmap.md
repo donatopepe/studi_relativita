@@ -138,3 +138,16 @@ PHYSICAL_CHARGE_SOURCE_EMITTER_ABSORBER_ENDPOINT_SCREEN_PREPARATION_ABSOLUTE_FRE
 ```
 
 No channel independence is claimed without joint covariance. UMCH remains unproven; `ell0` remains unidentified; no detection is claimed.
+
+## Kottler finite-boundary null-scattering Jacobi control
+
+Bounded static-patch control separates nonzero spacetime Ricci from zero null Ricci focusing and distinguishes canonical orbit cancellation from finite-boundary normalization. After declared effective-Schwarzschild affine/frequency conversion, bounded null Jacobi shape cancels; joint `(M,Lambda)` dilation retains absolute-scale blindness. Fixed dimensional Lambda is an imported standard, not `ell0`.
+
+```text
+KOTTLER_LAMBDA_ADDS_STATIC_BOUNDARY_NORMALIZATION_BUT_NULL_RICCI_FOCUSING_AND_CONVERTED_NULL_JACOBI_SHAPE_CANCEL_WHILE_JOINT_MLAMBDA_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_COSMOLOGICAL_MATCHING_SOURCE_EMITTER_ABSORBER_ENDPOINT_SCREEN_PREPARATION_ABSOLUTE_FREQUENCY_RECEIVER_TRANSFER_CALIBRATED_NOISE_JOINT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED
+UMCH=UNPROVEN
+ell0_identified=false
+structural_dead_end=NOT_DECLARED
+NO_POSITIVE_DETECTION_CLAIM
+```
