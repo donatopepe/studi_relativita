@@ -13,7 +13,7 @@ and unit Killing energy as a project affine anchor. This anchor is not a detecto
 In the declared parallel screen, the project derivation gives
 
 \[
-\mathcal K=\operatorname{diag}(+1,-1)\frac{3Mb^2}{r^5},\qquad
+\mathcal K=\operatorname{diag}(+1,-1)\frac{Mb^2}{r^5},\qquad
 \frac{d}{d\lambda}\binom{X}{V}=\begin{pmatrix}0&I\\\mathcal K&0\end{pmatrix}\binom{X}{V}.
 \]
 
@@ -27,13 +27,13 @@ Graph diagnostics such as `S=DB^{-1}` are emitted only where `B` is invertible. 
 
 ## Controls
 
-At `(M,rho,R)=(1,4,12)` with artifact resolution, maximum screen orthonormality residual is `4.440892098500626e-16`, vacuum trace residual is `0.0`, symplectic residual is `1.7053025658242404e-13`, reverse-inverse residual is `7.275957614183426e-12`, and turning-composition residual is `1.7053025658242404e-13`.
+At `(M,rho,R)=(1,4,12)` with artifact resolution, maximum screen orthonormality residual is `4.440892098500626e-16`, vacuum trace residual is `0.0`, symplectic residual is `7.105427357601002e-15`, reverse-inverse residual is `5.684341886080802e-14`, and turning-composition residual is `1.4210854715202004e-14`.
 
 Vertex and parallel source preparations remain distinct mathematical boundary data. Oriented endpoint screen actions change raw entries but reconstruct the interior map; classification is `TOY_ORIENTED_SCREEN_ENDPOINT_ACTION_NOT_PHYSICAL_CALIBRATION`.
 
-Affine rescaling is blind after the declared phase-rate conversion. Under geometric dilation `M -> 2.5 M` at fixed `(rho,R,beta)`, the dimensionless profile residual is `6.938893903907228e-17` and converted phase-map residual is `6.394884621840902e-14`: `GEOMETRIC_SCALE_BLIND_AFTER_DECLARED_PHASE_RATE_AND_ENDPOINT_CONVERSION`.
+Affine rescaling is blind after the declared phase-rate conversion. Under geometric dilation `M -> 2.5 M` at fixed `(rho,R,beta)`, the dimensionless profile residual is `2.42861286636753e-17` and converted phase-map residual is `9.947598300641403e-14`: `GEOMETRIC_SCALE_BLIND_AFTER_DECLARED_PHASE_RATE_AND_ENDPOINT_CONVERSION`.
 
-The preregistered Jacobian has `rank_shape_boundary = 2`, `rank_with_log_M = 2`, `log_M_column_norm = 4.317417286094902e-09`, and `scale_null_direction = [0, 0, 1]`. Shape/boundary rank is not channel independence. `independent_channels = false`; bounded collision absence does not prove global injectivity, which remains `NOT_ESTABLISHED`.
+The preregistered Jacobian has `rank_shape_boundary = 2`, `rank_with_log_M = 2`, `log_M_column_norm = 1.6269172349983679e-10`, and `scale_null_direction = [0, 0, 1]`. Shape/boundary rank is not channel independence. `independent_channels = false`; bounded collision absence does not prove global injectivity, which remains `NOT_ESTABLISHED`.
 
 ## Interpretation and source scope
 

@@ -8,7 +8,7 @@ class ScatteringJacobiReportTests(unittest.TestCase):
   self.assertEqual((x['status'],x['scope'],x['gate']),(s.STATUS,s.SCOPE,s.GATE))
  def test_bilingual_reports_have_exact_authority_and_values(self):
   en=(ROOT/'audit/schwarzschild-null-scattering-jacobi-report-en.md').read_text();it=(ROOT/'audit/schwarzschild-null-scattering-jacobi-report-it.md').read_text()
-  for token in (s.STATUS,s.SCOPE,s.GATE,s.CLASSIFICATION,'rank_shape_boundary = 2','rank_with_log_M = 2','log_M_column_norm = 4.317417286094902e-09','scale_null_direction = [0, 0, 1]','UMCH = UNPROVEN','detection = NO_POSITIVE_DETECTION_CLAIM','structural_dead_end = NOT_DECLARED','DIRECT_REVIEW_NO_SUBAGENT'):
+  for token in (s.STATUS,s.SCOPE,s.GATE,s.CLASSIFICATION,'rank_shape_boundary = 2','rank_with_log_M = 2','log_M_column_norm = 1.6269172349983679e-10','scale_null_direction = [0, 0, 1]','UMCH = UNPROVEN','detection = NO_POSITIVE_DETECTION_CLAIM','structural_dead_end = NOT_DECLARED','DIRECT_REVIEW_NO_SUBAGENT'):
    self.assertIn(token,en);self.assertIn(token,it)
   for token in ('Schwarzschild2003Translation','Darwin1959GravityField','Sachs1961','NO_DETECTOR_READOUT','NO_COVARIANCE','NO_ELL0_LAW'):
    self.assertIn(token,en);self.assertIn(token,it)
