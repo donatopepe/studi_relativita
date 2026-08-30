@@ -1,5 +1,13 @@
 # Bibliography verification log
 
+## Schwarzschild null-scattering finite-window reuse
+
+- `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
+- `Darwin1959GravityField`: reused for Schwarzschild null-trajectory and critical-orbit context only.
+- The finite boundary, turning-point regularization, numerical integration, open transport, endpoint action and rank audit are project derivations.
+- These sources do not establish this finite-window protocol, emitter/absorber calibration, detector, covariance, `ell0`, UMCH, evidence or detection.
+
+
 ## Lin2020RadarCoordinates
 
 - Status: `VERIFIED_METADATA_AND_SCOPE`.
