@@ -32,7 +32,8 @@
           -0.1111111111
         ]
       ],
-      "finite_difference_residual": 1.23788757e-11,
+      "finite_difference_residual": 4.511694823e-09,
+      "polar_Riemann_projection": 0.1111111066,
       "radial_Riemann_projection": -0.1111111111,
       "screen_classes": [
         "RADIAL_CLASS_MODULO_K",

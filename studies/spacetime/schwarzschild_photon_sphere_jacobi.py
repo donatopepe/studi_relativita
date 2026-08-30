@@ -40,13 +40,31 @@ def radial_riemann_projection(M=1.):
   dmu=(G(r+h,nu)[up][sig]-G(r-h,nu)[up][sig])/(2*h) if mu==1 else 0.;dnu=(G(r+h,mu)[up][sig]-G(r-h,mu)[up][sig])/(2*h) if nu==1 else 0.
   return dmu-dnu+sum(G(r,mu)[up][a]*G(r,nu)[a][sig]-G(r,nu)[up][a]*G(r,mu)[a][sig] for a in range(4))
  return sum(g[rho][z]*e[z]*R(rho,sig,mu,nu)*k[sig]*e[mu]*k[nu] for rho in range(4) for z in range(4) for sig in range(4) for mu in range(4) for nu in range(4))
+def polar_riemann_projection(M=1.):
+ # Fully independent coordinate finite difference, including theta derivatives
+ # absent from the equatorial-specialized production connection helper.
+ x=[0.,3*M,math.pi/2,0.];h=2e-5*M
+ def metric_at(y):
+  r,th=y[1],y[2];f=1-2*M/r;return [[-f,0.,0.,0.],[0.,1/f,0.,0.],[0.,0.,r*r,0.],[0.,0.,0.,r*r*math.sin(th)**2]]
+ def derivative(y,a,i,j):
+  step=h if a==1 else 2e-5;yp=y[:];ym=y[:];yp[a]+=step;ym[a]-=step
+  return (metric_at(yp)[i][j]-metric_at(ym)[i][j])/(2*step)
+ def connection(y):
+  g=metric_at(y);gi=[[1/g[i][i] if i==j else 0. for j in range(4)] for i in range(4)]
+  return [[[.5*sum(gi[u][d]*(derivative(y,b,d,c)+derivative(y,c,d,b)-derivative(y,d,b,c)) for d in range(4)) for c in range(4)] for b in range(4)] for u in range(4)]
+ def R(up,sig,mu,nu):
+  def dG(a,lo):
+   step=h if a==1 else 2e-5;yp=x[:];ym=x[:];yp[a]+=step;ym[a]-=step
+   return (connection(yp)[up][sig][lo]-connection(ym)[up][sig][lo])/(2*step)
+  G=connection(x);return dG(mu,nu)-dG(nu,mu)+sum(G[up][a][mu]*G[a][sig][nu]-G[up][a][nu]*G[a][sig][mu] for a in range(4))
+ g=metric_at(x);E=m.tetrad(M,3*M);k=[E[i][0]+E[i][3] for i in range(4)];e=[E[i][2] for i in range(4)]
+ return sum(g[rho][z]*e[z]*R(rho,sig,mu,nu)*k[sig]*e[mu]*k[nu] for rho in range(4) for z in range(4) for sig in range(4) for mu in range(4) for nu in range(4))
 def optical_K(M=1.,orientation=1,affine_factor=1.):
- # Project convention x''=Kx. Radial Riemann projection is -1/(9M^2);
- # vacuum screen trace closes the polar entry with opposite sign.
+ # Project convention x''=Kx; direct Riemann projections have opposite sign.
  k=1/(9*M*M*affine_factor*affine_factor);return [[k,0.],[0.,-k]]
 def curvature_control(M=1.):
- K=optical_K(M);rad=radial_riemann_projection(M);expected=-K[0][0]
- return {'K':K,'trace':K[0][0]+K[1][1],'radial_Riemann_projection':rad,'finite_difference_residual':abs(rad-expected),'screen_metric':[[1.,0.],[0.,1.]],'screen_metric_residual':0.,'screen_classes':['RADIAL_CLASS_MODULO_K','POLAR_CLASS'],'screen_transport':'PARALLEL_QUOTIENT_CLASSES_ALONG_CIRCULAR_NULL_GEODESIC'}
+ K=optical_K(M);rad=radial_riemann_projection(M);pol=polar_riemann_projection(M);expected=-K[0][0]
+ return {'K':K,'trace':K[0][0]+K[1][1],'radial_Riemann_projection':rad,'polar_Riemann_projection':pol,'finite_difference_residual':max(abs(rad-expected),abs(pol+K[1][1])), 'screen_metric':[[1.,0.],[0.,1.]],'screen_metric_residual':0.,'screen_classes':['RADIAL_CLASS_MODULO_K','POLAR_CLASS'],'screen_transport':'PARALLEL_QUOTIENT_CLASSES_ALONG_CIRCULAR_NULL_GEODESIC'}
 def symplectic_residual(P):return m.norm(m.sub(m.mm(m.transpose(P),m.mm(J,P)),J))
 def phase_control(M=1.):
  L=6*math.pi*M;K=optical_K(M);P=phase(M);N=rk4_phase(K,L);return {'P':P,'exact_numerical_residual':m.norm(m.sub(P,N)),'symplectic_residual':symplectic_residual(P),'determinant':m.determinant(P)}
