@@ -57,8 +57,10 @@ class SchwarzschildPhotonOrbitHolonomyTests(unittest.TestCase):
   self.assertEqual(x['partial_arc_scope'],'MATHEMATICAL_NULL_ARC_WITH_STATIC_CLOSURE_NOT_CLOSED_NULL_GEODESIC')
  def test_artifact_contract_and_flags(self):
   d=json.loads(ARTIFACT.read_text())
-  for key in ('M','r_ph','f_ph','tetrad','orientation','winding','Delta_phi','Delta_t','Delta_tau','null_tangent','null_residual','geodesic_residual','Gamma_t','Gamma_phi','A_null','A_closure','T_null','T_closure','H_photon','ordered_reverse','H_reverse','characteristic_coefficients','winding_products','scale_factor','scale_orbit'):
+  for key in ('M','r_ph','f_ph','tetrad','orientation','winding','Delta_phi','Delta_t','Delta_tau','null_tangent','null_residual','geodesic_residual','Gamma_t','Gamma_phi','A_null','A_closure','T_null','T_closure','H_photon','ordered_reverse','H_reverse','characteristic_coefficients','spectrum_or_surrogate','winding_products','Jacobian_joint','scale_factor','scale_orbit','flat_or_large_radius_control'):
    self.assertIn(key,d['raw'])
+  self.assertEqual(d['raw']['Jacobian_joint'],'NOT_APPLICABLE_DISCRETE_WINDING_NO_CONTINUOUS_JACOBIAN')
+  self.assertEqual(d['raw']['flat_or_large_radius_control'],'NO_FINITE_RADIUS_CIRCULAR_NULL_GEODESIC_AT_M_ZERO')
   self.assertEqual(d['classification'],'EXACT_NONRADIAL_NULL_ORBIT_LEVI_CIVITA_HOLONOMY_AND_NEGATIVE_SCALE_IDENTIFIABILITY_CONTROL')
   self.assertEqual(d['umch_status'],'UNPROVEN');self.assertFalse(d['ell0_identified']);self.assertFalse(d['positive_detection_claim'])
   self.assertEqual(d['structural_dead_end'],'NOT_DECLARED')

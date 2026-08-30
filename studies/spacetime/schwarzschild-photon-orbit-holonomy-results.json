@@ -432,6 +432,7 @@
         -5.579736267
       ]
     ],
+    "Jacobian_joint": "NOT_APPLICABLE_DISCRETE_WINDING_NO_CONTINUOUS_JACOBIAN",
     "M": 1.0,
     "T_closure": [
       [
@@ -493,6 +494,7 @@
       1.0
     ],
     "f_ph": 0.3333333333,
+    "flat_or_large_radius_control": "NO_FINITE_RADIUS_CIRCULAR_NULL_GEODESIC_AT_M_ZERO",
     "geodesic_residual": [
       0.0,
       2.220446049e-16,
@@ -536,6 +538,16 @@
     "r_ph": 3.0,
     "scale_factor": 1.47,
     "scale_orbit": "(M,r,Delta_t,Delta_tau)->s(M,r,Delta_t,Delta_tau)",
+    "spectrum_or_surrogate": {
+      "kind": "CHARACTERISTIC_COEFFICIENTS_NO_NUMPY_EIGENSOLVER",
+      "values": [
+        1.0,
+        -20.54685179,
+        39.09370358,
+        -20.54685179,
+        1.0
+      ]
+    },
     "tetrad": [
       [
         1.732050808,
