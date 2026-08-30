@@ -1,0 +1,148 @@
+{
+  "UMCH": "UNPROVEN",
+  "classification": "PROJECT_DERIVATION_TOY_EXTERNAL_CLOCK_NEGATIVE_IDENTIFIABILITY_CONTROL",
+  "clock_controls": {
+    "classification": "CLOCK_SCALAR_ORIENTATION_EVEN_RAW_SCREEN_ORIENTATION_RETAINED",
+    "frequency_linearity_residual": 0.0,
+    "optical_orientation_labels": [
+      1,
+      -1
+    ],
+    "orientation_phase_residual": 0.0,
+    "phase": 7.343803420273261
+  },
+  "detection": "NO_POSITIVE_DETECTION_CLAIM",
+  "elapsed_time_control": {
+    "M": 1.0,
+    "R": 12.0,
+    "beta": 5.65685424949238,
+    "delta_t": 40.223422979930845,
+    "delta_t_over_M": 40.223422979930845,
+    "delta_tau": 36.718793510299655,
+    "delta_tau_over_M": 36.718793510299655,
+    "direct_cutoff_delta_t_over_M": 40.19437682223618,
+    "direct_cutoff_epsilon": 1e-08,
+    "direct_cutoff_panels": 200000,
+    "direct_cutoff_residual": 0.029046157694665453,
+    "mesh_doubling_residual": 3.061625987044181e-05,
+    "rho": 4.0,
+    "turning_integrand_limit": 8.000000000000002
+  },
+  "ell0_identified": false,
+  "external_frequency_standard_control": {
+    "classification": "EXTERNAL_FREQUENCY_STANDARD_DIRECTION_NOT_INTERIOR_GEOMETRIC_SCALE",
+    "clock_phase_difference": 5.140662394191283,
+    "clock_phase_reference": 7.343803420273261,
+    "clock_phase_scaled": 12.484465814464544,
+    "factor": 1.7,
+    "nu_source_reference": 0.2,
+    "nu_source_scaled": 0.34,
+    "omega_source_fixed": 0.2
+  },
+  "gate": "PHYSICAL_CLOCK_REALIZATION_SOURCE_COHERENCE_EMISSION_ABSORPTION_SCREEN_PREPARATION_VECTOR_READOUT_JOINT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED",
+  "geometric_scale_control": {
+    "classification": "GEOMETRIC_DILATION_NULL_DIRECTION_AT_FIXED_DIMENSIONLESS_SOURCE_FREQUENCY",
+    "clock_phase_residual": 0.0,
+    "converted_phase_map_residual": 5.9117155615240335e-12,
+    "dimensionless_time_residual": 0.0,
+    "factor": 1.7,
+    "nu_source": 0.2,
+    "omega_source_reference": 0.2,
+    "omega_source_scaled": 0.11764705882352942
+  },
+  "geometry": {
+    "M": 1.0,
+    "R": 12.0,
+    "beta": 5.65685424949238,
+    "branches": [
+      "incoming",
+      "turning",
+      "outgoing"
+    ],
+    "endpoint_motion": "STATIC_EQUAL_RADIUS",
+    "rho": 4.0
+  },
+  "joint_record": {
+    "P_frequency_converted": [
+      [
+        -2.143947478392345,
+        0.0,
+        -130.28103157422547,
+        0.0
+      ],
+      [
+        0.0,
+        20.98589525163848,
+        0.0,
+        1328.8675932586482
+      ],
+      [
+        -0.027605789934629404,
+        0.0,
+        -2.143947478392344,
+        0.0
+      ],
+      [
+        0.0,
+        0.33066334203788245,
+        0.0,
+        20.98589525163844
+      ]
+    ],
+    "Phi_clock": 7.343758702059931,
+    "primary_object": "CLOCK_PHASE_PLUS_FULL_TRANSPORTED_SCREEN_PHASE_MAP",
+    "screen_order": [
+      "polar",
+      "in-plane"
+    ]
+  },
+  "maximum_interpretation": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
+  "normalization": {
+    "affine_anchor": "SOURCE_LOCAL_FREQUENCY_RELATIVE_TO_TOY_EXTERNAL_STATIC_CLOCK",
+    "clock_convention": "DELTA_TAU_ENDPOINT_EQUALS_SQRT_F_R_TIMES_DELTA_T",
+    "nu_source": 0.2,
+    "omega_source": 0.2,
+    "phase_convention": "PHI_CLOCK_EQUALS_NU_SOURCE_TIMES_DELTA_TAU_OVER_M"
+  },
+  "rank_control": {
+    "column_norms": [
+      2150.4754234844477,
+      245.00437715383035,
+      5.730937517383603e-09
+    ],
+    "feature": "CLOCK_PHASE_PLUS_FLATTENED_FREQUENCY_CONVERTED_FULL_4X4_PHASE_MAP",
+    "global_injectivity": "NOT_ESTABLISHED",
+    "log_M_column_norm": 5.730937517383603e-09,
+    "parameters": [
+      "rho",
+      "R",
+      "log_M"
+    ],
+    "rank_shape_boundary": 2,
+    "rank_with_log_M": 2,
+    "scale_null_direction": [
+      0.0,
+      0.0,
+      1.0
+    ],
+    "statistical_independence": "NOT_ESTABLISHED_WITHOUT_JOINT_COVARIANCE"
+  },
+  "scope": "FOUR_DIMENSIONAL_SCHWARZSCHILD_EQUATORIAL_FUTURE_NULL_FINITE_SCATTERING_EQUAL_RADIUS_STATIC_ENDPOINT_CLOCK_TOY_SOURCE_FREQUENCY_FULL_SCREEN_PHASE_MAP_NO_DETECTOR",
+  "source_non_support": "NO_SOURCE_ESTABLISHES_COMPLETE_ENDPOINT_CLOCK_PROTOCOL_SOURCE_COHERENCE_EMISSION_ABSORPTION_SCREEN_PREPARATION_VECTOR_READOUT_JOINT_COVARIANCE_ELL0_UMCH_EVIDENCE_OR_DETECTION",
+  "source_scope": [
+    "Schwarzschild2003Translation",
+    "Darwin1959GravityField",
+    "Sachs1961"
+  ],
+  "status": "SCHWARZSCHILD_STATIC_ENDPOINT_CLOCK_PHASE_ADDS_CROSS_CHANNEL_SHAPE_BUT_RETAINS_EXTERNAL_FREQUENCY_AND_GEOMETRIC_SCALE_BLINDNESS_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "zero_window_control": {
+    "classification": "ZERO_WINDOW_PROTOCOL_LIMIT_NOT_HOLONOMY_NOT_EVIDENCE",
+    "coarse_R_minus_rho": 0.019999999999999574,
+    "coarse_map_identity_residual": 8.13997474697914,
+    "coarse_phase": 0.32026510272250824,
+    "fine_R_minus_rho": 0.004999999999999893,
+    "fine_map_identity_residual": 4.017499212041921,
+    "fine_phase": 0.16003328031937625
+  }
+}
