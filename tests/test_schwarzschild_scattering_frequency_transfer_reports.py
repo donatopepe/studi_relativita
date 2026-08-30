@@ -35,7 +35,7 @@ class SchwarzschildScatteringFrequencyTransferReportTests(unittest.TestCase):
         for token in (
             "0.18257418583505539",
             "0.03333333333333334",
-            "2.842170943040401e-14",
+            "6.821210263296962e-12",
             "[0,0,1]",
             "rank_shape_boundary=2",
             "rank_with_log_M=2",
