@@ -333,3 +333,10 @@ These canonical geometry sources support background mathematics only. They do no
 - Existing canonical contexts: `Darwin1959GravityField` supports Schwarzschild trajectories and critical circular-orbit context only; `Sachs1961` supports the null optical framework only.
 - Project use: the photon-sphere finite-arc cross-map derives open-arc transport, a screen phase map, boundary/caustic controls, endpoint quotients, scale orbits and a joint-rank diagnostic. These are project derivations, not quoted source results.
 - Explicit exclusions: neither source establishes open-arc transport as detector readout, endpoint tetrads, finite-window selection, an affine frequency standard, screen preparation, caustic continuation, vector readout, detector response, covariance, an `ell0` law, UMCH, evidence or detection.
+
+## Schwarzschild photon-sphere finite arc with freely falling endpoint frames project scope
+
+- Status: `PROJECT_DERIVATION_SCOPE_BOUND`.
+- Existing canonical contexts: `Schwarzschild2003Translation` supplies Schwarzschild-solution context; `Darwin1959GravityField` supplies Schwarzschild trajectories and critical circular-orbit context; `Sachs1961` supplies the null optical framework.
+- Project use: the radial timelike geodesic local state, endpoint boosts, phase-rate actions, reconstruction quotient, composition transitions and rank diagnostics are a project derivation and toy control.
+- Explicit exclusions: the sources do not establish a physical radial timelike geodesic release history, endpoint synchronization, screen preparation, absolute frequency standard, finite-arc selection, caustic continuation, mirror/emitter/absorber action, vector readout, detector response, covariance, an `ell0` law, UMCH, evidence or detection.
