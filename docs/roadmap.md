@@ -87,3 +87,7 @@ The static radial-radar joint map now separates two dimensionless endpoint label
 ### Schwarzschild photon-orbit holonomy control
 
 An exact nonradial future null winding at `r=3M`, closed by the matching past-directed static worldline, yields nontrivial raw Levi-Civita holonomy, orientation sensitivity and path ordering. Batched winding differs from repeated complete loops because closure placement differs. Characteristic/common-conjugacy quotients lose anchored information, winding remains a discrete protocol label, and Schwarzschild dilation preserves the dimensionless record. This is not emitter/absorber action, vector readout, covariance, absolute scale, `ell0`, or evidence. Generic scattering echoes and photon-orbit Jacobi/Sachs bundles remain open.
+
+## Schwarzschild photon-sphere optical Jacobi control
+
+Connection-derived null-screen phase map at `r=3M` now preserves full phase-space transport through a vertex caustic. Result: `SCHWARZSCHILD_PHOTON_SPHERE_OPTICAL_PHASE_MAP_HYPERBOLIC_ELLIPTIC_VERTEX_CAUSTIC_AFFINE_AND_GEOMETRIC_SCALE_BLIND_NOT_ELL0`. Orientation, endpoint screen, affine-rate, Schwarzschild scale and holonomy-dependence controls remain negative for `ell0` identification. Physical source/observer preparation, affine-frequency standard, caustic continuation, detector readout and covariance remain open. UMCH stays `UNPROVEN`; no detection claim.

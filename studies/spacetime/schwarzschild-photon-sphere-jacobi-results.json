@@ -1,0 +1,529 @@
+{
+  "classification": "EXACT_NONRADIAL_NULL_SCREEN_JACOBI_PHASE_MAP_AND_NEGATIVE_SCALE_IDENTIFIABILITY_CONTROL",
+  "controls": {
+    "boundary": {
+      "L": 18.84955592,
+      "M": 1.0,
+      "affine_normalization": "STATIC_TETRAD_K_EQUALS_E0_PLUS_ORIENTATION_E3_PROJECT_ANCHOR",
+      "geodesic_residual": 2.775557562e-17,
+      "k_coordinate": [
+        1.732050808,
+        0.0,
+        0.0,
+        0.3333333333
+      ],
+      "k_tetrad": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "null_residual": 2.220446049e-16,
+      "r_ph": 3.0
+    },
+    "curvature": {
+      "K": [
+        [
+          0.1111111111,
+          0.0
+        ],
+        [
+          0.0,
+          -0.1111111111
+        ]
+      ],
+      "finite_difference_residual": 4.511694823e-09,
+      "polar_Riemann_projection": 0.1111111066,
+      "radial_Riemann_projection": -0.1111111111,
+      "screen_classes": [
+        "RADIAL_CLASS_MODULO_K",
+        "POLAR_CLASS"
+      ],
+      "screen_metric": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "screen_metric_residual": 0.0,
+      "screen_transport": "PARALLEL_QUOTIENT_CLASSES_ALONG_CIRCULAR_NULL_GEODESIC",
+      "trace": 0.0
+    },
+    "nonvertex": {
+      "S0": [
+        [
+          0.13,
+          0.04
+        ],
+        [
+          0.04,
+          -0.09
+        ]
+      ],
+      "S_nonvertex": {
+        "matrix": [
+          [
+            0.3333323131,
+            0.0001074785539
+          ],
+          [
+            0.0001074785539,
+            -0.09345322008
+          ]
+        ],
+        "status": "REGULAR"
+      },
+      "V": [
+        [
+          124.055377,
+          10.70987046
+        ],
+        [
+          0.04,
+          -0.09
+        ]
+      ],
+      "X": [
+        [
+          372.1672702,
+          32.12938728
+        ],
+        [
+          -1.065814104e-16,
+          1.0
+        ]
+      ],
+      "X_determinant": 372.1672702
+    },
+    "phase": {
+      "P": [
+        [
+          267.7467615,
+          0.0,
+          803.2346821,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.664535259e-15
+        ],
+        [
+          89.24829801,
+          0.0,
+          267.7467615,
+          0.0
+        ],
+        [
+          0.0,
+          2.960594732e-16,
+          0.0,
+          1.0
+        ]
+      ],
+      "determinant": 1.0,
+      "exact_numerical_residual": 3.070206877e-12,
+      "symplectic_residual": 2.057951833e-11
+    },
+    "vertex": {
+      "S_vertex": {
+        "status": "CAUSTIC_OR_CONGRUENCE_BLOCK_SINGULAR"
+      },
+      "caustic_flags": {
+        "endpoint": true,
+        "intermediate": true
+      },
+      "conjugate_locations": [
+        9.424777961,
+        18.84955592
+      ],
+      "endpoint_X_determinant_abs": 2.140247132e-12,
+      "full_map_inverse_residual": 2.057951833e-11,
+      "vertex_V": [
+        [
+          267.7467615,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "vertex_X": [
+        [
+          803.2346821,
+          0.0
+        ],
+        [
+          0.0,
+          -2.664535259e-15
+        ]
+      ]
+    },
+    "zero_window": {
+      "generator_derivative_residual": 1.226281412e-08,
+      "identity_residual": 0.0
+    }
+  },
+  "ell0_identified": false,
+  "gate": "PHYSICAL_SOURCE_OBSERVER_SCREEN_PREPARATION_AFFINE_FREQUENCY_STANDARD_CAUSTIC_CONTINUATION_VECTOR_READOUT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED",
+  "positive_detection_claim": false,
+  "raw": {
+    "A": [
+      [
+        267.7467615,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "B": [
+      [
+        803.2346821,
+        0.0
+      ],
+      [
+        0.0,
+        -2.664535259e-15
+      ]
+    ],
+    "C": [
+      [
+        89.24829801,
+        0.0
+      ],
+      [
+        0.0,
+        2.960594732e-16
+      ]
+    ],
+    "D": [
+      [
+        267.7467615,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "Jacobian_joint": "NOT_APPLICABLE_DISCRETE_WINDING_NO_CONTINUOUS_JACOBIAN",
+    "L": 18.84955592,
+    "M": 1.0,
+    "P_phase": [
+      [
+        267.7467615,
+        0.0,
+        803.2346821,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        -2.664535259e-15
+      ],
+      [
+        89.24829801,
+        0.0,
+        267.7467615,
+        0.0
+      ],
+      [
+        0.0,
+        2.960594732e-16,
+        0.0,
+        1.0
+      ]
+    ],
+    "S_nonvertex": {
+      "matrix": [
+        [
+          0.3333323131,
+          0.0001074785539
+        ],
+        [
+          0.0001074785539,
+          -0.09345322008
+        ]
+      ],
+      "status": "REGULAR"
+    },
+    "S_vertex": {
+      "status": "CAUSTIC_OR_CONGRUENCE_BLOCK_SINGULAR"
+    },
+    "affine_normalization": "STATIC_TETRAD_K_EQUALS_E0_PLUS_ORIENTATION_E3_PROJECT_ANCHOR",
+    "affine_scale_controls": {
+      "affine_factor": 1.43,
+      "phase_rate_converted_residual": 9.413573061e-13,
+      "rate_conversion": "D_A_EQUALS_DIAG_I_I_OVER_A"
+    },
+    "caustic_flags": {
+      "endpoint": true,
+      "intermediate": true
+    },
+    "characteristic_coefficients": [
+      1.0,
+      -537.493523,
+      1072.987046,
+      -537.493523,
+      1.0
+    ],
+    "conjugate_locations": [
+      9.424777961,
+      18.84955592
+    ],
+    "endpoint_quotient_controls": {
+      "acted": [
+        [
+          244.0681545,
+          -52.39102128,
+          732.4255019,
+          -156.1109618
+        ],
+        [
+          94.88863694,
+          -19.27152621,
+          284.0808709,
+          -60.54969122
+        ],
+        [
+          81.38061133,
+          -17.34566242,
+          244.0681545,
+          -52.39102128
+        ],
+        [
+          31.56454121,
+          -6.727743468,
+          94.88863694,
+          -19.27152621
+        ]
+      ],
+      "action": "P_TO_G_O_P_G_S_INVERSE",
+      "endpoint_action_residual": 1.065613164e-13,
+      "raw_entries_are_calibration_invariant": false,
+      "raw_entry_difference": 374.9636002
+    },
+    "geometric_scale_controls": {
+      "affine_length_difference": 8.859291283,
+      "ell0_identified": false,
+      "phase_rate_converted_residual": 2.388143373e-12,
+      "scale_factor": 1.47,
+      "scale_orbit": "(M,r_ph,L)->s(M,r_ph,L)_WITH_PHASE_RATE_CONVERSION"
+    },
+    "holonomy_cross_map": {
+      "H_photon": [
+        [
+          74.49332867,
+          -49.48974188,
+          0.0,
+          -55.66885543
+        ],
+        [
+          74.19543845,
+          -49.36674062,
+          0.0,
+          -55.39754515
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          6.579736267,
+          -3.627598728,
+          0.0,
+          -5.579736267
+        ]
+      ],
+      "Jacobian_joint": "NOT_APPLICABLE_DISCRETE_WINDING_NO_CONTINUOUS_JACOBIAN",
+      "P_phase": [
+        [
+          267.7467615,
+          0.0,
+          803.2346821,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.664535259e-15
+        ],
+        [
+          89.24829801,
+          0.0,
+          267.7467615,
+          0.0
+        ],
+        [
+          0.0,
+          2.960594732e-16,
+          0.0,
+          1.0
+        ]
+      ],
+      "independent_channel": false,
+      "shared_geometry_path": true,
+      "winding_role": "DISCRETE_PROTOCOL_LABEL"
+    },
+    "k_tetrad": [
+      1.0,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "nonvertex_S0": [
+      [
+        0.13,
+        0.04
+      ],
+      [
+        0.04,
+        -0.09
+      ]
+    ],
+    "nonvertex_V": [
+      [
+        124.055377,
+        10.70987046
+      ],
+      [
+        0.04,
+        -0.09
+      ]
+    ],
+    "nonvertex_X": [
+      [
+        372.1672702,
+        32.12938728
+      ],
+      [
+        -1.065814104e-16,
+        1.0
+      ]
+    ],
+    "optical_tidal_K": [
+      [
+        0.1111111111,
+        0.0
+      ],
+      [
+        0.0,
+        -0.1111111111
+      ]
+    ],
+    "orientation": 1,
+    "orientation_controls": {
+      "negative": [
+        [
+          267.7467615,
+          0.0,
+          803.2346821,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.664535259e-15
+        ],
+        [
+          89.24829801,
+          0.0,
+          267.7467615,
+          0.0
+        ],
+        [
+          0.0,
+          2.960594732e-16,
+          0.0,
+          1.0
+        ]
+      ],
+      "positive": [
+        [
+          267.7467615,
+          0.0,
+          803.2346821,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.664535259e-15
+        ],
+        [
+          89.24829801,
+          0.0,
+          267.7467615,
+          0.0
+        ],
+        [
+          0.0,
+          2.960594732e-16,
+          0.0,
+          1.0
+        ]
+      ],
+      "raw_orientation_difference": 0.0,
+      "raw_orientation_survives": false,
+      "spectrum_collision": 0.0
+    },
+    "r_ph": 3.0,
+    "scale_factor": 1.47,
+    "scale_orbit": "(M,r_ph,L)->s(M,r_ph,L)_WITH_PHASE_RATE_CONVERSION",
+    "screen_classes": [
+      "RADIAL_CLASS_MODULO_K",
+      "POLAR_CLASS"
+    ],
+    "screen_metric": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "screen_transport": "PARALLEL_QUOTIENT_CLASSES_ALONG_CIRCULAR_NULL_GEODESIC",
+    "spectrum_or_surrogate": "HYPERBOLIC_PAIR_AND_UNIT_CIRCLE_PAIR_RECORDED_VIA_CHARACTERISTIC_COEFFICIENTS",
+    "vertex_V": [
+      [
+        267.7467615,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "vertex_X": [
+      [
+        803.2346821,
+        0.0
+      ],
+      [
+        0.0,
+        -2.664535259e-15
+      ]
+    ],
+    "winding": 1
+  },
+  "scope": "FOUR_DIMENSIONAL_SCHWARZSCHILD_NULL_SCREEN_JACOBI_PHASE_MAP_ON_FUTURE_PHOTON_SPHERE_WITH_PROJECT_AFFINE_NORMALIZATION_TOY_BOUNDARIES_AND_NO_DETECTOR_READOUT",
+  "status": "SCHWARZSCHILD_PHOTON_SPHERE_OPTICAL_PHASE_MAP_HYPERBOLIC_ELLIPTIC_VERTEX_CAUSTIC_AFFINE_AND_GEOMETRIC_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "umch_status": "UNPROVEN"
+}
