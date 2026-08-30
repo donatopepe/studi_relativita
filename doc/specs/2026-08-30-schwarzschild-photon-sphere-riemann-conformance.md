@@ -69,6 +69,12 @@ A corrected local optical profile may change hyperbolic/elliptic channel assignm
 
 Maximum interpretation after every passing gate remains `CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE`.
 
+## Post-run disposition
+
+The preregistered suspicion was not confirmed. Direct full-Riemann projection gives `diag(-1,+1)/(9M^2)` in explicit `(polar,radial)` order, equivalent to legacy `diag(+1,-1)/(9M^2)` in `(radial,polar)` order. Therefore the legacy profile is confirmed, not falsified; no phase-map or caustic regeneration is required because its matrix is unchanged.
+
+The apparent conflict with scattering `diag(-1,+1)/(3M^2)` is a counterexample to comparison without affine normalization. The scattering anchor `E_infinity=1` has local frequency `sqrt(3)` at `3M`, while the circular anchor has local frequency one. Quadratic frequency conversion maps the scattering limit to the circular profile. Final status: `SCHWARZSCHILD_PHOTON_SPHERE_FULL_RIEMANN_CONFIRMS_LEGACY_PROFILE_AFTER_SCREEN_ORDER_AND_AFFINE_NORMALIZATION_NOT_ELL0`.
+
 ## Source and history contract
 
 Reuse only canonical keys already present: `Schwarzschild2003Translation`, `Darwin1959GravityField`, `Sachs1961`. Record exact bounded scopes and exclusions. Preserve PR #90 legacy history and PR #95 falsification context. This correction is not `STRUCTURAL_DEAD_END_CANDIDATE`; physical source, endpoint, calibration, readout and covariance routes remain unfinished rather than structurally excluded.
