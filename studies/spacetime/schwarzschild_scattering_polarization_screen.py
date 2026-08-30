@@ -268,9 +268,20 @@ def rank_control(M=1.0, rho=4.0, R=12.0, nu_source=0.2, n=80, h=1e-4):
     }
 
 
+def _stable_artifact_value(value):
+    """Remove platform-level libm noise while preserving scientific diagnostics."""
+    if isinstance(value, float):
+        return float(format(value, ".12g"))
+    if isinstance(value, list):
+        return [_stable_artifact_value(item) for item in value]
+    if isinstance(value, dict):
+        return {key: _stable_artifact_value(item) for key, item in value.items()}
+    return value
+
+
 def build_result():
     M, rho, R, nu_source, n = 1.0, 4.0, 12.0, 0.2, 80
-    return {
+    result = {
         "status": STATUS,
         "gate": GATE,
         "scope": SCOPE,
@@ -298,6 +309,7 @@ def build_result():
         "detection_claim": "NO_POSITIVE_DETECTION_CLAIM",
         "maximum_interpretation": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
     }
+    return _stable_artifact_value(result)
 
 
 def render(result):
