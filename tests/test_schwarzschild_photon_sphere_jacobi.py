@@ -43,8 +43,9 @@ class SchwarzschildPhotonSphereJacobiTests(unittest.TestCase):
   self.assertLess(x['generator_derivative_residual'],2e-7)
  def test_orientation_and_endpoint_quotient_do_not_create_scale_rank(self):
   o=self.m.orientation_control();q=self.m.endpoint_quotient_control()
-  self.assertGreater(o['raw_orientation_difference'],1e-8)
+  self.assertLess(o['raw_orientation_difference'],2e-9)
   self.assertLess(o['spectrum_collision'],2e-9)
+  self.assertFalse(o['raw_orientation_survives'])
   self.assertLess(q['endpoint_action_residual'],2e-10)
   self.assertGreater(q['raw_entry_difference'],1e-5)
   self.assertFalse(q['raw_entries_are_calibration_invariant'])
