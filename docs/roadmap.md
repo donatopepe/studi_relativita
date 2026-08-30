@@ -79,3 +79,7 @@ Autonomous bounded corrections are exhausted. Remaining assumptions are `UMCH-A-
 QFT/quantum gravity only after operational definition and identifiability. No equation modification or `ℓ₀` value is assumed.
 
 Completed initial milestone: historical repository/audit infrastructure preserved; spacetime restart is next active milestone.
+
+### Schwarzschild radar cross-channel rank control
+
+The static radial-radar joint map now separates two dimensionless endpoint labels locally when signed boost holonomy is retained with a common anchor. Orientation quotient has a global reversal collision, and geometric dilation leaves the full dimensionless output unchanged. This is a bounded negative absolute-identifiability result, not channel independence, detector calibration, `ell0`, or evidence. Next: freely falling/nonradial causal boundaries and detector-derived covariance/readout.
