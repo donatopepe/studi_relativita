@@ -427,3 +427,11 @@ These canonical geometry sources support background mathematics only. They do no
 - Exact support used here: equations (6), (8), (10), and (11) give the asymptotically flat Reissner–Nordström metric, photon-sphere radius, neutral-light closest-approach integral, and impact parameter relation in geometrized units.
 - Project use is narrower than the paper's lensing analysis: these formulas anchor the metric and turning-point relation only.
 - This source does not establish the project's finite-boundary path, transported screen, direct Riemann/Jacobi phase map, endpoint preparation, receiver, covariance, `ell0`, UMCH, evidence, or detection.
+
+## RindlerIshak2007
+
+- **Metadata status:** `VERIFIED_METADATA_AND_EQUATION_SCOPE` via DOI `https://doi.org/10.1103/PhysRevD.76.043006` and arXiv `https://arxiv.org/abs/0709.2948` / extracted full text `https://arxiv.org/html/0709.2948`.
+- **Bibliographic record:** Wolfgang Rindler and Mustapha Ishak, “Contribution of the cosmological constant to the relativistic bending of light revisited,” *Physical Review D* **76** (2007), 043006, DOI `10.1103/PhysRevD.76.043006`, arXiv:0709.2948.
+- **Supported scope:** equations (1), (2), and (7): static Kottler/Schwarzschild--de Sitter metric, `alpha(r)=1-2m/r-Lambda r^2/3`, and exact equatorial null coordinate orbit equation `d^2u/dphi^2+u=3mu^2`; the article also distinguishes the coordinate path from an angle measured with the spacetime metric.
+- **Project-derived scope:** finite-window equal-radius boundaries, turning-point regularization, declared screen, direct Riemann projection, full Jacobi phase map, orientation, frequency conversion, dilation, and rank controls are project derivations or toy controls.
+- **Explicit exclusions:** this source does not establish a physical finite-window protocol, screen preparation, Jacobi receiver, emitter, absorber, calibrated noise, joint covariance, `ell0`, UMCH, evidence, or detection.
