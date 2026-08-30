@@ -319,3 +319,10 @@ These canonical geometry sources support background mathematics only. They do no
 - **Supported scope:** canonical analysis of Schwarzschild trajectories, including Schwarzschild null trajectories and the critical circular orbit used as geometry context for the `r=3M` photon-sphere control.
 - **Project-derived scope:** the finite Levi-Civita loop, static worldline closure, matrix exponentials, orientation and winding comparisons, path-ordering diagnostics, scale orbit and all numerical residuals are project derivations, not quoted results from Darwin.
 - **Explicit exclusions:** this source does not establish a physical emitter or absorber, finite-loop vector readout, detector covariance, endpoint calibration, an `ell0` law, UMCH, or detection. It does not support the ideal static closure as an observational protocol.
+
+## Photon-sphere Jacobi project scope
+
+- Status: `PROJECT_DERIVATION_SCOPE_BOUND`.
+- Existing canonical contexts: `Darwin1959GravityField` supports Schwarzschild trajectories and the critical circular photon orbit; `Sachs1961` supports the associated null-radiation and optical framework in its stated setting.
+- Project use: the photon-sphere Jacobi control derives a four-dimensional Schwarzschild Riemann projection and screen phase map under a declared project affine normalization.
+- Limits: neither source establishes the project affine normalization, endpoint screen preparation or identification, finite-window phase map, caustic readout or continuation, detector, covariance, `ell0`, UMCH, evidence, or detection. These remain project derivations, toy controls, or open gates as labelled.
