@@ -57,8 +57,15 @@ class SchwarzschildScatteringScreenConformanceTests(unittest.TestCase):
 
     def test_photon_sphere_profile_anchor(self):
         anchor = ssc.photon_sphere_anchor(rho=3.000001)
-        self.assertAlmostEqual(anchor["turning_M2_K_11"], 1.0 / 9.0, places=6)
-        self.assertEqual(anchor["limit"], "diag(+1,-1)/9")
+        self.assertAlmostEqual(anchor["turning_M2_K_polar"], -1.0 / 3.0, places=6)
+        self.assertAlmostEqual(anchor["turning_M2_K_in_plane"], 1.0 / 3.0, places=6)
+        self.assertEqual(anchor["limit"], "diag(-1,+1)/3 in (polar,in-plane) order")
+
+    def test_existing_jacobi_profile_uses_corrected_screen_order_and_normalization(self):
+        sample = ssc.base.profile_control(M=1.0, rho=4.0, R=12.0, orientation=1, n=24)["samples"][24]
+        expected = 3.0 * 1.0 * (ssc.base.sc.turning_beta(4.0)) ** 2 / 4.0 ** 5
+        self.assertAlmostEqual(sample["K"][0][0], -expected, places=12)
+        self.assertAlmostEqual(sample["K"][1][1], expected, places=12)
 
 
 if __name__ == "__main__":
