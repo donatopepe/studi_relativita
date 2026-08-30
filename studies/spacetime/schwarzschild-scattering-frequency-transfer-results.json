@@ -1,0 +1,199 @@
+{
+  "UMCH": "UNPROVEN",
+  "affine_frequency": {
+    "P_project_anchor": [
+      [
+        -2.1439474783923442,
+        0.0,
+        -23.78595326941532,
+        0.0
+      ],
+      [
+        0.0,
+        20.985895251638393,
+        0.0,
+        242.616918921786
+      ],
+      [
+        -0.1512031386494561,
+        0.0,
+        -2.143947478392342,
+        0.0
+      ],
+      [
+        0.0,
+        1.8111177137419368,
+        0.0,
+        20.985895251638343
+      ]
+    ],
+    "P_source_frequency": [
+      [
+        -2.143947478392345,
+        0.0,
+        -130.28103157422547,
+        0.0
+      ],
+      [
+        0.0,
+        20.98589525163848,
+        0.0,
+        1328.8675932586482
+      ],
+      [
+        -0.027605789934629404,
+        0.0,
+        -2.143947478392344,
+        0.0
+      ],
+      [
+        0.0,
+        0.33066334203788245,
+        0.0,
+        20.98589525163844
+      ]
+    ],
+    "classification": "SOURCE_LOCAL_FREQUENCY_FIXES_AFFINE_NORMALIZATION_RELATIVE_TO_EXTERNAL_CLOCK",
+    "converted_phase_map_residual": 6.821210263296962e-12,
+    "omega_observer": 0.2,
+    "omega_source": 0.2,
+    "profile_quadratic_ratio": 0.03333333333333334,
+    "profile_scaling_residual": 0.0,
+    "rate_similarity": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.18257418583505539,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.18257418583505539
+      ]
+    ],
+    "raw_rate_map_difference": 1086.2506743368622,
+    "symplectic_residual": 3.979039320256561e-13,
+    "tangent_scale": 0.18257418583505539
+  },
+  "classification": "PROJECT_DERIVATION_AND_TOY_STATIC_CLOCK_CONTROL_WITH_NEGATIVE_AFFINE_AND_GEOMETRIC_SCALE_IDENTIFIABILITY_RESULT",
+  "detection": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_identified": false,
+  "equal_endpoint_transfer": {
+    "M": 1.0,
+    "classification": "STATIC_TETRAD_FREQUENCY_TRANSFER_KNOWN_GEOMETRIC_RELATION",
+    "observer_killing_energy": 0.18257418583505539,
+    "omega_observer": 0.2,
+    "omega_source": 0.2,
+    "r_observer": 12.0,
+    "r_source": 12.0,
+    "source_killing_energy": 0.18257418583505539,
+    "transfer_ratio": 1.0
+  },
+  "external_frequency_standard": {
+    "classification": "EXTERNAL_FREQUENCY_STANDARD_DIRECTION_NOT_INTERIOR_GEOMETRIC_SCALE",
+    "ell0_identified": false,
+    "factor": 1.7,
+    "nu_source_reference": 0.2,
+    "nu_source_scaled": 0.34,
+    "omega_source_held_fixed": 0.2,
+    "raw_output_difference": 547.4784315061873,
+    "varying_product": "M_TIMES_OMEGA_SOURCE"
+  },
+  "frequency_transfer": {
+    "M": 1.0,
+    "classification": "STATIC_TETRAD_FREQUENCY_TRANSFER_KNOWN_GEOMETRIC_RELATION",
+    "observer_killing_energy": 0.18257418583505539,
+    "omega_observer": 0.20701966780270628,
+    "omega_source": 0.2,
+    "r_observer": 9.0,
+    "r_source": 12.0,
+    "source_killing_energy": 0.18257418583505539,
+    "transfer_ratio": 1.0350983390135313
+  },
+  "gate": "PHYSICAL_SOURCE_CLOCK_SPECTRUM_ABSORBER_RESPONSE_SCREEN_PREPARATION_VECTOR_READOUT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED",
+  "geometric_scale": {
+    "classification": "GEOMETRIC_SCALE_BLIND_AT_FIXED_DIMENSIONLESS_SOURCE_FREQUENCY",
+    "converted_phase_map_residual": 1.7280399333685637e-11,
+    "dimensionless_frequency_transfer_residual": 0.0,
+    "factor": 1.7,
+    "nu_source": 0.2,
+    "omega_source_reference": 0.2,
+    "omega_source_scaled": 0.11764705882352942,
+    "rate_similarity": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.34602076124567477,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.34602076124567477
+      ]
+    ],
+    "tangent_scale_ratio": 0.5882352941176472
+  },
+  "independent_channels": false,
+  "maximum_interpretation": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
+  "optical_profile": "diag(-1,+1) 3 M b^2/r^5 AT E_INFINITY=1",
+  "primary_object": "FULL_SCREEN_PHASE_MAP_REMAINS_PRIMARY",
+  "rank": {
+    "classification": "LOCAL_RANK_NOT_GLOBAL_IDENTIFIABILITY_AND_GEOMETRIC_SCALE_COLUMN_NULL",
+    "column_norms": [
+      2151.956801077558,
+      245.23709955816554,
+      4.270886111708851e-10
+    ],
+    "global_injectivity": "NOT_ESTABLISHED",
+    "log_M_column_norm": 4.270886111708851e-10,
+    "parameters": [
+      "rho",
+      "R",
+      "log_M"
+    ],
+    "rank_shape_boundary": 2,
+    "rank_with_log_M": 2,
+    "scale_null_direction": [
+      0,
+      0,
+      1
+    ]
+  },
+  "review": "DIRECT_REVIEW_NO_SUBAGENT",
+  "scope": "FOUR_DIMENSIONAL_SCHWARZSCHILD_EQUATORIAL_FUTURE_NULL_FINITE_SCATTERING_STATIC_ENDPOINT_TETRADS_SOURCE_LOCAL_FREQUENCY_TOY_CLOCK_FULL_SCREEN_PHASE_MAP_NO_DETECTOR",
+  "screen_order": [
+    "polar",
+    "in-plane"
+  ],
+  "source_clock": "TOY_EXTERNAL_FREQUENCY_STANDARD_NOT_DETECTOR_DERIVED",
+  "status": "SCHWARZSCHILD_STATIC_ENDPOINT_FREQUENCY_TRANSFER_FIXES_AFFINE_NORMALIZATION_RELATIVE_TO_EXTERNAL_CLOCK_BUT_RETAINS_GEOMETRIC_SCALE_BLINDNESS_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED"
+}

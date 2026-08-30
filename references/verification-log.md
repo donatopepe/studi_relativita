@@ -314,6 +314,15 @@ Access date for this initial verification: **2026-08-21**. “Verified” means 
 
 Metadata fetched during this audit is not stored as authority-free prose: each BibTeX DOI resolves to its canonical record. New entries require a new section matching the citation key, canonical URL, access date, supported topic, and limits. Search snippets alone are insufficient.
 
+## 2026-08-30 static-frequency transfer reuse audit
+
+- `Schwarzschild2003Translation` is reused only for Schwarzschild metric and static-coordinate context.
+- `Darwin1959GravityField` is reused only for Schwarzschild null-trajectory and critical-orbit context.
+- `Sachs1961` is reused only for null optical/Jacobi framework.
+- The static-tetrad frequency relation and finite-boundary phase-map conversion are project derivations from the declared metric, Killing normalization and existing audited Jacobi implementation.
+- These sources do not establish the project's finite-boundary source-clock protocol, physical source spectrum, absorber response, screen preparation, detector vector readout, covariance, `ell0`, UMCH, evidence or detection.
+- No new bibliography entry is added by this bounded audit.
+
 
 ## ORaifeartaighEtAl2017
 
