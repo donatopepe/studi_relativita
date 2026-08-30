@@ -11,6 +11,10 @@ class SchwarzschildNullScatteringJacobiTests(unittest.TestCase):
   self.assertLess(c['maximum_screen_transport_residual'],2e-5)
   self.assertLess(c['maximum_K_symmetry_residual'],2e-8)
   self.assertLess(c['maximum_vacuum_trace_residual'],2e-5)
+  turn=next(z for z in c['samples'] if z['branch']=='turning')
+  expected=3*c['M']*(c['M']*c['beta'])**2/turn['r']**5
+  self.assertAlmostEqual(turn['K'][0][0],expected,12)
+  self.assertAlmostEqual(turn['K'][1][1],-expected,12)
   self.assertEqual(c['affine_normalization'],'UNIT_KILLING_ENERGY_PROJECT_ANCHOR_NOT_DETECTOR_FREQUENCY')
  def test_phase_map_is_primary_symplectic_reversible_and_composes_at_turning(self):
   c=s.phase_control(M=1.,rho=4.,R=12.,orientation=1,n=160)
