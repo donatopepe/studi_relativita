@@ -304,3 +304,10 @@ Metadata fetched during this audit is not stored as authority-free prose: each B
 - **Does not establish:** the four-dimensional Einstein-static finite loop family, an observational or causal selection of loops, a detector protocol, tetrad calibration, common anchor, cross-channel independence or dependence as a physical measurement claim, Jacobi readout, `ell0`, UMCH, or detection.
 
 These canonical geometry sources support background mathematics only. They do not establish a physical finite loop family or any UMCH mechanism.
+
+## Schwarzschild radar cross-channel rank project scope
+
+- Status: `PROJECT_DERIVATION_NOT_SOURCE_CLAIM`.
+- Existing sources `Schwarzschild2003Translation`, `AmbroseSinger1953`, and `Lin2020RadarCoordinates` support only declared Schwarzschild geometry, general holonomy background, and radar-coordinate context.
+- Basic `SO^+(1,1)` boost algebra is used as standard linear algebra; numerical transport is checked directly against boost reconstruction.
+- These sources do **not** establish cross-channel independence, endpoint rank, detector covariance, global injectivity, absolute-scale recovery, `ell0`, UMCH, or detection.
