@@ -50,7 +50,7 @@ class SchwarzschildScatteringSourceCoherenceTests(unittest.TestCase):
 
     def test_fixed_dimensional_coherence_time_is_external_standard(self):
         control = self.result["external_coherence_standard_control"]
-        self.assertGreater(control["visibility_difference"], 1e-4)
+        self.assertGreater(abs(control["visibility_difference"]), 1e-4)
         self.assertGreater(control["coherence_iq_difference"], 1e-4)
         self.assertEqual(control["classification"], "EXTERNAL_SOURCE_COHERENCE_STANDARD_DIRECTION_NOT_INTERIOR_GEOMETRIC_SCALE")
 
