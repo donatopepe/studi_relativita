@@ -98,7 +98,7 @@ def _rank(cols,tol=1e-6):
  return len(basis)
 def rank_control():
  cols=[_column(1,4,12,k) for k in ('rho','R','log_M')];norms=[math.sqrt(sum(x*x for x in c)) for c in cols]
- return {'parameters':['rho','R','log_M'],'column_norms':norms,'log_M_column_norm':norms[2],'rank_shape_boundary':_rank(cols[:2]),'rank_with_log_M':_rank(cols),'scale_null_direction':[0,0,1],'independent_channels':False,'classification':'LOCAL_RANK_NOT_PHYSICAL_CHANNEL_INDEPENDENCE_OR_GLOBAL_INJECTIVITY'}
+ return {'parameters':['rho','R','log_M'],'finite_difference_step':2e-5,'rank_tolerance':1e-6,'jacobian_columns':{'rho':cols[0],'R':cols[1],'log_M':cols[2]},'column_norms':norms,'log_M_column_norm':norms[2],'rank_shape_boundary':_rank(cols[:2]),'rank_with_log_M':_rank(cols),'scale_null_direction':[0,0,1],'independent_channels':False,'classification':'LOCAL_RANK_NOT_PHYSICAL_CHANNEL_INDEPENDENCE_OR_GLOBAL_INJECTIVITY'}
 def collision_control():
  pairs=[]
  vals=[]
