@@ -1,0 +1,162 @@
+{
+  "affine_normalization": {
+    "circular_K": [
+      [
+        -0.1111111111111111,
+        0.0
+      ],
+      [
+        0.0,
+        0.1111111111111111
+      ]
+    ],
+    "circular_local_frequency": 1.0,
+    "converted_profile_residual": 1.962615573354719e-17,
+    "converted_scattering_K": [
+      [
+        -0.11111111111111112,
+        0.0
+      ],
+      [
+        0.0,
+        0.11111111111111112
+      ]
+    ],
+    "naive_comparison_status": "FALSIFIED_UNCONVERTED_AFFINE_NORMALIZATION_COMPARISON",
+    "scattering_E_infinity": 1.0,
+    "scattering_limit_K": [
+      [
+        -0.3333333333333333,
+        0.0
+      ],
+      [
+        0.0,
+        0.3333333333333333
+      ]
+    ],
+    "scattering_local_frequency_at_3M": 1.7320508075688772,
+    "scattering_to_circular_frequency_ratio": 1.7320508075688772,
+    "screen_order": [
+      "polar",
+      "radial"
+    ],
+    "tidal_matrix_quadratic_ratio": 2.9999999999999996,
+    "unconverted_profile_residual": 0.31426968052735443
+  },
+  "classification": "FULL_FOUR_DIMENSIONAL_RIEMANN_CROSS_CONFORMANCE_AND_NEGATIVE_AFFINE_IDENTIFIABILITY_CONTROL",
+  "detection": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_identified": false,
+  "full_riemann": {
+    "K_analytic": [
+      [
+        -0.1111111111111111,
+        0.0
+      ],
+      [
+        0.0,
+        0.1111111111111111
+      ]
+    ],
+    "K_coarse": [
+      [
+        -0.11111109333491963,
+        -0.0
+      ],
+      [
+        -0.0,
+        0.11111108148433628
+      ]
+    ],
+    "K_fine": [
+      [
+        -0.11111110970967528,
+        -0.0
+      ],
+      [
+        -0.0,
+        0.1111111092767008
+      ]
+    ],
+    "M": 1.0,
+    "coarse_projection_mismatch": 3.455052488702422e-08,
+    "derivative_coordinates": [
+      "r",
+      "theta"
+    ],
+    "fine_projection_mismatch": 2.308480787357262e-09,
+    "legacy_profile_mismatch": 2.308480787357262e-09,
+    "legacy_profile_polar_radial": [
+      [
+        -0.1111111111111111,
+        0.0
+      ],
+      [
+        0.0,
+        0.1111111111111111
+      ]
+    ],
+    "legacy_profile_status": "CONFIRMED_AFTER_EXPLICIT_SCREEN_ORDER_AND_AFFINE_NORMALIZATION",
+    "orientation": 1,
+    "polar_channel_origin": "DIRECT_RIEMANN_PROJECTION",
+    "radial_channel_origin": "DIRECT_RIEMANN_PROJECTION",
+    "screen_order": [
+      "polar",
+      "radial"
+    ],
+    "symmetry_residual": 0.0,
+    "vacuum_trace_residual": 4.329744757169962e-10
+  },
+  "gate": "PHYSICAL_SOURCE_OBSERVER_SCREEN_PREPARATION_ABSOLUTE_AFFINE_FREQUENCY_STANDARD_CAUSTIC_CONTINUATION_VECTOR_READOUT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED",
+  "legacy_result": "CONFIRMED_NOT_FALSIFIED",
+  "maximum_interpretation": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
+  "naive_cross_control": "FALSIFIED_UNCONVERTED_AFFINE_NORMALIZATION_COMPARISON",
+  "raw_object": "FULL_SCREEN_PHASE_MAP_REMAINS_PRIMARY",
+  "review": "DIRECT_REVIEW_NO_SUBAGENT",
+  "scattering_result": "CONFIRMED_AFTER_AFFINE_FREQUENCY_CONVERSION",
+  "scope": "CIRCULAR_PHOTON_SPHERE_LOCAL_UNIT_FREQUENCY_SCREEN_COMPARED_WITH_E_INFINITY_NORMALIZED_SCATTERING_LIMIT_NO_DETECTOR_READOUT",
+  "screen": {
+    "M": 1.0,
+    "k": [
+      1.732050807568877,
+      0.0,
+      0.0,
+      0.3333333333333333
+    ],
+    "null_residual": 2.220446049250313e-16,
+    "orientation": 1,
+    "r": 3.0,
+    "screen": [
+      [
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.0
+      ],
+      [
+        0.0,
+        0.5773502691896258,
+        0.0,
+        0.0
+      ]
+    ],
+    "screen_metric": [
+      [
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "screen_metric_residual": 0.0,
+    "screen_order": [
+      "polar",
+      "radial"
+    ],
+    "screen_tangent_residual": 0.0
+  },
+  "status": "SCHWARZSCHILD_PHOTON_SPHERE_FULL_RIEMANN_CONFIRMS_LEGACY_PROFILE_AFTER_SCREEN_ORDER_AND_AFFINE_NORMALIZATION_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "umch": "UNPROVEN"
+}

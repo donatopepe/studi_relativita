@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Independent full-Riemann photon-sphere screen conformance; no UMCH inference."""
+import argparse
 import importlib.util
+import json
 import math
 import pathlib
 
 HERE = pathlib.Path(__file__).resolve().parent
+OUT = HERE / "schwarzschild-photon-sphere-riemann-conformance-results.json"
 
 _SPEC = importlib.util.spec_from_file_location(
     "scattering_screen_conformance", HERE / "schwarzschild_scattering_screen_conformance.py"
@@ -107,3 +110,50 @@ def affine_normalization_control(M=1.0):
         "unconverted_profile_residual": _matrix_distance(circular, scattering_limit),
         "naive_comparison_status": "FALSIFIED_UNCONVERTED_AFFINE_NORMALIZATION_COMPARISON",
     }
+
+
+def build_result():
+    screen = circular_screen_control()
+    projection = full_riemann_control()
+    affine = affine_normalization_control()
+    return {
+        "classification": "FULL_FOUR_DIMENSIONAL_RIEMANN_CROSS_CONFORMANCE_AND_NEGATIVE_AFFINE_IDENTIFIABILITY_CONTROL",
+        "status": "SCHWARZSCHILD_PHOTON_SPHERE_FULL_RIEMANN_CONFIRMS_LEGACY_PROFILE_AFTER_SCREEN_ORDER_AND_AFFINE_NORMALIZATION_NOT_ELL0",
+        "scope": "CIRCULAR_PHOTON_SPHERE_LOCAL_UNIT_FREQUENCY_SCREEN_COMPARED_WITH_E_INFINITY_NORMALIZED_SCATTERING_LIMIT_NO_DETECTOR_READOUT",
+        "gate": "PHYSICAL_SOURCE_OBSERVER_SCREEN_PREPARATION_ABSOLUTE_AFFINE_FREQUENCY_STANDARD_CAUSTIC_CONTINUATION_VECTOR_READOUT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED",
+        "screen": screen,
+        "full_riemann": projection,
+        "affine_normalization": affine,
+        "naive_cross_control": affine["naive_comparison_status"],
+        "legacy_result": "CONFIRMED_NOT_FALSIFIED",
+        "scattering_result": "CONFIRMED_AFTER_AFFINE_FREQUENCY_CONVERSION",
+        "raw_object": "FULL_SCREEN_PHASE_MAP_REMAINS_PRIMARY",
+        "ell0_identified": False,
+        "structural_dead_end": "NOT_DECLARED",
+        "umch": "UNPROVEN",
+        "detection": "NO_POSITIVE_DETECTION_CLAIM",
+        "maximum_interpretation": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
+        "review": "DIRECT_REVIEW_NO_SUBAGENT",
+    }
+
+
+def render(result):
+    return json.dumps(result, indent=2, sort_keys=True) + "\n"
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true")
+    args = parser.parse_args()
+    text = render(build_result())
+    if args.check:
+        if not OUT.exists() or OUT.read_text() != text:
+            raise SystemExit("artifact mismatch")
+        print("Schwarzschild photon-sphere Riemann conformance artifact is current.")
+        return
+    OUT.write_text(text)
+    print(OUT)
+
+
+if __name__ == "__main__":
+    main()
