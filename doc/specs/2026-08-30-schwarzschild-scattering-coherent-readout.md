@@ -135,6 +135,10 @@ PHYSICAL_SOURCE_COHERENCE_EMISSION_ABSORPTION_POLARIZATION_SCREEN_COUPLING_RECEI
 
 Passing does not identify `ell0`, derive a physical detector, establish channel independence, or support UMCH. Maximum interpretation remains `CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE`.
 
+## Execution disposition
+
+Deterministic controls passed with exact nuisance null directions, rank-two nuisance Jacobian, fixed-`nu_s` dilation blindness, external-standard classification at fixed dimensional frequency, and raw/quotient geometric rank two. Expected bounded disposition above is adopted. Unresolved gate is unchanged. Review is direct under explicit no-subagent constraint: `DIRECT_REVIEW_NO_SUBAGENT`.
+
 ## Structural-dead-end disposition
 
 Dead-end criteria do not pass. Bounded routes remain open through explicit emitter/absorber dynamics, polarization-sensitive screen coupling, receiver response, calibrated covariance and other exact geometries. No reformulation candidate is authorized by this increment; durable loop remains active.
