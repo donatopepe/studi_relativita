@@ -1,0 +1,173 @@
+{
+  "UMCH": "UNPROVEN",
+  "classification": {
+    "iq_nuisance_and_rank_audit": "PROJECT_DERIVATION",
+    "physical_readout_and_covariance": "OPEN_PROBLEM",
+    "propagation_geometry": "KNOWN_RESULT_WITHIN_CITED_SCOPE",
+    "scale_blindness": "NEGATIVE_RESULT",
+    "source_lo_receiver": "TOY_CONTROL_NOT_PHYSICAL_DETECTOR"
+  },
+  "detection": "NO_POSITIVE_DETECTION_CLAIM",
+  "ell0_identified": false,
+  "external_frequency_standard_control": {
+    "classification": "EXTERNAL_FREQUENCY_STANDARD_DIRECTION_NOT_INTERIOR_GEOMETRIC_SCALE",
+    "clock_phase_difference": 5.140662394191283,
+    "iq_difference": 1.1246427723525296,
+    "nu_source_reference": 0.2,
+    "nu_source_scaled": 0.34,
+    "omega_source": 0.2
+  },
+  "gate": "PHYSICAL_SOURCE_COHERENCE_EMISSION_ABSORPTION_POLARIZATION_SCREEN_COUPLING_RECEIVER_TRANSFER_CALIBRATED_NOISE_JOINT_COVARIANCE_AND_ELL0_LAW_NOT_DERIVED",
+  "geometric_scale_control": {
+    "classification": "GEOMETRIC_DILATION_NULL_DIRECTION_AT_FIXED_DIMENSIONLESS_SOURCE_FREQUENCY",
+    "clock_phase_residual": 0.0,
+    "converted_phase_map_residual": 5.9117155615240335e-12,
+    "iq_residual": 0.0,
+    "quotient_residual": 0.0,
+    "scale_factor": 1.7
+  },
+  "maximum_interpretation": "CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE",
+  "nuisance_controls": {
+    "amplitude_null_direction": [
+      1.0,
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "amplitude_null_residual": 0.0,
+    "classification": "SOURCE_LO_PHASE_AND_SOURCE_RECEIVER_GAIN_HAVE_EXACT_NUISANCE_NULL_DIRECTIONS",
+    "common_phase_residual": 1.8457457784393227e-15,
+    "jacobian": [
+      [
+        -0.0932890975628371,
+        -1.0358074841764329,
+        -0.0932890975628371,
+        1.0358074841764329
+      ],
+      [
+        1.0358074841764329,
+        -0.0932890975628371,
+        1.0358074841764329,
+        0.0932890975628371
+      ]
+    ],
+    "nuisance_jacobian_rank": 2,
+    "parameters": [
+      "log_A_source",
+      "phi_source",
+      "log_G",
+      "phi_LO"
+    ],
+    "phase_null_direction": [
+      0.0,
+      1.0,
+      0.0,
+      1.0
+    ],
+    "phase_null_residual": 0.0,
+    "source_gain_compensation_residual": 0.0
+  },
+  "parameters": {
+    "M": 1.0,
+    "R": 12.0,
+    "n": 80,
+    "nu_source": 0.2,
+    "rho": 4.0
+  },
+  "quotient_control": {
+    "classification": "UNRESTRICTED_POSITIVE_GAIN_AND_PHASE_QUOTIENT_REMOVES_SCALAR_CARRIER_IQ_CONTENT",
+    "reference_representative": [
+      1.0,
+      0.0
+    ],
+    "representative_residual": 0.0,
+    "transformed_representative": [
+      1.0,
+      0.0
+    ]
+  },
+  "rank_control": {
+    "global_injectivity": "NOT_ESTABLISHED",
+    "parameters": [
+      "rho",
+      "R",
+      "log_M"
+    ],
+    "quotient_log_M_column_norm": 4.5841522233922306e-09,
+    "rank_quotient_shape_boundary": 2,
+    "rank_quotient_with_log_M": 2,
+    "rank_raw_shape_boundary": 2,
+    "rank_raw_with_log_M": 2,
+    "raw_log_M_column_norm": 4.5841522233922306e-09,
+    "scale_null_direction": [
+      0,
+      0,
+      1
+    ],
+    "statistical_independence": "DEPENDENCE_UNRESOLVED_WITHOUT_JOINT_COVARIANCE"
+  },
+  "raw_readout": {
+    "A_source": 1.3,
+    "P_frequency_converted": [
+      [
+        -2.143947478392345,
+        0.0,
+        -130.28103157422547,
+        0.0
+      ],
+      [
+        0.0,
+        20.98589525163848,
+        0.0,
+        1328.8675932586482
+      ],
+      [
+        -0.027605789934629404,
+        0.0,
+        -2.143947478392344,
+        0.0
+      ],
+      [
+        0.0,
+        0.33066334203788245,
+        0.0,
+        20.98589525163844
+      ]
+    ],
+    "Phi_clock": 7.343803420273261,
+    "amplitude": 1.04,
+    "phi_LO": -0.2,
+    "phi_source": 0.4,
+    "propagation_gain": 1.0,
+    "receiver_gain": 0.8,
+    "relative_phase": 7.9438034202732615,
+    "y_IQ": [
+      -0.0932890975628371,
+      1.0358074841764329
+    ]
+  },
+  "scope": "FOUR_DIMENSIONAL_SCHWARZSCHILD_EQUATORIAL_FUTURE_NULL_FINITE_SCATTERING_EQUAL_RADIUS_STATIC_ENDPOINT_TOY_COHERENT_IQ_FULL_SCREEN_PHASE_MAP_NO_PHYSICAL_DETECTOR",
+  "screen_order": [
+    "polar",
+    "in-plane"
+  ],
+  "source_scope": {
+    "keys": [
+      "Schwarzschild2003Translation",
+      "Darwin1959GravityField",
+      "Sachs1961"
+    ],
+    "not_established": "coherent source dynamics; emission or absorption interaction; polarization-screen coupling; receiver transfer; calibrated noise; joint covariance; ell0; UMCH; evidence; detection"
+  },
+  "status": "SCHWARZSCHILD_COHERENT_ENDPOINT_IQ_READOUT_IS_SOURCE_LO_GAIN_NUISANCE_AND_RETAINS_GEOMETRIC_SCALE_BLINDNESS_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "study": "schwarzschild-scattering-coherent-readout",
+  "zero_window_control": {
+    "classification": "ZERO_WINDOW_GEOMETRY_LIMIT_DOES_NOT_REMOVE_ARBITRARY_SOURCE_LO_CARRIER_PHASE",
+    "coarse_clock_phase": 0.32026510272250824,
+    "coarse_map_identity_residual": 8.13997474697914,
+    "fine_clock_phase": 0.16003328031937625,
+    "fine_map_identity_residual": 4.017499212041921,
+    "fine_raw_iq_norm": 1.04
+  }
+}
