@@ -420,3 +420,10 @@ These canonical geometry sources support background mathematics only. They do no
 - Finite-boundary Killing-time regularization, static proper elapsed time, toy-clock phase, full-map cross-channel joining, dilation and rank controls are project derivations.
 - These sources do not establish a complete endpoint-clock protocol, physical source coherence or spectrum, emission action, absorber response, screen preparation, detector vector readout, joint covariance, `ell0`, UMCH, evidence or detection.
 - No new bibliography entry is added.
+
+## EiroaRomeroTorres2002
+
+- Metadata verified from arXiv `gr-qc/0203049` and linked journal DOI `10.1103/PhysRevD.66.024010`: Ernesto F. Eiroa, Gustavo E. Romero, and Diego F. Torres, *Reissner–Nordström black hole lensing*, Physical Review D 66, 024010 (2002).
+- Exact support used here: equations (6), (8), (10), and (11) give the asymptotically flat Reissner–Nordström metric, photon-sphere radius, neutral-light closest-approach integral, and impact parameter relation in geometrized units.
+- Project use is narrower than the paper's lensing analysis: these formulas anchor the metric and turning-point relation only.
+- This source does not establish the project's finite-boundary path, transported screen, direct Riemann/Jacobi phase map, endpoint preparation, receiver, covariance, `ell0`, UMCH, evidence, or detection.
