@@ -4,13 +4,13 @@
 
 This conservative follow-up audits the full finite-boundary Schwarzschild null-scattering Jacobi control merged in PR #94. It does not change the ratified UMCH object or hypothesis. UMCH remains `UNPROVEN`; `ell0_identified=false`; detection remains `NO_POSITIVE_DETECTION_CLAIM`.
 
-Question: is the declared polar-plus-in-plane screen genuinely Levi-Civita parallel along the equatorial scattering ray, at least modulo null-gauge equivalence, and does an independent coordinate finite-difference reconstruction of the four-dimensional Schwarzschild Riemann tensor reproduce the analytic optical profile
+Question: is the declared polar-plus-in-plane screen genuinely Levi-Civita parallel along the equatorial scattering ray, at least modulo null-gauge equivalence, and does an independent coordinate finite-difference reconstruction of the four-dimensional Schwarzschild Riemann tensor reproduce or falsify the currently implemented analytic optical profile? The preregistered target before running the reconstruction was
 
 \[
- \mathcal K=\operatorname{diag}(+1,-1)\frac{Mb^2}{r^5}
+ \mathcal K_{\rm old}=\operatorname{diag}(+1,-1)\frac{Mb^2}{r^5}.
 \]
 
-with the implemented sign convention `X''=K X`?
+The test may falsify its sign, screen ordering or normalization; no generated result may be absorbed by changing tolerances. Sign convention remains `X''=K X`.
 
 Classifications:
 
@@ -120,7 +120,7 @@ Tests are preregistered to require:
 3. quotient transport and screen-rotation residuals decrease under step refinement and pass fixed bounds;
 4. finite-difference Riemann projection includes `theta` derivatives, is symmetric and trace-free within fixed bounds, and converges to the analytic full matrix;
 5. both orientations agree in the projected profile while retaining orientation in raw path/screen labels;
-6. `rho -> 3+` retains the photon-sphere anchor `M^2 K_11 -> 1/9`;
+6. `rho -> 3+` independently evaluates the photon-sphere anchor rather than assuming the old `M^2 K_11 -> 1/9` value;
 7. deterministic artifact rerendering is byte-identical;
 8. all prior Jacobi, scale, caustic, endpoint-action and rank tests remain green.
 
@@ -137,11 +137,15 @@ No bounded failure is evidence for UMCH.
 
 Produce a deterministic JSON artifact, theory note, bilingual EN/IT audits, source-scope log and roadmap entry. Preserve raw derivative vectors and full finite-difference `K` matrices; scalar maxima are diagnostics only.
 
-Passing state:
+Passing state if the old profile survives:
 
-`SCHWARZSCHILD_SCATTERING_SCREEN_IS_LEVI_CIVITA_PARALLEL_MODULO_EXPLICIT_NULL_GAUGE_AND_INDEPENDENT_FOUR_DIMENSIONAL_RIEMANN_RECONSTRUCTION_CONFIRMS_OPTICAL_PROFILE_NOT_ELL0`
+`SCHWARZSCHILD_SCATTERING_SCREEN_IS_LEVI_CIVITA_PARALLEL_MODULO_EXPLICIT_NULL_GAUGE_AND_INDEPENDENT_FOUR_DIMENSIONAL_RIEMANN_RECONSTRUCTION_CONFIRMS_OPTICAL_PROFILE_NOT_ELL0`.
 
-Only if every fixed test passes. Interpretation ceiling remains `CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE`.
+Correction state if the raw reconstruction falsifies the old profile but a bounded replacement passes convergence and all phase-map controls:
+
+`SCHWARZSCHILD_SCATTERING_SCREEN_IS_PARALLEL_MODULO_NULL_GAUGE_BUT_FULL_RIEMANN_RECONSTRUCTION_FALSIFIES_PRIOR_OPTICAL_PROFILE_AND_REQUIRES_CORRECTED_PHASE_MAP_NOT_ELL0`.
+
+Only fixed tests decide between them. Interpretation ceiling remains `CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE`.
 
 Open gate remains:
 

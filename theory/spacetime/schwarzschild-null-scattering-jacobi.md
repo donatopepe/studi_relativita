@@ -10,12 +10,14 @@ r/M=\rho+y^2,\qquad \beta=b/M=\rho/\sqrt{1-2/\rho},
 
 and unit Killing energy as a project affine anchor. This anchor is not a detector frequency.
 
-In the declared parallel screen, the project derivation gives
+In the `(polar,in-plane)` screen, independent four-dimensional Riemann reconstruction corrected the project derivation to
 
 \[
-\mathcal K=\operatorname{diag}(+1,-1)\frac{Mb^2}{r^5},\qquad
+\mathcal K=\operatorname{diag}(-1,+1)\frac{3Mb^2}{r^5},\qquad
 \frac{d}{d\lambda}\binom{X}{V}=\begin{pmatrix}0&I\\\mathcal K&0\end{pmatrix}\binom{X}{V}.
 \]
+
+The superseded `diag(+1,-1) M b^2/r^5` formula is preserved as a falsified project result in the conformance audit.
 
 The raw primary object is `FULL_SCREEN_PHASE_MAP_THROUGH_CAUSTICS`,
 
@@ -27,13 +29,13 @@ Graph diagnostics such as `S=DB^{-1}` are emitted only where `B` is invertible. 
 
 ## Controls
 
-At `(M,rho,R)=(1,4,12)` with artifact resolution, maximum screen orthonormality residual is `4.440892098500626e-16`, vacuum trace residual is `0.0`, symplectic residual is `7.105427357601002e-15`, reverse-inverse residual is `5.684341886080802e-14`, and turning-composition residual is `1.4210854715202004e-14`.
+At `(M,rho,R)=(1,4,12)` with corrected artifact resolution, maximum screen orthonormality residual is `4.440892098500626e-16`, vacuum trace residual is `0.0`, symplectic residual is `5.684341886080802e-14`, reverse-inverse residual is `1.000444171950221e-11`, and turning-composition residual is `5.684341886080802e-14`.
 
 Vertex and parallel source preparations remain distinct mathematical boundary data. Oriented endpoint screen actions change raw entries but reconstruct the interior map; classification is `TOY_ORIENTED_SCREEN_ENDPOINT_ACTION_NOT_PHYSICAL_CALIBRATION`.
 
-Affine rescaling is blind after the declared phase-rate conversion. Under geometric dilation `M -> 2.5 M` at fixed `(rho,R,beta)`, the dimensionless profile residual is `2.42861286636753e-17` and converted phase-map residual is `9.947598300641403e-14`: `GEOMETRIC_SCALE_BLIND_AFTER_DECLARED_PHASE_RATE_AND_ENDPOINT_CONVERSION`.
+Affine rescaling is blind after the declared phase-rate conversion. Under geometric dilation `M -> 2.5 M` at fixed `(rho,R,beta)`, the dimensionless profile residual is `4.163336342344337e-17` and converted phase-map residual is `3.410605131648481e-13`: `GEOMETRIC_SCALE_BLIND_AFTER_DECLARED_PHASE_RATE_AND_ENDPOINT_CONVERSION`.
 
-The preregistered Jacobian has `rank_shape_boundary = 2`, `rank_with_log_M = 2`, `log_M_column_norm = 1.6269172349983679e-10`, and `scale_null_direction = [0, 0, 1]`. Shape/boundary rank is not channel independence. `independent_channels = false`; bounded collision absence does not prove global injectivity, which remains `NOT_ESTABLISHED`.
+The corrected Jacobian has `rank_shape_boundary = 2`, `rank_with_log_M = 2`, `log_M_column_norm = 5.724578281939044e-09`, and `scale_null_direction = [0, 0, 1]`. Shape/boundary rank is not channel independence. `independent_channels = false`; bounded collision absence does not prove global injectivity, which remains `NOT_ESTABLISHED`.
 
 ## Interpretation and source scope
 

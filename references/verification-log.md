@@ -356,3 +356,11 @@ These canonical geometry sources support background mathematics only. They do no
 - Existing canonical contexts: `Schwarzschild2003Translation` supplies Schwarzschild-solution context; `Darwin1959GravityField` supplies Schwarzschild trajectories and critical circular-orbit context; `Sachs1961` supplies the null optical framework.
 - Project use: the radial timelike geodesic local state, endpoint boosts, phase-rate actions, reconstruction quotient, composition transitions and rank diagnostics are a project derivation and toy control.
 - Explicit exclusions: the sources do not establish a physical radial timelike geodesic release history, endpoint synchronization, screen preparation, absolute frequency standard, finite-arc selection, caustic continuation, mirror/emitter/absorber action, vector readout, detector response, covariance, an `ell0` law, UMCH, evidence or detection.
+
+## 2026-08-30 Schwarzschild scattering screen/Riemann conformance
+
+- Reused canonical keys: `Schwarzschild2003Translation`, `Darwin1959GravityField`, `Sachs1961`; no new bibliography metadata was needed.
+- **Supports:** Schwarzschild metric context, nonradial null trajectories/critical context, and the Sachs/Jacobi null-optics framework, respectively.
+- **Project derivation checked independently:** coordinate static screen, explicit null-gauge transport quotient, centered metric derivatives in both `r` and `theta`, full four-dimensional Christoffel/Riemann reconstruction, optical projection, corrected phase-map and rank rerun.
+- **Negative correction:** full projection falsifies prior project formula `diag(+1,-1) M b^2/r^5`; corrected `(polar,in-plane)` formula is `diag(-1,+1) 3 M b^2/r^5` for `X''=K X`.
+- **Does not establish:** finite-boundary source selection, physical emitter/absorber tetrads, absolute frequency or affine standard, detector screen preparation, caustic continuation, vector readout, covariance, `ell0`, UMCH, evidence or detection.
