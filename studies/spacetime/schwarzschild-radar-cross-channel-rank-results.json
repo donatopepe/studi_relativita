@@ -1,0 +1,421 @@
+{
+  "classification": "EXACT_DIMENSIONLESS_JOINT_MAP_RANK_CONTROL_AND_NEGATIVE_ABSOLUTE_IDENTIFIABILITY_RESULT",
+  "controls": {
+    "anchor": {
+      "characteristic_collision": 0.0,
+      "common_conjugacy_residual": 0.0,
+      "raw_anchor_difference": 0.0835524789786007
+    },
+    "boost": {
+      "H_radar": [
+        [
+          1.0127353798958412,
+          -0.1601029346782993,
+          0.0,
+          0.0
+        ],
+        [
+          -0.16010293467359715,
+          1.012735379894924,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.9999999999999996,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.9999999999999996
+        ]
+      ],
+      "reconstructed_boost": [
+        [
+          1.012735379895755,
+          -0.16010293467828574,
+          0,
+          0
+        ],
+        [
+          -0.16010293467828574,
+          1.012735379895755,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "reconstruction_residual": 4.76247466510716e-12,
+      "signed_rapidity": -0.15942672093282076,
+      "transport_repeat_residual": 0.0
+    },
+    "null": {
+      "flat_rapidity": 0.0,
+      "shrinking_second_singular_value": 0.0,
+      "shrinking_separation": 0.001,
+      "shrinking_singular_values": [
+        3.346783554303231,
+        0.0
+      ]
+    },
+    "quotient": {
+      "Jacobian_even": [
+        [
+          2.5998191581422248,
+          -3.3806170203209973
+        ],
+        [
+          0.009022862731411507,
+          -0.026956106702336058
+        ]
+      ],
+      "duration_collision": 0.0,
+      "even_holonomy_collision": 0.0,
+      "forward": [
+        8.168553570818094,
+        -0.15942672099616947
+      ],
+      "global_orientation_collision": true,
+      "rank_even_quotient": 2,
+      "raw_orientation_difference": 0.31885344199233895,
+      "reversed": [
+        8.168553570818094,
+        0.15942672099616947
+      ],
+      "singular_values_even": [
+        4.264780535283552,
+        0.009280233527716465
+      ]
+    },
+    "rank": {
+      "Jacobian_raw": [
+        [
+          2.5998191581422248,
+          -3.3806170203209973
+        ],
+        [
+          -0.056356635431131785,
+          0.1683673480272485
+        ]
+      ],
+      "determinant_raw": 0.24720445606033067,
+      "jacobian_step_convergence": 1.1021971914499985e-09,
+      "rank_raw": 2,
+      "singular_values_raw": [
+        4.267997181943059,
+        0.05792048249378249
+      ],
+      "step": 0.0001
+    },
+    "scale": {
+      "dimensionless_joint_residual": 1.776573666601473e-15,
+      "proper_time_difference": 3.839220178284501,
+      "scale_factor": 1.47,
+      "scale_null_derivative": [
+        -8.881784197001251e-11,
+        1.3877787807814455e-12
+      ],
+      "scale_null_residual": 8.882868333007364e-11,
+      "scale_orbit": [
+        [
+          1,
+          7,
+          4,
+          8.168553570818094,
+          -0.15942672099616947
+        ],
+        [
+          1.47,
+          10.29,
+          5.88,
+          12.007773749102595,
+          -0.15942672099616945
+        ]
+      ],
+      "three_parameter_rank": 2
+    },
+    "scan": {
+      "domain": "rho_o in {5.5,7,9,12}; rho_m=2+(rho_o-2) frac; frac in {.58,.70,.82,.92}",
+      "minimum_interior_singular_value": 0.00017366826156943785,
+      "sample_count": 16,
+      "samples": [
+        {
+          "rho_m": 4.029999999999999,
+          "rho_o": 5.5,
+          "singular_values": [
+            4.176381108254836,
+            0.027049375332299362
+          ]
+        },
+        {
+          "rho_m": 4.449999999999999,
+          "rho_o": 5.5,
+          "singular_values": [
+            3.929775364401969,
+            0.011514415589482753
+          ]
+        },
+        {
+          "rho_m": 4.869999999999999,
+          "rho_o": 5.5,
+          "singular_values": [
+            3.7484027885827302,
+            0.0035405128219650117
+          ]
+        },
+        {
+          "rho_m": 5.220000000000001,
+          "rho_o": 5.5,
+          "singular_values": [
+            3.628019048605693,
+            0.0006222118611858998
+          ]
+        },
+        {
+          "rho_m": 4.9,
+          "rho_o": 7,
+          "singular_values": [
+            3.8099674472036402,
+            0.019603919857263476
+          ]
+        },
+        {
+          "rho_m": 5.5,
+          "rho_o": 7,
+          "singular_values": [
+            3.6297255702087403,
+            0.008201442543427872
+          ]
+        },
+        {
+          "rho_m": 6.1,
+          "rho_o": 7,
+          "singular_values": [
+            3.4964864000776092,
+            0.002489126671256042
+          ]
+        },
+        {
+          "rho_m": 6.6000000000000005,
+          "rho_o": 7,
+          "singular_values": [
+            3.4076545591932055,
+            0.00043367914169366106
+          ]
+        },
+        {
+          "rho_m": 6.06,
+          "rho_o": 9,
+          "singular_values": [
+            3.5497533575764297,
+            0.01340159438227924
+          ]
+        },
+        {
+          "rho_m": 6.8999999999999995,
+          "rho_o": 9,
+          "singular_values": [
+            3.4170470671694018,
+            0.005524807324713675
+          ]
+        },
+        {
+          "rho_m": 7.739999999999999,
+          "rho_o": 9,
+          "singular_values": [
+            3.3185032085871544,
+            0.0016588159683509802
+          ]
+        },
+        {
+          "rho_m": 8.440000000000001,
+          "rho_o": 9,
+          "singular_values": [
+            3.2525573522973366,
+            0.000287002835616723
+          ]
+        },
+        {
+          "rho_m": 7.8,
+          "rho_o": 12,
+          "singular_values": [
+            3.344903022950375,
+            0.008348846611151775
+          ]
+        },
+        {
+          "rho_m": 9.0,
+          "rho_o": 12,
+          "singular_values": [
+            3.24980120729316,
+            0.003395984209161416
+          ]
+        },
+        {
+          "rho_m": 10.2,
+          "rho_o": 12,
+          "singular_values": [
+            3.1788819535257336,
+            0.0010099160852113944
+          ]
+        },
+        {
+          "rho_m": 11.200000000000001,
+          "rho_o": 12,
+          "singular_values": [
+            3.1312644561033,
+            0.00017366826156943785
+          ]
+        }
+      ]
+    },
+    "tangent": {
+      "duration_directional_derivative": 4.440892098500626e-16,
+      "duration_gradient": [
+        2.5998191581422248,
+        -3.3806170203209973
+      ],
+      "duration_only_rank": 1,
+      "fixed_duration_tangent": [
+        -0.7926982607997543,
+        -0.6096141954753391
+      ],
+      "rapidity_directional_derivative": -0.05796531852116355,
+      "rapidity_gradient": [
+        -0.056356635431131785,
+        0.1683673480272485
+      ]
+    }
+  },
+  "cross_channel_independence": "NOT_DERIVED_WITHOUT_PHYSICAL_JOINT_COVARIANCE_AND_READOUT",
+  "ell0_identified": false,
+  "gate": "PHYSICAL_CHANNEL_COVARIANCE_ORIENTED_TETRAD_CALIBRATION_FREELY_FALLING_ENDPOINTS_MIRROR_READOUT_ABSOLUTE_STANDARD_AND_ELL0_LAW_NOT_DERIVED",
+  "positive_detection_claim": false,
+  "raw_record": {
+    "Delta_t": 4.83258146374831,
+    "Delta_tau": 8.168553570818094,
+    "H_radar": [
+      [
+        1.0127353798958412,
+        -0.1601029346782993,
+        0.0,
+        0.0
+      ],
+      [
+        -0.16010293467359715,
+        1.012735379894924,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.9999999999999996,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.9999999999999996
+      ]
+    ],
+    "Jacobian_raw": [
+      [
+        2.5998191581422248,
+        -3.3806170203209973
+      ],
+      [
+        -0.056356635431131785,
+        0.1683673480272485
+      ]
+    ],
+    "M": 1,
+    "determinant_raw": 0.24720445606033067,
+    "eta_radar": -0.15942672093282076,
+    "fixed_duration_tangent": [
+      -0.7926982607997543,
+      -0.6096141954753391
+    ],
+    "holonomy_derivative_along_collision": -0.05796531852116355,
+    "orientation": "future inward null, future outward null, past observer closure",
+    "quotient_maps": {
+      "Jacobian_even": [
+        [
+          2.5998191581422248,
+          -3.3806170203209973
+        ],
+        [
+          0.009022862731411507,
+          -0.026956106702336058
+        ]
+      ],
+      "duration_collision": 0.0,
+      "even_holonomy_collision": 0.0,
+      "forward": [
+        8.168553570818094,
+        -0.15942672099616947
+      ],
+      "global_orientation_collision": true,
+      "rank_even_quotient": 2,
+      "raw_orientation_difference": 0.31885344199233895,
+      "reversed": [
+        8.168553570818094,
+        0.15942672099616947
+      ],
+      "singular_values_even": [
+        4.264780535283552,
+        0.009280233527716465
+      ]
+    },
+    "r_m": 4,
+    "r_o": 7,
+    "r_star": [
+      4.0,
+      8.83258146374831
+    ],
+    "rho_m": 4,
+    "rho_o": 7,
+    "scale_factor": 1.47,
+    "scale_orbit": [
+      [
+        1,
+        7,
+        4,
+        8.168553570818094,
+        -0.15942672099616947
+      ],
+      [
+        1.47,
+        10.29,
+        5.88,
+        12.007773749102595,
+        -0.15942672099616945
+      ]
+    ],
+    "singular_values_raw": [
+      4.267997181943059,
+      0.05792048249378249
+    ],
+    "transport_residual": 4.76247466510716e-12
+  },
+  "scope": "SCHWARZSCHILD_STATIC_RADAR_TIMING_AND_LEVI_CIVITA_BOOST_MAP_WITH_IDEAL_MIRROR_COMMON_STATIC_TETRAD_FAMILY_AND_NO_DETECTOR_COVARIANCE",
+  "status": "ANCHORED_RADAR_TIME_AND_BOOST_RAPIDITY_LOCALLY_FULL_RANK_IN_DIMENSIONLESS_ENDPOINT_TOY_MAP_BUT_ORIENTATION_QUOTIENT_GLOBAL_COLLISION_AND_ABSOLUTE_SCALE_BLIND_NOT_ELL0",
+  "structural_dead_end": "NOT_DECLARED",
+  "study_id": "schwarzschild-radar-cross-channel-rank-v1",
+  "umch_status": "UNPROVEN"
+}
