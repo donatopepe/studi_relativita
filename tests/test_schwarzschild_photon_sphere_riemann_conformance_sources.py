@@ -16,7 +16,7 @@ class SchwarzschildPhotonSphereRiemannConformanceSourceTests(unittest.TestCase):
             for key in ("Schwarzschild2003Translation", "Darwin1959GravityField", "Sachs1961"):
                 self.assertIn(key, text)
             self.assertIn("detector", text.lower())
-            self.assertIn("does not", text.lower() if path.name.endswith("-en.md") else text.lower().replace("non ", "does not ", 1))
+            self.assertTrue("do not establish" in text.lower() or "non stabiliscono" in text.lower())
 
     def test_reports_do_not_turn_sources_into_umch_support(self):
         for path in FILES:
