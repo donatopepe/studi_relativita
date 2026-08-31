@@ -4,7 +4,27 @@
 
 Scala storica: `κ₀=ℓ₀⁻¹`; non è più un bound sulla worldline. Ipotesi falsificabile, non è un risultato acquisito.
 
-## Ipotesi
+## Candidato di riformulazione 5D — non ratificato come core scientifico
+
+Una specifica approvata per engineering testa se la gravità 4D osservata possa essere proiezione o settore efficace di una geometria `R^(1,3) x S1` con quinta dimensione compatta. Il primo controllo è scalare, statico e linearizzato; preserva matrici mareali raw, sorgenti/probe localizzati o uniformi e finestre finite. Non dimostra una dimensione extra e non identifica `L` o `ell0`.
+
+```text
+HIGHER_DIMENSIONAL_GRAVITY_CORE=REFORMULATION_CANDIDATE_UNRATIFIED
+MODEL=LINEARIZED_5D_COMPACT_KK_TOY_CONTROL
+UMCH=UNPROVEN_SECONDARY_CANDIDATE
+L_identified=false
+ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
+structural_dead_end=NOT_DECLARED
+NO_POSITIVE_DETECTION_CLAIM
+MODEL_LEVEL_DIMENSIONLESS_KK_SHAPE_DERIVED_NOT_EVIDENCE
+DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
+```
+
+La formulazione operativa 4D sotto resta congelata come precedente `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline resta `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. `F_0` e risultati negativi restano autorità storica.
+
+## Ipotesi operativa 4D congelata
 
 Il nostro universo reale è globalmente non-Minkowski e potrebbe possedere una risposta geometrica operativa non nulla su ogni regione fisica ammissibile a scala
 
