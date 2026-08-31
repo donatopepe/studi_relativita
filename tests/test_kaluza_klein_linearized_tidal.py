@@ -63,5 +63,40 @@ class KaluzaKleinCircleAndPointTidalTests(unittest.TestCase):
         self.assertGreater(control["n_used"], 5)
 
 
+class KaluzaKleinFiniteSourceTests(unittest.TestCase):
+    def test_source_profiles_are_normalized_with_declared_width(self):
+        sphere = kk.source_profile_control("uniform_sphere", size=0.4)
+        gaussian = kk.source_profile_control("gaussian", size=0.4)
+        self.assertLess(abs(sphere["normalization"] - 1.0), 1e-8)
+        self.assertLess(abs(gaussian["normalization"] - 1.0), 1e-8)
+        self.assertEqual(gaussian["width_convention"], "ONE_DIMENSIONAL_COMPONENT_STANDARD_DEVIATION_SIGMA")
+
+    def test_uniform_circle_finite_sources_remain_zero_mode_only(self):
+        for profile in ("uniform_sphere", "gaussian"):
+            result = kk.finite_source_response(r=2.0, L=1.0, source_profile_3d=profile, source_size=0.3,
+                                               source_S1_profile="uniform", probe_S1_profile="localized")
+            point = kk.point_response(r=2.0, L=1.0, source_profile="uniform", probe_profile="localized")
+            self.assertLess(kk.matrix_residual(result["T_matrix"], point["T_matrix"]), 2e-5)
+            self.assertEqual(result["circle_projection"]["classification"], NULL_PROJECTION)
+
+    def test_finite_sources_converge_to_point_source(self):
+        point = kk.point_response(r=1.5, L=0.8)
+        sphere = kk.finite_source_response(r=1.5, L=0.8, source_profile_3d="uniform_sphere", source_size=0.01)
+        gaussian = kk.finite_source_response(r=1.5, L=0.8, source_profile_3d="gaussian", source_size=0.01)
+        self.assertLess(kk.matrix_residual(sphere["T_matrix"], point["T_matrix"]), 2e-3)
+        self.assertLess(kk.matrix_residual(gaussian["T_matrix"], point["T_matrix"]), 2e-3)
+
+    def test_finite_size_changes_localized_kk_shape(self):
+        small = kk.finite_source_response(r=1.4, L=1.0, source_profile_3d="gaussian", source_size=0.1)
+        large = kk.finite_source_response(r=1.4, L=1.0, source_profile_3d="gaussian", source_size=0.5)
+        self.assertGreater(kk.matrix_residual(small["T_matrix"], large["T_matrix"]), 1e-4)
+        self.assertEqual(large["classification"], "SOURCE_PROFILE_AND_WINDOW_SHAPE_ARE_PREPARATION_NUISANCES_NOT_INTRINSIC_GEOMETRY")
+
+    def test_quadrature_refinement_is_certified(self):
+        result = kk.finite_source_response(r=1.8, L=0.9, source_profile_3d="uniform_sphere", source_size=0.35)
+        self.assertTrue(result["quadrature_certificate"]["converged"])
+        self.assertLess(result["quadrature_certificate"]["residual"], 3e-4)
+
+
 if __name__ == "__main__":
     unittest.main()
