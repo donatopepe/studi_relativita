@@ -20,7 +20,7 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
-## Frozen unified authoritative paper
+## Unified authoritative paper — frozen prior core
 
 Current synthesis is [`papers/umch`](../papers/umch/README.md), bilingual and authoritative. Earlier foundation, classical-dynamics, and spacetime-foundations papers remain historical technical records. Core remains `UNPROVEN`; overall result is `NO_POSITIVE_DETECTION_CLAIM`.
 

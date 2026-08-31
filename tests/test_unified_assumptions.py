@@ -1,6 +1,6 @@
 import csv,pathlib,unittest
 R=pathlib.Path(__file__).resolve().parents[1];P=R/'audit'/'unified-assumptions.csv'
-REQ={'UMCH-A-0001','UMCH-A-0002','UMCH-A-0003','UMCH-A-0004','UMCH-A-0005','UMCH-A-0006','UMCH-A-0007','UMCH-A-0008','UMCH-A-0009','UMCH-A-0010','UMCH-A-0011','UMCH-A-0012','UMCH-A-0013'}
+REQ={f'UMCH-A-{i:04d}' for i in range(1,17)}
 class Assumptions(unittest.TestCase):
  def rows(self):
   with P.open() as f:return list(csv.DictReader(f))
