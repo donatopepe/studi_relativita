@@ -227,3 +227,75 @@ def finite_source_response(r: float, L: float, source_profile_3d: str, source_si
         "quadrature_certificate": {"converged": residual < 3e-4, "residual": residual, "coarse_grid": [32, 40], "fine_grid": [64, 80]},
         "classification": "SOURCE_PROFILE_AND_WINDOW_SHAPE_ARE_PREPARATION_NUISANCES_NOT_INTRINSIC_GEOMETRY",
     }
+
+
+def radial_shell_window(r_center: float, width: float, L: float, n: int = 80) -> dict:
+    _validate(r_center, L)
+    if width <= 0.0 or n < 2 or r_center - width / 2.0 <= 0.0:
+        raise ValueError("radial shell must exclude singular support")
+    dr = width / n
+    parallel = perpendicular = 0.0
+    for index in range(n):
+        radius = r_center - width / 2.0 + (index + 0.5) * dr
+        local = point_response(radius, L)
+        parallel += local["T_parallel"] / n
+        perpendicular += local["T_perpendicular"] / n
+    return {
+        "T_window_matrix": [[parallel, 0.0, 0.0], [0.0, perpendicular, 0.0], [0.0, 0.0, perpendicular]],
+        "window_family": "radial_shell",
+        "window_geometry": {"r_center": r_center, "width": width},
+        "kernel_normalization": 1.0,
+        "transport_convention": "FLAT_BACKGROUND_RADIAL_EIGENFRAME",
+    }
+
+
+def _rotation_z(angle: float) -> list[list[float]]:
+    c, s = math.cos(angle), math.sin(angle)
+    return [[c, -s, 0.0], [s, c, 0.0], [0.0, 0.0, 1.0]]
+
+
+def _matmul(left: list[list[float]], right: list[list[float]]) -> list[list[float]]:
+    return [[sum(left[i][k] * right[k][j] for k in range(3)) for j in range(3)] for i in range(3)]
+
+
+def rotate_matrix_z(matrix: list[list[float]], angle: float) -> list[list[float]]:
+    rotation = _rotation_z(angle)
+    transpose = [[rotation[j][i] for j in range(3)] for i in range(3)]
+    return _matmul(_matmul(rotation, matrix), transpose)
+
+
+def oriented_box_window(center: tuple[float, float, float], dimensions: tuple[float, float, float], L: float,
+                        angle: float = 0.0, n_per_axis: int = 5) -> dict:
+    if any(value <= 0.0 for value in dimensions) or n_per_axis < 2:
+        raise ValueError("box dimensions and quadrature must be positive")
+    center_radius = math.sqrt(sum(value * value for value in center))
+    _validate(center_radius, L)
+    half_diagonal = 0.5 * math.sqrt(sum(value * value for value in dimensions))
+    if center_radius <= half_diagonal:
+        raise ValueError("oriented region intersects singular support")
+    rotation = _rotation_z(angle)
+    total = [[0.0] * 3 for _ in range(3)]
+    count = n_per_axis**3
+    for i in range(n_per_axis):
+        for j in range(n_per_axis):
+            for k in range(n_per_axis):
+                local = [
+                    ((i + 0.5) / n_per_axis - 0.5) * dimensions[0],
+                    ((j + 0.5) / n_per_axis - 0.5) * dimensions[1],
+                    ((k + 0.5) / n_per_axis - 0.5) * dimensions[2],
+                ]
+                offset = [sum(rotation[a][b] * local[b] for b in range(3)) for a in range(3)]
+                point = [center[a] + offset[a] for a in range(3)]
+                radius = math.sqrt(sum(value * value for value in point))
+                matrix = point_response(radius, L, direction=tuple(point))["T_matrix"]
+                for a in range(3):
+                    for b in range(3):
+                        total[a][b] += matrix[a][b] / count
+    return {
+        "T_window_matrix": total,
+        "window_family": "oriented_box",
+        "window_geometry": {"center": list(center), "dimensions": list(dimensions)},
+        "window_orientation": angle,
+        "kernel_normalization": 1.0,
+        "transport_convention": "FLAT_BACKGROUND_CARTESIAN_IDENTITY",
+    }

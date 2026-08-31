@@ -98,5 +98,41 @@ class KaluzaKleinFiniteSourceTests(unittest.TestCase):
         self.assertLess(result["quadrature_certificate"]["residual"], 3e-4)
 
 
+class KaluzaKleinFiniteWindowTests(unittest.TestCase):
+    def test_radial_shell_zero_window_recovers_pointwise_matrix(self):
+        point = kk.point_response(r=2.0, L=0.8)
+        shell = kk.radial_shell_window(r_center=2.0, width=0.002, L=0.8, n=80)
+        self.assertLess(kk.matrix_residual(shell["T_window_matrix"], point["T_matrix"]), 2e-5)
+        self.assertEqual(shell["window_family"], "radial_shell")
+        self.assertAlmostEqual(shell["kernel_normalization"], 1.0)
+
+    def test_radial_shell_rejects_singular_support(self):
+        with self.assertRaises(ValueError):
+            kk.radial_shell_window(r_center=0.2, width=0.5, L=1.0)
+
+    def test_oriented_region_matrix_is_symmetric(self):
+        region = kk.oriented_box_window(center=(2.0, 0.0, 0.0), dimensions=(0.4, 0.2, 0.1), L=0.9,
+                                        angle=0.3, n_per_axis=6)
+        matrix = region["T_window_matrix"]
+        for i in range(3):
+            for j in range(3):
+                self.assertAlmostEqual(matrix[i][j], matrix[j][i], places=12)
+        self.assertEqual(region["transport_convention"], "FLAT_BACKGROUND_CARTESIAN_IDENTITY")
+
+    def test_oriented_region_is_rotation_covariant(self):
+        base = kk.oriented_box_window(center=(2.0, 0.0, 0.0), dimensions=(0.5, 0.2, 0.1), L=1.0,
+                                      angle=0.0, n_per_axis=7)
+        rotated = kk.oriented_box_window(center=(0.0, 2.0, 0.0), dimensions=(0.5, 0.2, 0.1), L=1.0,
+                                         angle=math.pi / 2.0, n_per_axis=7)
+        expected = kk.rotate_matrix_z(base["T_window_matrix"], math.pi / 2.0)
+        self.assertLess(kk.matrix_residual(rotated["T_window_matrix"], expected), 2e-10)
+
+    def test_oriented_region_zero_window_recovers_pointwise_matrix(self):
+        region = kk.oriented_box_window(center=(2.0, 0.0, 0.0), dimensions=(0.002, 0.001, 0.001), L=0.8,
+                                        angle=0.4, n_per_axis=5)
+        point = kk.point_response(r=2.0, L=0.8)
+        self.assertLess(kk.matrix_residual(region["T_window_matrix"], point["T_matrix"]), 2e-5)
+
+
 if __name__ == "__main__":
     unittest.main()
