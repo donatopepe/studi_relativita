@@ -397,6 +397,27 @@ These canonical geometry sources support background mathematics only. They do no
 - Project use: the photon-sphere finite-arc cross-map derives open-arc transport, a screen phase map, boundary/caustic controls, endpoint quotients, scale orbits and a joint-rank diagnostic. These are project derivations, not quoted source results.
 - Explicit exclusions: neither source establishes open-arc transport as detector readout, endpoint tetrads, finite-window selection, an affine frequency standard, screen preparation, caustic continuation, vector readout, detector response, covariance, an `ell0` law, UMCH, evidence or detection.
 
+## Liu2003CompactifiedPotential
+
+- **Metadata checked:** arXiv API record for Hongya Liu, *Compactified Newtonian Potential and a Possible Explanation for Dark Matter*, arXiv `hep-ph/0312200` (v2 inspected). No journal or DOI metadata is claimed.
+- **Inspected scope:** equations (3), (6), (7), (8), (13), and (14). The paper defines circle circumference `L=2*pi*R`, derives the image sum and exact compact-circle point potential, checks the vacuum Laplace equation, gives the radial force, uses normalization `G4=G5/(4*R)`, and gives the same-circle large-distance expansion.
+- **Project use:** the exact compact-circle point potential and large-distance expansion provide an independent reference for the static scalar mode sum. The tidal Hessian is a project weak-field derivation obtained by differentiating the declared Newtonian scalar potential; it is not a sourced full tensor result.
+- **Scope limit:** the source does not establish a complete five-dimensional tensor perturbation, gauge-fixed relativistic tidal observable, finite-window operator, source preparation, probe preparation, identifiability, physical receiver, calibrated covariance, `ell0`, UMCH, evidence, or detection.
+
+## FloratosLeontaris1999
+
+- **Metadata checked:** arXiv API and DOI metadata for E. G. Floratos and G. K. Leontaris, *Low Scale Unification, Newton's Law and Extra Dimensions*, *Physics Letters B* **465** (1999) 95--100, DOI `10.1016/S0370-2693(99)01019-9`, arXiv `hep-ph/9906238`.
+- **Inspected scope:** equations (6), (7), (10), (11), (14), and (15). These display Fourier propagation on a compact torus, the full KK tower for the static potential, the one-circle mode sum, the short-distance higher-dimensional expansion, and the long-distance Yukawa expansion.
+- **Project use:** independent mode-sum and long/short-distance conformance only. The source does not uniquely fix every normalization convention used by a separate project implementation.
+- **Scope limit:** the source does not establish finite-window averaging, source preparation, probe preparation, source-size/window degeneracy, global identifiability, receiver transfer, calibrated covariance, `ell0`, UMCH, evidence, or detection.
+
+## KehagiasSfetsos2000
+
+- **Metadata checked:** arXiv API and DOI metadata for A. Kehagias and K. Sfetsos, *Deviations from the 1/r^2 Newton law due to extra dimensions*, *Physics Letters B* **472** (2000) 39--44, DOI `10.1016/S0370-2693(99)01421-5`, arXiv `hep-ph/9905417`.
+- **Inspected scope:** equations (1), (9), (10), (11), (12), (13), and (19). These give the Yukawa parameterization, exact torus sum, leading lightest KK correction, orthogonality/completeness and Laplacian eigenvalues, and general compact-manifold mode sum. The range is the inverse lightest KK mass and the leading strength is its degeneracy.
+- **Project use:** spectral and long-distance checks, especially lightest KK range and degeneracy. It is not authority for the project's full finite-window record.
+- **Scope limit:** the source does not establish finite-window response, localized source preparation, uniform source preparation, probe preparation, absolute compactification-scale identifiability, physical receiver, calibrated covariance, `ell0`, UMCH, evidence, or detection.
+
 ## Schwarzschild photon-sphere finite arc with freely falling endpoint frames project scope
 
 - Status: `PROJECT_DERIVATION_SCOPE_BOUND`.

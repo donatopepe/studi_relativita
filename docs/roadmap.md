@@ -1,6 +1,26 @@
 # UMCH unified research roadmap
 
-## Unified authoritative paper
+## Unratified compact 5D core candidate
+
+Engineering-ratified candidate asks whether observed 4D gravity is a projection/effective sector of linearized `R^(1,3) x S1` geometry. Localized source–probe preparations retain KK tower shape; uniform profiles project it out. Source/window scales and joint dilation retain absolute-scale blindness.
+
+```text
+HIGHER_DIMENSIONAL_GRAVITY_CORE=REFORMULATION_CANDIDATE_UNRATIFIED
+MODEL=LINEARIZED_5D_COMPACT_KK_TOY_CONTROL
+UMCH=UNPROVEN_SECONDARY_CANDIDATE
+L_identified=false
+ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
+structural_dead_end=NOT_DECLARED
+NO_POSITIVE_DETECTION_CLAIM
+MODEL_LEVEL_DIMENSIONLESS_KK_SHAPE_DERIVED_NOT_EVIDENCE
+DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
+```
+
+Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
+
+## Unified authoritative paper — frozen prior core
 
 Current synthesis is [`papers/umch`](../papers/umch/README.md), bilingual and authoritative. Earlier foundation, classical-dynamics, and spacetime-foundations papers remain historical technical records. Core remains `UNPROVEN`; overall result is `NO_POSITIVE_DETECTION_CLAIM`.
 
