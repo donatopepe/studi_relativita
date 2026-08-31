@@ -299,3 +299,78 @@ def oriented_box_window(center: tuple[float, float, float], dimensions: tuple[fl
         "kernel_normalization": 1.0,
         "transport_convention": "FLAT_BACKGROUND_CARTESIAN_IDENTITY",
     }
+
+
+def _scaled_matrix(matrix: list[list[float]], factor: float) -> list[list[float]]:
+    return [[factor * matrix[i][j] for j in range(3)] for i in range(3)]
+
+
+def geometric_scale_control(scale: float, r: float, L: float, source_size: float, window_width: float) -> dict:
+    if scale <= 0.0:
+        raise ValueError("scale must be positive")
+    base = point_response(r, L)["T_matrix"]
+    scaled = point_response(scale * r, scale * L)["T_matrix"]
+    # Fixed dimensionless coupling-amplitude convention: Hessian scales as length^-3.
+    point_residual = matrix_residual(base, _scaled_matrix(scaled, scale**3))
+    shell = radial_shell_window(r, window_width, L)["T_window_matrix"]
+    scaled_shell = radial_shell_window(scale * r, scale * window_width, scale * L)["T_window_matrix"]
+    shell_residual = matrix_residual(shell, _scaled_matrix(scaled_shell, scale**3))
+    return {
+        "dimensionless_point_matrix_residual": point_residual,
+        "dimensionless_shell_matrix_residual": shell_residual,
+        "source_size_ratio": source_size / L,
+        "classification": "JOINT_5D_GEOMETRIC_DILATION_NOT_INTERIOR_ABSOLUTE_SCALE",
+    }
+
+
+def _dimensionless_features(log_L: float, source_ratio: float, window_ratio: float) -> list[float]:
+    L = math.exp(log_L)
+    radius = 2.0 * L
+    point = point_response(radius, L)
+    shell = radial_shell_window(radius, window_ratio * L, L)
+    pscale = L**3
+    return [
+        point["T_parallel"] * pscale,
+        point["T_perpendicular"] * pscale,
+        shell["T_window_matrix"][0][0] * pscale,
+        shell["T_window_matrix"][1][1] * pscale,
+        source_ratio,
+    ]
+
+
+def rank_control(r_over_L: float = 2.0, source_size_over_L: float = 0.25, window_width_over_L: float = 0.3) -> dict:
+    if abs(r_over_L - 2.0) > 1e-12:
+        raise ValueError("bounded rank baseline currently preregisters r_over_L=2")
+    base = [0.0, source_size_over_L, window_width_over_L]
+    step = 1e-5
+    columns = []
+    for index in range(3):
+        plus = base[:]
+        minus = base[:]
+        plus[index] += step
+        minus[index] -= step
+        fplus = _dimensionless_features(*plus)
+        fminus = _dimensionless_features(*minus)
+        columns.append([(fplus[j] - fminus[j]) / (2.0 * step) for j in range(len(fplus))])
+    norms = [math.sqrt(sum(value * value for value in column)) for column in columns]
+    # Source-ratio and window-ratio columns are linearly independent in this declared feature map.
+    rank = sum(norm > 1e-8 for norm in norms)
+    return {
+        "parameters": ["log_L", "source_size_over_L", "window_width_over_L"],
+        "log_L_column_norm": norms[0],
+        "column_norms": norms,
+        "rank": rank,
+        "scale_null_direction": [1.0, 0.0, 0.0],
+        "classification": "L_NOT_IDENTIFIABLE_WITHOUT_SOURCE_PROBE_AND_WINDOW_CALIBRATION",
+    }
+
+
+def identifiability_gate() -> dict:
+    return {
+        "L_identified": False,
+        "ell0_identified": False,
+        "L_equals_ell0": "NOT_DERIVED",
+        "extra_dimension_detected": False,
+        "dependence": "DEPENDENCE_UNRESOLVED_WITHOUT_JOINT_COVARIANCE",
+        "physical_gate": "NONLINEAR_5D_DYNAMICS_RADION_STABILIZATION_MATTER_LOCALIZATION_SOURCE_PROBE_PREPARATION_ABSOLUTE_COUPLING_CLOCK_RECEIVER_CALIBRATED_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED",
+    }
