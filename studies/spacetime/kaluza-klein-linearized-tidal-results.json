@@ -1,0 +1,453 @@
+{
+  "asymptotic_controls": {
+    "long": {
+      "long_distance_relative_residual": 0.0,
+      "short_distance_scaled_residual": 9.0
+    },
+    "short": {
+      "long_distance_relative_residual": 199.00167,
+      "short_distance_scaled_residual": 8.3333178e-06
+    }
+  },
+  "baseline": {
+    "L": 1.0,
+    "r": 2.0,
+    "shell_width": 0.3,
+    "source_size": 0.25
+  },
+  "convergence": {
+    "converged": true,
+    "exact": 50.166556,
+    "mode_sum": 50.166556,
+    "n_used": 123,
+    "residual": 0.0
+  },
+  "identifiability_gate": {
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "dependence": "DEPENDENCE_UNRESOLVED_WITHOUT_JOINT_COVARIANCE",
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "physical_gate": "NONLINEAR_5D_DYNAMICS_RADION_STABILIZATION_MATTER_LOCALIZATION_SOURCE_PROBE_PREPARATION_ABSOLUTE_COUPLING_CLOCK_RECEIVER_CALIBRATED_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED"
+  },
+  "point_localized_localized": {
+    "L": 1.0,
+    "Phi_auxiliary": -0.65651764,
+    "T_matrix": [
+      [
+        -0.74695386,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.25463712,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.25463712
+      ]
+    ],
+    "T_parallel": -0.74695386,
+    "T_perpendicular": 0.25463712,
+    "grad_Phi_radial_auxiliary": 0.50927424,
+    "interpretation": "PROJECT_WEAK_FIELD_NEWTONIAN_HESSIAN_NOT_COMPLETE_5D_TENSOR_OR_EVIDENCE",
+    "primary_object": "FULL_SPATIAL_TIDAL_HESSIAN",
+    "probe_S1_profile": "localized",
+    "reconstruction_residual": 0.0,
+    "source_S1_profile": "localized",
+    "source_probe_relative_S1_position": 0.0
+  },
+  "projection_controls": [
+    {
+      "classification": "LOCALIZED_SOURCE_PROBE_KK_MODES_RETAINED",
+      "probe_S1_profile": "localized",
+      "source_S1_profile": "localized",
+      "weights": [
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "classification": "UNIFORM_S1_SOURCE_OR_PROBE_PROJECTS_NONZERO_KK_MODES_NOT_ABSENCE_OF_EXTRA_DIMENSION",
+      "probe_S1_profile": "uniform",
+      "source_S1_profile": "localized",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "classification": "UNIFORM_S1_SOURCE_OR_PROBE_PROJECTS_NONZERO_KK_MODES_NOT_ABSENCE_OF_EXTRA_DIMENSION",
+      "probe_S1_profile": "localized",
+      "source_S1_profile": "uniform",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "classification": "UNIFORM_S1_SOURCE_OR_PROBE_PROJECTS_NONZERO_KK_MODES_NOT_ABSENCE_OF_EXTRA_DIMENSION",
+      "probe_S1_profile": "uniform",
+      "source_S1_profile": "uniform",
+      "weights": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "rank_control": {
+    "classification": "L_NOT_IDENTIFIABLE_WITHOUT_SOURCE_PROBE_AND_WINDOW_CALIBRATION",
+    "column_norms": [
+      0.0,
+      1.0,
+      0.10117319
+    ],
+    "log_L_column_norm": 0.0,
+    "parameters": [
+      "log_L",
+      "source_size_over_L",
+      "window_width_over_L"
+    ],
+    "rank": 2,
+    "scale_null_direction": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  "result": "LOCALIZED_SOURCE_PROBE_KK_TOWER_ADDS_DIMENSIONLESS_FINITE_WINDOW_TIDAL_SHAPE_BUT_UNIFORM_PROFILE_PROJECTION_SOURCE_WINDOW_DEGENERACY_AND_JOINT_5D_DILATION_PREVENT_ABSOLUTE_SCALE_OR_ELL0_IDENTIFICATION",
+  "scale_control": {
+    "classification": "JOINT_5D_GEOMETRIC_DILATION_NOT_INTERIOR_ABSOLUTE_SCALE",
+    "dimensionless_point_matrix_residual": 0.0,
+    "dimensionless_shell_matrix_residual": 0.0,
+    "source_size_ratio": 0.22222222
+  },
+  "source_controls": [
+    {
+      "T_matrix": [
+        [
+          -0.75482779,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.25618664,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.25618664
+        ]
+      ],
+      "T_parallel": -0.75482779,
+      "T_perpendicular": 0.25618664,
+      "circle_projection": {
+        "classification": "LOCALIZED_SOURCE_PROBE_KK_MODES_RETAINED",
+        "probe_S1_profile": "localized",
+        "source_S1_profile": "localized",
+        "weights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "classification": "SOURCE_PROFILE_AND_WINDOW_SHAPE_ARE_PREPARATION_NUISANCES_NOT_INTRINSIC_GEOMETRY",
+      "primary_object": "FULL_SPATIAL_TIDAL_HESSIAN",
+      "probe_S1_profile": "localized",
+      "quadrature_certificate": {
+        "coarse_grid": [
+          32,
+          40
+        ],
+        "converged": true,
+        "fine_grid": [
+          64,
+          80
+        ],
+        "residual": 0.00015813286
+      },
+      "source_3d_profile": "uniform_sphere",
+      "source_S1_profile": "localized",
+      "source_size": 0.25
+    },
+    {
+      "T_matrix": [
+        [
+          -0.24998354,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.12499177,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.12499177
+        ]
+      ],
+      "T_parallel": -0.24998354,
+      "T_perpendicular": 0.12499177,
+      "circle_projection": {
+        "classification": "UNIFORM_S1_SOURCE_OR_PROBE_PROJECTS_NONZERO_KK_MODES_NOT_ABSENCE_OF_EXTRA_DIMENSION",
+        "probe_S1_profile": "localized",
+        "source_S1_profile": "uniform",
+        "weights": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "classification": "SOURCE_PROFILE_AND_WINDOW_SHAPE_ARE_PREPARATION_NUISANCES_NOT_INTRINSIC_GEOMETRY",
+      "primary_object": "FULL_SPATIAL_TIDAL_HESSIAN",
+      "probe_S1_profile": "localized",
+      "quadrature_certificate": {
+        "coarse_grid": [
+          32,
+          40
+        ],
+        "converged": true,
+        "fine_grid": [
+          64,
+          80
+        ],
+        "residual": 4.9389492e-05
+      },
+      "source_3d_profile": "uniform_sphere",
+      "source_S1_profile": "uniform",
+      "source_size": 0.25
+    },
+    {
+      "T_matrix": [
+        [
+          -0.79043481,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.26298772,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.26298772
+        ]
+      ],
+      "T_parallel": -0.79043481,
+      "T_perpendicular": 0.26298772,
+      "circle_projection": {
+        "classification": "LOCALIZED_SOURCE_PROBE_KK_MODES_RETAINED",
+        "probe_S1_profile": "localized",
+        "source_S1_profile": "localized",
+        "weights": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ]
+      },
+      "classification": "SOURCE_PROFILE_AND_WINDOW_SHAPE_ARE_PREPARATION_NUISANCES_NOT_INTRINSIC_GEOMETRY",
+      "primary_object": "FULL_SPATIAL_TIDAL_HESSIAN",
+      "probe_S1_profile": "localized",
+      "quadrature_certificate": {
+        "coarse_grid": [
+          32,
+          40
+        ],
+        "converged": true,
+        "fine_grid": [
+          64,
+          80
+        ],
+        "residual": 0.00019010648
+      },
+      "source_3d_profile": "gaussian",
+      "source_S1_profile": "localized",
+      "source_size": 0.25
+    },
+    {
+      "T_matrix": [
+        [
+          -0.24998843,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.12499421,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.12499421
+        ]
+      ],
+      "T_parallel": -0.24998843,
+      "T_perpendicular": 0.12499421,
+      "circle_projection": {
+        "classification": "UNIFORM_S1_SOURCE_OR_PROBE_PROJECTS_NONZERO_KK_MODES_NOT_ABSENCE_OF_EXTRA_DIMENSION",
+        "probe_S1_profile": "localized",
+        "source_S1_profile": "uniform",
+        "weights": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "classification": "SOURCE_PROFILE_AND_WINDOW_SHAPE_ARE_PREPARATION_NUISANCES_NOT_INTRINSIC_GEOMETRY",
+      "primary_object": "FULL_SPATIAL_TIDAL_HESSIAN",
+      "probe_S1_profile": "localized",
+      "quadrature_certificate": {
+        "coarse_grid": [
+          32,
+          40
+        ],
+        "converged": true,
+        "fine_grid": [
+          64,
+          80
+        ],
+        "residual": 3.4581584e-05
+      },
+      "source_3d_profile": "gaussian",
+      "source_S1_profile": "uniform",
+      "source_size": 0.25
+    }
+  ],
+  "status": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "HIGHER_DIMENSIONAL_GRAVITY_CORE": "REFORMULATION_CANDIDATE_UNRATIFIED",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "MODEL": "LINEARIZED_5D_COMPACT_KK_TOY_CONTROL",
+    "Maximum_interpretation": "MODEL_LEVEL_DIMENSIONLESS_KK_SHAPE_DERIVED_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "window_controls": {
+    "oriented_box": {
+      "T_window_matrix": [
+        [
+          -0.76660988,
+          0.0034369159,
+          0.0
+        ],
+        [
+          0.0034369159,
+          0.26054791,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.26139911
+        ]
+      ],
+      "kernel_normalization": 1.0,
+      "transport_convention": "FLAT_BACKGROUND_CARTESIAN_IDENTITY",
+      "window_family": "oriented_box",
+      "window_geometry": {
+        "center": [
+          2.0,
+          0.0,
+          0.0
+        ],
+        "dimensions": [
+          0.4,
+          0.2,
+          0.1
+        ]
+      },
+      "window_orientation": 0.3
+    },
+    "radial_shell": {
+      "T_window_matrix": [
+        [
+          -0.76118202,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.25937908,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.25937908
+        ]
+      ],
+      "kernel_normalization": 1.0,
+      "transport_convention": "FLAT_BACKGROUND_RADIAL_EIGENFRAME",
+      "window_family": "radial_shell",
+      "window_geometry": {
+        "r_center": 2.0,
+        "width": 0.3
+      }
+    }
+  }
+}
