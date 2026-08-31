@@ -1,6 +1,9 @@
 import importlib.util
+import json
 import math
 import pathlib
+import subprocess
+import tempfile
 import unittest
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
@@ -156,6 +159,37 @@ class KaluzaKleinIdentifiabilityTests(unittest.TestCase):
         self.assertFalse(result["extra_dimension_detected"])
         self.assertEqual(result["dependence"], "DEPENDENCE_UNRESOLVED_WITHOUT_JOINT_COVARIANCE")
         self.assertIn("NONLINEAR_5D_DYNAMICS", result["physical_gate"])
+
+
+class KaluzaKleinArtifactTests(unittest.TestCase):
+    def test_result_preserves_raw_records_and_guardrails(self):
+        result = kk.build_result()
+        self.assertEqual(result["status"]["HIGHER_DIMENSIONAL_GRAVITY_CORE"], "REFORMULATION_CANDIDATE_UNRATIFIED")
+        self.assertFalse(result["status"]["L_identified"])
+        self.assertFalse(result["status"]["ell0_identified"])
+        self.assertFalse(result["status"]["extra_dimension_detected"])
+        self.assertEqual(result["status"]["Detection"], "NO_POSITIVE_DETECTION_CLAIM")
+        self.assertIn("T_matrix", result["point_localized_localized"])
+        self.assertEqual(len(result["source_controls"]), 4)
+        self.assertIn("radial_shell", result["window_controls"])
+        self.assertIn("oriented_box", result["window_controls"])
+
+    def test_stable_conversion_uses_eight_significant_digits(self):
+        converted = kk.stable({"small": 1.1e-7, "zero": 9e-9, "value": 1.234567891})
+        self.assertEqual(converted["zero"], 0.0)
+        self.assertEqual(converted["small"], 1.1e-7)
+        self.assertEqual(converted["value"], 1.2345679)
+
+    def test_artifact_is_deterministic_and_checkable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            target = pathlib.Path(directory) / "result.json"
+            first = kk.render(kk.build_result())
+            second = kk.render(kk.build_result())
+            self.assertEqual(first, second)
+            target.write_text(first)
+            self.assertEqual(json.loads(first)["status"]["L_equals_ell0"], "NOT_DERIVED")
+        completed = subprocess.run(["python3", str(PATH), "--check"], cwd=ROOT, capture_output=True, text=True)
+        self.assertEqual(completed.returncode, 0, completed.stdout + completed.stderr)
 
 
 if __name__ == "__main__":

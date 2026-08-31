@@ -7,7 +7,10 @@ not a complete gauge-fixed five-dimensional tensor perturbation or evidence.
 
 from __future__ import annotations
 
+import json
 import math
+import pathlib
+import sys
 
 NULL_PROJECTION = "UNIFORM_S1_SOURCE_OR_PROBE_PROJECTS_NONZERO_KK_MODES_NOT_ABSENCE_OF_EXTRA_DIMENSION"
 
@@ -374,3 +377,79 @@ def identifiability_gate() -> dict:
         "dependence": "DEPENDENCE_UNRESOLVED_WITHOUT_JOINT_COVARIANCE",
         "physical_gate": "NONLINEAR_5D_DYNAMICS_RADION_STABILIZATION_MATTER_LOCALIZATION_SOURCE_PROBE_PREPARATION_ABSOLUTE_COUPLING_CLOCK_RECEIVER_CALIBRATED_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED",
     }
+
+
+def stable(value):
+    if isinstance(value, float):
+        if abs(value) < 1e-7:
+            return 0.0
+        return float(format(value, ".8g"))
+    if isinstance(value, list):
+        return [stable(item) for item in value]
+    if isinstance(value, dict):
+        return {key: stable(value[key]) for key in sorted(value)}
+    return value
+
+
+def build_result() -> dict:
+    L = 1.0
+    point = point_response(r=2.0, L=L)
+    source_controls = []
+    for profile, size in (("uniform_sphere", 0.25), ("gaussian", 0.25)):
+        for circle in ("localized", "uniform"):
+            source_controls.append(finite_source_response(2.0, L, profile, size, circle, "localized"))
+    status = {
+        "HIGHER_DIMENSIONAL_GRAVITY_CORE": "REFORMULATION_CANDIDATE_UNRATIFIED",
+        "MODEL": "LINEARIZED_5D_COMPACT_KK_TOY_CONTROL",
+        "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+        "L_identified": False,
+        "ell0_identified": False,
+        "L_equals_ell0": "NOT_DERIVED",
+        "extra_dimension_detected": False,
+        "structural_dead_end": "NOT_DECLARED",
+        "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+        "Maximum_interpretation": "MODEL_LEVEL_DIMENSIONLESS_KK_SHAPE_DERIVED_NOT_EVIDENCE",
+    }
+    return {
+        "status": status,
+        "baseline": {"L": L, "r": 2.0, "source_size": 0.25, "shell_width": 0.3},
+        "point_localized_localized": point,
+        "projection_controls": [
+            circle_projection_control(source, probe, 8, 0.0, L)
+            for source, probe in (("localized", "localized"), ("localized", "uniform"), ("uniform", "localized"), ("uniform", "uniform"))
+        ],
+        "source_controls": source_controls,
+        "window_controls": {
+            "radial_shell": radial_shell_window(2.0, 0.3, L),
+            "oriented_box": oriented_box_window((2.0, 0.0, 0.0), (0.4, 0.2, 0.1), L, angle=0.3, n_per_axis=5),
+        },
+        "asymptotic_controls": {"long": asymptotic_control(20.0, L), "short": asymptotic_control(0.01, L)},
+        "convergence": convergence_control(0.2, L, tolerance=1e-9),
+        "scale_control": geometric_scale_control(2.5, 1.8, 0.9, 0.2, 0.3),
+        "rank_control": rank_control(),
+        "identifiability_gate": identifiability_gate(),
+        "result": "LOCALIZED_SOURCE_PROBE_KK_TOWER_ADDS_DIMENSIONLESS_FINITE_WINDOW_TIDAL_SHAPE_BUT_UNIFORM_PROFILE_PROJECTION_SOURCE_WINDOW_DEGENERACY_AND_JOINT_5D_DILATION_PREVENT_ABSOLUTE_SCALE_OR_ELL0_IDENTIFICATION",
+    }
+
+
+def render(result: dict) -> str:
+    return json.dumps(stable(result), indent=2, sort_keys=True) + "\n"
+
+
+def main(argv: list[str] | None = None) -> int:
+    args = sys.argv[1:] if argv is None else argv
+    target = pathlib.Path(__file__).with_name("kaluza-klein-linearized-tidal-results.json")
+    content = render(build_result())
+    if "--check" in args:
+        if not target.exists() or target.read_text() != content:
+            print(f"deterministic artifact mismatch: {target}")
+            return 1
+        print(f"deterministic artifact verified: {target}")
+        return 0
+    target.write_text(content)
+    print(target)
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
