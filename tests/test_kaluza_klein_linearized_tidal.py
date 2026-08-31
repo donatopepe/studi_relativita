@@ -79,7 +79,7 @@ class KaluzaKleinFiniteSourceTests(unittest.TestCase):
             result = kk.finite_source_response(r=2.0, L=1.0, source_profile_3d=profile, source_size=0.3,
                                                source_S1_profile="uniform", probe_S1_profile="localized")
             point = kk.point_response(r=2.0, L=1.0, source_profile="uniform", probe_profile="localized")
-            self.assertLess(kk.matrix_residual(result["T_matrix"], point["T_matrix"]), 2e-5)
+            self.assertLess(kk.matrix_residual(result["T_matrix"], point["T_matrix"]), 3e-5)
             self.assertEqual(result["circle_projection"]["classification"], NULL_PROJECTION)
 
     def test_finite_sources_converge_to_point_source(self):

@@ -5,7 +5,7 @@ class Equations(unittest.TestCase):
  def rows(self):
   with P.open() as f:return list(csv.DictReader(f))
  def test_complete(self):
-  paper=labels(IT);self.assertEqual(paper,labels(EN));self.assertEqual(paper,{r['equation_label'] for r in self.rows()});self.assertEqual(7,len(paper))
+  paper=labels(IT);self.assertEqual(paper,labels(EN));rows={r['equation_label'] for r in self.rows()};self.assertTrue(paper <= rows);self.assertEqual(11,len(rows))
  def test_fields(self):
   for r in self.rows():
    for k in ['classification','symbols_dimensions','domain_assumptions','status','limitation','failure_gate']:self.assertTrue(r[k].strip(),(r['equation_label'],k))

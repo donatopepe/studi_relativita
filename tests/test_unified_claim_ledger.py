@@ -4,7 +4,7 @@ class Ledger(unittest.TestCase):
  def rows(self):
   with P.open() as f:return list(csv.DictReader(f))
  def test_all_paper_claims_atomic(self):
-  rows=self.rows();ids={r['claim_id'] for r in rows};expected={f'UMCH-U-{i:04d}' for i in range(1,16)};self.assertEqual(expected,ids)
+  rows=self.rows();ids={r['claim_id'] for r in rows};expected={f'UMCH-U-{i:04d}' for i in range(1,19)};self.assertEqual(expected,ids)
   for r in rows:
    for k in ['classification','status','evidence','limitation','falsifier']:self.assertTrue(r[k].strip(),(r['claim_id'],k))
  def test_bilingual_claim_coverage(self):
