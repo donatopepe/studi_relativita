@@ -150,3 +150,80 @@ def convergence_control(r: float, L: float, delta_y: float = 0.0, tolerance: flo
         if residual < tolerance:
             return {"converged": True, "n_used": n, "residual": residual, "exact": exact, "mode_sum": approximate}
     return {"converged": False, "n_used": max_modes, "residual": residual, "exact": exact, "mode_sum": total / r}
+
+
+def matrix_residual(left: list[list[float]], right: list[list[float]]) -> float:
+    return max(abs(left[i][j] - right[i][j]) for i in range(3) for j in range(3))
+
+
+def source_profile_control(profile: str, size: float) -> dict:
+    if not math.isfinite(size) or size <= 0.0:
+        raise ValueError("source size must be finite and positive")
+    if profile == "uniform_sphere":
+        density = 3.0 / (4.0 * math.pi * size**3)
+        normalization = density * 4.0 * math.pi * size**3 / 3.0
+        return {"profile": profile, "size": size, "normalization": normalization, "width_convention": "COMPACT_SUPPORT_RADIUS_R_S"}
+    if profile == "gaussian":
+        density0 = 1.0 / ((2.0 * math.pi) ** 1.5 * size**3)
+        normalization = density0 * (2.0 * math.pi) ** 1.5 * size**3
+        return {"profile": profile, "size": size, "normalization": normalization, "width_convention": "ONE_DIMENSIONAL_COMPONENT_STANDARD_DEVIATION_SIGMA"}
+    raise ValueError("unknown three-dimensional source profile")
+
+
+def _density(profile: str, size: float, radius: float) -> float:
+    if profile == "uniform_sphere":
+        return 3.0 / (4.0 * math.pi * size**3) if radius <= size else 0.0
+    if profile == "gaussian":
+        return math.exp(-0.5 * (radius / size) ** 2) / ((2.0 * math.pi) ** 1.5 * size**3)
+    raise ValueError("unknown source profile")
+
+
+def _finite_components(r: float, L: float, profile: str, size: float, source_S1_profile: str, probe_S1_profile: str, n_radial: int, n_mu: int) -> tuple[float, float]:
+    radial_max = size if profile == "uniform_sphere" else 7.0 * size
+    dr = radial_max / n_radial
+    dmu = 2.0 / n_mu
+    parallel = 0.0
+    trace = 0.0
+    for a in range(n_radial):
+        source_radius = (a + 0.5) * dr
+        shell_weight = 2.0 * math.pi * source_radius**2 * _density(profile, size, source_radius) * dr * dmu
+        for b in range(n_mu):
+            mu = -1.0 + (b + 0.5) * dmu
+            distance2 = r * r + source_radius**2 - 2.0 * r * source_radius * mu
+            distance = math.sqrt(distance2)
+            if distance < 1e-12:
+                continue
+            local = point_response(distance, L, source_profile=source_S1_profile, probe_profile=probe_S1_profile)
+            cosine = (r - source_radius * mu) / distance
+            local_parallel = local["T_perpendicular"] + (local["T_parallel"] - local["T_perpendicular"]) * cosine**2
+            local_trace = local["T_parallel"] + 2.0 * local["T_perpendicular"]
+            parallel += shell_weight * local_parallel
+            trace += shell_weight * local_trace
+    return parallel, (trace - parallel) / 2.0
+
+
+def finite_source_response(r: float, L: float, source_profile_3d: str, source_size: float,
+                           source_S1_profile: str = "localized", probe_S1_profile: str = "localized") -> dict:
+    _validate(r, L)
+    source_profile_control(source_profile_3d, source_size)
+    if source_profile_3d == "uniform_sphere" and r <= source_size:
+        raise ValueError("baseline compact-source control requires exterior observation")
+    coarse = _finite_components(r, L, source_profile_3d, source_size, source_S1_profile, probe_S1_profile, 32, 40)
+    fine = _finite_components(r, L, source_profile_3d, source_size, source_S1_profile, probe_S1_profile, 64, 80)
+    residual = max(abs(fine[i] - coarse[i]) for i in range(2))
+    parallel, perpendicular = fine
+    matrix = [[parallel, 0.0, 0.0], [0.0, perpendicular, 0.0], [0.0, 0.0, perpendicular]]
+    projection = circle_projection_control(source_S1_profile, probe_S1_profile, 8, 0.0, L)
+    return {
+        "primary_object": "FULL_SPATIAL_TIDAL_HESSIAN",
+        "T_matrix": matrix,
+        "T_parallel": parallel,
+        "T_perpendicular": perpendicular,
+        "source_3d_profile": source_profile_3d,
+        "source_size": source_size,
+        "source_S1_profile": source_S1_profile,
+        "probe_S1_profile": probe_S1_profile,
+        "circle_projection": projection,
+        "quadrature_certificate": {"converged": residual < 3e-4, "residual": residual, "coarse_grid": [32, 40], "fine_grid": [64, 80]},
+        "classification": "SOURCE_PROFILE_AND_WINDOW_SHAPE_ARE_PREPARATION_NUISANCES_NOT_INTRINSIC_GEOMETRY",
+    }
