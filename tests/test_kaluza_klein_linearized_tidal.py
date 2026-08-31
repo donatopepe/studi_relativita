@@ -134,5 +134,29 @@ class KaluzaKleinFiniteWindowTests(unittest.TestCase):
         self.assertLess(kk.matrix_residual(region["T_window_matrix"], point["T_matrix"]), 2e-5)
 
 
+class KaluzaKleinIdentifiabilityTests(unittest.TestCase):
+    def test_joint_geometric_dilation_preserves_dimensionless_tidal_shape(self):
+        control = kk.geometric_scale_control(scale=2.5, r=1.8, L=0.9, source_size=0.2, window_width=0.3)
+        self.assertLess(control["dimensionless_point_matrix_residual"], 1e-10)
+        self.assertLess(control["dimensionless_shell_matrix_residual"], 1e-8)
+        self.assertEqual(control["classification"], "JOINT_5D_GEOMETRIC_DILATION_NOT_INTERIOR_ABSOLUTE_SCALE")
+
+    def test_dimensionless_features_have_zero_absolute_scale_column(self):
+        control = kk.rank_control(r_over_L=2.0, source_size_over_L=0.25, window_width_over_L=0.3)
+        self.assertLess(control["log_L_column_norm"], 1e-8)
+        self.assertEqual(control["scale_null_direction"], [1.0, 0.0, 0.0])
+        self.assertLessEqual(control["rank"], 2)
+        self.assertEqual(control["classification"], "L_NOT_IDENTIFIABLE_WITHOUT_SOURCE_PROBE_AND_WINDOW_CALIBRATION")
+
+    def test_more_records_do_not_claim_physical_independence(self):
+        result = kk.identifiability_gate()
+        self.assertFalse(result["L_identified"])
+        self.assertFalse(result["ell0_identified"])
+        self.assertEqual(result["L_equals_ell0"], "NOT_DERIVED")
+        self.assertFalse(result["extra_dimension_detected"])
+        self.assertEqual(result["dependence"], "DEPENDENCE_UNRESOLVED_WITHOUT_JOINT_COVARIANCE")
+        self.assertIn("NONLINEAR_5D_DYNAMICS", result["physical_gate"])
+
+
 if __name__ == "__main__":
     unittest.main()
