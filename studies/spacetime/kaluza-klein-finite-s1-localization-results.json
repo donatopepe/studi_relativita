@@ -30,19 +30,19 @@
         "name": "normalization",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 2e-08
       },
       {
         "name": "fourier_coefficient",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 3e-08
       },
       {
         "name": "localized_limit",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 2e-08
       },
       {
         "name": "broad_and_uniform",
@@ -54,37 +54,37 @@
         "name": "periodicity",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 2e-12
       },
       {
         "name": "orientation_sign",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 2e-12
       },
       {
         "name": "source_probe_exchange",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 2e-12
       },
       {
         "name": "combined_width",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 2e-12
       },
       {
         "name": "joint_dilation_and_shell",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 2e-09
       },
       {
         "name": "rank_and_global",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 2e-08
       }
     ],
     "controls_passed": 10,
@@ -124,7 +124,7 @@
     "convergence_certificate": {
       "converged": true,
       "residual": 0.0,
-      "tolerance": 0.0
+      "tolerance": 1e-13
     },
     "delta_y": 0.7,
     "gradient_auxiliary": 0.39204147,

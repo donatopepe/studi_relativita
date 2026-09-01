@@ -297,8 +297,16 @@ def ten_control_summary() -> dict:
     }
 
 
-def stable(value):
-    return base.stable(value)
+def stable(value, key: str | None = None):
+    if isinstance(value, float):
+        if key not in {"threshold", "tolerance"} and abs(value) < 1e-7:
+            return 0.0
+        return float(format(value, ".8g"))
+    if isinstance(value, list):
+        return [stable(item) for item in value]
+    if isinstance(value, dict):
+        return {item_key: stable(value[item_key], item_key) for item_key in sorted(value)}
+    return value
 
 
 def build_result() -> dict:
