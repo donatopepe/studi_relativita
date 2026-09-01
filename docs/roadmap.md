@@ -20,6 +20,21 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Finite compact-circle localization MVP
+
+Wrapped-Gaussian source/probe preparation on `S1` now replaces the binary localized/uniform idealization in one point-source/radial-shell MVP. All `10/10` preregistered controls pass. Complex overlap labels conjugate under orientation reversal, while the static real tidal response identifies only combined width and even periodic separation; joint geometric dilation retains absolute-scale blindness.
+
+```text
+FINITE_S1_SOURCE_PROBE_LOCALIZATION_SUPPRESSES_KK_TIDAL_SHAPE_BUT_STATIC_RESPONSE_IDENTIFIES_ONLY_COMBINED_WIDTH_AND_EVEN_PERIODIC_SEPARATION_WHILE_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_5D_LOCALIZATION_DYNAMICS_GAUGE_FIXED_TENSOR_COUPLING_RADION_STABILIZATION_SOURCE_PROBE_PREPARATION_PHASE_SENSITIVE_RECEIVER_CALIBRATED_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED
+L_identified=false
+ell0_identified=false
+extra_dimension_detected=false
+NO_POSITIVE_DETECTION_CLAIM
+```
+
+Prior result remains preserved: `LOCALIZED_SOURCE_PROBE_KK_TOWER_ADDS_DIMENSIONLESS_FINITE_WINDOW_TIDAL_SHAPE_BUT_UNIFORM_PROFILE_PROJECTION_SOURCE_WINDOW_DEGENERACY_AND_JOINT_5D_DILATION_PREVENT_ABSOLUTE_SCALE_OR_ELL0_IDENTIFICATION`. `F_0` remains preserved.
+
 ## Unified authoritative paper — frozen prior core
 
 Current synthesis is [`papers/umch`](../papers/umch/README.md), bilingual and authoritative. Earlier foundation, classical-dynamics, and spacetime-foundations papers remain historical technical records. Core remains `UNPROVEN`; overall result is `NO_POSITIVE_DETECTION_CLAIM`.

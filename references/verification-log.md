@@ -397,6 +397,13 @@ These canonical geometry sources support background mathematics only. They do no
 - Project use: the photon-sphere finite-arc cross-map derives open-arc transport, a screen phase map, boundary/caustic controls, endpoint quotients, scale orbits and a joint-rank diagnostic. These are project derivations, not quoted source results.
 - Explicit exclusions: neither source establishes open-arc transport as detector readout, endpoint tetrads, finite-window selection, an affine frequency standard, screen preparation, caustic continuation, vector readout, detector response, covariance, an `ell0` law, UMCH, evidence or detection.
 
+## NISTDLMF
+
+- **Metadata checked:** NIST citation guidance and DOI landing record for *NIST Digital Library of Mathematical Functions*, DOI `10.18434/M3167`, Release 1.2.7 of 2026-06-15, edited by F. W. J. Olver et al.
+- **Inspected scope:** section 1.8(iv), equation (1.8.14), permalink `https://dlmf.nist.gov/1.8.E14`, gives Poisson summation under its stated regularity assumptions. section 20.2(i), equation (20.2.3), permalink `https://dlmf.nist.gov/20.2.E3`, gives the theta-3 Fourier series `theta_3(z,q)=1+2 sum_(n>=1) q^(n^2) cos(2 n z)`.
+- **Project use:** these identities support the project derivation relating a normalized periodic Gaussian image sum to Gaussian-damped Fourier coefficients. Normalization, circle-radius convention, source/probe overlap, static potential, Hessian, and finite-shell calculations remain project derivations tested independently by direct quadrature and limits.
+- **Scope limit:** DLMF does not establish a Kaluza-Klein matter-localization mechanism, source preparation, probe preparation, gravitational coupling to finite profiles, finite-window averaging, a physical phase-sensitive receiver, calibrated covariance, data, `ell0`, UMCH, evidence, or detection.
+
 ## Liu2003CompactifiedPotential
 
 - **Metadata checked:** arXiv API record for Hongya Liu, *Compactified Newtonian Potential and a Possible Explanation for Dark Matter*, arXiv `hep-ph/0312200` (v2 inspected). No journal or DOI metadata is claimed.
