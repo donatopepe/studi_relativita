@@ -28,43 +28,63 @@
     "controls": [
       {
         "name": "normalization",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       },
       {
         "name": "fourier_coefficient",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       },
       {
         "name": "localized_limit",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       },
       {
         "name": "broad_and_uniform",
-        "passed": true
+        "passed": true,
+        "residual": 1.2053877e-06,
+        "threshold": 2e-05
       },
       {
         "name": "periodicity",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       },
       {
         "name": "orientation_sign",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       },
       {
         "name": "source_probe_exchange",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       },
       {
         "name": "combined_width",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       },
       {
         "name": "joint_dilation_and_shell",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       },
       {
         "name": "rank_and_global",
-        "passed": true
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 0.0
       }
     ],
     "controls_passed": 10,

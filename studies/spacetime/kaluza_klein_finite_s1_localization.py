@@ -242,15 +242,49 @@ def rank_control(alpha_s: float, alpha_p: float, theta: float) -> dict:
 
 
 def ten_control_summary() -> dict:
+    L, width, center = 1.0, 0.37, 0.81
+    circumference = 2.0 * math.pi * L
+    samples = 12000
+    step = circumference / samples
+    normalization = step * sum(wrapped_density((index + 0.5) * step, center, width, L) for index in range(samples))
+    direct_coefficient = step * sum(
+        wrapped_density((index + 0.5) * step, center, width, L) * cmath.exp(-1j * 2 * (index + 0.5) * step / L)
+        for index in range(samples)
+    )
+    analytic_coefficient = mode_coefficient("wrapped_gaussian", 2, L, center=center, width=width)
+    localized = point_response(2.0, L, 1e-5, 1e-5, 0.4)
+    exact_localized = point_response(2.0, L, delta_y=0.4, source_profile="localized", probe_profile="localized")
+    broad = point_response(2.0, L, 5.0, 0.3)
+    uniform = point_response(2.0, L, w_p=0.3, source_profile="uniform")
+    point = point_response(2.0, L, 0.25, 0.4, 0.7)
+    periodic = point_response(2.0, L, 0.25, 0.4, 0.7 + 2.0 * math.pi)
+    reversed_point = point_response(2.0, L, 0.25, 0.4, -0.7)
+    exchanged = point_response(2.0, L, 0.4, 0.25, -0.7)
+    other_s = 0.1
+    other_p = math.sqrt(0.25**2 + 0.4**2 - other_s**2)
+    width_collision = point_response(2.0, L, other_s, other_p, 0.7)
+    scale = geometric_scale_control(2.5, L, 2.0, 0.3, 0.25, 0.4, 0.7)
+    rank = rank_control(0.25, 0.4, 0.7)
     controls = [
-        "normalization", "fourier_coefficient", "localized_limit", "broad_and_uniform", "periodicity",
-        "orientation_sign", "source_probe_exchange", "combined_width", "joint_dilation_and_shell", "rank_and_global",
+        ("normalization", abs(normalization - 1.0), 2e-8),
+        ("fourier_coefficient", abs(direct_coefficient - analytic_coefficient), 3e-8),
+        ("localized_limit", matrix_residual(localized["T_point_matrix"], exact_localized["T_point_matrix"]), 2e-8),
+        ("broad_and_uniform", matrix_residual(broad["T_point_matrix"], uniform["T_point_matrix"]), 2e-5),
+        ("periodicity", matrix_residual(point["T_point_matrix"], periodic["T_point_matrix"]), 2e-12),
+        ("orientation_sign", matrix_residual(point["T_point_matrix"], reversed_point["T_point_matrix"]), 2e-12),
+        ("source_probe_exchange", matrix_residual(point["T_point_matrix"], exchanged["T_point_matrix"]), 2e-12),
+        ("combined_width", matrix_residual(point["T_point_matrix"], width_collision["T_point_matrix"]), 2e-12),
+        ("joint_dilation_and_shell", max(scale["dimensionless_point_matrix_residual"], scale["dimensionless_shell_matrix_residual"]), 2e-9),
+        ("rank_and_global", max(rank["absolute_scale_null_residual"], rank["combined_width_tangent_null_residual"]), 2e-8),
     ]
+    control_records = [{"name": name, "residual": residual, "threshold": threshold, "passed": residual < threshold}
+                       for name, residual, threshold in controls]
+    passed = sum(record["passed"] for record in control_records)
     return {
-        "controls": [{"name": name, "passed": True} for name in controls],
-        "controls_passed": len(controls),
-        "controls_total": len(controls),
-        "metric": "10/10",
+        "controls": control_records,
+        "controls_passed": passed,
+        "controls_total": len(control_records),
+        "metric": f"{passed}/{len(control_records)}",
         "result": RESULT,
         "physical_gate": PHYSICAL_GATE,
         "L_identified": False,
