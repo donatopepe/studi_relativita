@@ -274,7 +274,7 @@ Numeric artifact rules remain `.8g`; canonicalize to `0.0` only when `abs(value)
 
 Required canonical/institutional source:
 
-- NIST Digital Library of Mathematical Functions, DOI `10.18434/M3167`, §1.8(iv) equation (1.8.14) for Poisson summation and §20.2(i) equation (20.2.3) for theta-3 Fourier series.
+- NIST Digital Library of Mathematical Functions, DOI `10.18434/M3167`, release `1.2.7` (2026-06-15), §1.8(iv) equation (1.8.14) for Poisson summation and §20.2(i) equation (20.2.3) for theta-3 Fourier series.
 
 The verification log must state exact inspected equations and exclusions. DLMF supports mathematical Fourier/theta identities only. It does not establish:
 
