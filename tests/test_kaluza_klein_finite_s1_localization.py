@@ -111,6 +111,10 @@ class FiniteS1LocalizationControls(unittest.TestCase):
             self.assertIn("residual", control)
             self.assertIn("threshold", control)
             self.assertEqual(control["passed"], control["residual"] < control["threshold"])
+        stable_summary = kk.stable({"controls": summary["controls"]})
+        for control in stable_summary["controls"]:
+            self.assertGreater(control["threshold"], 0.0)
+            self.assertEqual(control["passed"], control["residual"] < control["threshold"])
         self.assertEqual(summary["result"], RESULT)
         self.assertFalse(summary["L_identified"])
         self.assertFalse(summary["ell0_identified"])
