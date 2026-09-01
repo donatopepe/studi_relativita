@@ -1,0 +1,712 @@
+{
+  "baseline": {
+    "L": 1.0,
+    "alpha_p": 0.4,
+    "alpha_s": 0.25,
+    "equal_u_pair": [
+      0.1,
+      0.46097722
+    ],
+    "r_over_L": 2.0,
+    "shell_width_over_L": 0.3,
+    "theta": 0.7
+  },
+  "classifications": [
+    "BROAD_WRAPPED_GAUSSIAN_APPROACHES_ZERO_MODE_BUT_FINITE_WIDTH_IS_NOT_EXACT_UNIFORM",
+    "S1_RELATIVE_ORIENTATION_SIGN_COLLISION_IN_STATIC_REAL_RESPONSE_NOT_COMPACTIFICATION_SCALE",
+    "SOURCE_PROBE_LOCALIZATION_WIDTHS_COLLIDE_UNDER_COMBINED_MODE_OVERLAP",
+    "JOINT_5D_LOCALIZATION_GEOMETRIC_DILATION_NOT_ABSOLUTE_SCALE"
+  ],
+  "combined_width_control": {
+    "point_matrix_residual": 0.0
+  },
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_DIMENSIONLESS_KK_SHAPE_DERIVED_NOT_EVIDENCE",
+    "controls": [
+      {
+        "name": "normalization",
+        "passed": true
+      },
+      {
+        "name": "fourier_coefficient",
+        "passed": true
+      },
+      {
+        "name": "localized_limit",
+        "passed": true
+      },
+      {
+        "name": "broad_and_uniform",
+        "passed": true
+      },
+      {
+        "name": "periodicity",
+        "passed": true
+      },
+      {
+        "name": "orientation_sign",
+        "passed": true
+      },
+      {
+        "name": "source_probe_exchange",
+        "passed": true
+      },
+      {
+        "name": "combined_width",
+        "passed": true
+      },
+      {
+        "name": "joint_dilation_and_shell",
+        "passed": true
+      },
+      {
+        "name": "rank_and_global",
+        "passed": true
+      }
+    ],
+    "controls_passed": 10,
+    "controls_total": 10,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "metric": "10/10",
+    "physical_gate": "PHYSICAL_5D_LOCALIZATION_DYNAMICS_GAUGE_FIXED_TENSOR_COUPLING_RADION_STABILIZATION_SOURCE_PROBE_PREPARATION_PHASE_SENSITIVE_RECEIVER_CALIBRATED_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED",
+    "result": "FINITE_S1_SOURCE_PROBE_LOCALIZATION_SUPPRESSES_KK_TIDAL_SHAPE_BUT_STATIC_RESPONSE_IDENTIFIES_ONLY_COMBINED_WIDTH_AND_EVEN_PERIODIC_SEPARATION_WHILE_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0",
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "orientation_control": {
+    "point_matrix_residual": 0.0
+  },
+  "point": {
+    "L": 1.0,
+    "T_parallel": -0.48757452,
+    "T_perpendicular": 0.19602073,
+    "T_point_matrix": [
+      [
+        -0.48757452,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.19602073,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.19602073
+      ]
+    ],
+    "broad_width_classification": "BROAD_WRAPPED_GAUSSIAN_APPROACHES_ZERO_MODE_BUT_FINITE_WIDTH_IS_NOT_EXACT_UNIFORM",
+    "convergence_certificate": {
+      "converged": true,
+      "residual": 0.0,
+      "tolerance": 0.0
+    },
+    "delta_y": 0.7,
+    "gradient_auxiliary": 0.39204147,
+    "interpretation": "MODEL_LEVEL_DIMENSIONLESS_KK_SHAPE_DERIVED_NOT_EVIDENCE",
+    "mode_records": [
+      {
+        "combined_complex_overlap": [
+          1.0,
+          0.0
+        ],
+        "n": 0,
+        "probe_mode_coefficient": [
+          1.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          1.0,
+          0.0
+        ],
+        "static_real_mode_weight": 1.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.68431581,
+          0.57639126
+        ],
+        "n": 1,
+        "probe_mode_coefficient": [
+          0.70603833,
+          -0.59468788
+        ],
+        "source_mode_coefficient": [
+          0.96923323,
+          0.0
+        ],
+        "static_real_mode_weight": 0.68431581
+      },
+      {
+        "combined_complex_overlap": [
+          0.10891907,
+          0.63150011
+        ],
+        "n": 2,
+        "probe_mode_coefficient": [
+          0.12342148,
+          -0.71558337
+        ],
+        "source_mode_coefficient": [
+          0.8824969,
+          0.0
+        ],
+        "static_real_mode_weight": 0.10891907
+      },
+      {
+        "combined_complex_overlap": [
+          -0.18549049,
+          0.31716028
+        ],
+        "n": 3,
+        "probe_mode_coefficient": [
+          -0.24573498,
+          -0.42016911
+        ],
+        "source_mode_coefficient": [
+          0.7548396,
+          0.0
+        ],
+        "static_real_mode_weight": -0.18549049
+      },
+      {
+        "combined_complex_overlap": [
+          -0.15889463,
+          0.056491781
+        ],
+        "n": 4,
+        "probe_mode_coefficient": [
+          -0.26197296,
+          -0.093139201
+        ],
+        "source_mode_coefficient": [
+          0.60653066,
+          0.0
+        ],
+        "static_real_mode_weight": -0.15889463
+      },
+      {
+        "combined_complex_overlap": [
+          -0.0580238,
+          -0.021734882
+        ],
+        "n": 5,
+        "probe_mode_coefficient": [
+          -0.12673563,
+          0.047473347
+        ],
+        "source_mode_coefficient": [
+          0.45783336,
+          0.0
+        ],
+        "static_real_mode_weight": -0.0580238
+      },
+      {
+        "combined_complex_overlap": [
+          -0.008934655,
+          -0.015883849
+        ],
+        "n": 6,
+        "probe_mode_coefficient": [
+          -0.027520675,
+          0.048925699
+        ],
+        "source_mode_coefficient": [
+          0.32465247,
+          0.0
+        ],
+        "static_real_mode_weight": -0.008934655
+      },
+      {
+        "combined_complex_overlap": [
+          0.00080031295,
+          -0.0042156429
+        ],
+        "n": 7,
+        "probe_mode_coefficient": [
+          0.0037006096,
+          0.019492935
+        ],
+        "source_mode_coefficient": [
+          0.21626517,
+          0.0
+        ],
+        "static_real_mode_weight": 0.00080031295
+      },
+      {
+        "combined_complex_overlap": [
+          0.0006272519,
+          -0.00051054747
+        ],
+        "n": 8,
+        "probe_mode_coefficient": [
+          0.0046347994,
+          0.0037724639
+        ],
+        "source_mode_coefficient": [
+          0.13533528,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0006272519
+      },
+      {
+        "combined_complex_overlap": [
+          0.00012201197,
+          2.0517872e-06
+        ],
+        "n": 9,
+        "probe_mode_coefficient": [
+          0.0015335939,
+          -2.578934e-05
+        ],
+        "source_mode_coefficient": [
+          0.079559509,
+          0.0
+        ],
+        "static_real_mode_weight": 0.00012201197
+      },
+      {
+        "combined_complex_overlap": [
+          1.1111916e-05,
+          9.6834564e-06
+        ],
+        "n": 10,
+        "probe_mode_coefficient": [
+          0.00025290603,
+          -0.00022039445
+        ],
+        "source_mode_coefficient": [
+          0.043936934,
+          0.0
+        ],
+        "static_real_mode_weight": 1.1111916e-05
+      },
+      {
+        "combined_complex_overlap": [
+          2.1857715e-07,
+          1.4082647e-06
+        ],
+        "n": 11,
+        "probe_mode_coefficient": [
+          9.5891645e-06,
+          -6.1781764e-05
+        ],
+        "source_mode_coefficient": [
+          0.022794181,
+          0.0
+        ],
+        "static_real_mode_weight": 2.1857715e-07
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 12,
+        "probe_mode_coefficient": [
+          -5.1562789e-06,
+          -8.4857435e-06
+        ],
+        "source_mode_coefficient": [
+          0.011108997,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 13,
+        "probe_mode_coefficient": [
+          -1.2735599e-06,
+          -4.288083e-07
+        ],
+        "source_mode_coefficient": [
+          0.0050860692,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 14,
+        "probe_mode_coefficient": [
+          -1.441931e-07,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0021874911,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 15,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.00088382631,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 16,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.00033546263,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 17,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.00011961288,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 18,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          4.0065297e-05,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 19,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          1.2607105e-05,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 20,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          3.7266532e-06,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 21,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          1.0348542e-06,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 22,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          2.6995785e-07,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 23,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 24,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 25,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 26,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 27,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 28,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 29,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 30,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 31,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      },
+      {
+        "combined_complex_overlap": [
+          0.0,
+          0.0
+        ],
+        "n": 32,
+        "probe_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "source_mode_coefficient": [
+          0.0,
+          0.0
+        ],
+        "static_real_mode_weight": 0.0
+      }
+    ],
+    "mode_truncation": 32,
+    "orientation_classification": "S1_RELATIVE_ORIENTATION_SIGN_COLLISION_IN_STATIC_REAL_RESPONSE_NOT_COMPACTIFICATION_SCALE",
+    "potential_auxiliary": -0.59409122,
+    "probe_profile": "wrapped_gaussian",
+    "r": 2.0,
+    "source_profile": "wrapped_gaussian",
+    "w_p": 0.4,
+    "w_s": 0.25,
+    "width_classification": "SOURCE_PROBE_LOCALIZATION_WIDTHS_COLLIDE_UNDER_COMBINED_MODE_OVERLAP"
+  },
+  "rank_control": {
+    "absolute_scale_null": [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "absolute_scale_null_residual": 0.0,
+    "combined_width_tangent_null": [
+      0.0,
+      0.4,
+      -0.25,
+      0.0
+    ],
+    "combined_width_tangent_null_residual": 0.0,
+    "global_collisions": [
+      "theta_to_minus_theta_static",
+      "theta_to_theta_plus_2pi"
+    ],
+    "parameters": [
+      "log_L",
+      "alpha_s",
+      "alpha_p",
+      "theta"
+    ],
+    "rank": 2
+  },
+  "scale_control": {
+    "classification": "JOINT_5D_LOCALIZATION_GEOMETRIC_DILATION_NOT_ABSOLUTE_SCALE",
+    "dimensionless_point_matrix_residual": 0.0,
+    "dimensionless_shell_matrix_residual": 0.0
+  },
+  "shell": {
+    "T_shell_matrix": [
+      [
+        -0.4940744,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.1988726,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.1988726
+      ]
+    ],
+    "convergence_certificate": {
+      "converged": true,
+      "residual": 0.0
+    },
+    "kernel_normalization": 1.0,
+    "mode_truncation": 32,
+    "r_center": 2.0,
+    "shell_width": 0.3,
+    "transport_convention": "FLAT_BACKGROUND_RADIAL_EIGENFRAME"
+  }
+}
