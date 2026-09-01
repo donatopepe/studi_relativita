@@ -107,6 +107,10 @@ class FiniteS1LocalizationControls(unittest.TestCase):
         self.assertEqual(summary["controls_passed"], 10)
         self.assertEqual(summary["controls_total"], 10)
         self.assertEqual(summary["metric"], "10/10")
+        for control in summary["controls"]:
+            self.assertIn("residual", control)
+            self.assertIn("threshold", control)
+            self.assertEqual(control["passed"], control["residual"] < control["threshold"])
         self.assertEqual(summary["result"], RESULT)
         self.assertFalse(summary["L_identified"])
         self.assertFalse(summary["ell0_identified"])
