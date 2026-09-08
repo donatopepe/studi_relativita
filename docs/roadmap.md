@@ -20,6 +20,22 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Linearized five-dimensional tensor-conformance MVP
+
+The sourced static `d=5` dust completion now links the prior scalar Hessian exactly to the ordinary-coordinate `R_0i0j` block. All `8/8` preregistered controls pass. Localized profiles add `y`-derivative curvature; the exact uniform zero mode removes those derivatives but can retain `R_i4j4` through ordinary-space dependence of `h_44`. Tensor completion remains source dependent, and joint dilation leaves absolute `L` blind.
+
+```text
+DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_COMPACT_INDEX_CURVATURE_WHILE_TENSOR_COMPLETION_REMAINS_SOURCE_DEPENDENT_AND_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_5D_SOURCE_STRESS_LOCALIZATION_DYNAMICS_GAUGE_INVARIANT_OBSERVABLE_RADION_STABILIZATION_COUPLING_CALIBRATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED
+L_identified=false
+ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
+NO_POSITIVE_DETECTION_CLAIM
+```
+
+Raw components remain model-coordinate records, not independent measured channels. Prior scalar controls, finite `S1` localization, and `F_0` remain preserved.
+
 ## Finite compact-circle localization MVP
 
 Wrapped-Gaussian source/probe preparation on `S1` now replaces the binary localized/uniform idealization in one point-source/radial-shell MVP. All `10/10` preregistered controls pass. Complex overlap labels conjugate under orientation reversal, while the static real tidal response identifies only combined width and even periodic separation; joint geometric dilation retains absolute-scale blindness.
