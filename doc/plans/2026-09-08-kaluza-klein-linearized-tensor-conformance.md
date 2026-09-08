@@ -2,7 +2,7 @@
 
 > Direct MVP execution. No subagent. Recon and closure review are labeled `DIRECT_RECON_NO_SUBAGENT` / `DIRECT_REVIEW_NO_SUBAGENT`; neither is independent review.
 
-**Objective:** determine whether the existing scalar Hessian is exactly the ordinary-space `R_0i0j` block of the declared static linearized five-dimensional dust metric, while recording omitted compact-index curvature without creating a detection claim.
+**Objective:** determine whether the existing scalar Hessian is exactly the ordinary-coordinate `R_0i0j` block of the declared static linearized five-dimensional dust metric, while recording omitted compact-index curvature without creating a detection claim.
 
 **Metric:** all eight preregistered controls pass (`8/8`) under frozen tolerances before accepting any result.
 

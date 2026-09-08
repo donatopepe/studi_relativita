@@ -24,7 +24,7 @@ ETA = (-1.0, 1.0, 1.0, 1.0, 1.0)
 COMPACT_CLASSIFICATION = "ORDINARY_SPACE_TIDAL_BLOCK_OMITS_COMPACT_INDEX_CURVATURE_NOT_EXTRA_OBSERVATIONAL_RANK"
 STRESS_CLASSIFICATION = "TENSOR_COMPLETION_DEPENDS_ON_SOURCE_STRESS_AND_DECLARED_LINEARIZED_CONVENTIONS_NOT_SCALAR_POTENTIAL_ALONE"
 SCALE_CLASSIFICATION = "LINEARIZED_5D_TENSOR_COMPLETION_RETAINS_JOINT_GEOMETRIC_SCALE_NULL_NOT_ELL0"
-RESULT = "DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_SOURCE_AND_GAUGE_DEPENDENT_COMPACT_CURVATURE_WHILE_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0"
+RESULT = "DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_COMPACT_INDEX_CURVATURE_WHILE_TENSOR_COMPLETION_REMAINS_SOURCE_DEPENDENT_AND_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0"
 PHYSICAL_GATE = "PHYSICAL_5D_SOURCE_STRESS_LOCALIZATION_DYNAMICS_GAUGE_INVARIANT_OBSERVABLE_RADION_STABILIZATION_COUPLING_CALIBRATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED"
 
 
@@ -302,13 +302,15 @@ def joint_scaling_control(r: float, shell_width: float, L: float, delta_y: float
     }
 
 
-def _canonical(value):
+def _canonical(value, key: str | None = None):
     if isinstance(value, dict):
-        return {key: _canonical(item) for key, item in value.items()}
+        return {item_key: _canonical(item, item_key) for item_key, item in value.items()}
     if isinstance(value, list):
-        return [_canonical(item) for item in value]
+        return [_canonical(item, key) for item in value]
     if isinstance(value, float):
-        return 0.0 if abs(value) < 1e-7 else float(format(value, ".8g"))
+        if key != "threshold" and abs(value) < 1e-7:
+            return 0.0
+        return float(format(value, ".8g"))
     return value
 
 
