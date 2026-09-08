@@ -59,7 +59,7 @@
           1
         ]
       ],
-      "reconstruction_residual": 4.762474665e-12,
+      "reconstruction_residual": 0.0,
       "signed_rapidity": -0.1594267209,
       "transport_repeat_residual": 0.0
     },
@@ -411,7 +411,7 @@
       4.267997182,
       0.05792048249
     ],
-    "transport_residual": 4.762474665e-12
+    "transport_residual": 0.0
   },
   "scope": "SCHWARZSCHILD_STATIC_RADAR_TIMING_AND_LEVI_CIVITA_BOOST_MAP_WITH_IDEAL_MIRROR_COMMON_STATIC_TETRAD_FAMILY_AND_NO_DETECTOR_COVARIANCE",
   "status": "ANCHORED_RADAR_TIME_AND_BOOST_RAPIDITY_LOCALLY_FULL_RANK_IN_DIMENSIONLESS_ENDPOINT_TOY_MAP_BUT_ORIENTATION_QUOTIENT_GLOBAL_COLLISION_AND_ABSOLUTE_SCALE_BLIND_NOT_ELL0",
