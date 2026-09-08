@@ -1,5 +1,20 @@
 # Bibliography verification log
 
+## Robinson2006Normalization
+
+- Metadata checked against arXiv `gr-qc/0609060` v1 and arXiv DOI `10.48550/arXiv.gr-qc/0609060`.
+- Inspected equations (1), (2a,b), (4), (5a,b), (6a,b), (7a-c), and (9)-(15).
+- Scope used here: arbitrary-dimensional Einstein normalization, harmonic gauge, trace reversal and its inverse, nonrelativistic dust limit, d=5 trace-reversal ratios, Newtonian potential, and geodesic-deviation sign convention.
+- In the source convention, `eta=diag(-1,+1,...)`, `phi=-h_00/2`, and equations (6a,b), (7a-c) give `h_00=(d-3) bar_h_00/(d-2)` and `h_ij=delta_ij bar_h_00/(d-2)`.
+- This source does not establish the compact-circle profile, finite radial-shell protocol, physical localization, radion stabilization, calibrated coupling, `L=ell0`, UMCH, evidence, or detection.
+
+## AtondoRubio2008Linearized5D
+
+- Metadata checked against arXiv `hep-th/0609133` v1 and journal reference *Revista Mexicana de Fisica* 54 (2008) 188-193.
+- Inspected equations (4)-(19) for the linearized metric, connection, Riemann, Ricci, and Einstein equations in arbitrary dimension and their five-dimensional specialization.
+- Inspected equations (21)-(23): they impose a cylinder ansatz and `h_44=0`; those restrictions must not be imported into this localized compact-circle calculation, whose potential depends on the compact coordinate and whose declared dust trace reversal gives nonzero `h_44`.
+- This source is context only. It does not establish the current source/probe profiles, finite window, physical stress, radion stabilization, calibrated coupling, `L=ell0`, UMCH, evidence, or detection.
+
 ## Schwarzschild polarization/screen transport
 
 - `Schwarzschild2003Translation`: reused for Schwarzschild exterior metric context only.
