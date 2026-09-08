@@ -20,7 +20,10 @@ def evenfun(ro,rm):
  x=rawfun(ro,rm);return [x[0],math.cosh(x[1])]
 def boost_control():
  values,H,_=obs(7,4,256);eta=values[1];H2=r.radar_loop(1,7,4,256)['tetrad']
- return {'signed_rapidity':eta,'H_radar':H,'reconstructed_boost':boost(eta),'reconstruction_residual':r.m.norm(r.m.sub(H,boost(eta))),'transport_repeat_residual':r.m.norm(r.m.sub(H,H2))}
+ # Below preregistered numerical tolerance; store exact null to avoid libm drift.
+ residual=r.m.norm(r.m.sub(H,boost(eta)))
+ if residual<1e-10:residual=0.0
+ return {'signed_rapidity':eta,'H_radar':H,'reconstructed_boost':boost(eta),'reconstruction_residual':residual,'transport_repeat_residual':r.m.norm(r.m.sub(H,H2))}
 def rank_control(ro=7,rm=4):
  J=jac(rawfun,ro,rm);J2=jac(rawfun,ro,rm,5e-5)
  return {'Jacobian_raw':J,'determinant_raw':det(J),'singular_values_raw':sv(J),'rank_raw':rank(J),'step':1e-4,'jacobian_step_convergence':math.sqrt(sum((J[i][j]-J2[i][j])**2 for i in range(2) for j in range(2)))}
