@@ -17,25 +17,25 @@
         "name": "d5_trace_reversal",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 1e-10
       },
       {
         "name": "harmonic_gauge",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 1e-10
       },
       {
         "name": "ricci_einstein_vacuum",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 1e-10
       },
       {
         "name": "R0i0j_hessian",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 1e-10
       },
       {
         "name": "compact_index_nonzero_mode",
@@ -48,7 +48,7 @@
         "name": "uniform_zero_mode",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 1e-10
       },
       {
         "name": "source_stress_dependence",
@@ -61,7 +61,7 @@
         "name": "joint_scaling_rank",
         "passed": true,
         "residual": 0.0,
-        "threshold": 0.0
+        "threshold": 1e-10
       }
     ],
     "controls_passed": 8,
@@ -1313,7 +1313,7 @@
       ]
     ]
   },
-  "result": "DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_SOURCE_AND_GAUGE_DEPENDENT_COMPACT_CURVATURE_WHILE_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0",
+  "result": "DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_COMPACT_INDEX_CURVATURE_WHILE_TENSOR_COMPLETION_REMAINS_SOURCE_DEPENDENT_AND_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0",
   "review": "DIRECT_REVIEW_NO_SUBAGENT",
   "source_stress_control": {
     "alternative_h00": 2.0,

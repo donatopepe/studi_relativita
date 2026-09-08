@@ -106,6 +106,7 @@ class KaluzaKleinTensorConformanceControls(unittest.TestCase):
         self.assertEqual(summary["controls_total"], 8)
         self.assertEqual(len(summary["controls"]), 8)
         self.assertTrue(all(control["passed"] for control in summary["controls"]))
+        self.assertEqual([control["threshold"] for control in summary["controls"]], [1e-10, 1e-10, 1e-10, 1e-10, 1e-4, 1e-10, 0.1, 1e-10])
         for token, value in (
             ("L_identified", False),
             ("ell0_identified", False),

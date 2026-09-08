@@ -29,7 +29,7 @@ DEFERRED_4D_ROTATING_BASELINE_FOR_FUTURE_5D_COMPARISON
 
 ## MVP-first gate
 
-**Objective:** determine whether the existing scalar Hessian is exactly the observable-coordinate projection `R_0i0j` of a declared static linearized five-dimensional Einstein metric, while exposing additional spatial and compact-direction curvature components that the scalar record omitted.
+**Objective:** determine whether the existing scalar Hessian is exactly the ordinary-coordinate block `R_0i0j` of a declared static linearized five-dimensional Einstein metric, while exposing additional spatial and compact-index curvature components that the scalar record omitted.
 
 **Metric and threshold:** correctness over eight preregistered source/tensor controls; threshold `8/8` under declared analytic or numerical tolerances.
 
@@ -131,7 +131,7 @@ At regular points away from singular support, compare to vacuum field equations.
 
 ## Primary conformance map
 
-For static `h_0i=0`, derive expected observable-coordinate components:
+For static `h_0i=0`, derive expected ordinary-coordinate components:
 
 \[
 R_{0i0j}=\partial_i\partial_j\Phi
@@ -293,7 +293,7 @@ Every source entry must state equations/sections inspected and explicit exclusio
 If all eight controls pass:
 
 ```text
-DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_SOURCE_AND_GAUGE_DEPENDENT_COMPACT_CURVATURE_WHILE_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_COMPACT_INDEX_CURVATURE_WHILE_TENSOR_COMPLETION_REMAINS_SOURCE_DEPENDENT_AND_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
 ```
 
 Maximum interpretation:
