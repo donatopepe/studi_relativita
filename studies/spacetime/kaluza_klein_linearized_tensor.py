@@ -8,8 +8,10 @@ stabilization, calibrated coupling, evidence, detection, or ell0 law follows.
 from __future__ import annotations
 
 import importlib.util
+import json
 import math
 import pathlib
+import sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 BASE_PATH = HERE / "kaluza_klein_linearized_tidal.py"
@@ -22,6 +24,8 @@ ETA = (-1.0, 1.0, 1.0, 1.0, 1.0)
 COMPACT_CLASSIFICATION = "ORDINARY_SPACE_TIDAL_BLOCK_OMITS_COMPACT_INDEX_CURVATURE_NOT_EXTRA_OBSERVATIONAL_RANK"
 STRESS_CLASSIFICATION = "TENSOR_COMPLETION_DEPENDS_ON_SOURCE_STRESS_AND_DECLARED_LINEARIZED_CONVENTIONS_NOT_SCALAR_POTENTIAL_ALONE"
 SCALE_CLASSIFICATION = "LINEARIZED_5D_TENSOR_COMPLETION_RETAINS_JOINT_GEOMETRIC_SCALE_NULL_NOT_ELL0"
+RESULT = "DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_SOURCE_AND_GAUGE_DEPENDENT_COMPACT_CURVATURE_WHILE_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0"
+PHYSICAL_GATE = "PHYSICAL_5D_SOURCE_STRESS_LOCALIZATION_DYNAMICS_GAUGE_INVARIANT_OBSERVABLE_RADION_STABILIZATION_COUPLING_CALIBRATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED"
 
 
 def _zeros2() -> list[list[float]]:
@@ -296,3 +300,58 @@ def joint_scaling_control(r: float, shell_width: float, L: float, delta_y: float
         "scale_null_direction": [1.0],
         "classification": SCALE_CLASSIFICATION,
     }
+
+
+def _canonical(value):
+    if isinstance(value, dict):
+        return {key: _canonical(item) for key, item in value.items()}
+    if isinstance(value, list):
+        return [_canonical(item) for item in value]
+    if isinstance(value, float):
+        return 0.0 if abs(value) < 1e-7 else float(format(value, ".8g"))
+    return value
+
+
+def build_artifact() -> dict:
+    L, r, delta_y, shell_width, scale = 1.0, 2.0, 0.7, 0.3, 2.5
+    localized = point_tensor_response(r, L, delta_y, "localized")
+    uniform = point_tensor_response(r, L, delta_y, "uniform")
+    shell = shell_tensor_response(r, shell_width, L, delta_y, "localized")
+    stress = source_stress_dependence_control()
+    scaling = joint_scaling_control(r, shell_width, L, delta_y, scale)
+    trace = trace_reversal_from_bar([[3.0 if i == j == 0 else 0.0 for j in range(5)] for i in range(5)])
+    controls = [
+        {"name": "d5_trace_reversal", "passed": _max_matrix_residual(trace["h"], [[2.0, 0.0, 0.0, 0.0, 0.0], [0.0, 1.0, 0.0, 0.0, 0.0], [0.0, 0.0, 1.0, 0.0, 0.0], [0.0, 0.0, 0.0, 1.0, 0.0], [0.0, 0.0, 0.0, 0.0, 1.0]]) < 1e-10, "residual": _max_matrix_residual(trace["bar_h"], trace["bar_h_roundtrip"]), "threshold": 1e-10},
+        {"name": "harmonic_gauge", "passed": max(abs(x) for x in _flatten(localized["harmonic_gauge_residual"] + uniform["harmonic_gauge_residual"])) < 1e-10, "residual": max(abs(x) for x in _flatten(localized["harmonic_gauge_residual"] + uniform["harmonic_gauge_residual"])), "threshold": 1e-10},
+        {"name": "ricci_einstein_vacuum", "passed": max(abs(x) for x in _flatten(localized["Ricci_5D"] + uniform["Ricci_5D"] + localized["einstein_conformance_residual"] + uniform["einstein_conformance_residual"])) < 1e-10, "residual": max(abs(x) for x in _flatten(localized["Ricci_5D"] + uniform["Ricci_5D"] + localized["einstein_conformance_residual"] + uniform["einstein_conformance_residual"])), "threshold": 1e-10},
+        {"name": "R0i0j_hessian", "passed": max(localized["point_conformance_residual"], shell["shell_conformance_residual"]) < 1e-10, "residual": max(localized["point_conformance_residual"], shell["shell_conformance_residual"]), "threshold": 1e-10},
+        {"name": "compact_index_nonzero_mode", "passed": abs(localized["R_0404"]) > 1e-4 and max(abs(x) for x in localized["R_0i04"]) > 1e-4, "residual": min(abs(localized["R_0404"]), max(abs(x) for x in localized["R_0i04"])), "threshold": 1e-4, "threshold_kind": "minimum_nonzero"},
+        {"name": "uniform_zero_mode", "passed": max(abs(uniform["R_0404"]), max(abs(x) for x in uniform["R_0i04"])) < 1e-10 and max(abs(x) for x in _flatten(uniform["R_i4j4"])) > 1e-4, "residual": max(abs(uniform["R_0404"]), max(abs(x) for x in uniform["R_0i04"])), "threshold": 1e-10},
+        {"name": "source_stress_dependence", "passed": stress["spatial_ratio_residual"] > 0.1 and abs(stress["dust_h00"] - stress["alternative_h00"]) < 1e-10, "residual": stress["spatial_ratio_residual"], "threshold": 0.1, "threshold_kind": "minimum_difference"},
+        {"name": "joint_scaling_rank", "passed": scaling["dimensionless_full_curvature_residual"] < 1e-10 and scaling["dimensionless_R_0i0j_residual"] < 1e-10 and scaling["rank"] == 0, "residual": max(scaling["dimensionless_full_curvature_residual"], scaling["dimensionless_R_0i0j_residual"]), "threshold": 1e-10},
+    ]
+    raw = {key: localized[key] for key in (
+        "metric_perturbation_5D", "trace_reversed_metric_5D", "harmonic_gauge_residual", "Riemann_5D", "Ricci_5D", "Ricci_scalar_5D", "Einstein_5D", "R_0i0j", "R_0404", "R_0i04", "R_i4j4", "scalar_Hessian_reference", "point_conformance_residual", "source_stress_label", "source_stress_parameters", "gauge_convention", "Riemann_convention", "coupling_normalization", "profile_label", "mode_or_exact_expression", "convergence_certificate",
+    )}
+    raw.update({key: shell[key] for key in ("shell_R_0i0j", "shell_Hessian_reference", "shell_conformance_residual")})
+    return _canonical({
+        "baseline": {"L": L, "r_over_L": r / L, "y_over_L": delta_y / L, "shell_width_over_L": shell_width / L, "scale_factor": scale, "unit_effective_potential_amplitude": True},
+        "control_summary": {"controls": controls, "controls_passed": sum(control["passed"] for control in controls), "controls_total": len(controls), "L_identified": False, "ell0_identified": False, "L_equals_ell0": "NOT_DERIVED", "extra_dimension_detected": False, "structural_dead_end": "NOT_DECLARED", "Detection": "NO_POSITIVE_DETECTION_CLAIM", "Maximum_interpretation": "MODEL_LEVEL_LINEARIZED_TENSOR_CONFORMANCE_NOT_EVIDENCE"},
+        "raw_output": raw,
+        "uniform_control": {key: uniform[key] for key in ("R_0i0j", "R_0404", "R_0i04", "R_i4j4", "mode_or_exact_expression")},
+        "source_stress_control": stress,
+        "joint_scaling_control": scaling,
+        "result": RESULT,
+        "physical_gate": PHYSICAL_GATE,
+        "review": "DIRECT_REVIEW_NO_SUBAGENT",
+    })
+
+
+def main() -> int:
+    json.dump(build_artifact(), sys.stdout, indent=2, sort_keys=True)
+    sys.stdout.write("\n")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
