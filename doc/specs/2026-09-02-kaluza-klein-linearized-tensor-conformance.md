@@ -4,7 +4,7 @@
 
 `RATIFIED_FOR_IMPLEMENTATION_PLANNING`
 
-Human approved the recommendation to defer Kerr and make the next MVP a five-dimensional linearized tensor-conformance check on 2026-09-02. The 2026-09-09 source/convention review corrected the dust metric ratios, separated compact-index curvature from nonzero-mode curvature, and aligned the eight-control list. This complete specification is ratified for implementation planning. Implementation remains gated by a completed sibling TDD plan.
+Human approved the recommendation to defer Kerr and make the next MVP a five-dimensional linearized tensor-conformance check on 2026-09-02, then instructed work to resume on 2026-09-08. The 2026-09-08 source/convention review corrected the dust metric ratios, separated compact-index curvature from nonzero-mode curvature, and aligned the eight-control list. This complete specification is ratified for implementation planning. Implementation remains gated by a completed sibling TDD plan.
 
 Global state remains:
 
