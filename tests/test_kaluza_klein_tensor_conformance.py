@@ -1,10 +1,13 @@
 import importlib.util
+import json
 import math
 import pathlib
+import subprocess
 import unittest
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 PATH = ROOT / "studies/spacetime/kaluza_klein_linearized_tensor.py"
+ARTIFACT = ROOT / "studies/spacetime/kaluza-klein-linearized-tensor-results.json"
 SPEC = importlib.util.spec_from_file_location("kk_tensor", PATH)
 kk = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(kk)
@@ -93,6 +96,37 @@ class KaluzaKleinTensorConformanceControls(unittest.TestCase):
         self.assertEqual(control["rank"], 0)
         self.assertEqual(control["scale_null_direction"], [1.0])
         self.assertEqual(control["classification"], "LINEARIZED_5D_TENSOR_COMPLETION_RETAINS_JOINT_GEOMETRIC_SCALE_NULL_NOT_ELL0")
+
+    def test_stable_artifact_records_exactly_eight_passing_controls(self):
+        expected = json.loads(ARTIFACT.read_text())
+        generated = json.loads(subprocess.check_output(["python", str(PATH)], text=True))
+        self.assertEqual(generated, expected)
+        summary = expected["control_summary"]
+        self.assertEqual(summary["controls_passed"], 8)
+        self.assertEqual(summary["controls_total"], 8)
+        self.assertEqual(len(summary["controls"]), 8)
+        self.assertTrue(all(control["passed"] for control in summary["controls"]))
+        for token, value in (
+            ("L_identified", False),
+            ("ell0_identified", False),
+            ("L_equals_ell0", "NOT_DERIVED"),
+            ("extra_dimension_detected", False),
+            ("structural_dead_end", "NOT_DECLARED"),
+            ("Detection", "NO_POSITIVE_DETECTION_CLAIM"),
+            ("Maximum_interpretation", "MODEL_LEVEL_LINEARIZED_TENSOR_CONFORMANCE_NOT_EVIDENCE"),
+        ):
+            self.assertEqual(summary[token], value)
+        raw = expected["raw_output"]
+        for key in (
+            "metric_perturbation_5D", "trace_reversed_metric_5D", "harmonic_gauge_residual",
+            "Riemann_5D", "Ricci_5D", "Ricci_scalar_5D", "Einstein_5D", "R_0i0j",
+            "R_0404", "R_0i04", "R_i4j4", "scalar_Hessian_reference",
+            "point_conformance_residual", "shell_R_0i0j", "shell_Hessian_reference",
+            "shell_conformance_residual", "source_stress_label", "source_stress_parameters",
+            "gauge_convention", "Riemann_convention", "coupling_normalization", "profile_label",
+            "mode_or_exact_expression", "convergence_certificate",
+        ):
+            self.assertIn(key, raw)
 
 
 if __name__ == "__main__":
