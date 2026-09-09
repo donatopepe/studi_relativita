@@ -1,0 +1,378 @@
+{
+  "baseline": {
+    "M": 1.0,
+    "chi_samples": [
+      0.0,
+      0.2,
+      0.6,
+      0.9,
+      0.99
+    ],
+    "rank_anchor_chi": 0.6,
+    "scale_factor": 2.5
+  },
+  "branch_records": [
+    {
+      "branches": [
+        {
+          "Delta_t_per_2pi": 32.648389,
+          "Delta_t_per_2pi_over_M": 32.648389,
+          "Omega_phi": 0.19245009,
+          "Omega_phi_M": 0.19245009,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": 1,
+          "branch": "prograde",
+          "chi": 0.0,
+          "collision_classification": "KERR_PROGRADE_RETROGRADE_BRANCHES_COLLIDE_IN_SCHWARZSCHILD_LIMIT",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 3.0,
+          "relative_orientation": 1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 3.0,
+          "xi_over_M": 5.1961524
+        },
+        {
+          "Delta_t_per_2pi": 32.648389,
+          "Delta_t_per_2pi_over_M": 32.648389,
+          "Omega_phi": -0.19245009,
+          "Omega_phi_M": -0.19245009,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": -1,
+          "branch": "retrograde",
+          "chi": 0.0,
+          "collision_classification": "KERR_PROGRADE_RETROGRADE_BRANCHES_COLLIDE_IN_SCHWARZSCHILD_LIMIT",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 3.0,
+          "relative_orientation": -1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 3.0,
+          "xi_over_M": -5.1961524
+        }
+      ],
+      "chi": 0.0
+    },
+    {
+      "branches": [
+        {
+          "Delta_t_per_2pi": 30.054019,
+          "Delta_t_per_2pi_over_M": 30.054019,
+          "Omega_phi": 0.20906306,
+          "Omega_phi_M": 0.20906306,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": 1,
+          "branch": "prograde",
+          "chi": 0.2,
+          "collision_classification": "KERR_BRANCHES_DISTINCT_AT_NONZERO_SPIN",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 2.7591931,
+          "relative_orientation": 1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 2.7591931,
+          "xi_over_M": 4.7832457
+        },
+        {
+          "Delta_t_per_2pi": 35.095732,
+          "Delta_t_per_2pi_over_M": 35.095732,
+          "Omega_phi": -0.1790299,
+          "Omega_phi_M": -0.1790299,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": -1,
+          "branch": "retrograde",
+          "chi": 0.2,
+          "collision_classification": "KERR_BRANCHES_DISTINCT_AT_NONZERO_SPIN",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 3.2228139,
+          "relative_orientation": -1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 3.2228139,
+          "xi_over_M": -5.5856592
+        }
+      ],
+      "chi": 0.2
+    },
+    {
+      "branches": [
+        {
+          "Delta_t_per_2pi": 24.117967,
+          "Delta_t_per_2pi_over_M": 24.117967,
+          "Omega_phi": 0.26051886,
+          "Omega_phi_M": 0.26051886,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": 1,
+          "branch": "prograde",
+          "chi": 0.6,
+          "collision_classification": "KERR_BRANCHES_DISTINCT_AT_NONZERO_SPIN",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 2.188914,
+          "relative_orientation": 1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 2.188914,
+          "xi_over_M": 3.8384937
+        },
+        {
+          "Delta_t_per_2pi": 39.682395,
+          "Delta_t_per_2pi_over_M": 39.682395,
+          "Omega_phi": -0.15833685,
+          "Omega_phi_M": -0.15833685,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": -1,
+          "branch": "retrograde",
+          "chi": 0.6,
+          "collision_classification": "KERR_BRANCHES_DISTINCT_AT_NONZERO_SPIN",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 3.6298497,
+          "relative_orientation": -1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 3.6298497,
+          "xi_over_M": -6.3156493
+        }
+      ],
+      "chi": 0.6
+    },
+    {
+      "branches": [
+        {
+          "Delta_t_per_2pi": 17.872027,
+          "Delta_t_per_2pi_over_M": 17.872027,
+          "Omega_phi": 0.35156535,
+          "Omega_phi_M": 0.35156535,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": 1,
+          "branch": "prograde",
+          "chi": 0.9,
+          "collision_classification": "KERR_BRANCHES_DISTINCT_AT_NONZERO_SPIN",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 1.5578546,
+          "relative_orientation": 1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 1.5578546,
+          "xi_over_M": 2.8444214
+        },
+        {
+          "Delta_t_per_2pi": 42.928728,
+          "Delta_t_per_2pi_over_M": 42.928728,
+          "Omega_phi": -0.14636318,
+          "Omega_phi_M": -0.14636318,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": -1,
+          "branch": "retrograde",
+          "chi": 0.9,
+          "collision_classification": "KERR_BRANCHES_DISTINCT_AT_NONZERO_SPIN",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 3.9102679,
+          "relative_orientation": -1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 3.9102679,
+          "xi_over_M": -6.8323192
+        }
+      ],
+      "chi": 0.9
+    },
+    {
+      "branches": [
+        {
+          "Delta_t_per_2pi": 14.148001,
+          "Delta_t_per_2pi_over_M": 14.148001,
+          "Omega_phi": 0.4441041,
+          "Omega_phi_M": 0.4441041,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": 1,
+          "branch": "prograde",
+          "chi": 0.99,
+          "collision_classification": "KERR_BRANCHES_DISTINCT_AT_NONZERO_SPIN",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 1.1676419,
+          "relative_orientation": 1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 1.1676419,
+          "xi_over_M": 2.2517243
+        },
+        {
+          "Delta_t_per_2pi": 43.877515,
+          "Delta_t_per_2pi_over_M": 43.877515,
+          "Omega_phi": -0.14319829,
+          "Omega_phi_M": -0.14319829,
+          "R_prime_residual": 0.0,
+          "R_residual": 0.0,
+          "azimuthal_orientation": -1,
+          "branch": "retrograde",
+          "chi": 0.99,
+          "collision_classification": "KERR_BRANCHES_DISTINCT_AT_NONZERO_SPIN",
+          "null_angular_rate_residual": 0.0,
+          "r_ph": 3.9911029,
+          "relative_orientation": -1,
+          "timing_classification": "BOYER_LINDQUIST_COORDINATE_PERIOD_NOT_PHYSICAL_CLOCK",
+          "x_ph": 3.9911029,
+          "xi_over_M": -6.9833234
+        }
+      ],
+      "chi": 0.99
+    }
+  ],
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_KERR_ORBIT_CONFORMANCE_NOT_EVIDENCE",
+    "controls": [
+      {
+        "name": "radius_formula_range",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1e-12
+      },
+      {
+        "name": "branch_ordering",
+        "passed": true,
+        "residual": 0.46362086,
+        "threshold": 1e-08,
+        "threshold_kind": "minimum_gap"
+      },
+      {
+        "name": "Schwarzschild_collision",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1e-12
+      },
+      {
+        "name": "radial_potential_conformance",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1e-10
+      },
+      {
+        "name": "signed_convention_collision",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1e-10
+      },
+      {
+        "name": "joint_geometric_dilation",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1e-10
+      },
+      {
+        "name": "rank_scale_null",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1e-10
+      },
+      {
+        "name": "no_ell0_identification",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean_gate"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "joint_dilation_control": {
+    "classification": "JOINT_MA_GEOMETRIC_DILATION_NOT_INTERIOR_SCALE",
+    "dimensional_covariance_residual": 0.0,
+    "dimensionless_residual": 0.0,
+    "scale_factor": 2.5,
+    "scale_orbit": [
+      {
+        "branch": "prograde",
+        "period_ratio": 2.5,
+        "r_ratio": 2.5
+      },
+      {
+        "branch": "retrograde",
+        "period_ratio": 2.5,
+        "r_ratio": 2.5
+      }
+    ]
+  },
+  "physical_gate": "PHYSICAL_KERR_SOURCE_ABSORBER_ENDPOINT_TETRAD_SCREEN_TRANSPORT_AFFINE_FREQUENCY_CLOCK_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED",
+  "rank_control": {
+    "chi_column_norm": 20.503405,
+    "classification": "DIMENSIONLESS_KERR_ORBIT_MAP_HAS_SPIN_SHAPE_RANK_AND_EXACT_SCALE_NULL",
+    "feature_Jacobian": [
+      [
+        0.0,
+        -1.6592149
+      ],
+      [
+        0.0,
+        0.9659444
+      ],
+      [
+        0.0,
+        -2.6822074
+      ],
+      [
+        0.0,
+        -1.7604997
+      ],
+      [
+        0.0,
+        0.18204162
+      ],
+      [
+        0.0,
+        0.044136709
+      ],
+      [
+        0.0,
+        -16.852806
+      ],
+      [
+        0.0,
+        11.061546
+      ]
+    ],
+    "log_M_column_norm": 0.0,
+    "parameters": [
+      "log_M",
+      "chi"
+    ],
+    "rank": 1,
+    "scale_null_direction": [
+      1.0,
+      0.0
+    ]
+  },
+  "result": "KERR_FRAME_DRAGGING_ADDS_PROGRADE_RETROGRADE_DIMENSIONLESS_ORBIT_SHAPE_BUT_JOINT_MA_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0",
+  "review": "DIRECT_REVIEW_NO_SUBAGENT",
+  "signed_convention_control": {
+    "classification": "SIMULTANEOUS_SPIN_ORIENTATION_REVERSAL_IS_CONVENTION_COLLISION_NOT_ELL0",
+    "forward": {
+      "Omega_phi_M": 0.26051886,
+      "azimuthal_orientation": 1,
+      "branch": "prograde",
+      "classification": "SIMULTANEOUS_SPIN_ORIENTATION_REVERSAL_IS_CONVENTION_COLLISION_NOT_ELL0",
+      "relative_orientation": 1,
+      "spin_sign": 1,
+      "unsigned_period_over_M": 24.117967,
+      "x_ph": 2.188914
+    },
+    "residual": 0.0,
+    "simultaneous_reversal": {
+      "Omega_phi_M": -0.26051886,
+      "azimuthal_orientation": -1,
+      "branch": "prograde",
+      "classification": "SIMULTANEOUS_SPIN_ORIENTATION_REVERSAL_IS_CONVENTION_COLLISION_NOT_ELL0",
+      "relative_orientation": 1,
+      "spin_sign": -1,
+      "unsigned_period_over_M": 24.117967,
+      "x_ph": 2.188914
+    }
+  },
+  "study_id": "kerr-equatorial-photon-ring-orientation-scale-v1"
+}
