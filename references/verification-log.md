@@ -1,5 +1,12 @@
 # Bibliography verification log
 
+## GrallaLupsasca2020KerrNullGeodesics
+
+- Metadata checked against DOI `10.1103/PhysRevD.101.044032`, arXiv `1910.12881` v3, and the published journal reference. Version v3 corrects post-publication errors and is the equation source used here.
+- Inspected equations (1)-(13f): Kerr metric definitions, conserved quantities, energy-rescaled impact parameters, momentum reconstruction, radial and angular potentials, turning points, Mino parameter, and source and observer integral form. The paper also supplies complete explicit parameterized solutions with initial conditions beyond this MVP's needs.
+- Scope used here: equatorial `Q=0` future null paths, radial turning condition, coordinate first integrals, and finite source/observer path structure.
+- The source does not define this project's ZAMO endpoint tetrad, physical emitter, physical observer, detector, absolute clock/frequency standard, screen transport, receiver, covariance, 5D comparator, `ell0`, UMCH, evidence, or detection.
+
 ## Teo2003SphericalPhotonOrbits
 
 - Metadata checked against DOI `10.1023/A:1026286607562`, *General Relativity and Gravitation* 35 (2003) 1909-1926, and Edward Teo's author PDF.
