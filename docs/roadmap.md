@@ -20,6 +20,23 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr equatorial photon-ring 4D comparison baseline
+
+The previously deferred Kerr orbit-level control is complete. All `8/8` preregistered controls pass. Prograde/retrograde branches add orientation-sensitive dimensionless shape, collide at the Schwarzschild `3M` limit, and satisfy the independent radial potential. Joint `M,a` dilation preserves dimensionless records, leaving exact absolute-scale blindness.
+
+```text
+4D_COMPARISON_BASELINE
+KERR_FRAME_DRAGGING_ADDS_PROGRADE_RETROGRADE_DIMENSIONLESS_ORBIT_SHAPE_BUT_JOINT_MA_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_KERR_SOURCE_ABSORBER_ENDPOINT_TETRAD_SCREEN_TRANSPORT_AFFINE_FREQUENCY_CLOCK_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED
+L_identified=false
+ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
+NO_POSITIVE_DETECTION_CLAIM
+```
+
+This is a 4D orbit comparison, not a 4D/5D observational discriminator. Boyer-Lindquist periods are coordinate records, not physical clocks. Prior 5D tensor conformance, finite `S1` localization, Schwarzschild work, and `F_0` remain preserved.
+
 ## Linearized five-dimensional tensor-conformance MVP
 
 The sourced static `d=5` dust completion now links the prior scalar Hessian exactly to the ordinary-coordinate `R_0i0j` block. All `8/8` preregistered controls pass. Localized profiles add `y`-derivative curvature; the exact uniform zero mode removes those derivatives but can retain `R_i4j4` through ordinary-space dependence of `h_44`. Tensor completion remains source dependent, and joint dilation leaves absolute `L` blind.
