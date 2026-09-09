@@ -24,6 +24,23 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr 4D comparison baseline
+
+The previously deferred equatorial Kerr photon-ring control now passes `8/8` preregistered controls. Prograde/retrograde dimensionless shape is distinct for nonzero spin, collides in the Schwarzschild limit, and retains exact joint geometric scale blindness.
+
+```text
+4D_COMPARISON_BASELINE
+KERR_FRAME_DRAGGING_ADDS_PROGRADE_RETROGRADE_DIMENSIONLESS_ORBIT_SHAPE_BUT_JOINT_MA_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_KERR_SOURCE_ABSORBER_ENDPOINT_TETRAD_SCREEN_TRANSPORT_AFFINE_FREQUENCY_CLOCK_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED
+L_identified=false
+ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
+NO_POSITIVE_DETECTION_CLAIM
+```
+
+Kerr is a preserved 4D comparison baseline, not a 4D/5D detector or a promotion/demotion of the reformulation candidate. The 5D tensor result, finite `S1` result, and `F_0` remain unchanged.
+
 ## Linearized 5D tensor-conformance result
 
 The static dust completion has passed `8/8` preregistered source/tensor controls. It recovers the prior scalar Hessian as `R_0i0j`, records compact-index curvature, and distinguishes nonzero-mode `y` derivatives from ordinary-space `R_i4j4`. Source-stress dependence and the joint geometric scale null remain explicit.
