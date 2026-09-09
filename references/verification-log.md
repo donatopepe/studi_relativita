@@ -1,5 +1,13 @@
 # Bibliography verification log
 
+## Teo2003SphericalPhotonOrbits
+
+- Metadata checked against DOI `10.1023/A:1026286607562`, *General Relativity and Gravitation* 35 (2003) 1909-1926, and Edward Teo's author PDF.
+- Inspected equations (1a,b), (2)-(5a-d), and (10), plus surrounding prograde/retrograde discussion and constant-radius conditions.
+- Scope used here: prograde and retrograde equatorial circular photon radii, their range and Schwarzschild collision, standard Boyer-Lindquist metric/geodesic conventions, and radial-potential conformance through `R=0` and `dR/dr=0`.
+- Boyer-Lindquist coordinate angular rate, period, signed-convention collision, numerical residuals, joint scaling, rank, and identifiability classification remain project derivations or toy controls.
+- This source does not establish a transported screen, Jacobi/Sachs map, finite-boundary operational path, source/receiver, detector, physical clock, covariance, `ell0`, UMCH, evidence, or detection.
+
 ## Robinson2006Normalization
 
 - Metadata checked against arXiv `gr-qc/0609060` v1 and arXiv DOI `10.48550/arXiv.gr-qc/0609060`.
