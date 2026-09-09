@@ -24,6 +24,22 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Linearized 5D tensor-conformance result
+
+The static dust completion has passed `8/8` preregistered source/tensor controls. It recovers the prior scalar Hessian as `R_0i0j`, records compact-index curvature, and distinguishes nonzero-mode `y` derivatives from ordinary-space `R_i4j4`. Source-stress dependence and the joint geometric scale null remain explicit.
+
+```text
+DECLARED_STATIC_5D_DUST_METRIC_RECOVERS_SCALAR_HESSIAN_AS_R0I0J_BUT_ADDS_COMPACT_INDEX_CURVATURE_WHILE_TENSOR_COMPLETION_REMAINS_SOURCE_DEPENDENT_AND_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_5D_SOURCE_STRESS_LOCALIZATION_DYNAMICS_GAUGE_INVARIANT_OBSERVABLE_RADION_STABILIZATION_COUPLING_CALIBRATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_AND_ELL0_LAW_NOT_DERIVED
+L_identified=false
+ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
+NO_POSITIVE_DETECTION_CLAIM
+```
+
+This is model-level conformance, not promotion of the candidate to physical core and not evidence. `F_0` and the finite `S1` result `FINITE_S1_SOURCE_PROBE_LOCALIZATION_SUPPRESSES_KK_TIDAL_SHAPE` remain preserved.
+
 ## Retained results
 
 No history is rewritten. Retained conclusions include:
