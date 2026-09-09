@@ -2,19 +2,36 @@
 
 ## Status
 
-`DRAFT_FOR_RATIFICATION`
+`RATIFIED_FOR_IMPLEMENTATION_PLANNING`
 
-Design-only bounded continuation. No implementation, test, artifact, bibliography edit, UMCH change, or detection claim is authorized by this draft.
+Human approved this Kerr route before its 2026-09-02 deferral, then instructed work to continue after completion of the prioritized five-dimensional tensor-conformance gate on 2026-09-08. Primary-source review confirms the bounded orbit formulas and radial equations. This complete specification is ratified for implementation planning; implementation remains gated by a completed sibling TDD plan.
 
 Global state remains:
 
 ```text
-UMCH=UNPROVEN
+HIGHER_DIMENSIONAL_GRAVITY_DIRECTION=HUMAN_RATIFIED_RESEARCH_DIRECTION
+MODEL=KERR_EQUATORIAL_PHOTON_RING_4D_CONTROL
+UMCH=UNPROVEN_SECONDARY_CANDIDATE
+L_identified=false
 ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
 structural_dead_end=NOT_DECLARED
 Detection=NO_POSITIVE_DETECTION_CLAIM
-Maximum interpretation=CONFIRMATORY_ANALYSIS_ELIGIBLE_NOT_EVIDENCE
+Maximum interpretation=MODEL_LEVEL_KERR_ORBIT_CONFORMANCE_NOT_EVIDENCE
 ```
+
+## MVP-first gate
+
+**Objective:** determine whether exact prograde/retrograde equatorial circular null orbits in subextremal Kerr add orientation-sensitive dimensionless shape beyond Schwarzschild while retaining a joint geometric dilation that prevents identification of an absolute interior scale or `ell0`.
+
+**Metric and threshold:** correctness over eight preregistered orbit/convention/scale controls; threshold `8/8` under declared analytic or numerical tolerances.
+
+**Cases and order:** radius/range, branch ordering, Schwarzschild collision, radial-potential conformance, signed convention collision, joint geometric dilation, rank/scale-null direction, and no-`ell0` gate.
+
+**MVP:** exact equatorial circular null-orbit formulas, independently evaluated radial potential, Boyer–Lindquist coordinate angular rate/period, representative `chi` values, and one joint scaling/rank audit. No screen, Jacobi/Sachs map, finite-boundary scattering, source/receiver, covariance, or data.
+
+**Escalation condition:** add finite-boundary scattering or transported screen dynamics only if this orbit-level baseline fails a named conformance control that cannot be resolved by tracing source and sign conventions.
 
 ## Bounded question
 
@@ -263,7 +280,7 @@ A failed control is preserved as a negative or contradictory result; it is not t
 
 ## Determinism and later implementation contract
 
-If ratified, implementation must proceed through a sibling plan and TDD. Numerical artifacts use `.8g`; canonicalize to `0.0` only when `abs(value)<1e-7`. Tests must include source scope, exact/analytic identities where available, representative numerical controls, report alignment in English/Italian, deterministic artifact comparison, and full `python3 -m unittest discover -s tests`.
+If ratified, implementation must proceed through a sibling plan and TDD. Numerical artifacts use `.8g`; canonicalize computed residual noise to `0.0` only when `abs(value)<1e-7`, while preserving preregistered nonzero thresholds. Tests must include source scope, exact/analytic identities where available, representative numerical controls, report alignment in English/Italian, deterministic artifact comparison, and full `python3 -m unittest discover -s tests`.
 
 Implementation must preserve formulas and raw records before derived classifications. No full Jacobi map, screen basis, polarization, source coherence, detector, noise, or covariance may be added under this spec.
 
