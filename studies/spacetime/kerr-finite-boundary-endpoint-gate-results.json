@@ -1,0 +1,369 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_KERR_ENDPOINT_CONFORMANCE_NOT_EVIDENCE",
+    "controls": [
+      {
+        "name": "turning_impact_parameter",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1e-11
+      },
+      {
+        "name": "path_first_integrals_convergence",
+        "passed": true,
+        "residual": 1.1877668e-06,
+        "threshold": 2e-06
+      },
+      {
+        "name": "ZAMO_tetrad",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-09
+      },
+      {
+        "name": "endpoint_null_reconstruction",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-09
+      },
+      {
+        "name": "orientation_asymmetry",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-09
+      },
+      {
+        "name": "Schwarzschild_collision",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-09
+      },
+      {
+        "name": "joint_dilation",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-09
+      },
+      {
+        "name": "rank_no_ell0",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-09
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_EMITTER_ABSORBER_WORLDLINES_CLOCKS_AFFINE_FREQUENCY_STANDARD_PARALLEL_SCREEN_JACOBI_PREPARATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "Delta_phi": [
+      3.4663312,
+      -4.2673873
+    ],
+    "Delta_t_over_M": [
+      33.987089,
+      41.551191
+    ],
+    "Schwarzschild_control": {
+      "classification": "KERR_FINITE_BOUNDARY_ORIENTATION_BRANCHES_COLLIDE_IN_SCHWARZSCHILD_UNSIGNED_RECORD",
+      "signed_azimuthal_reversal_residual": 0.0,
+      "unsigned_collision_residual": 0.0
+    },
+    "affine_length_over_M": [
+      24.243,
+      27.35485
+    ],
+    "convergence_certificate": {
+      "negative": {
+        "coarse": 800,
+        "fine": 1600,
+        "maximum_residual": 1.0974285e-06,
+        "residuals": {
+          "Delta_phi": 1.3692484e-07,
+          "Delta_t_over_M": 7.8244943e-07,
+          "affine_length_over_M": 1.0974285e-06
+        }
+      },
+      "positive": {
+        "coarse": 800,
+        "fine": 1600,
+        "maximum_residual": 1.1877668e-06,
+        "residuals": {
+          "Delta_phi": 1.1664943e-07,
+          "Delta_t_over_M": 9.6278337e-07,
+          "affine_length_over_M": 1.1877668e-06
+        }
+      }
+    },
+    "coordinate_null_residual": 0.0,
+    "geometry": {
+      "M": 1.0,
+      "a": 0.6,
+      "chi": 0.6,
+      "orientation": 1,
+      "r_observer": 12.0,
+      "r_source": 12.0,
+      "rho": 4.5
+    },
+    "limitations": "PHYSICAL_KERR_EMITTER_ABSORBER_WORLDLINES_CLOCKS_AFFINE_FREQUENCY_STANDARD_PARALLEL_SCREEN_JACOBI_PREPARATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+    "local_null_residual": 0.0,
+    "observer_ZAMO_tetrad": [
+      [
+        1.0953996,
+        0.0,
+        0.0,
+        0.00075848193
+      ],
+      [
+        0.0,
+        0.91423921,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.083333333,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.083212071
+      ]
+    ],
+    "observer_local_direction": [
+      [
+        0.90228754,
+        0.0,
+        0.43113479
+      ],
+      [
+        0.86597713,
+        0.0,
+        -0.50008361
+      ]
+    ],
+    "observer_local_frequency": [
+      1.0911117,
+      1.1004156
+    ],
+    "orientation_control": {
+      "classification": "KERR_ENDPOINT_ORIENTATION_ASYMMETRY_IS_FRAME_DRAGGING_SHAPE_NOT_ABSOLUTE_SCALE",
+      "fixed_spin_shape_difference": 7.7337185,
+      "simultaneous_reversal_residual": 0.0
+    },
+    "path_samples": {
+      "negative": {
+        "observer": [
+          1.2053948,
+          0.87121031,
+          0.0,
+          -0.044956942
+        ],
+        "source": [
+          1.2053948,
+          -0.87121031,
+          0.0,
+          -0.044956942
+        ]
+      },
+      "positive": {
+        "observer": [
+          1.1952034,
+          0.90006532,
+          0.0,
+          0.039971897
+        ],
+        "source": [
+          1.1952034,
+          -0.90006532,
+          0.0,
+          0.039971897
+        ]
+      }
+    },
+    "rank_control": {
+      "column_norms": [
+        0.0,
+        4.2202305,
+        3.7608906,
+        1.7323601,
+        1.7323601
+      ],
+      "feature_Jacobian": [
+        [
+          0.0,
+          -3.9627369,
+          -3.5003696,
+          1.3279071,
+          1.3279071
+        ],
+        [
+          0.0,
+          -0.4348186,
+          -0.61918155,
+          0.044409992,
+          0.044409992
+        ],
+        [
+          0.0,
+          -1.3837193,
+          -1.2228292,
+          1.1110302,
+          1.1110302
+        ],
+        [
+          0.0,
+          -0.0068891523,
+          -0.00072101026,
+          -0.0080070172,
+          0.0
+        ],
+        [
+          0.0,
+          -0.0068891523,
+          -0.00072101026,
+          0.0,
+          -0.0080070172
+        ],
+        [
+          0.0,
+          -0.017299977,
+          0.034776412,
+          -0.015601967,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.036205739,
+          0.072780773,
+          -0.03265211,
+          0.0
+        ],
+        [
+          0.0,
+          0.017299977,
+          -0.034776412,
+          0.0,
+          0.015601967
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -0.036205739,
+          0.072780773,
+          0.0,
+          -0.03265211
+        ]
+      ],
+      "log_M_column_norm": 0.0,
+      "parameters": [
+        "log_M",
+        "chi",
+        "rho",
+        "R_source_over_M",
+        "R_observer_over_M"
+      ],
+      "rank": 4,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "reconstruction_residual": 0.0,
+    "scale_control": {
+      "classification": "KERR_FINITE_BOUNDARY_ZAMO_RECORD_RETAINS_JOINT_GEOMETRIC_SCALE_NULL",
+      "dimensional_covariance_residual": 0.0,
+      "dimensionless_record_residual": 0.0,
+      "scale_factor": 2.5
+    },
+    "source_ZAMO_tetrad": [
+      [
+        1.0953996,
+        0.0,
+        0.0,
+        0.00075848193
+      ],
+      [
+        0.0,
+        0.91423921,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.083333333,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.083212071
+      ]
+    ],
+    "source_local_direction": [
+      [
+        -0.90228754,
+        0.0,
+        0.43113479
+      ],
+      [
+        -0.86597713,
+        0.0,
+        -0.50008361
+      ]
+    ],
+    "source_local_frequency": [
+      1.0911117,
+      1.1004156
+    ],
+    "source_scope": "GRALLA_LUPSASCA_2020_EQS_1_TO_13F_PATH_ONLY_ZAMO_PROTOCOL_PROJECT_DERIVATION",
+    "turning_record": [
+      {
+        "R_turn_residual": 0.0,
+        "orientation": 1,
+        "r_turn": 4.5,
+        "rho": 4.5,
+        "xi": 5.653221,
+        "xi_over_M": 5.653221
+      },
+      {
+        "R_turn_residual": 0.0,
+        "orientation": -1,
+        "r_turn": 4.5,
+        "rho": 4.5,
+        "xi": -6.613221,
+        "xi_over_M": -6.613221
+      }
+    ]
+  },
+  "result": "KERR_FINITE_BOUNDARY_ZAMO_ENDPOINTS_CONVERT_COORDINATE_PATHS_TO_LOCAL_DIRECTION_AND_RELATIVE_FREQUENCY_SHAPE_BUT_WITHOUT_PHYSICAL_ENDPOINT_STANDARDS_OR_SCREEN_TRANSPORT_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0",
+  "review": "DIRECT_REVIEW_NO_SUBAGENT",
+  "study_id": "kerr-finite-boundary-zamo-endpoint-gate-v1"
+}
