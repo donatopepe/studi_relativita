@@ -24,6 +24,22 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr finite-boundary endpoint result
+
+The Kerr 4D comparison now includes one finite source-turning-observer path with ZAMO endpoint frames. All `8/8` controls pass. Local direction/frequency records are internally consistent but retain exact geometric scale blindness.
+
+```text
+KERR_FINITE_BOUNDARY_ZAMO_ENDPOINTS_CONVERT_COORDINATE_PATHS_TO_LOCAL_DIRECTION_AND_RELATIVE_FREQUENCY_SHAPE_BUT_WITHOUT_PHYSICAL_ENDPOINT_STANDARDS_OR_SCREEN_TRANSPORT_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_KERR_EMITTER_ABSORBER_WORLDLINES_CLOCKS_AFFINE_FREQUENCY_STANDARD_PARALLEL_SCREEN_JACOBI_PREPARATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+L_identified=false
+ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
+NO_POSITIVE_DETECTION_CLAIM
+```
+
+This remains a mathematical 4D endpoint control, not a detector or 5D comparator. Prior Kerr ring result, 5D tensor result, finite `S1` result, and `F_0` remain preserved.
+
 ## Kerr 4D comparison baseline
 
 The previously deferred equatorial Kerr photon-ring control now passes `8/8` preregistered controls. Prograde/retrograde dimensionless shape is distinct for nonzero spin, collides in the Schwarzschild limit, and retains exact joint geometric scale blindness.

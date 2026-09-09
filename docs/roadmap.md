@@ -20,6 +20,22 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr finite-boundary ZAMO endpoint gate
+
+Finite equatorial Kerr scattering now runs between explicit ZAMO endpoint tetrads through one exterior turning point. All `8/8` preregistered controls pass. Coordinate paths reconstruct consistent local null direction and relative frequency records; orientation shape survives at nonzero spin and unsigned records collide in the Schwarzschild limit. Exact joint dilation and the `[log_M,...]` null column remain.
+
+```text
+KERR_FINITE_BOUNDARY_ZAMO_ENDPOINTS_CONVERT_COORDINATE_PATHS_TO_LOCAL_DIRECTION_AND_RELATIVE_FREQUENCY_SHAPE_BUT_WITHOUT_PHYSICAL_ENDPOINT_STANDARDS_OR_SCREEN_TRANSPORT_JOINT_DILATION_RETAINS_ABSOLUTE_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_KERR_EMITTER_ABSORBER_WORLDLINES_CLOCKS_AFFINE_FREQUENCY_STANDARD_PARALLEL_SCREEN_JACOBI_PREPARATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+L_identified=false
+ell0_identified=false
+L_equals_ell0=NOT_DERIVED
+extra_dimension_detected=false
+NO_POSITIVE_DETECTION_CLAIM
+```
+
+ZAMO is a mathematical endpoint observer, not a physical detector. Next unresolved gate is parallel screen/Jacobi transport with physical endpoint standards still separate. Kerr ring, 5D tensor, finite `S1`, Schwarzschild, and `F_0` remain preserved.
+
 ## Kerr equatorial photon-ring 4D comparison baseline
 
 The previously deferred Kerr orbit-level control is complete. All `8/8` preregistered controls pass. Prograde/retrograde branches add orientation-sensitive dimensionless shape, collide at the Schwarzschild `3M` limit, and satisfy the independent radial potential. Joint `M,a` dilation preserves dimensionless records, leaving exact absolute-scale blindness.
