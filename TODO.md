@@ -2,43 +2,40 @@
 
 Updated: 2026-09-10
 
-## Active milestone: Kerr finite source/analyzer MVP
+## Active milestone: Kerr calibrated receiver/noise likelihood MVP
 
-**Objective:** determine whether the verified Kerr Jacobi orientation shape survives a declared finite Gaussian source covariance and endpoint analyzer projection, while distinguishing geometry from preparation nuisance and preserving the absolute-scale null.
+**Objective:** determine whether Kerr orientation-dependent observer covariance remains statistically distinguishable under one declared calibrated Gaussian receiver model, while testing exact collisions caused by unknown gain/noise nuisances and preserving the absolute-scale null.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify bounded source-covariance/analyzer specification.
-   - Depends on: merged Kerr Jacobi gate `5e3f5db`.
-   - Complete when: inputs, formulas, eight cases, source scope, stop conditions and nonclaims are explicit.
-   - Test: spec structural test and UTF-8 validator.
-2. [x] Extend authoritative scenario matrix and runner.
+1. [ ] Ratify bounded receiver/noise/likelihood specification. **ACTIVE**
+   - Depends on: completed finite source/analyzer milestone `cd188ab`.
+   - Complete when: receiver equation, Gaussian likelihood/KL conventions, fixed versus nuisance calibration, eight controls, scenario IDs, sources, stop conditions and nonclaims are explicit.
+   - Test: structural spec test and UTF-8 validation.
+2. [ ] Extend authoritative Kerr scenario matrix and reusable runner.
    - Depends on: task 1.
-   - Complete when: all new scenarios have stable IDs/categories/handlers; total, scenario and category modes fail closed and emit JSON.
-   - Test: matrix/runner tests plus total and every granular execution.
-3. [x] Implement smallest finite Gaussian source covariance and analyzer readout.
+   - Complete when: J15–J22 are registered with categories/handlers; total, per-scenario and per-category JSON runs pass or fail closed.
+   - Test: scenario matrix/runner tests and all granular commands.
+3. [ ] Implement smallest deterministic receiver likelihood engine.
    - Depends on: tasks 1–2.
-   - Complete when: covariance propagation uses the existing `4x4` phase map, raw covariance remains primary, analyzer is declared and nuisance controls are explicit.
-   - Test: eight focused controls.
-4. [x] Generate bounded deterministic artifacts and reports.
+   - Complete when: calibrated covariance, Gaussian KL symmetry controls, noise monotonicity, finite-sample expected likelihood, nuisance collision, basis covariance and scale null pass.
+   - Test: exactly eight focused controls and deterministic artifact equality.
+4. [ ] Generate artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: stable scientific JSON, scenario report, theory note and EN/IT audits agree.
-   - Test: byte-identical regeneration and report tests.
-5. [x] Closure and publication.
+   - Complete when: scientific JSON, total scenario report, theory, EN/IT audits, roadmap and ledger agree and preserve all prior negative results.
+   - Test: report contracts, byte-identical regeneration, UTF-8 gate.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
-   - Complete when: CodeGraph synced; UTF-8, focused/full tests, total/granular runner, deterministic checks and CI pass; main/origin align; Hermes updated.
+   - Complete when: CodeGraph sync, focused/full suite, total/all granular scenarios, deterministic checks, UTF-8, extraction/inventory, clean main, push and remote CI are green; Hermes updated.
 
-## Milestone result
+## Previous milestone result
 
-- Scientific controls: `8/8`.
-- Scenario battery: `14/14`; every scenario and category granular run passed.
-- Full suite: `1110/1110`.
-- Deterministic artifacts, UTF-8, extraction, inventory and CodeGraph gates passed locally.
-- Publication complete: `main=origin/main` at `d9cbc1f`; GitHub Actions run `34468583168` tests/LaTeX passed.
+- Kerr finite source/analyzer: scientific `8/8`, scenario battery `14/14`, suite `1110/1110`, CI green at `cd188ab`.
+- Full covariance retains orientation shape, but an unknown branch-dependent analyzer scalar has an exact collision.
 
-## Current scientific guardrails
+## Scientific guardrails
 
 ```text
 UMCH=UNPROVEN_SECONDARY_CANDIDATE
@@ -49,10 +46,3 @@ extra_dimension_detected=false
 structural_dead_end=NOT_DECLARED
 NO_POSITIVE_DETECTION_CLAIM
 ```
-
-## Completed milestones
-
-- [x] Kerr circular photon-ring baseline — PR #107.
-- [x] Kerr finite ZAMO endpoints — PR #108.
-- [x] Kerr parallel screen transport — PR #109.
-- [x] Kerr Jacobi tidal phase map — main `5e3f5db`, `8/8`, scenarios `6/6`, suite `1096/1096`, CI green.
