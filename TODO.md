@@ -14,15 +14,15 @@ Updated: 2026-09-10
    - Depends on: completed finite source/analyzer milestone `cd188ab`.
    - Complete when: receiver equation, Gaussian likelihood/KL conventions, fixed versus nuisance calibration, eight controls, scenario IDs, sources, stop conditions and nonclaims are explicit.
    - Test: structural spec test and UTF-8 validation.
-2. [ ] Extend authoritative Kerr scenario matrix and reusable runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and reusable runner.
    - Depends on: task 1.
    - Complete when: J15–J22 are registered with categories/handlers; total, per-scenario and per-category JSON runs pass or fail closed.
    - Test: scenario matrix/runner tests and all granular commands.
-3. [ ] Implement smallest deterministic receiver likelihood engine.
+3. [x] Implement smallest deterministic receiver likelihood engine.
    - Depends on: tasks 1–2.
    - Complete when: calibrated covariance, Gaussian KL symmetry controls, noise monotonicity, finite-sample expected likelihood, nuisance collision, basis covariance and scale null pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate artifacts and bilingual scientific record.
+4. [ ] Generate artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total scenario report, theory, EN/IT audits, roadmap and ledger agree and preserve all prior negative results.
    - Test: report contracts, byte-identical regeneration, UTF-8 gate.
