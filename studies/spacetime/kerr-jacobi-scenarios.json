@@ -14,6 +14,14 @@
     {"id": "J11", "category": "orientation", "handler": "source_orientation_survival"},
     {"id": "J12", "category": "analyzer", "handler": "analyzer_extrema"},
     {"id": "J13", "category": "analyzer", "handler": "analyzer_collision"},
-    {"id": "J14", "category": "scale", "scale_factor": 2.5, "handler": "source_analyzer_scale"}
+    {"id": "J14", "category": "scale", "scale_factor": 2.5, "handler": "source_analyzer_scale"},
+    {"id": "J15", "category": "receiver", "handler": "receiver_covariance"},
+    {"id": "J16", "category": "likelihood", "handler": "likelihood_normalization"},
+    {"id": "J17", "category": "likelihood", "handler": "KL_conformance"},
+    {"id": "J18", "category": "noise", "handler": "noise_monotonicity"},
+    {"id": "J19", "category": "likelihood", "samples": 25, "handler": "expected_LLR"},
+    {"id": "J20", "category": "receiver", "basis_angle": 0.37, "handler": "receiver_basis"},
+    {"id": "J21", "category": "calibration", "handler": "calibration_collision"},
+    {"id": "J22", "category": "scale", "scale_factor": 2.5, "handler": "receiver_scale"}
   ]
 }

@@ -1,0 +1,237 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_KERR_RECEIVER_LIKELIHOOD_NOT_EVIDENCE",
+    "controls": [
+      {
+        "name": "receiver_covariance",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "likelihood_normalization",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-07
+      },
+      {
+        "name": "KL_conformance",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-05
+      },
+      {
+        "name": "noise_monotonicity",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "expected_LLR",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "basis_covariance",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "calibration_collision",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "scale_rank_no_ell0",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_EMISSION_RECEIVER_HARDWARE_CALIBRATION_PRIORS_NOISE_SPECTRUM_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "KL": {
+      "minus_to_plus": 7.0519599,
+      "plus_to_minus": 1.0752327,
+      "quadrature_residual": 0.0,
+      "self_residual": 0.0,
+      "symmetric": 8.1271925
+    },
+    "basis": {
+      "KL_residual": 0.0,
+      "eigenvalue_residual": 0.0
+    },
+    "collision": {
+      "covariance_collision_residual": 0.0,
+      "positive_calibrations": true,
+      "records": {
+        "minus": {
+          "C": [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0
+            ]
+          ],
+          "gains": [
+            1.9675535,
+            1.1192685
+          ],
+          "noise": 0.5
+        },
+        "plus": {
+          "C": [
+            [
+              1.0,
+              0.0
+            ],
+            [
+              0.0,
+              100.0
+            ]
+          ],
+          "gains": [
+            4.3813032,
+            4.7437441
+          ],
+          "noise": 0.5
+        }
+      },
+      "target": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          100.0
+        ]
+      ],
+      "underlying_signal_difference": 75.191347
+    },
+    "expected_LLR": {
+      "minus_expected_llr": 176.299,
+      "plus_expected_llr": 26.880816,
+      "samples": 25,
+      "sum_residual": 0.0,
+      "symmetric_expected": 203.17981
+    },
+    "limitations": "PHYSICAL_KERR_EMISSION_RECEIVER_HARDWARE_CALIBRATION_PRIORS_NOISE_SPECTRUM_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+    "minus": {
+      "C_receiver": [
+        [
+          0.18649042,
+          0.0
+        ],
+        [
+          0.0,
+          51.021903
+        ]
+      ],
+      "eigenvalues": [
+        0.18649042,
+        51.021903
+      ],
+      "expanded": [
+        [
+          0.18649042,
+          0.0
+        ],
+        [
+          0.0,
+          51.021903
+        ]
+      ],
+      "expanded_formula_residual": 0.0,
+      "gain": 0.8,
+      "noise_sigma": 0.25,
+      "orientation": -1,
+      "positive_definite": true,
+      "symmetry_residual": 0.0
+    },
+    "noise": {
+      "noise_sigmas": [
+        0.1,
+        0.25,
+        0.5,
+        1.0,
+        2.0
+      ],
+      "strictly_decreasing": true,
+      "symmetric_KL": [
+        9.0240128,
+        8.1271925,
+        7.3722946,
+        5.8121151,
+        3.0817926
+      ]
+    },
+    "normalization": {
+      "log_density_residual": 0.0,
+      "normalization_residual": 0.0
+    },
+    "plus": {
+      "C_receiver": [
+        [
+          0.087505447,
+          0.0
+        ],
+        [
+          0.0,
+          2.8994414
+        ]
+      ],
+      "eigenvalues": [
+        0.087505447,
+        2.8994414
+      ],
+      "expanded": [
+        [
+          0.087505447,
+          0.0
+        ],
+        [
+          0.0,
+          2.8994414
+        ]
+      ],
+      "expanded_formula_residual": 0.0,
+      "gain": 0.8,
+      "noise_sigma": 0.25,
+      "orientation": 1,
+      "positive_definite": true,
+      "symmetry_residual": 0.0
+    },
+    "scale": {
+      "KL_residual": 0.0,
+      "log_M_column_norm": 0.0,
+      "receiver_covariance_residual": 0.0,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "result": "KERR_FULL_COVARIANCE_BRANCHES_ARE_DISTINGUISHABLE_UNDER_FIXED_GAUSSIAN_RECEIVER_CALIBRATION_BUT_UNCONSTRAINED_GAIN_NOISE_NUISANCES_CAN_COLLIDE_EXACTLY_AND_GEOMETRIC_SCALE_REMAINS_BLIND_NOT_ELL0",
+  "review": "DIRECT_REVIEW_NO_SUBAGENT",
+  "study_id": "kerr-receiver-likelihood-v1"
+}
