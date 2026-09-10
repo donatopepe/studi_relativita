@@ -10,11 +10,11 @@ Updated: 2026-09-10
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify bounded receiver/noise/likelihood specification. **ACTIVE**
+1. [x] Ratify bounded receiver/noise/likelihood specification.
    - Depends on: completed finite source/analyzer milestone `cd188ab`.
    - Complete when: receiver equation, Gaussian likelihood/KL conventions, fixed versus nuisance calibration, eight controls, scenario IDs, sources, stop conditions and nonclaims are explicit.
    - Test: structural spec test and UTF-8 validation.
-2. [ ] Extend authoritative Kerr scenario matrix and reusable runner.
+2. [ ] Extend authoritative Kerr scenario matrix and reusable runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J15–J22 are registered with categories/handlers; total, per-scenario and per-category JSON runs pass or fail closed.
    - Test: scenario matrix/runner tests and all granular commands.
