@@ -4,7 +4,9 @@ class ReceiverSpecSources(unittest.TestCase):
  def test_spec_and_todo(self):
   text=SPEC.read_text()
   for x in ('RATIFIED_FOR_IMPLEMENTATION_PLANNING','threshold:** exactly `8/8`','J15','J22','22/22','D_KL','Calibration nuisance collision','NO_POSITIVE_DETECTION_CLAIM'):self.assertIn(x,text)
-  self.assertIn('Kerr calibrated receiver/noise likelihood MVP',TODO.read_text())
+  todo=TODO.read_text()
+  self.assertIn('Kerr calibrated receiver: scientific `8/8`, scenarios `22/22`, suite `1124/1124`, CI green at `1f5bb15`.',todo)
+  self.assertIn('Kerr shared-calibration robustness MVP',todo)
  def test_sources(self):
   bib=BIB.read_text();log=LOG.read_text()
   for x in ('@article{KullbackLeibler1951','10.1214/aoms/1177729694'):self.assertIn(x,bib)

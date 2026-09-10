@@ -2,53 +2,46 @@
 
 Updated: 2026-09-10
 
-## Active milestone: Kerr calibrated receiver/noise likelihood MVP
+## Active milestone: Kerr shared-calibration robustness MVP
 
-**Objective:** determine whether Kerr orientation-dependent observer covariance remains statistically distinguishable under one declared calibrated Gaussian receiver model, while testing exact collisions caused by unknown gain/noise nuisances and preserving the absolute-scale null.
+**Objective:** determine whether Kerr plus/minus receiver covariances remain distinguishable under one common but uncertain bounded receiver calibration, while proving that unbounded common attenuation/noise can drive information separation arbitrarily close to zero and preserving the geometric scale null.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify bounded receiver/noise/likelihood specification.
-   - Depends on: completed finite source/analyzer milestone `cd188ab`.
-   - Complete when: receiver equation, Gaussian likelihood/KL conventions, fixed versus nuisance calibration, eight controls, scenario IDs, sources, stop conditions and nonclaims are explicit.
-   - Test: structural spec test and UTF-8 validation.
-2. [x] Extend authoritative Kerr scenario matrix and reusable runner.
+1. [ ] Ratify shared-calibration robustness specification. **ACTIVE**
+   - Depends on: completed calibrated receiver milestone `1f5bb15`.
+   - Complete when: common-calibration contract, compact toy bounds, exact noncollision statement, asymptotic counterexample, eight controls, J23–J30, source scope and nonclaims are explicit.
+   - Test: structural spec test and shared UTF-8 validator.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J15–J22 are registered with categories/handlers; total, per-scenario and per-category JSON runs pass or fail closed.
-   - Test: scenario matrix/runner tests and all granular commands.
-3. [x] Implement smallest deterministic receiver likelihood engine.
+   - Complete when: J23–J30 and categories are registered with fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Test: matrix/runner contract plus every granular command.
+3. [ ] Implement bounded common-calibration robustness engine.
    - Depends on: tasks 1–2.
-   - Complete when: calibrated covariance, Gaussian KL symmetry controls, noise monotonicity, finite-sample expected likelihood, nuisance collision, basis covariance and scale null pass.
+   - Complete when: common covariance map, exact finite noncollision, deterministic bounded search, refinement/convergence, boundary control, asymptotic information collapse, basis covariance and scale/nonclaims pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total scenario report, theory, EN/IT audits, roadmap and ledger agree and preserve all prior negative results.
-   - Test: report contracts, byte-identical regeneration, UTF-8 gate.
-5. [x] Closure and publication.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior fixed/branch-dependent calibration results.
+   - Test: byte-identical generation, report tests and shared UTF-8 validation.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
-   - Complete when: CodeGraph sync, focused/full suite, total/all granular scenarios, deterministic checks, UTF-8, extraction/inventory, clean main, push and remote CI are green; Hermes updated.
+   - Complete when: CodeGraph, focused/full tests, total/all granular scenarios, deterministic checks, extraction/inventory, shared UTF-8, clean main, push/CI and Hermes are green.
 
-## Current blockers and planned fixes
+## Fixed MVP assumptions
 
-- [x] DOI-less NIST web source kept in verification log and removed from DOI-only BibTeX; no DOI invented.
-- [x] Prior source/analyzer report test decoupled from active TODO numbering.
-- [x] Shared `HermesVault/Automation` search-first/reuse and encoding-validator rules propagated to `docs/STANDARD_RULES.md`.
-- [x] Full suite and closure gates rerun after fixes: `1124/1124`, total `22/22`, 31 granular scenario/category runs, deterministic artifacts, shared UTF-8 validator, extraction and inventory green.
-
-## Milestone evidence
-
-- Scientific receiver controls: `8/8`.
-- Fixed-calibration symmetric KL: `8.1271925`; expected LLR at 25 samples positive in both directions.
-- Calibration nuisance target collision: `diag(1,100)` with residual `0.0`.
-- CodeGraph synced; main checkout only; no worktrees.
-- Published `main=origin/main` at `78d28ec`; GitHub Actions run `34509804483` tests/LaTeX passed.
+- Common receiver calibration applies identically under both branch hypotheses.
+- Diagonal gains are positive and bounded in toy range `[0.5,1.5]`; isotropic noise sigma is bounded in `[0.1,1.0]`.
+- Bounds are preregistered mathematical controls, not measured hardware priors.
+- Deterministic tensor grid is refined once before any result is accepted.
+- Unbounded common nuisance is tested separately with gain tending to zero or noise tending to infinity.
 
 ## Previous milestone result
 
-- Kerr finite source/analyzer: scientific `8/8`, scenario battery `14/14`, suite `1110/1110`, CI green at `cd188ab`.
-- Full covariance retains orientation shape, but an unknown branch-dependent analyzer scalar has an exact collision.
+- Kerr calibrated receiver: scientific `8/8`, scenarios `22/22`, suite `1124/1124`, CI green at `1f5bb15`.
+- Fixed calibration distinguishes branches; branch-dependent unconstrained gain/noise gives exact covariance collision `diag(1,100)`.
 
 ## Scientific guardrails
 
