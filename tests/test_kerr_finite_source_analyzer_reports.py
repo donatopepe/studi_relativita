@@ -13,5 +13,6 @@ class Reports(unittest.TestCase):
   for x in ('Sigma_observer=P_bar Sigma_source P_bar^T','analyzer variance','width homogeneity','scalar collision',RESULT,GATE):self.assertIn(x,THEORY.read_text())
   for t in (ROADMAP.read_text(),LEDGER.read_text()):
    for x in (RESULT,GATE,'KERR_FINITE_BOUNDARY_JACOBI_PHASE_MAP_ADDS_ORIENTATION','KERR_EQUATORIAL_FINITE_BOUNDARY_PARALLEL_SCREEN_TRANSPORT','F_0'):self.assertIn(x,t)
-  self.assertIn('5. [ ] Closure and publication. **ACTIVE — local closure green; push/CI pending**',TODO.read_text())
+  self.assertIn('5. [x] Closure and publication.',TODO.read_text())
+  self.assertIn('GitHub Actions run `34468583168` tests/LaTeX passed.',TODO.read_text())
 if __name__=='__main__':unittest.main()
