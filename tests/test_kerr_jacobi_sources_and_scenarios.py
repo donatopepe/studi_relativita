@@ -9,6 +9,7 @@ BIB = ROOT / "references/library.bib"
 LOG = ROOT / "references/verification-log.md"
 MANIFEST = ROOT / "studies/spacetime/kerr-jacobi-scenarios.json"
 RUNNER = ROOT / "tools/run_kerr_jacobi_scenarios.py"
+STABLE_REPORT = ROOT / "reports/kerr-jacobi-scenario-report.json"
 
 
 class KerrJacobiSourcesAndScenarios(unittest.TestCase):
@@ -40,6 +41,10 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
             category = subprocess.run(["python", str(RUNNER), "--mode", "granular", "--category", "orientation"], text=True, capture_output=True)
             self.assertEqual(category.returncode, 0, category.stdout + category.stderr)
             self.assertTrue(all(item["category"] == "orientation" for item in json.loads(category.stdout)["results"]))
+
+    def test_stable_total_report_is_current(self):
+        generated = subprocess.check_output(["python", str(RUNNER), "--mode", "total"], text=True)
+        self.assertEqual(json.loads(generated), json.loads(STABLE_REPORT.read_text()))
 
 
 if __name__ == "__main__":
