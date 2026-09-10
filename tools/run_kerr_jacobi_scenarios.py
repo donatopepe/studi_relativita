@@ -6,6 +6,8 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'studies/spacetime/kerr-jacobi-scenarios.json'
 MODULE=ROOT/'studies/spacetime/kerr_jacobi_tidal_gate.py'
 SPEC=importlib.util.spec_from_file_location('kerr_jacobi_scenario_engine',MODULE);engine=importlib.util.module_from_spec(SPEC);SPEC.loader.exec_module(engine)
+SOURCE_MODULE=ROOT/'studies/spacetime/kerr_finite_source_analyzer.py'
+SOURCE_SPEC=importlib.util.spec_from_file_location('kerr_source_analyzer_scenario_engine',SOURCE_MODULE);source=importlib.util.module_from_spec(SOURCE_SPEC);SOURCE_SPEC.loader.exec_module(source)
 def phase_conformance(case):
  p=engine.phase_control(1.,case['chi'],case['rho'],case['R_source_over_M'],case['R_observer_over_M'],case['orientation'])
  residual=p['symplectic_residual'];return residual<3e-7,residual,3e-7
@@ -15,7 +17,14 @@ def scale_conformance(case):
  c=engine.scale_control(1.,case['chi'],case['rho'],case['R_source_over_M'],case['R_observer_over_M'],case['orientation'],case['scale_factor']);r=c['converted_phase_map_residual'];return r<3e-6,r,3e-6
 def reversal_conformance(case):
  c=engine.reversal_composition_control(1.,case['chi'],case['rho'],case['R_source_over_M'],case['R_observer_over_M'],case['orientation']);r=max(c.values());return r<3e-6,r,3e-6
-HANDLERS={'phase_conformance':phase_conformance,'schwarzschild_conformance':schwarzschild_conformance,'scale_conformance':scale_conformance,'reversal_conformance':reversal_conformance}
+def source_covariance_domain(case):return source.scenario_control('source_covariance_domain',case)
+def covariance_conformance(case):return source.scenario_control('covariance_conformance',case)
+def width_homogeneity(case):return source.scenario_control('width_homogeneity',case)
+def source_orientation_survival(case):return source.scenario_control('orientation_survival',case)
+def analyzer_extrema(case):return source.scenario_control('analyzer_extrema',case)
+def analyzer_collision(case):return source.scenario_control('analyzer_collision',case)
+def source_analyzer_scale(case):return source.scenario_control('scale',case)
+HANDLERS={'phase_conformance':phase_conformance,'schwarzschild_conformance':schwarzschild_conformance,'scale_conformance':scale_conformance,'reversal_conformance':reversal_conformance,'source_covariance_domain':source_covariance_domain,'covariance_conformance':covariance_conformance,'width_homogeneity':width_homogeneity,'source_orientation_survival':source_orientation_survival,'analyzer_extrema':analyzer_extrema,'analyzer_collision':analyzer_collision,'source_analyzer_scale':source_analyzer_scale}
 def run(cases):
  results=[]
  for case in cases:
@@ -26,7 +35,7 @@ def run(cases):
  summary={name:sum(item['status']==name for item in results)for name in ('PASS','FAIL','SKIP','BLOCKED')}
  return {'schema':'kerr-jacobi-scenario-report-v1','results':results,'summary':summary,'coverage':{'selected_ids':[x['id']for x in results],'selected_categories':sorted({x['category']for x in results})}}
 def main(argv=None):
- p=argparse.ArgumentParser();p.add_argument('--mode',choices=('total','granular'),required=True);p.add_argument('--scenario');p.add_argument('--category',choices=('conformance','orientation','scale'));p.add_argument('--report-json');a=p.parse_args(argv);data=json.loads(MANIFEST.read_text(encoding='utf-8'));cases=data['scenarios']
+ p=argparse.ArgumentParser();p.add_argument('--mode',choices=('total','granular'),required=True);p.add_argument('--scenario');p.add_argument('--category',choices=('conformance','orientation','scale','preparation','analyzer'));p.add_argument('--report-json');a=p.parse_args(argv);data=json.loads(MANIFEST.read_text(encoding='utf-8'));cases=data['scenarios']
  if a.mode=='granular':
   if bool(a.scenario)==bool(a.category):p.error('granular mode requires exactly one --scenario or --category')
   cases=[x for x in cases if x['id']==a.scenario] if a.scenario else [x for x in cases if x['category']==a.category]

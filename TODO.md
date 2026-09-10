@@ -10,11 +10,11 @@ Updated: 2026-09-10
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify bounded source-covariance/analyzer specification.
+1. [x] Ratify bounded source-covariance/analyzer specification.
    - Depends on: merged Kerr Jacobi gate `5e3f5db`.
    - Complete when: inputs, formulas, eight cases, source scope, stop conditions and nonclaims are explicit.
    - Test: spec structural test and UTF-8 validator.
-2. [ ] Extend authoritative scenario matrix and runner.
+2. [ ] Extend authoritative scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: all new scenarios have stable IDs/categories/handlers; total, scenario and category modes fail closed and emit JSON.
    - Test: matrix/runner tests plus total and every granular execution.

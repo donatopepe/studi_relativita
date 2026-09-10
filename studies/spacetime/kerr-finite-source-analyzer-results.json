@@ -1,0 +1,428 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_KERR_SOURCE_ANALYZER_CONTROL_NOT_EVIDENCE",
+    "controls": [
+      {
+        "name": "source_domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "covariance_propagation",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "width_homogeneity",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "orientation_survival",
+        "passed": true,
+        "residual": 75.191347,
+        "threshold": 0.001,
+        "threshold_kind": "minimum_difference"
+      },
+      {
+        "name": "analyzer_extrema",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-05
+      },
+      {
+        "name": "basis_covariance",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "analyzer_collision",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "scale_rank_no_ell0",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_SOURCE_DYNAMICS_EMISSION_INTENSITY_POLARIZATION_ANALYZER_HARDWARE_RECEIVER_TRANSFER_CALIBRATED_NOISE_LIKELIHOOD_JOINT_COVARIANCE_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "basis_control": {
+      "eigenvalue_residual": 0.0,
+      "variance_residual": 0.0
+    },
+    "collision_control": {
+      "angles": {
+        "-1": 0.16408671,
+        "1": 0.80300266
+      },
+      "full_covariance_difference": 75.191347,
+      "intervals_overlap": true,
+      "scalar_collision_residual": 0.0,
+      "target_variance": 2.313228
+    },
+    "extrema_control": {
+      "analytic_eigenvalue_residual": 0.0,
+      "analytic_eigenvalues": [
+        0.039071011,
+        4.432721
+      ],
+      "dense_scan_bracket_residual": 0.0,
+      "scan_extrema": [
+        0.039071011,
+        4.432721
+      ]
+    },
+    "limitations": "PHYSICAL_KERR_SOURCE_DYNAMICS_EMISSION_INTENSITY_POLARIZATION_ANALYZER_HARDWARE_RECEIVER_TRANSFER_CALIBRATED_NOISE_LIKELIHOOD_JOINT_COVARIANCE_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+    "minus": {
+      "Gamma_block_formula": [
+        [
+          0.19373503,
+          0.0
+        ],
+        [
+          0.0,
+          79.624068
+        ]
+      ],
+      "Gamma_observer": [
+        [
+          0.19373503,
+          0.0
+        ],
+        [
+          0.0,
+          79.624068
+        ]
+      ],
+      "P_dimensionless": [
+        [
+          -2.004246,
+          0.0,
+          -27.327334,
+          0.0
+        ],
+        [
+          0.0,
+          35.158959,
+          0.0,
+          393.13952
+        ],
+        [
+          -0.086677195,
+          0.0,
+          -1.6807601,
+          0.0
+        ],
+        [
+          0.0,
+          2.4502984,
+          0.0,
+          27.427125
+        ]
+      ],
+      "Sigma_observer": [
+        [
+          0.19373503,
+          0.0,
+          0.011446229,
+          0.0
+        ],
+        [
+          0.0,
+          79.624068,
+          0.0,
+          5.5536339
+        ],
+        [
+          0.011446229,
+          0.0,
+          0.00068369755,
+          0.0
+        ],
+        [
+          0.0,
+          5.5536339,
+          0.0,
+          0.38735593
+        ]
+      ],
+      "Sigma_source": [
+        [
+          0.0064,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0144,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.000225,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0004
+        ]
+      ],
+      "eigenvalues": [
+        0.19373503,
+        79.624068
+      ],
+      "orientation": -1,
+      "positive_definite": true
+    },
+    "minus_scan": [
+      {
+        "rms": 0.44015341,
+        "theta": 0.0,
+        "variance": 0.19373503
+      },
+      {
+        "rms": 3.4389007,
+        "theta": 0.39269908,
+        "variance": 11.826038
+      },
+      {
+        "rms": 6.3173492,
+        "theta": 0.78539816,
+        "variance": 39.908901
+      },
+      {
+        "rms": 8.2457119,
+        "theta": 1.1780972,
+        "variance": 67.991765
+      },
+      {
+        "rms": 8.9232319,
+        "theta": 1.5707963,
+        "variance": 79.624068
+      }
+    ],
+    "orientation_control": {
+      "covariance_difference": 75.191347,
+      "scan_difference": 75.191347
+    },
+    "plus": {
+      "Gamma_block_formula": [
+        [
+          0.039071011,
+          0.0
+        ],
+        [
+          0.0,
+          4.432721
+        ]
+      ],
+      "Gamma_observer": [
+        [
+          0.039071011,
+          0.0
+        ],
+        [
+          0.0,
+          4.432721
+        ]
+      ],
+      "P_dimensionless": [
+        [
+          -1.8555935,
+          0.0,
+          -8.7010491,
+          0.0
+        ],
+        [
+          0.0,
+          7.4061706,
+          0.0,
+          95.431407
+        ],
+        [
+          -0.16495695,
+          0.0,
+          -1.3124095,
+          0.0
+        ],
+        [
+          0.0,
+          0.45370501,
+          0.0,
+          5.9811892
+        ]
+      ],
+      "Sigma_observer": [
+        [
+          0.039071011,
+          0.0,
+          0.0045283468,
+          0.0
+        ],
+        [
+          0.0,
+          4.432721,
+          0.0,
+          0.27670444
+        ],
+        [
+          0.0045283468,
+          0.0,
+          0.00056169329,
+          0.0
+        ],
+        [
+          0.0,
+          0.27670444,
+          0.0,
+          0.017274064
+        ]
+      ],
+      "Sigma_source": [
+        [
+          0.0064,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0144,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.000225,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0004
+        ]
+      ],
+      "eigenvalues": [
+        0.039071011,
+        4.432721
+      ],
+      "orientation": 1,
+      "positive_definite": true
+    },
+    "plus_scan": [
+      {
+        "rms": 0.19766389,
+        "theta": 0.0,
+        "variance": 0.039071011
+      },
+      {
+        "rms": 0.82613931,
+        "theta": 0.39269908,
+        "variance": 0.68250615
+      },
+      {
+        "rms": 1.4952913,
+        "theta": 0.78539816,
+        "variance": 2.235896
+      },
+      {
+        "rms": 1.9466088,
+        "theta": 1.1780972,
+        "variance": 3.7892858
+      },
+      {
+        "rms": 2.1054028,
+        "theta": 1.5707963,
+        "variance": 4.432721
+      }
+    ],
+    "scale_control": {
+      "dimensionless_covariance_residual": 0.0,
+      "log_M_column_norm": 0.0,
+      "parameters": [
+        "log_M",
+        "chi",
+        "rho",
+        "R_source/M",
+        "R_observer/M",
+        "analyzer_angle"
+      ],
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "source": {
+      "Sigma_source": [
+        [
+          0.0064,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0144,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.000225,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0004
+        ]
+      ],
+      "normalization": "ZERO_MEAN_NORMALIZED_GAUSSIAN_PHASE_SPACE_TOY",
+      "positive_definite": true,
+      "widths": [
+        0.08,
+        0.12,
+        0.015,
+        0.02
+      ]
+    },
+    "width_control": {
+      "covariance_residual": 0.0,
+      "normalized_shape_residual": 0.0
+    }
+  },
+  "result": "KERR_JACOBI_ORIENTATION_SHAPE_SURVIVES_FIXED_FINITE_GAUSSIAN_SOURCE_AND_ANALYZER_SCAN_BUT_SOURCE_WIDTH_HOMOGENEITY_AND_ANALYZER_COLLISIONS_PREVENT_INDEPENDENT_BRANCH_OR_ABSOLUTE_SCALE_IDENTIFICATION_NOT_ELL0",
+  "review": "DIRECT_REVIEW_NO_SUBAGENT",
+  "study_id": "kerr-finite-source-analyzer-v1"
+}
