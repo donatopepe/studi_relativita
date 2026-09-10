@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr finite-boundary parallel-screen gate
+
+Direct Levi-Civita transport of the ZAMO source screen now passes `8/8` controls. Transport is metric compatible and reversible, but the observer quotient is identity for equal and unequal endpoints in the declared equatorial ray-adapted basis. Path orientation labels remain distinct, while screen quotient rank is zero.
+
+```text
+KERR_EQUATORIAL_FINITE_BOUNDARY_PARALLEL_SCREEN_TRANSPORT_IS_METRIC_COMPATIBLE_BUT_ENDPOINT_SCREEN_QUOTIENT_COLLIDES_UNDER_EQUATORIAL_SYMMETRY_WHILE_JOINT_DILATION_RETAINS_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_KERR_SCREEN_PREPARATION_POLARIZATION_SOURCE_ANALYZER_JACOBI_TIDAL_MAP_CAUSTICS_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+This negative quotient result blocks a false orientation channel. Next solution is Jacobi tidal-map evolution on the verified screen. `F_0`, prior Kerr/Schwarzschild, finite `S1`, and 5D tensor results remain preserved.
+
 ## Kerr finite-boundary ZAMO endpoint gate
 
 Finite equatorial Kerr scattering now runs between explicit ZAMO endpoint tetrads through one exterior turning point. All `8/8` preregistered controls pass. Coordinate paths reconstruct consistent local null direction and relative frequency records; orientation shape survives at nonzero spin and unsigned records collide in the Schwarzschild limit. Exact joint dilation and the `[log_M,...]` null column remain.
