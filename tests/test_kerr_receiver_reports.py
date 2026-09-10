@@ -14,5 +14,6 @@ class Reports(unittest.TestCase):
   for t in (ROADMAP.read_text(),LEDGER.read_text()):
    for x in (RESULT,GATE,'KERR_JACOBI_ORIENTATION_SHAPE_SURVIVES_FIXED_FINITE_GAUSSIAN_SOURCE','KERR_FINITE_BOUNDARY_JACOBI_PHASE_MAP_ADDS_ORIENTATION','F_0'):self.assertIn(x,t)
   self.assertIn('4. [x] Generate artifacts and bilingual scientific record.',TODO.read_text())
-  self.assertIn('5. [ ] Closure and publication. **ACTIVE**',TODO.read_text())
+  self.assertIn('5. [ ] Closure and publication. **ACTIVE — local closure green; push/CI pending**',TODO.read_text())
+  self.assertIn('Full suite and closure gates rerun after fixes: `1124/1124`',TODO.read_text())
 if __name__=='__main__':unittest.main()
