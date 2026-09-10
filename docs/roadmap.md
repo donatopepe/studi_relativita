@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr finite-boundary Jacobi tidal gate
+
+Full Jacobi phase evolution on the verified Kerr screen passes `8/8`; scenario battery passes `6/6`. Unlike the identity screen quotient, focusing/shear phase shape differs by orientation while Schwarzschild and symplectic controls pass. Joint dilation remains scale blind.
+
+```text
+KERR_FINITE_BOUNDARY_JACOBI_PHASE_MAP_ADDS_ORIENTATION_SENSITIVE_FOCUSING_AND_SHEAR_BEYOND_IDENTITY_SCREEN_QUOTIENT_BUT_JOINT_DILATION_RETAINS_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_KERR_JACOBI_SOURCE_SIZE_PROFILE_SCREEN_PREPARATION_POLARIZATION_ANALYZER_CAUSTIC_CONTINUATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No physical source/readout or 5D Kerr comparator is derived. Prior Kerr endpoint/screen/ring, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr finite-boundary parallel-screen gate
 
 Direct Levi-Civita transport of the ZAMO source screen now passes `8/8` controls. Transport is metric compatible and reversible, but the observer quotient is identity for equal and unequal endpoints in the declared equatorial ray-adapted basis. Path orientation labels remain distinct, while screen quotient rank is zero.

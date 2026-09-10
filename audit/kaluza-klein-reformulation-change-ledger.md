@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr Jacobi tidal result
+
+Jacobi evolution on verified Kerr screen passes `8/8` and scenario matrix `6/6`. Orientation-sensitive phase shape survives the identity endpoint screen quotient, but joint dilation remains scale blind.
+
+```text
+KERR_FINITE_BOUNDARY_JACOBI_PHASE_MAP_ADDS_ORIENTATION_SENSITIVE_FOCUSING_AND_SHEAR_BEYOND_IDENTITY_SCREEN_QUOTIENT_BUT_JOINT_DILATION_RETAINS_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_KERR_JACOBI_SOURCE_SIZE_PROFILE_SCREEN_PREPARATION_POLARIZATION_ANALYZER_CAUSTIC_CONTINUATION_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Prior Kerr screen/endpoint/ring, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved. No model promotion or evidence claim.
+
 ## Kerr parallel-screen result
 
 Direct parallel transport passes `8/8`, but the finite equatorial endpoint screen quotient collides at identity in the declared ray-adapted ZAMO basis. Path orientation remains distinct; quotient rank is zero. This negative result prevents promotion of raw screen transport to an independent channel.
