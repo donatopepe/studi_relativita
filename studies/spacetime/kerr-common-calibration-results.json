@@ -1,0 +1,182 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_COMMON_CALIBRATION_ROBUSTNESS_NOT_EVIDENCE",
+    "controls": [
+      {
+        "name": "common_identity",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "bounded_domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "positive_bounded_minimum",
+        "passed": true,
+        "residual": 4.0094352,
+        "threshold": 0.001,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "refinement",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "boundary",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "attenuation",
+        "passed": true,
+        "residual": 2.8033078e-05,
+        "threshold": 0.001
+      },
+      {
+        "name": "unbounded_noise",
+        "passed": true,
+        "residual": 2.8033078e-05,
+        "threshold": 0.001
+      },
+      {
+        "name": "basis_scale_no_ell0",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_CALIBRATION_BOUNDS_PRIORS_HARDWARE_NOISE_SPECTRUM_SYSTEMATICS_SAMPLING_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "attenuation": {
+      "gains": [
+        0.5,
+        0.1,
+        0.01
+      ],
+      "last_value": 2.8033078e-05,
+      "strictly_decreasing": true,
+      "symmetric_KL": [
+        4.0094352,
+        0.15069819,
+        2.8033078e-05
+      ]
+    },
+    "basis_scale": {
+      "basis_KL_residual": 0.0,
+      "log_M_column_norm": 0.0,
+      "scale_KL_residual": 0.0,
+      "scale_factor": 2.5,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "boundary": {
+      "boundary": [
+        "gain_1_min",
+        "gain_2_min",
+        "noise_max"
+      ],
+      "direct_residual": 0.0,
+      "minimum": 4.0094352
+    },
+    "domain": {
+      "bounds": {
+        "gains": [
+          0.5,
+          1.5
+        ],
+        "noise": [
+          0.1,
+          1.0
+        ]
+      },
+      "valid": true
+    },
+    "identity": {
+      "difference_norm": 90.981529,
+      "identity_residual": 0.0
+    },
+    "limitations": "PHYSICAL_KERR_CALIBRATION_BOUNDS_PRIORS_HARDWARE_NOISE_SPECTRUM_SYSTEMATICS_SAMPLING_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+    "minimum": {
+      "anchor": [
+        0.5,
+        0.5,
+        1.0
+      ],
+      "grid_size": 17,
+      "minimum_symmetric_KL": 4.0094352
+    },
+    "refinement": {
+      "fine_anchor_residual": 0.0,
+      "nonincreasing": true,
+      "rows": [
+        {
+          "anchor": [
+            0.5,
+            0.5,
+            1.0
+          ],
+          "grid_size": 5,
+          "minimum_symmetric_KL": 4.0094352
+        },
+        {
+          "anchor": [
+            0.5,
+            0.5,
+            1.0
+          ],
+          "grid_size": 9,
+          "minimum_symmetric_KL": 4.0094352
+        },
+        {
+          "anchor": [
+            0.5,
+            0.5,
+            1.0
+          ],
+          "grid_size": 17,
+          "minimum_symmetric_KL": 4.0094352
+        }
+      ]
+    },
+    "unbounded_noise": {
+      "SNR_duality_residual": 0.0,
+      "last_value": 2.8033078e-05,
+      "noise_sigmas": [
+        1.0,
+        10.0,
+        100.0
+      ],
+      "strictly_decreasing": true,
+      "symmetric_KL": [
+        6.4635633,
+        0.15069819,
+        2.8033078e-05
+      ]
+    }
+  },
+  "result": "KERR_BRANCH_COVARIANCES_REMAIN_INFORMATION_DISTINCT_UNDER_COMMON_BOUNDED_INVERTIBLE_CALIBRATION_BUT_COMMON_ATTENUATION_OR_UNBOUNDED_NOISE_DRIVES_SEPARATION_TO_ZERO_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0",
+  "review": "DIRECT_REVIEW_NO_SUBAGENT",
+  "study_id": "kerr-common-calibration-robustness-v1"
+}
