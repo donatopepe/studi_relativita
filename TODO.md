@@ -30,6 +30,12 @@ Updated: 2026-09-10
    - Depends on: tasks 1–4 GREEN.
    - Complete when: CodeGraph sync, focused/full suite, total/all granular scenarios, deterministic checks, UTF-8, extraction/inventory, clean main, push and remote CI are green; Hermes updated.
 
+## Current blockers and planned fixes
+
+- Full suite RED: `NISTMultivariateNormal` is a DOI-less web source, while repository BibTeX contract requires DOI for every entry. Fix: keep canonical NIST URL/scope in verification log, remove it from DOI-only BibTeX, and update focused source test; never invent a DOI.
+- Full suite RED: prior source/analyzer report test is coupled to obsolete current-TODO task numbering. Fix: assert preserved previous-milestone evidence instead of current active checklist state.
+- Governance propagation pending: add shared `HermesVault/Automation` search-first/reuse rule to `docs/STANDARD_RULES.md`; use shared encoding validator rather than duplicating general automation.
+
 ## Previous milestone result
 
 - Kerr finite source/analyzer: scientific `8/8`, scenario battery `14/14`, suite `1110/1110`, CI green at `cd188ab`.
