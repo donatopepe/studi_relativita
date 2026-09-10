@@ -26,9 +26,17 @@ Updated: 2026-09-10
    - Depends on: task 3 GREEN.
    - Complete when: stable scientific JSON, scenario report, theory note and EN/IT audits agree.
    - Test: byte-identical regeneration and report tests.
-5. [ ] Closure and publication. **ACTIVE**
+5. [ ] Closure and publication. **ACTIVE — local closure green; push/CI pending**
    - Depends on: tasks 1–4 GREEN.
    - Complete when: CodeGraph synced; UTF-8, focused/full tests, total/granular runner, deterministic checks and CI pass; main/origin align; Hermes updated.
+
+## Milestone result
+
+- Scientific controls: `8/8`.
+- Scenario battery: `14/14`; every scenario and category granular run passed.
+- Full suite: `1110/1110`.
+- Deterministic artifacts, UTF-8, extraction, inventory and CodeGraph gates passed locally.
+- Publication/remote CI: pending push of current commits.
 
 ## Current scientific guardrails
 
