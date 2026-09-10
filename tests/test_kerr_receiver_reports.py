@@ -13,8 +13,7 @@ class Reports(unittest.TestCase):
   for x in ('D_KL','fixed calibration','nuisance collision',RESULT,GATE):self.assertIn(x,THEORY.read_text())
   for t in (ROADMAP.read_text(),LEDGER.read_text()):
    for x in (RESULT,GATE,'KERR_JACOBI_ORIENTATION_SHAPE_SURVIVES_FIXED_FINITE_GAUSSIAN_SOURCE','KERR_FINITE_BOUNDARY_JACOBI_PHASE_MAP_ADDS_ORIENTATION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate artifacts and bilingual scientific record.',TODO.read_text())
-  self.assertIn('5. [x] Closure and publication.',TODO.read_text())
-  self.assertIn('Full suite and closure gates rerun after fixes: `1124/1124`',TODO.read_text())
-  self.assertIn('GitHub Actions run `34509804483` tests/LaTeX passed.',TODO.read_text())
+  todo=TODO.read_text()
+  self.assertIn('Kerr calibrated receiver: scientific `8/8`, scenarios `22/22`, suite `1124/1124`, CI green at `1f5bb15`.',todo)
+  self.assertIn('Fixed calibration distinguishes branches; branch-dependent unconstrained gain/noise gives exact covariance collision `diag(1,100)`.',todo)
 if __name__=='__main__':unittest.main()
