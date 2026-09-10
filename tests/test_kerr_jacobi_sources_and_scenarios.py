@@ -24,8 +24,8 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
 
     def test_manifest_covers_all_preregistered_scenarios_and_categories(self):
         data = json.loads(MANIFEST.read_text())
-        self.assertEqual([item["id"] for item in data["scenarios"]], ["J01", "J02", "J03", "J04", "J05", "J06"])
-        self.assertEqual(set(item["category"] for item in data["scenarios"]), {"conformance", "orientation", "scale"})
+        self.assertEqual([item["id"] for item in data["scenarios"]], [f"J{index:02d}" for index in range(1, 15)])
+        self.assertEqual(set(item["category"] for item in data["scenarios"]), {"conformance", "orientation", "scale", "preparation", "analyzer"})
         self.assertEqual(len(data["scenarios"]), len(set(item["id"] for item in data["scenarios"])))
 
     def test_runner_supports_total_granular_category_and_json_report(self):
@@ -34,7 +34,7 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
             total = subprocess.run(["python", str(RUNNER), "--mode", "total", "--report-json", str(report)], text=True, capture_output=True)
             self.assertEqual(total.returncode, 0, total.stdout + total.stderr)
             payload = json.loads(report.read_text())
-            self.assertEqual(payload["summary"], {"PASS": 6, "FAIL": 0, "SKIP": 0, "BLOCKED": 0})
+            self.assertEqual(payload["summary"], {"PASS": 14, "FAIL": 0, "SKIP": 0, "BLOCKED": 0})
             granular = subprocess.run(["python", str(RUNNER), "--mode", "granular", "--scenario", "J01"], text=True, capture_output=True)
             self.assertEqual(granular.returncode, 0, granular.stdout + granular.stderr)
             self.assertEqual(len(json.loads(granular.stdout)["results"]), 1)
