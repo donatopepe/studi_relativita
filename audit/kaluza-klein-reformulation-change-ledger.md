@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr common-calibration robustness result
+
+Common bounded invertible calibration retains positive branch information separation (`8/8`, scenarios `30/30`), while unbounded common attenuation/noise drives KL toward zero.
+
+```text
+KERR_BRANCH_COVARIANCES_REMAIN_INFORMATION_DISTINCT_UNDER_COMMON_BOUNDED_INVERTIBLE_CALIBRATION_BUT_COMMON_ATTENUATION_OR_UNBOUNDED_NOISE_DRIVES_SEPARATION_TO_ZERO_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_CALIBRATION_BOUNDS_PRIORS_HARDWARE_NOISE_SPECTRUM_SYSTEMATICS_SAMPLING_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim; bounds are toy assumptions. Prior receiver/source/Jacobi chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr calibrated receiver likelihood result
 
 Fixed Gaussian gain/noise calibration yields positive Kerr branch KL divergence; all `8/8` controls and `22/22` scenarios pass. But unconstrained branch-dependent diagonal calibration reproduces a common receiver covariance exactly.
