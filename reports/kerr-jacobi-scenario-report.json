@@ -1,8 +1,10 @@
 {
   "coverage": {
     "selected_categories": [
+      "analyzer",
       "conformance",
       "orientation",
+      "preparation",
       "scale"
     ],
     "selected_ids": [
@@ -11,7 +13,15 @@
       "J03",
       "J04",
       "J05",
-      "J06"
+      "J06",
+      "J07",
+      "J08",
+      "J09",
+      "J10",
+      "J11",
+      "J12",
+      "J13",
+      "J14"
     ]
   },
   "results": [
@@ -56,13 +66,69 @@
       "residual": 6.802146401696518e-09,
       "status": "PASS",
       "threshold": 3e-06
+    },
+    {
+      "category": "preparation",
+      "id": "J07",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "preparation",
+      "id": "J08",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "preparation",
+      "id": "J09",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "preparation",
+      "id": "J10",
+      "residual": 3.552713678800501e-15,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "orientation",
+      "id": "J11",
+      "residual": 75.19134654010493,
+      "status": "PASS",
+      "threshold": 0.001
+    },
+    {
+      "category": "analyzer",
+      "id": "J12",
+      "residual": 2.7755575615628914e-17,
+      "status": "PASS",
+      "threshold": 2e-05
+    },
+    {
+      "category": "analyzer",
+      "id": "J13",
+      "residual": 1.3322676295501878e-15,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "scale",
+      "id": "J14",
+      "residual": 1.6224355192662188e-11,
+      "status": "PASS",
+      "threshold": 2e-10
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 6,
+    "PASS": 14,
     "SKIP": 0
   }
 }

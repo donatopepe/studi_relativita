@@ -14,15 +14,15 @@ Updated: 2026-09-10
    - Depends on: merged Kerr Jacobi gate `5e3f5db`.
    - Complete when: inputs, formulas, eight cases, source scope, stop conditions and nonclaims are explicit.
    - Test: spec structural test and UTF-8 validator.
-2. [ ] Extend authoritative scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: all new scenarios have stable IDs/categories/handlers; total, scenario and category modes fail closed and emit JSON.
    - Test: matrix/runner tests plus total and every granular execution.
-3. [ ] Implement smallest finite Gaussian source covariance and analyzer readout.
+3. [x] Implement smallest finite Gaussian source covariance and analyzer readout.
    - Depends on: tasks 1–2.
    - Complete when: covariance propagation uses the existing `4x4` phase map, raw covariance remains primary, analyzer is declared and nuisance controls are explicit.
    - Test: eight focused controls.
-4. [ ] Generate bounded deterministic artifacts and reports.
+4. [ ] Generate bounded deterministic artifacts and reports. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: stable scientific JSON, scenario report, theory note and EN/IT audits agree.
    - Test: byte-identical regeneration and report tests.
