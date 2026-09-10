@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr common-calibration robustness gate
+
+A shared positive bounded receiver calibration passes `8/8`; scenario battery passes `30/30`. Exact congruence prevents branch covariance collision on the preregistered compact domain, whose minimum symmetric KL is positive. Common attenuation toward zero or unbounded noise nevertheless drives information separation asymptotically to zero.
+
+```text
+KERR_BRANCH_COVARIANCES_REMAIN_INFORMATION_DISTINCT_UNDER_COMMON_BOUNDED_INVERTIBLE_CALIBRATION_BUT_COMMON_ATTENUATION_OR_UNBOUNDED_NOISE_DRIVES_SEPARATION_TO_ZERO_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_CALIBRATION_BOUNDS_PRIORS_HARDWARE_NOISE_SPECTRUM_SYSTEMATICS_SAMPLING_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Toy bounds are not physical priors. Prior receiver, source/analyzer, Jacobi/screen/endpoint/ring, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr calibrated Gaussian receiver likelihood gate
 
 A declared two-component Gaussian receiver passes `8/8`; complete scenario battery passes `22/22`. Under fixed gain/noise calibration, plus/minus Kerr covariances have positive KL divergence and expected likelihood separation. Unconstrained branch-dependent diagonal gains/noise map both to an identical target covariance, so calibration nuisance can erase distinction exactly.
