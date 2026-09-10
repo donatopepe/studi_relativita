@@ -14,7 +14,7 @@ Updated: 2026-09-10
    - Depends on: completed calibrated receiver milestone `1f5bb15`.
    - Complete when: common-calibration contract, compact toy bounds, exact noncollision statement, asymptotic counterexample, eight controls, J23–J30, source scope and nonclaims are explicit.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J23–J30 and categories are registered with fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
@@ -23,7 +23,7 @@ Updated: 2026-09-10
    - Complete when: common covariance map, exact finite noncollision, deterministic bounded search, refinement/convergence, boundary control, asymptotic information collapse, basis covariance and scale/nonclaims pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
    - Resolved blocker: cached the two fixed signal covariances once per process; focused controls now complete in about 8 seconds instead of timing out after 900 seconds.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior fixed/branch-dependent calibration results.
    - Test: byte-identical generation, report tests and shared UTF-8 validation.
