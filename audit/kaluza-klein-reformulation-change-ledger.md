@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr finite source/analyzer result
+
+Gaussian phase-space covariance and ideal analyzer scan pass `8/8`, scenario battery `14/14`. Fixed full covariance retains Kerr orientation shape; source width scales homogeneously and branch-dependent analyzer angles yield an exact scalar collision.
+
+```text
+KERR_JACOBI_ORIENTATION_SHAPE_SURVIVES_FIXED_FINITE_GAUSSIAN_SOURCE_AND_ANALYZER_SCAN_BUT_SOURCE_WIDTH_HOMOGENEITY_AND_ANALYZER_COLLISIONS_PREVENT_INDEPENDENT_BRANCH_OR_ABSOLUTE_SCALE_IDENTIFICATION_NOT_ELL0
+PHYSICAL_KERR_SOURCE_DYNAMICS_EMISSION_INTENSITY_POLARIZATION_ANALYZER_HARDWARE_RECEIVER_TRANSFER_CALIBRATED_NOISE_LIKELIHOOD_JOINT_COVARIANCE_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No physical source/analyzer or evidence claim. Kerr Jacobi/screen/endpoint/ring, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr Jacobi tidal result
 
 Jacobi evolution on verified Kerr screen passes `8/8` and scenario matrix `6/6`. Orientation-sensitive phase shape survives the identity endpoint screen quotient, but joint dilation remains scale blind.

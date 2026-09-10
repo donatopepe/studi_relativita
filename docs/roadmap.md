@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr finite Gaussian source/analyzer gate
+
+Finite Gaussian phase-space preparation propagated through Kerr Jacobi passes `8/8`; complete scenario battery passes `14/14`. Full observer covariance retains orientation shape under fixed preparation, but source-width homogeneity and exact branch-dependent analyzer collisions block independent scalar branch or scale identification.
+
+```text
+KERR_JACOBI_ORIENTATION_SHAPE_SURVIVES_FIXED_FINITE_GAUSSIAN_SOURCE_AND_ANALYZER_SCAN_BUT_SOURCE_WIDTH_HOMOGENEITY_AND_ANALYZER_COLLISIONS_PREVENT_INDEPENDENT_BRANCH_OR_ABSOLUTE_SCALE_IDENTIFICATION_NOT_ELL0
+PHYSICAL_KERR_SOURCE_DYNAMICS_EMISSION_INTENSITY_POLARIZATION_ANALYZER_HARDWARE_RECEIVER_TRANSFER_CALIBRATED_NOISE_LIKELIHOOD_JOINT_COVARIANCE_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Analyzer is a toy projection, not hardware. Prior Jacobi/screen/endpoint/ring, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr finite-boundary Jacobi tidal gate
 
 Full Jacobi phase evolution on the verified Kerr screen passes `8/8`; scenario battery passes `6/6`. Unlike the identity screen quotient, focusing/shear phase shape differs by orientation while Schwarzschild and symplectic controls pass. Joint dilation remains scale blind.

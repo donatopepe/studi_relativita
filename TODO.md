@@ -22,11 +22,11 @@ Updated: 2026-09-10
    - Depends on: tasks 1–2.
    - Complete when: covariance propagation uses the existing `4x4` phase map, raw covariance remains primary, analyzer is declared and nuisance controls are explicit.
    - Test: eight focused controls.
-4. [ ] Generate bounded deterministic artifacts and reports. **ACTIVE**
+4. [x] Generate bounded deterministic artifacts and reports.
    - Depends on: task 3 GREEN.
    - Complete when: stable scientific JSON, scenario report, theory note and EN/IT audits agree.
    - Test: byte-identical regeneration and report tests.
-5. [ ] Closure and publication.
+5. [ ] Closure and publication. **ACTIVE**
    - Depends on: tasks 1–4 GREEN.
    - Complete when: CodeGraph synced; UTF-8, focused/full tests, total/granular runner, deterministic checks and CI pass; main/origin align; Hermes updated.
 
