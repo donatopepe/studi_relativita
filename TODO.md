@@ -26,7 +26,7 @@ Updated: 2026-09-10
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total scenario report, theory, EN/IT audits, roadmap and ledger agree and preserve all prior negative results.
    - Test: report contracts, byte-identical regeneration, UTF-8 gate.
-5. [ ] Closure and publication. **ACTIVE**
+5. [ ] Closure and publication. **ACTIVE — local closure green; push/CI pending**
    - Depends on: tasks 1–4 GREEN.
    - Complete when: CodeGraph sync, focused/full suite, total/all granular scenarios, deterministic checks, UTF-8, extraction/inventory, clean main, push and remote CI are green; Hermes updated.
 
@@ -35,7 +35,14 @@ Updated: 2026-09-10
 - [x] DOI-less NIST web source kept in verification log and removed from DOI-only BibTeX; no DOI invented.
 - [x] Prior source/analyzer report test decoupled from active TODO numbering.
 - [x] Shared `HermesVault/Automation` search-first/reuse and encoding-validator rules propagated to `docs/STANDARD_RULES.md`.
-- [ ] Rerun full suite and closure gates after fixes.
+- [x] Full suite and closure gates rerun after fixes: `1124/1124`, total `22/22`, 31 granular scenario/category runs, deterministic artifacts, shared UTF-8 validator, extraction and inventory green.
+
+## Milestone evidence
+
+- Scientific receiver controls: `8/8`.
+- Fixed-calibration symmetric KL: `8.1271925`; expected LLR at 25 samples positive in both directions.
+- Calibration nuisance target collision: `diag(1,100)` with residual `0.0`.
+- CodeGraph synced; main checkout only; no worktrees.
 
 ## Previous milestone result
 
