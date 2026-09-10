@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr parallel-screen result
+
+Direct parallel transport passes `8/8`, but the finite equatorial endpoint screen quotient collides at identity in the declared ray-adapted ZAMO basis. Path orientation remains distinct; quotient rank is zero. This negative result prevents promotion of raw screen transport to an independent channel.
+
+```text
+KERR_EQUATORIAL_FINITE_BOUNDARY_PARALLEL_SCREEN_TRANSPORT_IS_METRIC_COMPATIBLE_BUT_ENDPOINT_SCREEN_QUOTIENT_COLLIDES_UNDER_EQUATORIAL_SYMMETRY_WHILE_JOINT_DILATION_RETAINS_SCALE_BLINDNESS_NOT_ELL0
+PHYSICAL_KERR_SCREEN_PREPARATION_POLARIZATION_SOURCE_ANALYZER_JACOBI_TIDAL_MAP_CAUSTICS_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Next bounded route is the Jacobi tidal map. Prior Kerr endpoint/ring, 5D tensor, finite `S1`, Schwarzschild, and `F_0` records remain preserved.
+
 ## Kerr finite-boundary endpoint result
 
 The Kerr 4D comparison now includes one finite source-turning-observer path with ZAMO endpoint frames. All `8/8` controls pass. Local direction/frequency records are internally consistent but retain exact geometric scale blindness.

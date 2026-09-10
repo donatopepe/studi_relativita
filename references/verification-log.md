@@ -41,8 +41,9 @@
 ## Dolan2018GeometricalOptics
 
 - Metadata checked against arXiv `1806.08617` and DOI `10.1142/S0218271818430101`.
-- Scope used here: leading curved-spacetime geometrical optics, null-ray propagation and parallel-propagated polarization only.
-- It does not establish finite endpoint screen/Jones joining, source preparation, analyzer hardware, receiver transfer, calibrated noise, joint covariance, `ell0`, UMCH, evidence or detection.
+- Inspected sections 3.1-3.3 and 4.1, including equations (20)-(28), for null-ray geometric optics, transversality, polarization parallel transport, and null tetrad/screen context.
+- Scope used here: leading curved-spacetime geometrical optics, null-ray propagation, parallel transport of transverse polarization/screen vectors, and null tetrad normalization only.
+- It does not establish the Kerr ZAMO endpoint joining, finite endpoint screen quotient, source preparation, analyzer hardware, Jacobi tidal map, receiver transfer, calibrated noise, joint covariance, 5D comparator, `ell0`, UMCH, evidence, or detection.
 
 ## Schwarzschild bounded source-coherence reuse
 
