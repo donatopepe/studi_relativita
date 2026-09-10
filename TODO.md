@@ -27,9 +27,17 @@ Updated: 2026-09-10
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior fixed/branch-dependent calibration results.
    - Test: byte-identical generation, report tests and shared UTF-8 validation.
-5. [ ] Closure and publication. **ACTIVE**
+5. [ ] Closure and publication. **ACTIVE — local gates green; push/CI pending**
    - Depends on: tasks 1–4 GREEN.
    - Complete when: CodeGraph, focused/full tests, total/all granular scenarios, deterministic checks, extraction/inventory, shared UTF-8, clean main, push/CI and Hermes are green.
+
+## Local closure evidence
+
+- Scientific controls: `8/8`.
+- Scenario battery: `30/30`; 30 scenario and 11 category granular runs green.
+- Full suite: `1137/1137`.
+- Deterministic artifact/report, shared UTF-8, extraction/inventory, diff and CodeGraph gates green.
+- Performance blocker solved by caching fixed Kerr covariances: focused runtime dropped from timeout `>900s` to under `10s`.
 
 ## Fixed MVP assumptions
 
