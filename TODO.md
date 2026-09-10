@@ -39,8 +39,10 @@ Updated: 2026-09-10
 - Deterministic tensor grid is refined once before any result is accepted.
 - Unbounded common nuisance is tested separately with gain tending to zero or noise tending to infinity.
 
-## Previous milestone result
+## Preserved milestone results
 
+- Kerr finite source/analyzer: scientific `8/8`, scenario battery `14/14`, suite `1110/1110`, CI green at `cd188ab`.
+- Full covariance retains orientation shape, but an unknown branch-dependent analyzer scalar has an exact collision.
 - Kerr calibrated receiver: scientific `8/8`, scenarios `22/22`, suite `1124/1124`, CI green at `1f5bb15`.
 - Fixed calibration distinguishes branches; branch-dependent unconstrained gain/noise gives exact covariance collision `diag(1,100)`.
 
