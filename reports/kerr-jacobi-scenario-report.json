@@ -2,6 +2,7 @@
   "coverage": {
     "selected_categories": [
       "analyzer",
+      "asymptotic",
       "calibration",
       "conformance",
       "likelihood",
@@ -9,6 +10,7 @@
       "orientation",
       "preparation",
       "receiver",
+      "robustness",
       "scale"
     ],
     "selected_ids": [
@@ -33,7 +35,15 @@
       "J19",
       "J20",
       "J21",
-      "J22"
+      "J22",
+      "J23",
+      "J24",
+      "J25",
+      "J26",
+      "J27",
+      "J28",
+      "J29",
+      "J30"
     ]
   },
   "results": [
@@ -190,13 +200,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 2e-10
+    },
+    {
+      "category": "robustness",
+      "id": "J23",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "calibration",
+      "id": "J24",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "robustness",
+      "id": "J25",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "robustness",
+      "id": "J26",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "calibration",
+      "id": "J27",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "asymptotic",
+      "id": "J28",
+      "residual": 2.803307758992039e-05,
+      "status": "PASS",
+      "threshold": 0.001
+    },
+    {
+      "category": "asymptotic",
+      "id": "J29",
+      "residual": 2.8033077589864445e-05,
+      "status": "PASS",
+      "threshold": 0.001
+    },
+    {
+      "category": "scale",
+      "id": "J30",
+      "residual": 8.881784197001252e-15,
+      "status": "PASS",
+      "threshold": 2e-10
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 22,
+    "PASS": 30,
     "SKIP": 0
   }
 }

@@ -22,6 +22,14 @@
     {"id": "J19", "category": "likelihood", "samples": 25, "handler": "expected_LLR"},
     {"id": "J20", "category": "receiver", "basis_angle": 0.37, "handler": "receiver_basis"},
     {"id": "J21", "category": "calibration", "handler": "calibration_collision"},
-    {"id": "J22", "category": "scale", "scale_factor": 2.5, "handler": "receiver_scale"}
+    {"id": "J22", "category": "scale", "scale_factor": 2.5, "handler": "receiver_scale"},
+    {"id": "J23", "category": "robustness", "handler": "common_identity"},
+    {"id": "J24", "category": "calibration", "handler": "bounded_domain"},
+    {"id": "J25", "category": "robustness", "grid_size": 17, "handler": "bounded_minimum"},
+    {"id": "J26", "category": "robustness", "handler": "refinement"},
+    {"id": "J27", "category": "calibration", "handler": "boundary"},
+    {"id": "J28", "category": "asymptotic", "handler": "attenuation"},
+    {"id": "J29", "category": "asymptotic", "handler": "unbounded_noise"},
+    {"id": "J30", "category": "scale", "scale_factor": 2.5, "handler": "common_scale"}
   ]
 }
