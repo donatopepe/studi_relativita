@@ -1,0 +1,293 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_KERR_PARALLEL_SCREEN_CONFORMANCE_NOT_EVIDENCE",
+    "controls": [
+      {
+        "name": "connection_metric_compatibility",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10
+      },
+      {
+        "name": "geodesic_tangent",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-08
+      },
+      {
+        "name": "screen_preservation",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-08
+      },
+      {
+        "name": "endpoint_map_convergence",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-08
+      },
+      {
+        "name": "path_reversal",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-08
+      },
+      {
+        "name": "orientation_convention",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-08
+      },
+      {
+        "name": "Schwarzschild_reflection",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-08
+      },
+      {
+        "name": "scale_rank_no_ell0",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-08
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_SCREEN_PREPARATION_POLARIZATION_SOURCE_ANALYZER_JACOBI_TIDAL_MAP_CAUSTICS_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "Schwarzschild_control": {
+      "screen_map_reflection_residual": 0.0,
+      "unsigned_invariant_residual": 0.0
+    },
+    "equal_endpoint": {
+      "analytic_observer_tangent": [
+        1.1952034,
+        0.90006532,
+        0.0,
+        0.039971897
+      ],
+      "convergence_certificate": {
+        "coarse": 400,
+        "fine": 800,
+        "maximum_residual": 0.0
+      },
+      "geodesic_tangent_residual": 0.0,
+      "geometry": {
+        "M": 1.0,
+        "chi": 0.6,
+        "orientation": 1,
+        "r_observer": 12.0,
+        "r_source": 12.0,
+        "rho": 4.5
+      },
+      "observer_screen": [
+        [
+          0.0,
+          0.0,
+          0.083333333,
+          0.0
+        ],
+        [
+          0.0,
+          0.39416033,
+          0.0,
+          -0.075081214
+        ]
+      ],
+      "quotient_determinant": 1.0,
+      "quotient_orthogonality_residual": 0.0,
+      "screen_map": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "screen_orthonormality_residual": 0.0,
+      "screen_transversality_residual": 0.0,
+      "source_screen": [
+        [
+          0.0,
+          0.0,
+          0.083333333,
+          0.0
+        ],
+        [
+          0.0,
+          0.39416033,
+          0.0,
+          0.075081214
+        ]
+      ],
+      "transported_screen": [
+        [
+          0.0,
+          0.0,
+          0.083333333,
+          0.0
+        ],
+        [
+          -0.60681239,
+          -0.062808588,
+          0.0,
+          -0.095375202
+        ]
+      ],
+      "transported_tangent": [
+        1.1952034,
+        0.90006532,
+        0.0,
+        0.039971897
+      ],
+      "turning_record": {
+        "R_turn_residual": 0.0,
+        "orientation": 1,
+        "r_turn": 4.5,
+        "rho": 4.5,
+        "xi": 5.653221,
+        "xi_over_M": 5.653221
+      }
+    },
+    "limitations": "PHYSICAL_KERR_SCREEN_PREPARATION_POLARIZATION_SOURCE_ANALYZER_JACOBI_TIDAL_MAP_CAUSTICS_RECEIVER_NOISE_JOINT_COVARIANCE_DATA_5D_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+    "orientation_control": {
+      "classification": "KERR_EQUATORIAL_SCREEN_QUOTIENT_COLLIDES_WHILE_PATH_ORIENTATION_LABELS_DIFFER",
+      "equatorial_screen_quotient_collision_residual": 0.0,
+      "fixed_spin_path_label_difference": 7.9590528,
+      "simultaneous_reversal_residual": 0.0
+    },
+    "rank_control": {
+      "classification": "EQUATORIAL_SCREEN_QUOTIENT_RANK_ZERO_IN_DECLARED_ENDPOINT_BASIS_NOT_PATH_RANK",
+      "log_M_column_norm": 0.0,
+      "parameters": [
+        "log_M",
+        "chi",
+        "rho",
+        "R_source_over_M",
+        "R_observer_over_M"
+      ],
+      "rank": 0,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "reversal_control": {
+      "quotient_inverse_residual": 0.0,
+      "screen_roundtrip_residual": 0.0
+    },
+    "scale_control": {
+      "classification": "KERR_PARALLEL_SCREEN_RETAINS_JOINT_GEOMETRIC_SCALE_NULL",
+      "dimensionless_screen_residual": 0.0,
+      "scale_factor": 2.5
+    },
+    "source_scope": "GRALLA_LUPSASCA_PATH_PLUS_DOLAN_PARALLEL_TRANSPORT_ZAMO_JOINING_PROJECT_DERIVATION",
+    "unequal_endpoint": {
+      "analytic_observer_tangent": [
+        1.1514934,
+        0.93524985,
+        0.0,
+        0.025488627
+      ],
+      "convergence_certificate": {
+        "coarse": 400,
+        "fine": 800,
+        "maximum_residual": 0.0
+      },
+      "geodesic_tangent_residual": 0.0,
+      "geometry": {
+        "M": 1.0,
+        "chi": 0.6,
+        "orientation": 1,
+        "r_observer": 15.0,
+        "r_source": 12.0,
+        "rho": 4.5
+      },
+      "observer_screen": [
+        [
+          0.0,
+          0.0,
+          0.066666667,
+          0.0
+        ],
+        [
+          0.0,
+          0.32729794,
+          0.0,
+          -0.062362257
+        ]
+      ],
+      "quotient_determinant": 1.0,
+      "quotient_orthogonality_residual": 0.0,
+      "screen_map": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ],
+      "screen_orthonormality_residual": 0.0,
+      "screen_transversality_residual": 0.0,
+      "source_screen": [
+        [
+          0.0,
+          0.0,
+          0.083333333,
+          0.0
+        ],
+        [
+          0.0,
+          0.39416033,
+          0.0,
+          0.075081214
+        ]
+      ],
+      "transported_screen": [
+        [
+          0.0,
+          0.0,
+          0.066666667,
+          0.0
+        ],
+        [
+          -0.59544865,
+          -0.15632905,
+          0.0,
+          -0.075542679
+        ]
+      ],
+      "transported_tangent": [
+        1.1514934,
+        0.93524985,
+        0.0,
+        0.025488627
+      ],
+      "turning_record": {
+        "R_turn_residual": 0.0,
+        "orientation": 1,
+        "r_turn": 4.5,
+        "rho": 4.5,
+        "xi": 5.653221,
+        "xi_over_M": 5.653221
+      }
+    }
+  },
+  "result": "KERR_EQUATORIAL_FINITE_BOUNDARY_PARALLEL_SCREEN_TRANSPORT_IS_METRIC_COMPATIBLE_BUT_ENDPOINT_SCREEN_QUOTIENT_COLLIDES_UNDER_EQUATORIAL_SYMMETRY_WHILE_JOINT_DILATION_RETAINS_SCALE_BLINDNESS_NOT_ELL0",
+  "review": "DIRECT_REVIEW_NO_SUBAGENT",
+  "study_id": "kerr-finite-boundary-parallel-screen-v1"
+}
