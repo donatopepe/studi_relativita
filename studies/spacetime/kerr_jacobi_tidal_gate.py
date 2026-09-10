@@ -50,7 +50,7 @@ def _integrate(M,a,xi,rt,lower,upper,n,initial=None,checkpoint=False):
  return (P,maps) if checkpoint else P
 def phase_control(M=1.,chi=.6,rho=4.5,rs=12.,ro=15.,orientation=1,n=800):
  t=endpoint.turning_record(M,chi,rho,orientation);a=chi*M;rt=t['r_turn'];lo=-math.sqrt(rs-rt);hi=math.sqrt(ro-rt);P,maps=_integrate(M,a,t['xi'],rt,lo,hi,n,checkpoint=True);A,B,C,D=split(P);sym=mm(tr(P),mm(J,P))
- return {'P_phase':P,'A':A,'B':B,'C':C,'D':D,'symplectic_residual':maximum(sub(sym,J)),'primary_object':'FULL_SCREEN_PHASE_MAP_THROUGH_CAUSTICS','vertex_preparation':{'X_source':[[0.,0.],[0.,0.]],'V_source':eye(2),'X_observer':B,'V_observer':D},'parallel_preparation':{'X_source':eye(2),'V_source':[[0.,0.],[0.,0.]],'X_observer':A,'V_observer':C},'checkpoint_maps':maps}
+ return {'P_phase':P,'A':A,'B':B,'C':C,'D':D,'symplectic_residual':maximum(sub(sym,J)),'primary_object':'FULL_SCREEN_PHASE_MAP_THROUGH_CAUSTICS','vertex_preparation':{'X_source':[[0.,0.],[0.,0.]],'V_source':eye(2),'X_observer':B,'V_observer':D},'parallel_preparation':{'X_source':eye(2),'V_source':[[0.,0.],[0.,0.]],'X_observer':A,'V_observer':C},'checkpoint_count':len(maps)}
 def schwarzschild_conformance(M,rho,rs,ro):
  # Profile identity is exact. Phase cross-check uses symmetric endpoint because legacy solver has one R.
  t=endpoint.turning_record(M,0.,rho,1);beta=t['xi']/M;points=[rho,7.,rs/M];profile=max(abs(3*M*t['xi']**2/(M*x)**5-3*M*(M*beta)**2/(M*x)**5)for x in points)
