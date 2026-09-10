@@ -2,9 +2,13 @@
   "coverage": {
     "selected_categories": [
       "analyzer",
+      "calibration",
       "conformance",
+      "likelihood",
+      "noise",
       "orientation",
       "preparation",
+      "receiver",
       "scale"
     ],
     "selected_ids": [
@@ -21,7 +25,15 @@
       "J11",
       "J12",
       "J13",
-      "J14"
+      "J14",
+      "J15",
+      "J16",
+      "J17",
+      "J18",
+      "J19",
+      "J20",
+      "J21",
+      "J22"
     ]
   },
   "results": [
@@ -122,13 +134,69 @@
       "residual": 1.6224355192662188e-11,
       "status": "PASS",
       "threshold": 2e-10
+    },
+    {
+      "category": "receiver",
+      "id": "J15",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "likelihood",
+      "id": "J16",
+      "residual": 3.886178601142376e-09,
+      "status": "PASS",
+      "threshold": 2e-07
+    },
+    {
+      "category": "likelihood",
+      "id": "J17",
+      "residual": 4.8822082154842406e-08,
+      "status": "PASS",
+      "threshold": 2e-05
+    },
+    {
+      "category": "noise",
+      "id": "J18",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "likelihood",
+      "id": "J19",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "receiver",
+      "id": "J20",
+      "residual": 2.886579864025407e-15,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "calibration",
+      "id": "J21",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "scale",
+      "id": "J22",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 14,
+    "PASS": 22,
     "SKIP": 0
   }
 }
