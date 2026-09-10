@@ -1,0 +1,11 @@
+{
+  "schema": "kerr-jacobi-scenario-matrix-v1",
+  "scenarios": [
+    {"id": "J01", "category": "conformance", "chi": 0.6, "orientation": 1, "rho": 4.5, "R_source_over_M": 12.0, "R_observer_over_M": 15.0, "handler": "phase_conformance"},
+    {"id": "J02", "category": "orientation", "chi": 0.6, "orientation": -1, "rho": 4.5, "R_source_over_M": 12.0, "R_observer_over_M": 15.0, "handler": "phase_conformance"},
+    {"id": "J03", "category": "conformance", "chi": 0.0, "orientation": 1, "rho": 4.5, "R_source_over_M": 12.0, "R_observer_over_M": 15.0, "handler": "schwarzschild_conformance"},
+    {"id": "J04", "category": "conformance", "chi": 0.6, "orientation": 1, "rho": 4.5, "R_source_over_M": 12.0, "R_observer_over_M": 12.0, "handler": "phase_conformance"},
+    {"id": "J05", "category": "scale", "chi": 0.6, "orientation": 1, "rho": 4.5, "R_source_over_M": 12.0, "R_observer_over_M": 15.0, "scale_factor": 2.5, "handler": "scale_conformance"},
+    {"id": "J06", "category": "orientation", "chi": 0.6, "orientation": 1, "rho": 4.5, "R_source_over_M": 12.0, "R_observer_over_M": 15.0, "handler": "reversal_conformance"}
+  ]
+}

@@ -1,5 +1,12 @@
 # Bibliography verification log
 
+## BoeroMoreschi2020KerrOpticalScalars
+
+- Metadata checked against DOI `10.1093/mnras/stz3615`, MNRAS 492 (2020) 3763-3778, and arXiv `1910.01984` v2.
+- Inspected equations (1)-(12) for null geodesic deviation, complex screen variables, and vacuum optical curvature matrix; equations (106)-(127) for the type-D restricted Lorentz/Walker-Penrose construction; equation (119) for exact Kerr `Psi_0`; and equation (126) for the modulus relation to Carter's constant.
+- Scope used here: exact Kerr vacuum optical tidal curvature along a null geodesic and its equatorial `Q=0` reduction in the already verified parallel screen.
+- The source does not establish this project's scenario matrix, numerical RK4/turning protocol, source preparation, detector/analyzer, covariance, data, 5D Kerr comparator, `ell0`, UMCH, evidence, or detection.
+
 ## GrallaLupsasca2020KerrNullGeodesics
 
 - Metadata checked against DOI `10.1103/PhysRevD.101.044032`, arXiv `1910.12881` v3, and the published journal reference. Version v3 corrects post-publication errors and is the equation source used here.
