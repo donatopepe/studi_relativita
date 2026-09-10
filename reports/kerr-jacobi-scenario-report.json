@@ -1,0 +1,68 @@
+{
+  "coverage": {
+    "selected_categories": [
+      "conformance",
+      "orientation",
+      "scale"
+    ],
+    "selected_ids": [
+      "J01",
+      "J02",
+      "J03",
+      "J04",
+      "J05",
+      "J06"
+    ]
+  },
+  "results": [
+    {
+      "category": "conformance",
+      "id": "J01",
+      "residual": 1.1879386363489175e-13,
+      "status": "PASS",
+      "threshold": 3e-07
+    },
+    {
+      "category": "orientation",
+      "id": "J02",
+      "residual": 2.6116886431282182e-12,
+      "status": "PASS",
+      "threshold": 3e-07
+    },
+    {
+      "category": "conformance",
+      "id": "J03",
+      "residual": 2.627954160061563e-06,
+      "status": "PASS",
+      "threshold": 3e-06
+    },
+    {
+      "category": "conformance",
+      "id": "J04",
+      "residual": 7.838174553853605e-14,
+      "status": "PASS",
+      "threshold": 3e-07
+    },
+    {
+      "category": "scale",
+      "id": "J05",
+      "residual": 1.7350032521790126e-10,
+      "status": "PASS",
+      "threshold": 3e-06
+    },
+    {
+      "category": "orientation",
+      "id": "J06",
+      "residual": 6.802146401696518e-09,
+      "status": "PASS",
+      "threshold": 3e-06
+    }
+  ],
+  "schema": "kerr-jacobi-scenario-report-v1",
+  "summary": {
+    "BLOCKED": 0,
+    "FAIL": 0,
+    "PASS": 6,
+    "SKIP": 0
+  }
+}
