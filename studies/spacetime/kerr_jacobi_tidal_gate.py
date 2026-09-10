@@ -54,7 +54,7 @@ def phase_control(M=1.,chi=.6,rho=4.5,rs=12.,ro=15.,orientation=1,n=800):
 def schwarzschild_conformance(M,rho,rs,ro):
  # Profile identity is exact. Phase cross-check uses symmetric endpoint because legacy solver has one R.
  t=endpoint.turning_record(M,0.,rho,1);beta=t['xi']/M;points=[rho,7.,rs/M];profile=max(abs(3*M*t['xi']**2/(M*x)**5-3*M*(M*beta)**2/(M*x)**5)for x in points)
- current=phase_control(M,0.,rho,rs,rs,1,1600)['P_phase'];legacy=schwarzschild.phase_control(M,rho,rs,1,1600)['P_phase']
+ current=phase_control(M,0.,rho,rs,rs,1,5600)['P_phase'];legacy=schwarzschild.phase_control(M,rho,rs,1,5600)['P_phase']
  return {'profile_residual':profile,'phase_map_residual':maximum(sub(current,legacy))}
 def reversal_composition_control(M,chi,rho,rs,ro,orientation):
  t=endpoint.turning_record(M,chi,rho,orientation);a=chi*M;rt=t['r_turn'];lo=-math.sqrt(rs-rt);hi=math.sqrt(ro-rt);coarse=phase_control(M,chi,rho,rs,ro,orientation,400)['P_phase'];fine=phase_control(M,chi,rho,rs,ro,orientation,800)['P_phase'];turn=_integrate(M,a,t['xi'],rt,lo,0,400);after=_integrate(M,a,t['xi'],rt,0,hi,400);reverse=_integrate(M,a,t['xi'],rt,hi,lo,800)
