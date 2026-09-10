@@ -1,5 +1,17 @@
 # Bibliography verification log
 
+## KullbackLeibler1951
+
+- Metadata checked against Project Euclid DOI `10.1214/aoms/1177729694`, *The Annals of Mathematical Statistics* 22(1), 79-86 (1951).
+- Scope used here: definition and nonnegativity context of information divergence only; the closed zero-mean multivariate Gaussian covariance formula is a project derivation checked by deterministic quadrature.
+- This source does not establish the Kerr receiver, calibration/noise model, likelihood priors, physical data, 5D comparator, `ell0`, UMCH, evidence, or detection.
+
+## NISTMultivariateNormal
+
+- Metadata checked against NIST/SEMATECH e-Handbook Sec. 6.5.4.2, `https://www.itl.nist.gov/div898/handbook/pmc/section5/pmc542.htm`, accessed 2026-09-10.
+- Scope used here: multivariate normal density and covariance form only.
+- It does not establish Kerr propagation, receiver hardware, calibration/noise values, nuisance priors, data, 5D comparator, `ell0`, UMCH, evidence, or detection.
+
 ## BoeroMoreschi2020KerrOpticalScalars
 
 - Metadata checked against DOI `10.1093/mnras/stz3615`, MNRAS 492 (2020) 3763-3778, and arXiv `1910.01984` v2.
