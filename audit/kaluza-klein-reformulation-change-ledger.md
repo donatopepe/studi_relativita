@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr calibrated receiver likelihood result
+
+Fixed Gaussian gain/noise calibration yields positive Kerr branch KL divergence; all `8/8` controls and `22/22` scenarios pass. But unconstrained branch-dependent diagonal calibration reproduces a common receiver covariance exactly.
+
+```text
+KERR_FULL_COVARIANCE_BRANCHES_ARE_DISTINGUISHABLE_UNDER_FIXED_GAUSSIAN_RECEIVER_CALIBRATION_BUT_UNCONSTRAINED_GAIN_NOISE_NUISANCES_CAN_COLLIDE_EXACTLY_AND_GEOMETRIC_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_EMISSION_RECEIVER_HARDWARE_CALIBRATION_PRIORS_NOISE_SPECTRUM_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Prior source/analyzer, Kerr Jacobi/screen/endpoint/ring, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr finite source/analyzer result
 
 Gaussian phase-space covariance and ideal analyzer scan pass `8/8`, scenario battery `14/14`. Fixed full covariance retains Kerr orientation shape; source width scales homogeneously and branch-dependent analyzer angles yield an exact scalar collision.

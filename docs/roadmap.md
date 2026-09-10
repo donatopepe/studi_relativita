@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr calibrated Gaussian receiver likelihood gate
+
+A declared two-component Gaussian receiver passes `8/8`; complete scenario battery passes `22/22`. Under fixed gain/noise calibration, plus/minus Kerr covariances have positive KL divergence and expected likelihood separation. Unconstrained branch-dependent diagonal gains/noise map both to an identical target covariance, so calibration nuisance can erase distinction exactly.
+
+```text
+KERR_FULL_COVARIANCE_BRANCHES_ARE_DISTINGUISHABLE_UNDER_FIXED_GAUSSIAN_RECEIVER_CALIBRATION_BUT_UNCONSTRAINED_GAIN_NOISE_NUISANCES_CAN_COLLIDE_EXACTLY_AND_GEOMETRIC_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_EMISSION_RECEIVER_HARDWARE_CALIBRATION_PRIORS_NOISE_SPECTRUM_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No physical calibration prior, sampled data or 5D Kerr comparator is derived. Prior source/analyzer, Jacobi, screen, endpoint/ring, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr finite Gaussian source/analyzer gate
 
 Finite Gaussian phase-space preparation propagated through Kerr Jacobi passes `8/8`; complete scenario battery passes `14/14`. Full observer covariance retains orientation shape under fixed preparation, but source-width homogeneity and exact branch-dependent analyzer collisions block independent scalar branch or scale identification.

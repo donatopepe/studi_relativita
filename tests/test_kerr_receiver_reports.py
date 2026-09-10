@@ -13,5 +13,6 @@ class Reports(unittest.TestCase):
   for x in ('D_KL','fixed calibration','nuisance collision',RESULT,GATE):self.assertIn(x,THEORY.read_text())
   for t in (ROADMAP.read_text(),LEDGER.read_text()):
    for x in (RESULT,GATE,'KERR_JACOBI_ORIENTATION_SHAPE_SURVIVES_FIXED_FINITE_GAUSSIAN_SOURCE','KERR_FINITE_BOUNDARY_JACOBI_PHASE_MAP_ADDS_ORIENTATION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [ ] Generate artifacts and bilingual scientific record. **ACTIVE**',TODO.read_text())
+  self.assertIn('4. [x] Generate artifacts and bilingual scientific record.',TODO.read_text())
+  self.assertIn('5. [ ] Closure and publication. **ACTIVE**',TODO.read_text())
 if __name__=='__main__':unittest.main()

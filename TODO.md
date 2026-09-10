@@ -22,11 +22,11 @@ Updated: 2026-09-10
    - Depends on: tasks 1–2.
    - Complete when: calibrated covariance, Gaussian KL symmetry controls, noise monotonicity, finite-sample expected likelihood, nuisance collision, basis covariance and scale null pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate artifacts and bilingual scientific record. **ACTIVE**
+4. [x] Generate artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total scenario report, theory, EN/IT audits, roadmap and ledger agree and preserve all prior negative results.
    - Test: report contracts, byte-identical regeneration, UTF-8 gate.
-5. [ ] Closure and publication.
+5. [ ] Closure and publication. **ACTIVE**
    - Depends on: tasks 1–4 GREEN.
    - Complete when: CodeGraph sync, focused/full suite, total/all granular scenarios, deterministic checks, UTF-8, extraction/inventory, clean main, push and remote CI are green; Hermes updated.
 
