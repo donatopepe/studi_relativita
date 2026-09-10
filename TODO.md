@@ -18,10 +18,11 @@ Updated: 2026-09-10
    - Depends on: task 1.
    - Complete when: J23–J30 and categories are registered with fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement bounded common-calibration robustness engine.
+3. [ ] Implement bounded common-calibration robustness engine. **BLOCKED — performance root cause found**
    - Depends on: tasks 1–2.
    - Complete when: common covariance map, exact finite noncollision, deterministic bounded search, refinement/convergence, boundary control, asymptotic information collapse, basis covariance and scale/nonclaims pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
+   - Current blocker: first run timed out at 900s because every grid point recomputed expensive Kerr Jacobi covariances. Planned single-variable fix: cache the two fixed signal covariances once per process before rerunning unchanged controls.
 4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior fixed/branch-dependent calibration results.
