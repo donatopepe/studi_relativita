@@ -10,11 +10,11 @@ Updated: 2026-09-10
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify shared-calibration robustness specification. **ACTIVE**
+1. [x] Ratify shared-calibration robustness specification.
    - Depends on: completed calibrated receiver milestone `1f5bb15`.
    - Complete when: common-calibration contract, compact toy bounds, exact noncollision statement, asymptotic counterexample, eight controls, J23–J30, source scope and nonclaims are explicit.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J23–J30 and categories are registered with fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
