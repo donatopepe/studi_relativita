@@ -26,7 +26,7 @@ Updated: 2026-09-10
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total scenario report, theory, EN/IT audits, roadmap and ledger agree and preserve all prior negative results.
    - Test: report contracts, byte-identical regeneration, UTF-8 gate.
-5. [ ] Closure and publication. **ACTIVE — local closure green; push/CI pending**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: CodeGraph sync, focused/full suite, total/all granular scenarios, deterministic checks, UTF-8, extraction/inventory, clean main, push and remote CI are green; Hermes updated.
 
@@ -43,6 +43,7 @@ Updated: 2026-09-10
 - Fixed-calibration symmetric KL: `8.1271925`; expected LLR at 25 samples positive in both directions.
 - Calibration nuisance target collision: `diag(1,100)` with residual `0.0`.
 - CodeGraph synced; main checkout only; no worktrees.
+- Published `main=origin/main` at `78d28ec`; GitHub Actions run `34509804483` tests/LaTeX passed.
 
 ## Previous milestone result
 
