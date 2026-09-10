@@ -14,6 +14,7 @@ class Reports(unittest.TestCase):
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_FULL_COVARIANCE_BRANCHES_ARE_DISTINGUISHABLE_UNDER_FIXED_GAUSSIAN_RECEIVER_CALIBRATION','KERR_JACOBI_ORIENTATION_SHAPE_SURVIVES_FIXED_FINITE_GAUSSIAN_SOURCE','F_0'):self.assertIn(x,t)
   self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text())
-  self.assertIn('5. [ ] Closure and publication. **ACTIVE — local gates green; push/CI pending**',TODO.read_text())
+  self.assertIn('5. [x] Closure and publication.',TODO.read_text())
   self.assertIn('Full suite: `1137/1137`.',TODO.read_text())
+  self.assertIn('GitHub Actions run `34537112452` tests/LaTeX passed.',TODO.read_text())
 if __name__=='__main__':unittest.main()
