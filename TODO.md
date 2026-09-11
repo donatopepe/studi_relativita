@@ -28,7 +28,7 @@ Updated: 2026-09-11
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior results/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE — local gates green; push/CI pending**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
@@ -39,6 +39,7 @@ Updated: 2026-09-11
 - Full suite: `1163/1163`.
 - Deterministic artifact/report, extraction/inventory, shared UTF-8, diff and CodeGraph gates green.
 - Root result: known reference outside each branch-variance interval gives positive sign obstruction; calibration-only rank stays one, joint signal/reference rank becomes two. Unknown reference restores exact collision residual `8.8817842e-16`.
+- Published `main=origin/main` at `dd7b03c`; GitHub Actions run `34568400157` tests/LaTeX passed.
 
 ## Previous milestone closure evidence
 
