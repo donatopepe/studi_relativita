@@ -16,15 +16,15 @@ Updated: 2026-09-11
    - Depends on: published auxiliary-channel milestone `16c9718`; prior reference `[0.02,0.02]` lay below both branch variances, so its positive product permits collision rather than obstructing it.
    - Complete when: sign error is explicit; inside references `[0.1,10.0]`, outside controls `[0.02,0.02]`, exact gain/noise witnesses, eight controls, J47–J54 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J47–J54 and `reference_placement` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Correct calibration-channel engine and artifact.
+3. [x] Correct calibration-channel engine and artifact.
    - Depends on: tasks 1–2.
    - Complete when: inside-interval known reference blocks positive collision; outside-interval known reference admits explicit exact collision; Fisher/precision/weak/scale controls and guardrails pass.
    - Test: exactly eight focused controls, regression of erroneous polarity and deterministic artifact equality.
-4. [ ] Correct bilingual scientific record and preserved history.
+4. [ ] Correct bilingual scientific record and preserved history. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: theory, EN/IT audits, roadmap and ledger explicitly supersede erroneous claim without deleting historical evidence.
    - Test: report tests plus deterministic artifact equality.
