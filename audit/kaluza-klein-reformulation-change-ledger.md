@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr bounded reference-drift robustness result
+
+Exact midpoint radii bound drift that preserves collision obstruction (`8/8`, scenarios `62/62`). Conservative 0.8 radius remains positive-margin; endpoint loses obstruction/rank and outside crossing collides exactly.
+
+```text
+KERR_REFERENCE_COLLISION_OBSTRUCTION_SURVIVES_ONLY_WHILE_REFERENCE_DRIFT_STAYS_STRICTLY_INSIDE_BRANCH_VARIANCE_INTERVAL_AND_FAILS_AT_ENDPOINT_OR_OUTSIDE_NOT_ELL0
+PHYSICAL_KERR_CALIBRATOR_DRIFT_BOUND_STABILITY_CROSS_CHANNEL_NOISE_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Reference correction, `SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION`, prior chain and `F_0` remain preserved.
+
 ## Kerr calibration-reference placement correction
 
 Correction of `16c9718`: positive collision requires positive placement product. Inside references `[0.1,10.0]` block collision; outside `[0.02,0.02]` references collide exactly. Corrected controls `8/8`, scenarios `54/54`.
