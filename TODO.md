@@ -1,37 +1,38 @@
 # TODO — UMCH research engineering
 
-Updated: 2026-09-10
+Updated: 2026-09-11
 
-## Active milestone: Kerr shared-calibration robustness MVP
+## Active milestone: Kerr composite common-calibration profile gate MVP
 
-**Objective:** determine whether Kerr plus/minus receiver covariances remain distinguishable under one common but uncertain bounded receiver calibration, while proving that unbounded common attenuation/noise can drive information separation arbitrarily close to zero and preserving the geometric scale null.
+**Objective:** determine whether separately profiled common-calibration nuisance sets for plus/minus Kerr hypotheses overlap on preregistered bounded domain, instead of comparing branches only at same nuisance point.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
+**Fixed cases/order:** analytic covariance-set overlap, domain validation, bounded profile separation, deterministic refinement, boundary witness, exact relaxed-domain collision, basis/scale invariance, nonclaims.
+
 **Fixed order and dependencies**
 
-1. [x] Ratify shared-calibration robustness specification.
-   - Depends on: completed calibrated receiver milestone `1f5bb15`.
-   - Complete when: common-calibration contract, compact toy bounds, exact noncollision statement, asymptotic counterexample, eight controls, J23–J30, source scope and nonclaims are explicit.
+1. [ ] Ratify composite-hypothesis profile specification. **ACTIVE**
+   - Depends on: completed common-calibration milestone `5654b18` and green CI `34537767931`.
+   - Complete when: shared physical calibration versus separate nuisance profiling is explicit; compact toy domain, exact overlap equations, relaxed-domain counterexample, eight controls, J31–J38 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J23–J30 and categories are registered with fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J31–J38 and `profiling` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement bounded common-calibration robustness engine.
+3. [ ] Implement composite profile/overlap engine.
    - Depends on: tasks 1–2.
-   - Complete when: common covariance map, exact finite noncollision, deterministic bounded search, refinement/convergence, boundary control, asymptotic information collapse, basis covariance and scale/nonclaims pass.
+   - Complete when: analytic diagonal overlap interval, deterministic bounded pair search, refinement, positive bounded lower gate, exact relaxed-domain covariance collision, basis/scale invariance and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-   - Resolved blocker: cached the two fixed signal covariances once per process; focused controls now complete in about 8 seconds instead of timing out after 900 seconds.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior fixed/branch-dependent calibration results.
-   - Test: byte-identical generation, report tests and shared UTF-8 validation.
-5. [x] Closure and publication.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior results/nonclaims.
+   - Test: report tests plus deterministic artifact equality.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
-   - Complete when: CodeGraph, focused/full tests, total/all granular scenarios, deterministic checks, extraction/inventory, shared UTF-8, clean main, push/CI and Hermes are green.
+   - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `30/30`; 30 scenario and 11 category granular runs green.
