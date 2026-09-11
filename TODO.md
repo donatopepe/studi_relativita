@@ -16,15 +16,15 @@ Updated: 2026-09-11
    - Depends on: completed composite-profile milestone `431f90d` and green CI `34554800814`.
    - Complete when: reference model, one fixed design point, exact injectivity statement, Fisher calculation, unknown-reference counterexample, eight controls, J39–J46 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J39–J46 and `calibration_channel` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement auxiliary-channel identifiability engine.
+3. [x] Implement auxiliary-channel identifiability engine.
    - Depends on: tasks 1–2.
    - Complete when: joint covariance map, known-reference nuisance recovery/noncollision, Fisher information, finite-sample precision, weak-channel limit, exact unknown-reference collision, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior results/nonclaims.
    - Test: report tests plus deterministic artifact equality.

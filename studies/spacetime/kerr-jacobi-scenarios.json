@@ -38,6 +38,14 @@
     {"id": "J35", "category": "profiling", "handler": "profile_boundary"},
     {"id": "J36", "category": "profiling", "handler": "profile_collision"},
     {"id": "J37", "category": "profiling", "handler": "profile_basis_scale"},
-    {"id": "J38", "category": "profiling", "handler": "profile_nonclaims"}
+    {"id": "J38", "category": "profiling", "handler": "profile_nonclaims"},
+    {"id": "J39", "category": "calibration_channel", "handler": "calibration_joint_map"},
+    {"id": "J40", "category": "calibration_channel", "handler": "calibration_domain"},
+    {"id": "J41", "category": "calibration_channel", "handler": "calibration_noncollision"},
+    {"id": "J42", "category": "calibration_channel", "handler": "calibration_fisher"},
+    {"id": "J43", "category": "calibration_channel", "handler": "calibration_precision"},
+    {"id": "J44", "category": "calibration_channel", "handler": "calibration_weak_limit"},
+    {"id": "J45", "category": "calibration_channel", "handler": "calibration_unknown_reference"},
+    {"id": "J46", "category": "calibration_channel", "handler": "calibration_scale"}
   ]
 }
