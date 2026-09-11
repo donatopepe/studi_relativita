@@ -1,0 +1,27 @@
+# Audit penalità della media stimata Kerr
+
+```text
+ell0_identified=false
+NO_POSITIVE_DETECTION_CLAIM
+MODEL_LEVEL_ESTIMATED_MEAN_COVARIANCE_PENALTY_NOT_EVIDENCE
+DIRECT_REVIEW_NO_SUBAGENT
+```
+
+Controlli `8/8`; batteria scenari `86/86`.
+
+```text
+degrees_of_freedom=[15,63,255]
+penalty=[1.0666667,1.015873,1.0039216]
+rms=[7.8472642,3.8290729,1.9032411]
+minimum_count=54
+risk_54=0.049321491
+risk_53=0.050269981
+risk_16=0.17426927
+```
+
+```text
+KERR_GAUSSIAN_ESTIMATED_MEAN_COSTS_EXACTLY_ONE_COVARIANCE_DEGREE_OF_FREEDOM_AND_RAISES_ONLY_THE_CONSERVATIVE_TOY_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_UNKNOWN_MEAN_NON_GAUSSIANITY_SAMPLE_DEPENDENCE_CALIBRATION_MATCHING_DRIFT_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Penalità esatta di un degree of freedom Wishart centrato. Il gate sale da 53 a 54. Nessun processo della media misurato, significatività, potenza o evidenza.

@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr estimated-mean covariance penalty result
+
+Centered Gaussian covariance costs exactly one degree of freedom (`8/8`, scenarios `86/86`). Penalty `N/(N-1)` raises conservative toy count gate from 53 to 54.
+
+```text
+KERR_GAUSSIAN_ESTIMATED_MEAN_COSTS_EXACTLY_ONE_COVARIANCE_DEGREE_OF_FREEDOM_AND_RAISES_ONLY_THE_CONSERVATIVE_TOY_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_UNKNOWN_MEAN_NON_GAUSSIANITY_SAMPLE_DEPENDENCE_CALIBRATION_MATCHING_DRIFT_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Known-mean sample gate, mismatch/reference correction, prior chain and `F_0` remain preserved.
+
 ## Kerr finite-sample covariance uncertainty result
 
 Exact Gaussian covariance MSE and conservative Markov bound pass `8/8`, scenarios `78/78`. Minimum equal toy count is `53`; `N=16` fails and `N=64` passes only declared model-level bound.

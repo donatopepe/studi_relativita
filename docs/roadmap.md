@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr estimated-mean covariance penalty
+
+Estimating mean costs one centered-Wishart degree of freedom (`8/8`, scenarios `86/86`). Exact MSE penalty is `N/(N-1)` and conservative toy count gate rises from 53 to 54. `N=16` remains unsafe; no empirical significance follows.
+
+```text
+KERR_GAUSSIAN_ESTIMATED_MEAN_COSTS_EXACTLY_ONE_COVARIANCE_DEGREE_OF_FREEDOM_AND_RAISES_ONLY_THE_CONSERVATIVE_TOY_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_UNKNOWN_MEAN_NON_GAUSSIANITY_SAMPLE_DEPENDENCE_CALIBRATION_MATCHING_DRIFT_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured mean process, evidence or detection. Known-mean finite sample, correlated mismatch, reference chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr finite-sample covariance uncertainty
 
 Exact Gaussian/Wishart covariance MSE gives inverse-root count scaling (`8/8`, scenarios `78/78`). Four independent covariance estimates yield coefficient `923.69333`; conservative Frobenius/Markov comparison to branch-set separation requires minimum equal count `53` for toy risk ceiling `0.05`. `N=16` fails; `N=64` passes only this model bound.

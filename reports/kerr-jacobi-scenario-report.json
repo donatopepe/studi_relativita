@@ -7,6 +7,7 @@
       "calibration_channel",
       "calibration_mismatch",
       "conformance",
+      "estimated_mean",
       "finite_sample",
       "likelihood",
       "noise",
@@ -97,7 +98,15 @@
       "J75",
       "J76",
       "J77",
-      "J78"
+      "J78",
+      "J79",
+      "J80",
+      "J81",
+      "J82",
+      "J83",
+      "J84",
+      "J85",
+      "J86"
     ]
   },
   "results": [
@@ -646,13 +655,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 1.0
+    },
+    {
+      "category": "estimated_mean",
+      "id": "J79",
+      "residual": 5.551115123125783e-17,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "estimated_mean",
+      "id": "J80",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "estimated_mean",
+      "id": "J81",
+      "residual": 2.220446049250313e-16,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "estimated_mean",
+      "id": "J82",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "estimated_mean",
+      "id": "J83",
+      "residual": 0.04932149115717793,
+      "status": "PASS",
+      "threshold": 0.05
+    },
+    {
+      "category": "estimated_mean",
+      "id": "J84",
+      "residual": 0.17426926875536203,
+      "status": "PASS",
+      "threshold": 0.05
+    },
+    {
+      "category": "estimated_mean",
+      "id": "J85",
+      "residual": 6.938893903907228e-18,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "estimated_mean",
+      "id": "J86",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 78,
+    "PASS": 86,
     "SKIP": 0
   }
 }
