@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr correlated-noise mismatch result
+
+Shared full SPD noise cancels exactly from signal-minus-calibration (`8/8`, scenarios `70/70`). Full branch-set operator distance is positive below mismatch threshold; exact full threshold collides while observed covariances stay SPD.
+
+```text
+KERR_SHARED_CORRELATED_RECEIVER_NOISE_CANCELS_IN_SIGNAL_MINUS_CALIBRATION_BUT_DIFFERENTIAL_MISMATCH_AT_THE_EXACT_CONE_MARGIN_RESTORES_COLLISION_NOT_ELL0
+PHYSICAL_KERR_SIGNAL_CALIBRATION_NOISE_MATCHING_DRIFT_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Reference drift/correction, superseded polarity history, prior chain and `F_0` remain preserved.
+
 ## Kerr bounded reference-drift robustness result
 
 Exact midpoint radii bound drift that preserves collision obstruction (`8/8`, scenarios `62/62`). Conservative 0.8 radius remains positive-margin; endpoint loses obstruction/rank and outside crossing collides exactly.
