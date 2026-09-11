@@ -78,6 +78,14 @@
     {"id": "J75", "category": "finite_sample", "handler": "sample_safe_count"},
     {"id": "J76", "category": "finite_sample", "handler": "sample_unsafe"},
     {"id": "J77", "category": "finite_sample", "handler": "sample_basis_scale"},
-    {"id": "J78", "category": "finite_sample", "handler": "sample_nonclaims"}
+    {"id": "J78", "category": "finite_sample", "handler": "sample_nonclaims"},
+    {"id": "J79", "category": "estimated_mean", "handler": "mean_identity"},
+    {"id": "J80", "category": "estimated_mean", "handler": "mean_domain"},
+    {"id": "J81", "category": "estimated_mean", "handler": "mean_penalty"},
+    {"id": "J82", "category": "estimated_mean", "handler": "mean_rms"},
+    {"id": "J83", "category": "estimated_mean", "handler": "mean_safe_count"},
+    {"id": "J84", "category": "estimated_mean", "handler": "mean_unsafe"},
+    {"id": "J85", "category": "estimated_mean", "handler": "mean_basis_scale"},
+    {"id": "J86", "category": "estimated_mean", "handler": "mean_nonclaims"}
   ]
 }
