@@ -1,5 +1,7 @@
 # Kerr auxiliary calibration-channel identifiability
 
+> **SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION:** milestone `16c9718` reversed collision polarity. See [`kerr-calibration-reference-correction.md`](kerr-calibration-reference-correction.md). Correct result: only a reference strictly inside branch-variance interval blocks positive collision; prior outside reference `[0.02,0.02]` permits exact collision.
+
 A branch-independent auxiliary Gaussian channel observes same gains/noise as Kerr signal channel against known reference covariance. For each diagonal channel, equality of signal and calibration outputs requires squared branch gains with sign ratio controlled by `(Gamma_+-R)/(Gamma_--R)`. A known reference outside interval between branch variances blocks positive exact collision.
 
 ```text

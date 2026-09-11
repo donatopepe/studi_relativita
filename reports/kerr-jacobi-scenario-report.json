@@ -12,6 +12,7 @@
       "preparation",
       "profiling",
       "receiver",
+      "reference_placement",
       "robustness",
       "scale"
     ],
@@ -61,7 +62,15 @@
       "J43",
       "J44",
       "J45",
-      "J46"
+      "J46",
+      "J47",
+      "J48",
+      "J49",
+      "J50",
+      "J51",
+      "J52",
+      "J53",
+      "J54"
     ]
   },
   "results": [
@@ -348,14 +357,14 @@
     {
       "category": "calibration_channel",
       "id": "J41",
-      "residual": 0.0033133026691638044,
+      "residual": 0.005711180292680103,
       "status": "PASS",
       "threshold": 0.001
     },
     {
       "category": "calibration_channel",
       "id": "J42",
-      "residual": 0.0030513618394423497,
+      "residual": 0.009748638160557654,
       "status": "PASS",
       "threshold": 1e-08
     },
@@ -386,13 +395,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 2e-10
+    },
+    {
+      "category": "reference_placement",
+      "id": "J47",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "reference_placement",
+      "id": "J48",
+      "residual": -0.005711180292680103,
+      "status": "PASS",
+      "threshold": 0.0
+    },
+    {
+      "category": "reference_placement",
+      "id": "J49",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "reference_placement",
+      "id": "J50",
+      "residual": 1.7763568394002505e-15,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "reference_placement",
+      "id": "J51",
+      "residual": 0.009748638160557654,
+      "status": "PASS",
+      "threshold": 1e-08
+    },
+    {
+      "category": "reference_placement",
+      "id": "J52",
+      "residual": 8.881784197001252e-16,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "reference_placement",
+      "id": "J53",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "reference_placement",
+      "id": "J54",
+      "residual": 9.325873406851315e-15,
+      "status": "PASS",
+      "threshold": 2e-10
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 46,
+    "PASS": 54,
     "SKIP": 0
   }
 }

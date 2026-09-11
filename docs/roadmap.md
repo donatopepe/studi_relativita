@@ -20,9 +20,20 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
-## Kerr auxiliary calibration-channel identifiability gate
+## Kerr calibration-reference placement correction
 
-A branch-independent known Gaussian reference observed through same gain/noise removes relaxed positive-gain covariance collision at model level (`8/8`, scenarios `46/46`). Calibration alone has rank one per channel; joint signal/reference map has local rank two. Unknown reference restores exact collision and weak calibration information vanishes.
+Correction of milestone `16c9718`: positive collision exists when `(Gamma_+-R)(Gamma_--R)>0`. A known reference blocks collision only strictly inside branch-variance interval; prior outside `[0.02,0.02]` reference collides exactly. Corrected controls pass `8/8`, scenarios `54/54`.
+
+```text
+KNOWN_REFERENCE_BLOCKS_POSITIVE_GAIN_NOISE_BRANCH_COLLISION_ONLY_WHEN_PLACED_STRICTLY_BETWEEN_BRANCH_VARIANCES_WHILE_OUTSIDE_OR_UNKNOWN_REFERENCE_COLLIDES_EXACTLY_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_CALIBRATOR_REFERENCE_PLACEMENT_STABILITY_CROSS_CHANNEL_NOISE_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence/detection; reference placement/stability remains toy. Prior auxiliary section is retained below as `SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION` history.
+
+## Kerr auxiliary calibration-channel identifiability gate — `SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION`
+
+Historical claim from `16c9718` used wrong sign polarity. Calibration-only rank one, joint local rank two, weak-channel and unknown-reference controls remain valid, but outside-reference noncollision claim is invalid.
 
 ```text
 KNOWN_AUXILIARY_REFERENCE_CHANNEL_REMOVES_RELAXED_GAIN_NOISE_BRANCH_COLLISION_AT_MODEL_LEVEL_BUT_UNKNOWN_REFERENCE_RESTORES_EXACT_COLLISION_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0

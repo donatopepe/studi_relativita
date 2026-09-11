@@ -24,9 +24,20 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
-## Kerr auxiliary calibration-channel result
+## Kerr calibration-reference placement correction
 
-Known branch-independent reference removes gain/noise branch collision at model level (`8/8`, scenarios `46/46`); calibration alone remains rank one, joint signal/reference is locally rank two. Unknown reference restores exact collision.
+Correction of `16c9718`: positive collision requires positive placement product. Inside references `[0.1,10.0]` block collision; outside `[0.02,0.02]` references collide exactly. Corrected controls `8/8`, scenarios `54/54`.
+
+```text
+KNOWN_REFERENCE_BLOCKS_POSITIVE_GAIN_NOISE_BRANCH_COLLISION_ONLY_WHEN_PLACED_STRICTLY_BETWEEN_BRANCH_VARIANCES_WHILE_OUTSIDE_OR_UNKNOWN_REFERENCE_COLLIDES_EXACTLY_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_CALIBRATOR_REFERENCE_PLACEMENT_STABILITY_CROSS_CHANNEL_NOISE_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Prior chain and `F_0` remain preserved.
+
+## Kerr auxiliary calibration-channel result — `SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION`
+
+Historical `16c9718` noncollision polarity was wrong. Calibration rank statements and unknown-reference collision remain valid; outside-reference noncollision does not.
 
 ```text
 KNOWN_AUXILIARY_REFERENCE_CHANNEL_REMOVES_RELAXED_GAIN_NOISE_BRANCH_COLLISION_AT_MODEL_LEVEL_BUT_UNKNOWN_REFERENCE_RESTORES_EXACT_COLLISION_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0

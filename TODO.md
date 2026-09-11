@@ -24,11 +24,11 @@ Updated: 2026-09-11
    - Depends on: tasks 1–2.
    - Complete when: inside-interval known reference blocks positive collision; outside-interval known reference admits explicit exact collision; Fisher/precision/weak/scale controls and guardrails pass.
    - Test: exactly eight focused controls, regression of erroneous polarity and deterministic artifact equality.
-4. [ ] Correct bilingual scientific record and preserved history. **ACTIVE**
+4. [x] Correct bilingual scientific record and preserved history.
    - Depends on: task 3 GREEN.
    - Complete when: theory, EN/IT audits, roadmap and ledger explicitly supersede erroneous claim without deleting historical evidence.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication.
+5. [ ] Closure and publication. **ACTIVE**
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes correction recorded.
 
