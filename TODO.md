@@ -2,37 +2,37 @@
 
 Updated: 2026-09-11
 
-## Active milestone: Kerr bounded reference-drift robustness MVP
+## Active milestone: Kerr correlated-noise mismatch threshold MVP
 
-**Objective:** determine how much branch-independent reference drift can be tolerated before inside-interval collision obstruction is lost, and preserve exact boundary/outside failures.
+**Objective:** determine whether a shared full correlated-noise covariance cancels in signal-minus-calibration observables and derive exact differential-mismatch threshold where branch collision returns.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** interval containment, maximal symmetric drift, bounded robust obstruction, endpoint loss, outside crossing collision, Fisher margin, scale invariance, nonclaims.
+**Fixed cases/order:** full-noise domain, shared-noise cancellation, sign-cone noncollision, analytic mismatch threshold, bounded residual, threshold collision, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify bounded reference-drift specification.
-   - Depends on: corrected reference-placement milestone `eb22cf2` and green CI `34573575122`.
-   - Complete when: nominal midpoint references, exact maximal drift radii, conservative drift fraction, endpoint/outside witnesses, eight controls, J55–J62 and nonclaims are preregistered.
+1. [ ] Ratify correlated-noise mismatch specification. **ACTIVE**
+   - Depends on: bounded reference-drift milestone `b1ca8a8` and green CI `34587982249`.
+   - Complete when: full SPD shared-noise model, differential mismatch norm, exact critical threshold, 0.8 bounded fraction, collision witness, eight controls, J63–J70 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J55–J62 and `reference_drift` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J63–J70 and `calibration_mismatch` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement reference-drift robustness engine.
+3. [ ] Implement correlated-noise mismatch engine.
    - Depends on: tasks 1–2.
-   - Complete when: analytic interior radii, bounded worst-case obstruction, exact endpoint rank loss, outside exact collision, Fisher margin, scale null and guardrails pass.
+   - Complete when: SPD validation, shared-noise cancellation, sign-cone proof, analytic operator-norm threshold, safe lower bound, exact threshold collision, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve correction history/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve corrected history/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `62/62`; all 62 per-scenario and 15 per-category granular runs green.
