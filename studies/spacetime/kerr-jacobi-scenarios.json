@@ -70,6 +70,14 @@
     {"id": "J67", "category": "calibration_mismatch", "handler": "mismatch_safe"},
     {"id": "J68", "category": "calibration_mismatch", "handler": "mismatch_collision"},
     {"id": "J69", "category": "calibration_mismatch", "handler": "mismatch_basis_scale"},
-    {"id": "J70", "category": "calibration_mismatch", "handler": "mismatch_nonclaims"}
+    {"id": "J70", "category": "calibration_mismatch", "handler": "mismatch_nonclaims"},
+    {"id": "J71", "category": "finite_sample", "handler": "sample_identity"},
+    {"id": "J72", "category": "finite_sample", "handler": "sample_domain"},
+    {"id": "J73", "category": "finite_sample", "handler": "sample_rms"},
+    {"id": "J74", "category": "finite_sample", "handler": "sample_scaling"},
+    {"id": "J75", "category": "finite_sample", "handler": "sample_safe_count"},
+    {"id": "J76", "category": "finite_sample", "handler": "sample_unsafe"},
+    {"id": "J77", "category": "finite_sample", "handler": "sample_basis_scale"},
+    {"id": "J78", "category": "finite_sample", "handler": "sample_nonclaims"}
   ]
 }

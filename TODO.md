@@ -16,15 +16,15 @@ Updated: 2026-09-11
    - Depends on: correlated-noise mismatch milestone `bba10b3` and green CI `34609839623`.
    - Complete when: zero-mean Gaussian/Wishart assumptions, exact Frobenius MSE formula, fixed sample counts `[16,64,256]`, separation comparison, eight controls, J71–J78 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J71–J78 and `finite_sample` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement finite-sample covariance uncertainty engine.
+3. [x] Implement finite-sample covariance uncertainty engine.
    - Depends on: tasks 1–2.
    - Complete when: exact Gaussian covariance-estimator MSE, four-channel error propagation, inverse-root sample scaling, safe/unsafe threshold comparisons, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior negatives/nonclaims.
    - Test: report tests plus deterministic artifact equality.
