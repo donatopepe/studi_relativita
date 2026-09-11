@@ -4,5 +4,5 @@ class Spec(unittest.TestCase):
  def test_contract(self):
   s=S.read_text();p=P.read_text();t=T.read_text()
   for x in ('RATIFIED_FOR_IMPLEMENTATION_PLANNING','exactly `8/8`','delta_i=0.8*d_i','J55-J62','reference_drift','endpoint','outside','MODEL_LEVEL_BOUNDED_REFERENCE_DRIFT_ROBUSTNESS_NOT_EVIDENCE','KERR_REFERENCE_COLLISION_OBSTRUCTION_SURVIVES_ONLY_WHILE_REFERENCE_DRIFT_STAYS_STRICTLY_INSIDE_BRANCH_VARIANCE_INTERVAL','NO_POSITIVE_DETECTION_CLAIM'):self.assertIn(x,s)
-  self.assertIn('Metric:** `8/8`',p);self.assertIn('Kerr finite-sample covariance uncertainty MVP',t);self.assertIn('correlated-noise mismatch milestone `bba10b3`',t)
+  self.assertIn('Metric:** `8/8`',p);self.assertIn('Kerr estimated-mean covariance penalty MVP',t);self.assertIn('finite-sample covariance milestone `686aa2b`',t)
 if __name__=='__main__':unittest.main()

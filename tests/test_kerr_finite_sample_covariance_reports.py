@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('finite-sample','Wishart','Markov',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_SHARED_CORRELATED_RECEIVER_NOISE_CANCELS_IN_SIGNAL_MINUS_CALIBRATION','KERR_REFERENCE_COLLISION_OBSTRUCTION_SURVIVES_ONLY_WHILE_REFERENCE_DRIFT_STAYS_STRICTLY_INSIDE_BRANCH_VARIANCE_INTERVAL','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1215/1215`.',TODO.read_text());self.assertIn('GitHub Actions run `34631514528` tests/LaTeX passed.',TODO.read_text())
+  todo=TODO.read_text();self.assertIn('Previous milestone closure evidence',todo);self.assertIn('Full suite: `1215/1215`.',todo);self.assertIn('GitHub Actions run `34631514528` tests/LaTeX passed.',todo)
 if __name__=='__main__':unittest.main()
