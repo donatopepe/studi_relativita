@@ -1,0 +1,181 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_BOUNDED_REFERENCE_DRIFT_ROBUSTNESS_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "geometry",
+        "passed": true,
+        "residual": 5.329070518200751e-15,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "drift_box",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "robust_margin",
+        "passed": true,
+        "residual": 0.002152886151229023,
+        "threshold": 0.001,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "endpoint_loss",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "outside_collision",
+        "passed": true,
+        "residual": 8.881784197001252e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "fisher_margin",
+        "passed": true,
+        "residual": 0.002474624224480311,
+        "threshold": 1e-08,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "scale",
+        "passed": true,
+        "residual": 4.6629367034256575e-15,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_CALIBRATOR_DRIFT_BOUND_STABILITY_CROSS_CHANNEL_NOISE_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "drift_box": {
+      "drift_fraction": 0.8,
+      "drift_radii": [
+        0.061865605612007796,
+        30.076538616041972
+      ],
+      "reference_bounds": [
+        [
+          0.05453741289951662,
+          0.17826862412353223
+        ],
+        [
+          11.951855638902536,
+          72.10493287098649
+        ]
+      ],
+      "strictly_inside": true
+    },
+    "endpoint_loss": {
+      "endpoint_reference": [
+        0.03907101149651468,
+        4.432720984892049
+      ],
+      "fisher_determinant_residual": 0.0,
+      "joint_fisher_determinants": [
+        0.0,
+        0.0
+      ],
+      "placement_product_residual": 0.0,
+      "placement_products": [
+        0.0,
+        0.0
+      ]
+    },
+    "fisher_margin": {
+      "endpoint_determinants": [
+        0.002474624224480311,
+        0.022271618020322813,
+        4.458094936362818,
+        40.122854427265395
+      ],
+      "minimum_determinant": 0.002474624224480311
+    },
+    "geometry": {
+      "branch_minus": [
+        0.19373502552653415,
+        79.62406752499697
+      ],
+      "branch_plus": [
+        0.03907101149651468,
+        4.432720984892049
+      ],
+      "endpoint_residual": 5.329070518200751e-15,
+      "maximal_open_radii": [
+        0.07733200701500974,
+        37.595673270052465
+      ],
+      "midpoints": [
+        0.11640301851152442,
+        42.02839425494451
+      ]
+    },
+    "outside_collision": {
+      "calibration_residual": 8.881784197001252e-16,
+      "crossing_fraction": 0.01,
+      "joint_residual": 8.881784197001252e-16,
+      "minus_gains": [
+        0.05642764926868778,
+        0.07758801774444582
+      ],
+      "minus_noise": [
+        0.29476868832153685,
+        2.2375798148919035
+      ],
+      "plus_gains": [
+        0.8,
+        1.1
+      ],
+      "plus_noise": [
+        0.25,
+        0.35
+      ],
+      "reference": [
+        0.038297691426364584,
+        4.056764252191524
+      ],
+      "signal_residual": 8.881784197001252e-16
+    },
+    "robust_obstruction": {
+      "endpoint_margins": [
+        0.0021528861512290247,
+        0.002152886151229023,
+        508.8364735062731,
+        508.836473506273
+      ],
+      "minimum_margin": 0.002152886151229023
+    },
+    "scale": {
+      "normalized_drift_fractions": [
+        0.9999999999999999,
+        1.0000000000000002
+      ],
+      "normalized_residual": 4.6629367034256575e-15
+    }
+  },
+  "result": "KERR_REFERENCE_COLLISION_OBSTRUCTION_SURVIVES_ONLY_WHILE_REFERENCE_DRIFT_STAYS_STRICTLY_INSIDE_BRANCH_VARIANCE_INTERVAL_AND_FAILS_AT_ENDPOINT_OR_OUTSIDE_NOT_ELL0",
+  "schema": "kerr-reference-drift-robustness-v1"
+}
