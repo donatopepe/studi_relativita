@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr correlated-noise mismatch threshold
+
+Arbitrary full SPD noise shared by signal/calibration cancels in covariance difference (`8/8`, scenarios `70/70`). Opposite-definite branch cones remain separated. Exact minimum-gain full branch-matrix operator distance is `18.797837`; aggregate mismatch below 0.8 leaves positive separation, while full threshold collides exactly with SPD observed covariances.
+
+```text
+KERR_SHARED_CORRELATED_RECEIVER_NOISE_CANCELS_IN_SIGNAL_MINUS_CALIBRATION_BUT_DIFFERENTIAL_MISMATCH_AT_THE_EXACT_CONE_MARGIN_RESTORES_COLLISION_NOT_ELL0
+PHYSICAL_KERR_SIGNAL_CALIBRATION_NOISE_MATCHING_DRIFT_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured signal/calibration matching, evidence or detection. Reference drift/correction, `SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION`, prior Kerr chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr bounded reference-drift robustness
 
 Reference collision obstruction survives only while drift remains strictly inside branch-variance interval (`8/8`, scenarios `62/62`). Midpoint gives exact maximal symmetric open radius; conservative 0.8 box has positive obstruction/Fisher margins. Endpoint loses rank and obstruction; crossing outside restores exact collision.

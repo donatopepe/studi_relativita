@@ -5,6 +5,7 @@
       "asymptotic",
       "calibration",
       "calibration_channel",
+      "calibration_mismatch",
       "conformance",
       "likelihood",
       "noise",
@@ -79,7 +80,15 @@
       "J59",
       "J60",
       "J61",
-      "J62"
+      "J62",
+      "J63",
+      "J64",
+      "J65",
+      "J66",
+      "J67",
+      "J68",
+      "J69",
+      "J70"
     ]
   },
   "results": [
@@ -516,13 +525,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 1.0
+    },
+    {
+      "category": "calibration_mismatch",
+      "id": "J63",
+      "residual": 0.3579062728770146,
+      "status": "PASS",
+      "threshold": 0.0
+    },
+    {
+      "category": "calibration_mismatch",
+      "id": "J64",
+      "residual": 8.881784197001252e-16,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "calibration_mismatch",
+      "id": "J65",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "calibration_mismatch",
+      "id": "J66",
+      "residual": 18.797836635026233,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "calibration_mismatch",
+      "id": "J67",
+      "residual": 3.7595673270052465,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "calibration_mismatch",
+      "id": "J68",
+      "residual": 1.3322676295501878e-15,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "calibration_mismatch",
+      "id": "J69",
+      "residual": 3.552713678800501e-15,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "calibration_mismatch",
+      "id": "J70",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 62,
+    "PASS": 70,
     "SKIP": 0
   }
 }
