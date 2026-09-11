@@ -46,6 +46,14 @@
     {"id": "J43", "category": "calibration_channel", "handler": "calibration_precision"},
     {"id": "J44", "category": "calibration_channel", "handler": "calibration_weak_limit"},
     {"id": "J45", "category": "calibration_channel", "handler": "calibration_unknown_reference"},
-    {"id": "J46", "category": "calibration_channel", "handler": "calibration_scale"}
+    {"id": "J46", "category": "calibration_channel", "handler": "calibration_scale"},
+    {"id": "J47", "category": "reference_placement", "handler": "reference_criterion"},
+    {"id": "J48", "category": "reference_placement", "handler": "reference_inside"},
+    {"id": "J49", "category": "reference_placement", "handler": "reference_noncollision"},
+    {"id": "J50", "category": "reference_placement", "handler": "reference_outside_collision"},
+    {"id": "J51", "category": "reference_placement", "handler": "reference_fisher"},
+    {"id": "J52", "category": "reference_placement", "handler": "reference_unknown_collision"},
+    {"id": "J53", "category": "reference_placement", "handler": "reference_weak_precision"},
+    {"id": "J54", "category": "reference_placement", "handler": "reference_scale"}
   ]
 }
