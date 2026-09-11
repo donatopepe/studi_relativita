@@ -62,6 +62,14 @@
     {"id": "J59", "category": "reference_drift", "handler": "drift_outside_collision"},
     {"id": "J60", "category": "reference_drift", "handler": "drift_fisher"},
     {"id": "J61", "category": "reference_drift", "handler": "drift_scale"},
-    {"id": "J62", "category": "reference_drift", "handler": "drift_nonclaims"}
+    {"id": "J62", "category": "reference_drift", "handler": "drift_nonclaims"},
+    {"id": "J63", "category": "calibration_mismatch", "handler": "mismatch_spd"},
+    {"id": "J64", "category": "calibration_mismatch", "handler": "mismatch_cancellation"},
+    {"id": "J65", "category": "calibration_mismatch", "handler": "mismatch_cones"},
+    {"id": "J66", "category": "calibration_mismatch", "handler": "mismatch_threshold"},
+    {"id": "J67", "category": "calibration_mismatch", "handler": "mismatch_safe"},
+    {"id": "J68", "category": "calibration_mismatch", "handler": "mismatch_collision"},
+    {"id": "J69", "category": "calibration_mismatch", "handler": "mismatch_basis_scale"},
+    {"id": "J70", "category": "calibration_mismatch", "handler": "mismatch_nonclaims"}
   ]
 }

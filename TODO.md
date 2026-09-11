@@ -16,15 +16,15 @@ Updated: 2026-09-11
    - Depends on: bounded reference-drift milestone `b1ca8a8` and green CI `34587982249`.
    - Complete when: full SPD shared-noise model, differential mismatch norm, exact critical threshold, 0.8 bounded fraction, collision witness, eight controls, J63–J70 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J63–J70 and `calibration_mismatch` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement correlated-noise mismatch engine.
+3. [x] Implement correlated-noise mismatch engine.
    - Depends on: tasks 1–2.
    - Complete when: SPD validation, shared-noise cancellation, sign-cone proof, analytic operator-norm threshold, safe lower bound, exact threshold collision, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve corrected history/nonclaims.
    - Test: report tests plus deterministic artifact equality.
