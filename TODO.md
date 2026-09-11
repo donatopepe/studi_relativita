@@ -12,11 +12,11 @@ Updated: 2026-09-11
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify corrected reference-placement specification. **ACTIVE**
+1. [x] Ratify corrected reference-placement specification.
    - Depends on: published auxiliary-channel milestone `16c9718`; prior reference `[0.02,0.02]` lay below both branch variances, so its positive product permits collision rather than obstructing it.
    - Complete when: sign error is explicit; inside references `[0.1,10.0]`, outside controls `[0.02,0.02]`, exact gain/noise witnesses, eight controls, J47–J54 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J47–J54 and `reference_placement` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
