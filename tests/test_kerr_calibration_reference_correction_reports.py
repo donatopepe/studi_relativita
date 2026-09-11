@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('polarity','inside','outside',RESULT,GATE,'16c9718'):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KNOWN_AUXILIARY_REFERENCE_CHANNEL_REMOVES_RELAXED_GAIN_NOISE_BRANCH_COLLISION','SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Correct bilingual scientific record and preserved history.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1176/1176`.',TODO.read_text());self.assertIn('GitHub Actions run `34572177197` tests/LaTeX passed.',TODO.read_text())
+  todo=TODO.read_text();self.assertIn('Previous corrected milestone evidence',todo);self.assertIn('Full suite: `1176/1176`.',todo);self.assertIn('GitHub Actions run `34572177197` tests/LaTeX passed.',todo)
 if __name__=='__main__':unittest.main()

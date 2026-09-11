@@ -4,5 +4,5 @@ class Spec(unittest.TestCase):
  def test_contract(self):
   s=S.read_text();p=P.read_text();t=T.read_text()
   for x in ('RATIFIED_FOR_IMPLEMENTATION_PLANNING','exactly `8/8`','J31-J38','profiling','g1,g2 in [0.5,1.5]','n in [0.1,1.0]','Composite-hypothesis profiling','MODEL_LEVEL_BOUNDED_COMPOSITE_CALIBRATION_PROFILE_NOT_EVIDENCE','ell0_identified=false','NO_POSITIVE_DETECTION_CLAIM'):self.assertIn(x,s)
-  self.assertIn('Metric:** `8/8`',p);self.assertIn('Kerr calibration-reference placement correction MVP',t);self.assertIn('published auxiliary-channel milestone `16c9718`',t)
+  self.assertIn('Metric:** `8/8`',p);self.assertIn('Kerr bounded reference-drift robustness MVP',t);self.assertIn('corrected reference-placement milestone `eb22cf2`',t)
 if __name__=='__main__':unittest.main()
