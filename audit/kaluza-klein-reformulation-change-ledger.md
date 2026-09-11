@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr auxiliary calibration-channel result
+
+Known branch-independent reference removes gain/noise branch collision at model level (`8/8`, scenarios `46/46`); calibration alone remains rank one, joint signal/reference is locally rank two. Unknown reference restores exact collision.
+
+```text
+KNOWN_AUXILIARY_REFERENCE_CHANNEL_REMOVES_RELAXED_GAIN_NOISE_BRANCH_COLLISION_AT_MODEL_LEVEL_BUT_UNKNOWN_REFERENCE_RESTORES_EXACT_COLLISION_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_CALIBRATOR_REFERENCE_STABILITY_CROSS_CHANNEL_NOISE_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Prior composite/common/fixed receiver, source/Jacobi chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr composite common-calibration profile result
 
 Composite profiling leaves plus/minus covariance sets disjoint only under toy bounded nuisance domain (`8/8`, scenarios `38/38`). Relaxed positive gains produce exact covariance collision.

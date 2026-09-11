@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr auxiliary calibration-channel identifiability gate
+
+A branch-independent known Gaussian reference observed through same gain/noise removes relaxed positive-gain covariance collision at model level (`8/8`, scenarios `46/46`). Calibration alone has rank one per channel; joint signal/reference map has local rank two. Unknown reference restores exact collision and weak calibration information vanishes.
+
+```text
+KNOWN_AUXILIARY_REFERENCE_CHANNEL_REMOVES_RELAXED_GAIN_NOISE_BRANCH_COLLISION_AT_MODEL_LEVEL_BUT_UNKNOWN_REFERENCE_RESTORES_EXACT_COLLISION_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_CALIBRATOR_REFERENCE_STABILITY_CROSS_CHANNEL_NOISE_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No calibrator hardware, stability measurement, evidence or detection. Prior composite/common/fixed receiver, source/analyzer, Jacobi chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr composite common-calibration profile gate
 
 Separately profiling one unknown calibration under competing hypotheses gives disjoint covariance sets only inside toy bounded nuisance domain (`8/8`, scenarios `38/38`). Analytic second-channel gap proves bounded disjointness; finite KL grid is only a witness. Relaxed positive gains yield exact covariance collision.
