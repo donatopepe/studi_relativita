@@ -22,13 +22,14 @@ Fixed gain domain: each diagonal gain in `[0.5,1.5]`. Fixed shared-noise anchor 
 N=[[0.4,0.12],[0.12,0.7]]
 ```
 
-which is SPD. Mismatch norm is spectral/operator norm. On gain domain, nearest branch cone to zero has exact margin
+which is SPD. Mismatch norm is spectral/operator norm. Collision of branch observables requires equality of full matrices, not merely one branch matrix becoming singular. On diagonal gain domain, exact minimum operator-norm branch-set distance is
 
 ```text
-tau=min_i 0.5^2*min(R_i-Gamma_{+,i},Gamma_{-,i}-R_i).
+tau=max_i 0.5^2*((R_i-Gamma_{+,i})+(Gamma_{-,i}-R_i))
+   =0.5^2*max_i(Gamma_{-,i}-Gamma_{+,i}).
 ```
 
-Use safe mismatch bound `||Delta_o||_2 <= 0.8*tau` for both branches. At aggregate differential mismatch `Delta_+-Delta_-` reaching `tau`, one boundary channel can collide at zero; explicit threshold witness records this.
+Use aggregate differential mismatch bound `||Delta_+-Delta_-||_2 <= 0.8*tau`. Remaining branch-set distance is at least `0.2*tau`. At aggregate mismatch exactly equal to full boundary matrix `A_+-A_-`, both observable matrices collide; explicit threshold witness records equality while underlying signal/calibration covariances remain SPD.
 
 ## MVP-first gate
 
@@ -43,9 +44,9 @@ Use safe mismatch bound `||Delta_o||_2 <= 0.8*tau` for both branches. At aggrega
 1. Full `2x2` noise anchor is symmetric positive definite and rejects nonfinite/non-SPD matrices.
 2. Signal-minus-calibration difference is independent of arbitrary shared correlated `N_o` within `2e-10` when `Delta_o=0`.
 3. Inside-reference branch difference cones have opposite definiteness throughout bounded positive gain domain; no exact collision.
-4. Analytic `tau` equals deterministic boundary evaluation within `2e-10` and is positive (`>1e-3`).
-5. For total differential mismatch below `0.8*tau`, Weyl/operator-norm bound leaves positive cone-separation margin (`>1e-3`).
-6. At exact threshold, an explicit positive-gain diagonal witness and calibration mismatch yields zero eigenvalue/collision boundary within `2e-10`.
+4. Analytic `tau` equals operator norm of minimum-gain full branch-difference matrix within `2e-10` and is positive (`>1`).
+5. For aggregate differential mismatch below `0.8*tau`, reverse-triangle/operator-norm bound leaves positive branch-set separation (`>1`).
+6. At exact threshold, explicit minimum-gain branch candidates and full differential mismatch yield equal observable matrices within `2e-10`; signal and calibration covariances remain SPD.
 7. Orthogonal basis rotation and common geometric scale conversion preserve normalized `tau`, norms and rank null within `2e-10`.
 8. Artifact preserves `L_identified=false`, `ell0_identified=false`, `L_equals_ell0=NOT_DERIVED`, no extra-dimension detection and no positive detection claim.
 

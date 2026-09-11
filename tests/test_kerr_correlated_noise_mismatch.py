@@ -7,9 +7,10 @@ class Controls(unittest.TestCase):
  def test_03_sign_cones(self):
   x=c.sign_cone_control();self.assertTrue(x['opposite_definite']);self.assertFalse(x['exact_collision_possible'])
  def test_04_threshold(self):
-  x=c.threshold_control();self.assertGreater(x['tau'],1e-3);self.assertLess(x['boundary_residual'],2e-10)
- def test_05_safe_bound(self):self.assertGreater(c.safe_mismatch_control()['remaining_margin'],1e-3)
- def test_06_threshold_collision(self):self.assertLess(c.threshold_collision_control()['zero_eigenvalue_residual'],2e-10)
+  x=c.threshold_control();self.assertGreater(x['tau'],1.);self.assertLess(x['operator_norm_residual'],2e-10)
+ def test_05_safe_bound(self):self.assertGreater(c.safe_mismatch_control()['remaining_separation'],1.)
+ def test_06_threshold_collision(self):
+  x=c.threshold_collision_control();self.assertLess(x['observable_collision_residual'],2e-10);self.assertGreater(x['minimum_observed_eigenvalue'],0.)
  def test_07_basis_scale(self):
   x=c.basis_scale_control(.37,2.5);self.assertLess(x['basis_residual'],2e-10);self.assertLess(x['scale_residual'],2e-10)
  def test_08_nonclaims(self):
