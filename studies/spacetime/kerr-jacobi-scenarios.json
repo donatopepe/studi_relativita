@@ -30,6 +30,14 @@
     {"id": "J27", "category": "calibration", "handler": "boundary"},
     {"id": "J28", "category": "asymptotic", "handler": "attenuation"},
     {"id": "J29", "category": "asymptotic", "handler": "unbounded_noise"},
-    {"id": "J30", "category": "scale", "scale_factor": 2.5, "handler": "common_scale"}
+    {"id": "J30", "category": "scale", "scale_factor": 2.5, "handler": "common_scale"},
+    {"id": "J31", "category": "profiling", "handler": "profile_overlap"},
+    {"id": "J32", "category": "profiling", "handler": "profile_domain"},
+    {"id": "J33", "category": "profiling", "handler": "profile_minimum"},
+    {"id": "J34", "category": "profiling", "handler": "profile_refinement"},
+    {"id": "J35", "category": "profiling", "handler": "profile_boundary"},
+    {"id": "J36", "category": "profiling", "handler": "profile_collision"},
+    {"id": "J37", "category": "profiling", "handler": "profile_basis_scale"},
+    {"id": "J38", "category": "profiling", "handler": "profile_nonclaims"}
   ]
 }
