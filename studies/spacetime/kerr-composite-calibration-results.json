@@ -1,0 +1,179 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_BOUNDED_COMPOSITE_CALIBRATION_PROFILE_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "analytic_overlap",
+        "passed": true,
+        "residual": 8.942394665242135,
+        "threshold": 1.0,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "bounded_domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "positive_profile_minimum",
+        "passed": true,
+        "residual": 0.20192629793068018,
+        "threshold": 0.001,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "refinement",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "boundary",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "relaxed_collision",
+        "passed": true,
+        "residual": 8.881784197001252e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 3.885780586188048e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_SHARED_CALIBRATION_MODEL_BOUNDS_PRIORS_HARDWARE_NOISE_SPECTRUM_SYSTEMATICS_SAMPLING_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "basis_scale": {
+      "basis_KL_residual": 3.885780586188048e-16,
+      "scale_KL_residual": 1.1102230246251565e-16,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "boundary": {
+      "direct_residual": 0.0,
+      "minus_anchor": [
+        1.5,
+        0.5,
+        0.775
+      ],
+      "on_declared_boundary": true,
+      "plus_anchor": [
+        1.0,
+        1.5,
+        1.0
+      ]
+    },
+    "overlap": {
+      "channel_gaps": [
+        0.0,
+        8.942394665242135
+      ],
+      "minus_output_intervals": [
+        [
+          0.05843375638163354,
+          1.435903807434702
+        ],
+        [
+          19.916016881249245,
+          180.15415193124318
+        ]
+      ],
+      "plus_output_intervals": [
+        [
+          0.019767752874128672,
+          1.087909775867158
+        ],
+        [
+          1.1181802462230122,
+          10.97362221600711
+        ]
+      ],
+      "second_channel_gap": 8.942394665242135,
+      "sets_overlap": false
+    },
+    "profile_refinement": {
+      "finest": {
+        "grid_size": 9,
+        "minimum_symmetric_KL": 0.20192629793068018,
+        "minus_anchor": [
+          1.5,
+          0.5,
+          0.775
+        ],
+        "plus_anchor": [
+          1.0,
+          1.5,
+          1.0
+        ]
+      },
+      "grid_sizes": [
+        3,
+        5,
+        9
+      ],
+      "minimum_symmetric_KL": [
+        0.215049233419923,
+        0.20192629793068018,
+        0.20192629793068018
+      ],
+      "nonincreasing": true
+    },
+    "relaxed_collision": {
+      "covariance_residual": 8.881784197001252e-16,
+      "minus_gains": [
+        0.4490795255951395,
+        0.23594621680081812
+      ],
+      "noise_sigma": 0.25,
+      "plus_gains": [
+        1.0,
+        1.0
+      ],
+      "target_covariance": [
+        [
+          0.10157101149651468,
+          0.0
+        ],
+        [
+          0.0,
+          4.495220984892049
+        ]
+      ]
+    }
+  },
+  "result": "KERR_COMPOSITE_BRANCH_SETS_ARE_DISJOINT_UNDER_TOY_BOUNDED_PROFILED_COMMON_CALIBRATION_BUT_RELAXED_POSITIVE_GAINS_COLLIDE_EXACTLY_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0",
+  "schema": "kerr-composite-calibration-profile-v1"
+}
