@@ -1,0 +1,177 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_REFERENCE_PLACEMENT_CORRECTION_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "criterion",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "inside_domain",
+        "passed": true,
+        "residual": -0.005711180292680103,
+        "threshold": 0.0,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "inside_noncollision",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "outside_collision",
+        "passed": true,
+        "residual": 1.7763568394002505e-15,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "fisher_rank",
+        "passed": true,
+        "residual": 0.009748638160557654,
+        "threshold": 1e-08,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "unknown_reference_collision",
+        "passed": true,
+        "residual": 8.881784197001252e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "weak_precision",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "scale_nonclaims",
+        "passed": true,
+        "residual": 9.325873406851315e-15,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "scale_null_direction": [
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "scale_residual": 9.325873406851315e-15,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_CALIBRATOR_REFERENCE_PLACEMENT_STABILITY_CROSS_CHANNEL_NOISE_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "criterion": {
+      "algebra_residual": 0.0,
+      "positive_collision_condition": "product_positive",
+      "superseded_condition": "product_positive_was_incorrectly_labeled_obstruction"
+    },
+    "fisher": {
+      "joint_determinants": [
+        0.009748638160557654,
+        3.300839728057505
+      ],
+      "joint_ranks": [
+        2,
+        2
+      ],
+      "rank_does_not_prove_branch_identifiability": true,
+      "reference": [
+        0.1,
+        10.0
+      ]
+    },
+    "inside": {
+      "positive_collision_possible": false,
+      "products": [
+        -0.005711180292680103,
+        -387.61661007837466
+      ],
+      "reference": [
+        0.1,
+        10.0
+      ],
+      "strictly_inside": true
+    },
+    "outside_collision": {
+      "calibration_residual": 1.3877787807814457e-17,
+      "joint_residual": 1.7763568394002505e-15,
+      "minus_gains": [
+        0.2650532658610718,
+        0.2589871934965002
+      ],
+      "minus_noise": [
+        0.2718362288679116,
+        0.3812591148708397
+      ],
+      "plus_gains": [
+        0.8,
+        1.1
+      ],
+      "plus_noise": [
+        0.25,
+        0.35
+      ],
+      "reference": [
+        0.02,
+        0.02
+      ],
+      "signal_residual": 1.7763568394002505e-15
+    },
+    "unknown_reference_collision": {
+      "calibration_residual": 0.0,
+      "joint_residual": 8.881784197001252e-16,
+      "minus_gains": [
+        0.4490795255951395,
+        0.23594621680081812
+      ],
+      "minus_reference": [
+        0.09917072433295782,
+        0.3592559414245925
+      ],
+      "plus_gains": [
+        1.0,
+        1.0
+      ],
+      "plus_reference": [
+        0.02,
+        0.02
+      ],
+      "signal_residual": 8.881784197001252e-16
+    },
+    "weak_precision": {
+      "information_decreasing": true,
+      "precision_decreasing": true,
+      "relative_information": [
+        0.5,
+        0.05,
+        0.005
+      ],
+      "relative_std": [
+        1.4142135623730951,
+        0.4472135954999579,
+        0.1414213562373095
+      ]
+    }
+  },
+  "result": "KNOWN_REFERENCE_BLOCKS_POSITIVE_GAIN_NOISE_BRANCH_COLLISION_ONLY_WHEN_PLACED_STRICTLY_BETWEEN_BRANCH_VARIANCES_WHILE_OUTSIDE_OR_UNKNOWN_REFERENCE_COLLIDES_EXACTLY_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0",
+  "schema": "kerr-calibration-reference-placement-correction-v1"
+}
