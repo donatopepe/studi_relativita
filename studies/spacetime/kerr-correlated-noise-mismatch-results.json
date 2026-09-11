@@ -30,28 +30,28 @@
       {
         "name": "threshold",
         "passed": true,
-        "residual": 0.015232247125871332,
-        "threshold": 0.001,
+        "residual": 18.797836635026233,
+        "threshold": 1.0,
         "threshold_kind": "minimum"
       },
       {
         "name": "safe_mismatch",
         "passed": true,
-        "residual": 0.0030464494251742653,
-        "threshold": 0.001,
+        "residual": 3.7595673270052465,
+        "threshold": 1.0,
         "threshold_kind": "minimum"
       },
       {
         "name": "threshold_collision",
         "passed": true,
-        "residual": 0.0,
+        "residual": 1.3322676295501878e-15,
         "threshold": 2e-10,
         "threshold_kind": "maximum"
       },
       {
         "name": "basis_scale",
         "passed": true,
-        "residual": 1.734723475976807e-18,
+        "residual": 3.552713678800501e-15,
         "threshold": 2e-10,
         "threshold_kind": "maximum"
       },
@@ -72,7 +72,7 @@
   "physical_gate": "PHYSICAL_KERR_SIGNAL_CALIBRATION_NOISE_MATCHING_DRIFT_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
   "raw_output": {
     "basis_scale": {
-      "basis_residual": 1.734723475976807e-18,
+      "basis_residual": 3.552713678800501e-15,
       "scale_null_direction": [
         1.0,
         0.0,
@@ -106,8 +106,8 @@
       "residual": 8.881784197001252e-16
     },
     "safe_mismatch": {
-      "mismatch_bound": 0.012185797700697066,
-      "remaining_margin": 0.0030464494251742653,
+      "aggregate_mismatch_bound": 15.038269308020986,
+      "remaining_separation": 3.7595673270052465,
       "safe_fraction": 0.8
     },
     "sign_cones": {
@@ -134,47 +134,62 @@
       "minimum_eigenvalue": 0.3579062728770146
     },
     "threshold": {
-      "boundary_component": 0,
-      "boundary_residual": 0.0,
+      "boundary_component": 1,
       "components": [
-        0.015232247125871332,
-        1.3918197537769879,
-        0.023433756381633537,
-        17.406016881249244
+        0.03866600350750487,
+        18.797836635026233
       ],
-      "tau": 0.015232247125871332
+      "minimum_gain_full_difference": [
+        [
+          0.03866600350750487,
+          0.0
+        ],
+        [
+          0.0,
+          18.797836635026233
+        ]
+      ],
+      "operator_norm_residual": 0.0,
+      "tau": 18.797836635026233
     },
     "threshold_collision": {
-      "branch": "plus",
       "differential_mismatch": [
+        [
+          -0.03866600350750487,
+          0.0
+        ],
+        [
+          0.0,
+          -18.797836635026233
+        ]
+      ],
+      "gain": [
+        0.5,
+        0.5
+      ],
+      "minimum_observed_eigenvalue": 0.39954509163139196,
+      "minus_observable": [
         [
           -0.015232247125871332,
           0.0
         ],
         [
           0.0,
-          0.0
+          -1.3918197537769892
         ]
       ],
-      "eigenvalues": [
-        -1.3918197537769879,
-        0.0
-      ],
-      "gain": [
-        0.5,
-        0.5
-      ],
-      "shifted_difference": [
+      "observable_collision_residual": 1.3322676295501878e-15,
+      "operator_norm": 18.797836635026233,
+      "plus_observable": [
         [
-          0.0,
+          -0.015232247125871332,
           0.0
         ],
         [
           0.0,
           -1.3918197537769879
         ]
-      ],
-      "zero_eigenvalue_residual": 0.0
+      ]
     }
   },
   "result": "KERR_SHARED_CORRELATED_RECEIVER_NOISE_CANCELS_IN_SIGNAL_MINUS_CALIBRATION_BUT_DIFFERENTIAL_MISMATCH_AT_THE_EXACT_CONE_MARGIN_RESTORES_COLLISION_NOT_ELL0",
