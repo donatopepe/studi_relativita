@@ -12,11 +12,11 @@ Updated: 2026-09-11
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify finite-sample covariance specification. **ACTIVE**
+1. [x] Ratify finite-sample covariance specification.
    - Depends on: correlated-noise mismatch milestone `bba10b3` and green CI `34609839623`.
    - Complete when: zero-mean Gaussian/Wishart assumptions, exact Frobenius MSE formula, fixed sample counts `[16,64,256]`, separation comparison, eight controls, J71–J78 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J71–J78 and `finite_sample` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
