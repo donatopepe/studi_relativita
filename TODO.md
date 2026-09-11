@@ -12,11 +12,11 @@ Updated: 2026-09-11
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify composite-hypothesis profile specification. **ACTIVE**
+1. [x] Ratify composite-hypothesis profile specification.
    - Depends on: completed common-calibration milestone `5654b18` and green CI `34537767931`.
    - Complete when: shared physical calibration versus separate nuisance profiling is explicit; compact toy domain, exact overlap equations, relaxed-domain counterexample, eight controls, J31–J38 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J31–J38 and `profiling` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
