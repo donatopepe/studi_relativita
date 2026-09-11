@@ -1,0 +1,189 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_GAUSSIAN_COVARIANCE_UNCERTAINTY_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "identity",
+        "passed": true,
+        "residual": 5.551115123125783e-17,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "rms",
+        "passed": true,
+        "residual": 1.8995202261622335,
+        "threshold": 7.598080904648934,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "scaling",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "safe_count",
+        "passed": true,
+        "residual": 0.049321491157177925,
+        "threshold": 0.05,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "unsafe_count",
+        "passed": true,
+        "residual": 0.1633774394581519,
+        "threshold": 0.05,
+        "threshold_kind": "negative_control"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_SAMPLE_INDEPENDENCE_GAUSSIANITY_MEAN_ESTIMATION_CALIBRATION_MATCHING_DRIFT_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "basis_scale": {
+      "basis_residual": 0.0,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale_residual": 0.0
+    },
+    "covariances": [
+      [
+        [
+          0.4097677528741287,
+          0.12
+        ],
+        [
+          0.12,
+          1.808180246223012
+        ]
+      ],
+      [
+        [
+          0.42500000000000004,
+          0.12
+        ],
+        [
+          0.12,
+          3.2
+        ]
+      ],
+      [
+        [
+          0.4484337563816336,
+          0.12
+        ],
+        [
+          0.12,
+          20.606016881249243
+        ]
+      ],
+      [
+        [
+          0.42500000000000004,
+          0.12
+        ],
+        [
+          0.12,
+          3.2
+        ]
+      ]
+    ],
+    "rms": {
+      "rms_frobenius": [
+        7.598080904648934,
+        3.799040452324467,
+        1.8995202261622335
+      ],
+      "sample_counts": [
+        16,
+        64,
+        256
+      ],
+      "strictly_decreasing": true,
+      "tau": 18.797836635026233
+    },
+    "safe_count": {
+      "minimum_count": 53,
+      "risk_at_count": 0.049321491157177925,
+      "risk_at_predecessor": 0.050269981371739034,
+      "risk_ceiling": 0.05
+    },
+    "safe_unsafe": {
+      "N16_passes": false,
+      "N16_risk": 0.1633774394581519,
+      "N64_passes": true,
+      "N64_risk": 0.04084435986453797
+    },
+    "scaling": {
+      "expected": [
+        2.0,
+        2.0
+      ],
+      "ratio_residual": 0.0,
+      "ratios": [
+        2.0,
+        2.0
+      ]
+    },
+    "total_coefficient": 923.6933349374522,
+    "wishart_identity": {
+      "per_covariance": [
+        [
+          0.13102373032540054,
+          0.13102373032540057
+        ],
+        [
+          0.36859453125,
+          0.3685945312500001
+        ],
+        [
+          13.56449556557229,
+          13.56449556557229
+        ],
+        [
+          0.36859453125,
+          0.3685945312500001
+        ]
+      ],
+      "residual": 5.551115123125783e-17
+    }
+  },
+  "result": "KERR_GAUSSIAN_FINITE_SAMPLE_COVARIANCE_ERROR_FOLLOWS_EXACT_INVERSE_ROOT_COUNT_SCALING_AND_ONLY_A_CONSERVATIVE_TOY_COUNT_GATE_BOUNDS_BRANCH_COLLISION_SCALE_NOT_ELL0",
+  "schema": "kerr-finite-sample-covariance-v1"
+}
