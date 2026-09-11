@@ -28,7 +28,7 @@ Updated: 2026-09-11
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior negatives/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE — local gates green; push/CI pending**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
@@ -39,6 +39,7 @@ Updated: 2026-09-11
 - Full suite: `1215/1215`.
 - Deterministic artifact/report, extraction/inventory, shared UTF-8, diff and CodeGraph gates green.
 - Exact combined covariance MSE coefficient `923.69333`; RMS follows inverse-root count. Markov risk ceiling 0.05 requires minimum equal count `53`; `N=16` fails (`0.16337744`), `N=64` passes (`0.04084436`) only this toy gate.
+- Published `main=origin/main` at `ed8f113`; GitHub Actions run `34631514528` tests/LaTeX passed.
 
 ## Previous milestone closure evidence
 
