@@ -7,7 +7,7 @@ class Controls(unittest.TestCase):
   for bad in ((0,.8,1.1,.25,.35,.02,.02,10),(1,0,1.1,.25,.35,.02,.02,10),(1,.8,1.1,0,.35,.02,.02,10),(1,.8,1.1,.25,.35,0,.02,10),(1,.8,1.1,.25,.35,.02,.02,0)):
    with self.assertRaises(ValueError):c.joint_covariance(*bad)
  def test_03_known_reference(self):
-  x=c.known_reference_control();self.assertFalse(x['positive_collision_possible']);self.assertGreater(min(x['sign_obstruction']),0.)
+  x=c.known_reference_control();self.assertEqual(x['reference'],[.1,10.]);self.assertFalse(x['positive_collision_possible']);self.assertLess(max(x['placement_products']),0.);self.assertGreater(min(x['obstruction_margins']),0.)
  def test_04_fisher_rank(self):
   x=c.fisher_rank_control();self.assertEqual(x['calibration_only_ranks'],[1,1]);self.assertEqual(x['joint_ranks'],[2,2]);self.assertGreater(min(x['joint_determinants']),1e-8)
  def test_05_finite_precision(self):
