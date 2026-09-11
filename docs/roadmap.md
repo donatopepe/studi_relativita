@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr composite common-calibration profile gate
+
+Separately profiling one unknown calibration under competing hypotheses gives disjoint covariance sets only inside toy bounded nuisance domain (`8/8`, scenarios `38/38`). Analytic second-channel gap proves bounded disjointness; finite KL grid is only a witness. Relaxed positive gains yield exact covariance collision.
+
+```text
+KERR_COMPOSITE_BRANCH_SETS_ARE_DISJOINT_UNDER_TOY_BOUNDED_PROFILED_COMMON_CALIBRATION_BUT_RELAXED_POSITIVE_GAINS_COLLIDE_EXACTLY_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_SHARED_CALIBRATION_MODEL_BOUNDS_PRIORS_HARDWARE_NOISE_SPECTRUM_SYSTEMATICS_SAMPLING_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured priors, evidence or detection. Prior common/fixed receiver, source/analyzer, Jacobi/screen/endpoint/ring, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr common-calibration robustness gate
 
 A shared positive bounded receiver calibration passes `8/8`; scenario battery passes `30/30`. Exact congruence prevents branch covariance collision on the preregistered compact domain, whose minimum symmetric KL is positive. Common attenuation toward zero or unbounded noise nevertheless drives information separation asymptotically to zero.
