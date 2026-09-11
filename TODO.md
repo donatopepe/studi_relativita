@@ -12,11 +12,11 @@ Updated: 2026-09-11
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify bounded reference-drift specification. **ACTIVE**
+1. [x] Ratify bounded reference-drift specification.
    - Depends on: corrected reference-placement milestone `eb22cf2` and green CI `34573575122`.
    - Complete when: nominal midpoint references, exact maximal drift radii, conservative drift fraction, endpoint/outside witnesses, eight controls, J55–J62 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J55–J62 and `reference_drift` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
