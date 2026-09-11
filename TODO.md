@@ -2,37 +2,37 @@
 
 Updated: 2026-09-11
 
-## Active milestone: Kerr composite common-calibration profile gate MVP
+## Active milestone: Kerr auxiliary calibration-channel identifiability MVP
 
-**Objective:** determine whether separately profiled common-calibration nuisance sets for plus/minus Kerr hypotheses overlap on preregistered bounded domain, instead of comparing branches only at same nuisance point.
+**Objective:** determine whether a branch-independent auxiliary Gaussian calibration channel makes gain/noise nuisance identifiable enough to prevent the relaxed positive-gain branch collision, while exposing the exact failure when calibration reference variance is unknown.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** analytic covariance-set overlap, domain validation, bounded profile separation, deterministic refinement, boundary witness, exact relaxed-domain collision, basis/scale invariance, nonclaims.
+**Fixed cases/order:** joint signal/calibration map, domain, exact known-reference noncollision, Fisher rank, finite calibration precision, weak-calibration limit, unknown-reference collision, scale/nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify composite-hypothesis profile specification.
-   - Depends on: completed common-calibration milestone `5654b18` and green CI `34537767931`.
-   - Complete when: shared physical calibration versus separate nuisance profiling is explicit; compact toy domain, exact overlap equations, relaxed-domain counterexample, eight controls, J31–J38 and nonclaims are preregistered.
+1. [ ] Ratify auxiliary calibration-channel specification. **ACTIVE**
+   - Depends on: completed composite-profile milestone `431f90d` and green CI `34554800814`.
+   - Complete when: reference model, one fixed design point, exact injectivity statement, Fisher calculation, unknown-reference counterexample, eight controls, J39–J46 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J31–J38 and `profiling` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J39–J46 and `calibration_channel` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement composite profile/overlap engine.
+3. [ ] Implement auxiliary-channel identifiability engine.
    - Depends on: tasks 1–2.
-   - Complete when: analytic diagonal overlap interval, deterministic bounded pair search, refinement, positive bounded lower gate, exact relaxed-domain covariance collision, basis/scale invariance and guardrails pass.
+   - Complete when: joint covariance map, known-reference nuisance recovery/noncollision, Fisher information, finite-sample precision, weak-channel limit, exact unknown-reference collision, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior results/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `38/38`; all 38 per-scenario and 12 per-category granular runs green.
