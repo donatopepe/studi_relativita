@@ -12,6 +12,7 @@
       "preparation",
       "profiling",
       "receiver",
+      "reference_drift",
       "reference_placement",
       "robustness",
       "scale"
@@ -70,7 +71,15 @@
       "J51",
       "J52",
       "J53",
-      "J54"
+      "J54",
+      "J55",
+      "J56",
+      "J57",
+      "J58",
+      "J59",
+      "J60",
+      "J61",
+      "J62"
     ]
   },
   "results": [
@@ -451,13 +460,69 @@
       "residual": 9.325873406851315e-15,
       "status": "PASS",
       "threshold": 2e-10
+    },
+    {
+      "category": "reference_drift",
+      "id": "J55",
+      "residual": 5.329070518200751e-15,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "reference_drift",
+      "id": "J56",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "reference_drift",
+      "id": "J57",
+      "residual": 0.002152886151229023,
+      "status": "PASS",
+      "threshold": 0.001
+    },
+    {
+      "category": "reference_drift",
+      "id": "J58",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "reference_drift",
+      "id": "J59",
+      "residual": 8.881784197001252e-16,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "reference_drift",
+      "id": "J60",
+      "residual": 0.002474624224480311,
+      "status": "PASS",
+      "threshold": 1e-08
+    },
+    {
+      "category": "reference_drift",
+      "id": "J61",
+      "residual": 4.6629367034256575e-15,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "reference_drift",
+      "id": "J62",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 54,
+    "PASS": 62,
     "SKIP": 0
   }
 }

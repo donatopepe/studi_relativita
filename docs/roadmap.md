@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr bounded reference-drift robustness
+
+Reference collision obstruction survives only while drift remains strictly inside branch-variance interval (`8/8`, scenarios `62/62`). Midpoint gives exact maximal symmetric open radius; conservative 0.8 box has positive obstruction/Fisher margins. Endpoint loses rank and obstruction; crossing outside restores exact collision.
+
+```text
+KERR_REFERENCE_COLLISION_OBSTRUCTION_SURVIVES_ONLY_WHILE_REFERENCE_DRIFT_STAYS_STRICTLY_INSIDE_BRANCH_VARIANCE_INTERVAL_AND_FAILS_AT_ENDPOINT_OR_OUTSIDE_NOT_ELL0
+PHYSICAL_KERR_CALIBRATOR_DRIFT_BOUND_STABILITY_CROSS_CHANNEL_NOISE_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured drift bound, evidence or detection. Corrected reference placement, `SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION` history, prior Kerr chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr calibration-reference placement correction
 
 Correction of milestone `16c9718`: positive collision exists when `(Gamma_+-R)(Gamma_--R)>0`. A known reference blocks collision only strictly inside branch-variance interval; prior outside `[0.02,0.02]` reference collides exactly. Corrected controls pass `8/8`, scenarios `54/54`.
