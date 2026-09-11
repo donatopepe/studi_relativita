@@ -2,37 +2,37 @@
 
 Updated: 2026-09-11
 
-## Active milestone: Kerr calibration-reference placement correction MVP
+## Active milestone: Kerr bounded reference-drift robustness MVP
 
-**Objective:** correct the auxiliary-channel collision theorem by testing reference variance inside versus outside the open interval between branch variances and preserve both exact outcomes.
+**Objective:** determine how much branch-independent reference drift can be tolerated before inside-interval collision obstruction is lost, and preserve exact boundary/outside failures.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** corrected algebra, inside-interval collision, outside-interval obstruction, two-channel joint witness, Fisher rank, unknown-reference collision, weak-channel limit, scale/nonclaims.
+**Fixed cases/order:** interval containment, maximal symmetric drift, bounded robust obstruction, endpoint loss, outside crossing collision, Fisher margin, scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify corrected reference-placement specification.
-   - Depends on: published auxiliary-channel milestone `16c9718`; prior reference `[0.02,0.02]` lay below both branch variances, so its positive product permits collision rather than obstructing it.
-   - Complete when: sign error is explicit; inside references `[0.1,10.0]`, outside controls `[0.02,0.02]`, exact gain/noise witnesses, eight controls, J47–J54 and nonclaims are preregistered.
+1. [ ] Ratify bounded reference-drift specification. **ACTIVE**
+   - Depends on: corrected reference-placement milestone `eb22cf2` and green CI `34573575122`.
+   - Complete when: nominal midpoint references, exact maximal drift radii, conservative drift fraction, endpoint/outside witnesses, eight controls, J55–J62 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J47–J54 and `reference_placement` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J55–J62 and `reference_drift` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Correct calibration-channel engine and artifact.
+3. [ ] Implement reference-drift robustness engine.
    - Depends on: tasks 1–2.
-   - Complete when: inside-interval known reference blocks positive collision; outside-interval known reference admits explicit exact collision; Fisher/precision/weak/scale controls and guardrails pass.
-   - Test: exactly eight focused controls, regression of erroneous polarity and deterministic artifact equality.
-4. [x] Correct bilingual scientific record and preserved history.
+   - Complete when: analytic interior radii, bounded worst-case obstruction, exact endpoint rank loss, outside exact collision, Fisher margin, scale null and guardrails pass.
+   - Test: exactly eight focused controls and deterministic artifact equality.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: theory, EN/IT audits, roadmap and ledger explicitly supersede erroneous claim without deleting historical evidence.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve correction history/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
-   - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes correction recorded.
+   - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Corrected local closure evidence
+## Previous corrected milestone evidence
 
 - Corrected scientific controls: `8/8`.
 - Scenario battery: `54/54`; all 54 per-scenario and 14 per-category granular runs green.
