@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('drift','endpoint','outside',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KNOWN_REFERENCE_BLOCKS_POSITIVE_GAIN_NOISE_BRANCH_COLLISION_ONLY_WHEN_PLACED_STRICTLY_BETWEEN_BRANCH_VARIANCES','SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1189/1189`.',TODO.read_text());self.assertIn('GitHub Actions run `34587257553` tests/LaTeX passed.',TODO.read_text())
+  todo=TODO.read_text();self.assertIn('Previous milestone closure evidence',todo);self.assertIn('Full suite: `1189/1189`.',todo);self.assertIn('GitHub Actions run `34587257553` tests/LaTeX passed.',todo)
 if __name__=='__main__':unittest.main()
