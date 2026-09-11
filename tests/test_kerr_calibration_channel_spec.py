@@ -4,5 +4,5 @@ class Spec(unittest.TestCase):
  def test_contract(self):
   s=S.read_text();p=P.read_text();t=T.read_text()
   for x in ('RATIFIED_FOR_IMPLEMENTATION_PLANNING','exactly `8/8`','J39-J46','calibration_channel','R=(0.02,0.02)','N_cal=(1,10,100)','Fisher','unknown and branch-profiled','MODEL_LEVEL_AUXILIARY_CALIBRATION_CHANNEL_IDENTIFIABILITY_NOT_EVIDENCE','ell0_identified=false','NO_POSITIVE_DETECTION_CLAIM'):self.assertIn(x,s)
-  self.assertIn('Metric:** `8/8`',p);self.assertIn('Kerr auxiliary calibration-channel identifiability MVP',t);self.assertIn('1. [ ] Ratify auxiliary calibration-channel specification. **ACTIVE**',t)
+  self.assertIn('Metric:** `8/8`',p);self.assertIn('Kerr auxiliary calibration-channel identifiability MVP',t);self.assertIn('1. [x] Ratify auxiliary calibration-channel specification.',t);self.assertIn('2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**',t)
 if __name__=='__main__':unittest.main()

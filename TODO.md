@@ -12,11 +12,11 @@ Updated: 2026-09-11
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify auxiliary calibration-channel specification. **ACTIVE**
+1. [x] Ratify auxiliary calibration-channel specification.
    - Depends on: completed composite-profile milestone `431f90d` and green CI `34554800814`.
    - Complete when: reference model, one fixed design point, exact injectivity statement, Fisher calculation, unknown-reference counterexample, eight controls, J39–J46 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J39–J46 and `calibration_channel` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
