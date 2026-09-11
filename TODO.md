@@ -2,38 +2,37 @@
 
 Updated: 2026-09-11
 
-## Active milestone: Kerr correlated-noise mismatch threshold MVP
+## Active milestone: Kerr finite-sample covariance uncertainty MVP
 
-**Objective:** determine whether a shared full correlated-noise covariance cancels in signal-minus-calibration observables and derive exact operator-norm differential-mismatch threshold where the two branch observable sets collide.
+**Objective:** quantify finite-sample uncertainty of signal-minus-calibration covariance differences under Gaussian sampling and compare its exact RMS bound with branch-set separation threshold.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** full-noise domain, shared-noise cancellation, sign-cone noncollision, analytic branch-set distance, bounded residual, exact full-matrix threshold collision, basis/scale invariance, nonclaims.
+**Fixed cases/order:** Wishart covariance identity, domain, branch RMS, sample-count scaling, safe count, unsafe count, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify correlated-noise mismatch specification.
-   - Depends on: bounded reference-drift milestone `b1ca8a8` and green CI `34587982249`.
-   - Complete when: full SPD shared-noise model, differential mismatch norm, exact critical threshold, 0.8 bounded fraction, collision witness, eight controls, J63–J70 and nonclaims are preregistered.
+1. [ ] Ratify finite-sample covariance specification. **ACTIVE**
+   - Depends on: correlated-noise mismatch milestone `bba10b3` and green CI `34609839623`.
+   - Complete when: zero-mean Gaussian/Wishart assumptions, exact Frobenius MSE formula, fixed sample counts `[16,64,256]`, separation comparison, eight controls, J71–J78 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J63–J70 and `calibration_mismatch` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J71–J78 and `finite_sample` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement correlated-noise mismatch engine.
+3. [ ] Implement finite-sample covariance uncertainty engine.
    - Depends on: tasks 1–2.
-   - Root correction: first local baseline used distance from one cone to singularity and called it branch collision; actual collision threshold is minimum operator norm of full branch difference `A_+-A_-`, requiring equality of both matrices. No flawed result was pushed.
-   - Complete when: SPD validation, shared-noise cancellation, sign-cone proof, analytic operator-norm branch-set distance, safe lower bound, exact full-matrix threshold collision with SPD observed covariances, basis/scale null and guardrails pass.
+   - Complete when: exact Gaussian covariance-estimator MSE, four-channel error propagation, inverse-root sample scaling, safe/unsafe threshold comparisons, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve corrected history/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior negatives/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `70/70`; all 70 per-scenario and 16 per-category granular runs green.
