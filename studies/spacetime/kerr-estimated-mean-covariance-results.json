@@ -1,0 +1,161 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_ESTIMATED_MEAN_COVARIANCE_PENALTY_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "identity",
+        "passed": true,
+        "residual": 5.551115123125783e-17,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "penalty",
+        "passed": true,
+        "residual": 2.220446049250313e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "rms",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "safe_count",
+        "passed": true,
+        "residual": 0.04932149115717793,
+        "threshold": 0.05,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "unsafe_count",
+        "passed": true,
+        "residual": 0.17426926875536203,
+        "threshold": 0.05,
+        "threshold_kind": "negative_control"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 6.938893903907228e-18,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_UNKNOWN_MEAN_NON_GAUSSIANITY_SAMPLE_DEPENDENCE_CALIBRATION_MATCHING_DRIFT_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "basis_scale": {
+      "basis_residual": 0.0,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale_residual": 6.938893903907228e-18
+    },
+    "centered_wishart": {
+      "degrees_of_freedom": 63,
+      "per_covariance": [
+        [
+          0.13310347207659737,
+          0.1331034720765974
+        ],
+        [
+          0.3744452380952381,
+          0.37444523809523816
+        ],
+        [
+          13.779805018994074,
+          13.779805018994074
+        ],
+        [
+          0.3744452380952381,
+          0.37444523809523816
+        ]
+      ],
+      "residual": 5.551115123125783e-17
+    },
+    "penalty": {
+      "ratios": [
+        {
+          "N": 16,
+          "actual": 1.0666666666666667,
+          "expected": 1.0666666666666667
+        },
+        {
+          "N": 64,
+          "actual": 1.015873015873016,
+          "expected": 1.0158730158730158
+        },
+        {
+          "N": 256,
+          "actual": 1.003921568627451,
+          "expected": 1.003921568627451
+        }
+      ],
+      "residual": 2.220446049250313e-16
+    },
+    "rms": {
+      "degrees_of_freedom": [
+        15,
+        63,
+        255
+      ],
+      "ratio_residual": 0.0,
+      "rms_frobenius": [
+        7.847264215157842,
+        3.8290728600094757,
+        1.903241131248556
+      ],
+      "sample_counts": [
+        16,
+        64,
+        256
+      ],
+      "strictly_decreasing": true
+    },
+    "safe_count": {
+      "minimum_count": 54,
+      "risk_at_count": 0.04932149115717793,
+      "risk_at_predecessor": 0.05026998137173904,
+      "risk_ceiling": 0.05
+    },
+    "safe_unsafe": {
+      "N16_passes": false,
+      "N16_risk": 0.17426926875536203,
+      "N64_passes": true,
+      "N64_risk": 0.041492683036990954
+    }
+  },
+  "result": "KERR_GAUSSIAN_ESTIMATED_MEAN_COSTS_EXACTLY_ONE_COVARIANCE_DEGREE_OF_FREEDOM_AND_RAISES_ONLY_THE_CONSERVATIVE_TOY_COUNT_GATE_NOT_ELL0",
+  "schema": "kerr-estimated-mean-covariance-v1"
+}
