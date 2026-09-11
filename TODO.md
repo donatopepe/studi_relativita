@@ -2,37 +2,37 @@
 
 Updated: 2026-09-11
 
-## Active milestone: Kerr auxiliary calibration-channel identifiability MVP
+## Active milestone: Kerr calibration-reference placement correction MVP
 
-**Objective:** determine whether a branch-independent auxiliary Gaussian calibration channel makes gain/noise nuisance identifiable enough to prevent the relaxed positive-gain branch collision, while exposing the exact failure when calibration reference variance is unknown.
+**Objective:** correct the auxiliary-channel collision theorem by testing reference variance inside versus outside the open interval between branch variances and preserve both exact outcomes.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** joint signal/calibration map, domain, exact known-reference noncollision, Fisher rank, finite calibration precision, weak-calibration limit, unknown-reference collision, scale/nonclaims.
+**Fixed cases/order:** corrected algebra, inside-interval collision, outside-interval obstruction, two-channel joint witness, Fisher rank, unknown-reference collision, weak-channel limit, scale/nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify auxiliary calibration-channel specification.
-   - Depends on: completed composite-profile milestone `431f90d` and green CI `34554800814`.
-   - Complete when: reference model, one fixed design point, exact injectivity statement, Fisher calculation, unknown-reference counterexample, eight controls, J39–J46 and nonclaims are preregistered.
+1. [ ] Ratify corrected reference-placement specification. **ACTIVE**
+   - Depends on: published auxiliary-channel milestone `16c9718`; prior reference `[0.02,0.02]` lay below both branch variances, so its positive product permits collision rather than obstructing it.
+   - Complete when: sign error is explicit; inside references `[0.1,10.0]`, outside controls `[0.02,0.02]`, exact gain/noise witnesses, eight controls, J47–J54 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J39–J46 and `calibration_channel` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J47–J54 and `reference_placement` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement auxiliary-channel identifiability engine.
+3. [ ] Correct calibration-channel engine and artifact.
    - Depends on: tasks 1–2.
-   - Complete when: joint covariance map, known-reference nuisance recovery/noncollision, Fisher information, finite-sample precision, weak-channel limit, exact unknown-reference collision, basis/scale null and guardrails pass.
-   - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+   - Complete when: inside-interval known reference blocks positive collision; outside-interval known reference admits explicit exact collision; Fisher/precision/weak/scale controls and guardrails pass.
+   - Test: exactly eight focused controls, regression of erroneous polarity and deterministic artifact equality.
+4. [ ] Correct bilingual scientific record and preserved history.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior results/nonclaims.
+   - Complete when: theory, EN/IT audits, roadmap and ledger explicitly supersede erroneous claim without deleting historical evidence.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
-   - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
+   - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes correction recorded.
 
-## Local closure evidence
+## Superseded milestone evidence requiring correction
 
 - Scientific controls: `8/8`.
 - Scenario battery: `46/46`; all 46 per-scenario and 13 per-category granular runs green.
