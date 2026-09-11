@@ -23,14 +23,14 @@
       {
         "name": "known_reference_noncollision",
         "passed": true,
-        "residual": 0.0033133026691638044,
+        "residual": 0.005711180292680103,
         "threshold": 0.001,
         "threshold_kind": "minimum"
       },
       {
         "name": "fisher_rank",
         "passed": true,
-        "residual": 0.0030513618394423497,
+        "residual": 0.009748638160557654,
         "threshold": 1e-08,
         "threshold_kind": "minimum"
       },
@@ -87,8 +87,8 @@
       0.35
     ],
     "reference": [
-      0.02,
-      0.02
+      0.1,
+      10.0
     ],
     "sample_counts": [
       1.0,
@@ -118,8 +118,8 @@
         1
       ],
       "joint_determinants": [
-        0.0030513618394423497,
-        2.6163022719424953
+        0.009748638160557654,
+        3.300839728057505
       ],
       "joint_ranks": [
         2,
@@ -153,14 +153,19 @@
       }
     },
     "known_reference": {
+      "corrected_by": "kerr-calibration-reference-placement-correction-v1",
+      "obstruction_margins": [
+        0.005711180292680103,
+        387.61661007837466
+      ],
+      "placement_products": [
+        -0.005711180292680103,
+        -387.61661007837466
+      ],
       "positive_collision_possible": false,
       "reference": [
-        0.02,
-        0.02
-      ],
-      "sign_obstruction": [
-        0.0033133026691638044,
-        351.2705392503178
+        0.1,
+        10.0
       ]
     },
     "unknown_reference_collision": {
