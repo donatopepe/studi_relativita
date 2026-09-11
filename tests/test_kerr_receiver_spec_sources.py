@@ -6,8 +6,8 @@ class ReceiverSpecSources(unittest.TestCase):
   for x in ('RATIFIED_FOR_IMPLEMENTATION_PLANNING','threshold:** exactly `8/8`','J15','J22','22/22','D_KL','Calibration nuisance collision','NO_POSITIVE_DETECTION_CLAIM'):self.assertIn(x,text)
   todo=TODO.read_text()
   self.assertIn('Kerr calibrated receiver: scientific `8/8`, scenarios `22/22`, suite `1124/1124`, CI green at `1f5bb15`.',todo)
-  self.assertIn('Kerr composite common-calibration profile gate MVP',todo)
-  self.assertIn('completed common-calibration milestone `5654b18`',todo)
+  self.assertIn('Kerr auxiliary calibration-channel identifiability MVP',todo)
+  self.assertIn('completed composite-profile milestone `431f90d`',todo)
  def test_sources(self):
   bib=BIB.read_text();log=LOG.read_text()
   for x in ('@article{KullbackLeibler1951','10.1214/aoms/1177729694'):self.assertIn(x,bib)
