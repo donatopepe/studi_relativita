@@ -28,7 +28,7 @@ Updated: 2026-09-11
    - Depends on: task 3 GREEN.
    - Complete when: theory, EN/IT audits, roadmap and ledger explicitly supersede erroneous claim without deleting historical evidence.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE — local gates green; push/CI pending**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes correction recorded.
 
@@ -39,6 +39,7 @@ Updated: 2026-09-11
 - Full suite: `1176/1176`.
 - Corrected and predecessor artifacts deterministic; extraction/inventory, shared UTF-8, diff and CodeGraph gates green.
 - Root correction: positive placement product permits collision. Inside references `[0.1,10.0]` block it; outside `[0.02,0.02]` collides at residual `1.7763568e-15`. Unknown reference collision remains `8.8817842e-16`.
+- Published corrected `main=origin/main` at `fc8a759`; GitHub Actions run `34572177197` tests/LaTeX passed.
 
 ## Superseded milestone evidence requiring correction
 
