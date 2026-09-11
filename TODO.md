@@ -2,37 +2,37 @@
 
 Updated: 2026-09-11
 
-## Active milestone: Kerr finite-sample covariance uncertainty MVP
+## Active milestone: Kerr estimated-mean covariance penalty MVP
 
-**Objective:** quantify finite-sample uncertainty of signal-minus-calibration covariance differences under Gaussian sampling and compare its exact RMS bound with branch-set separation threshold.
+**Objective:** quantify exact degree-of-freedom penalty when receiver mean is estimated rather than known and update conservative sample-count gate without changing physical claims.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** Wishart covariance identity, domain, branch RMS, sample-count scaling, safe count, unsafe count, basis/scale invariance, nonclaims.
+**Fixed cases/order:** centered-Wishart identity, domain, known/estimated relation, RMS sequence, corrected safe count, unsafe count, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify finite-sample covariance specification.
-   - Depends on: correlated-noise mismatch milestone `bba10b3` and green CI `34609839623`.
-   - Complete when: zero-mean Gaussian/Wishart assumptions, exact Frobenius MSE formula, fixed sample counts `[16,64,256]`, separation comparison, eight controls, J71–J78 and nonclaims are preregistered.
+1. [ ] Ratify estimated-mean covariance specification. **ACTIVE**
+   - Depends on: finite-sample covariance milestone `686aa2b` and green CI `34632439783`.
+   - Complete when: unbiased sample covariance with estimated mean, degrees of freedom `nu=N-1`, exact MSE relation, counts `[16,64,256]`, corrected risk gate, eight controls, J79–J86 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J71–J78 and `finite_sample` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J79–J86 and `estimated_mean` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement finite-sample covariance uncertainty engine.
+3. [ ] Implement estimated-mean covariance penalty engine.
    - Depends on: tasks 1–2.
-   - Complete when: exact Gaussian covariance-estimator MSE, four-channel error propagation, inverse-root sample scaling, safe/unsafe threshold comparisons, basis/scale null and guardrails pass.
+   - Complete when: centered-Wishart MSE, exact `N/(N-1)` variance penalty, RMS sequence, corrected minimum count, safe/unsafe controls, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior negatives/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `78/78`; all 78 per-scenario and 17 per-category granular runs green.
