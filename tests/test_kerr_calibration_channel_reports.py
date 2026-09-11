@@ -4,11 +4,11 @@ RESULT='KNOWN_AUXILIARY_REFERENCE_CHANNEL_REMOVES_RELAXED_GAIN_NOISE_BRANCH_COLL
 class Reports(unittest.TestCase):
  def test_contract(self):
   for t in (EN.read_text(),IT.read_text()):
-   for x in (RESULT,GATE,'8/8','46/46','DIRECT_REVIEW_NO_SUBAGENT','ell0_identified=false','NO_POSITIVE_DETECTION_CLAIM','MODEL_LEVEL_AUXILIARY_CALIBRATION_CHANNEL_IDENTIFIABILITY_NOT_EVIDENCE'):self.assertIn(x,t)
+   for x in (RESULT,GATE,'8/8','54/54','DIRECT_REVIEW_NO_SUBAGENT','CORRECTED_SCOPE=REFERENCE_STRICTLY_INSIDE_BRANCH_VARIANCE_INTERVAL','ell0_identified=false','NO_POSITIVE_DETECTION_CLAIM','MODEL_LEVEL_AUXILIARY_CALIBRATION_CHANNEL_IDENTIFIABILITY_NOT_EVIDENCE'):self.assertIn(x,t)
  def test_values(self):
   self.assertEqual(json.loads(ART.read_text())['control_summary']['controls_passed'],8)
   for t in (EN.read_text(),IT.read_text()):
-   for x in ('known_reference=[0.02,0.02]','sign_obstruction=[0.0033133027,351.27054]','calibration_only_rank=[1,1]','joint_rank=[2,2]','relative_std=[1.4142136,0.4472136,0.14142136]','weak_information=[0.5,0.05,0.005]','unknown_reference_collision=8.8817842e-16'):self.assertIn(x,t)
+   for x in ('known_reference=[0.1,10.0]','placement_products=[-0.0057111803,-387.61661]','calibration_only_rank=[1,1]','joint_rank=[2,2]','relative_std=[1.4142136,0.4472136,0.14142136]','weak_information=[0.5,0.05,0.005]','unknown_reference_collision=8.8817842e-16'):self.assertIn(x,t)
  def test_history_todo(self):
   for x in ('auxiliary','known reference','unknown reference',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
