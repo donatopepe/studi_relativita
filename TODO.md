@@ -28,7 +28,7 @@ Updated: 2026-09-11
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior negatives/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE — local gates green; push/CI pending**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
@@ -39,6 +39,7 @@ Updated: 2026-09-11
 - Full suite: `1228/1228`.
 - Deterministic artifact/report, extraction/inventory, shared UTF-8, diff and CodeGraph gates green.
 - Estimated mean costs exact factor `N/(N-1)`: RMS `[7.8472642,3.8290729,1.9032411]`. Conservative count gate rises from 53 to 54; `N=16` remains unsafe (`0.17426927`).
+- Published `main=origin/main` at `dbcb71e`; GitHub Actions run `34652593522` tests/LaTeX passed.
 
 ## Previous milestone closure evidence
 
