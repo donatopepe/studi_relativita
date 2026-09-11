@@ -12,11 +12,11 @@ Updated: 2026-09-11
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify estimated-mean covariance specification. **ACTIVE**
+1. [x] Ratify estimated-mean covariance specification.
    - Depends on: finite-sample covariance milestone `686aa2b` and green CI `34632439783`.
    - Complete when: unbiased sample covariance with estimated mean, degrees of freedom `nu=N-1`, exact MSE relation, counts `[16,64,256]`, corrected risk gate, eight controls, J79–J86 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J79–J86 and `estimated_mean` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
