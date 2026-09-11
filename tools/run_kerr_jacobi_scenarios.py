@@ -14,6 +14,8 @@ COMMON_MODULE=ROOT/'studies/spacetime/kerr_common_calibration.py'
 COMMON_SPEC=importlib.util.spec_from_file_location('kerr_common_calibration_scenario_engine',COMMON_MODULE);common=importlib.util.module_from_spec(COMMON_SPEC);COMMON_SPEC.loader.exec_module(common)
 PROFILE_MODULE=ROOT/'studies/spacetime/kerr_composite_calibration.py'
 PROFILE_SPEC=importlib.util.spec_from_file_location('kerr_composite_calibration_scenario_engine',PROFILE_MODULE);profile=importlib.util.module_from_spec(PROFILE_SPEC);PROFILE_SPEC.loader.exec_module(profile)
+CALCHANNEL_MODULE=ROOT/'studies/spacetime/kerr_calibration_channel.py'
+CALCHANNEL_SPEC=importlib.util.spec_from_file_location('kerr_calibration_channel_scenario_engine',CALCHANNEL_MODULE);calchannel=importlib.util.module_from_spec(CALCHANNEL_SPEC);CALCHANNEL_SPEC.loader.exec_module(calchannel)
 def phase_conformance(case):
  p=engine.phase_control(1.,case['chi'],case['rho'],case['R_source_over_M'],case['R_observer_over_M'],case['orientation'])
  residual=p['symplectic_residual'];return residual<3e-7,residual,3e-7
@@ -33,7 +35,8 @@ def source_analyzer_scale(case):return source.scenario_control('scale',case)
 def receiver_control(case):return receiver.scenario_control(case['handler'],case)
 def common_control(case):return common.scenario_control(case['handler'],case)
 def profile_control(case):return profile.scenario_control(case['handler'],case)
-HANDLERS={'phase_conformance':phase_conformance,'schwarzschild_conformance':schwarzschild_conformance,'scale_conformance':scale_conformance,'reversal_conformance':reversal_conformance,'source_covariance_domain':source_covariance_domain,'covariance_conformance':covariance_conformance,'width_homogeneity':width_homogeneity,'source_orientation_survival':source_orientation_survival,'analyzer_extrema':analyzer_extrema,'analyzer_collision':analyzer_collision,'source_analyzer_scale':source_analyzer_scale,**{name:receiver_control for name in ('receiver_covariance','likelihood_normalization','KL_conformance','noise_monotonicity','expected_LLR','receiver_basis','calibration_collision','receiver_scale')},**{name:common_control for name in ('common_identity','bounded_domain','bounded_minimum','refinement','boundary','attenuation','unbounded_noise','common_scale')},**{name:profile_control for name in ('profile_overlap','profile_domain','profile_minimum','profile_refinement','profile_boundary','profile_collision','profile_basis_scale','profile_nonclaims')}}
+def calibration_channel_control(case):return calchannel.scenario_control(case['handler'],case)
+HANDLERS={'phase_conformance':phase_conformance,'schwarzschild_conformance':schwarzschild_conformance,'scale_conformance':scale_conformance,'reversal_conformance':reversal_conformance,'source_covariance_domain':source_covariance_domain,'covariance_conformance':covariance_conformance,'width_homogeneity':width_homogeneity,'source_orientation_survival':source_orientation_survival,'analyzer_extrema':analyzer_extrema,'analyzer_collision':analyzer_collision,'source_analyzer_scale':source_analyzer_scale,**{name:receiver_control for name in ('receiver_covariance','likelihood_normalization','KL_conformance','noise_monotonicity','expected_LLR','receiver_basis','calibration_collision','receiver_scale')},**{name:common_control for name in ('common_identity','bounded_domain','bounded_minimum','refinement','boundary','attenuation','unbounded_noise','common_scale')},**{name:profile_control for name in ('profile_overlap','profile_domain','profile_minimum','profile_refinement','profile_boundary','profile_collision','profile_basis_scale','profile_nonclaims')},**{name:calibration_channel_control for name in ('calibration_joint_map','calibration_domain','calibration_noncollision','calibration_fisher','calibration_precision','calibration_weak_limit','calibration_unknown_reference','calibration_scale')}}
 def run(cases):
  results=[]
  for case in cases:
@@ -44,7 +47,7 @@ def run(cases):
  summary={name:sum(item['status']==name for item in results)for name in ('PASS','FAIL','SKIP','BLOCKED')}
  return {'schema':'kerr-jacobi-scenario-report-v1','results':results,'summary':summary,'coverage':{'selected_ids':[x['id']for x in results],'selected_categories':sorted({x['category']for x in results})}}
 def main(argv=None):
- p=argparse.ArgumentParser();p.add_argument('--mode',choices=('total','granular'),required=True);p.add_argument('--scenario');p.add_argument('--category',choices=('conformance','orientation','scale','preparation','analyzer','receiver','likelihood','noise','calibration','robustness','asymptotic','profiling'));p.add_argument('--report-json');a=p.parse_args(argv);data=json.loads(MANIFEST.read_text(encoding='utf-8'));cases=data['scenarios']
+ p=argparse.ArgumentParser();p.add_argument('--mode',choices=('total','granular'),required=True);p.add_argument('--scenario');p.add_argument('--category',choices=('conformance','orientation','scale','preparation','analyzer','receiver','likelihood','noise','calibration','robustness','asymptotic','profiling','calibration_channel'));p.add_argument('--report-json');a=p.parse_args(argv);data=json.loads(MANIFEST.read_text(encoding='utf-8'));cases=data['scenarios']
  if a.mode=='granular':
   if bool(a.scenario)==bool(a.category):p.error('granular mode requires exactly one --scenario or --category')
   cases=[x for x in cases if x['id']==a.scenario] if a.scenario else [x for x in cases if x['category']==a.category]
