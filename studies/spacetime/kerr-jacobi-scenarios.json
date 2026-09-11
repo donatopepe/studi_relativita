@@ -54,6 +54,14 @@
     {"id": "J51", "category": "reference_placement", "handler": "reference_fisher"},
     {"id": "J52", "category": "reference_placement", "handler": "reference_unknown_collision"},
     {"id": "J53", "category": "reference_placement", "handler": "reference_weak_precision"},
-    {"id": "J54", "category": "reference_placement", "handler": "reference_scale"}
+    {"id": "J54", "category": "reference_placement", "handler": "reference_scale"},
+    {"id": "J55", "category": "reference_drift", "handler": "drift_geometry"},
+    {"id": "J56", "category": "reference_drift", "handler": "drift_box"},
+    {"id": "J57", "category": "reference_drift", "handler": "drift_margin"},
+    {"id": "J58", "category": "reference_drift", "handler": "drift_endpoint"},
+    {"id": "J59", "category": "reference_drift", "handler": "drift_outside_collision"},
+    {"id": "J60", "category": "reference_drift", "handler": "drift_fisher"},
+    {"id": "J61", "category": "reference_drift", "handler": "drift_scale"},
+    {"id": "J62", "category": "reference_drift", "handler": "drift_nonclaims"}
   ]
 }

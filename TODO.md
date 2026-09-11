@@ -16,15 +16,15 @@ Updated: 2026-09-11
    - Depends on: corrected reference-placement milestone `eb22cf2` and green CI `34573575122`.
    - Complete when: nominal midpoint references, exact maximal drift radii, conservative drift fraction, endpoint/outside witnesses, eight controls, J55–J62 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J55–J62 and `reference_drift` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement reference-drift robustness engine.
+3. [x] Implement reference-drift robustness engine.
    - Depends on: tasks 1–2.
    - Complete when: analytic interior radii, bounded worst-case obstruction, exact endpoint rank loss, outside exact collision, Fisher margin, scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve correction history/nonclaims.
    - Test: report tests plus deterministic artifact equality.
