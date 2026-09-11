@@ -24,7 +24,7 @@ and maximal symmetric open-interval drift radius
 d_i=(b_i-a_i)/2.
 ```
 
-Reference interval `[m_i-delta_i,m_i+delta_i]` blocks positive gain/noise collision iff `delta_i<d_i`. Use conservative preregistered fraction `delta_i=0.8*d_i`. Endpoints `delta_i=d_i` make one branch satisfy `Gamma=R`, causing collision-obstruction and joint-Jacobian determinant to vanish. Outside witness uses `R_i=b_i+0.2*d_i` and an exact positive gain/noise collision.
+Reference interval `[m_i-delta_i,m_i+delta_i]` blocks positive gain/noise collision iff `delta_i<d_i`. Use conservative preregistered fraction `delta_i=0.8*d_i`. Endpoints `delta_i=d_i` make one branch satisfy `Gamma=R`, causing collision-obstruction and joint-Jacobian determinant to vanish. Outside witness uses `R_i=a_i-0.01*d_i` and an exact positive gain/noise collision. This below-interval side keeps solved noise variances positive at fixed design point.
 
 Fixed values derive only from committed Kerr covariances:
 
