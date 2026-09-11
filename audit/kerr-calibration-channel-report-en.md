@@ -1,5 +1,7 @@
 # Kerr auxiliary calibration-channel audit
 
+> `SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION`: milestone `16c9718` reversed collision polarity. Prior outside reference `[0.02,0.02]` permits exact collision. Corrected record: `kerr-calibration-reference-correction-report-en.md`.
+
 ```text
 ell0_identified=false
 NO_POSITIVE_DETECTION_CLAIM

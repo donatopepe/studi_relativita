@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('polarity','inside','outside',RESULT,GATE,'16c9718'):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KNOWN_AUXILIARY_REFERENCE_CHANNEL_REMOVES_RELAXED_GAIN_NOISE_BRANCH_COLLISION','SUPERSEDED_BY_REFERENCE_PLACEMENT_CORRECTION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [ ] Correct bilingual scientific record and preserved history. **ACTIVE**',TODO.read_text())
+  self.assertIn('4. [x] Correct bilingual scientific record and preserved history.',TODO.read_text());self.assertIn('5. [ ] Closure and publication. **ACTIVE**',TODO.read_text())
 if __name__=='__main__':unittest.main()
