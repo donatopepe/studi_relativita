@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr composite common-calibration profile result
+
+Composite profiling leaves plus/minus covariance sets disjoint only under toy bounded nuisance domain (`8/8`, scenarios `38/38`). Relaxed positive gains produce exact covariance collision.
+
+```text
+KERR_COMPOSITE_BRANCH_SETS_ARE_DISJOINT_UNDER_TOY_BOUNDED_PROFILED_COMMON_CALIBRATION_BUT_RELAXED_POSITIVE_GAINS_COLLIDE_EXACTLY_AND_ABSOLUTE_SCALE_REMAINS_BLIND_NOT_ELL0
+PHYSICAL_KERR_SHARED_CALIBRATION_MODEL_BOUNDS_PRIORS_HARDWARE_NOISE_SPECTRUM_SYSTEMATICS_SAMPLING_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Prior common/fixed receiver, source/Jacobi chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr common-calibration robustness result
 
 Common bounded invertible calibration retains positive branch information separation (`8/8`, scenarios `30/30`), while unbounded common attenuation/noise drives KL toward zero.

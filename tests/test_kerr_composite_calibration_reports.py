@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('composite','separately profiled','relaxed',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_BRANCH_COVARIANCES_REMAIN_INFORMATION_DISTINCT_UNDER_COMMON_BOUNDED_INVERTIBLE_CALIBRATION','KERR_FULL_COVARIANCE_BRANCHES_ARE_DISTINGUISHABLE_UNDER_FIXED_GAUSSIAN_RECEIVER_CALIBRATION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**',TODO.read_text())
+  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [ ] Closure and publication. **ACTIVE**',TODO.read_text())
 if __name__=='__main__':unittest.main()

@@ -9,6 +9,7 @@
       "noise",
       "orientation",
       "preparation",
+      "profiling",
       "receiver",
       "robustness",
       "scale"
@@ -43,7 +44,15 @@
       "J27",
       "J28",
       "J29",
-      "J30"
+      "J30",
+      "J31",
+      "J32",
+      "J33",
+      "J34",
+      "J35",
+      "J36",
+      "J37",
+      "J38"
     ]
   },
   "results": [
@@ -256,13 +265,69 @@
       "residual": 8.881784197001252e-15,
       "status": "PASS",
       "threshold": 2e-10
+    },
+    {
+      "category": "profiling",
+      "id": "J31",
+      "residual": 8.942394665242135,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "profiling",
+      "id": "J32",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "profiling",
+      "id": "J33",
+      "residual": 0.20192629793068018,
+      "status": "PASS",
+      "threshold": 0.001
+    },
+    {
+      "category": "profiling",
+      "id": "J34",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "profiling",
+      "id": "J35",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "profiling",
+      "id": "J36",
+      "residual": 8.881784197001252e-16,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "profiling",
+      "id": "J37",
+      "residual": 3.885780586188048e-16,
+      "status": "PASS",
+      "threshold": 2e-10
+    },
+    {
+      "category": "profiling",
+      "id": "J38",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 30,
+    "PASS": 38,
     "SKIP": 0
   }
 }
