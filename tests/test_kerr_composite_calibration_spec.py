@@ -4,5 +4,5 @@ class Spec(unittest.TestCase):
  def test_contract(self):
   s=S.read_text();p=P.read_text();t=T.read_text()
   for x in ('RATIFIED_FOR_IMPLEMENTATION_PLANNING','exactly `8/8`','J31-J38','profiling','g1,g2 in [0.5,1.5]','n in [0.1,1.0]','Composite-hypothesis profiling','MODEL_LEVEL_BOUNDED_COMPOSITE_CALIBRATION_PROFILE_NOT_EVIDENCE','ell0_identified=false','NO_POSITIVE_DETECTION_CLAIM'):self.assertIn(x,s)
-  self.assertIn('Metric:** `8/8`',p);self.assertIn('Kerr correlated-noise mismatch threshold MVP',t);self.assertIn('bounded reference-drift milestone `b1ca8a8`',t)
+  self.assertIn('Metric:** `8/8`',p);self.assertIn('Kerr finite-sample covariance uncertainty MVP',t);self.assertIn('correlated-noise mismatch milestone `bba10b3`',t)
 if __name__=='__main__':unittest.main()
