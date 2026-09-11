@@ -4,5 +4,5 @@ class Spec(unittest.TestCase):
  def test_contract(self):
   text=S.read_text()
   for x in ('RATIFIED_FOR_IMPLEMENTATION_PLANNING','exactly `8/8`','[0.5,1.5]','[0.1,1.0]','J23','J30','30/30','common-map difference identity','NO_POSITIVE_DETECTION_CLAIM'):self.assertIn(x,text)
-  todo=T.read_text();self.assertIn('Kerr composite common-calibration profile gate MVP',todo);self.assertIn('completed common-calibration milestone `5654b18`',todo)
+  todo=T.read_text();self.assertIn('Kerr auxiliary calibration-channel identifiability MVP',todo);self.assertIn('completed composite-profile milestone `431f90d`',todo)
 if __name__=='__main__':unittest.main()
