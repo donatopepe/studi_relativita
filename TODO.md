@@ -12,11 +12,11 @@ Updated: 2026-09-11
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify correlated-noise mismatch specification. **ACTIVE**
+1. [x] Ratify correlated-noise mismatch specification.
    - Depends on: bounded reference-drift milestone `b1ca8a8` and green CI `34587982249`.
    - Complete when: full SPD shared-noise model, differential mismatch norm, exact critical threshold, 0.8 bounded fraction, collision witness, eight controls, J63–J70 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J63–J70 and `calibration_mismatch` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
