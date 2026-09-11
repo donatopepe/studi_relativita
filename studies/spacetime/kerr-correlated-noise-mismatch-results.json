@@ -1,0 +1,182 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_CORRELATED_NOISE_MISMATCH_THRESHOLD_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "spd",
+        "passed": true,
+        "residual": 0.3579062728770146,
+        "threshold": 0.0,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "cancellation",
+        "passed": true,
+        "residual": 8.881784197001252e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "sign_cones",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "threshold",
+        "passed": true,
+        "residual": 0.015232247125871332,
+        "threshold": 0.001,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "safe_mismatch",
+        "passed": true,
+        "residual": 0.0030464494251742653,
+        "threshold": 0.001,
+        "threshold_kind": "minimum"
+      },
+      {
+        "name": "threshold_collision",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 1.734723475976807e-18,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_SIGNAL_CALIBRATION_NOISE_MATCHING_DRIFT_HARDWARE_PRIORS_SAMPLING_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "basis_scale": {
+      "basis_residual": 1.734723475976807e-18,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale_residual": 0.0
+    },
+    "cancellation": {
+      "actual_difference": [
+        [
+          -0.03899455264223062,
+          0.0
+        ],
+        [
+          0.0,
+          -6.736407608280621
+        ]
+      ],
+      "noise": [
+        [
+          0.4,
+          0.12
+        ],
+        [
+          0.12,
+          0.7
+        ]
+      ],
+      "residual": 8.881784197001252e-16
+    },
+    "safe_mismatch": {
+      "mismatch_bound": 0.012185797700697066,
+      "remaining_margin": 0.0030464494251742653,
+      "safe_fraction": 0.8
+    },
+    "sign_cones": {
+      "exact_collision_possible": false,
+      "opposite_definite": true,
+      "signed_diagonals": [
+        [
+          -0.060928988503485326,
+          -5.567279015107951
+        ],
+        [
+          0.09373502552653415,
+          69.62406752499697
+        ]
+      ]
+    },
+    "spd": {
+      "anchor_spd": true,
+      "eigenvalues": [
+        0.3579062728770146,
+        0.7420937271229855
+      ],
+      "invalid_rejected": true,
+      "minimum_eigenvalue": 0.3579062728770146
+    },
+    "threshold": {
+      "boundary_component": 0,
+      "boundary_residual": 0.0,
+      "components": [
+        0.015232247125871332,
+        1.3918197537769879,
+        0.023433756381633537,
+        17.406016881249244
+      ],
+      "tau": 0.015232247125871332
+    },
+    "threshold_collision": {
+      "branch": "plus",
+      "differential_mismatch": [
+        [
+          -0.015232247125871332,
+          0.0
+        ],
+        [
+          0.0,
+          0.0
+        ]
+      ],
+      "eigenvalues": [
+        -1.3918197537769879,
+        0.0
+      ],
+      "gain": [
+        0.5,
+        0.5
+      ],
+      "shifted_difference": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -1.3918197537769879
+        ]
+      ],
+      "zero_eigenvalue_residual": 0.0
+    }
+  },
+  "result": "KERR_SHARED_CORRELATED_RECEIVER_NOISE_CANCELS_IN_SIGNAL_MINUS_CALIBRATION_BUT_DIFFERENTIAL_MISMATCH_AT_THE_EXACT_CONE_MARGIN_RESTORES_COLLISION_NOT_ELL0",
+  "schema": "kerr-correlated-noise-mismatch-v1"
+}
