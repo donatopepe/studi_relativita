@@ -1,0 +1,28 @@
+# Audit incertezza di covarianza a campione finito Kerr
+
+```text
+ell0_identified=false
+NO_POSITIVE_DETECTION_CLAIM
+MODEL_LEVEL_GAUSSIAN_COVARIANCE_UNCERTAINTY_NOT_EVIDENCE
+DIRECT_REVIEW_NO_SUBAGENT
+```
+
+Controlli `8/8`; batteria scenari `78/78`.
+
+```text
+total_coefficient=923.69333
+counts=[16,64,256]
+rms=[7.5980809,3.7990405,1.8995202]
+minimum_count=53
+risk_53=0.049321491
+risk_52=0.050269981
+risk_16=0.16337744
+risk_64=0.04084436
+```
+
+```text
+KERR_GAUSSIAN_FINITE_SAMPLE_COVARIANCE_ERROR_FOLLOWS_EXACT_INVERSE_ROOT_COUNT_SCALING_AND_ONLY_A_CONSERVATIVE_TOY_COUNT_GATE_BOUNDS_BRANCH_COLLISION_SCALE_NOT_ELL0
+PHYSICAL_KERR_SAMPLE_INDEPENDENCE_GAUSSIANITY_MEAN_ESTIMATION_CALIBRATION_MATCHING_DRIFT_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Solo MSE esatto Wishart/Wick e bound di Markov. `N=16` fallisce il limite dichiarato; `N=64` passa. Nessuna significatività empirica, potenza, stabilità o evidenza.

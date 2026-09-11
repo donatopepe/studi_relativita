@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr finite-sample covariance uncertainty
+
+Exact Gaussian/Wishart covariance MSE gives inverse-root count scaling (`8/8`, scenarios `78/78`). Four independent covariance estimates yield coefficient `923.69333`; conservative Frobenius/Markov comparison to branch-set separation requires minimum equal count `53` for toy risk ceiling `0.05`. `N=16` fails; `N=64` passes only this model bound.
+
+```text
+KERR_GAUSSIAN_FINITE_SAMPLE_COVARIANCE_ERROR_FOLLOWS_EXACT_INVERSE_ROOT_COUNT_SCALING_AND_ONLY_A_CONSERVATIVE_TOY_COUNT_GATE_BOUNDS_BRANCH_COLLISION_SCALE_NOT_ELL0
+PHYSICAL_KERR_SAMPLE_INDEPENDENCE_GAUSSIANITY_MEAN_ESTIMATION_CALIBRATION_MATCHING_DRIFT_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured sample process, significance, evidence or detection. Correlated mismatch, reference drift/correction, prior Kerr chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr correlated-noise mismatch threshold
 
 Arbitrary full SPD noise shared by signal/calibration cancels in covariance difference (`8/8`, scenarios `70/70`). Opposite-definite branch cones remain separated. Exact minimum-gain full branch-matrix operator distance is `18.797837`; aggregate mismatch below 0.8 leaves positive separation, while full threshold collides exactly with SPD observed covariances.
