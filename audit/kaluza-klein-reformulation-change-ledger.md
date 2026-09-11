@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr finite-sample covariance uncertainty result
+
+Exact Gaussian covariance MSE and conservative Markov bound pass `8/8`, scenarios `78/78`. Minimum equal toy count is `53`; `N=16` fails and `N=64` passes only declared model-level bound.
+
+```text
+KERR_GAUSSIAN_FINITE_SAMPLE_COVARIANCE_ERROR_FOLLOWS_EXACT_INVERSE_ROOT_COUNT_SCALING_AND_ONLY_A_CONSERVATIVE_TOY_COUNT_GATE_BOUNDS_BRANCH_COLLISION_SCALE_NOT_ELL0
+PHYSICAL_KERR_SAMPLE_INDEPENDENCE_GAUSSIANITY_MEAN_ESTIMATION_CALIBRATION_MATCHING_DRIFT_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Mismatch/reference correction, superseded polarity history, prior chain and `F_0` remain preserved.
+
 ## Kerr correlated-noise mismatch result
 
 Shared full SPD noise cancels exactly from signal-minus-calibration (`8/8`, scenarios `70/70`). Full branch-set operator distance is positive below mismatch threshold; exact full threshold collides while observed covariances stay SPD.
