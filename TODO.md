@@ -20,12 +20,12 @@ Updated: 2026-09-11
    - Depends on: task 1.
    - Complete when: J63–J70 and `calibration_mismatch` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement correlated-noise mismatch engine. **ACTIVE — threshold semantics corrected before publication**
+3. [x] Implement correlated-noise mismatch engine.
    - Depends on: tasks 1–2.
    - Root correction: first local baseline used distance from one cone to singularity and called it branch collision; actual collision threshold is minimum operator norm of full branch difference `A_+-A_-`, requiring equality of both matrices. No flawed result was pushed.
    - Complete when: SPD validation, shared-noise cancellation, sign-cone proof, analytic operator-norm branch-set distance, safe lower bound, exact full-matrix threshold collision with SPD observed covariances, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve corrected history/nonclaims.
    - Test: report tests plus deterministic artifact equality.
