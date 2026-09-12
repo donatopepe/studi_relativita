@@ -24,8 +24,8 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
 
     def test_manifest_covers_all_preregistered_scenarios_and_categories(self):
         data = json.loads(MANIFEST.read_text())
-        self.assertEqual([item["id"] for item in data["scenarios"]], [f"J{index:02d}" for index in range(1, 95)])
-        self.assertEqual(set(item["category"] for item in data["scenarios"]), {"conformance", "orientation", "scale", "preparation", "analyzer", "receiver", "likelihood", "noise", "calibration", "robustness", "asymptotic", "profiling", "calibration_channel", "reference_placement", "reference_drift", "calibration_mismatch", "finite_sample", "estimated_mean", "temporal_dependence"})
+        self.assertEqual([item["id"] for item in data["scenarios"]], [f"J{index:02d}" for index in range(1, 103)])
+        self.assertEqual(set(item["category"] for item in data["scenarios"]), {"conformance", "orientation", "scale", "preparation", "analyzer", "receiver", "likelihood", "noise", "calibration", "robustness", "asymptotic", "profiling", "calibration_channel", "reference_placement", "reference_drift", "calibration_mismatch", "finite_sample", "estimated_mean", "temporal_dependence", "cross_stream_dependence"})
         self.assertEqual(len(data["scenarios"]), len(set(item["id"] for item in data["scenarios"])))
 
     def test_runner_supports_total_granular_category_and_json_report(self):

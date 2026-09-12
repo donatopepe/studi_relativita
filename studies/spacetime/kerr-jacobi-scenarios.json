@@ -94,6 +94,14 @@
     {"id": "J91", "category": "temporal_dependence", "handler": "ar1_monotonicity"},
     {"id": "J92", "category": "temporal_dependence", "handler": "ar1_safe_count"},
     {"id": "J93", "category": "temporal_dependence", "handler": "ar1_basis_scale"},
-    {"id": "J94", "category": "temporal_dependence", "handler": "ar1_nonclaims"}
+    {"id": "J94", "category": "temporal_dependence", "handler": "ar1_nonclaims"},
+    {"id": "J95", "category": "cross_stream_dependence", "handler": "paired_domain"},
+    {"id": "J96", "category": "cross_stream_dependence", "handler": "paired_identity"},
+    {"id": "J97", "category": "cross_stream_dependence", "handler": "paired_coefficient"},
+    {"id": "J98", "category": "cross_stream_dependence", "handler": "paired_rms"},
+    {"id": "J99", "category": "cross_stream_dependence", "handler": "paired_safe_count"},
+    {"id": "J100", "category": "cross_stream_dependence", "handler": "paired_zero_shared"},
+    {"id": "J101", "category": "cross_stream_dependence", "handler": "paired_basis_scale"},
+    {"id": "J102", "category": "cross_stream_dependence", "handler": "paired_nonclaims"}
   ]
 }
