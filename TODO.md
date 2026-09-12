@@ -1,38 +1,38 @@
 # TODO — UMCH research engineering
 
-Updated: 2026-09-11
+Updated: 2026-09-12
 
-## Active milestone: Kerr estimated-mean covariance penalty MVP
+## Active milestone: Kerr AR(1) temporal-dependence penalty MVP
 
-**Objective:** quantify exact degree-of-freedom penalty when receiver mean is estimated rather than known and update conservative sample-count gate without changing physical claims.
+**Objective:** quantify exact finite-N covariance-estimation penalty from Gaussian AR(1) temporal dependence after mean removal and update conservative count gate.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** centered-Wishart identity, domain, known/estimated relation, RMS sequence, corrected safe count, unsafe count, basis/scale invariance, nonclaims.
+**Fixed cases/order:** AR(1) domain, centered quadratic-form identity, iid limit, fixed-rho RMS, monotonicity, corrected safe count, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify estimated-mean covariance specification.
-   - Depends on: finite-sample covariance milestone `686aa2b` and green CI `34632439783`.
-   - Complete when: unbiased sample covariance with estimated mean, degrees of freedom `nu=N-1`, exact MSE relation, counts `[16,64,256]`, corrected risk gate, eight controls, J79–J86 and nonclaims are preregistered.
+1. [ ] Ratify AR(1) temporal-dependence specification. **ACTIVE**
+   - Depends on: estimated-mean milestone `4a84c16` and green CI `34653353173`.
+   - Complete when: separable Gaussian time/channel covariance, exact centering matrix trace formula, rho set `[0,0.25,0.5,0.75]`, counts `[16,64,256]`, safe/unsafe gate, eight controls, J87–J94 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J79–J86 and `estimated_mean` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J87–J94 and `temporal_dependence` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement estimated-mean covariance penalty engine.
+3. [ ] Implement AR(1) covariance-penalty engine.
    - Depends on: tasks 1–2.
-   - Complete when: centered-Wishart MSE, exact `N/(N-1)` variance penalty, RMS sequence, corrected minimum count, safe/unsafe controls, basis/scale null and guardrails pass.
+   - Complete when: exact centered quadratic-form MSE, iid recovery, rho monotonicity, fixed-rho RMS/count gate, near-unit negative limit, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior negatives/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `86/86`; all 86 per-scenario and 18 per-category granular runs green.
