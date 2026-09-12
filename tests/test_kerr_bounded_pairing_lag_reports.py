@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('cross-time','110/110',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_PAIRED_SIGNAL_CALIBRATION_COMMON_NOISE_CANCELS_A_SMALL_SAMPLING_TERM','KERR_GAUSSIAN_AR1_TEMPORAL_DEPENDENCE_REDUCES_EFFECTIVE_COVARIANCE_INFORMATION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text())
+  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1267/1267`.',TODO.read_text())
 if __name__=='__main__':unittest.main()

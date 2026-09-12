@@ -28,9 +28,18 @@ Updated: 2026-09-12
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve erosion negative/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
+
+## Local closure evidence
+
+- Scientific controls: `8/8`.
+- Scenario battery: `110/110`; all 110 per-scenario and 21 per-category granular runs green.
+- Full suite: `1267/1267`.
+- Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
+- Root result: cancellation ratio at N=64 erodes `[1.0,0.740204882,0.482882271,0.004159271]`; count gates `[87,87,87,88]`. One-window lag restores independent count `88`; `N=64` remains unsafe for every fixed fraction.
+- Publication pending final closure commit, push and remote CI.
 
 ## Historical milestone index
 
