@@ -32,6 +32,10 @@ Updated: 2026-09-12
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
+## Historical milestone index
+
+- Kerr AR(1) temporal-dependence penalty MVP: tasks 1–5 completed; depends on estimated-mean milestone `4a84c16`; scientific `8/8`, scenarios `94/94`, suite `1241/1241`, CI green at `7cb1ab5`.
+
 ## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
