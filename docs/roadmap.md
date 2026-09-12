@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr AR(1) temporal-dependence penalty
+
+Exact centered Gaussian quadratic-form factor handles finite-N AR(1) dependence (`8/8`, scenarios `94/94`). At rho 0.5, conservative toy count gate rises to 88 and `N=64` fails. Near rho 0.99, effective covariance degrees at N=64 are only `2.9130205`.
+
+```text
+KERR_GAUSSIAN_AR1_TEMPORAL_DEPENDENCE_REDUCES_EFFECTIVE_COVARIANCE_INFORMATION_AND_RAISES_ONLY_THE_CONSERVATIVE_TOY_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_TEMPORAL_CORRELATION_MODEL_STATIONARITY_GAUSSIANITY_CROSS_STREAM_DEPENDENCE_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured rho, stationarity, significance, evidence or detection. Estimated/known-mean sampling, mismatch/reference chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr estimated-mean covariance penalty
 
 Estimating mean costs one centered-Wishart degree of freedom (`8/8`, scenarios `86/86`). Exact MSE penalty is `N/(N-1)` and conservative toy count gate rises from 53 to 54. `N=16` remains unsafe; no empirical significance follows.

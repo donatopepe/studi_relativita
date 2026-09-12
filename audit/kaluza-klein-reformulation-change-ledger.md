@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr AR(1) temporal-dependence penalty result
+
+Exact centered Gaussian AR(1) factor passes `8/8`, scenarios `94/94`. At rho 0.5, conservative count gate is 88 and `N=64` fails; near-unit rho leaves very low effective covariance information.
+
+```text
+KERR_GAUSSIAN_AR1_TEMPORAL_DEPENDENCE_REDUCES_EFFECTIVE_COVARIANCE_INFORMATION_AND_RAISES_ONLY_THE_CONSERVATIVE_TOY_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_TEMPORAL_CORRELATION_MODEL_STATIONARITY_GAUSSIANITY_CROSS_STREAM_DEPENDENCE_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Estimated/known-mean sample gates, mismatch/reference chain and `F_0` remain preserved.
+
 ## Kerr estimated-mean covariance penalty result
 
 Centered Gaussian covariance costs exactly one degree of freedom (`8/8`, scenarios `86/86`). Penalty `N/(N-1)` raises conservative toy count gate from 53 to 54.

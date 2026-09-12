@@ -1,0 +1,27 @@
+# Audit dipendenza temporale AR(1) Kerr
+
+```text
+ell0_identified=false
+NO_POSITIVE_DETECTION_CLAIM
+MODEL_LEVEL_AR1_COVARIANCE_PENALTY_NOT_EVIDENCE
+DIRECT_REVIEW_NO_SUBAGENT
+```
+
+Controlli `8/8`; batteria scenari `94/94`.
+
+```text
+rho=0.5
+rms=[9.7334408,4.9038744,2.4524884]
+minimum_count=88
+risk_88=0.049511371
+risk_87=0.050080099
+risk_64=0.068055453
+rho_0.99_effective_df_64=2.9130205
+```
+
+```text
+KERR_GAUSSIAN_AR1_TEMPORAL_DEPENDENCE_REDUCES_EFFECTIVE_COVARIANCE_INFORMATION_AND_RAISES_ONLY_THE_CONSERVATIVE_TOY_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_TEMPORAL_CORRELATION_MODEL_STATIONARITY_GAUSSIANITY_CROSS_STREAM_DEPENDENCE_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Calcolo esatto della forma quadratica centrata sotto AR(1) gaussiano separabile. `N=64` fallisce a rho 0.5. Nessun modello temporale misurato, significatività, potenza o evidenza.
