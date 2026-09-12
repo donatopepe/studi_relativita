@@ -24,8 +24,8 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
 
     def test_manifest_covers_all_preregistered_scenarios_and_categories(self):
         data = json.loads(MANIFEST.read_text())
-        self.assertEqual([item["id"] for item in data["scenarios"]], [f"J{index:02d}" for index in range(1, 87)])
-        self.assertEqual(set(item["category"] for item in data["scenarios"]), {"conformance", "orientation", "scale", "preparation", "analyzer", "receiver", "likelihood", "noise", "calibration", "robustness", "asymptotic", "profiling", "calibration_channel", "reference_placement", "reference_drift", "calibration_mismatch", "finite_sample", "estimated_mean"})
+        self.assertEqual([item["id"] for item in data["scenarios"]], [f"J{index:02d}" for index in range(1, 95)])
+        self.assertEqual(set(item["category"] for item in data["scenarios"]), {"conformance", "orientation", "scale", "preparation", "analyzer", "receiver", "likelihood", "noise", "calibration", "robustness", "asymptotic", "profiling", "calibration_channel", "reference_placement", "reference_drift", "calibration_mismatch", "finite_sample", "estimated_mean", "temporal_dependence"})
         self.assertEqual(len(data["scenarios"]), len(set(item["id"] for item in data["scenarios"])))
 
     def test_runner_supports_total_granular_category_and_json_report(self):
@@ -34,13 +34,13 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
             total = subprocess.run(["python", str(RUNNER), "--mode", "total", "--report-json", str(report)], text=True, capture_output=True)
             self.assertEqual(total.returncode, 0, total.stdout + total.stderr)
             payload = json.loads(report.read_text())
-            self.assertEqual(payload["summary"], {"PASS": 86, "FAIL": 0, "SKIP": 0, "BLOCKED": 0})
+            self.assertEqual(payload["summary"], {"PASS": 94, "FAIL": 0, "SKIP": 0, "BLOCKED": 0})
             granular = subprocess.run(["python", str(RUNNER), "--mode", "granular", "--scenario", "J01"], text=True, capture_output=True)
             self.assertEqual(granular.returncode, 0, granular.stdout + granular.stderr)
             self.assertEqual(len(json.loads(granular.stdout)["results"]), 1)
-            category = subprocess.run(["python", str(RUNNER), "--mode", "granular", "--category", "estimated_mean"], text=True, capture_output=True)
+            category = subprocess.run(["python", str(RUNNER), "--mode", "granular", "--category", "temporal_dependence"], text=True, capture_output=True)
             self.assertEqual(category.returncode, 0, category.stdout + category.stderr)
-            self.assertTrue(all(item["category"] == "estimated_mean" for item in json.loads(category.stdout)["results"]))
+            self.assertTrue(all(item["category"] == "temporal_dependence" for item in json.loads(category.stdout)["results"]))
 
     def test_stable_total_report_is_current(self):
         generated = subprocess.check_output(["python", str(RUNNER), "--mode", "total"], text=True)
