@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('AR(1)','temporal','centered quadratic',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_GAUSSIAN_ESTIMATED_MEAN_COSTS_EXACTLY_ONE_COVARIANCE_DEGREE_OF_FREEDOM','KERR_GAUSSIAN_FINITE_SAMPLE_COVARIANCE_ERROR_FOLLOWS_EXACT_INVERSE_ROOT_COUNT_SCALING','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1241/1241`.',TODO.read_text());self.assertIn('GitHub Actions run `34687669744` tests/LaTeX passed.',TODO.read_text())
+  self.assertIn('Kerr AR(1) temporal-dependence penalty MVP: tasks 1–5 completed',TODO.read_text());self.assertIn('scientific `8/8`, scenarios `94/94`, suite `1241/1241`',TODO.read_text());self.assertIn('Full suite: `1241/1241`.',TODO.read_text());self.assertIn('GitHub Actions run `34687669744` tests/LaTeX passed.',TODO.read_text())
 if __name__=='__main__':unittest.main()
