@@ -39,7 +39,7 @@ Updated: 2026-09-12
 - Full suite: `1254/1254`.
 - Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
 - Root result: paired shared receiver noise lowers RMS only `0.4098%` and conservative count gate from `88` to `87`; `N=64` remains unsafe (`0.067498804`). Zero shared covariance restores count `88`.
-- Publication pending final closure commit, push and remote CI.
+- Published `main=origin/main` at `f06c1fa`; GitHub Actions run `34710112266` tests/LaTeX passed.
 
 ## Historical milestone index
 
