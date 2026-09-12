@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify bounded pairing-lag specification. **ACTIVE**
+1. [x] Ratify bounded pairing-lag specification.
    - Depends on: paired-stream milestone `0b764be` and green CI `34710578828`.
    - Complete when: shifted AR(1) cross-time matrix, exact centered trace factor, lag fractions `[0,0.25,0.5,1.0]`, counts `[16,64,256]`, expected count transition, eight controls, J103–J110 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J103–J110 and `pairing_lag` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
