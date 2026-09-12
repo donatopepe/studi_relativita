@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr paired-stream common-noise cancellation result
+
+Exact paired Gaussian cross-Wishart control passes `8/8`, scenarios `102/102`. Shared receiver noise cancels a sampling term, but RMS falls only `0.4098%`, count gate falls from 88 to 87, and `N=64` remains unsafe. Zero cross-stream covariance restores 88.
+
+```text
+KERR_PAIRED_SIGNAL_CALIBRATION_COMMON_NOISE_CANCELS_A_SMALL_SAMPLING_TERM_BUT_DOES_NOT_REMOVE_AR1_SAMPLE_BURDEN_NOT_ELL0
+PHYSICAL_KERR_CROSS_STREAM_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Pair synchrony/common-noise assumptions are unmeasured; AR(1), prior sample gates, mismatch/reference chain and `F_0` remain preserved.
+
 ## Kerr AR(1) temporal-dependence penalty result
 
 Exact centered Gaussian AR(1) factor passes `8/8`, scenarios `94/94`. At rho 0.5, conservative count gate is 88 and `N=64` fails; near-unit rho leaves very low effective covariance information.
