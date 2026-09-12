@@ -2,37 +2,37 @@
 
 Updated: 2026-09-12
 
-## Active milestone: Kerr paired-stream common-noise cancellation MVP
+## Active milestone: Kerr bounded pairing-lag erosion MVP
 
-**Objective:** quantify exact covariance-estimation gain when paired signal/calibration streams share additive Gaussian noise, and test whether pairing materially reverses the AR(1) sample burden.
+**Objective:** quantify exact finite-N erosion of paired common-noise cancellation under a bounded signal/calibration timing lag and determine whether a one-window lag restores the independent AR(1) count gate.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** joint block domain, cross-Wishart identity, paired coefficient, AR(1) RMS, safe count, zero-shared limit, basis/scale invariance, nonclaims.
+**Fixed cases/order:** lag domain, cross-time trace identity, synchronous limit, fixed lag-fraction risk, monotonic erosion, count-gate transition, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify paired-stream common-noise specification.
-   - Depends on: AR(1) temporal-dependence milestone `7cb1ab5` and green CI `34688124833`.
-   - Complete when: paired latent/noise model, cross-covariance Wick term, fixed rho `0.5`, counts `[16,64,256]`, expected small-gain negative, eight controls, J95–J102 and nonclaims are preregistered.
+1. [ ] Ratify bounded pairing-lag specification. **ACTIVE**
+   - Depends on: paired-stream milestone `0b764be` and green CI `34710578828`.
+   - Complete when: shifted AR(1) cross-time matrix, exact centered trace factor, lag fractions `[0,0.25,0.5,1.0]`, counts `[16,64,256]`, expected count transition, eight controls, J103–J110 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J95–J102 and `cross_stream_dependence` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J103–J110 and `pairing_lag` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement paired-stream covariance engine.
+3. [ ] Implement bounded pairing-lag engine.
    - Depends on: tasks 1–2.
-   - Complete when: joint SPD validation, cross-Wishart identity, paired MSE coefficient, rho-0.5 RMS/count gate, independent-stream recovery, basis/scale null and guardrails pass.
+   - Complete when: lag validation, dense/closed trace identity, synchronous recovery, fixed-fraction risk/monotonicity, one-window count-gate restoration, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve small-gain negative/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve erosion negative/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `102/102`; all 102 per-scenario and 20 per-category granular runs green.
