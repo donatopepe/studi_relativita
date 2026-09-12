@@ -86,6 +86,14 @@
     {"id": "J83", "category": "estimated_mean", "handler": "mean_safe_count"},
     {"id": "J84", "category": "estimated_mean", "handler": "mean_unsafe"},
     {"id": "J85", "category": "estimated_mean", "handler": "mean_basis_scale"},
-    {"id": "J86", "category": "estimated_mean", "handler": "mean_nonclaims"}
+    {"id": "J86", "category": "estimated_mean", "handler": "mean_nonclaims"},
+    {"id": "J87", "category": "temporal_dependence", "handler": "ar1_domain"},
+    {"id": "J88", "category": "temporal_dependence", "handler": "ar1_identity"},
+    {"id": "J89", "category": "temporal_dependence", "handler": "ar1_iid"},
+    {"id": "J90", "category": "temporal_dependence", "handler": "ar1_rms"},
+    {"id": "J91", "category": "temporal_dependence", "handler": "ar1_monotonicity"},
+    {"id": "J92", "category": "temporal_dependence", "handler": "ar1_safe_count"},
+    {"id": "J93", "category": "temporal_dependence", "handler": "ar1_basis_scale"},
+    {"id": "J94", "category": "temporal_dependence", "handler": "ar1_nonclaims"}
   ]
 }
