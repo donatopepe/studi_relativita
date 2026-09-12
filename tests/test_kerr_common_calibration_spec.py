@@ -4,5 +4,5 @@ class Spec(unittest.TestCase):
  def test_contract(self):
   text=S.read_text()
   for x in ('RATIFIED_FOR_IMPLEMENTATION_PLANNING','exactly `8/8`','[0.5,1.5]','[0.1,1.0]','J23','J30','30/30','common-map difference identity','NO_POSITIVE_DETECTION_CLAIM'):self.assertIn(x,text)
-  todo=T.read_text();self.assertIn('Kerr estimated-mean covariance penalty MVP',todo);self.assertIn('finite-sample covariance milestone `686aa2b`',todo)
+  todo=T.read_text();self.assertIn('Kerr AR(1) temporal-dependence penalty MVP',todo);self.assertIn('estimated-mean milestone `4a84c16`',todo)
 if __name__=='__main__':unittest.main()
