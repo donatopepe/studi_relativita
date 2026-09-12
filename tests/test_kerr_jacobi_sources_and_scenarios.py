@@ -34,7 +34,7 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
             total = subprocess.run(["python", str(RUNNER), "--mode", "total", "--report-json", str(report)], text=True, capture_output=True)
             self.assertEqual(total.returncode, 0, total.stdout + total.stderr)
             payload = json.loads(report.read_text())
-            self.assertEqual(payload["summary"], {"PASS": 94, "FAIL": 0, "SKIP": 0, "BLOCKED": 0})
+            self.assertEqual(payload["summary"], {"PASS": 102, "FAIL": 0, "SKIP": 0, "BLOCKED": 0})
             granular = subprocess.run(["python", str(RUNNER), "--mode", "granular", "--scenario", "J01"], text=True, capture_output=True)
             self.assertEqual(granular.returncode, 0, granular.stdout + granular.stderr)
             self.assertEqual(len(json.loads(granular.stdout)["results"]), 1)

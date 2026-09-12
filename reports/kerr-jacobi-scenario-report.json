@@ -7,6 +7,7 @@
       "calibration_channel",
       "calibration_mismatch",
       "conformance",
+      "cross_stream_dependence",
       "estimated_mean",
       "finite_sample",
       "likelihood",
@@ -115,7 +116,15 @@
       "J91",
       "J92",
       "J93",
-      "J94"
+      "J94",
+      "J95",
+      "J96",
+      "J97",
+      "J98",
+      "J99",
+      "J100",
+      "J101",
+      "J102"
     ]
   },
   "results": [
@@ -776,13 +785,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 1.0
+    },
+    {
+      "category": "cross_stream_dependence",
+      "id": "J95",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "cross_stream_dependence",
+      "id": "J96",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "cross_stream_dependence",
+      "id": "J97",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "cross_stream_dependence",
+      "id": "J98",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "cross_stream_dependence",
+      "id": "J99",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "cross_stream_dependence",
+      "id": "J100",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "cross_stream_dependence",
+      "id": "J101",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "cross_stream_dependence",
+      "id": "J102",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 94,
+    "PASS": 102,
     "SKIP": 0
   }
 }

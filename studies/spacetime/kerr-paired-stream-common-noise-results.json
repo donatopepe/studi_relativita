@@ -1,0 +1,142 @@
+{
+  "basis_scale": {
+    "basis_residual": 1.1102230246251565e-16,
+    "scale_residual": 1.3877787807814457e-17
+  },
+  "coefficient": {
+    "independent_coefficient": 923.6933349374522,
+    "paired_coefficient": 916.1381349374523,
+    "rms_ratio": 0.9959019339244056,
+    "small_gain": true,
+    "strict_reduction": true
+  },
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_PAIRED_COMMON_NOISE_COVARIANCE_GAIN_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "identity",
+        "passed": true,
+        "residual": 1.1368683772161603e-13,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "coefficient",
+        "passed": true,
+        "residual": 0.004098066075594375,
+        "threshold": 0.01,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "rms",
+        "passed": true,
+        "residual": 2.4424379012141917,
+        "threshold": 9.69355254308955,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "safe_count",
+        "passed": true,
+        "residual": 0.04967047699943986,
+        "threshold": 0.05,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "zero_shared",
+        "passed": true,
+        "residual": 1.1368683772161603e-13,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 1.1102230246251565e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "cross_wick_identity": {
+    "cases": [
+      [
+        28.197968740825637,
+        28.197968740825637
+      ],
+      [
+        887.9401661966265,
+        887.9401661966266
+      ]
+    ],
+    "residual": 1.1368683772161603e-13
+  },
+  "joint_domain": {
+    "cases": 2,
+    "invalid_cases_rejected": 2,
+    "valid_joint_blocks": true
+  },
+  "parameters": {
+    "counts": [
+      16,
+      64,
+      256
+    ],
+    "cross_stream_model": "PAIRED_SHARED_ADDITIVE_GAUSSIAN_NOISE",
+    "pair_independence": "BRANCH_PAIRS_INDEPENDENT",
+    "rho": 0.5,
+    "risk_ceiling": 0.05
+  },
+  "physical_gate": "PHYSICAL_KERR_CROSS_STREAM_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "result": "KERR_PAIRED_SIGNAL_CALIBRATION_COMMON_NOISE_CANCELS_A_SMALL_SAMPLING_TERM_BUT_DOES_NOT_REMOVE_AR1_SAMPLE_BURDEN_NOT_ELL0",
+  "rms": {
+    "counts": [
+      16,
+      64,
+      256
+    ],
+    "rho": 0.5,
+    "rms": [
+      9.69355254308955,
+      4.883777951533833,
+      2.4424379012141917
+    ],
+    "strictly_decreasing": true
+  },
+  "safe_count": {
+    "N64_passes": false,
+    "N64_risk": 0.06749880400351307,
+    "minimum_count": 87,
+    "risk_at_count": 0.04967047699943986,
+    "risk_at_predecessor": 0.05024765350736133
+  },
+  "zero_shared_limit": {
+    "coefficient_residual": 1.1368683772161603e-13,
+    "independent_coefficient": 923.6933349374522,
+    "independent_minimum_count": 88,
+    "minimum_count": 88,
+    "paired_zero_coefficient": 923.6933349374523
+  }
+}
