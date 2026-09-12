@@ -2,37 +2,37 @@
 
 Updated: 2026-09-12
 
-## Active milestone: Kerr AR(1) temporal-dependence penalty MVP
+## Active milestone: Kerr paired-stream common-noise cancellation MVP
 
-**Objective:** quantify exact finite-N covariance-estimation penalty from Gaussian AR(1) temporal dependence after mean removal and update conservative count gate.
+**Objective:** quantify exact covariance-estimation gain when paired signal/calibration streams share additive Gaussian noise, and test whether pairing materially reverses the AR(1) sample burden.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** AR(1) domain, centered quadratic-form identity, iid limit, fixed-rho RMS, monotonicity, corrected safe count, basis/scale invariance, nonclaims.
+**Fixed cases/order:** joint block domain, cross-Wishart identity, paired coefficient, AR(1) RMS, safe count, zero-shared limit, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify AR(1) temporal-dependence specification.
-   - Depends on: estimated-mean milestone `4a84c16` and green CI `34653353173`.
-   - Complete when: separable Gaussian time/channel covariance, exact centering matrix trace formula, rho set `[0,0.25,0.5,0.75]`, counts `[16,64,256]`, safe/unsafe gate, eight controls, J87–J94 and nonclaims are preregistered.
+1. [ ] Ratify paired-stream common-noise specification. **ACTIVE**
+   - Depends on: AR(1) temporal-dependence milestone `7cb1ab5` and green CI `34688124833`.
+   - Complete when: paired latent/noise model, cross-covariance Wick term, fixed rho `0.5`, counts `[16,64,256]`, expected small-gain negative, eight controls, J95–J102 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J87–J94 and `temporal_dependence` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J95–J102 and `cross_stream_dependence` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement AR(1) covariance-penalty engine.
+3. [ ] Implement paired-stream covariance engine.
    - Depends on: tasks 1–2.
-   - Complete when: exact centered quadratic-form MSE, iid recovery, rho monotonicity, fixed-rho RMS/count gate, near-unit negative limit, basis/scale null and guardrails pass.
+   - Complete when: joint SPD validation, cross-Wishart identity, paired MSE coefficient, rho-0.5 RMS/count gate, independent-stream recovery, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve prior negatives/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve small-gain negative/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `94/94`; all 94 per-scenario and 19 per-category granular runs green.
