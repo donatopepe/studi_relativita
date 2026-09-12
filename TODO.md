@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify paired-stream common-noise specification. **ACTIVE**
+1. [x] Ratify paired-stream common-noise specification.
    - Depends on: AR(1) temporal-dependence milestone `7cb1ab5` and green CI `34688124833`.
    - Complete when: paired latent/noise model, cross-covariance Wick term, fixed rho `0.5`, counts `[16,64,256]`, expected small-gain negative, eight controls, J95–J102 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J95–J102 and `cross_stream_dependence` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
