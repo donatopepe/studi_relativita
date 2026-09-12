@@ -1,0 +1,17 @@
+import json,pathlib,unittest
+R=pathlib.Path(__file__).resolve().parents[1];EN=R/'audit/kerr-bounded-pairing-lag-report-en.md';IT=R/'audit/kerr-bounded-pairing-lag-report-it.md';TH=R/'theory/spacetime/kerr-bounded-pairing-lag.md';ROAD=R/'docs/roadmap.md';LED=R/'audit/kaluza-klein-reformulation-change-ledger.md';TODO=R/'TODO.md';ART=R/'studies/spacetime/kerr-bounded-pairing-lag-results.json'
+RESULT='KERR_BOUNDED_PAIRING_LAG_MONOTONICALLY_ERODES_COMMON_NOISE_CANCELLATION_AND_A_ONE_WINDOW_LAG_RESTORES_THE_INDEPENDENT_AR1_COUNT_GATE_NOT_ELL0';GATE='PHYSICAL_KERR_PAIRING_LAG_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED'
+class Reports(unittest.TestCase):
+ def test_contract(self):
+  for t in (EN.read_text(),IT.read_text()):
+   for x in (RESULT,GATE,'8/8','110/110','DIRECT_REVIEW_NO_SUBAGENT','ell0_identified=false','NO_POSITIVE_DETECTION_CLAIM','MODEL_LEVEL_BOUNDED_PAIRING_LAG_EROSION_NOT_EVIDENCE'):self.assertIn(x,t)
+ def test_values(self):
+  self.assertEqual(json.loads(ART.read_text())['control_summary']['controls_passed'],8)
+  for t in (EN.read_text(),IT.read_text()):
+   for x in ('rho=0.5','fractions=[0,0.25,0.5,1.0]','beta_over_alpha_N64=[1.0,0.740204882,0.482882271,0.004159271]','risk_N64=[0.067498804,0.067643419,0.067786657,0.068053137]','minimum_counts=[87,87,87,88]','one_window_risk_88=0.049510145','one_window_risk_87=0.050078845'):self.assertIn(x,t)
+ def test_history_and_todo(self):
+  for x in ('cross-time','110/110',RESULT,GATE):self.assertIn(x,TH.read_text())
+  for t in (ROAD.read_text(),LED.read_text()):
+   for x in (RESULT,GATE,'KERR_PAIRED_SIGNAL_CALIBRATION_COMMON_NOISE_CANCELS_A_SMALL_SAMPLING_TERM','KERR_GAUSSIAN_AR1_TEMPORAL_DEPENDENCE_REDUCES_EFFECTIVE_COVARIANCE_INFORMATION','F_0'):self.assertIn(x,t)
+  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text())
+if __name__=='__main__':unittest.main()

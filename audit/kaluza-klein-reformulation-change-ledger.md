@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr bounded pairing-lag erosion result
+
+Exact centered shifted-AR(1) cross-time control passes `8/8`, scenarios `110/110`. Cancellation erodes monotonically with lag; at N=64 the normalized factor falls from `1` to `0.004159271` by one-window lag. Count gates `[87,87,87,88]` restore independent 88 only at one window; `N=64` remains unsafe.
+
+```text
+KERR_BOUNDED_PAIRING_LAG_MONOTONICALLY_ERODES_COMMON_NOISE_CANCELLATION_AND_A_ONE_WINDOW_LAG_RESTORES_THE_INDEPENDENT_AR1_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_PAIRING_LAG_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Lag/pairing/common-noise assumptions are unmeasured; synchronous pair result, AR(1), prior sample gates, mismatch/reference chain and `F_0` remain preserved.
+
 ## Kerr paired-stream common-noise cancellation result
 
 Exact paired Gaussian cross-Wishart control passes `8/8`, scenarios `102/102`. Shared receiver noise cancels a sampling term, but RMS falls only `0.4098%`, count gate falls from 88 to 87, and `N=64` remains unsafe. Zero cross-stream covariance restores 88.
