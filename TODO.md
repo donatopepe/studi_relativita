@@ -16,15 +16,15 @@ Updated: 2026-09-12
    - Depends on: AR(1) temporal-dependence milestone `7cb1ab5` and green CI `34688124833`.
    - Complete when: paired latent/noise model, cross-covariance Wick term, fixed rho `0.5`, counts `[16,64,256]`, expected small-gain negative, eight controls, J95–J102 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J95–J102 and `cross_stream_dependence` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement paired-stream covariance engine.
+3. [x] Implement paired-stream covariance engine.
    - Depends on: tasks 1–2.
    - Complete when: joint SPD validation, cross-Wishart identity, paired MSE coefficient, rho-0.5 RMS/count gate, independent-stream recovery, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve small-gain negative/nonclaims.
    - Test: report tests plus deterministic artifact equality.
