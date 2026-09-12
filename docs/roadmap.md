@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr paired-stream common-noise cancellation
+
+Exact paired cross-Wishart control passes `8/8`, scenarios `102/102`. With shared additive receiver noise and toy rho 0.5, RMS ratio is `0.995901934`, count gate falls only from 88 to 87, and `N=64` remains unsafe. Zero shared covariance restores independent-stream count 88.
+
+```text
+KERR_PAIRED_SIGNAL_CALIBRATION_COMMON_NOISE_CANCELS_A_SMALL_SAMPLING_TERM_BUT_DOES_NOT_REMOVE_AR1_SAMPLE_BURDEN_NOT_ELL0
+PHYSICAL_KERR_CROSS_STREAM_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured pairing, common-noise model, significance, evidence or detection. AR(1), estimated/known-mean sampling, mismatch/reference chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr AR(1) temporal-dependence penalty
 
 Exact centered Gaussian quadratic-form factor handles finite-N AR(1) dependence (`8/8`, scenarios `94/94`). At rho 0.5, conservative toy count gate rises to 88 and `N=64` fails. Near rho 0.99, effective covariance degrees at N=64 are only `2.9130205`.
