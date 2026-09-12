@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('cross-Wishart','0.4098%','102/102',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_GAUSSIAN_AR1_TEMPORAL_DEPENDENCE_REDUCES_EFFECTIVE_COVARIANCE_INFORMATION','KERR_GAUSSIAN_ESTIMATED_MEAN_COSTS_EXACTLY_ONE_COVARIANCE_DEGREE_OF_FREEDOM','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text())
+  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1254/1254`.',TODO.read_text())
 if __name__=='__main__':unittest.main()
