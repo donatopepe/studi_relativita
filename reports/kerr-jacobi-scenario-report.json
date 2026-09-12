@@ -13,6 +13,7 @@
       "likelihood",
       "noise",
       "orientation",
+      "pairing_lag",
       "preparation",
       "profiling",
       "receiver",
@@ -124,7 +125,15 @@
       "J99",
       "J100",
       "J101",
-      "J102"
+      "J102",
+      "J103",
+      "J104",
+      "J105",
+      "J106",
+      "J107",
+      "J108",
+      "J109",
+      "J110"
     ]
   },
   "results": [
@@ -841,13 +850,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 1.0
+    },
+    {
+      "category": "pairing_lag",
+      "id": "J103",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_lag",
+      "id": "J104",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_lag",
+      "id": "J105",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_lag",
+      "id": "J106",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_lag",
+      "id": "J107",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_lag",
+      "id": "J108",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_lag",
+      "id": "J109",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_lag",
+      "id": "J110",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 102,
+    "PASS": 110,
     "SKIP": 0
   }
 }
