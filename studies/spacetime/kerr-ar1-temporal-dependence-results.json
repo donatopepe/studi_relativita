@@ -1,0 +1,212 @@
+{
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_AR1_COVARIANCE_PENALTY_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "identity",
+        "passed": true,
+        "residual": 2.7755575615628914e-17,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "iid_limit",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "rms",
+        "passed": true,
+        "residual": 2.452488360565415,
+        "threshold": 9.73344082674042,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "monotonicity",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "safe_count",
+        "passed": true,
+        "residual": 0.04951137074099119,
+        "threshold": 0.05,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "basis_scale_limit",
+        "passed": true,
+        "residual": 1.3877787807814457e-17,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "physical_gate": "PHYSICAL_KERR_TEMPORAL_CORRELATION_MODEL_STATIONARITY_GAUSSIANITY_CROSS_STREAM_DEPENDENCE_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "raw_output": {
+    "basis_scale_limit": {
+      "basis_residual": 0.0,
+      "near_unit_effective_df_64": 2.913020494282078,
+      "near_unit_rho": 0.99,
+      "scale_null_direction": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale_residual": 1.3877787807814457e-17
+    },
+    "iid_limit": {
+      "cases": [
+        [
+          16,
+          0.06666666666666667,
+          0.06666666666666667
+        ],
+        [
+          64,
+          0.015873015873015872,
+          0.015873015873015872
+        ],
+        [
+          256,
+          0.00392156862745098,
+          0.00392156862745098
+        ]
+      ],
+      "residual": 0.0
+    },
+    "rho_monotonicity": {
+      "rhos": [
+        0.0,
+        0.25,
+        0.5,
+        0.75
+      ],
+      "rows": [
+        {
+          "N": 16,
+          "alpha": [
+            0.06666666666666667,
+            0.07424635887748257,
+            0.10256636780222361,
+            0.17862562426169676
+          ],
+          "rms": [
+            7.847264215157841,
+            8.281356582016306,
+            9.73344082674042,
+            12.845049574819512
+          ]
+        },
+        {
+          "N": 64,
+          "alpha": [
+            0.015873015873015872,
+            0.017918512821197392,
+            0.026034596935009598,
+            0.05401114678547114
+          ],
+          "rms": [
+            3.8290728600094757,
+            4.068317940492276,
+            4.903874352657436,
+            7.063266687451925
+          ]
+        },
+        {
+          "N": 256,
+          "alpha": [
+            0.00392156862745098,
+            0.004440183224480603,
+            0.006511575791673458,
+            0.013866881048217847
+          ],
+          "rms": [
+            1.903241131248556,
+            2.0251833621560835,
+            2.452488360565415,
+            3.5789307901396046
+          ]
+        }
+      ],
+      "strictly_increasing": true
+    },
+    "rms_rho_05": {
+      "rho": 0.5,
+      "rms_frobenius": [
+        9.73344082674042,
+        4.903874352657436,
+        2.452488360565415
+      ],
+      "sample_counts": [
+        16,
+        64,
+        256
+      ],
+      "strictly_decreasing": true
+    },
+    "safe_count": {
+      "N64_passes": false,
+      "N64_risk": 0.06805545255307067,
+      "minimum_count": 88,
+      "rho": 0.5,
+      "risk_at_count": 0.04951137074099119,
+      "risk_at_predecessor": 0.05008009905698228,
+      "risk_ceiling": 0.05
+    },
+    "trace_identity": {
+      "cases": [
+        [
+          4,
+          0.25,
+          0.3485396852116825,
+          0.3485396852116825
+        ],
+        [
+          8,
+          0.5,
+          0.1979218156980651,
+          0.1979218156980651
+        ],
+        [
+          16,
+          0.75,
+          0.17862562426169676,
+          0.17862562426169673
+        ]
+      ],
+      "residual": 2.7755575615628914e-17
+    }
+  },
+  "result": "KERR_GAUSSIAN_AR1_TEMPORAL_DEPENDENCE_REDUCES_EFFECTIVE_COVARIANCE_INFORMATION_AND_RAISES_ONLY_THE_CONSERVATIVE_TOY_COUNT_GATE_NOT_ELL0",
+  "schema": "kerr-ar1-temporal-dependence-v1"
+}
