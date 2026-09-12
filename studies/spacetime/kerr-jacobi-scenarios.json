@@ -102,6 +102,14 @@
     {"id": "J99", "category": "cross_stream_dependence", "handler": "paired_safe_count"},
     {"id": "J100", "category": "cross_stream_dependence", "handler": "paired_zero_shared"},
     {"id": "J101", "category": "cross_stream_dependence", "handler": "paired_basis_scale"},
-    {"id": "J102", "category": "cross_stream_dependence", "handler": "paired_nonclaims"}
+    {"id": "J102", "category": "cross_stream_dependence", "handler": "paired_nonclaims"},
+    {"id": "J103", "category": "pairing_lag", "handler": "lag_domain"},
+    {"id": "J104", "category": "pairing_lag", "handler": "lag_identity"},
+    {"id": "J105", "category": "pairing_lag", "handler": "lag_synchronous"},
+    {"id": "J106", "category": "pairing_lag", "handler": "lag_risk"},
+    {"id": "J107", "category": "pairing_lag", "handler": "lag_monotonicity"},
+    {"id": "J108", "category": "pairing_lag", "handler": "lag_count_transition"},
+    {"id": "J109", "category": "pairing_lag", "handler": "lag_basis_scale"},
+    {"id": "J110", "category": "pairing_lag", "handler": "lag_nonclaims"}
   ]
 }
