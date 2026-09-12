@@ -39,7 +39,7 @@ Updated: 2026-09-12
 - Full suite: `1267/1267`.
 - Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
 - Root result: cancellation ratio at N=64 erodes `[1.0,0.740204882,0.482882271,0.004159271]`; count gates `[87,87,87,88]`. One-window lag restores independent count `88`; `N=64` remains unsafe for every fixed fraction.
-- Publication pending final closure commit, push and remote CI.
+- Published `main=origin/main` at `9ffe8af`; GitHub Actions run `34721909769` tests/LaTeX passed.
 
 ## Historical milestone index
 
