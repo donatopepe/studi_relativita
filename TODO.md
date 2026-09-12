@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify AR(1) temporal-dependence specification. **ACTIVE**
+1. [x] Ratify AR(1) temporal-dependence specification.
    - Depends on: estimated-mean milestone `4a84c16` and green CI `34653353173`.
    - Complete when: separable Gaussian time/channel covariance, exact centering matrix trace formula, rho set `[0,0.25,0.5,0.75]`, counts `[16,64,256]`, safe/unsafe gate, eight controls, J87–J94 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J87–J94 and `temporal_dependence` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
