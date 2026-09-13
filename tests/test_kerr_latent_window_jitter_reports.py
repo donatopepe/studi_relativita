@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('law of total covariance','Jensen','126/126',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_BOUNDED_UNIFORM_PAIRING_JITTER_MONOTONICALLY_ERODES_COMMON_NOISE_CANCELLATION','KERR_BOUNDED_PAIRING_LAG_MONOTONICALLY_ERODES_COMMON_NOISE_CANCELLATION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1293/1293`.',TODO.read_text())
+  self.assertIn('Kerr latent window-jitter mixture MVP: tasks 1–5 completed',TODO.read_text());self.assertIn('scientific `8/8`, scenarios `126/126`, suite `1293/1293`',TODO.read_text());self.assertIn('Full suite: `1293/1293`.',TODO.read_text())
 if __name__=='__main__':unittest.main()
