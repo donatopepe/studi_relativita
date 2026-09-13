@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr critical latent-lag density-ratio radius
+
+Exact active-set quadratic passes `8/8`, scenarios `142/142`. For full-window support, toy rho 0.5 and N=87, worst-risk count transition occurs at `kappa*=3.890241564958`; below passes 87, above requires 88. Sub-full supports do not cross even with unrestricted lag probabilities.
+
+```text
+KERR_FULL_SUPPORT_LATENT_LAG_LAW_HAS_TOY_CRITICAL_DENSITY_RATIO_KAPPA_3P890241565_FOR_THE_COUNT_87_GATE_NOT_ELL0
+PHYSICAL_KERR_LATENT_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Critical kappa is toy nuisance-set threshold, not confidence, significance, measured tolerance, evidence or detection. Bounded-law envelope, uniform latent, Gaussian averaged-kernel, fixed-lag, paired synchronous, AR(1), prior chain and `F_0` remain preserved.
+
 ## Kerr bounded latent-lag law robustness
 
 Exact density-ratio-bounded simplex profiling passes `8/8`, scenarios `134/134`. Kappa 2 preserves worst counts `[87,87,87,87]`; kappa 4 changes full-support worst count to 88 while best stays 87. `N=64` remains unsafe throughout exact risk envelope.
