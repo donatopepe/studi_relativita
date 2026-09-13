@@ -16,15 +16,15 @@ Updated: 2026-09-12
    - Depends on: latent window-jitter milestone `a359246` and green CI `34742692876`.
    - Complete when: symmetric-support probability simplex, density-ratio bounds kappa `[1,2,4]`, fractions `[0,0.25,0.5,1.0]`, exact greedy linear-program extrema, expected robust count transition, eight controls, J127–J134 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J127–J134 and `latent_lag_law_robustness` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement bounded latent-lag law profiler.
+3. [x] Implement bounded latent-lag law profiler.
    - Depends on: tasks 1–2.
    - Complete when: probability-box validation, greedy/brute-force extrema, uniform recovery, risk envelope, monotonic widening, count transition, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve robustness limits/nonclaims.
    - Test: report tests plus deterministic artifact equality.
