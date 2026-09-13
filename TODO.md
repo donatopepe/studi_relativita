@@ -40,7 +40,7 @@ Updated: 2026-09-12
 - Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
 - Root result: positive Jensen fourth-moment correction makes latent counts `[87,87,87,87]` versus averaged-kernel `[87,88,88,88]`; `N=64` remains unsafe in both models.
 - Scope negative: unconditional sample law is a non-Gaussian mixture; latent lag distribution and conditional Gaussianity remain toy assumptions.
-- Publication pending final closure commit, push and remote CI.
+- Published `main=origin/main` at `7670722`; GitHub Actions run `34742246665` tests/LaTeX passed.
 
 ## Historical milestone index
 
