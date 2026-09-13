@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr bounded latent-lag law robustness result
+
+Exact bounded-simplex linear-program control passes `8/8`, scenarios `134/134`. Density-ratio kappa 2 preserves worst count 87 for all fractions; kappa 4 restores worst count 88 at full support while best remains 87. `N=64` remains unsafe across envelope.
+
+```text
+KERR_LATENT_LAG_LAW_DENSITY_RATIO_BOUNDS_GIVE_EXACT_RISK_ENVELOPES_BUT_KAPPA_4_CAN_RESTORE_THE_INDEPENDENT_AR1_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_LATENT_LAG_LAW_BOUNDS_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Probability bounds and lag law are unmeasured toy assumptions; uniform-latent and all prior negatives remain preserved.
+
 ## Kerr latent window-jitter fourth-moment correction result
 
 Exact conditional-Wick/law-of-total-covariance control passes `8/8`, scenarios `126/126`. Positive Jensen gap makes latent window mixture retain more cancellation than Gaussian averaged-kernel surrogate. Latent count gates `[87,87,87,87]` differ from surrogate `[87,88,88,88]`; `N=64` remains unsafe in both.

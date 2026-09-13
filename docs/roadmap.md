@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr bounded latent-lag law robustness
+
+Exact density-ratio-bounded simplex profiling passes `8/8`, scenarios `134/134`. Kappa 2 preserves worst counts `[87,87,87,87]`; kappa 4 changes full-support worst count to 88 while best stays 87. `N=64` remains unsafe throughout exact risk envelope.
+
+```text
+KERR_LATENT_LAG_LAW_DENSITY_RATIO_BOUNDS_GIVE_EXACT_RISK_ENVELOPES_BUT_KAPPA_4_CAN_RESTORE_THE_INDEPENDENT_AR1_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_LATENT_LAG_LAW_BOUNDS_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured probability bounds/lag law, significance, evidence or detection. Uniform latent, Gaussian averaged-kernel, fixed-lag, paired synchronous, AR(1), prior sampling, mismatch/reference chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr latent window-jitter fourth-moment correction
 
 Exact law-of-total-covariance control passes `8/8`, scenarios `126/126`. Positive Jensen gap between `E||H K_D H||_F^2` and `||H E[K_D] H||_F^2` means latent one-lag-per-window mixture retains more common-noise cancellation than Gaussian averaged-kernel surrogate. Count gates are `[87,87,87,87]` versus `[87,88,88,88]`; `N=64` remains unsafe for both.
