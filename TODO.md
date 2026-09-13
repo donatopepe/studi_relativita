@@ -2,37 +2,37 @@
 
 Updated: 2026-09-12
 
-## Active milestone: Kerr bounded pairing-lag erosion MVP
+## Active milestone: Kerr bounded pairing-jitter erosion MVP
 
-**Objective:** quantify exact finite-N erosion of paired common-noise cancellation under a bounded signal/calibration timing lag and determine whether a one-window lag restores the independent AR(1) count gate.
+**Objective:** quantify exact finite-N erosion of paired common-noise cancellation when timing offset is uniformly distributed over a bounded symmetric integer support, and locate count-gate transition.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** lag domain, cross-time trace identity, synchronous limit, fixed lag-fraction risk, monotonic erosion, count-gate transition, basis/scale invariance, nonclaims.
+**Fixed cases/order:** jitter domain, mixture covariance identity, zero-jitter limit, fixed-support risk, monotonic erosion, count-gate transition, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify bounded pairing-lag specification.
-   - Depends on: paired-stream milestone `0b764be` and green CI `34710578828`.
-   - Complete when: shifted AR(1) cross-time matrix, exact centered trace factor, lag fractions `[0,0.25,0.5,1.0]`, counts `[16,64,256]`, expected count transition, eight controls, J103–J110 and nonclaims are preregistered.
+1. [ ] Ratify bounded pairing-jitter specification. **ACTIVE**
+   - Depends on: pairing-lag milestone `e2ce477` and green CI `34722176815`.
+   - Complete when: uniform jitter support, mixture cross-time covariance, fixed radii `[0,1,2,4,8,16]`, counts `[16,64,256]`, expected transition, eight controls, J111–J118 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J103–J110 and `pairing_lag` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J111–J118 and `pairing_jitter` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement bounded pairing-lag engine.
+3. [ ] Implement bounded pairing-jitter engine.
    - Depends on: tasks 1–2.
-   - Complete when: lag validation, dense/closed trace identity, synchronous recovery, fixed-fraction risk/monotonicity, one-window count-gate restoration, basis/scale null and guardrails pass.
+   - Complete when: support validation, direct/mixture identity, zero-jitter recovery, fixed-radius risk/monotonicity, count transition, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve erosion negative/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve jitter negative/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `110/110`; all 110 per-scenario and 21 per-category granular runs green.
