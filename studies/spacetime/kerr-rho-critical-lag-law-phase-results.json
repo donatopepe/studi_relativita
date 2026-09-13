@@ -1,0 +1,225 @@
+{
+  "basis_scale": {
+    "kappa_basis_risk_residual": 1.3877787807814457e-17,
+    "lower_scale_residual": 0.0,
+    "upper_scale_residual": 2.220446049250313e-16
+  },
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_RHO_CRITICAL_LATENT_LAG_LAW_PHASE_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "monotonicity",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "lower_root",
+        "passed": true,
+        "residual": 1.3877787807814457e-17,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "upper_root",
+        "passed": true,
+        "residual": 3.469446951953614e-17,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "classification",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "kappa_path",
+        "passed": true,
+        "residual": 3.0464519795714295e-13,
+        "threshold": 2e-09,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 2.220446049250313e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "rho_window_interpretation": "TOY_ASSUMPTION_BOUNDARY_NOT_CONFIDENCE_OR_STATIONARITY_EVIDENCE",
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "critical_kappa_path": {
+    "residual": 4.440892098500626e-16,
+    "rho_half_recovery": 3.0464519795714295e-13,
+    "rows": [
+      {
+        "expected": 12.485595531662376,
+        "kappa": 12.485595531662376,
+        "residual": 0.0,
+        "rho": 0.4995
+      },
+      {
+        "expected": 3.8902415649581967,
+        "kappa": 3.890241564958197,
+        "residual": 4.440892098500626e-16,
+        "rho": 0.5
+      },
+      {
+        "expected": 2.001949812105448,
+        "kappa": 2.0019498121054484,
+        "residual": 4.440892098500626e-16,
+        "rho": 0.5005
+      },
+      {
+        "expected": 1.17251807960107,
+        "kappa": 1.17251807960107,
+        "residual": 0.0,
+        "rho": 0.501
+      }
+    ],
+    "strictly_decreasing": true
+  },
+  "domain": {
+    "accepted": true,
+    "invalid_cases": 7,
+    "invalid_cases_rejected": 7,
+    "non_straddling_rejected": true
+  },
+  "lower_boundary": {
+    "in_fixed_window": true,
+    "kind": "unrestricted",
+    "lower": 0.49924343891655437,
+    "rho": 0.4992434389165544,
+    "risk": 0.05000000000000002,
+    "risk_residual": 1.3877787807814457e-17,
+    "side_above": 0.05000000104033564,
+    "side_below": 0.04999999895966442,
+    "sides_classify": true,
+    "steps": 100,
+    "upper": 0.4992434389165544,
+    "width": 5.551115123125783e-17
+  },
+  "parameters": {
+    "N": 87,
+    "fraction": 1.0,
+    "phase_cases": [
+      0.495,
+      0.5,
+      0.505
+    ],
+    "rho_bracket": [
+      0.49,
+      0.51
+    ],
+    "rho_grid": [
+      0.49,
+      0.495,
+      0.5,
+      0.505,
+      0.51
+    ],
+    "risk_ceiling": 0.05
+  },
+  "phase_classification": {
+    "boundaries": [
+      0.4992434389165544,
+      0.501157235677365
+    ],
+    "expected": [
+      "ALWAYS_SAFE_OVER_LAG_LAW_SIMPLEX",
+      "FINITE_KAPPA_SENSITIVE",
+      "ALWAYS_UNSAFE_FROM_UNIFORM_ONWARD"
+    ],
+    "matches": true,
+    "rows": [
+      {
+        "phase": "ALWAYS_SAFE_OVER_LAG_LAW_SIMPLEX",
+        "rho": 0.495,
+        "uniform_risk": 0.04936529761417027,
+        "unrestricted_risk": 0.04956281653912476
+      },
+      {
+        "phase": "FINITE_KAPPA_SENSITIVE",
+        "rho": 0.5,
+        "uniform_risk": 0.04987933355594747,
+        "unrestricted_risk": 0.05007884495194579
+      },
+      {
+        "phase": "ALWAYS_UNSAFE_FROM_UNIFORM_ONWARD",
+        "rho": 0.505,
+        "uniform_risk": 0.05040534472880789,
+        "unrestricted_risk": 0.05060689396611021
+      }
+    ],
+    "strict_order": true
+  },
+  "physical_gate": "PHYSICAL_KERR_AR1_RHO_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "result": "KERR_COUNT_87_LATENT_LAG_LAW_SENSITIVITY_EXISTS_ONLY_IN_TOY_AR1_WINDOW_RHO_0P499243439_TO_0P501157236_NOT_ELL0",
+  "risk_monotonicity": {
+    "ordered": true,
+    "rho_grid": [
+      0.49,
+      0.495,
+      0.5,
+      0.505,
+      0.51
+    ],
+    "uniform_risks": [
+      0.048862908355797686,
+      0.04936529761417027,
+      0.04987933355594747,
+      0.05040534472880789,
+      0.05094367303175201
+    ],
+    "uniform_strictly_increasing": true,
+    "unrestricted_risks": [
+      0.04905847897972988,
+      0.04956281653912476,
+      0.05007884495194579,
+      0.05060689396611021,
+      0.0511473067280867
+    ],
+    "unrestricted_strictly_increasing": true
+  },
+  "upper_boundary": {
+    "in_fixed_window": true,
+    "kind": "uniform",
+    "lower": 0.5011572356773649,
+    "rho": 0.501157235677365,
+    "risk": 0.05000000000000004,
+    "risk_residual": 3.469446951953614e-17,
+    "side_above": 0.050000001045496234,
+    "side_below": 0.04999999895450386,
+    "sides_classify": true,
+    "steps": 100,
+    "upper": 0.501157235677365,
+    "width": 1.1102230246251565e-16
+  }
+}
