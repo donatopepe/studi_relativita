@@ -16,15 +16,15 @@ Updated: 2026-09-12
    - Depends on: pairing-lag milestone `e2ce477` and green CI `34722176815`.
    - Complete when: uniform jitter support, mixture cross-time covariance, fixed radii `[0,1,2,4,8,16]`, counts `[16,64,256]`, expected transition, eight controls, J111–J118 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J111–J118 and `pairing_jitter` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement bounded pairing-jitter engine.
+3. [x] Implement bounded pairing-jitter engine.
    - Depends on: tasks 1–2.
    - Complete when: support validation, direct/mixture identity, zero-jitter recovery, fixed-radius risk/monotonicity, count transition, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve jitter negative/nonclaims.
    - Test: report tests plus deterministic artifact equality.
