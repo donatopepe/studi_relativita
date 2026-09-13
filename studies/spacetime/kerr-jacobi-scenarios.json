@@ -118,6 +118,14 @@
     {"id": "J115", "category": "pairing_jitter", "handler": "jitter_monotonicity"},
     {"id": "J116", "category": "pairing_jitter", "handler": "jitter_count_transition"},
     {"id": "J117", "category": "pairing_jitter", "handler": "jitter_basis_scale"},
-    {"id": "J118", "category": "pairing_jitter", "handler": "jitter_nonclaims"}
+    {"id": "J118", "category": "pairing_jitter", "handler": "jitter_nonclaims"},
+    {"id": "J119", "category": "latent_pairing_jitter", "handler": "latent_domain"},
+    {"id": "J120", "category": "latent_pairing_jitter", "handler": "latent_identity"},
+    {"id": "J121", "category": "latent_pairing_jitter", "handler": "latent_zero"},
+    {"id": "J122", "category": "latent_pairing_jitter", "handler": "latent_jensen"},
+    {"id": "J123", "category": "latent_pairing_jitter", "handler": "latent_risk"},
+    {"id": "J124", "category": "latent_pairing_jitter", "handler": "latent_count_contrast"},
+    {"id": "J125", "category": "latent_pairing_jitter", "handler": "latent_basis_scale"},
+    {"id": "J126", "category": "latent_pairing_jitter", "handler": "latent_nonclaims"}
   ]
 }
