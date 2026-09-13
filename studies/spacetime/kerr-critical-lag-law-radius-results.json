@@ -1,0 +1,233 @@
+{
+  "active_set_identity": {
+    "counts_match": true,
+    "residual": 1.734723475976807e-18,
+    "rows": [
+      {
+        "active_count": 58,
+        "interior_count": 1,
+        "kappa": 2.0,
+        "lp_beta": 0.0061884446831507334,
+        "piece_beta": 0.006188444683150732,
+        "residual": 1.734723475976807e-18,
+        "upper_count": 58
+      },
+      {
+        "active_count": 50,
+        "interior_count": 0,
+        "kappa": 2.5,
+        "lp_beta": 0.005282185648416387,
+        "piece_beta": 0.005282185648416388,
+        "residual": 8.673617379884035e-19,
+        "upper_count": 50
+      },
+      {
+        "active_count": 43,
+        "interior_count": 1,
+        "kappa": 3.0,
+        "lp_beta": 0.00460560824664322,
+        "piece_beta": 0.0046056082466432195,
+        "residual": 8.673617379884035e-19,
+        "upper_count": 43
+      },
+      {
+        "active_count": 38,
+        "interior_count": 1,
+        "kappa": 3.5,
+        "lp_beta": 0.004081241339695317,
+        "piece_beta": 0.004081241339695317,
+        "residual": 0.0,
+        "upper_count": 38
+      },
+      {
+        "active_count": 35,
+        "interior_count": 0,
+        "kappa": 4.0,
+        "lp_beta": 0.003662397939085148,
+        "piece_beta": 0.0036623979390851486,
+        "residual": 4.336808689942018e-19,
+        "upper_count": 35
+      }
+    ]
+  },
+  "basis_scale": {
+    "basis_risk_residual": 0.0,
+    "basis_target_residual": 4.336808689942018e-19,
+    "scale_root_residual": 2.3359092438113294e-13
+  },
+  "bracket": {
+    "grid": [
+      2.0,
+      2.5,
+      3.0,
+      3.5,
+      4.0
+    ],
+    "lower_passes": true,
+    "risks": [
+      0.04994778324792664,
+      0.0499671600709467,
+      0.04998162604598372,
+      0.0499928375918708,
+      0.05000179292818822
+    ],
+    "strictly_increasing": true,
+    "upper_fails": true
+  },
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_CRITICAL_LATENT_LAG_LAW_RADIUS_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "active_set",
+        "passed": true,
+        "residual": 1.734723475976807e-18,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "bracket",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "root",
+        "passed": true,
+        "residual": 3.0464519795714295e-13,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "sides",
+        "passed": true,
+        "residual": 0.049999999983425775,
+        "threshold": 0.05,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "support",
+        "passed": true,
+        "residual": 0.04988279666219228,
+        "threshold": 0.05,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 2.3359092438113294e-13,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "critical_kappa_interpretation": "TOY_NUISANCE_SET_THRESHOLD_NOT_CONFIDENCE_OR_SIGNIFICANCE",
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "critical_root": {
+    "active_count": 35,
+    "active_interval": [
+      3.8611111111111107,
+      4.0
+    ],
+    "analytic": 3.8902415649578925,
+    "bisection": {
+      "lower": 3.8902415649581967,
+      "midpoint": 3.890241564958197,
+      "steps": 100,
+      "upper": 3.890241564958197,
+      "width": 4.440892098500626e-16
+    },
+    "coefficients": {
+      "A": -0.00036779001624147214,
+      "B": 0.006165448706669642,
+      "C": 0.0035921958273836267
+    },
+    "in_fixed_window": true,
+    "residual": 3.0464519795714295e-13,
+    "risk": 0.05,
+    "risk_residual": 0.0,
+    "target_beta": 0.0037462536551390933
+  },
+  "domain": {
+    "accepted": true,
+    "invalid_cases": 6,
+    "invalid_cases_rejected": 6,
+    "outside_active_root_rejected": true
+  },
+  "parameters": {
+    "N": 87,
+    "bracket": [
+      2.0,
+      4.0
+    ],
+    "fraction": 1.0,
+    "rho": 0.5,
+    "risk_ceiling": 0.05,
+    "side_epsilon": 1e-06
+  },
+  "physical_gate": "PHYSICAL_KERR_LATENT_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "result": "KERR_FULL_SUPPORT_LATENT_LAG_LAW_HAS_TOY_CRITICAL_DENSITY_RATIO_KAPPA_3P890241565_FOR_THE_COUNT_87_GATE_NOT_ELL0",
+  "side_classification": {
+    "above": 3.8902425649578927,
+    "above_count": 88,
+    "below": 3.8902405649578924,
+    "below_count": 87,
+    "epsilon": 1e-06,
+    "risk_87_above": 0.05000000001657424,
+    "risk_87_below": 0.049999999983425775,
+    "risk_88_above": 0.049432145567733385,
+    "risk_88_below": 0.04943214553387352
+  },
+  "support_contrast": {
+    "full_fails": true,
+    "rows": [
+      {
+        "count_87_passes": true,
+        "fraction": 0.0,
+        "radius": 0,
+        "unrestricted_worst_risk_87": 0.04967047699943985
+      },
+      {
+        "count_87_passes": true,
+        "fraction": 0.25,
+        "radius": 22,
+        "unrestricted_worst_risk_87": 0.04977703673670848
+      },
+      {
+        "count_87_passes": true,
+        "fraction": 0.5,
+        "radius": 44,
+        "unrestricted_worst_risk_87": 0.04988279666219228
+      },
+      {
+        "count_87_passes": false,
+        "fraction": 1.0,
+        "radius": 87,
+        "unrestricted_worst_risk_87": 0.05007884495194579
+      }
+    ],
+    "subfull_all_pass": true
+  }
+}
