@@ -150,6 +150,14 @@
     {"id": "J147", "category": "latent_lag_rho_phase", "handler": "rhophase_classification"},
     {"id": "J148", "category": "latent_lag_rho_phase", "handler": "rhophase_kappa_path"},
     {"id": "J149", "category": "latent_lag_rho_phase", "handler": "rhophase_basis_scale"},
-    {"id": "J150", "category": "latent_lag_rho_phase", "handler": "rhophase_nonclaims"}
+    {"id": "J150", "category": "latent_lag_rho_phase", "handler": "rhophase_nonclaims"},
+    {"id": "J151", "category": "latent_lag_count_phase", "handler": "countphase_domain"},
+    {"id": "J152", "category": "latent_lag_count_phase", "handler": "countphase_iid"},
+    {"id": "J153", "category": "latent_lag_count_phase", "handler": "countphase_identity"},
+    {"id": "J154", "category": "latent_lag_count_phase", "handler": "countphase_boundaries"},
+    {"id": "J155", "category": "latent_lag_count_phase", "handler": "countphase_ordering"},
+    {"id": "J156", "category": "latent_lag_count_phase", "handler": "countphase_width"},
+    {"id": "J157", "category": "latent_lag_count_phase", "handler": "countphase_basis_scale"},
+    {"id": "J158", "category": "latent_lag_count_phase", "handler": "countphase_nonclaims"}
   ]
 }
