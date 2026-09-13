@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr bounded pairing-jitter erosion
+
+Exact centered Gaussian mixture-kernel control passes `8/8`, scenarios `118/118`. At toy rho 0.5, cancellation ratio at N=64 falls from `1` to `0.073046173` over radii `[0,1,2,4,8,16]`; count gates become `[87,87,87,87,87,88]`, while `N=64` remains unsafe throughout.
+
+```text
+KERR_BOUNDED_UNIFORM_PAIRING_JITTER_MONOTONICALLY_ERODES_COMMON_NOISE_CANCELLATION_AND_RADIUS_16_RESTORES_THE_INDEPENDENT_AR1_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_PAIRING_JITTER_DISTRIBUTION_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured jitter, pairing, common-noise model, significance, evidence or detection. Model is Gaussian covariance-kernel averaging, not latent non-Gaussian window mixing. Fixed-lag, paired synchronous, AR(1), prior sampling, mismatch/reference chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr bounded pairing-lag erosion
 
 Exact centered cross-time trace control passes `8/8`, scenarios `110/110`. At toy rho 0.5, cancellation ratio at N=64 falls from `1` to `0.004159271` as lag fraction moves from zero to one window; count gate transitions `[87,87,87,88]`, while `N=64` remains unsafe throughout.

@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr bounded pairing-jitter erosion result
+
+Exact centered Gaussian uniform-kernel control passes `8/8`, scenarios `118/118`. Cancellation erodes monotonically with jitter radius; at N=64 normalized factor falls from `1` to `0.073046173`. Count gates `[87,87,87,87,87,88]` restore independent 88 at radius 16; `N=64` remains unsafe.
+
+```text
+KERR_BOUNDED_UNIFORM_PAIRING_JITTER_MONOTONICALLY_ERODES_COMMON_NOISE_CANCELLATION_AND_RADIUS_16_RESTORES_THE_INDEPENDENT_AR1_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_PAIRING_JITTER_DISTRIBUTION_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Jitter/pairing/common-noise assumptions are unmeasured. This is Gaussian covariance-kernel averaging, not latent non-Gaussian window mixing; fixed-lag and prior chain remain preserved.
+
 ## Kerr bounded pairing-lag erosion result
 
 Exact centered shifted-AR(1) cross-time control passes `8/8`, scenarios `110/110`. Cancellation erodes monotonically with lag; at N=64 the normalized factor falls from `1` to `0.004159271` by one-window lag. Count gates `[87,87,87,88]` restore independent 88 only at one window; `N=64` remains unsafe.
