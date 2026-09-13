@@ -2,37 +2,37 @@
 
 Updated: 2026-09-12
 
-## Active milestone: Kerr latent window-jitter mixture MVP
+## Active milestone: Kerr bounded latent-lag law robustness MVP
 
-**Objective:** resolve the scope gap between a Gaussian averaged jitter kernel and a latent window-level random lag by applying law of total covariance to the paired covariance estimator.
+**Objective:** profile unknown latent lag probabilities inside an explicit density-ratio box and test whether uniform-law count conclusions survive bounded distributional uncertainty.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** latent-mixture domain, conditional fourth-moment identity, zero-support limit, Jensen gap, fixed-fraction risk, count-gate contrast, basis/scale invariance, nonclaims.
+**Fixed cases/order:** probability-box domain, linear-program extremum identity, uniform limit, fixed-box envelope, monotonic widening, count-gate transition, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify latent window-jitter specification.
-   - Depends on: Gaussian mixture-kernel milestone `403db56` and green CI `34732852583`.
-   - Complete when: one latent lag per centered window, conditional Gaussian law, total-covariance decomposition, fractions `[0,0.25,0.5,1.0]`, counts `[16,64,256]`, expected count contrast, eight controls, J119–J126 and nonclaims are preregistered.
+1. [ ] Ratify bounded latent-lag law specification. **ACTIVE**
+   - Depends on: latent window-jitter milestone `a359246` and green CI `34742692876`.
+   - Complete when: symmetric-support probability simplex, density-ratio bounds kappa `[1,2,4]`, fractions `[0,0.25,0.5,1.0]`, exact greedy linear-program extrema, expected robust count transition, eight controls, J127–J134 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J119–J126 and `latent_pairing_jitter` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J127–J134 and `latent_lag_law_robustness` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement latent window-jitter engine.
+3. [ ] Implement bounded latent-lag law profiler.
    - Depends on: tasks 1–2.
-   - Complete when: latent support validation, average conditional cross-Wishart factor, zero-support recovery, Jensen gap, risk/count contrast, basis/scale null and guardrails pass.
+   - Complete when: probability-box validation, greedy/brute-force extrema, uniform recovery, risk envelope, monotonic widening, count transition, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve latent-mixture scope/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve robustness limits/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `126/126`; all 126 per-scenario and 23 per-category granular runs green.
