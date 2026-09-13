@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr rho-critical latent-lag-law phase result
+
+Exact monotone bisection control passes `8/8`, scenarios `150/150`. Full-support N=87 has finite-kappa-sensitive toy rho window `[0.499243438917,0.501157235677]`; below all lag laws pass and above uniform already fails.
+
+```text
+KERR_COUNT_87_LATENT_LAG_LAW_SENSITIVITY_EXISTS_ONLY_IN_TOY_AR1_WINDOW_RHO_0P499243439_TO_0P501157236_NOT_ELL0
+PHYSICAL_KERR_AR1_RHO_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Rho window is toy boundary, not confidence/stationarity evidence or measured tolerance; critical-kappa and all prior negatives remain preserved.
+
 ## Kerr critical latent-lag density-ratio radius result
 
 Exact active-set quadratic control passes `8/8`, scenarios `142/142`. At full support, rho 0.5 and N=87, worst-risk threshold is `kappa*=3.890241564958`; infinitesimally below preserves count 87 and above requires 88. Sub-full support never crosses even unrestricted.

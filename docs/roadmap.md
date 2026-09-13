@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr rho-critical latent-lag-law phase window
+
+Exact rho-boundary bisection passes `8/8`, scenarios `150/150`. For full support and N=87, lag-law sensitivity exists only in toy interval `[0.499243438917,0.501157235677]`: below every lag law passes; within finite kappa matters; above uniform already fails.
+
+```text
+KERR_COUNT_87_LATENT_LAG_LAW_SENSITIVITY_EXISTS_ONLY_IN_TOY_AR1_WINDOW_RHO_0P499243439_TO_0P501157236_NOT_ELL0
+PHYSICAL_KERR_AR1_RHO_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Window is toy assumption boundary, not confidence interval, measured rho/stationarity, significance, evidence or detection. Critical kappa, bounded-law envelope, latent/averaged jitter, AR(1), prior chain and `F_0` remain preserved.
+
 ## Kerr critical latent-lag density-ratio radius
 
 Exact active-set quadratic passes `8/8`, scenarios `142/142`. For full-window support, toy rho 0.5 and N=87, worst-risk count transition occurs at `kappa*=3.890241564958`; below passes 87, above requires 88. Sub-full supports do not cross even with unrestricted lag probabilities.
