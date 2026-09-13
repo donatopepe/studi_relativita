@@ -28,9 +28,19 @@ Updated: 2026-09-12
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve latent-mixture scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
+
+## Local closure evidence
+
+- Scientific controls: `8/8`.
+- Scenario battery: `126/126`; all 126 per-scenario and 23 per-category granular runs green.
+- Full suite: `1293/1293`.
+- Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
+- Root result: positive Jensen fourth-moment correction makes latent counts `[87,87,87,87]` versus averaged-kernel `[87,88,88,88]`; `N=64` remains unsafe in both models.
+- Scope negative: unconditional sample law is a non-Gaussian mixture; latent lag distribution and conditional Gaussianity remain toy assumptions.
+- Publication pending final closure commit, push and remote CI.
 
 ## Historical milestone index
 
