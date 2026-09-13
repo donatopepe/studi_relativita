@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify count-dependent rho phase specification. **ACTIVE**
+1. [x] Ratify count-dependent rho phase specification.
    - Depends on: rho-critical phase milestone `d793dd1` and green CI `34774557152`.
    - Complete when: counts `[53,54,64,87,128,256]`, full support, risk ceiling `0.05`, iid-side phase onset, expected rho boundaries/widths, eight controls, J151–J158 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J151–J158 and `latent_lag_count_phase` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
