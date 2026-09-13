@@ -32,6 +32,10 @@ Updated: 2026-09-12
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
+## Historical milestone index
+
+- Kerr bounded latent-lag law robustness MVP: tasks 1–5 completed; scientific `8/8`, scenarios `134/134`, suite `1306/1306`, CI green at `76461b4`.
+
 ## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
