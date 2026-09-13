@@ -28,9 +28,19 @@ Updated: 2026-09-12
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve phase/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
+
+## Local closure evidence
+
+- Scientific controls: `8/8`.
+- Scenario battery: `150/150`; all 150 per-scenario and 26 per-category granular runs green.
+- Full suite: `1332/1332`.
+- Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
+- Root result: count-87 finite-kappa sensitivity exists only for rho in `[0.499243438917,0.501157235677]`; below every lag law passes, above uniform already fails. Kappa path decreases `[12.485595532,3.890241565,2.001949812,1.172518080]`.
+- Scope negative: rho window is toy assumption boundary, not confidence interval, stationarity evidence or measured correlation tolerance.
+- Publication pending final closure commit, push and remote CI.
 
 ## Historical milestone index
 
