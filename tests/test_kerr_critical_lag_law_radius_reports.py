@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('active-set','142/142',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_LATENT_LAG_LAW_DENSITY_RATIO_BOUNDS_GIVE_EXACT_RISK_ENVELOPES','KERR_LATENT_WINDOW_JITTER_HAS_A_POSITIVE_FOURTH_MOMENT_JENSEN_CORRECTION','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text())
+  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1319/1319`.',TODO.read_text())
 if __name__=='__main__':unittest.main()
