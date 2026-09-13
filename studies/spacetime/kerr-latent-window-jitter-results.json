@@ -1,0 +1,454 @@
+{
+  "basis_scale": {
+    "basis_residual": 2.220446049250313e-16,
+    "scale_residual": 0.0
+  },
+  "conditional_fourth_moment_identity": {
+    "cases": [
+      {
+        "N": 8,
+        "compact": 181.6101097416058,
+        "explicit_conditional_average": 181.61010974160584,
+        "fraction": 0.25,
+        "radius": 2,
+        "residual": 2.842170943040401e-14
+      },
+      {
+        "N": 16,
+        "compact": 94.19945562721331,
+        "explicit_conditional_average": 94.19945562721331,
+        "fraction": 0.5,
+        "radius": 8,
+        "residual": 0.0
+      },
+      {
+        "N": 32,
+        "compact": 47.773688329768476,
+        "explicit_conditional_average": 47.77368832976848,
+        "fraction": 1.0,
+        "radius": 32,
+        "residual": 7.105427357601002e-15
+      }
+    ],
+    "residual": 2.842170943040401e-14
+  },
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_LATENT_WINDOW_JITTER_FOURTH_MOMENT_CORRECTION_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "conditional_identity",
+        "passed": true,
+        "residual": 2.842170943040401e-14,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "zero_support",
+        "passed": true,
+        "residual": 1.4210854715202004e-14,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "jensen",
+        "passed": true,
+        "residual": 3.469446951953614e-18,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "risk",
+        "passed": true,
+        "residual": 0.01695237672545094,
+        "threshold": 0.2671226678128776,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "count_contrast",
+        "passed": true,
+        "residual": 0.04987933355594747,
+        "threshold": 0.05,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 2.220446049250313e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "structural_dead_end": "NOT_DECLARED",
+    "unconditional_sample_law": "NON_GAUSSIAN_MIXTURE_NOT_EMPIRICALLY_VALIDATED"
+  },
+  "count_contrast": {
+    "all_N64_unsafe": true,
+    "all_predecessors_fail": true,
+    "expected_kernel": [
+      87,
+      88,
+      88,
+      88
+    ],
+    "expected_latent": [
+      87,
+      87,
+      87,
+      87
+    ],
+    "kernel_counts": [
+      87,
+      88,
+      88,
+      88
+    ],
+    "latent_counts": [
+      87,
+      87,
+      87,
+      87
+    ],
+    "rows": [
+      {
+        "fraction": 0.0,
+        "kernel_N64_risk": 0.06749880400351307,
+        "kernel_count": 87,
+        "kernel_risk_at_count": 0.04967047699943985,
+        "kernel_risk_at_predecessor": 0.05024765350736132,
+        "latent_N64_risk": 0.06749880400351307,
+        "latent_count": 87,
+        "latent_risk_at_count": 0.04967047699943985,
+        "latent_risk_at_predecessor": 0.05024765350736132
+      },
+      {
+        "fraction": 0.25,
+        "kernel_N64_risk": 0.0680147915067351,
+        "kernel_count": 88,
+        "kernel_risk_at_count": 0.04948940750022737,
+        "kernel_risk_at_predecessor": 0.05005812340743137,
+        "latent_N64_risk": 0.06757161342759396,
+        "latent_count": 87,
+        "latent_risk_at_count": 0.049724010458828016,
+        "latent_risk_at_predecessor": 0.05030246885541561
+      },
+      {
+        "fraction": 0.5,
+        "kernel_N64_risk": 0.06804908207870712,
+        "kernel_count": 88,
+        "kernel_risk_at_count": 0.04950793550495862,
+        "kernel_risk_at_predecessor": 0.05007673497438011,
+        "latent_N64_risk": 0.0676446895979509,
+        "latent_count": 87,
+        "latent_risk_at_count": 0.04977770015226013,
+        "latent_risk_at_predecessor": 0.0503549442979325
+      },
+      {
+        "fraction": 1.0,
+        "kernel_N64_risk": 0.0680554522741389,
+        "kernel_count": 88,
+        "kernel_risk_at_count": 0.04951137066264062,
+        "kernel_risk_at_predecessor": 0.05008009897497709,
+        "latent_N64_risk": 0.0677845310258719,
+        "latent_count": 87,
+        "latent_risk_at_count": 0.04987933355594747,
+        "latent_risk_at_predecessor": 0.050458983301689374
+      }
+    ]
+  },
+  "domain": {
+    "accepted": true,
+    "invalid_cases": 8,
+    "invalid_cases_rejected": 8,
+    "support": 9,
+    "weight_residual": 0.0,
+    "weight_sum": 1.0
+  },
+  "jensen_gap": {
+    "latent_risk_not_greater": true,
+    "minimum_positive_gap": 0.003233534285043301,
+    "rows": [
+      {
+        "N": 16,
+        "fraction": 0.0,
+        "gap": 0.0,
+        "kernel_beta": 0.10256636780222361,
+        "kernel_risk": 0.2659195060678965,
+        "latent_beta": 0.10256636780222361,
+        "latent_risk": 0.2659195060678965,
+        "radius": 0
+      },
+      {
+        "N": 16,
+        "fraction": 0.25,
+        "gap": 0.06374275479693517,
+        "kernel_beta": 0.023091603280437908,
+        "kernel_risk": 0.26761876465476536,
+        "latent_beta": 0.08683435807737308,
+        "latent_risk": 0.2662558738794215,
+        "radius": 4
+      },
+      {
+        "N": 16,
+        "fraction": 0.5,
+        "gap": 0.06759326594973024,
+        "kernel_beta": 0.003935575172137408,
+        "kernel_risk": 0.2680283417758703,
+        "latent_beta": 0.07152884112186765,
+        "latent_risk": 0.2665831228026439,
+        "radius": 8
+      },
+      {
+        "N": 16,
+        "fraction": 1.0,
+        "gap": 0.04629094903823854,
+        "kernel_beta": 3.2321156952460616e-06,
+        "kernel_risk": 0.26811241963058785,
+        "latent_beta": 0.046294181153933786,
+        "latent_risk": 0.2671226678128776,
+        "radius": 16
+      },
+      {
+        "N": 64,
+        "fraction": 0.0,
+        "gap": -3.469446951953614e-18,
+        "kernel_beta": 0.026034596935009598,
+        "kernel_risk": 0.06749880400351307,
+        "latent_beta": 0.026034596935009594,
+        "latent_risk": 0.06749880400351307,
+        "radius": 0
+      },
+      {
+        "N": 64,
+        "fraction": 0.25,
+        "gap": 0.020727553624349755,
+        "kernel_beta": 0.0019017276756464491,
+        "kernel_risk": 0.0680147915067351,
+        "latent_beta": 0.022629281299996203,
+        "latent_risk": 0.06757161342759396,
+        "radius": 16
+      },
+      {
+        "N": 64,
+        "fraction": 0.5,
+        "gap": 0.018913541135432553,
+        "kernel_beta": 0.0002979487370834516,
+        "kernel_risk": 0.06804908207870712,
+        "latent_beta": 0.019211489872516006,
+        "latent_risk": 0.0676446895979509,
+        "radius": 32
+      },
+      {
+        "N": 64,
+        "fraction": 1.0,
+        "gap": 0.012671056998830867,
+        "kernel_beta": 1.3045711758317211e-08,
+        "kernel_risk": 0.0680554522741389,
+        "latent_beta": 0.012671070044542626,
+        "latent_risk": 0.0677845310258719,
+        "radius": 64
+      },
+      {
+        "N": 256,
+        "fraction": 0.0,
+        "gap": -8.673617379884035e-19,
+        "kernel_beta": 0.006511575791673458,
+        "kernel_risk": 0.016882288564458052,
+        "latent_beta": 0.006511575791673457,
+        "latent_risk": 0.016882288564458052,
+        "radius": 0
+      },
+      {
+        "N": 256,
+        "fraction": 0.25,
+        "gap": 0.005562925462484568,
+        "kernel_beta": 0.0001257557483984598,
+        "kernel_risk": 0.017018824477562387,
+        "latent_beta": 0.005688681210883027,
+        "latent_risk": 0.016899882963018524,
+        "radius": 64
+      },
+      {
+        "N": 256,
+        "fraction": 0.5,
+        "gap": 0.004844808136075282,
+        "kernel_beta": 1.965643217513304e-05,
+        "kernel_risk": 0.017021092998585865,
+        "latent_beta": 0.004864464568250415,
+        "latent_risk": 0.01691750562872708,
+        "radius": 128
+      },
+      {
+        "N": 256,
+        "fraction": 1.0,
+        "gap": 0.003233534285043301,
+        "kernel_beta": 5.1539504032649066e-11,
+        "kernel_risk": 0.01702151327379879,
+        "latent_beta": 0.003233534336582805,
+        "latent_risk": 0.01695237672545094,
+        "radius": 256
+      }
+    ],
+    "zero_support_residual": 3.469446951953614e-18
+  },
+  "latent_risk": {
+    "all_count_decreasing": true,
+    "all_fraction_increasing": true,
+    "by_count": [
+      {
+        "N": 16,
+        "risks": [
+          0.2659195060678965,
+          0.2662558738794215,
+          0.2665831228026439,
+          0.2671226678128776
+        ],
+        "strictly_increasing": true
+      },
+      {
+        "N": 64,
+        "risks": [
+          0.06749880400351307,
+          0.06757161342759396,
+          0.0676446895979509,
+          0.0677845310258719
+        ],
+        "strictly_increasing": true
+      },
+      {
+        "N": 256,
+        "risks": [
+          0.016882288564458052,
+          0.016899882963018524,
+          0.01691750562872708,
+          0.01695237672545094
+        ],
+        "strictly_increasing": true
+      }
+    ],
+    "rows": [
+      {
+        "fraction": 0.0,
+        "radii": [
+          0,
+          0,
+          0
+        ],
+        "risks": [
+          0.2659195060678965,
+          0.06749880400351307,
+          0.016882288564458052
+        ],
+        "strictly_decreasing": true
+      },
+      {
+        "fraction": 0.25,
+        "radii": [
+          4,
+          16,
+          64
+        ],
+        "risks": [
+          0.2662558738794215,
+          0.06757161342759396,
+          0.016899882963018524
+        ],
+        "strictly_decreasing": true
+      },
+      {
+        "fraction": 0.5,
+        "radii": [
+          8,
+          32,
+          128
+        ],
+        "risks": [
+          0.2665831228026439,
+          0.0676446895979509,
+          0.01691750562872708
+        ],
+        "strictly_decreasing": true
+      },
+      {
+        "fraction": 1.0,
+        "radii": [
+          16,
+          64,
+          256
+        ],
+        "risks": [
+          0.2671226678128776,
+          0.0677845310258719,
+          0.01695237672545094
+        ],
+        "strictly_decreasing": true
+      }
+    ]
+  },
+  "parameters": {
+    "counts": [
+      16,
+      64,
+      256
+    ],
+    "latent_law": "ONE_UNIFORM_INTEGER_LAG_PER_CENTERED_WINDOW",
+    "radius_fractions": [
+      0.0,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "rho": 0.5,
+    "risk_ceiling": 0.05
+  },
+  "physical_gate": "PHYSICAL_KERR_LATENT_JITTER_DISTRIBUTION_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "result": "KERR_LATENT_WINDOW_JITTER_HAS_A_POSITIVE_FOURTH_MOMENT_JENSEN_CORRECTION_RELATIVE_TO_THE_GAUSSIAN_AVERAGED_KERNEL_BUT_DOES_NOT_REMOVE_AR1_SAMPLE_BURDEN_NOT_ELL0",
+  "zero_support_limit": {
+    "cases": [
+      {
+        "N": 16,
+        "latent_mse": 93.96496090563788,
+        "latent_risk": 0.2659195060678965,
+        "paired_mse": 93.9649609056379,
+        "paired_risk": 0.26591950606789655
+      },
+      {
+        "N": 64,
+        "latent_mse": 23.851287079888003,
+        "latent_risk": 0.06749880400351307,
+        "paired_mse": 23.851287079888003,
+        "paired_risk": 0.06749880400351307
+      },
+      {
+        "N": 256,
+        "latent_mse": 5.965502901287585,
+        "latent_risk": 0.016882288564458052,
+        "paired_mse": 5.965502901287586,
+        "paired_risk": 0.016882288564458052
+      }
+    ],
+    "minimum_count": 87,
+    "residual": 1.4210854715202004e-14
+  }
+}

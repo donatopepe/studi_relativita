@@ -10,6 +10,7 @@
       "cross_stream_dependence",
       "estimated_mean",
       "finite_sample",
+      "latent_pairing_jitter",
       "likelihood",
       "noise",
       "orientation",
@@ -142,7 +143,15 @@
       "J115",
       "J116",
       "J117",
-      "J118"
+      "J118",
+      "J119",
+      "J120",
+      "J121",
+      "J122",
+      "J123",
+      "J124",
+      "J125",
+      "J126"
     ]
   },
   "results": [
@@ -971,13 +980,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 1.0
+    },
+    {
+      "category": "latent_pairing_jitter",
+      "id": "J119",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_pairing_jitter",
+      "id": "J120",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_pairing_jitter",
+      "id": "J121",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_pairing_jitter",
+      "id": "J122",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_pairing_jitter",
+      "id": "J123",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_pairing_jitter",
+      "id": "J124",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_pairing_jitter",
+      "id": "J125",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_pairing_jitter",
+      "id": "J126",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 118,
+    "PASS": 126,
     "SKIP": 0
   }
 }
