@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr count-dependent rho phase window
+
+Exact count-generic phase map passes `8/8`, scenarios `158/158`. N=53 is unsafe already at iid; N=54 is first iid-safe toy count. For counts `[54,64,87,128,256]`, rho boundaries rise while sensitive widths contract from `0.011608541494` to `0.000693548809`.
+
+```text
+KERR_LATENT_LAG_LAW_RHO_SENSITIVITY_WINDOW_MOVES_UPWARD_AND_NARROWS_WITH_TOY_SAMPLE_COUNT_WHILE_N53_IS_UNSAFE_ALREADY_AT_IID_NOT_ELL0
+PHYSICAL_KERR_SAMPLE_COUNT_AR1_RHO_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+Count/rho map is toy Markov gate, not sample-size prescription, confidence, measured rho/stationarity, evidence or detection. N87 phase, critical kappa, prior chain and `F_0` remain preserved.
+
 ## Kerr rho-critical latent-lag-law phase window
 
 Exact rho-boundary bisection passes `8/8`, scenarios `150/150`. For full support and N=87, lag-law sensitivity exists only in toy interval `[0.499243438917,0.501157235677]`: below every lag law passes; within finite kappa matters; above uniform already fails.

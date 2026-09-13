@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr count-dependent rho phase result
+
+Exact finite-count phase control passes `8/8`, scenarios `158/158`. N=53 fails already at iid; N=54 is first iid-safe toy count. Rho phase boundaries increase with N while lag-law-sensitive width contracts strictly through N=256.
+
+```text
+KERR_LATENT_LAG_LAW_RHO_SENSITIVITY_WINDOW_MOVES_UPWARD_AND_NARROWS_WITH_TOY_SAMPLE_COUNT_WHILE_N53_IS_UNSAFE_ALREADY_AT_IID_NOT_ELL0
+PHYSICAL_KERR_SAMPLE_COUNT_AR1_RHO_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Count/rho surface is toy gate, not sample prescription or measured stationarity; N87 phase and all prior negatives remain preserved.
+
 ## Kerr rho-critical latent-lag-law phase result
 
 Exact monotone bisection control passes `8/8`, scenarios `150/150`. Full-support N=87 has finite-kappa-sensitive toy rho window `[0.499243438917,0.501157235677]`; below all lag laws pass and above uniform already fails.
