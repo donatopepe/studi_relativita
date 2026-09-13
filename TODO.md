@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify critical density-ratio specification. **ACTIVE**
+1. [x] Ratify critical density-ratio specification.
    - Depends on: bounded latent-lag law milestone `76461b4` and green CI `34751824190`.
    - Complete when: full-support `N=87`, risk ceiling `0.05`, active-set piecewise formula, fixed bracket `[2,4]`, expected critical kappa near `3.890241565`, support negatives, eight controls, J135–J142 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J135–J142 and `latent_lag_critical_radius` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
