@@ -40,7 +40,7 @@ Updated: 2026-09-12
 - Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
 - Root result: N=53 is unsafe already at iid; N=54 is first iid-safe toy count. For N `[54,64,87,128,256]`, both rho boundaries rise while widths contract `[0.011608541494,0.003285292625,0.001913796761,0.001280085551,0.000693548809]`.
 - Scope negative: count/rho map is toy Markov gate, not sample-size prescription, confidence interval or measured stationarity.
-- Publication pending final closure commit, push and remote CI.
+- Published `main=origin/main` at `35bd086`; GitHub Actions run `34788459944` tests/LaTeX passed.
 
 ## Historical milestone index
 
