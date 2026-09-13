@@ -32,6 +32,10 @@ Updated: 2026-09-12
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
+## Historical milestone index
+
+- Kerr bounded pairing-jitter erosion MVP: tasks 1–5 completed; scientific `8/8`, scenarios `118/118`, suite `1280/1280`, CI green at `403db56`.
+
 ## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
