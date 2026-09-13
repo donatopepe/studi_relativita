@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify bounded pairing-jitter specification. **ACTIVE**
+1. [x] Ratify bounded pairing-jitter specification.
    - Depends on: pairing-lag milestone `e2ce477` and green CI `34722176815`.
    - Complete when: uniform jitter support, mixture cross-time covariance, fixed radii `[0,1,2,4,8,16]`, counts `[16,64,256]`, expected transition, eight controls, J111–J118 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J111–J118 and `pairing_jitter` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
