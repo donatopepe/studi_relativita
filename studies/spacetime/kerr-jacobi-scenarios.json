@@ -142,6 +142,14 @@
     {"id": "J139", "category": "latent_lag_critical_radius", "handler": "critical_sides"},
     {"id": "J140", "category": "latent_lag_critical_radius", "handler": "critical_support"},
     {"id": "J141", "category": "latent_lag_critical_radius", "handler": "critical_basis_scale"},
-    {"id": "J142", "category": "latent_lag_critical_radius", "handler": "critical_nonclaims"}
+    {"id": "J142", "category": "latent_lag_critical_radius", "handler": "critical_nonclaims"},
+    {"id": "J143", "category": "latent_lag_rho_phase", "handler": "rhophase_domain"},
+    {"id": "J144", "category": "latent_lag_rho_phase", "handler": "rhophase_monotonicity"},
+    {"id": "J145", "category": "latent_lag_rho_phase", "handler": "rhophase_lower_root"},
+    {"id": "J146", "category": "latent_lag_rho_phase", "handler": "rhophase_upper_root"},
+    {"id": "J147", "category": "latent_lag_rho_phase", "handler": "rhophase_classification"},
+    {"id": "J148", "category": "latent_lag_rho_phase", "handler": "rhophase_kappa_path"},
+    {"id": "J149", "category": "latent_lag_rho_phase", "handler": "rhophase_basis_scale"},
+    {"id": "J150", "category": "latent_lag_rho_phase", "handler": "rhophase_nonclaims"}
   ]
 }
