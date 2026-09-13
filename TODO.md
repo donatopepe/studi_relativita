@@ -28,9 +28,19 @@ Updated: 2026-09-12
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve count-phase/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
+
+## Local closure evidence
+
+- Scientific controls: `8/8`.
+- Scenario battery: `158/158`; all 158 per-scenario and 27 per-category granular runs green.
+- Full suite: `1345/1345`.
+- Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
+- Root result: N=53 is unsafe already at iid; N=54 is first iid-safe toy count. For N `[54,64,87,128,256]`, both rho boundaries rise while widths contract `[0.011608541494,0.003285292625,0.001913796761,0.001280085551,0.000693548809]`.
+- Scope negative: count/rho map is toy Markov gate, not sample-size prescription, confidence interval or measured stationarity.
+- Publication pending final closure commit, push and remote CI.
 
 ## Historical milestone index
 
