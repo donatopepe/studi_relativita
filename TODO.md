@@ -28,9 +28,19 @@ Updated: 2026-09-12
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve robustness limits/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE**
+5. [x] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
+
+## Local closure evidence
+
+- Scientific controls: `8/8`.
+- Scenario battery: `134/134`; all 134 per-scenario and 24 per-category granular runs green.
+- Full suite: `1306/1306`.
+- Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
+- Root result: exact bounded-simplex LP gives kappa-2 worst counts `[87,87,87,87]`; kappa-4 worst `[87,87,87,88]`; best stays `[87,87,87,87]`. `N=64` remains unsafe across envelope.
+- Scope negative: density-ratio bounds and latent lag law remain unmeasured toy assumptions.
+- Publication pending final closure commit, push and remote CI.
 
 ## Historical milestone index
 
