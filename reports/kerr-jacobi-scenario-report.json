@@ -12,6 +12,7 @@
       "finite_sample",
       "latent_lag_critical_radius",
       "latent_lag_law_robustness",
+      "latent_lag_rho_phase",
       "latent_pairing_jitter",
       "likelihood",
       "noise",
@@ -169,7 +170,15 @@
       "J139",
       "J140",
       "J141",
-      "J142"
+      "J142",
+      "J143",
+      "J144",
+      "J145",
+      "J146",
+      "J147",
+      "J148",
+      "J149",
+      "J150"
     ]
   },
   "results": [
@@ -1166,13 +1175,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 1.0
+    },
+    {
+      "category": "latent_lag_rho_phase",
+      "id": "J143",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_lag_rho_phase",
+      "id": "J144",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_lag_rho_phase",
+      "id": "J145",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_lag_rho_phase",
+      "id": "J146",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_lag_rho_phase",
+      "id": "J147",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_lag_rho_phase",
+      "id": "J148",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_lag_rho_phase",
+      "id": "J149",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "latent_lag_rho_phase",
+      "id": "J150",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 142,
+    "PASS": 150,
     "SKIP": 0
   }
 }
