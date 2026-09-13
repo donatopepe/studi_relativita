@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr critical latent-lag density-ratio radius result
+
+Exact active-set quadratic control passes `8/8`, scenarios `142/142`. At full support, rho 0.5 and N=87, worst-risk threshold is `kappa*=3.890241564958`; infinitesimally below preserves count 87 and above requires 88. Sub-full support never crosses even unrestricted.
+
+```text
+KERR_FULL_SUPPORT_LATENT_LAG_LAW_HAS_TOY_CRITICAL_DENSITY_RATIO_KAPPA_3P890241565_FOR_THE_COUNT_87_GATE_NOT_ELL0
+PHYSICAL_KERR_LATENT_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Critical kappa is toy nuisance-set boundary, not statistical confidence or measured tolerance; bounded-law and all prior negatives remain preserved.
+
 ## Kerr bounded latent-lag law robustness result
 
 Exact bounded-simplex linear-program control passes `8/8`, scenarios `134/134`. Density-ratio kappa 2 preserves worst count 87 for all fractions; kappa 4 restores worst count 88 at full support while best remains 87. `N=64` remains unsafe across envelope.
