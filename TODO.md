@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify rho-critical phase specification. **ACTIVE**
+1. [x] Ratify rho-critical phase specification.
    - Depends on: critical lag-law radius milestone `bdb2446` and green CI `34762881660`.
    - Complete when: full-support `N=87`, risk ceiling `0.05`, rho bracket `[0.49,0.51]`, unrestricted/uniform boundary definitions, expected roots near `0.499243439` and `0.501157236`, fixed phase cases, eight controls, J143–J150 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J143–J150 and `latent_lag_rho_phase` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
