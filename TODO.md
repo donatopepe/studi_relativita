@@ -40,7 +40,7 @@ Updated: 2026-09-12
 - Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
 - Root result: full-support count-87 transition at `kappa*=3.890241564958`, active count 35; below passes, above requires 88. Sub-full supports never cross even in unrestricted simplex limit.
 - Scope negative: critical kappa is toy nuisance-set boundary, not confidence, significance or measured tolerance.
-- Publication pending final closure commit, push and remote CI.
+- Published `main=origin/main` at `df22bb5`; GitHub Actions run `34762469176` tests/LaTeX passed.
 
 ## Historical milestone index
 
