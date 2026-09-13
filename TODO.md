@@ -16,15 +16,15 @@ Updated: 2026-09-12
    - Depends on: rho-critical phase milestone `d793dd1` and green CI `34774557152`.
    - Complete when: counts `[53,54,64,87,128,256]`, full support, risk ceiling `0.05`, iid-side phase onset, expected rho boundaries/widths, eight controls, J151–J158 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J151–J158 and `latent_lag_count_phase` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement count-dependent rho phase engine.
+3. [x] Implement count-dependent rho phase engine.
    - Depends on: tasks 1–2.
    - Complete when: count validation, iid onset, bounded bisection roots, N87 recovery, boundary monotonicity, window contraction, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve count-phase/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
