@@ -32,6 +32,10 @@ Updated: 2026-09-12
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
+## Historical milestone index
+
+- Kerr critical lag-law radius MVP: tasks 1–5 completed; scientific `8/8`, scenarios `142/142`, suite `1319/1319`, CI green at `bdb2446`.
+
 ## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
