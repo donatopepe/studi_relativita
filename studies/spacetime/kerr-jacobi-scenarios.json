@@ -110,6 +110,14 @@
     {"id": "J107", "category": "pairing_lag", "handler": "lag_monotonicity"},
     {"id": "J108", "category": "pairing_lag", "handler": "lag_count_transition"},
     {"id": "J109", "category": "pairing_lag", "handler": "lag_basis_scale"},
-    {"id": "J110", "category": "pairing_lag", "handler": "lag_nonclaims"}
+    {"id": "J110", "category": "pairing_lag", "handler": "lag_nonclaims"},
+    {"id": "J111", "category": "pairing_jitter", "handler": "jitter_domain"},
+    {"id": "J112", "category": "pairing_jitter", "handler": "jitter_identity"},
+    {"id": "J113", "category": "pairing_jitter", "handler": "jitter_zero"},
+    {"id": "J114", "category": "pairing_jitter", "handler": "jitter_risk"},
+    {"id": "J115", "category": "pairing_jitter", "handler": "jitter_monotonicity"},
+    {"id": "J116", "category": "pairing_jitter", "handler": "jitter_count_transition"},
+    {"id": "J117", "category": "pairing_jitter", "handler": "jitter_basis_scale"},
+    {"id": "J118", "category": "pairing_jitter", "handler": "jitter_nonclaims"}
   ]
 }
