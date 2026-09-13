@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify latent window-jitter specification. **ACTIVE**
+1. [x] Ratify latent window-jitter specification.
    - Depends on: Gaussian mixture-kernel milestone `403db56` and green CI `34732852583`.
    - Complete when: one latent lag per centered window, conditional Gaussian law, total-covariance decomposition, fractions `[0,0.25,0.5,1.0]`, counts `[16,64,256]`, expected count contrast, eight controls, J119–J126 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J119–J126 and `latent_pairing_jitter` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
