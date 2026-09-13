@@ -134,6 +134,14 @@
     {"id": "J131", "category": "latent_lag_law_robustness", "handler": "laglaw_widening"},
     {"id": "J132", "category": "latent_lag_law_robustness", "handler": "laglaw_count_transition"},
     {"id": "J133", "category": "latent_lag_law_robustness", "handler": "laglaw_basis_scale"},
-    {"id": "J134", "category": "latent_lag_law_robustness", "handler": "laglaw_nonclaims"}
+    {"id": "J134", "category": "latent_lag_law_robustness", "handler": "laglaw_nonclaims"},
+    {"id": "J135", "category": "latent_lag_critical_radius", "handler": "critical_domain"},
+    {"id": "J136", "category": "latent_lag_critical_radius", "handler": "critical_active_set"},
+    {"id": "J137", "category": "latent_lag_critical_radius", "handler": "critical_bracket"},
+    {"id": "J138", "category": "latent_lag_critical_radius", "handler": "critical_root"},
+    {"id": "J139", "category": "latent_lag_critical_radius", "handler": "critical_sides"},
+    {"id": "J140", "category": "latent_lag_critical_radius", "handler": "critical_support"},
+    {"id": "J141", "category": "latent_lag_critical_radius", "handler": "critical_basis_scale"},
+    {"id": "J142", "category": "latent_lag_critical_radius", "handler": "critical_nonclaims"}
   ]
 }
