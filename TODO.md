@@ -40,7 +40,7 @@ Updated: 2026-09-12
 - Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
 - Root result: exact bounded-simplex LP gives kappa-2 worst counts `[87,87,87,87]`; kappa-4 worst `[87,87,87,88]`; best stays `[87,87,87,87]`. `N=64` remains unsafe across envelope.
 - Scope negative: density-ratio bounds and latent lag law remain unmeasured toy assumptions.
-- Publication pending final closure commit, push and remote CI.
+- Published `main=origin/main` at `8f29082`; GitHub Actions run `34751353670` tests/LaTeX passed.
 
 ## Historical milestone index
 
