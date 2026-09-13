@@ -13,5 +13,5 @@ class Reports(unittest.TestCase):
   for x in ('Three regimes','150/150',RESULT,GATE):self.assertIn(x,TH.read_text())
   for t in (ROAD.read_text(),LED.read_text()):
    for x in (RESULT,GATE,'KERR_FULL_SUPPORT_LATENT_LAG_LAW_HAS_TOY_CRITICAL_DENSITY_RATIO','KERR_LATENT_LAG_LAW_DENSITY_RATIO_BOUNDS_GIVE_EXACT_RISK_ENVELOPES','F_0'):self.assertIn(x,t)
-  self.assertIn('4. [x] Generate stable artifacts and bilingual scientific record.',TODO.read_text());self.assertIn('5. [x] Closure and publication.',TODO.read_text());self.assertIn('Full suite: `1332/1332`.',TODO.read_text())
+  self.assertIn('Kerr rho-critical phase window MVP: tasks 1–5 completed',TODO.read_text());self.assertIn('scientific `8/8`, scenarios `150/150`, suite `1332/1332`',TODO.read_text());self.assertIn('Full suite: `1332/1332`.',TODO.read_text())
 if __name__=='__main__':unittest.main()

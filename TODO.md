@@ -32,6 +32,10 @@ Updated: 2026-09-12
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
+## Historical milestone index
+
+- Kerr rho-critical phase window MVP: tasks 1–5 completed; scientific `8/8`, scenarios `150/150`, suite `1332/1332`, CI green at `d793dd1`.
+
 ## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
