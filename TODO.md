@@ -2,37 +2,37 @@
 
 Updated: 2026-09-12
 
-## Active milestone: Kerr rho-critical phase window MVP
+## Active milestone: Kerr count-dependent rho phase MVP
 
-**Objective:** determine exact AR(1) correlation interval where full-support count 87 is sensitive to latent-lag law radius, separating always-safe, finite-kappa-sensitive and always-unsafe regimes.
+**Objective:** map how full-support latent-lag-law rho-sensitive window moves and narrows with finite sample count, including iid-side count threshold.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** rho-domain guardrails, monotonic-risk identity, unrestricted boundary, uniform boundary, phase classification, kappa path, basis/scale invariance, nonclaims.
+**Fixed cases/order:** count-domain guardrails, iid threshold, root identity, fixed-count boundaries, ordering, width contraction, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify rho-critical phase specification.
-   - Depends on: critical lag-law radius milestone `bdb2446` and green CI `34762881660`.
-   - Complete when: full-support `N=87`, risk ceiling `0.05`, rho bracket `[0.49,0.51]`, unrestricted/uniform boundary definitions, expected roots near `0.499243439` and `0.501157236`, fixed phase cases, eight controls, J143–J150 and nonclaims are preregistered.
+1. [ ] Ratify count-dependent rho phase specification. **ACTIVE**
+   - Depends on: rho-critical phase milestone `d793dd1` and green CI `34774557152`.
+   - Complete when: counts `[53,54,64,87,128,256]`, full support, risk ceiling `0.05`, iid-side phase onset, expected rho boundaries/widths, eight controls, J151–J158 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J143–J150 and `latent_lag_rho_phase` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J151–J158 and `latent_lag_count_phase` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement rho-critical phase engine.
+3. [ ] Implement count-dependent rho phase engine.
    - Depends on: tasks 1–2.
-   - Complete when: monotonic rho checks, unrestricted/uniform bisection roots, phase classification, finite-kappa path, basis/scale null and guardrails pass.
+   - Complete when: count validation, iid onset, bounded bisection roots, N87 recovery, boundary monotonicity, window contraction, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve phase/scope/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve count-phase/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `150/150`; all 150 per-scenario and 26 per-category granular runs green.
