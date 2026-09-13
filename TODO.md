@@ -40,7 +40,7 @@ Updated: 2026-09-12
 - Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
 - Root result: at N=64, cancellation ratio erodes `[1.0,0.789485810,0.623302468,0.404555012,0.204269692,0.073046173]`; count gates `[87,87,87,87,87,88]`. Radius 16 restores independent count `88`; `N=64` remains unsafe for every fixed radius.
 - Scope negative: Gaussian averaged covariance kernel is not a latent non-Gaussian window-level covariance mixture.
-- Publication pending final closure commit, push and remote CI.
+- Published `main=origin/main` at `3856264`; GitHub Actions run `34732411847` tests/LaTeX passed.
 
 ## Historical milestone index
 
