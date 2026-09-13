@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr latent window-jitter fourth-moment correction result
+
+Exact conditional-Wick/law-of-total-covariance control passes `8/8`, scenarios `126/126`. Positive Jensen gap makes latent window mixture retain more cancellation than Gaussian averaged-kernel surrogate. Latent count gates `[87,87,87,87]` differ from surrogate `[87,88,88,88]`; `N=64` remains unsafe in both.
+
+```text
+KERR_LATENT_WINDOW_JITTER_HAS_A_POSITIVE_FOURTH_MOMENT_JENSEN_CORRECTION_RELATIVE_TO_THE_GAUSSIAN_AVERAGED_KERNEL_BUT_DOES_NOT_REMOVE_AR1_SAMPLE_BURDEN_NOT_ELL0
+PHYSICAL_KERR_LATENT_JITTER_DISTRIBUTION_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. Unconditional sample law is non-Gaussian mixture; latent law and conditional Gaussianity are unmeasured. Averaged-kernel and all prior negatives remain preserved.
+
 ## Kerr bounded pairing-jitter erosion result
 
 Exact centered Gaussian uniform-kernel control passes `8/8`, scenarios `118/118`. Cancellation erodes monotonically with jitter radius; at N=64 normalized factor falls from `1` to `0.073046173`. Count gates `[87,87,87,87,87,88]` restore independent 88 at radius 16; `N=64` remains unsafe.

@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr latent window-jitter fourth-moment correction
+
+Exact law-of-total-covariance control passes `8/8`, scenarios `126/126`. Positive Jensen gap between `E||H K_D H||_F^2` and `||H E[K_D] H||_F^2` means latent one-lag-per-window mixture retains more common-noise cancellation than Gaussian averaged-kernel surrogate. Count gates are `[87,87,87,87]` versus `[87,88,88,88]`; `N=64` remains unsafe for both.
+
+```text
+KERR_LATENT_WINDOW_JITTER_HAS_A_POSITIVE_FOURTH_MOMENT_JENSEN_CORRECTION_RELATIVE_TO_THE_GAUSSIAN_AVERAGED_KERNEL_BUT_DOES_NOT_REMOVE_AR1_SAMPLE_BURDEN_NOT_ELL0
+PHYSICAL_KERR_LATENT_JITTER_DISTRIBUTION_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No measured latent lag law, conditional Gaussianity, significance, evidence or detection. Gaussian averaged-kernel, fixed-lag, paired synchronous, AR(1), prior sampling, mismatch/reference chain, 5D tensor, finite `S1`, Schwarzschild and `F_0` remain preserved.
+
 ## Kerr bounded pairing-jitter erosion
 
 Exact centered Gaussian mixture-kernel control passes `8/8`, scenarios `118/118`. At toy rho 0.5, cancellation ratio at N=64 falls from `1` to `0.073046173` over radii `[0,1,2,4,8,16]`; count gates become `[87,87,87,87,87,88]`, while `N=64` remains unsafe throughout.
