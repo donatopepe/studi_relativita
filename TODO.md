@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify bounded latent-lag law specification. **ACTIVE**
+1. [x] Ratify bounded latent-lag law specification.
    - Depends on: latent window-jitter milestone `a359246` and green CI `34742692876`.
    - Complete when: symmetric-support probability simplex, density-ratio bounds kappa `[1,2,4]`, fractions `[0,0.25,0.5,1.0]`, exact greedy linear-program extrema, expected robust count transition, eight controls, J127–J134 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J127–J134 and `latent_lag_law_robustness` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
