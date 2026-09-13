@@ -40,7 +40,7 @@ Updated: 2026-09-12
 - Deterministic scientific artifact/total report, extraction/inventory, constraint study, shared UTF-8, diff and CodeGraph gates green.
 - Root result: count-87 finite-kappa sensitivity exists only for rho in `[0.499243438917,0.501157235677]`; below every lag law passes, above uniform already fails. Kappa path decreases `[12.485595532,3.890241565,2.001949812,1.172518080]`.
 - Scope negative: rho window is toy assumption boundary, not confidence interval, stationarity evidence or measured correlation tolerance.
-- Publication pending final closure commit, push and remote CI.
+- Published `main=origin/main` at `5904597`; GitHub Actions run `34774173100` tests/LaTeX passed.
 
 ## Historical milestone index
 
