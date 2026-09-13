@@ -16,15 +16,15 @@ Updated: 2026-09-12
    - Depends on: bounded latent-lag law milestone `76461b4` and green CI `34751824190`.
    - Complete when: full-support `N=87`, risk ceiling `0.05`, active-set piecewise formula, fixed bracket `[2,4]`, expected critical kappa near `3.890241565`, support negatives, eight controls, J135–J142 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J135–J142 and `latent_lag_critical_radius` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement exact critical-radius engine.
+3. [x] Implement exact critical-radius engine.
    - Depends on: tasks 1–2.
    - Complete when: active-set formula agrees with LP, quadratic root agrees with bisection, below/above classification, support contrast, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve threshold/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
