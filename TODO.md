@@ -16,15 +16,15 @@ Updated: 2026-09-12
    - Depends on: Gaussian mixture-kernel milestone `403db56` and green CI `34732852583`.
    - Complete when: one latent lag per centered window, conditional Gaussian law, total-covariance decomposition, fractions `[0,0.25,0.5,1.0]`, counts `[16,64,256]`, expected count contrast, eight controls, J119–J126 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J119–J126 and `latent_pairing_jitter` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement latent window-jitter engine.
+3. [x] Implement latent window-jitter engine.
    - Depends on: tasks 1–2.
    - Complete when: latent support validation, average conditional cross-Wishart factor, zero-support recovery, Jensen gap, risk/count contrast, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve latent-mixture scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
