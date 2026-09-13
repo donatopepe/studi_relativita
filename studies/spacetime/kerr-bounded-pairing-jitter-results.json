@@ -1,0 +1,359 @@
+{
+  "basis_scale": {
+    "basis_residual": 1.1102230246251565e-16,
+    "scale_residual": 1.3877787807814457e-17
+  },
+  "control_summary": {
+    "Detection": "NO_POSITIVE_DETECTION_CLAIM",
+    "L_equals_ell0": "NOT_DERIVED",
+    "L_identified": false,
+    "Maximum_interpretation": "MODEL_LEVEL_BOUNDED_PAIRING_JITTER_EROSION_NOT_EVIDENCE",
+    "UMCH": "UNPROVEN_SECONDARY_CANDIDATE",
+    "controls": [
+      {
+        "name": "domain",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "identity",
+        "passed": true,
+        "residual": 1.3877787807814457e-17,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "zero_jitter",
+        "passed": true,
+        "residual": 1.4210854715202004e-14,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "risk",
+        "passed": true,
+        "residual": 0.017003198529099907,
+        "threshold": 0.26811241963058785,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "monotonicity",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      },
+      {
+        "name": "count_transition",
+        "passed": true,
+        "residual": 0.04998846226407926,
+        "threshold": 0.05,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "basis_scale",
+        "passed": true,
+        "residual": 1.1102230246251565e-16,
+        "threshold": 2e-10,
+        "threshold_kind": "maximum"
+      },
+      {
+        "name": "nonclaims",
+        "passed": true,
+        "residual": 0.0,
+        "threshold": 1.0,
+        "threshold_kind": "boolean"
+      }
+    ],
+    "controls_passed": 8,
+    "controls_total": 8,
+    "ell0_identified": false,
+    "extra_dimension_detected": false,
+    "latent_window_mixture": "NOT_CLAIMED_REQUIRES_NON_GAUSSIAN_FOURTH_MOMENTS",
+    "structural_dead_end": "NOT_DECLARED"
+  },
+  "count_transition": {
+    "all_N64_unsafe": true,
+    "all_predecessors_fail": true,
+    "expected": [
+      87,
+      87,
+      87,
+      87,
+      87,
+      88
+    ],
+    "minimum_counts": [
+      87,
+      87,
+      87,
+      87,
+      87,
+      88
+    ],
+    "rows": [
+      {
+        "J": 0,
+        "N64_passes": false,
+        "N64_risk": 0.06749880400351307,
+        "minimum_count": 87,
+        "risk_at_count": 0.04967047699943985,
+        "risk_at_predecessor": 0.05024765350736132
+      },
+      {
+        "J": 1,
+        "N64_passes": false,
+        "N64_risk": 0.06761598642211102,
+        "minimum_count": 87,
+        "risk_at_count": 0.049754277223093626,
+        "risk_at_predecessor": 0.05033250604286121
+      },
+      {
+        "J": 2,
+        "N64_passes": false,
+        "N64_risk": 0.06770849213853554,
+        "minimum_count": 87,
+        "risk_at_count": 0.04982057023574898,
+        "risk_at_predecessor": 0.050399627208186894
+      },
+      {
+        "J": 4,
+        "N64_passes": false,
+        "N64_risk": 0.06783025759227727,
+        "minimum_count": 87,
+        "risk_at_count": 0.049907998142367294,
+        "risk_at_predecessor": 0.05048814258616441
+      },
+      {
+        "J": 8,
+        "N64_passes": false,
+        "N64_risk": 0.0679417461254293,
+        "minimum_count": 87,
+        "risk_at_count": 0.04998846226407926,
+        "risk_at_predecessor": 0.05056959633198302
+      },
+      {
+        "J": 16,
+        "N64_passes": false,
+        "N64_risk": 0.0680147915067351,
+        "minimum_count": 88,
+        "risk_at_count": 0.04947376188862203,
+        "risk_at_predecessor": 0.05004231841295664
+      }
+    ]
+  },
+  "domain": {
+    "accepted": true,
+    "invalid_cases": 8,
+    "invalid_cases_rejected": 8,
+    "symmetry_residual": 0.0
+  },
+  "fixed_support_risk": {
+    "all_strictly_decreasing": true,
+    "counts": [
+      16,
+      64,
+      256
+    ],
+    "rho": 0.5,
+    "rows": [
+      {
+        "J": 0,
+        "risks": [
+          0.2659195060678965,
+          0.06749880400351307,
+          0.016882288564458052
+        ],
+        "strictly_decreasing": true
+      },
+      {
+        "J": 1,
+        "risks": [
+          0.2665535106348147,
+          0.06761598642211102,
+          0.01690931028490014
+        ],
+        "strictly_decreasing": true
+      },
+      {
+        "J": 2,
+        "risks": [
+          0.2670319449395537,
+          0.06770849213853554,
+          0.016930755763668672
+        ],
+        "strictly_decreasing": true
+      },
+      {
+        "J": 4,
+        "risks": [
+          0.26761876465476536,
+          0.06783025759227727,
+          0.016959098709116598
+        ],
+        "strictly_decreasing": true
+      },
+      {
+        "J": 8,
+        "risks": [
+          0.2680283417758703,
+          0.0679417461254293,
+          0.016985310639279196
+        ],
+        "strictly_decreasing": true
+      },
+      {
+        "J": 16,
+        "risks": [
+          0.26811241963058785,
+          0.0680147915067351,
+          0.017003198529099907
+        ],
+        "strictly_decreasing": true
+      }
+    ]
+  },
+  "mixture_identity": {
+    "cases": [
+      {
+        "J": 1,
+        "N": 8,
+        "dense": 0.11508936555660366,
+        "element_residual": 0.0,
+        "explicit": 0.11508936555660365
+      },
+      {
+        "J": 4,
+        "N": 16,
+        "dense": 0.0230916032804379,
+        "element_residual": 0.0,
+        "explicit": 0.023091603280437908
+      },
+      {
+        "J": 16,
+        "N": 32,
+        "dense": 0.0011138513126988103,
+        "element_residual": 0.0,
+        "explicit": 0.0011138513126988105
+      }
+    ],
+    "residual": 1.3877787807814457e-17
+  },
+  "monotonicity": {
+    "all_monotonic": true,
+    "rows": [
+      {
+        "N": 16,
+        "cancellation_ratios": [
+          1.0,
+          0.710893945535066,
+          0.49272792374106444,
+          0.22513815956673947,
+          0.03837101046345219,
+          3.151243204281619e-05
+        ],
+        "cancellation_strictly_decreasing": true,
+        "risk_strictly_increasing": true,
+        "risks": [
+          0.2659195060678965,
+          0.2665535106348147,
+          0.2670319449395537,
+          0.26761876465476536,
+          0.2680283417758703,
+          0.26811241963058785
+        ]
+      },
+      {
+        "N": 64,
+        "cancellation_ratios": [
+          0.9999999999999999,
+          0.7894858098685833,
+          0.6233024676178257,
+          0.40455501226470175,
+          0.20426969176823814,
+          0.07304617315158554
+        ],
+        "cancellation_strictly_decreasing": true,
+        "risk_strictly_increasing": true,
+        "risks": [
+          0.06749880400351307,
+          0.06761598642211102,
+          0.06770849213853554,
+          0.06783025759227727,
+          0.0679417461254293,
+          0.0680147915067351
+        ]
+      },
+      {
+        "N": 256,
+        "cancellation_ratios": [
+          0.9999999999999999,
+          0.8059128989662604,
+          0.6518778954073242,
+          0.4483009200428297,
+          0.26003024539572805,
+          0.13154809762302944
+        ],
+        "cancellation_strictly_decreasing": true,
+        "risk_strictly_increasing": true,
+        "risks": [
+          0.016882288564458052,
+          0.01690931028490014,
+          0.016930755763668672,
+          0.016959098709116598,
+          0.016985310639279196,
+          0.017003198529099907
+        ]
+      }
+    ]
+  },
+  "parameters": {
+    "counts": [
+      16,
+      64,
+      256
+    ],
+    "jitter_kernel": "UNIFORM_SYMMETRIC_GAUSSIAN_CROSS_COVARIANCE_MIXTURE",
+    "jitter_radii": [
+      0,
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "rho": 0.5,
+    "risk_ceiling": 0.05
+  },
+  "physical_gate": "PHYSICAL_KERR_PAIRING_JITTER_DISTRIBUTION_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED",
+  "result": "KERR_BOUNDED_UNIFORM_PAIRING_JITTER_MONOTONICALLY_ERODES_COMMON_NOISE_CANCELLATION_AND_RADIUS_16_RESTORES_THE_INDEPENDENT_AR1_COUNT_GATE_NOT_ELL0",
+  "zero_jitter_limit": {
+    "cases": [
+      {
+        "N": 16,
+        "jitter_mse": 93.96496090563788,
+        "jitter_risk": 0.2659195060678965,
+        "paired_mse": 93.9649609056379,
+        "paired_risk": 0.26591950606789655
+      },
+      {
+        "N": 64,
+        "jitter_mse": 23.851287079888003,
+        "jitter_risk": 0.06749880400351307,
+        "paired_mse": 23.851287079888003,
+        "paired_risk": 0.06749880400351307
+      },
+      {
+        "N": 256,
+        "jitter_mse": 5.965502901287585,
+        "jitter_risk": 0.016882288564458052,
+        "paired_mse": 5.965502901287586,
+        "paired_risk": 0.016882288564458052
+      }
+    ],
+    "minimum_count": 87,
+    "residual": 1.4210854715202004e-14
+  }
+}

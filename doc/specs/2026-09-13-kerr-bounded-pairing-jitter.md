@@ -6,7 +6,7 @@
 
 ## Model
 
-Each paired acquisition has an unobserved integer timing offset `D`, independent of Gaussian amplitudes and uniformly distributed on bounded symmetric support `{-J,...,J}`. Marginal stream covariance remains AR(1), while shared-noise cross-time covariance becomes mixture
+Each paired acquisition uses a fixed design-averaged cross-time kernel formed from integer offsets on bounded symmetric support `{-J,...,J}`. Marginal stream covariance remains AR(1), while the declared jointly Gaussian shared-noise cross-time covariance is the uniform kernel mixture
 
 ```text
 P(D=d)=1/(2J+1),  d=-J,...,J
@@ -16,7 +16,7 @@ alpha=tr(H T H T)/tr(H T)^2
 beta_J=tr(H K_J H K_J^T)/tr(H T)^2.
 ```
 
-Gaussian cross-Wishart contraction applies conditionally to this declared joint Gaussian covariance model, giving total two-branch-pair MSE
+Gaussian cross-Wishart contraction applies to this declared joint Gaussian covariance model, giving total two-branch-pair MSE
 
 ```text
 MSE_jitter=alpha*sum[q(C_S)+q(C_B)]-4*beta_J*q(N_noise),
@@ -58,7 +58,7 @@ MODEL_LEVEL_BOUNDED_PAIRING_JITTER_EROSION_NOT_EVIDENCE
 PHYSICAL_KERR_PAIRING_JITTER_DISTRIBUTION_SYNCHRONY_COMMON_NOISE_MODEL_AR1_STATIONARITY_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
 ```
 
-Uniform jitter, independence, AR(1), shared-noise identity and acquisition timing are toy assumptions, not measured receiver behavior.
+Gaussian mixture-kernel jitter, AR(1), shared-noise identity and acquisition timing are toy assumptions, not measured receiver behavior. This is not a latent window-level mixture over covariance models, which would generally be non-Gaussian and require fourth-moment terms beyond the averaged kernel.
 
 ```text
 UMCH=UNPROVEN_SECONDARY_CANDIDATE

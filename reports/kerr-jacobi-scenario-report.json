@@ -13,6 +13,7 @@
       "likelihood",
       "noise",
       "orientation",
+      "pairing_jitter",
       "pairing_lag",
       "preparation",
       "profiling",
@@ -133,7 +134,15 @@
       "J107",
       "J108",
       "J109",
-      "J110"
+      "J110",
+      "J111",
+      "J112",
+      "J113",
+      "J114",
+      "J115",
+      "J116",
+      "J117",
+      "J118"
     ]
   },
   "results": [
@@ -906,13 +915,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 1.0
+    },
+    {
+      "category": "pairing_jitter",
+      "id": "J111",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_jitter",
+      "id": "J112",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_jitter",
+      "id": "J113",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_jitter",
+      "id": "J114",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_jitter",
+      "id": "J115",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_jitter",
+      "id": "J116",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_jitter",
+      "id": "J117",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "pairing_jitter",
+      "id": "J118",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 110,
+    "PASS": 118,
     "SKIP": 0
   }
 }
