@@ -2,37 +2,37 @@
 
 Updated: 2026-09-12
 
-## Active milestone: Kerr critical lag-law radius MVP
+## Active milestone: Kerr rho-critical phase window MVP
 
-**Objective:** solve the exact density-ratio radius at which worst-case full-support latent-lag risk crosses the count-87 ceiling, instead of reporting only coarse kappa brackets.
+**Objective:** determine exact AR(1) correlation interval where full-support count 87 is sensitive to latent-lag law radius, separating always-safe, finite-kappa-sensitive and always-unsafe regimes.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** critical-domain guardrails, active-set formula identity, bracket, analytic root, side classification, support contrast, basis/scale invariance, nonclaims.
+**Fixed cases/order:** rho-domain guardrails, monotonic-risk identity, unrestricted boundary, uniform boundary, phase classification, kappa path, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify critical density-ratio specification.
-   - Depends on: bounded latent-lag law milestone `76461b4` and green CI `34751824190`.
-   - Complete when: full-support `N=87`, risk ceiling `0.05`, active-set piecewise formula, fixed bracket `[2,4]`, expected critical kappa near `3.890241565`, support negatives, eight controls, J135–J142 and nonclaims are preregistered.
+1. [ ] Ratify rho-critical phase specification. **ACTIVE**
+   - Depends on: critical lag-law radius milestone `bdb2446` and green CI `34762881660`.
+   - Complete when: full-support `N=87`, risk ceiling `0.05`, rho bracket `[0.49,0.51]`, unrestricted/uniform boundary definitions, expected roots near `0.499243439` and `0.501157236`, fixed phase cases, eight controls, J143–J150 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J135–J142 and `latent_lag_critical_radius` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J143–J150 and `latent_lag_rho_phase` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement exact critical-radius engine.
+3. [ ] Implement rho-critical phase engine.
    - Depends on: tasks 1–2.
-   - Complete when: active-set formula agrees with LP, quadratic root agrees with bisection, below/above classification, support contrast, basis/scale null and guardrails pass.
+   - Complete when: monotonic rho checks, unrestricted/uniform bisection roots, phase classification, finite-kappa path, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve threshold/scope/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve phase/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `142/142`; all 142 per-scenario and 25 per-category granular runs green.
