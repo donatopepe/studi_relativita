@@ -20,6 +20,17 @@ DO NOT MERGE WITHOUT HUMAN SCIENTIFIC RATIFICATION
 
 Prior operator core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`; worldline history is `HISTORICAL_WORLDLINE_FORMULATION` / `SUPERSEDED_AS_CORE`. Raw `R_op`, `F_0`, scalar projections, exact controls, and negative results remain preserved. Full ledger: [`audit/kaluza-klein-reformulation-change-ledger.md`](../audit/kaluza-klein-reformulation-change-ledger.md).
 
+## Kerr window-scale mixture covariance floor
+
+Exact window-level total-covariance control passes `8/8`, scenarios `166/166`. Latent scale CV creates floor `0.862883522363*cv^2`; count gates for CV `[0,0.1,0.2,0.25]` are `[87,106,292,None]`. At `cv*=0.240718192810`, no finite count can pass toy ceiling.
+
+```text
+KERR_WINDOW_LEVEL_SCALE_MIXTURE_CREATES_NONDECAYING_COVARIANCE_RISK_FLOOR_AND_CV_0P240718193_PRECLUDES_ANY_FINITE_TOY_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_WINDOW_SCALE_DISTRIBUTION_NON_GAUSSIANITY_AR1_RHO_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+CV/window law are unmeasured; gate is not sample prescription, confidence, evidence or detection. Count-rho map, lag-law chain and `F_0` remain preserved.
+
 ## Kerr count-dependent rho phase window
 
 Exact count-generic phase map passes `8/8`, scenarios `158/158`. N=53 is unsafe already at iid; N=54 is first iid-safe toy count. For counts `[54,64,87,128,256]`, rho boundaries rise while sensitive widths contract from `0.011608541494` to `0.000693548809`.
