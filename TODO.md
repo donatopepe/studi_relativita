@@ -16,15 +16,15 @@ Updated: 2026-09-12
    - Depends on: count-dependent rho phase milestone `4909209` and green CI `34789281592`.
    - Complete when: one positive latent scale per centered window, `E[W]=1`, `Var(W)=cv^2`, exact law-of-total-covariance MSE, CV cases `[0,0.1,0.2,0.25]`, expected count/floor transition, eight controls, J159–J166 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
+2. [x] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
    - Complete when: J159–J166 and `window_scale_mixture` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [ ] Implement window-scale mixture engine.
+3. [x] Implement window-scale mixture engine.
    - Depends on: tasks 1–2.
    - Complete when: moment validation, conditional/total MSE identity, Gaussian recovery, asymptotic floor, fixed-CV count transition, critical-CV root, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [ ] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record. **ACTIVE**
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve non-Gaussian floor/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
