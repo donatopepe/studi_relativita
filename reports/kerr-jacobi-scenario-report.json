@@ -27,7 +27,8 @@
       "reference_placement",
       "robustness",
       "scale",
-      "temporal_dependence"
+      "temporal_dependence",
+      "window_scale_mixture"
     ],
     "selected_ids": [
       "J01",
@@ -187,7 +188,15 @@
       "J155",
       "J156",
       "J157",
-      "J158"
+      "J158",
+      "J159",
+      "J160",
+      "J161",
+      "J162",
+      "J163",
+      "J164",
+      "J165",
+      "J166"
     ]
   },
   "results": [
@@ -1296,13 +1305,69 @@
       "residual": 0.0,
       "status": "PASS",
       "threshold": 1.0
+    },
+    {
+      "category": "window_scale_mixture",
+      "id": "J159",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "window_scale_mixture",
+      "id": "J160",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "window_scale_mixture",
+      "id": "J161",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "window_scale_mixture",
+      "id": "J162",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "window_scale_mixture",
+      "id": "J163",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "window_scale_mixture",
+      "id": "J164",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "window_scale_mixture",
+      "id": "J165",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
+    },
+    {
+      "category": "window_scale_mixture",
+      "id": "J166",
+      "residual": 0.0,
+      "status": "PASS",
+      "threshold": 1.0
     }
   ],
   "schema": "kerr-jacobi-scenario-report-v1",
   "summary": {
     "BLOCKED": 0,
     "FAIL": 0,
-    "PASS": 158,
+    "PASS": 166,
     "SKIP": 0
   }
 }
