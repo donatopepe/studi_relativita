@@ -24,6 +24,17 @@ Prior primary core is frozen as `RATIFIED_PRIMARY_RESEARCH_OBJECT`: channel-nati
 
 Preserved objects include raw `R=(R_tidal,R_mag,R_hol,R_clock,R_null,R_cong)`, preregistered scalarizations, `C_2`, `C_infinity`, positive families, and null family `F_0`.
 
+## Kerr window-scale mixture covariance floor result
+
+Exact law-of-total-covariance control passes `8/8`, scenarios `166/166`. One latent common scale per window creates nondecaying floor `0.862883522363*cv^2`; fixed counts become `[87,106,292,None]`, and `cv*=0.240718192810` precludes any finite toy count.
+
+```text
+KERR_WINDOW_LEVEL_SCALE_MIXTURE_CREATES_NONDECAYING_COVARIANCE_RISK_FLOOR_AND_CV_0P240718193_PRECLUDES_ANY_FINITE_TOY_COUNT_GATE_NOT_ELL0
+PHYSICAL_KERR_WINDOW_SCALE_DISTRIBUTION_NON_GAUSSIANITY_AR1_RHO_LAG_LAW_RADIUS_SUPPORT_WINDOW_INDEPENDENCE_SYNCHRONY_COMMON_NOISE_MODEL_STATIONARITY_CONDITIONAL_GAUSSIANITY_CALIBRATION_MATCHING_HARDWARE_SYSTEMATICS_DATA_5D_KERR_COMPARATOR_AND_ELL0_LAW_NOT_DERIVED
+```
+
+No evidence claim. CV/window law are unmeasured toy assumptions; count-rho phase and all prior negatives remain preserved.
+
 ## Kerr count-dependent rho phase result
 
 Exact finite-count phase control passes `8/8`, scenarios `158/158`. N=53 fails already at iid; N=54 is first iid-safe toy count. Rho phase boundaries increase with N while lag-law-sensitive width contracts strictly through N=256.
