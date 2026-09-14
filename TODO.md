@@ -12,11 +12,11 @@ Updated: 2026-09-12
 
 **Fixed order and dependencies**
 
-1. [ ] Ratify window-scale mixture specification. **ACTIVE**
+1. [x] Ratify window-scale mixture specification.
    - Depends on: count-dependent rho phase milestone `4909209` and green CI `34789281592`.
    - Complete when: one positive latent scale per centered window, `E[W]=1`, `Var(W)=cv^2`, exact law-of-total-covariance MSE, CV cases `[0,0.1,0.2,0.25]`, expected count/floor transition, eight controls, J159–J166 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [ ] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner. **ACTIVE**
    - Depends on: task 1.
    - Complete when: J159–J166 and `window_scale_mixture` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
