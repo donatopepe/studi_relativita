@@ -24,8 +24,8 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
 
     def test_manifest_covers_all_preregistered_scenarios_and_categories(self):
         data = json.loads(MANIFEST.read_text())
-        self.assertEqual([item["id"] for item in data["scenarios"]], [f"J{index:02d}" for index in range(1, 159)])
-        self.assertEqual(set(item["category"] for item in data["scenarios"]), {"conformance", "orientation", "scale", "preparation", "analyzer", "receiver", "likelihood", "noise", "calibration", "robustness", "asymptotic", "profiling", "calibration_channel", "reference_placement", "reference_drift", "calibration_mismatch", "finite_sample", "estimated_mean", "temporal_dependence", "cross_stream_dependence", "pairing_lag", "pairing_jitter", "latent_pairing_jitter", "latent_lag_law_robustness", "latent_lag_critical_radius", "latent_lag_rho_phase", "latent_lag_count_phase"})
+        self.assertEqual([item["id"] for item in data["scenarios"]], [f"J{index:02d}" for index in range(1, 167)])
+        self.assertEqual(set(item["category"] for item in data["scenarios"]), {"conformance", "orientation", "scale", "preparation", "analyzer", "receiver", "likelihood", "noise", "calibration", "robustness", "asymptotic", "profiling", "calibration_channel", "reference_placement", "reference_drift", "calibration_mismatch", "finite_sample", "estimated_mean", "temporal_dependence", "cross_stream_dependence", "pairing_lag", "pairing_jitter", "latent_pairing_jitter", "latent_lag_law_robustness", "latent_lag_critical_radius", "latent_lag_rho_phase", "latent_lag_count_phase", "window_scale_mixture"})
         self.assertEqual(len(data["scenarios"]), len(set(item["id"] for item in data["scenarios"])))
 
     def test_runner_supports_total_granular_category_and_json_report(self):
@@ -34,7 +34,7 @@ class KerrJacobiSourcesAndScenarios(unittest.TestCase):
             total = subprocess.run(["python", str(RUNNER), "--mode", "total", "--report-json", str(report)], text=True, capture_output=True)
             self.assertEqual(total.returncode, 0, total.stdout + total.stderr)
             payload = json.loads(report.read_text())
-            self.assertEqual(payload["summary"], {"PASS": 158, "FAIL": 0, "SKIP": 0, "BLOCKED": 0})
+            self.assertEqual(payload["summary"], {"PASS": 166, "FAIL": 0, "SKIP": 0, "BLOCKED": 0})
             granular = subprocess.run(["python", str(RUNNER), "--mode", "granular", "--scenario", "J01"], text=True, capture_output=True)
             self.assertEqual(granular.returncode, 0, granular.stdout + granular.stderr)
             self.assertEqual(len(json.loads(granular.stdout)["results"]), 1)
