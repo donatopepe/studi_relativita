@@ -2,37 +2,37 @@
 
 Updated: 2026-09-12
 
-## Active milestone: Kerr count-dependent rho phase MVP
+## Active milestone: Kerr window-scale mixture floor MVP
 
-**Objective:** map how full-support latent-lag-law rho-sensitive window moves and narrows with finite sample count, including iid-side count threshold.
+**Objective:** quantify non-Gaussian covariance-estimation floor caused by one latent multiplicative amplitude per observation window and determine finite/infinite toy count regimes.
 
 **Metric + threshold:** correctness over exactly `8/8` preregistered controls.
 
-**Fixed cases/order:** count-domain guardrails, iid threshold, root identity, fixed-count boundaries, ordering, width contraction, basis/scale invariance, nonclaims.
+**Fixed cases/order:** scale-mixture domain, total-MSE identity, zero-variance limit, risk floor, fixed-CV counts, critical CV, basis/scale invariance, nonclaims.
 
 **Fixed order and dependencies**
 
-1. [x] Ratify count-dependent rho phase specification.
-   - Depends on: rho-critical phase milestone `d793dd1` and green CI `34774557152`.
-   - Complete when: counts `[53,54,64,87,128,256]`, full support, risk ceiling `0.05`, iid-side phase onset, expected rho boundaries/widths, eight controls, J151–J158 and nonclaims are preregistered.
+1. [ ] Ratify window-scale mixture specification. **ACTIVE**
+   - Depends on: count-dependent rho phase milestone `4909209` and green CI `34789281592`.
+   - Complete when: one positive latent scale per centered window, `E[W]=1`, `Var(W)=cv^2`, exact law-of-total-covariance MSE, CV cases `[0,0.1,0.2,0.25]`, expected count/floor transition, eight controls, J159–J166 and nonclaims are preregistered.
    - Test: structural spec test and shared UTF-8 validator.
-2. [x] Extend authoritative Kerr scenario matrix and runner.
+2. [ ] Extend authoritative Kerr scenario matrix and runner.
    - Depends on: task 1.
-   - Complete when: J151–J158 and `latent_lag_count_phase` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
+   - Complete when: J159–J166 and `window_scale_mixture` category have fail-closed handlers; total, per-scenario and per-category JSON runs pass.
    - Test: matrix/runner contract plus every granular command.
-3. [x] Implement count-dependent rho phase engine.
+3. [ ] Implement window-scale mixture engine.
    - Depends on: tasks 1–2.
-   - Complete when: count validation, iid onset, bounded bisection roots, N87 recovery, boundary monotonicity, window contraction, basis/scale null and guardrails pass.
+   - Complete when: moment validation, conditional/total MSE identity, Gaussian recovery, asymptotic floor, fixed-CV count transition, critical-CV root, basis/scale null and guardrails pass.
    - Test: exactly eight focused controls and deterministic artifact equality.
-4. [x] Generate stable artifacts and bilingual scientific record.
+4. [ ] Generate stable artifacts and bilingual scientific record.
    - Depends on: task 3 GREEN.
-   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve count-phase/scope/nonclaims.
+   - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve non-Gaussian floor/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [x] Closure and publication.
+5. [ ] Closure and publication.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
 
-## Local closure evidence
+## Previous milestone closure evidence
 
 - Scientific controls: `8/8`.
 - Scenario battery: `158/158`; all 158 per-scenario and 27 per-category granular runs green.
