@@ -158,6 +158,14 @@
     {"id": "J155", "category": "latent_lag_count_phase", "handler": "countphase_ordering"},
     {"id": "J156", "category": "latent_lag_count_phase", "handler": "countphase_width"},
     {"id": "J157", "category": "latent_lag_count_phase", "handler": "countphase_basis_scale"},
-    {"id": "J158", "category": "latent_lag_count_phase", "handler": "countphase_nonclaims"}
+    {"id": "J158", "category": "latent_lag_count_phase", "handler": "countphase_nonclaims"},
+    {"id": "J159", "category": "window_scale_mixture", "handler": "scalemixture_domain"},
+    {"id": "J160", "category": "window_scale_mixture", "handler": "scalemixture_identity"},
+    {"id": "J161", "category": "window_scale_mixture", "handler": "scalemixture_zero"},
+    {"id": "J162", "category": "window_scale_mixture", "handler": "scalemixture_floor"},
+    {"id": "J163", "category": "window_scale_mixture", "handler": "scalemixture_counts"},
+    {"id": "J164", "category": "window_scale_mixture", "handler": "scalemixture_critical"},
+    {"id": "J165", "category": "window_scale_mixture", "handler": "scalemixture_basis_scale"},
+    {"id": "J166", "category": "window_scale_mixture", "handler": "scalemixture_nonclaims"}
   ]
 }
