@@ -1,6 +1,6 @@
 # TODO — UMCH research engineering
 
-Updated: 2026-09-12
+Updated: 2026-09-22
 
 ## Active milestone: Kerr window-scale mixture floor MVP
 
@@ -29,8 +29,12 @@ Updated: 2026-09-12
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve non-Gaussian floor/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
 5. [ ] Closure and publication. **ACTIVE**
+   - Objective: close local Kerr window-scale mixture evidence without changing preregistered cases, thresholds or scientific claims.
+   - Metric + threshold: closure-gate pass rate = `100%` over the eight gates below.
+   - Fixed order: focused controls/reports; full unit suite; total scenario report; 166 per-scenario and 28 per-category granular reports; deterministic artifacts; UTF-8; diff/CodeGraph/status; commit and remote CI.
    - Depends on: tasks 1–4 GREEN.
-   - Complete when: focused/full tests, total and all granular runs, deterministic checks, shared UTF-8, diff, CodeGraph and CI pass; `main=origin/main`; Hermes updated.
+   - Complete when: all eight gates pass, `main` is clean, Hermes records evidence, and remote publication is separately authorized and green.
+   - Gates: (1) focused tests, (2) full suite, (3) total matrix, (4) all granular matrix, (5) deterministic artifact/report equality, (6) shared UTF-8 validator, (7) `git diff --check` plus CodeGraph sync/status, (8) commit/remote CI evidence.
 
 ## Historical milestone index
 
