@@ -28,13 +28,14 @@ Updated: 2026-09-22
    - Depends on: task 3 GREEN.
    - Complete when: scientific JSON, total battery report, theory, EN/IT audits, roadmap and ledger align and preserve non-Gaussian floor/scope/nonclaims.
    - Test: report tests plus deterministic artifact equality.
-5. [ ] Closure and publication. **ACTIVE**
+5. [x] Closure and publication.
    - Objective: close local Kerr window-scale mixture evidence without changing preregistered cases, thresholds or scientific claims.
    - Metric + threshold: closure-gate pass rate = `100%` over the eight gates below.
    - Fixed order: focused controls/reports; full unit suite; total scenario report; 166 per-scenario and 28 per-category granular reports; deterministic artifacts; UTF-8; diff/CodeGraph/status; commit and remote CI.
    - Depends on: tasks 1–4 GREEN.
    - Complete when: all eight gates pass, `main` is clean, Hermes records evidence, and remote publication is separately authorized and green.
    - Gates: (1) focused tests, (2) full suite, (3) total matrix, (4) all granular matrix, (5) deterministic artifact/report equality, (6) shared UTF-8 validator, (7) `git diff --check` plus CodeGraph sync/status, (8) commit/remote CI evidence.
+   - Evidence: focused `13/13`; full suite `1358/1358`; total `166/166`; granular `28/28` categories and `166/166` scenarios; deterministic artifacts/reports; UTF-8 `719/719`; CodeGraph `444/8054/15727`; clean `main=origin/main`; CI workflow `verify` run `35740510600` success.
 
 ## Historical milestone index
 
